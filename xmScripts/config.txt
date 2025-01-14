@@ -2,9 +2,12 @@
 # version of Ximera xake container to use (with xmlatex)
 #
 : "${XAKE_BASE:=ximeralatex}"
-: "${XAKE_VERSION:=v2.5.2-full}"
-# : "${XAKE_VERSION:=latest}"
+: "${XAKE_VERSION:=v2.5.4}"
+: "${XIMERA_URL:=https://set-p-dsb-zomercursus-latest.cloud-ext.icts.kuleuven.be/}"
+
+
 ## Alternatives:
+# : "${XAKE_VERSION:=latest}"
 # : "${XAKE_BASE:=xake2024}"
 # : "${XAKE_VERSION:=v2.4.3-full}"    # with texlive_full
 # : "${XAKE_BASE:=xake2023}"     # with older tex/xake
@@ -25,8 +28,7 @@ YOUR_EMAIL=""
 
 ## : "${XIMERA_NAME:=myreponame}"
 ## : "${XIMERA_URL:=http://localhost:2000/}"
-## : "${XIMERA_URL:=https://ximera.osu.edu}"
-: "${XIMERA_URL:=https://set-p-dsb-zomercursus-latest.cloud-ext.icts.kuleuven.be/}"
+## : "${XIMERA_URL:=https://ximera.osu.edu/}"
 ## : "${XIMERA_URL:=https://set.kuleuven.be/voorkennis/}"
 
 #
