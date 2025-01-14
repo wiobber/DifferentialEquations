@@ -10,7 +10,7 @@
 # For use in Actions, and perhaps to adapt the functionality of the PDF/HTML/SERVE buttons
 #
 export XAKE_COMPILE_SEQUENCE=draft.html      # no PDF's 
-export XAKE_TO_PROCESS=testxourse.tex     # build/serve  only some files/xourses
+# export XAKE_TO_PROCESS=testxourse.tex     # build/serve  only some files/xourses
 
 ## Alternatives:
 # : "${XAKE_VERSION:=latest}"
@@ -26,8 +26,8 @@ export XAKE_TO_PROCESS=testxourse.tex     # build/serve  only some files/xourses
 #      via Codespaces: connect keys via GitHub Codespaces Secrets
 #      on your PC:     set environment variables, or edit .xmKeyFile
 # To generate a key-pair, fill in your name and email, and run 'xmlatex genKey'
-YOUR_NAME=""
-YOUR_EMAIL=""
+YOUR_NAME="Paul Zachlin"
+YOUR_EMAIL="pzachlin01142025@lakelandcc.edu"
 # !! Do NEVER commit real keys to the repo !!
 # !! DO NEVER SAVE THE KEYS THEMSELVE IN THIS FILE   !!
 #
