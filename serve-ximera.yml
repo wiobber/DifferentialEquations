@@ -46,6 +46,7 @@ jobs:
           XIMERA_NAME: pauldiffeqs
         run: |
           ls -alrt
+          chmod +x ./xmScripts/xmlatex
           ./xmScripts/xmlatex bake
           ls -alrt
           ./xmScripts/xmlatex ghaction || echo ERROR
