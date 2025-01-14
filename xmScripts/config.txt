@@ -6,6 +6,12 @@
 : "${XIMERA_URL:=https://set-p-dsb-zomercursus-latest.cloud-ext.icts.kuleuven.be/}"
 
 
+#
+# For use in Actions, and perhaps to adapt the functionality of the PDF/HTML/SERVE buttons
+#
+export XAKE_COMPILE_SEQUENCE=draft.html      # no PDF's 
+export XAKE_TO_PROCESS=testxourse.tex     # build/serve  only some files/xourses
+
 ## Alternatives:
 # : "${XAKE_VERSION:=latest}"
 # : "${XAKE_BASE:=xake2024}"
