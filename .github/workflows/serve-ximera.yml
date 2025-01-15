@@ -45,5 +45,11 @@ jobs:
           GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
           XIMERA_NAME: differentialequations
         run: |
+          ls -al ./xmScripts
+          chmod -x ./xmScripts/xmlatex  || echo NOK
+          ls -al ./xmScripts
+          git status
+          chmod +x ./xmScripts/xmlatex  || echo NOK
+          rm -rf ximera-downloads
           ls -alrt
           ./xmScripts/xmlatex ghaction
