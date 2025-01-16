@@ -1,0 +1,574 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+\begin{problem}\label{exer:2.2.1} Find all solutions.
+$$y'=\frac{3x^2+2x+1}{y-2}$$
+\end{problem}
+
+\begin{problem}\label{exer:2.2.2} Find all solutions.
+$$(\sin x)(\sin y)+(\cos y)y'=0$$
+
+ 
+
+\begin{solution}
+    By inspection, $y\equiv k\pi$ ($k=$integer) is a constant solution.
+Separate variables to find others: $\left(\frac{\cos y}{\sin
+y}\right)y'=-\sin x$;\ $\ln (|\sin y|)=\cos x+c$.
+\end{solution}
+
+\end{problem}
+
+ \begin{problem}\label{exer:2.2.3} Find all solutions.
+ $$xy'+y^2+y=0$$
+ \end{problem}
+ 
+\begin{problem}\label{exer:2.2.4} Find all solutions.
+$$y' \ln |y|+x^2y= 0$$
+
+ 
+
+\begin{solution}
+     $y\equiv0$ is a  constant solution.
+Separate variables to find others: $\left(\frac{\ln y}{y}\right)y'=-x^2$;\ $\frac{(\ln y)^2}{2}=-\frac{x^3}{3}+c$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.5} Find all solutions.
+$$(3y^3+3y \cos y+1)y'+\frac{(2x+1)y}{1+x^2}=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.2.6} Find all solutions.
+$$x^2yy'=(y^2-1)^{3/2}$$
+
+ 
+
+\begin{solution}
+    $y\equiv1$ and $y\equiv-1$ are constant solutions.
+For others, separate variables:
+$(y^2-1)^{-3/2}yy'=\frac{1}{ x^2}$;\;
+$-(y^2-1)^{-1/2}=-\frac{1}{ x}-c=-\left(\frac{1+cx}{ x}\right)$;\;
+$(y^2-1)^{1/2}=\left(\frac{x}{1+cx}\right)$;\;
+$(y^2-1)=\left(\frac{x}{1+cx}\right)^2$;\;
+$y^2=1+\left(\frac{x}{1+cx}\right)^2$;\;
+$y=\pm\left(1+\left(\frac{x}{1+cx}\right)^2\right)^{1/2}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.7} Find all solutions. Also, plot a direction field and some integral curves on the indicated rectangular region.
+$$y'=x^2(1+y^2);   \quad \{-1\leq x\leq 1,\,-1\leq y\leq 1\}$$
+\end{problem}
+
+\begin{problem}\label{exer:2.2.8} Find all solutions. Also, plot a direction field and some integral curves on the indicated rectangular region.
+ $$ y'(1+x^2)+xy=0 ;  \quad \{-2\leq x\leq 2,\, -1\leq
+y\leq 1\}$$
+
+ 
+
+\begin{solution}
+    By inspection, $y\equiv0$ is a constant solution. Separate variables
+to find others: $\frac{y'}{ y}=-\frac{x}{1+x^2}$;\;
+$\ln|y|=-\frac{1}{2}\ln(1+x^2)+k$;\;
+ $y=\frac{c}{\sqrt{1+x^2}}$,
+which includes the constant solution $y\equiv0$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.9} Find all solutions. Also, plot a direction field and some integral curves on the indicated rectangular region.
+$$y'=(x-1)(y-1)(y-2);   \quad \{-2\leq x\leq 2,\,
+-3\leq y\leq 3\}$$
+\end{problem}
+
+ \begin{problem}\label{exer:2.2.10} Find all solutions. Also, plot a direction field and some integral curves on the indicated rectangular region.
+ $$(y-1)^2y'=2x+3;   \quad \{-2\leq x\leq 2,\, -2\leq
+y\leq 5\}$$
+
+Click below to see the answers.
+
+\begin{solution}
+    $(y-1)^2y'=2x+3$;\ $\frac{(y-1)^3}{3}=x^2+3x+c$;\;
+$(y-1)^3=3x^2+9x+c$;\;
+$y=1+\big(3x^2+9x+c)^{1/3}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.11} Solve the initial value problem.
+$$y'=\frac{x^2+3x+2}{y-2}, \quad y(1)=4$$
+\end{problem}
+
+\begin{problem}\label{exer:2.2.12} Solve the initial value problem.
+$$y'+x(y^2+y)=0, \quad y(2)=1$$
+
+ 
+
+\begin{solution}
+    $\frac{y'}{ y(y+1)}=-x$;\ $\left[\frac{1}{ y}-\frac{1}{
+y+1}\right]y'=-x$;\ $\ln\left|\frac{y}{
+y+1}\right|=-\frac{x^2}{2}+k$;\ $\frac{y}{
+y+1}=ce^{-x^2/2}$;\ $y(2)=1\Rightarrow c=\frac{e^2}{2}$;\;
+$y=(y+1)ce^{-x^2/2}$;\ $y(1-ce^{-x^2/2})=ce^{-x^2/2}$;\;
+$y=\frac{ce^{-x^2/2}}{1-ce^{-x^2}/2}$;\ setting
+$c=\frac{e^2}{2}$ yields
+ $y=\frac{e^{-(x^2-4)/2}
+}{2-e^{-(x^2-4)/2}}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.13} Solve the initial value problem and graph the solution.
+$$(3y^2+4y)y'+2x+\cos x=0, \quad y(0)=1$$
+\end{problem}
+
+\begin{problem}\label{exer:2.2.14} Solve the initial value problem and graph the solution.
+$$y'+\frac{(y+1)(y-1)(y-2)}{x+1}=0, \quad y(1)=0$$
+
+ 
+
+\begin{solution}
+    $\frac{y'}{(y+1)(y-1)(y-2)}=-\frac{1}{ x+1}$;\;
+$\left[\frac{1}{6}\frac{1}{ y+1}-\frac{1}{2}\frac{1}{
+y-1}+\frac{1}{3}\frac{1}{ y-2}\right]y'=-\frac{1}{ x+1}$;\;
+$\left[\frac{1}{ y+1}-\frac{3}{ y-1}+\frac{2}{
+y-2}\right]y'=-\frac{6}{ x+1}$;\;
+$\ln|y+1|-3\ln|y-1|+2\ln|y-2|=-6\ln|x+1|+k$;\;
+$\frac{(y+1)(y-2)^2}{(y-1)^3}=\frac{c}{(x+1)^6}$;\;
+$y(1)=0\Rightarrow c=-256$;\;
+$\frac{(y+1)(y-2)^2}{(y-1)^3}=-\frac{256}{(x+1)^6}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.15} Solve the initial value problem and graph the solution.
+$$y'+2x(y+1)=0, \quad y(0)=2$$
+\end{problem}
+
+\begin{problem}\label{exer:2.2.16} Solve the initial value problem and graph the solution.
+$$y'=2xy(1+y^2),\quad y(0)=1$$
+
+ 
+
+\begin{solution}
+    $\frac{y'}{ y(1+y^2)}=2x$;\ $\left[\frac{1}{ y}-\frac{y}{
+y^2+1}\right]y'=2x$;\ $\ln\left(\frac{|y|}{
+\sqrt{y^2+1}}\right)=x^2+k$;\ $\frac{y}{
+\sqrt{y^2+1}}=ce^{x^2}$;\ $y(0)=1\Rightarrow c=\frac{1}{\sqrt2}$;\;
+$\frac{y}{\sqrt{y^2+1}}=\frac{e^{x^2}}{\sqrt2}$;\;
+$2y^2=(y^2+1)e^{x^2}$;\ $y^2(2-e^{x^2})=e^{2x^2}$;
+$y=\frac{1}{\sqrt{2e^{-2x^2}-1}}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.17} Solve the initial value problem and find the interval of validity of the solution.
+$$y'(x^2+2)+ 4x(y^2+2y+1)=0, \quad y(1)=-1$$
+\end{problem}
+
+\begin{problem}\label{exer:2.2.18} Solve the initial value problem and find the interval of validity of the solution.
+$$y'=-2x(y^2-3y+2), \quad y(0)=3$$
+
+ 
+
+\begin{solution}
+    $\frac{y'}{(y-1)(y-2)}=-2x$;\ $\left[\frac{1}{
+y-2}-\frac{1}{ y-1}\right]y'=-2x$;\ $\ln\left|\frac{y-2}{
+y-1}\right|=-x^2+k$;\ $\frac{y-2}{ y-1}=ce^{-x^2}$;\;
+$y(0)=3\Rightarrow c=\frac{1}{2}$;\ $\frac{y-2}{
+y-1}=\frac{e^{-x^2}}{2}$;\ $y-2=\frac{e^{-x^2}}{2}(y-1)$;\;
+$y\left(1-\frac{e^{-x^2}}{2}\right)=2-\frac{e^{-x^2}}{2}$;\;
+$y=\frac{4-e^{-x^2}}{2-e^{-x^2}}$. \
+The interval of validity is $(-\infty,\infty)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.19} Solve the initial value problem and find the interval of validity of the solution.
+$$y'=\frac{2x}{1+2y},\quad y(2)=0$$ 
+\end{problem}
+
+\begin{problem}\label{exer:2.2.20} Solve the initial value problem and find the interval of validity of the solution.
+$$y'=2y-y^2,\quad y(0)=1$$ 
+
+ 
+
+\begin{solution}
+    $\frac{y'}{ y(y-2)}=-1$;\ $\frac{1}{2}\left[\frac{1}{
+y-2}-\frac{1}{ y}\right]y'=-1$;\;
+ $\left[\frac{1}{
+y-2}-\frac{1}{ y}\right]y'=-2$;\ $\ln\left|\frac{y-2}{
+y}\right|=-2x+k$;\ $\frac{y-2}{ y}=ce^{-2x}$;\;
+$y(0)=1\Rightarrow c=-1$;\ $\frac{y-2}{ y}=-e^{-2x}$;\;
+$y-2=-ye^{-2x}$;\ $y(1+e^{-2x})=2$;\;
+   $y=\frac{2}{
+1+e^{-2x}}$. The interval of validity is $(-\infty,\infty)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.21} Solve the initial value problem and find the interval of validity of the solution.
+$$x+yy'=0, \quad y(3) =-4$$
+\end{problem}
+
+\begin{problem}\label{exer:2.2.22} Solve the initial value problem and find the interval of validity of the solution.
+$$y'+x^2(y+1)(y-2)^2=0, \quad y(4)=2$$
+
+ 
+
+\begin{solution}
+    $y\equiv2$ is a constant solution of the differential equation, and
+it satisfies the initial condition. Therefore, $y\equiv2$ is a
+solution of the initial value problem. The interval of validity is
+$(-\infty,\infty)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.23} Solve the initial value problem and find the interval of validity of the solution.
+$$(x+1)(x-2)y'+y=0, \quad y(1)=-3$$
+\end{problem}
+
+\begin{problem}\label{exer:2.2.24} Solve $y'=\frac{(1+y^2)}{(1+x^2)}$ explicitly.
+\begin{hint}Use the identity
+$\tan(A+B)=\frac{\tan A+\tan B}{1-\tan A\tan B}$.
+\end{hint}
+
+ 
+
+\begin{solution}
+    $\frac{y'}{1+y^2}=\frac{1}{1+x^2}$;\ $\tan^{-1}y=
+\tan^{-1}x+k$;\ $y=\tan(\tan^{-1}x+k)$. Now use
+the identity $\tan(A+B)=\frac{\tan A+\tan B}{1-\tan A\tan B}$ with
+$A=\tan^{-1}x$ and $B=\tan^{-1}c$ to rewrite $y$ as
+$y=\frac{x+c}{1-cx}$, where $c=\tan k$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.25} Solve $y'\sqrt{1-x^2}+\sqrt{1-y^2}=0$ explicitly.
+\begin{hint}Use the identity
+$\sin(A-B)=\sin A\cos B-\cos A\sin B$.
+\end{hint}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.26}
+Solve $y'=\frac{\cos x}{\sin y},\quad y (\pi)=\frac{\pi}{2}$
+explicitly. 
+\begin{hint}Use the identity $\cos(x+\pi/2)=-\sin x$ and the
+periodicity of the cosine.
+\end{hint}
+
+ 
+
+\begin{solution}
+    $(\sin y)y'=\cos x$;\ $-\cos
+y=\sin x+c$;\  $y(\pi)=\frac{\pi}{2}\Rightarrow
+c=0$, so $$\text{(A)}\quad  \cos y=-\sin
+x$$ To obtain $y$ explicity we  note that $-\sin x=\cos(x+\pi/2)$, so
+(A) can be rewritten as  $\cos y=\cos(x+\pi/2)$. This equation
+holds if an only if one of the following conditions holds for some
+integer $k$:
+$$
+\text{(B)}\quad y=x+\frac{\pi}{2}+2k\pi;\quad
+\text{(C)}\quad
+y=-x-\frac{\pi}{2}+2k\pi.
+$$
+Among these choices the only way to satisfy the initial condition
+is to let $k=1$ in (C), so $y=-x+\frac{3\pi}{2}.$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.27}
+Solve the initial value problem
+$$
+y'=ay-by^2,\quad y(0)=y_0.
+$$
+Discuss the behavior  of the solution if
+\begin{enumerate}
+    \item $y_0\geq 0$;
+    \item $y_0<0$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.28}
+ The population $P=P(t)$ of a  species satisfies
+the logistic equation
+$$
+P'=aP(1-\alpha P)
+$$
+ and  $P(0)=P_0>0$.  Find $P$  for $t>0$, and  find
+$\lim_{t\to\infty}P(t)$.
+
+ 
+
+\begin{solution}
+    Rewrite the equation as $P'=-a\alpha P(P-1/\alpha)$.
+By inspection, $P\equiv0$ and $P\equiv1/\alpha$ are constant
+solutions.
+Separate variables to find others: $\frac{P'}{
+P(P-1/\alpha)}=-a\alpha$;\;
+ $\left[\frac{1}{ P-1/\alpha}-\frac{1}{ P}\right]P'=-a
+$;\ $\ln\left|\frac{P-1/\alpha}{ P}\right|=-at+k$;\;
+(A) $\frac{P-1/\alpha}{
+P}=ce^{-\alpha t}$; $P(1-ce^{-\alpha t})=1/\alpha$;\;
+(B) $P=\frac{1}{\alpha(1-ce^{-\alpha t})}$. From (A),
+ $P(0)=P_0\Rightarrow c=\frac{P_0-1/\alpha}{ P_0}$.
+Substituting this into (B) yields
+$P=\frac{P_0}{\alpha
+P_0+(1-\alpha P_0)e^{-at}}$. From this
+$\lim_{t\to\infty}P(t)=1/\alpha$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.29}
+An epidemic spreads through a population at a rate
+proportional to the product of the number of people already infected and the number of people susceptible, but not yet infected. Therefore, if $S$ denotes the total population of susceptible people and $I=I(t)$ denotes the number of infected people at time $t$, then
+$$
+I'=rI(S-I),
+$$
+where $r$ is a positive constant. Assuming that $I(0)=I_0$,
+find $I(t)$ for $t>0$, and show that
+$\lim_{t\to\infty}I(t)=S$.
+\end{problem}
+
+\begin{problem}\label{exer:2.2.30}
+The result of Exercise~\ref{exer:2.2.29} is discouraging: if any susceptible member of the group is initially infected, then in the long run all susceptible members are infected!
+ On a more hopeful note, suppose   the disease spreads
+according to the model of Exercise~\ref{exer:2.2.29}, but there's a
+medication that cures the infected population at a rate proportional
+to the number of infected individuals. Now the equation for the number
+of infected individuals becomes
+\begin{equation}\label{eqA:2.2.30}
+    I'=rI(S-I)-qI
+\end{equation}
+
+where $q$ is a positive constant.
+\begin{enumerate}
+\item\label{partA:2.2.30} % (a)
+Choose  $r$ and $S$ positive.
+By plotting  direction fields and solutions of (\ref{eqA:2.2.30}) on
+suitable rectangular grids
+$$
+R=\{0\leq t \leq T,\ 0\leq I \leq d\}
+$$
+in the $(t,I)$-plane, verify that if $I$ is any solution of
+(\ref{eqA:2.2.30}) such that $I(0)>0$, then $\lim_{t\to\infty}I(t)=S-q/r$
+if $q<rS$ and $\lim_{t\to\infty}I(t)=0$ if $q\geq rS$.
+
+\item % (b)
+To verify the experimental results of \ref{partA:2.2.30}, use separation of
+variables to solve (\ref{eqA:2.2.30}) with initial condition $I(0)=I_0>0$, and find
+$\lim_{t\to\infty}I(t)$. 
+\begin{hint}There are three cases to consider:
+\begin{enumerate}
+    \item $q<rS$;
+    \item $q>rS$; 
+    \item $q=rS$.
+\end{enumerate}     
+\end{hint}
+
+ 
+
+\begin{solution}
+    If $q=rS$ the equation for $I$ reduces to $I'=-rI^2$, so
+$\frac{I'}{ I^2}=-r$; $-\frac{1}{ I}=-rt-\frac{1}{ I_0}$;
+so $I=\frac{I_0}{1+rI_0t}$ and $\lim_{t\to\infty}I(t)=0$. If $q\ne
+rS$, then rewrite the equation for $I$ as $I'=-rI(I-\alpha)$ with
+$\alpha=S-\frac{q}{ r}$. Separating variables yields
+$\frac{I'}{ I(I-\alpha)}=-r$;\;
+ $\left[\frac{1}{ I-\alpha}-\frac{1}{ I}\right]I'=-r\alpha
+$;\ $\ln\left|\frac{I-\alpha}{ I}\right|=-r\alpha t+k$;\;
+(A) $\frac{I-\alpha}{
+I}=ce^{-r\alpha t}$; $I(1-ce^{-r\alpha t})=\alpha$;\;
+(B) $I=\frac{\alpha}{ 1-ce^{-r\alpha t}}$. From (A),
+ $I(0)=I_0\Rightarrow c=\frac{I_0-\alpha}{ I_0}$.
+Substituting this into (B) yields
+$I=\frac{\alpha I_0}{ I_0+(\alpha-I_0)e^{-r\alpha t}}$.
+If $q<rS$, then $\alpha>0$ and
+$\lim_{t\to\infty}I(t)=\alpha=S-\frac{q}{ r}$.
+If $q>rS$, then $\alpha<0$ and $\lim_{t\to\infty}I(t)=0$.
+
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.31}
+Consider the differential equation
+\begin{equation}\label{eqA:2.2.31}
+    y'=ay-by^2-q
+\end{equation}
+
+where $a$, $b$ are positive constants, and $q$ is an arbitrary
+constant. Suppose  $y$ denotes a solution of this equation
+that satisfies the initial condition $y(0)=y_0$.
+
+\begin{enumerate}
+\item % (a)
+Choose  $a$ and $b$ positive and  $q<a^2/4b$.
+By plotting  direction fields and solutions of (\ref{eqA:2.2.31}) on
+suitable rectangular grids
+\begin{equation}\label{eqB:2.2.31}
+    R=\{0\leq t \leq T,\ c\leq y \leq d\}
+\end{equation}
+in the $(t,y)$-plane,  discover that there are numbers $y_1$ and
+$y_2$ with $y_1<y_2$ such that if $y_0>y_1$ then
+$\lim_{t\to\infty}y(t)=y_2$, and if $y_0<y_1$ then $y(t)=-\infty$
+for some finite value of~$t$. (What happens if $y_0=y_1$?)
+
+\item % (b)
+Choose $a$ and $b$ positive and $q=a^2/4b$. By plotting direction
+fields
+and solutions of (\ref{eqA:2.2.31}) on suitable rectangular grids of the form (\ref{eqB:2.2.31}),
+discover that there's a number $y_1$ such that if $y_0\geq y_1$ then
+$\lim_{t\to\infty}y(t)=y_1$, while if $y_0<y_1$ then  $y(t)=-\infty$
+for some finite value of $t$.
+
+\item % (c)
+Choose positive $a$, $b$ and $q>a^2/4b$. By plotting direction fields
+and solutions of (\ref{eqA:2.2.31}) on suitable rectangular grids of the form (\ref{eqB:2.2.31}),
+discover that
+no matter what $y_0$ is, $y(t)=-\infty$ for some finite value of $t$.
+
+\item % (d)
+Verify your results experiments analytically.
+Start by separating variables in (\ref{eqA:2.2.31})  to obtain
+$$
+\frac{y'}{ay-by^2-q}=1.
+$$
+To decide what to do next you'll have to use the
+quadratic formula. This should lead you to see why there are
+three cases.  Take it from there!
+
+Because of its role in the transition between these
+three cases,  $q_0=a^2/4b$ is called a \emph{bifurcation value}
+of $q$. In general, if $q$ is a parameter in any differential
+equation,  $q_0$ is said to be a bifurcation value of
+$q$ if the nature of the solutions of the equation with $q<q_0$
+is qualitatively different from the nature of the solutions
+with $q>q_0$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:2.2.32}
+By plotting direction fields and solutions of
+$$
+y'=qy-y^3,
+$$
+convince yourself that $q_0=0$ is a bifurcation value of $q$
+for this equation. Explain what makes you draw this conclusion.
+
+\end{problem}
+
+\begin{problem}\label{exer:2.2.33}
+Suppose a disease spreads according to the model of
+Exercise~\ref{exer:2.2.29}, but
+there's a medication that cures the infected population at a constant
+rate of $q$ individuals per unit  time, where $q>0$.
+Then
+the equation for the number of infected individuals becomes
+$$
+I'=rI(S-I)-q.
+$$
+Assuming that $I(0)=I_0>0$, use the results of
+Exercise~\ref{exer:2.2.31} to describe what happens as $t\to\infty$.
+\end{problem}
+
+\begin{problem}\label{exer:2.2.34}
+Assuming that $p \not\equiv 0$, state conditions under which the linear
+equation
+$$
+y'+p(x)y=f(x)
+$$
+is separable.  If the equation satisfies these conditions, solve it by
+separation of variables and by the method developed in
+the previous section.
+
+Click below to see the solution.
+
+\begin{solution}
+    The given equation is separable if $f=ap$, where $a$ is a constant.
+In this case the equation is
+$$
+\text{(A)}\quad y'+p(x)y=ap(x).
+$$
+Let $P$ be an antiderivative  of $p$; that is, $P'=p$.
+
+\textit{Solution by Separation of Variables.} $y'=-p(x)(y-a)$;\;
+$\frac{y'}{ y-a}=-p(x)$;\ $\ln|y-a|=-P(x)+k$;\;
+$y-a=ce^{-P(x)}$;\ $y=a+ce^{-P(x)}$.
+
+\textit{Solution by Variation of Parameters.} $y_1=e^{-P(x)}$
+is a solution of the complementary equation, so solutions of
+(A) are of the form $y=ue^{-P(x)}$ where
+$u'e^{-P(x)}=ap(x)$. Hence, $u'=ap(x)e^{P(x)}$;\;
+$u=ae^{P(x)}+c$;\ $y=a+ce^{-P(x)}$.
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:2.2.35} Solve the equation using variation of parameters followed by separation of variables.
+ $$y'+y=\frac{2xe^{-x}}{1+ye^x}$$
+ \end{problem}
+
+\begin{problem}\label{exer:2.2.36} Solve the equation using variation of parameters followed by separation of variables.
+$$xy'-2y=\frac{x^6}{y+x^2}$$
+
+ 
+
+\begin{solution}
+    Rewrite the given equation as
+(A) $y'-\frac{2}{ x}y=\frac{x^5}{ y+x^2}$.
+ $y_1=x^2$ is a solution of $y'-\frac{2}{ x}y=0$.
+Look for solutions of (A)  of the form $y=ux^2$.
+Then $u'x^2=\frac{x^5}{(u+1)x^2}=\frac{x^3}{ u+1}$;\;
+$u'=\frac{x}{ u+1}$;\;
+$(u+1)u'=x$;\;
+$\frac{(1+u)^2}{2}=\frac{x^2}{2}+\frac{c}{2}$;\;
+$u=-1\pm\sqrt{x^2+c}$;\ $y=x^2\left(-1\pm\sqrt{x^2+c}\right)$.
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:2.2.37} Solve the equation using variation of parameters followed by separation of variables.
+ $$y'-y=\frac{(x+1)e^{4x}}{(y+e^x)^2}$$
+\end{problem}
+ 
+\begin{problem}\label{exer:2.2.38} Solve the equation using variation of parameters followed by separation of variables.
+$$y'-2y=\frac{xe^{2x}}{1-ye^{-2x}}$$
+
+ 
+
+\begin{solution}
+    $y_1=e^{2x}$ is a solution of $y'-2y=0$.
+Look for solutions of the nonlinear equation of the form $y=ue^{2x}$.
+Then $u'e^{2x}=\frac{xe^{2x}}{1-u}$;\ $u'=\frac{x}{1-u}$;\;
+$(1-u)u'=x$;\;
+$-\frac{(1-u)^2}{2}=\frac{1}{2}(x^2-c)$;\;
+$u=1\pm\sqrt{c-x^2}$;\;
+$y=e^{2x}\left(1\pm\sqrt{c-x^2}\right)$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:2.2.39}
+Use variation of parameters to show that the solutions of the
+following equations are of the form $y=uy_1$, where $u$ satisfies a
+separable equation $u'=g(x)p(u)$. Find $y_1$ and $g$ for each
+equation.
+
+\begin{enumerate}
+    \item 
+$xy'+y=h(x)p(xy)$
+    \item 
+    $xy'-y=h(x) p\left(\frac{y}{x}\right)$
+    \item 
+    $y'+y=h(x) p(e^xy)$
+    \item 
+    $xy'+ry=h(x) p(x^ry)$
+    \item 
+    $y'+\frac{v'(x)}{v(x)}y= h(x)p\left(v(x)y\right)$
+\end{enumerate}
+\end{problem}
+
+\end{document}
