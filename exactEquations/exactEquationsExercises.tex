@@ -1,0 +1,860 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+
+
+
+\begin{problem}\label{exer:2.5.1} Determine which equations are exact and solve them.
+$$6x^2y^2\,dx+4x^3y\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.5.2} Determine which equations are exact and solve them.
+$$(3y\cos x+4xe^x+2x^2e^x)\,dx+(3\sin x+3)\,dy=0$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $M(x,y)=3y\cos x+4xe^x+2x^2e^x$;\;
+$N(x,y)=3\sin x+3$;\;
+$M_y(x,y)=3\cos x=N_x(x,y)$,
+so the  equation is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=3y\cos x+4xe^x+2x^2e^x$ and
+(B) $F_y(x,y)=3\sin x+3$.
+Integrating (B) with respect to $y$ yields
+(C) $F(x,y)=3y\sin x+3y+\psi(x)$.
+Differentiating (C) with respect to $x$  yields
+(D) $F_x(x,y)=3y\cos x+\psi'(x)$.
+Comparing (D) with (A)  shows that
+(E) $\psi'(x)=4xe^x+2x^2e^x$.
+Integration by parts yields
+$\int xe^x\,dx=xe^x-e^x$ and
+$\int x^2e^x\,dx=x^2e^x-2xe^x+2e^x$.
+Substituting from the last two equations into (E) yields
+$\psi(x)=2x^2e^x$.
+Substituting this into (C) yields
+$F(x,y)=3y\sin x+3y+2x^2e^x$.
+Therefore, $3y\sin x+3y+2x^2e^x=c$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.3} Determine which equations are exact and solve them.
+$$14x^2y^3\,dx+21 x^2y^2\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.5.4} Determine which equations are exact and solve them.
+$$(2x-2y^2)\,dx+(12y^2-4xy)\,dy=0$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $M(x,y)=2x-2y^2$;\;
+$N(x,y)=12y^2-4xy$;\;
+$M_y(x,y)=-4y=N_x(x,y)$,
+so the  equation is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=2x-2y^2$ and
+(B) $F_y(x,y)=12y^2-4xy$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,y)=x^2-2xy^2+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $F_y(x,y)=-4xy+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=12y^2$, so we take
+$\phi(y)=4y^3$.
+Substituting this into (C) yields
+$F(x,y)=x^2-2xy^2+4y^3$.
+Therefore, $x^2-2xy^2+4y^3=c$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.5} Determine which equations are exact and solve them.
+$$(x+y)^2\,dx+(x+y)^2\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.5.6} Determine which equations are exact and solve them.
+$$(4x+7y)\,dx+(3x+4y)\,dy=0$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $M(x,y)=4x+7y$;\;
+$N(x,y)=3x+4y$;\;
+$M_y(x,y)=7\neq 3=N_x(x,y)$,
+so the  equation is not exact.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.7} Determine which equations are exact and solve them.
+$$(-2y^2\sin x+3y^3-2x)\,dx+(4y\cos x+9xy^2)\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.5.8} Determine which equations are exact and solve them.
+$$(2x+y)\,dx+(2y+2x)\,dy=0$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $M(x,y)=2x+y$;\;
+$N(x,y)=2y+2x$;\;
+$M_y(x,y)=1\neq 2=N_x(x,y)$,
+so the  equation is not exact.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.9} Determine which equations are exact and solve them.
+$$(3x^2+2xy+4y^2)\,dx+(x^2+8xy+18y)\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.5.10} Determine which equations are exact and solve them.
+$$(2x^2+8xy+y^2)\,dx+(2x^2+xy^3/3)\,dy=0$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $M(x,y)=2x^2+8xy+y^2$;\;
+$N(x,y)=2x^2+\frac{xy^3}{3}$;\;
+$M_y(x,y)=8x+2y\neq 4x+\frac{y^3}{3}=N_x(x,y)$,
+so the  equation is not exact.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.11} Determine which equations are exact and solve them.
+$$\left(\frac{1}{x}+2x\right)\,dx+\left(\frac{1}{y}+2y\right)\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.5.12} Determine which equations are exact and solve them.
+$$(y\sin xy+xy^2\cos xy)\,dx+(x\sin xy+xy^2\cos xy)\,dy=0$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $M(x,y)=y\sin xy+xy^2\cos xy$;\;
+$N(x,y)=x\sin xy+xy^2\cos xy$;\;
+$M_y(x,y)=3xy\cos xy+(1-x^2y^2)\sin xy\neq (xy+y^2)\cos
+xy+(1-xy^3)\sin xy=N_x(x,y)$, so the equation is not exact.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.13} Determine which equations are exact and solve them.
+$$\frac{x\,dx}{(x^2+y^2)^{3/2}}+\frac{y\,dy}{(x^2+y^2)^{3/2}}=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.5.14} Determine which equations are exact and solve them.
+$$\left(e^x(x^2y^2+2xy^2)+6x\right)\,dx+(2x^2ye^x+2)\,dy=0$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $M(x,y)=e^x(x^2y^2+2xy^2)+6x$;\;
+$N(x,y)=2x^2ye^x+2$;\;
+$M_y(x,y)=2xye^x(x+2)=N_x(x,y)$,
+so the  equation is  exact.
+We must find $F$ such that
+(A) $F_x(x,y)=e^x(x^2y^2+2xy^2)+6x$ and
+(B) $F_y(x,y)=2x^2ye^x+2$.
+Integrating (B) with respect to $y$ yields
+(C) $F(x,y)=x^2y^2e^x+2y+\psi(x)$.
+Differentiating (C) with respect to $x$  yields
+(D) $F_x(x,y)=e^x(x^2y^2+2xy^2)+\psi'(x)$.
+Comparing (D) with (A)  shows that
+$\psi'(x)=6x$, so we take
+$\psi(x)=3x^2$.
+Substituting this into (C) yields
+$F(x,y)=x^2y^2e^x+2y+3x^2$.
+Therefore, $x^2y^2e^x+2y+3x^2=c$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.15} Determine which equations are exact and solve them.
+$$\left(x^2e^{x^2+y}(2x^2+3)+4x\right)\,dx+(x^3e^{x^2+y}-12y^2)\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.5.16} Determine which equations are exact and solve them.
+$$\left(e^{xy}(x^4y+4x^3)+3y\right)\,dx+(x^5e^{xy}+3x)\,dy=0$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $M(x,y)=e^{xy}(x^4y+4x^3)+3y$;\;
+$N(x,y)=x^5e^{xy}+3x$;\;
+$M_y(x,y)=x^4e^{xy}(xy+5)+3=N_x(x,y)$,
+so the  equation is  exact.
+We must find $F$ such that
+(A) $F_x(x,y)=e^{xy}(x^4y+4x^3)+3y$ and
+(B) $F_y(x,y)=x^5e^{xy}+3x$.
+Integrating (B) with respect to $y$ yields
+(C) $F(x,y)=x^4e^{xy}+3xy+\psi(x)$.
+Differentiating (C) with respect to $x$  yields
+(D) $F_x(x,y)=e^{xy}(x^4y+4x^3)+3y+\psi'(x)$.
+Comparing (D) with (A)  shows that
+$\psi'(x)=0$, so we take
+$\psi(x)=0$.
+Substituting this into (C) yields
+$F(x,y)=x^4e^{xy}+3xy$.
+Therefore,  $x^4e^{xy}+3xy=c$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.17} Determine which equations are exact and solve them.
+$$(3x^2\cos xy-x^3y\sin xy+4x)\,dx+(8y-x^4\sin xy)\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.5.18} Solve the initial value problem.
+$$(4x^3y^2-6x^2y-2x-3)\,dx+(2x^4y-2x^3)\,dy=0,\quad y(1)=3$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $M(x,y)=4x^3y^2-6x^2y-2x-3$;\;
+$N(x,y)=2x^4y-2x^3$;\;
+$M_y(x,y)=8x^3y-6x^2=N_x(x,y)$,
+so the  equation is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=4x^3y^2-6x^2y-2x-3$ and
+(B) $F_y(x,y)=2x^4y-2x^3$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,y)=x^4y^2-2x^3y-x^2-3x+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $F_y(x,y)=2x^4y-2x^3+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=0$, so we take
+$\phi(y)=0$.
+Substituting this into (C) yields
+$F(x,y)=x^4y^2-2x^3y-x^2-3x$.
+Therefore, $x^4y^2-2x^3y-x^2-3x=c$.
+Since $y(1)=3\Rightarrow c=-1$,
+$x^4y^2-2x^3y-x^2-3x+1=0$ is an implicit solution of the initial
+value problem. Solving this for $y$ by means of the quadratic formula
+yields $y=\frac{x+\sqrt{2x^2+3x-1}}{x^2}$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.19} Solve the initial value problem.
+$$(-4y\cos x+4\sin x\cos x+\sec^2x)\,dx+
+(4y-4\sin x)\,dy=0,\quad y(\pi/4)=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.5.20} Solve the initial value problem.
+$$(y^3-1)e^x\,dx+3y^2(e^x+1)\,dy=0,\quad y(0)=0$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $M(x,y)=(y^3-1)e^x$;\;
+$N(x,y)=3y^2(e^x+1)$;\;
+$M_y(x,y)=3y^2e^x=N_x(x,y)$,
+so the  equation is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=(y^3-1)e^x$ and
+(B) $F_y(x,y)=3y^2(e^x+1)$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,y)=(y^3-1)e^x+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $F_y(x,y)=3y^2e^x+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=3y^2$, so we take
+$\phi(y)=y^3$.
+Substituting this into (C) yields
+$F(x,y)=(y^3-1)e^x+y^3$.
+Therefore, $(y^3-1)e^x+y^3=c$.
+Since $y(0)=0\Rightarrow c=-1$,
+$(y^3-1)e^x+y^3=-1$ is an implicit solution of  the initial value
+problem. Therefore, $y^3(e^x+1)=e^x-1$, so
+$y=\left(\frac{e^x-1}{e^x+1}\right)^{1/3}$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.21} Solve the initial value problem.
+$$(\sin x-y\sin x-2\cos x)\,dx+\cos x\,dy=0,\quad y(0)=1$$
+\end{problem}
+
+\begin{problem}\label{exer:2.5.22} Solve the initial value problem.
+$$(2x-1)(y-1)\,dx+(x+2)(x-3)\,dy=0,\quad y(1)=-1$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $M(x,y)=(2x-1)(y-1)$;\;
+$N(x,y)=(x+2)(x-3)$;\;
+$M_y(x,y)=2x-1=N_x(x,y)$,
+so the  equation is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=(2x-1)(y-1)$ and
+(B) $F_y(x,y)=(x+2)(x-3)$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,y)=(x^2-x)(y-1)+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $F_y(x,y)=x^2-x+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=-6$, so we take
+$\phi(y)=-6y$.
+Substituting this into (C) yields
+$F(x,y)=(x^2-x)(y-1)-6y$.
+Therefore, $(x^2-x)(y-1)-6y=c$.
+Since $y(1)=-1\Rightarrow c=6$,
+$(x^2-x)(y-1)-6y=6$ is an implicit solution of  the initial value
+problem. Therefore, $(x^2-x-6)y=x^2-x+6$, so
+$y=\frac{x^2-x+6}{(x-3)(x+2)}$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.23}
+Solve the exact equation
+$$
+(7x+4y)\,dx+(4x+3y)\,dy=0.
+$$
+Plot a direction field and some integral curves for this equation on
+the rectangle
+$$
+\{-1\leq x\leq 1,-1\leq y\leq 1\}.
+$$
+\end{problem}
+
+\begin{problem}\label{exer:2.5.24}
+Solve the exact equation
+$$
+e^x(x^4y^2+4x^3y^2+1)\,dx+(2x^4ye^x+2y)\,dy=0.
+$$
+Plot a direction field and some integral curves for this equation on
+the rectangle
+$$
+\{-2\leq x\leq 2,-1\leq y\leq 1\}.
+$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $M(x,y)=e^x(x^4y^2+4x^3y^2+1)$;\;
+$N(x,y)=2x^4ye^x+2y$;\;
+$M_y(x,y)=2x^3ye^x(x+4)=N_x(x,y)$,
+so the  equation is  exact.
+We must find $F$ such that
+(A) $F_x(x,y)=e^x(x^4y^2+4x^3y^2+1)$ and
+(B) $F_y(x,y)=2x^4ye^x+2y$.
+Integrating (B) with respect to $y$ yields
+(C) $F(x,y)=x^4y^2e^x+y^2+\psi(x)$.
+Differentiating (C) with respect to $x$  yields
+(D) $F_x(x,y)=e^xy^2(x^4+4x^3)+\psi'(x)$.
+Comparing (D) with (A)  shows that
+$\psi'(x)=e^x$, so we take
+$\psi(x)=e^x$.
+Substituting this into (C) yields
+$F(x,y)=(x^4y^2+1)e^x+y^2$.
+Therefore, $(x^4y^2+1)e^x+y^2=c$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.25}
+Plot a direction field and some integral curves for the exact equation
+$$
+(x^3y^4+x)\,dx+(x^4y^3+y)\,dy=0
+$$
+on the rectangle $\{-1\leq x\leq 1,-1\leq y\leq 1\}$. (See
+Problem~\ref{exer:2.5.37} (a)).
+\end{problem}
+
+\begin{problem}\label{exer:2.5.26}
+Plot a direction field and some integral curves for the exact equation
+$$
+(3x^2+2y)\,dx+(2y+2x)\,dy=0
+$$
+on the rectangle $\{-2\leq x\leq 2,-2\leq y\leq 2\}$. (See
+Problem~\ref{exer:2.5.37}(b)).
+\end{problem}
+
+\begin{problem}\label{exer:2.5.27}
+\begin{enumerate}
+\item % (a)
+Solve the exact equation
+\begin{equation}\label{eqA:2.5.27}
+(x^3y^4+2x)\,dx+(x^4y^3+3y)\,dy=0
+\end{equation}
+
+implicitly.
+\item % (b)
+For what choices of $(x_0,y_0)$ does
+Theorem~\ref{thmtype:2.3.1} imply that the initial value problem
+\begin{equation}\label{eqB:2.5.27}
+(x^3y^4+2x)\,dx+(x^4y^3+3y)\,dy=0,\quad y(x_0)=y_0,
+\end{equation}
+has a unique solution on an open interval $(a,b)$  that contains $x_0$?
+\item % (c)
+Plot a direction field and some integral curves for (\ref{eqA:2.5.27})
+on a rectangular region centered at the origin. What is the
+ interval of validity of the solution of (\ref{eqB:2.5.27})?
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.28}
+\begin{enumerate}
+\item % (a)
+Solve the exact equation
+\begin{equation}\label{eqA:2.5.28}
+(x^2+y^2)\,dx+2xy\,dy=0
+\end{equation}
+implicitly.
+\item % (b)
+For what choices of $(x_0,y_0)$ does
+Theorem~\ref{thmtype:2.3.1} imply that the initial value problem
+\begin{equation}\label{eqB:2.5.28}
+(x^2+y^2)\,dx+2xy\,dy=0,\quad y(x_0)=y_0,
+\end{equation}
+has a unique solution $y=y(x)$ on some open interval $(a,b)$
+that contains $x_0$?
+\item % (c)
+Plot a direction field and some integral curves for (\ref{eqA:2.5.28}). From
+the plot determine,
+the  interval $(a,b)$ of (b), the monotonicity
+properties (if any) of the solution of (\ref{eqB:2.5.28}), and $\lim_{x\to a+}y(x)$ and $\lim_{x\to b-}y(x)$. 
+\begin{hint}Your answers will
+depend upon which quadrant contains $(x_0,y_0)$.
+\end{hint}
+\end{enumerate}
+
+Click below to see the answer.
+
+\begin{expandable}
+    $M(x,y)=x^2+y^2$;\;
+$N(x,y)=2xy$;\;
+$M_y(x,y)=2y=N_x(x,y)$,
+so the  equation is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=x^2+y^2$ and
+(B) $F_y(x,y)=2xy$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,y)=\frac{x^3}{3}+xy^2+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $F_y(x,y)=2xy+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=0$, so we take
+$\phi(y)=0$.
+Substituting this into (C) yields
+$F(x,y)=\frac{x^3}{3}+xy^2$.
+Therefore, $\frac{x^3}{3}+xy^2=c$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.29}
+Find all functions $M$ such that the equation is exact.
+\begin{enumerate}
+\item %(a)
+$M(x,y)\,dx+(x^2-y^2)\,dy=0$
+
+\item %(b)
+$M(x,y)\,dx+2xy\sin x\cos y\,dy=0$
+
+\item %(c)
+$M(x,y)\,dx+(e^x-e^y\sin x)\,dy=0$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.30}
+Find all functions $N$ such that the  equation is exact.
+\begin{enumerate}
+\item %(a)
+$(x^3y^2+2xy+3y^2)\,dx+N(x,y)\,dy=0$
+
+Click below to see the answer.
+
+\begin{expandable}
+    Exactness requires that
+$N_x(x,y)=M_y(x,y)=\frac{\partial}{\partial
+y}(x^3y^2+2xy+3y^2)=2x^3y+2x+6y$.
+ Hence, $N(x,y)=\frac{x^4y}{4}+x^2+6xy+g(x)$,
+where $g$ is  differentiable.
+\end{expandable}
+
+\item %(b)
+$(\ln xy+2y\sin x)\,dx+N(x,y)\,dy=0$
+
+Click below to see the answer.
+
+\begin{expandable}
+    Exactness requires that
+$N_x(x,y)=M_y(x,y)=\frac{\partial}{\partial y}(\ln xy+2y\sin
+x)=\frac{1}{y}+2\sin x$.
+ Hence, $N(x,y)=\frac{x}{y}-2\cos x+g(x)$,
+where $g$ is  differentiable.
+\end{expandable}
+\item %(c)
+$(x\sin x+y\sin y)\,dx+N(x,y)\,dy=0$
+
+Click below to see the answer.
+
+\begin{expandable}
+    Exactness requires that
+$N_x(x,y)=M_y(x,y)=\frac{\partial}{\partial y}(x\sin x+y\sin
+y)=y\cos y+\sin y$.
+ Hence, $N(x,y)=x(y\cos y+\sin y)+g(x)$,
+where $g$ is  differentiable.
+\end{expandable}
+\end{enumerate}
+
+
+\end{problem}
+
+\begin{problem}\label{exer:2.5.31}
+Suppose $M,N,$ and their partial derivatives are continuous on
+an open rectangle $R$, and $G$ is an antiderivative of $M$ with respect to $x$; that is,
+$$
+\frac{\partial G}{\partial x}=M.
+$$
+Show that if $M_y\ne N_x$ in $R$ then the function
+$$
+ N-\frac{\partial  G}{\partial y}
+$$
+is not independent of $x$.
+\end{problem}
+
+\begin{problem}\label{exer:2.5.32}
+Prove:  If the equations $M_1\,dx+N_1\,dy=0$ and $M_2\,
+dx+N_2\,dy=0$ are exact on an open rectangle $R$,  so is
+the equation $$(M_1+M_2)\,dx+(N_1+N_2)\,dy=0.$$
+
+Click below to see the answer.
+
+\begin{expandable}
+The assumptions imply that
+$\frac{\partial M_1}{\partial y}=\frac{\partial N_1}{\partial x}$\
+and\ $\frac{\partial M_2}{\partial y}=\frac{\partial N_2}{\partial
+x}$. Therefore, $\frac{\partial }{\partial
+y}(M_1+M_2)=\frac{\partial M_1}{\partial y}+\frac{\partial
+M_2}{\partial y}=\frac{\partial N_1}{\partial x}+\frac{\partial
+N_2}{\partial x}=\frac{\partial }{\partial x}(N_1+N_2)$,
+which implies that $(M_1+M_2)\,dx+(N_1+N_2)\,dy=0$ is exact on $R$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.33}
+Find conditions on the constants $A$, $B$, $C$, and $D$ such that
+the equation
+$$
+(Ax+By)\,dx+(Cx+Dy)\,dy=0
+$$
+is exact.
+\end{problem}
+
+\begin{problem}\label{exer:2.5.34}
+Find conditions on the constants $A$, $B$, $C$, $D$, $E$, and
+$F$ such that the equation
+$$
+(Ax^2+Bxy+Cy^2)\,dx+(Dx^2+Exy+Fy^2)\,dy=0
+$$
+is exact.
+
+Click below to see the answer.
+
+\begin{expandable}
+    Here $M(x,y)=Ax^2+Bxy+Cy^2$ and
+$N(x,y)=Dx^2+Exy+Fy^2$. Since $M_y=Bx+2Cy$ and $N_x=2Dx+Ey$, the
+equation is exact if and only if $B=2D$ and $E=2C$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.35}
+Suppose $M$ and $N$ are continuous and have continuous partial
+derivatives $M_y$ and $N_x$ that satisfy the exactness condition
+$M_y=N_x$ on an open rectangle $R$.
+  Show that if $(x,y)$ is in $R$ and
+$$
+F(x,y)=\int^x_{x_0}M(s,y_0)\,ds+\int^y_{y_0}N(x,t)\,dt,
+$$
+then $F_x=M$ and $F_y=N$.
+\end{problem}
+
+\begin{problem}\label{exer:2.5.36}
+Under the assumptions of Problem~\ref{exer:2.5.35}, show that
+$$
+F(x,y)=\int^y_{y_0}N(x_0,s)\,ds+\int^x_{x_0}M(t,y)\,dt.
+$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    Differentiating (A)
+$F(x,y)=\int^y_{y_0}N(x_0,s)\,ds+\int^x_{x_0}M(t,y)\,dt$
+with respect to $x$ yields $F_x(x,y)=M(x,y)$, since the first
+integral
+in (A) is independent of $x$ and $M(t,y)$ is a continuous function
+of
+$t$ for each fixed $y$. Differentiating  (A)  with respect to $y$
+and using the assumption that $M_y=N_x$ yields
+$F_y(x,y)=N(x_0,y)+\int^x_{x_0}\frac{\partial M}{\partial y}(t,y)\,dt
+=N(x_0,y)+\int^x_{x_0}\frac{\partial N}{\partial x} (t,y)\,dt
+=N(x_0,y)+N(x,y)-N(x_0,y)=N(x,y)$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.37}
+Use the method suggested by Problem~\ref{exer:2.5.35}, with
+$(x_0,y_0)=(0,0)$, to solve the these exact equations:
+\begin{enumerate}
+\item %(a)
+$(x^3y^4+x)\,dx+(x^4y^3+y)\,dy=0$
+\item %(b)
+$(x^2+y^2)\,dx+2xy\,dy=0$
+\item %(c)
+$(3x^2+2y)\,dx+(2y+2x)\,dy=0$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.38}
+Solve the initial value problem
+$$
+y'+\frac{2}{x}y=-\frac{2xy}{x^2+2x^2y+1},\quad y(1)=-2.
+$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $y_1=\frac{1}{ x^2}$ is a solution of $y'+\frac{2}{ x}y=0$.
+Let $y=\frac{u}{ x^2}$; then
+$$
+\frac{u'}{ x^2}=-\frac{2x(u/x^2)}{
+\left(x^2+2x^2(u/x^2)+1\right)}=
+-\frac{2xu}{ x^2(x^2+2u+1)},
+$$
+so  $u'=-\frac{2xu}{ x^2+2u+1}$, which can be rewritten as (A)
+$2xu\,dx+(x^2+2u+1)\,du=0$. Since $\frac{\partial }{\partial
+u}(2xu)=\frac{\partial }{\partial x}(x^2+2u+1)=2x$, (A)
+is exact. To solve (A)
+we must find $F$ such that
+(A) $F_x(x,u)=2xu$ and
+(B) $F_u(x,u)=x^2+2u+1$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,u)=x^2u+\phi(u)$.
+Differentiating (C) with respect to $u$  yields
+(D) $F_u(x,u)=x^2+\phi'(u)$.
+Comparing (D) with (B)  shows that
+$\phi'(u)=2u+1$, so we take
+$\phi(u)=u^2+u$.
+Substituting this into (C) yields
+$F(x,u)=x^2u+u^2+u=u(x^2+u+1)$.
+Therefore, $u(x^2+u+1)=c$.
+Since $y(1)=-2\Rightarrow u(1)=-2,
+c=0$. Therefore,  $u(x^2+u+1)=0$. Since $u\equiv0$ does not satisfy
+$u(1)=-2$, it follows that $u=-x^2-1$ and $y=-1-\frac{1}{ x^2}$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.39}
+Solve the initial value problem
+$$
+y'-\frac{3}{x}y=\frac{2x^4(4x^3-3y)}{3x^5+3x^3+2y},\quad y(1)=1.
+$$
+\end{problem}
+
+\begin{problem}\label{exer:2.5.40}
+Solve the initial value problem
+$$
+y'+2xy=-e^{-x^2}\left(\frac{3x+2ye^{x^2}}{2x+3ye^{x^2}}\right),\quad
+y(0)=-1.
+$$
+
+Click below to see the answer.
+
+\begin{expandable}
+    $y_1=e^{-x^2}$ is a solution of $y'+2xy=0$.
+Let $y=ue^{-x^2}$; then
+$u'e^{-x^2}=-e^{-x^2}\left(\frac{3x+2u}{ 2x+3u}\right)$,
+so  $u'=-\frac{3x+2u}{2x+3u}$, which can be rewritten as (A)
+$(3x+2u)\,dx+(2x+3u)\,du=0$. Since $\frac{\partial
+}{\partial
+u}(3x+2u)=\frac{\partial }{\partial x}(2x+3u)=2$, (A)
+is exact. To solve (A)
+we must find $F$ such that
+(A) $F_x(x,u)=3x+2u$ and
+(B) $F_u(x,u)=2x+3u$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,u)=\frac{3x^2}{2}+2xu+\phi(u)$.
+Differentiating (C) with respect to $u$  yields
+(D) $F_u(x,u)=2x+\phi'(u)$.
+Comparing (D) with (B)  shows that
+$\phi'(u)=3u$, so we take
+$\phi(u)=\frac{3u^2}{2}$.
+Substituting this into (C) yields
+$F(x,u)=\frac{3x^2}{2}+2xu+\frac{3u^2}{2}$.
+Therefore, $\frac{3x^2}{2}+2xu+\frac{3u^2}{2}=c$.
+Since $y(0)=-1\Rightarrow u(0)=-1,
+c=\frac{3}{2}$. Therefore,  $3x^2+4xu+3u^2=3$
+is an implicit solution of the initial value problem.
+Rewriting this as $3u^2+4xu+(3x^2-3)=0$ and
+ solving  for $u$ by means of the quadratic formula
+yields $u=-\left(\frac{2x+\sqrt{9-5x^2}}{3}\right)$, so
+ $y=-e^{-x^2}\left(\frac{2x+\sqrt{9-5x^2}}{3}\right)$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.41}
+Rewrite the separable equation
+\begin{equation}\label{eqA:2.5.41}
+h(y)y'=g(x)
+\end{equation}
+as an exact equation
+\begin{equation}\label{eqB:2.5.41}
+M(x,y)\,dx+N(x,y)\,dy=0.
+\end{equation}
+Show that applying the method of this section  to
+(\ref{eqB:2.5.41}) yields the same solutions that would be
+obtained by applying the method of separation of variables
+to~(\ref{eqA:2.5.41})
+\end{problem}
+
+\begin{problem}\label{exer:2.5.42}
+Suppose  all second partial derivatives of $M=M(x,y)$ and $N=N(x,y)$
+are continuous and $M\,dx+N\,dy=0$ and $-N\,dx+M\,dy=0$ are
+exact on an open rectangle  $R$.  Show that
+$M_{xx}+M_{yy}=N_{xx}+N_{yy}=0$ on
+$R$.
+
+Click below to see the answer.
+
+\begin{expandable}
+    Since $M\,dx+N\,dy=0$ is exact,  (A) $M_y=N_x$.
+Since $-N\,dx+M\,dy=0$ is exact,  (B) $M_x=-N_y$.
+Differentiating (A) with respect to $y$ and (B) with respect to
+$x$ yields (C) $M_{yy}=N_{xy}$ and (D) $M_{xx}=-N_{yx}$.
+Since $N_{xy}=N_{yx}$, adding (C) and (D) yields $M_{xx}+M_{yy}=0$.
+Differentiating (A) with respect to $x$ and (B) with respect to
+$y$ yields (E) $M_{yx}=N_{xx}$ and (F) $M_{xy}=-N_{yy}$.
+Since $M_{xy}=M_{yx}$, subtracting (F) from (E) yields
+$N_{xx}+N_{yy}=0$.
+\end{expandable}
+\end{problem}
+
+\begin{problem}\label{exer:2.5.43} Suppose all second partial derivatives of
+$F=F(x,y)$ are continuous and $F_{xx}+F_{yy}=0$ on an open rectangle
+$R$. (A function with these properties is said to be \emph{harmonic};
+see also Problem~\ref{exer:2.5.42}.) Show that $-F_y\,dx+F_x\,dy=0$ is
+exact on $R$, and
+therefore there's a function $G$ such that
+$G_x=-F_y$ and $G_y=F_x$ in $R$. (A function $G$ with this property is
+said to be a \emph{harmonic conjugate} of $F$.)
+\end{problem}
+
+\begin{problem}\label{exer:2.5.44}
+Verify that the following functions are harmonic, and find all their harmonic conjugates.  (See Problem~\ref{exer:2.5.43}.)
+
+\begin{enumerate}
+    \item $x^2-y^2$
+
+    Click below to see the answer.
+
+    \begin{expandable}
+        If $F(x,y)=x^2-y^2$, then $F_x(x,y)=2x$, $F_y(x,y)=-2y$,
+$F_{xx}(x,y)=2$, and $F_{yy}(x,y)=-2$.
+Therefore, $F_{xx}+F_{yy}=0$, and $G$ must satisfy
+(A) $G_x(x,y)=2y$ and (B) $G_y(x,y)=2x$.
+Integrating (A) with respect to $x$ yields
+(C) $G(x,y)=2xy+\phi(y)$.
+Differentiating
+(C) with respect to
+$y$ yields
+(D) $G_y(x,y)=2x+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=0$, so we take
+$\phi(y)=c$.
+Substituting this into (C) yields
+$G(x,y)=2xy+c$.
+    \end{expandable}
+    
+    \item $e^x\cos y$
+
+    Click below to see the answer.
+
+    \begin{expandable}
+        If $F(x,y)=e^x\cos y$, then $F_x(x,y)=e^x\cos y$,
+ $F_y(x,y)=-e^x\sin y$,
+$F_{xx}(x,y)=e^x\cos y$, and $F_{yy}(x,y)=-e^x\cos y$.
+Therefore, $F_{xx}+F_{yy}=0$, and $G$ must satisfy
+(A) $G_x(x,y)=e^x\sin y$ and (B) $G_y(x,y)=e^x\cos y$.
+Integrating (A) with respect to $x$ yields
+(C) $G(x,y)=e^x\sin y+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $G_y(x,y)=e^x\cos y+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=0$, so we take
+$\phi(y)=c$.
+Substituting this into (C) yields
+$G(x,y)=e^x\sin y+c$.
+    \end{expandable}
+    
+    \item $x^3-3xy^2$
+
+    Click below to see the answer.
+
+    \begin{expandable}
+        If $F(x,y)=x^3-3xy^2$ , then $F_x(x,y)=3x^2-3y^2$, $F_y(x,y)=-6xy$,
+$F_{xx}(x,y)=6x$, and $F_{yy}(x,y)=-6x$.
+Therefore, $F_{xx}+F_{yy}=0$, and $G$ must satisfy
+(A) $G_x(x,y)=6xy$ and (B) $G_y(x,y)=3x^2-3y^2$.
+Integrating (A) with respect to $x$ yields
+(C) $G(x,y)=3x^2y+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $G_y(x,y)=3x^2+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=-3y^2$, so we take
+$\phi(y)=-y^3+c$.
+Substituting this into (C) yields
+$G(x,y)=3x^2y-y^3+c$.
+    \end{expandable}
+    
+    \item $\cos x\cosh y$
+
+    Click below to see the answer.
+
+    \begin{expandable}
+        If $F(x,y)=\cos x\cosh y$, then $F_x(x,y)=-\sin x\cosh y$,
+$F_y(x,y)=\cos x\sinh y$,
+$F_{xx}(x,y)=-\cos x\cosh y$, and $F_{yy}(x,y)=\cos x\cosh y$.
+Therefore, $F_{xx}+F_{yy}=0$, and $G$ must satisfy
+(A) $G_x(x,y)=-\cos x\sinh y$ and (B) $G_y(x,y)=-\sin x\cosh y$.
+Integrating (A) with respect to $x$ yields
+(C) $G(x,y)=-\sin x\sinh y+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $G_y(x,y)=-\sin x\cosh y+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=0$, so we take
+$\phi(y)=c$.
+Substituting this into (C) yields
+$G(x,y)=-\sin x\sinh y+c$.
+    \end{expandable}
+    
+    \item $\sin x\cosh y$
+
+    Click below to see the answer.
+
+    \begin{expandable}
+        If $F(x,y)=\sin x\cosh y$, then $F_x(x,y)=\cos x\cosh y$,
+ $F_y(x,y)=\sin x\sinh y$,
+$F_{xx}(x,y)=-\sin x\cosh y$, and $F_{yy}(x,y)=\sin x\cosh y$.
+Therefore, $F_{xx}+F_{yy}=0$, and $G$ must satisfy
+(A) $G_x(x,y)=-\sin x\sinh y$ and (B) $G_y(x,y)=\cos x\cosh y$.
+Integrating (A) with respect to $x$ yields
+(C) $G(x,y)=\cos x\sinh y+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $G_y(x,y)=\cos x\cosh y+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=0$, so we take
+$\phi(y)=c$.
+Substituting this into (C) yields
+$G(x,y)=\cos x\sinh y+c$.
+    \end{expandable}
+\end{enumerate}
+\end{problem}
+
+\end{document}
