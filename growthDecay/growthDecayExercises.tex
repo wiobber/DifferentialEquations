@@ -1,0 +1,452 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+\begin{problem}\label{exer:4.1.1}
+The half-life of a radioactive substance is 3200
+years.  Find the quantity $Q(t)$ of the substance left at
+time $t > 0$ if $Q(0)=20$ g.
+\end{problem}
+
+\begin{problem}\label{exer:4.1.2}
+The half-life of a radioactive substance is 2 days.  Find
+the time required for a given amount of the material to
+decay to 1/10 of its original mass.
+\begin{solution}
+    $k\tau=\ln2$ and $\tau=2\Rightarrow k=\frac{\ln2}{2}$;
+$Q(t)=Q_0e^{-t\ln2/2}$; if $Q(T)=\frac{Q_0}{10}$, then
+$\frac{Q_0}{10}=Q_0e^{-T\ln2/2}$; $\ln10=\frac{T\ln2}{2}$;
+$T=\frac{2\ln10}{\ln2}$ days.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.3}
+A radioactive material loses 25\% of its mass
+in 10 minutes.  What is its half-life?
+\end{problem}
+
+\begin{problem}\label{exer:4.1.4}
+A  tree contains a known percentage $p_0$ of
+a radioactive substance with half-life $\tau$.  When the
+tree dies the substance decays and isn't  replaced.  If the
+percentage of the substance in the fossilized remains of
+such a tree is found to be $p_1$, how long has the tree been
+dead?
+\begin{solution}
+    Let $t_1$ be the elapsed time since the tree died.
+Since $p(t)=e^{-(t\ln2)\tau}$, it follows that
+$p_1=p_0e^{-(t_1\ln2)/\tau}$, so $\ln\left(\frac{p_1}{p_0}\right)
+=-\frac{t_1}{\tau}\ln2$ and
+ $t_1=\tau \frac{\ln(p_0/p_1)}{\ln2}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.5}
+If $t_p$ and $t_q$ are the times required for a radioactive
+material to decay to $1/p$ and $1/q$  times
+its original mass (respectively), how are $t_p$ and $t_q$ related?
+\end{problem}
+
+\begin{problem}\label{exer:4.1.6}
+Find the decay constant $k$ for a radioactive substance,
+given that the mass of the substance is $Q_1$ at time $t_1$
+and $Q_2$ at time $t_2$.
+\begin{solution}
+$Q=Q_0e^{-kt}$;
+$Q_1=Q_0e^{-kt_1}$;
+$Q_2=Q_0e^{-kt_2}$; $\frac{Q_2}{Q_1}=e^{-k(t_2-t_1)}$;
+    $\ln\left(\frac{Q_1}{Q_2}\right)=k(t_2-t_1)$; $k=\frac{1}{t_2-t_1}\ln\left(\frac{Q_1}{Q_2}\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.7}
+A process creates a radioactive substance at the rate of 2
+g/hr and the substance decays at a rate proportional to
+its mass, with constant of proportionality
+$k=.1 \text{  hr}^{-1}$.  If $Q(t)$ is the mass of the
+substance at time $t$, find $\lim_{t\to\infty}Q(t)$\end{problem}
+
+\begin{problem}\label{exer:4.1.8}
+A bank pays interest continuously at the rate of 6\%.
+How long does it take for a deposit of $Q_0$ to grow in
+value to $2Q_0$?
+\begin{solution}
+$Q'=.06Q,\ Q(0)=Q_0$;\ $Q=Q_0e^{.06t}$. We must find $\tau$
+such that $Q(\tau)=2Q_0$; that is, $Q_0e^{.06\tau}=2Q_0$, so
+$.06\tau=\ln2$ and $\tau=\frac{\ln2}{.06} =\frac{50\ln2}{3}$ yr.
+\end{solution}
+\end{problem}
+
+
+
+\begin{problem}\label{exer:4.1.9}
+At what rate of interest, compounded continuously, will a
+bank deposit double in value in 8 years?
+\end{problem}
+
+\begin{problem}\label{exer:4.1.10}
+A savings account pays 5\% per annum interest compounded
+continuously. The initial deposit is $Q_0$ dollars. Assume that there
+are no subsequent withdrawals or deposits.
+
+\begin{enumerate}
+
+\item % (a)
+How long will it take for the value of the account to triple?
+\begin{solution}
+If $T$ is the time to triple the value, then
+$Q(T)=Q_0e^{.05T}=3Q_0$, so $e^{.05T}=3$.
+Therefore, $.05T=\ln3$ and $T=20\ln3$.
+\end{solution}
+
+\item % (b)
+What is $Q_0$ if the value of the account after 10 years is \$100,000
+dollars?
+
+\begin{solution}
+If $Q(10)=100000$, then  $Q_0e^{.5}=100000$,
+so $Q_0=100000e^{-.5}$
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.11}
+A candymaker makes 500 pounds of candy per week, while
+his large family eats the candy at a rate equal to $Q(t)/10$
+pounds per week, where $Q(t)$ is the amount of candy present
+at time $t$.
+\begin{enumerate}
+\item %(a)
+Find $Q(t)$ for $t > 0$ if the candymaker has 250 pounds of
+candy at $t=0$.
+\item %(b)
+Find $\lim_{t\to\infty} Q(t)$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.12}
+Suppose a substance decays at a yearly rate equal
+to half the square of the mass of the substance present.  If
+we start with 50 g of the substance, how long will it be
+until only 25 g remain?
+\begin{solution}
+$Q'=-\frac{Q^2}{2},\ Q(0)=50$;\, $\frac{Q'}{Q^2}=-\frac{1}{2}$;\,$-\frac{1}{Q}=-\frac{t}{2}+c$;\,
+$Q(0)=50\Rightarrow c=-\frac{1}{50}$;\, $\frac{1}{Q}=\frac{t}{2}+\frac{1}{50}=\frac{1+25t}{50}$;\,
+$Q=\frac{50}{1+25t}$. Now $Q(T)=25\Rightarrow1+25T=2\Rightarrow
+25T=1\Rightarrow T=\frac{1}{25}$ years.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.13}
+A super bread dough increases in volume at a rate
+proportional to the volume $V$ present.  If $V$ increases by
+a factor of 10 in 2 hours and $V(0)=V_0$, find $V$ at any
+time $t$.  How long will it take for $V$ to increase to $100
+V_0$?
+\end{problem}
+
+\begin{problem}\label{exer:4.1.14}
+A radioactive substance decays at a rate proportional to the
+amount present, and half the original quantity $Q_0$ is left
+after 1500 years. In how many years would the original
+amount be reduced to $3Q_0/4$?  How much will be
+left after 2000 years?
+\begin{solution}
+Since $\tau=1500$, $k=\frac{\ln2}{1500}$; hence
+$Q=Q_0e^{-(t\ln2)/1500}$. If $Q(t_1)=\frac{3Q_0}{4}$, then
+$e^{-(t_1\ln2)/1500}=\frac{3}{4}$;\,
+$-t_1\frac{\ln2}{1500}=\ln\left(\frac{3}{4}\right)=
+-\ln\left(\frac{4}{3}\right)$;\,
+$t_1=1500\ln\left(\frac{4}{3}\right)\over\ln2$. Finally,
+$Q(2000)=Q_0e^{-\frac{4}{3}\ln2}=2^{-4/3}Q_0$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.15}
+A wizard creates gold continuously at the rate of 1 ounce
+per hour, but an assistant steals it continuously at the
+rate of 5\% of however much  is there per hour.  Let $W(t)$
+be the number of ounces that the wizard has at time $t$.
+Find $W(t)$ and $\lim_{t\to\infty}W(t)$ if  $W(0)=1$.
+\end{problem}
+
+\begin{problem}\label{exer:4.1.16}
+A process creates a radioactive substance at the rate of 1
+g/hr, and the substance decays at an hourly rate
+ equal to 1/10 of the mass present (expressed in
+grams).  Assuming that there are initially 20 g, find
+the mass $S(t)$ of the substance present at time $t$, and
+find $\lim_{t\to\infty} S(t)$.
+\begin{solution}
+We have $S'=1-\frac{S}{10},\ S(0)=20$. Rewrite this as $S'+\frac{S}{10}=1$. Since
+$S_1=e^{-t/10}$ is a solution of the complementary equation, the
+solutions are given by $S=ue^{-t/10}$, where $u'e^{-t/10}=1$.
+Therefore, $u'=e^{t/10}$;\ $u=10e^{t/10}+c$;\;
+$S=10+ce^{-t/10}$. Now $S(0)=20\Rightarrow c=10$, so
+$S=10+10e^{-t/10}$ and
+ $\lim_{t\to\infty}S(t)=10$ g.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.17}
+A tank is empty at $t=0$.  Water is added to the tank at
+the rate of 10 gal/min, but it leaks out at a rate
+ (in gallons per minute)  equal to the number of
+gallons in the tank.  What is the smallest capacity the tank
+can have if this process is to continue forever?
+\end{problem}
+
+\begin{problem}\label{exer:4.1.18}
+A person deposits \$25,000 in a bank that pays 5\% per
+year interest, compounded continuously.  The person
+continuously withdraws from the account at the rate of \$750
+per year.  Find $V(t)$, the value of the account at time $t$
+after the initial deposit.
+\begin{solution}
+We have $V'=-750+\frac{V}{20},\ V(0)=25000$. We can rewrite this as $V'-\frac{V}{20}=-750$. Since
+$V_1=e^{t/20}$ is a solution of the complementary equation, the
+solutions are given by $V=ue^{t/20}$, where $u'e^{t/20}=-750$.
+Therefore, $u'=-750e^{-t/20}$;\ $u=15000e^{-t/20}+c$;\;
+$V=15000+ce^{t/20}$;\ $V(0)=25000\Rightarrow c=10000$. Therefore,
+$V=15000+10000e^{t/20}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.19}
+  A person has a fortune that grows at rate proportional to the
+square root of its worth. Find the  worth $W$ of the fortune as a function
+of $t$ if it was  \$1 million 6 months ago and
+is \$4 million today.
+\end{problem}
+
+\begin{problem}\label{exer:4.1.20}
+Let $p=p(t)$ be the quantity of a  product present at
+time $t$. The product is manufactured continuously at a
+rate proportional to $p$, with proportionality constant 1/2,
+and it's consumed continuously at a rate proportional to
+$p^2$, with proportionality constant 1/8.  Find $p(t)$ if
+$p(0)=100$.
+
+\begin{solution}
+$p'=\frac{p}{2}-\frac{p^2}{8}=-\frac{1}{8}p(p-4)$ 
+
+$\frac{p'}{p(p-4)}=-\frac{1}{8}$ 
+
+$\frac{1}{4}\left[
+\frac{1}{p-4}-\frac{1}{p}\right]p'=-\frac{1}{8}$ 
+
+ $\left[
+\frac{1}{p-4}-\frac{1}{p}\right]p'=-\frac{1}{2}$ 
+
+$\frac{p-4}{p}=-\frac{t}{2}+k$ 
+
+$\frac{p-4}{p}=ce^{-t/2}$
+
+$p(0)=100 \Rightarrow c=\frac{24}{25}$ 
+
+$\frac{p-4}{p}=\frac{24}{25}e^{-t/2}$ 
+
+$p-4=\frac{24}{25}pe^{-t/2}$ 
+
+$p\left(1-\frac{24}{25} e^{-t/2}\right)=4$ 
+
+$p=\frac{4}{1-\frac{24}{25}e^{-t/2}}=\frac{100}{24-24e^{-t/2}}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.21}
+
+\begin{enumerate}
+\item % (a)
+ In the situation of Example~\ref{example:4.1.6}
+find the exact value $P(t)$ of the person's account after $t$
+years, where $t$ is an integer.  Assume that each year has
+exactly 52 weeks, and include the year-end
+deposit in the computation.
+
+\begin{hint} 
+At time $t$ the initial $\$1000$
+has been on deposit for $t$ years.  There have been $52t$
+deposits of $\$50$ each.  The first $\$50$ has been on deposit
+for $t-1/52$ years, the second for $t-2/52$ years $\cdots$
+in general, the $j$th $\$50$ has been on deposit for $t-j/52$
+years $(1 \le j \le 52t)$.  Find the present value of each
+$\$50$ deposit assuming $6$\% interest compounded
+continuously, and use the formula
+$$
+1+x+x^2+\cdots+x^n=\frac{1-x^{n+1}}{1-x}\
+(x \ne 1)
+$$
+to find their total value.
+\end{hint}
+
+\item % (b)
+ Let
+$$
+p(t)=\frac{Q(t)-P(t)}{P(t)}
+$$
+be the relative error after $t$ years.  Find
+$$
+p(\infty)=\lim_{t\to\infty}p(t).
+$$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.22}
+A homebuyer borrows $P_0$ dollars at an annual interest rate $r$,
+agreeing to repay the loan with equal monthly payments of $M$ dollars
+per month over $N$ years.
+
+\begin{enumerate} \item % (a)
+Derive a
+differential equation for the loan principal (amount that the
+homebuyer owes) $P(t)$ at time $t>0$, making the simplifying
+assumption that the homebuyer repays the loan continuously rather than
+in discrete steps. (See Example~\ref{example:4.1.6} .)
+\begin{solution}
+    $P'=rP-12M$.
+\end{solution}
+
+\item %(b)
+Solve the equation you just derived.
+\begin{solution}
+$P=ue^{rt}$
+
+$u'e^{rt}=-12M$
+
+$u'=-12Me^{rt}$
+
+$u=\frac{12M}{r}e^{-rt}+c$
+
+$P=\frac{12M}{r}+ce^{rt}$
+
+$P(0)=P_0\Rightarrow c=P_0-\frac{12M}{r}$
+
+$P=\frac{12M}{r}(1-e^{rt})+P_0e^{rt}$.
+\end{solution}
+
+\item % (c)
+ Use your solution to determine an approximate
+value for $M$  assuming that each year has exactly 12 months of
+equal length.
+\begin{solution}
+Since $P(N)=0$, the previous argument implies that
+ $M=\frac{rP_0}{12(1-e^{-rN})}$
+\end{solution}
+
+\item % (d)
+ It can be shown that the exact value of $M$  is given by
+$$
+M=\frac{rP_0 }{ 12}\left(1-(1+r/12)^{-12N}\right)^{-1}.
+$$
+Compare the value of $M$ obtained from the problem you just did to the
+exact value  if
+ (i) $P_0=\$50,000$, $r=7\frac{1}{2}$\%, $N=20$
+ (ii) $P_0=\$150,000$, $r=9.0$\%, $N=30$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.23}
+Assume that the homebuyer of Exercise \ref{exer:4.1.22} elects to repay the
+loan continuously at the rate of $\alpha M$ dollars per month,
+where $\alpha$ is a constant greater than 1. (This is called \emph{
+accelerated payment}.)
+\begin{enumerate}
+\item % (a)
+ Determine the time $T(\alpha)$ when the loan
+will be paid off and the amount $S(\alpha)$ that the homebuyer will save.
+
+\item % (b)
+ Suppose $P_0=\$50,000$, $r=8$\%, and $N=15$.
+Compute
+the savings realized by accelerated payments with $\alpha=1.05,1.10$, and
+$1.15$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.24} A benefactor wishes to establish a trust fund to
+pay a researcher's salary for $T$ years. The salary is to start at
+$S_0$ dollars per year and increase at a fractional rate of $a$ per
+year. Find the amount of money $P_0$ that the benefactor must deposit
+in a trust fund paying interest at a rate $r$ per year. Assume that
+the researcher's salary is paid continuously, the interest is
+compounded continuously, and the salary increases are granted
+continuously.
+\begin{solution}
+The researcher's salary is the solution of the initial value problem
+$S'=aS,\ S(0)=S_0$. Therefore, $S=S_0e^{at}$. If $P=P(t)$ is the value
+of the trust fund, then $P'=-S_0e^{at}+rP$, or $P'-rP=-S_0e^{at}$.
+Therefore, 
+\begin{equation}\label{solneqn:4.1.24A}
+P=ue^{rt},  
+\end{equation}
+where $u'e^{rt}=-S_0e^{at}$,
+ so 
+\begin{equation}\label{solneqn:4.1.24B}
+u'=-S_0e^{(a-r)t}.  
+\end{equation}
+If $a\ne r$, then \ref{solneqn:4.1.24B} implies that
+$u=\frac{S_0}{r-a}e^{(a-r)t}+c$, so \ref{solneqn:4.1.24A} implies that
+$P=\frac{S_0}{r-a}e^{at}+ce^{rt}$. Now $P(0)=P_0\Rightarrow
+c=P_0-\frac{S_0}{r-a}$; therefore
+$P=\frac{S_0}{r-a}e^{at}+\left(P_0-\frac{S_0}{r-a}\right)e^{rt}$.
+We must choose $P_0$ so that $P(T)=0$; that is,
+$P=\frac{S_0}{r-a}e^{aT}+\left(P_0-{S_0\over r-a}\right)e^{rT}=0$.
+Solving this for $P_0$ yields
+$P_0=\frac{S_0(1-e^{(a-r)T})}{r-a}$.
+If $a=r$, then \ref{solneqn:4.1.24B} becomes
+$u'=-S_0$, so $u=-S_0t+c$ and \ref{solneqn:4.1.24A} implies that
+$P=(-S_0t+c)e^{rt}$. Now $P(0)=P_0\Rightarrow
+c=P_0$; therefore
+$P=(-S_0t+P_0)e^{rt}$.
+To make $P(T)=0$ we must take $P_0=S_0T$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.25}  
+A radioactive substance with decay constant $k$ is produced
+at the rate of
+$$
+\frac{at}{1+btQ(t)}
+$$
+ units of mass per unit time, where
+$a$ and $b$ are positive constants and $Q(t)$ is the mass of the
+substance present at time $t$;   thus, the rate of production is small
+at the start
+ and tends to slow when $Q$ is large.
+\begin{enumerate}
+\item % (a)
+Set up a differential equation for $Q$.
+\item % (b)
+Choose your own positive values for $a$, $b$, $k$, and
+$Q_0=Q(0)$.
+Use a numerical method
+to discover what happens to $Q(t)$
+as $t\to\infty$. (Be precise, expressing your conclusions in terms of
+$a$, $b$, $k$. However,  no proof is required.)
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.1.26}  
+Follow the instructions of Exercise~\ref{exer:4.1.25}, assuming that
+the substance is produced at the rate of   $at/(1+bt(Q(t))^2)$
+units of mass per unit of time.
+\end{problem}
+
+\begin{problem}\label{exer:4.1.27}  
+Follow the instructions of Exercise~\ref{exer:4.1.25}, assuming that
+the substance is produced at the rate of   $at/(1+bt)$
+units of mass per unit of time.
+\end{problem}
+
+\end{document}
