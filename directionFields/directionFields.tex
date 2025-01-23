@@ -145,6 +145,12 @@ Let's be explicit:
 Here is the slope field for the differential equation $y'=x+y$, with a
 few solutions of the differential equation also graphed.
   
+% NOTE: in the Ximera version of jan 2025, 'clipping' the y-range between -3 and 3 does not work correctly,
+% and this causes (invisible) very negative graphs for the exponentials,
+% which causes a large amount of whitespace under the visible part of the graph
+% which causes the actual graph to be very small (as the whitespace takes lots of room)
+% Hacky workaround: limit the negative values  by using max(-4, <actual function> ...
+% A bug is registered in Ximera to fix this at some point....
 \begin{image}
 {\def\length{sqrt(1+(x+y)^2)}
 \begin{tikzpicture}
@@ -156,13 +162,13 @@ few solutions of the differential equation also graphed.
       axis on top,
     ]
     \addplot3 [blue, quiver={u={1/\length}, v={(x+y)/(\length)},scale arrows=.2},samples=20] {0};
-    \addplot[blue,very thick]{e^x-x-1};
-    \addplot[blue,very thick]{.2*e^x-x-1};
-    \addplot[blue,very thick]{-e^x-x-1};
-    \addplot[blue,very thick]{-.2*e^x-x-1};
-    \addplot[blue,very thick]{-3*e^x-x-1};
-    \addplot[blue,very thick]{2*e^x-x-1};
-    \addplot[blue,very thick]{-x-1};
+    \addplot[blue,very thick]{max(-4, e^x-x-1)};
+    \addplot[blue,very thick]{max(-4, .2*e^x-x-1)};
+    \addplot[blue,very thick]{max(-4, -e^x-x-1)};
+    \addplot[blue,very thick]{max(-4, -.2*e^x-x-1)};
+    \addplot[blue,very thick]{max(-4, -3*e^x-x-1)};
+    \addplot[blue,very thick]{max(-4, 2*e^x-x-1)};
+    \addplot[blue,very thick]{max(-4, -x-1)};
  \end{axis}
 \end{tikzpicture}}
 \end{image}
