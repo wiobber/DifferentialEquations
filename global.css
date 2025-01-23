@@ -1048,3 +1048,15 @@ span#prev-activity-label {
 div.center > .tabular {
     margin: auto;
 }
+
+
+/* OVERWRITE 'explanation' */
+.explanation::before {
+	content: "Explanation: ";
+}
+
+.explanation, .explanation-content {	
+  background-color: transparent;
+  border: none;
+  border-left: none;
+}

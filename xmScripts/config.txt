@@ -2,7 +2,7 @@
 # version of Ximera xake container to use (with xmlatex)
 #
 : "${XAKE_BASE:=ximeralatex}"
-: "${XAKE_VERSION:=v2.5.5}"
+: "${XAKE_VERSION:=v2.5.8}"
 : "${XIMERA_URL:=https://set-p-dsb-zomercursus-latest.cloud-ext.icts.kuleuven.be/}"
 
 
