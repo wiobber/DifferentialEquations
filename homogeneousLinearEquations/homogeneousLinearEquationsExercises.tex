@@ -13,6 +13,387 @@
 \section*{Exercises}
 \end{onlineOnly}
 
-coming soon
+
+\begin{problem}\label{exer:2.4.15} Solve the equation explicitly.
+$$y'=\frac{y+x}{x}$$
+\end{problem}
+
+\begin{problem}\label{exer:2.4.16} Solve the equation explicitly.
+$$y'=\frac{y^2+2xy}{x^2}$$
+
+
+
+\begin{solution}
+    $y=ux$;\ $u'x+u=u^2+2u$;\;
+(A) $u'x=u(u+1)$. Since $u\equiv0$ and $u\equiv-1$ are constant
+solutions of (A), $y\equiv0$ and $y=-x$ are
+solutions of the given equation. The nonconstant solutions of (A)
+satisfy
+$=\frac{u'}{ u(u+1)}=\frac{1}{ x}$;\;
+$\left[\frac{1}{ u}-\frac{1}{ u+1}\right]u'=\frac{1}{ x}$;\;
+$\ln\left|\frac{u}{ u+1}\right|=\ln|x|+k$;\;
+$\frac{u}{ u+1}=cx$;\ $u=(u+1)cx$;\ $u(1-cx)=cx$;\;
+$u=\frac{cx}{1-cx}$;\;
+$y=\frac{cx^2}{1-cx}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.4.17} Solve the equation explicitly.
+$$xy^3y'=y^4+x^4$$ 
+\end{problem}
+
+ \begin{problem}\label{exer:2.4.18} Solve the equation explicitly.
+ $$y'=\frac{y}{x}+\sec\frac{y}{x}$$
+
+ 
+
+ \begin{solution}
+     $y=ux$;\ $u'x+u=u+\sec$;\;
+$u'x=\sec u$;\;
+$(\cos u)u'=\frac{1}{ x}$;\;
+$\sin u=\ln|x|+c$;\;
+$u=\sin^{-1}(\ln|x|+c)$;\;
+$y=x\sin^{-1}(\ln|x|+c)$.
+ \end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.4.19} Solve the equation explicitly.  Also, plot a direction field and some integral curves on the indicated rectangular region.
+$$x^2y'=xy+x^2+y^2;   \quad \{-8\leq x\leq 8,-8\leq y\leq 8\}$$
+\end{problem}
+
+\begin{problem}\label{exer:2.4.20} Solve the equation explicitly.  Also, plot a direction field and some integral curves on the indicated rectangular region.
+$$xyy'=x^2+2y^2;  \quad \{-4\leq x\leq 4,-4\leq y\leq 4\}$$
+
+
+
+\begin{solution}
+    Rewrite the given equation as $y'=\frac{x^2+2y^2}{ xy}$;\;
+$y=ux$;\ $u'x+u=\frac{1}{ u}+2u$;\;
+$u'x=\frac{1+u^2}{ u}$;\;
+$\frac{uu'}{1+u^2}=\frac{1}{ x}$;\;
+$\frac{1}{2}\ln(1+u^2)=\ln|x|+k$;\;
+$\ln\left(1+\frac{y^2}{ x^2}\right)=\ln x^2+2k$;\;
+$1+\frac{y^2}{ x^2}=cx^2$;\;
+$x^2+y^2=cx^4$;\ $y=\pm x\sqrt{cx^2-1}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.4.21} Solve the equation explicitly.  Also, plot a direction field and some integral curves on the indicated rectangular region.
+$$y'=\frac{2y^2+x^2e^{-(y/x)^2}}{2xy};
+\quad  \{-8\leq x\leq 8,-8\leq y\leq 8\}$$
+\end{problem}
+
+\begin{problem}\label{exer:2.4.22} Solve the initial value problem.
+$$y'=\frac{xy+y^2}{x^2},
+\quad y(-1)=2$$
+
+
+
+\begin{solution}
+    $y=ux$;\ $u'x+u=u+u^2$;\;
+$u'x=u^2$;\;
+$\frac{u'}{ u^2}=\frac{1}{ x}$;\;
+$-\frac{1}{ u}=\ln|x|+c$;\;
+$y(-1)=2\Rightarrow u(-1)=-2\Rightarrow c=\frac{1}{2}$;\;
+$u=-\frac{2}{2\ln|x|+1}$;\;
+$y=-\frac{2x}{2\ln|x|+1}$.
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:2.4.23} Solve the initial value problem.
+ $$y'=\frac{x^3+y^3}{xy^2}, \quad y(1)=3$$
+ \end{problem}
+
+ \begin{problem}\label{exer:2.4.24} Solve the initial value problem.
+ $$xyy'+x^2+y^2=0, \quad y(1)=2$$
+
+ 
+
+ \begin{solution}
+     Rewrite the given equation as $y'=-\frac{x^2+y^2}{ xy}$;\;
+$y=ux$;\ $u'x+u=-\frac{1}{ u}-u$;\;
+$u'x=-\frac{1+2u^2}{ u}$;\;
+$-\frac{uu'}{1+2u^2}=\frac{1}{ x}$;\;
+$-\frac{1}{4}\ln(1+2u^2)=\ln|x|+k$;\;
+$x^4(1+2u^2)=c$;\;
+$y(1)=2\Rightarrow u(1)=2\Rightarrow c=9$;\;
+$x^4(1+2u^2)=9$;\;
+$u^2=\frac{9-x^4}{2x^4}$;\;
+$u=\frac{1}{ x^2}\left(\frac{9-x^4}{2}\right)^{1/2}$;\;
+$y=\frac{1}{ x}\left(\frac{9-x^4}{2}\right)^{1/2}$.
+ \end{solution}
+ \end{problem}
+
+\begin{problem}\label{exer:2.4.25} Solve the initial value problem.
+$$y'=\frac{y^2-3xy-5x^2}{x^2}, \quad y(1)=-1$$
+\end{problem}
+
+\begin{problem}\label{exer:2.4.26}Solve the initial value problem.
+$$x^2y'=2x^2+y^2+4xy, \quad y(1)=1$$
+
+
+
+\begin{solution}
+    Rewrite the given equation as $y'=2+\frac{y^2}{
+x^2}+4\frac{y}{ x}$;\;
+$y=ux$;\ $u'x+u=2+u^2+4u$;\;
+$u'x=u^2+3u+2=(u+1)(u+2)$;\;
+$\frac{u'}{(u+1)(u+2)}=\frac{1}{ x}$;\;
+$\left[\frac{1}{ u+1}-\frac{1}{ u+2}\right]u'=\frac{1}{ x}$;\;
+$\ln\left|\frac{u+1}{ u+2}\right|=\ln|x|+k$;\;
+$\frac{u+1}{ u+2}=cx$;\;
+$y(1)=1\Rightarrow u(1)=1\Rightarrow c=\frac{2}{3}$;\;
+$\frac{u+1}{ u+2}=\frac{2}{3}x$;\;
+$u+1=\frac{2}{3}x(u+2)$;\;
+$u=\left(1-\frac{2}{3}x\right)=-1+\frac{4}{3}x$;\;
+$u=-\frac{4x-3}{2x-3}$;\;
+$y=-\frac{x(4x-3)}{2x-3}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.4.27} Solve the initial value problem.
+$$xyy'=3x^2+4y^2, \quad y(1)=\sqrt{3}$$
+\end{problem}
+
+\begin{problem}\label{exer:2.4.28} Solve the given homogeneous equation implicitly.
+$$y'=\frac{x+y}{x-y}$$
+
+
+
+\begin{solution}
+    $y=ux$;\ $u'x+u=\frac{1+u}{1-u}$;\;
+$u'x=\frac{1+u^2}{1-u}$;\;
+$\frac{(1-u)u'}{1+u^2}=\frac{1}{ x}$;\;
+$\tan^{-1}u-\frac{1}{2}\ln(1+u^2)=\ln|x|+c$;\;
+$\tan^{-1}\frac{y}{
+x}-\frac{1}{2}\ln\left(1+\frac{y^2}{ x^2}\right)=\ln|x|+c$;\;
+$\tan^{-1}\frac{y}{
+x}-\frac{1}{2}\ln(x^2+y^2)=c$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.4.29} Solve the given homogeneous equation implicitly.
+$$(y'x-y)(\ln |y|-\ln |x|)=x$$
+\end{problem}
+
+\begin{problem}\label{exer:2.4.30} Solve the given homogeneous equation implicitly.
+$$y'=\frac{y^3+2xy^2+x^2y+x^3}{x(y+x)^2}$$
+
+Click here to see the answer.
+
+\begin{solution}
+    $y=ux$;
+$u'x+u=\frac{u^3+2u^2+u+1}{(u+1)^2}=\frac{u(u+1)^2+1}{(u+1)^2}
+=u+\frac{1}{(u+1)^2}$;
+$u'x=\frac{1}{(u+1)^2}$;\;
+$(u+1)^2u'=\frac{1}{ x}$;\;
+$\frac{(u+1)^3}{3}=\ln|x|+c$;\;
+$(u+1)^3=3(\ln|x|+c)$;\;
+$\left(\frac{y}{ x}+1\right)^3=3(\ln|x|+c)$;\;
+$(y+x)^3=3x^3(\ln|x|+c)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.4.31}  Solve the given homogeneous equation implicitly.
+$$y'=\frac{x+2y}{2x+y}$$
+\end{problem}
+
+\begin{problem}\label{exer:2.4.32}  Solve the given homogeneous equation implicitly.
+$$y'=\frac{y}{y-2x}$$
+
+
+
+\begin{solution}
+    $y=ux$;\ $u'x+u=\frac{u}{ u-2}$;\;
+(A)  $u'x=\frac{u(u-3)}{2-u}$;\;
+Since $u\equiv0$ and $u\equiv3$
+are constant solutions of (A), $y\equiv0$ and
+$y=3x$ are solutions of the given equation.
+The nonconstant solutions of (A) satisfy
+$\frac{(2-u)u'}{ u(u-3)}=\frac{1}{ x}$;\;
+$\left[\frac{1}{ u-3}+\frac{2}{
+u}\right]u'=-\frac{3}{ x}$;\;
+$\ln|u-3|+2\ln|u|=-3\ln|x|+k$;\;
+$u^2(u-3)=\frac{c}{ x^3}$;\;
+$y^2(y-3x)=c$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.4.33} Solve the given homogeneous equation implicitly.
+$$y'=\frac{xy^2+2y^3}{x^3+x^2y+xy^2}$$
+\end{problem}
+
+\begin{problem}\label{exer:2.4.34} Solve the given homogeneous equation implicitly.
+$$y'=\frac{x^3+x^2y+3y^3}{x^3+3xy^2}$$
+
+
+
+\begin{solution}
+    $y=ux$;\;
+$u'x+u=
+\frac {1+u+3u^3 }{ 1+3u^2}=u+{1 }{ 1+3u^2}$;\;
+$(1+3u^2)u'=\frac{1}{ x}$;\;
+$u+u^3=\ln |x|+c$;\;
+$\frac{y}{ x}+\frac{y^3}{ x^3}=\ln |x|+c$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:2.4.37}
+\begin{enumerate}
+\item % (a)
+Solve the equation
+\begin{equation}\label{eqA:2.4.37}
+y'=\frac{2y^2-xy+2x^2}{xy+2x^2}
+\end{equation}
+implicitly.
+\item % (b)
+Plot a direction field for (\ref{eqA:2.4.37}) on a square
+$$
+\{-r\leq x\leq r,-r\leq y\leq r\}
+$$
+where $r$ is any positive number. By graphing solutions of (\ref{eqA:2.4.37}),
+determine necessary and sufficient conditions on $(x_0,y_0)$ such that
+(\ref{eqA:2.4.37}) has a solution on (i) $(-\infty,0)$ or (ii) $(0,\infty)$ such that
+$y(x_0)=y_0$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:2.4.38}
+Follow the instructions of Exercise~\ref{exer:2.4.37} for the equation
+$$
+y'=\frac{xy+x^2+y^2}{xy}.
+$$
+
+
+
+\begin{solution}
+    $y=ux$;\;
+$u'x+u=1+\frac{1}{ u}+u$;\;
+(A) $u'x=\frac{u+1}{ u}$.
+Since (A)  has the constant solution $u=-1$;
+$y=-x$ is
+a solution of the given equation. The nonconstant solutions of (A)
+satisfy
+$\frac{uu'}{ u+1}=\frac{1}{ x}$;\;
+$\left[1-\frac{1 }{ u+1}\right]u'=\frac{1}{ x}$;\;
+$u-\ln |u+1|=\ln |x|+c$;\;
+$\frac{y}{ x}-\ln\left|\frac{y}{ x}-1\right|=\ln|x|+c$;\;
+$y-x\ln|y-x|=cy$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.4.39}
+Pick any  nonlinear homogeneous equation $y'=q(y/x)$  you like, and
+plot  direction fields on the square $\{-r\leq x\leq r,\ -r\leq y\leq r\}$,
+where $r>0$. What happens to the direction field as you vary $r$?
+Why?
+\end{problem}
+
+\begin{problem}\label{exer:2.4.40}
+Prove:  If $ad-bc\neq 0$, the equation
+$$
+y'=\frac{ax+by+\alpha}{cx+dy+\beta}
+$$
+can be transformed into the homogeneous nonlinear equation
+$$
+\frac{dY}{dX}=\frac{aX+bY}{cX+dY}
+$$
+by the substitution $x=X-X_0,\,  y=Y-Y_0$,
+where $X_0$ and $Y_0$ are suitably chosen constants.
+
+
+
+\begin{solution}
+    If $x=X-X_0$ and $y=Y-Y_0$, then $\frac{dy}{ dx}=\frac{dY}{
+dx}=\frac{dY}{ dX}\frac{dX}{ dx}=\frac{dY}{ dX}$, so $y=y(x)$
+satisfies the given equation if and only if $Y=Y(X)$ satisfies
+ $$
+\frac{dY}{ dX}=\frac{a(X-X_0)+b(Y-Y_0)+\alpha}{
+c(X-X_0)+d(Y-Y_0)+\beta},
+$$
+ which reduces to the nonlinear homogeneous equation
+$$
+\frac{dY}{ dX}=\frac{aX+bY}{ cX+dY}
+$$
+ if and only if (B)
+
+\begin{eqnarray*}{rcl}
+aX_0+bY_0&=&\alpha\\
+cX_0+dY_0&=&\beta
+\end{eqnarray*}
+
+We will now show that
+if $ad-bc\neq 0$, then it is possible (for any choice of $\alpha$
+and $\beta$) to solve (B).
+Multiplying the first equation in (B) by $d$ and
+ the second by  $b$ yields
+\begin{eqnarray*}
+daX_0+dbY_0&=&d\alpha  \\
+bcX_0+bdY_0&=&b\beta.
+\end{eqnarray*}
+Subtracting the second of these equations from the first yields
+ $(ad-bc)X_0=\alpha d-\beta b$.
+Since $ad-bc\neq 0$, this implies that $X_0=\frac{\alpha d-\beta b}{
+ad-bc}$. Multiplying the first equation in (B) by
+$c$ and the second by $a$ yields
+\begin{eqnarray*}
+caX_0+cbY_0&=&c\alpha  \\
+acX_0+adY_0&=&a\beta.
+\end{eqnarray*}
+Subtracting the first of these equation from the second yields
+ $(ad-bc)Y_0=\alpha c-\beta a$. Since $ad-bc\ne0$ this implies that
+$Y_0=\frac{\alpha c-\beta a}{ ad-bc}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.4.41} Use a method suggested by Exercise~\ref{exer:2.4.40} to solve the
+given equation implicitly.
+$$y'=\frac{-6x+y-3}{2x-y-1}$$
+\end{problem}
+
+\begin{problem}\label{exer:2.4.42} Use a method suggested by Exercise~\ref{exer:2.4.40} to solve the
+given equation implicitly.
+$$y'=\frac{2x+y+1}{x+2y-4}$$
+
+
+
+\begin{solution}
+    For the given equation, (B)
+of Exercise~\ref{exer:2.4.40} is
+\begin{eqnarray*}
+2X_0+Y_0&=&\phantom{-}1\\
+X_0+2Y_0&=&-4.
+\end{eqnarray*}
+Solving this pair of equations yields   $X_0=2$ and $Y_0=-3$.
+The transformed differential equation is (A)
+$$
+\frac{dY}{ dX}=\frac{2X+Y}{ X+2Y}.
+$$
+Let $Y=uX$;\;
+$u'X+U=\frac{2+u}{1+2u}$;\;
+(B) $u'X=-\frac{2(u-1)(u+1)}{ 2u+1}$. Since $u\equiv1$ and
+$u\equiv-1$
+satisfy (B), $Y=X$ and $Y=-X$ are solutions of (A).
+ Since $X=x+2$ and $Y=y-3$, it follows that $y=x+5$
+and $y=-x+1$ are solutions of the given equation. The nonconstant
+solutions of (B) satisfy
+$\frac{(2u+1)u'}{(u-1)(u+1)}=-\frac{2}{ X}$;\;
+$\left[\frac{1}{ u+1}+\frac{3}{ u-1}\right]u'=-\frac{4}{
+X}$;\;
+$\ln|u+1|+3\ln|u-1|=-4\ln|X|+k$;\;
+$(u+1)(u-1)^3=\frac{c}{ X^4}$;\;
+$(Y+X)(Y-X)^3=c$;\;
+Setting $X=x+2$ and $Y=y-3$ yields
+$(y+x-1)(y-x-5)^3=c$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.4.43} Use a method suggested by Exercise~\ref{exer:2.4.40} to solve the
+given equation implicitly.
+$$y'=\frac{-x+3y-14}{x+y-2}$$
+\end{problem}
+
 
 \end{document}
