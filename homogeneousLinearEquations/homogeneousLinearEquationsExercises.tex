@@ -14,6 +14,1177 @@
 \end{onlineOnly}
 
 
-coming soon 
+\begin{problem}\label{exer:5.1.1}
+
+\begin{enumerate}
+\item % (a)
+Verify that $y_1=e^{2x}$ and $y_2=e^{5x}$ are solutions of
+\begin{equation}\label{eq:eqA5.1.1}
+    y''-7y'+10y=0
+\end{equation}
+on  $(-\infty,\infty)$.
+\item % (b)
+Verify that if $c_1$ and $c_2$ are arbitrary constants then
+$y=c_1e^{2x}+c_2e^{5x}$ is a solution of \ref{eq:eqA5.1.1} on
+$(-\infty,\infty)$.
+\item % (c)
+Solve the initial value problem
+$$
+y''-7y'+10y=0,\quad  y(0)=-1,\quad y'(0)=1.
+$$
+\item % (d)
+Solve the initial value problem
+$$
+y''-7y'+10y=0,\quad  y(0)=k_0,\quad y'(0)=k_1.
+$$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.2}
+\begin{enumerate}
+\item % (a)
+Verify that $y_1=e^x\cos x$ and $y_2=e^x\sin x$ are solutions of
+\begin{equation}\label{eq:eqA5.1.2}
+    y''-2y'+2y=0
+\end{equation}
+on  $(-\infty,\infty)$.
+
+\begin{solution}
+    If $y_1=e^x\cos x$, then $y_1'=e^x(\cos x -\sin x)$  and
+$y_1''=e^x(\cos x-\sin x-\sin x-\cos x)=-2e^x\sin x$, so
+$y_1''-2y_1'+2y_1=e^x(-2\sin x-2\cos x+2\sin x+2\cos x)=0$. If
+$y_2=e^x\sin x$, then
+$y_2'=e^x(\sin x+\cos x)$ and
+$y_2''=e^x(\sin x+\cos x+\cos x-\sin x)=2e^x\cos x$, so
+$y_2''-2y_2'+2y_2=e^x(2\cos x-2\sin x-2\cos x+2\sin x)=0$.
+\end{solution}
+
+\item % (b)
+Verify that if $c_1$ and $c_2$ are arbitrary constants then
+$y=c_1e^x\cos x+c_2e^x\sin x$ is a solution of \ref{eq:eqA5.1.2}
+on
+$(-\infty,\infty)$.
+
+\begin{solution}
+    If (B) $y=e^x(c_1\cos x+c_2\sin x)$, then
+$$
+y'=e^x\left(c_1(\cos x-\sin x)+c_2(\sin x+\cos x)\right)
+\eqno{\rm (C)}
+$$
+ and
+\begin{eqnarray*}
+y''&=&c_1e^x(\cos x-\sin x-\sin x-\cos x)\\&&+c_2e^x(\sin x+\cos
+x+\cos x-\sin x)\\ &=&2e^x(-c_1\sin x+c_2\cos x),
+\end{eqnarray*}
+ so
+\begin{eqnarray*}
+y''-2y'+2y&=&c_1e^x(-2\sin x-2\cos x+2\sin x+2\cos x)\\
+&&+c_2e^x(2\cos x-2\sin x-2\cos x+2\sin x)=0.
+\end{eqnarray*}
+\end{solution}
+
+
+\item % (c)
+Solve the initial value problem
+$$
+y''-2y'+2y=0,\quad  y(0)=3,\quad y'(0)=-2.
+$$
+
+\begin{solution}
+    We must choose $c_1$ and $c_2$ in (B) so that $y(0)=3$
+and $y'(0)=-2$. Setting $x=0$ in (B) and (C) (see solution to the previous part) shows that
+$c_1=3$ and $c_1+c_2=-2$, so $c_2=-5$. Therefore,
+ $y=e^x(3\cos x-5\sin x)$.
+\end{solution}
+
+
+\item % (d)
+Solve the initial value problem
+$$
+y''-2y'+2y=0,\quad  y(0)=k_0,\quad y'(0)=k_1.
+$$
+
+\begin{solution}
+    We must choose $c_1$ and $c_2$ in (B) so that $y(0)=k_0$
+and $y'(0)=k_1$. Setting $x=0$ in (B) and (C) shows that
+$c_1=k_0$ and $c_1+c_2=k_1$, so $c_2=k_1-k_0$.  Therefore,
+$y=e^x\left(k_0\cos x+(k_1-k_0)\sin x\right)$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.3}
+\begin{enumerate}
+\item % (a)
+Verify that $y_1=e^x$ and $y_2=xe^x$ are solutions of
+\begin{equation}\label{eq:eqA5.1.3}
+    y''-2y'+y=0
+\end{equation}
+on  $(-\infty,\infty)$.
+\item % (b)
+Verify that if $c_1$ and $c_2$ are arbitrary constants then
+$y=e^x(c_1+c_2x)$ is a solution of \ref{eq:eqA5.1.3} on
+$(-\infty,\infty)$.
+\item % (c)
+Solve the initial value problem
+$$
+y''-2y'+y=0,\quad  y(0)=7,\quad y'(0)=4.
+$$
+\item % (d)
+Solve the initial value problem
+$$
+y''-2y'+y=0,\quad  y(0)=k_0,\quad y'(0)=k_1.
+$$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.4}
+\begin{enumerate}
+\item % (a)
+Verify that $y_1=1/(x-1)$ and $y_2=1/(x+1)$ are solutions of
+\begin{equation}\label{eq:eqA5.1.4}
+    (x^2-1)y''+4xy'+2y=0
+\end{equation}
+on  $(-\infty,-1)$, $(-1,1)$, and $(1,\infty)$.
+What is the general solution of \ref{eq:eqA5.1.4} on each of
+these intervals?
+
+\begin{solution}
+    If $y_1=\frac{1}{ x-1}$, then $y_1'=-\frac{1}{(x-1)^2}$
+and
+$y_1''=\frac{2}{(x-1)^3}$, so
+\begin{eqnarray*}
+(x^2-1)y_1''+4xy_1'+2y_1&=&\frac{2(x^2-1)}{(x-1)^3}-\frac{4x}{(x-1)^2}
++\frac{2}{ x-1}\\
+&=&\frac{2(x+1)-4x+2(x-1)}{(x-1)^2}=0.
+\end{eqnarray*}
+Similar manipulations show that
+$(x^2-1)y_2''+4xy_2'+2y_2=0$. The general solution on each of
+the intervals $(-\infty,-1)$, $(-1,1)$, and $(1,\infty)$ is
+(B) $y=\frac{c_1}{ x-1}+\frac{c_2}{ x+1}$.
+\end{solution}
+
+\item % (b)
+Solve the initial value problem
+$$
+(x^2-1)y''+4xy'+2y=0,\quad  y(0)=-5,\quad y'(0)=1.
+$$
+What is the interval of validity of the solution?
+
+\begin{solution}
+    Differentiating (B) yields (C) (see previous solution)
+$y'=-\frac{c_1}{(x-1)^2}-\frac{c_2}{(x+1)^2}$.
+ We must choose $c_1$ and $c_2$ in (B) so that $y(0)=-5$
+and $y'(0)=1$. Setting $x=0$ in (B) and (C) shows that
+$-c_1+c_2=-5,\ -c_1-c_2=1$. Therefore,$c_1=2$ and $c_2=-3$,
+so $y=\frac{2}{ x-1}-\frac{3}{ x+1}$ on $(-1,1)$.
+\end{solution}
+
+\item % (c)
+Graph the solution of the initial value problem.
+\item % (d)
+Verify Abel's formula for $y_1$ and $y_2$, with $x_0=0$.
+
+\begin{solution}
+    The Wronskian of  $\{y_1,y_2\}$ is
+$$
+W(x)=\left| \begin{array}{cc}
+\phantom{-}\frac{1}{x-1} & \phantom{-}\frac{1}{x+1}\\
+ -\frac{1}{(x-1)^2} &  - \frac{1}{(x+1)^2} \end{array} \right|
+=\frac{2}{(x^2-1)^2},
+\eqno{\rm (D)}
+$$
+so $W(0)=2$. Since
+$p(x)=\frac{4x}{ x^2-1}$, so $\int_0^x p(t)\,dt=
+\int_0^x \frac{4t}{ t^2-1}\,dt=\ln(x^2-1)^2$, Abel's
+formula implies that
+$W(x)=W(0)e^{-\ln(x^2-1)^2}=\frac{2}{(x^2-1)^2}$, consistent
+with (D).
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.5}
+Compute the Wronskians of the given sets of functions.
+
+\begin{enumerate}
+    \item $\{1, e^x\}$
+    \item$\{e^x, e^x \sin x\}$
+    \item $\{x+1,  x^2+2\}$
+    \item $\{ x^{1/2}, x^{-1/3}\}$
+    \item $\frac{\sin x}{x},  \frac{\cos x}{x}$
+    \item $\{ x \ln|x|, x^2\ln|x|\}$
+    \item $\{e^x\cos\sqrt x, e^x\sin\sqrt x\}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.6}
+Find the Wronskian  of a given set $\{y_1,y_2\}$ of solutions of
+$$
+y''+3(x^2+1)y'-2y=0,
+$$
+given that $W(\pi)=0$.
+
+\begin{solution}
+     From Abel's formula,
+$W(x)=W(\pi)e^{-3\int_\pi^x (t^2+1)\,dt}=0\cdot
+e^{-3\int_\pi^x (t^2+1)\,dt}=0$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.7}
+Find the Wronskian of a given set $\{y_1,y_2\}$ of solutions of
+$$
+(1-x^2)y''-2xy'+\alpha(\alpha+1)y=0,
+$$
+given that $W(0)=1$.  (This is
+\href{http://www-history.mcs.st-and.ac.uk/PictDisplay/Legendre.html}{Legendre's equation}.)
+\end{problem}
+
+\begin{problem}\label{exer:5.1.8}
+Find the Wronskian of a given set $\{y_1,y_2\}$ of solutions of
+$$
+x^2y''+xy'+(x^2-\nu^2)y=0 ,
+$$
+given that $W(1)=1$.  (This is
+\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Bessel.html}
+{Bessel's equation}.)
+
+\begin{solution}
+    $p(x)=\frac{1}{ x}$; therefore $\int_1^x
+p(t)\,dt=\int_1^x\frac{dt}{ t}=\ln x$, so Abel's
+formula yields $W(x)=W(1)e^{-\ln x}=\frac{1}{ x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.9}  %\exerciseabel
+(This exercise shows that if you know one
+nontrivial solution of $y''+p(x)y'+q(x)y=0$, you can use Abel's
+formula to find another.)
+
+Suppose $p$ and $q$ are continuous and $y_1$ is a solution
+of
+\begin{equation}\label{eq:eqA5.1.9}
+y''+p(x)y'+q(x)y=0
+\end{equation}
+that has no zeros  on  $(a,b)$.
+Let $P(x)=\int p(x)\,dx$ be any
+antiderivative of $p$ on  $(a,b)$.
+\begin{enumerate}
+\item % (a)
+Show that if $K$ is an arbitrary nonzero constant and
+$y_2$  satisfies
+$$
+y_1y_2'-y_1'y_2=Ke^{-P(x)}
+\eqno{\rm (B)}
+$$
+on $(a,b)$, then $y_2$ also satisfies \ref{eq:eqA5.1.9}
+on $(a,b)$, and $\{y_1,y_2\}$ is a fundamental set of solutions on
+(A) on $(a,b)$.
+
+\item % (b)
+Conclude from part (a) that if $y_2=uy_1$ where
+$u'=K\frac{e^{-P(x)}}{y_1^2(x)}$, then  $\{y_1,y_2\}$
+is a fundamental set of solutions of (A)
+on  $(a,b)$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.10}
+For $y''-2y'-3y=0$; Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=e^{3x}$.
+
+\begin{solution}
+    $p(x)=-2$;\;
+$P(x)=-2x$;\;
+$y_2=uy_1=ue^{3x}$;\;
+$u'=\frac{Ke^{-P(x)}}{ y_1^2(x)}=\frac{Ke^{2x}}{
+e^{6x}}=Ke^{-4x}$;\;
+$u=-\frac{K}{4}e^{-4x}$.
+Choose $K=-4$;  then
+$y_2=e^{-4x}e^{3x}=e^{-x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.11}
+For $y''-6y'+9y=0$; Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=e^{3x}$.
+\end{problem}
+
+\begin{problem}\label{exer:5.1.12}%
+For $y''-2ay'+a^2y=0$\; ($a=$ constant); Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=e^{ax}$.
+
+\begin{solution}
+    $p(x)=-2a$;\;
+$P(x)=-2ax$;\;
+$y_2=uy_1=ue^{ax}$;\;
+$u'=\frac{Ke^{-P(x)}}{ y_1^2(x)}=\frac{Ke^{2ax}}{ e^{2ax}}=K$;\;
+$u=Kx$.
+Choose $K=1$; then
+$y_2=xe^{ax}$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:5.1.13}
+For $x^2y''+xy'-y=0$; Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=x$.
+\end{problem}
+
+\begin{problem}\label{exer:5.1.14}
+For $x^2y''-xy'+y=0$; Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=x$.
+
+\begin{solution}
+    $p(x)=-\frac{1}{ x}$;\;
+$P(x)=-\ln x$;\;
+$y_2=uy_1=ux$;\;
+$u'=\frac{Ke^{-P(x)}}{ y_1^2(x)}=\frac{Kx}{
+x^2}=\frac{K}{ x}$;\;
+$u=K\ln x$.
+Choose $K=1$; then
+$y_2=x\ln x$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:5.1.15}
+For $x^2y''-(2a-1)xy'+a^2y=0$\; ($a=$ nonzero constant);\, $x>0$; Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=x^a$.
+\end{problem}
+
+\begin{problem}\label{exer:5.1.16}
+For $4x^2y''-4xy'+(3-16x^2)y=0$; Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=x^{1/2}e^{2x}$.
+
+\begin{solution}
+    $p(x)=-\frac{1}{ x}$;\;
+$P(x)=-\ln|x|$;\;
+$y_2=uy_1=ux^{1/2}e^{2x}$;\;
+$u'=\frac{Ke^{-P(x)}}{ y_1^2(x)}=\frac{Kx}{ xe^{4x}}=e^{-4x}$;\;
+$u=-\frac{Ke^{-4x}}{4}$.
+Choose $K=-4$; then
+$y_2=e^{-4x}(x^{1/2}e^{2x})=x^{1/2}e^{-2x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.17}
+For $(x-1)y''-xy'+y=0$; Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=e^x$.
+\end{problem}
+
+\begin{problem}\label{exer:5.1.18}
+For $x^2y''-2xy'+(x^2+2)y=0$; Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=x\cos x$.
+
+\begin{solution}
+    $p(x)=-\frac{2}{ x}$;\;
+$P(x)=-2\ln|x|$;\;
+$y_2=uy_1=ux\cos x$;\;
+$u'=\frac{Ke^{-P(x)}}{ y_1^2(x)}=\frac{Kx^2}{ x^2\cos^2
+x}=K\sec^2x$;\;
+$u=K\tan x$.
+Choose $K=1$; then
+$y_2=\tan x(x\cos x)=x\sin x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.19}
+For $4x^2(\sin x)y''-4x(x\cos x+\sin x)y'+(2x\cos x+3\sin x)y=0$; Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=x^{1/2}$.
+\end{problem}
+
+\begin{problem}\label{exer:5.1.20}
+For $(3x-1)y''-(3x+2)y'-(6x-8)y=0$; Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=e^{2x}$.
+
+\begin{solution}
+    $p(x)=-\frac{3x+2}{3x-1}=-1-\frac{3}{3x-1}$;\;
+$P(x)=-x-\ln|3x-1|$;\;
+$y_2=uy_1=ue^{2x}$;\;
+$u'=\frac{Ke^{-P(x)}}{ y_1^2(x)}=\frac{K(3x-1)e^x}{
+e^{4x}}=K(3x-1)e^{-3x}$;\;
+$u=-Kxe^{-3x}$.
+Choose $K=-1$; then
+$y_2=xe^{-3x}e^{2x}=xe^{-x}$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:5.1.21}
+For $(x^2-4)y''+4xy'+2y=0$;  Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=\frac{1}{x-2}$.
+\end{problem}
+
+
+\begin{problem}\label{exer:5.1.22}
+For $(2x+1)xy''-2(2x^2-1)y'-4(x+1)y=0$;  Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=\frac{1}{x}$.
+
+\begin{solution}
+    $p(x)=-\frac{2(2x^2-1)}{
+x(2x+1)}=-2-\frac{2}{2x+1}+\frac{2}{ x}$;\;
+$P(x)=-2x-\ln|2x+1|+2\ln|x|$;\;
+$y_2=uy_1=\frac{u}{ x}$;\;
+$u'=\frac{Ke^{-P(x)}}{ y_1^2(x)}=\frac{K(2x+1)e^{2x}}{
+x^2}x^2=K(2x+1)e^{2x}$;\;
+$u=Kxe^{2x}$.
+Choose $K=1$; then
+$y_2=\frac{xe^{2x}}{ x}=e^{2x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.23}
+For $(x^2-2x)y''+(2-x^2)y'+(2x-2)y=0$;  Use the
+method suggested by Exercise~\ref{exer:5.1.9} to find a second solution
+$y_2$  that isn't  a constant multiple of the  solution $y_1=e^x$.
+\end{problem}
+
+
+\begin{problem}\label{exer:5.1.24}
+ Suppose  $p$ and $q$ are continuous on an open interval $(a,b)$
+and let $x_0$ be in $(a,b)$.
+Use   Theorem~\ref{thmtype:5.1.1} to show that
+ the only solution of the initial value problem
+$$
+y''+p(x)y'+q(x)y=0,\quad  y(x_0)=0,\quad y'(x_0)=0
+$$
+on  $(a,b)$ is the trivial solution $y\equiv0$.
+
+\begin{solution}
+    Suppose that $y\equiv0$ on $(a,b)$. Then $y'\equiv0$ and $y''\equiv0$
+on $(a,b)$, so $y$ is a solution of (A) $y''+p(x)y'+q(x)y=0,\
+y(x_0)=0,\ y'(x_0)=0$ on $(a,b)$. Since Theorem \ref{thmtype:5.1.1}
+implies that (A) has only one solution on $(a,b)$, the conclusion
+follows.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.25}
+Suppose $P_0$, $P_1$, and $P_2$ are continuous on  $(a,b)$
+and let $x_0$ be in  $(a,b)$. Show that if either of
+the following statements is true then $P_0(x)=0$ for some $x$ in
+$(a,b)$.
+\begin{enumerate}
+\item % (a)
+The initial value problem
+$$
+P_0(x)y''+P_1(x)y'+P_2(x)y=0,\quad  y(x_0)=k_0,\quad y'(x_0)=k_1
+$$
+has more than one  solution on  $(a,b)$.
+\item % (b)
+The initial value problem
+$$
+P_0(x)y''+P_1(x)y'+P_2(x)y=0,\quad y(x_0)=0,\quad y'(x_0)=0
+$$
+has a nontrivial solution on  $(a,b)$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.26}
+Suppose  $p$ and $q$ are continuous  on  $(a,b)$ and
+ $y_1$ and $y_2$ are solutions of
+\begin{equation}\label{eq:eqA5.1.26}
+y''+p(x)y'+q(x)y=0
+\end{equation}
+on  $(a,b)$. Let
+$$
+z_1=\alpha y_1+\beta y_2\mbox{\quad  and \quad} z_2=\gamma y_1+\delta
+y_2,
+$$
+where $\alpha$, $\beta$, $\gamma$, and $\delta$ are constants.
+Show that if  $\{z_1,z_2\}$
+is a fundamental set of solutions of
+\ref{eq:eqA5.1.26} on $(a,b)$ then so is  $\{y_1,y_2\}$.
+
+\begin{solution}
+    If $\{z_1,z_2\}$ is a fundamental set of solutions of
+(A) on $(a,b)$, then every solution $y$ of
+(A) on $(a,b)$ is a linear combination of
+$\{z_1,z_2\}$; that is, $y=c_1z_1+c_2z_2=c_1(\alpha y_1+\beta
+y_2)+c_2(\gamma y_1+\delta y_2)
+=(c_1\alpha+c_2\gamma)y_1+(c_1\beta+c_2\delta)y_2$, which shows that
+every solution of (A) on $(a,b)$ can be written as
+a linear combination of $\{y_1,y_2\}$. Therefore,$\{y_1,y_2\}$ is a
+fundamental set of solutions of (A) on $(a,b)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.27}
+Suppose $p$ and $q$ are continuous on  $(a,b)$ and
+$\{y_1,y_2\}$ is a fundamental set of solutions of
+\begin{equation}\label{eq:eqA5.1.27}
+y''+p(x)y'+q(x)y=0
+\end{equation}
+on $(a,b)$. Let
+$$
+z_1=\alpha y_1+\beta y_2$$
+and 
+$$z_2=\gamma y_1+\delta
+y_2,
+$$
+where $\alpha,\beta,\gamma$, and $\delta$ are constants.
+ Show that  $\{z_1,z_2\}$ is a fundamental set of solutions
+of \ref{eq:eqA5.1.27} on $(a,b)$ if and only if
+$ \alpha\gamma-\beta\delta\ne0$.
+\end{problem}
+
+\begin{problem}\label{exer:5.1.28}
+Suppose $y_1$ is differentiable on an interval  $(a,b)$
+and $y_2=ky_1$, where $k$ is a constant. Show that the Wronskian of
+$\{y_1,y_2\}$ is identically zero on  $(a,b)$.
+
+\begin{solution}
+    The Wronskian of  $\{y_1,y_2\}$ is
+$$
+W=\left| \begin{array}{cc}
+y_1 & y_2 \\
+y'_1 & y'_2
+\end{array} \right|=
+\left| \begin{array}{cc}
+y_1 & ky_1 \\
+y'_1 & ky'_1
+\end{array} \right|=k(y_1y_1'-y_1'y_1)=0.
+$$
+
+nor $y_2$ can be a solution of $y''+p(x)y'+q(x)y=0$ on  $(a,b)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.29}
+Let
+$$
+y_1=x^3\quad\mbox{ and }\quad y_2=\left\{\begin{array}{rl}
+x^3,&x\ge 0,\\ -x^3,&x<0.\end{array}\right.
+$$
+\begin{enumerate}
+\item % (a)
+Show that the Wronskian of $\{y_1,y_2\}$ is defined and identically
+zero on
+$(-\infty,\infty)$.
+\item % (b)
+Suppose $a<0<b$.
+Show that $\{y_1,y_2\}$ is linearly independent on  $(a,b)$.
+\item % (b)
+Use Exercise~\ref{exer:5.1.25} part (b) to show that these results don't
+contradict Theorem~\ref{thmtype:5.1.5}, because neither $y_1$ nor $y_2$
+can be a solution of an equation
+$$
+y''+p(x)y'+q(x)y=0
+$$
+on  $(a,b)$ if $p$ and $q$ are continuous on  $(a,b)$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.30}
+Suppose  $p$ and $q$ are continuous  on  $(a,b)$ and
+$\{y_1,y_2\}$ is a  set of solutions of
+$$
+y''+p(x)y'+q(x)y=0
+$$
+on $(a,b)$ such that either $y_1(x_0)=y_2(x_0)=0$ or
+$y_1'(x_0)=y_2'(x_0)=0$  for some $x_0$ in $(a,b)$. Show that
+$\{y_1,y_2\}$ is linearly dependent on $(a,b)$.
+
+\begin{solution}
+    $W(x_0)=\left(y_1(x_0)y_2'(x_0)-y_1'(x_0)y_2(x_0)\right)=0$
+if either $y_1(x_0)=y_2(x_0)=0$ or
+$y_1'(x_0)=y_2'(x_0)=0$, and  Theorem \ref{thmtype:5.1.6}
+implies that  $\{y_1,y_2\}$ is linearly dependent on  $(a,b)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.31}
+Suppose  $p$ and $q$ are continuous  on  $(a,b)$ and
+  $\{y_1,y_2\}$ is
+a fundamental set of solutions of
+$$
+y''+p(x)y'+q(x)y=0
+$$
+on $(a,b)$. Show that if $y_1(x_1)=y_1(x_2)=0$, where $a<x_1<x_2<b$,
+then $y_2(x)=0$ for some $x$ in $(x_1,x_2)$. 
+\begin{hint}
+    Show that
+if $y_2$ has no zeros in $(x_1,x_2)$, then $y_1/y_2$ is either strictly
+increasing or strictly decreasing on $(x_1,x_2)$, and deduce a
+contradiction.
+\end{hint}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.32}
+Suppose $p$ and $q$ are continuous on  $(a,b)$ and
+ every solution of
+\begin{equation}\label{eq:eqA5.1.32}
+y''+p(x)y'+q(x)y=0
+\end{equation}
+on $(a,b)$ can be
+written as a linear combination of the twice differentiable
+functions $\{y_1,y_2\}$. Use Theorem~\ref{thmtype:5.1.1} to show that
+$y_1$ and $y_2$ are themselves solutions of \ref{eq:eqA5.1.32} on
+$(a,b)$.
+
+\begin{solution}
+    Let $x_0$ be an arbitrary point in  $(a,b)$. By the motivating
+argument preceding  Theorem~5.1.4,
+(B) $W(x_0)=y_1(x_0)y_2'(x_0)-y_1'(x_0)y_2(x_0)\ne0$. Now let $y$ be
+the solution of $y''+p(x)y'+q(x)y=0,\ y(x_0)=y_1(x_0),\
+y'(x_0)=y_1'(x_0)$. By assumption,  $y$ is a linear combination
+of
+ $\{y_1,y_2\}$ on  $(a,b)$; that is,  $y=c_1y_1+c_2y_2$, where
+\begin{eqnarray*}
+c_1y_1(x_0)+c_2y_2(x_0)&=&y_1(x_0)\\
+c_1y_1'(x_0)+c_2y_2'(x_0)&=&y_1'(x_0).
+\end{eqnarray*}
+Solving this system by Cramers' rule yields
+$$
+c_1=\frac{1}{ W(x_0)}
+\left| \begin{array}{cc}
+y_1(x_0) & y_2(x_0) \\
+y_1'(x_0) & y'_2(x_0)
+\end{array} \right|=1
+\mbox{ and }
+c_2=\frac{1}{ W(x_0)}
+\left| \begin{array}{cc}
+y_1(x_0) & y_1(x_0)\\
+y'_1(x_0) &y_1(x_0)
+\end{array} \right|=0.
+$$
+Therefore,$y=y_1$, which
+shows that $y_1$ is a solution of (A). A similar argument shows that
+$y_2$ is a solution of (A).
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.33}
+Suppose  $p_1$, $p_2$, $q_1$, and $q_2$ are continuous on
+$(a,b)$  and the equations
+$$
+y''+p_1(x)y'+q_1(x)y=0$$ 
+and 
+$$y''+p_2(x)y'+q_2(x)y=0
+$$
+have the same solutions on $(a,b)$. Show that $p_1=p_2$ and $q_1=q_2$
+on $(a,b)$.
+\begin{hint}
+    Use Abel's formula.
+\end{hint}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.34}
+(For this exercise you have to know about $3\times 3$
+determinants.)
+Show that if $y_1$ and $y_2$ are twice continuously differentiable on
+$(a,b)$ and the Wronskian $W$ of $\{y_1,y_2\}$ has no zeros in
+$(a,b)$ then the equation
+$$\frac{1}{W}\begin{bmatrix}y & y_1 & y_2\\
+y' & y'_1 & y'_2 \\
+y'' & y_1'' & y_2''\end{bmatrix}=0$$
+can be written as
+\begin{equation}\label{eq:eqA5.1.34}
+y''+p(x)y'+q(x)y=0,
+\end{equation}
+where $p$ and $q$ are continuous on $(a,b)$ and $\{y_1,y_2\}$ is a
+fundamental set of solutions of (A) on $(a,b)$.
+\begin{hint}
+    Expand the determinant by cofactors of its first column.
+\end{hint}
+
+\begin{solution}
+    Expanding  the determinant by cofactors of its first column shows that
+the first equation in the exercise can be written as
+$$
+\frac{y}{ W}\left| \begin{array}{cc}
+y_1' & y_2' \\
+y_1'' & y_2''
+\end{array} \right|-
+\frac{y'}{ W}\left| \begin{array}{cc}
+y_1 & y_2 \\
+y_1'' & y_2''
+\end{array} \right|+
+\frac{y''}{ W}\left| \begin{array}{cc}
+y_1 & y_2 \\
+y'_1 & y'_2
+\end{array} \right|=0,
+$$
+which is of the form (A) with
+$$
+p=-\frac{1}{ W}\left| \begin{array}{cc}
+y_1 & y_2 \\
+y_1'' & y_2''
+\end{array} \right|
+\mbox{\quad and \quad}
+q=\frac{1}{ W}\left| \begin{array}{cc}
+y_1' & y_2' \\
+y_1'' & y_2''
+\end{array} \right|.
+$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.35}
+Use the method suggested by Exercise~\ref{exer:5.1.34} to find a linear
+homogeneous equation for which the given functions form a fundamental
+set of solutions on some interval.
+
+
+\begin{enumerate}
+\item $e^x \cos 2x, \quad e^x \sin 2x$
+\item $x, \quad e^{2x}$
+\item $x, \quad x \ln x$
+\item $\cos (\ln x), \quad \sin (\ln x)$
+\item $\cosh x, \quad \sinh x$
+\item $ x^2-1, \quad x^2+1$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.36}
+Suppose  $p$ and $q$ are continuous  on  $(a,b)$ and
+  $\{y_1,y_2\}$ is
+a fundamental set of solutions of
+\begin{equation}\label{eq:eqA5.1.36}
+y''+p(x)y'+q(x)y=0
+\end{equation}
+on $(a,b)$. Show that if $y$ is a solution of \ref{eq:eqA5.1.36}
+on  $(a,b)$, there's exactly one way  to choose $c_1$ and $c_2$
+so that $y=c_1y_1+c_2y_2$ on  $(a,b)$.
+
+\begin{solution}
+    Theorem \ref{thmtype:5.1.6} implies that
+that there are constants $c_1$ and $c_2$ such that
+(B) $y=c_1y_1+c_2y_2$
+on $(a,b)$. To see that $c_1$ and $c_2$ are unique, assume that (B)
+holds, and let $x_0$ be a point in  $(a,b)$. Then (C)
+$y'=c_1y_1'+c_2y_2'$. Setting $x=x_0$ in (B) and (C) yields
+$$
+\begin{array}{rcc}
+c_1y_1(x_0)+c_2y_2(x_0)&=&y(x_0)\\
+c_1y_1'(x_0)+c_2y_2'(x_0)&=&y'(x_0).
+\end{array}
+$$
+Since  Theorem~5.1.6  implies that
+$y_1(x_0)y_2'(x_0)-y_1'(x_0)y_2(x_0)\ne0$, the argument preceding
+ Theorem~5.1.4 implies that $c_1$ and $c_2$ are given
+uniquely by
+$$
+c_1=\frac{y_2'(x_0)y(x_0)-y_2(x_0)y'(x_0)}{
+y_1(x_0)y_2'(x_0)-y_1'(x_0)y_2(x_0)}\,\
+c_2=\frac{y_1(x_0)y'(x_0)-y_1'(x_0)y(x_0)}{
+y_1(x_0)y_2'(x_0)-y_1'(x_0)y_2(x_0)}\,.
+$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.37}
+Suppose  $p$ and $q$ are continuous  on  $(a,b)$ and
+$x_0$ is in  $(a,b)$. Let $y_1$ and $y_2$ be the solutions of
+\begin{equation}\label{eq:eqA5.1.37}
+y''+p(x)y'+q(x)y=0
+\end{equation}
+ such that
+$$
+y_1(x_0)=1, \quad y'_1(x_0)=0 \quad
+y_2(x_0)=0,\quad  y'_2(x_0)=1.
+$$
+(Theorem~\ref{thmtype:5.1.1} implies that each of these initial value
+problems
+has a unique solution on $(a,b)$.)
+\begin{enumerate}
+\item % (a)
+Show that  $\{y_1,y_2\}$ is linearly independent on  $(a,b)$.
+\item % (b)
+Show that an arbitrary solution  $y$  of
+\ref{eq:eqA5.1.37} on  $(a,b)$ can be written as
+$y=y(x_0)y_1+y'(x_0)y_2$.
+\item\label{exer:5.1.37C} % (c)
+Express the solution of the initial value problem
+$$
+y''+p(x)y'+q(x)y=0,\quad y(x_0)=k_0,\quad y'(x_0)=k_1
+$$
+as a linear combination of $y_1$ and $y_2$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.38}
+Find solutions $y_1$ and $y_2$ of the equation $y''=0$ that satisfy the
+initial conditions
+$$
+y_1(x_0)=1, \quad y'_1(x_0)=0 \mbox{\quad and \quad} y_2(x_0)=0,
+\quad y'_2(x_0)=1.
+$$
+Then use  Exercise~\ref{exer:5.1.37C} to write
+the solution of  the initial value problem
+$$
+y''=0,\quad y(0)=k_0,\quad y'(0)=k_1
+$$
+as a linear combination of $y_1$ and $y_2$.
+
+\begin{solution}
+    The general solution of $y''=0$ is $y=c_1+c_2x$, so $y'=c_2$. Imposing
+the stated initial conditions on $y_1=c_1+c_2x$  yields $c_1+c_2x_0=1$
+and $c_2=0$; therefore $c_1=1$, so $y_1=1$.
+Imposing the stated initial conditions on $y_2=c_1+c_2x$  yields
+$c_1+c_2x_0=0$ and $c_2=1$; therefore $c_1=-x_0$, so $y_2=x-x_0$.
+The solution of the general initial value problem is
+$y=k_0+k_1(x-x_0)$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.39}
+Let $x_0$ be an arbitrary real number. Given (Example~\ref{example:5.1.1})
+that $e^x$ and $e^{-x}$ are solutions of $y''-y=0$, find
+solutions
+$y_1$ and $y_2$ of $y''-y=0$ such that
+$$
+y_1(x_0)=1, \quad y'_1(x_0)=0, \quad  
+y_2(x_0)=0,\quad  y'_2(x_0)=1.
+$$
+Then use  Exercise~\ref{exer:5.1.37C} to write
+the solution of the initial value problem
+$$
+y''-y=0,\quad y(x_0)=k_0,\quad y'(x_0)=k_1
+$$
+as a linear combination of $y_1$ and $y_2$.
+\end{problem}
+
+\begin{problem}\label{exer:5.1.40}
+Let $x_0$ be an arbitrary real number. Given (Example~\ref{example:5.1.2})
+that $\cos\omega x$ and $\sin\omega x$ are solutions of
+$y''+\omega^2y=0$, find solutions of
+ $y''+\omega^2y=0$ such that
+$$
+y_1(x_0)=1, \quad y'_1(x_0)=0\mbox{\quad  and  \quad}
+y_2(x_0)=0,\;  y'_2(x_0)=1.
+$$
+Then use Exercise~\ref{exer:5.1.37C} to write
+the solution of the initial value problem
+$$
+y''+\omega^2y=0,\quad y(x_0)=k_0,\quad y'(x_0)=k_1
+$$
+as a linear combination of $y_1$ and $y_2$.
+Use the identities
+\begin{eqnarray*}
+\cos(A+B)&=&\cos A\cos B-\sin A\sin B\\
+\sin(A+B)&=&\sin A\cos B+\cos A\sin B
+\end{eqnarray*}
+to  simplify your expressions for $y_1$, $y_2$, and $y$.
+
+\begin{solution}
+    Let $y_1=a_1\cos\omega x+a_2\sin\omega x$ and
+ $y_2=b_1\cos\omega x+b_2\sin\omega x$. Then
+\begin{eqnarray*}
+\phantom{(-}a_1\cos\omega x_0+a_2\sin\omega x_0\phantom{)}&=&1\\
+\omega(-a_1\sin\omega x_0+a_2\cos\omega x_0)&=&0
+\end{eqnarray*}
+and
+\begin{eqnarray*}
+\phantom{(-}b_1\cos\omega x_0+b_2\sin\omega x_0\phantom{)}&=&0\\
+\omega(-b_1\sin\omega x_0+b_2\cos\omega x_0)&=&1.
+\end{eqnarray*}
+Solving these systems yields $a_1=\cos\omega x_0$,
+$a_2=\sin\omega x_0$, $b_1=-\frac{\sin\omega x_0}{\omega}$, and
+$b_2=\frac{\cos\omega x_0}{\omega}$. Therefore,
+$y_1=\cos\omega x_0\cos\omega x+\sin\omega x_0\sin\omega
+x=\cos\omega(x-x_0)$ and
+ $y_2=\frac{1}{\omega}(-\sin\omega x_0\cos\omega x+\cos\omega x_0
+\sin\omega x)=\frac{1}{\omega}\sin\omega(x-x_0)$.
+ The solution of the general
+initial value problem is
+$y=k_0\cos\omega(x-x_0)+\frac{k_1}{\omega}\sin\omega(x-x_0)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.41}
+Recall from Exercise~\ref{exer:5.1.4} that
+ $1/(x-1)$ and $1/(x+1)$ are solutions of
+\begin{equation}\label{eq:eqA5.1.41}
+(x^2-1)y''+4xy'+2y=0
+\end{equation}
+on $(-1,1)$.
+Find solutions of \ref{eq:eqA5.1.41}
+ such that
+$$
+y_1(0)=1, \quad y'_1(0)=0\quad  
+y_2(0)=0,\quad  y'_2(0)=1.
+$$
+Then use  Exercise~\ref{exer:5.1.37C} to write
+the solution of  initial value problem
+$$
+(x^2-1)y''+4xy'+2y=0,\quad  y(0)=k_0,\quad y'(0)=k_1
+$$
+as a linear combination of $y_1$ and $y_2$.
+\end{problem}
+
+\begin{problem}\label{exer:5.1.42}
+\begin{enumerate}
+\item % (a)
+Verify  that $y_1=x^2$ and $y_2=x^3$ satisfy
+\begin{equation}\label{eq:eqA5.1.42}
+x^2y''-4xy'+6y=0
+\end{equation}
+on $(-\infty,\infty)$ and that $\{y_1,y_2\}$ is a fundamental set of
+solutions of \ref{eq:eqA5.1.42} on $(-\infty,0)$ and
+$(0,\infty)$.
+
+\begin{solution}
+    If $y_1=x^2$, then $y_1'=2x$ and $y_1''=2$, so
+$x^2y_1''-4xy_1'+6y_1=x^2(2)-4x(2x)+6x^2=0$
+for $x$ in $(-\infty,\infty)$.
+ If $y_2=x^3$, then $y_2'=3x^2$ and $y_2''=6x$, so
+$x^2y_2''-4xy_2'+6y_2=x^2(6x)-4x(3x^2)+6x^3=0$
+for $x$ in $(-\infty,\infty)$. If $x\ne0$, then $y_2(x)/y_1(x)=x$,
+which is nonconstant on $(-\infty,0)$ and $(0,\infty)$, so
+Theorem \ref{thmtype:5.1.6} implies that  $\{y_1,y_2\}$ is a fundamental
+set of solutions of (A) on each of these intervals.
+\end{solution}
+\item % (b)
+Let $a_1$, $a_2$, $b_1$, and $b_2$ be constants. Show that
+$$
+y=\left\{\begin{array}{rr}
+a_1x^2+a_2x^3,&x\ge 0,\\
+b_1x^2+b_2x^3,&x<0\phantom{,}
+\end{array}\right.
+$$
+is a solution of  \ref{eq:eqA5.1.42} on $(-\infty,\infty)$
+if and only if $a_1=b_1$. From this, justify the statement that
+$y$ is a  solution of \ref{eq:eqA5.1.42} on $(-\infty,\infty)$
+if and only if
+$$
+y=\left\{\begin{array}{rr}
+c_1x^2+c_2x^3,&x\ge 0,\\
+c_1x^2+c_3x^3,&x<0,
+\end{array}\right.
+$$
+where $c_1$, $c_2$, and $c_3$ are arbitrary constants.
+
+\begin{solution}
+    Theorem \ref{thmtype:5.1.6} and part (a) imply that $y$
+satisfies (A) on $(-\infty,0)$ and on $(0,\infty)$ if and only if
+$y=\left\{\begin{array}{rr}
+a_1x^2+a_2x^3,&x> 0,\\
+b_1x^2+b_2x^3,&x<0.
+\end{array}\right.$
+ Since $y(0)=0$ we can  complete the proof that $y$ is
+a solution of
+(A) on $(-\infty,\infty)$ by showing
+that $y'(0)$ and $y''(0)$ both exist if and only if $a_1=b_1$. Since
+$$
+\frac{y(x)-y(0)}{
+x-0}=\left\{\begin{array}{cl}a_1x+a_2x^2,&\mbox{
+if }x>0,\\ b_1x+b_2x^2,&\mbox{ if }x<0,\end{array}\right.
+$$
+ it follows
+that $y'(0)=\lim_{x\to0}\frac{y(x)-y(0)}{ x-0}=0$. Therefore,
+$y'=\left\{\begin{array}{rr}
+2a_1x+3a_2x^2,&x\ge 0,\\
+2b_1x+3b_2x^2,&x<0.
+\end{array}\right.$
+Since
+$\frac{y'(x)-y'(0)}{
+x-0}=\left\{\begin{array}{cl}2a_1+3a_2x,&\mbox{
+if }x>0,\\ 2b_1+3b_2x,&\mbox{ if }x<0,\end{array}\right.$ it
+follows
+that $y''(0)=\lim_{x\to0}\frac{y'(x)-y'(0)}{ x-0}$ exists
+if and only if $a_1=b_1$.  By renaming $a_1=b_1=c_1$, $a_2=c_2$,
+and $b_2=c_3$  we see that $y$ is a solution of
+(A) on $(-\infty,\infty)$ if and only if
+$y=\left\{\begin{array}{rr}
+c_1x^2+c_2x^3,&x\ge 0,\\
+c_1x^2+c_3x^3,&x<0.
+\end{array}\right.$
+\end{solution}
+\item % (c)
+ For what values of $k_0$ and  $k_1$
+does the initial value problem
+$$
+x^2y''-4xy'+6y=0,\quad y(0)=k_0,\quad y'(0)=k_1
+$$
+have a solution? What are the solutions?
+\begin{solution}
+    We have shown that $y(0)=y'(0)=0$ for any choice
+of $c_1$ and $c_2$ in (C). Therefore,the given initial value problem
+has a solution if and only if $k_0=k_1=0$, in which case every
+function of the form (C) is a solution.
+\end{solution}
+
+\item % (d)
+ Show that if $x_0\ne0$ and $k_0,k_1$  are
+arbitrary constants,  the initial value problem
+\begin{equation}\label{eq:eqB5.1.42}
+x^2y''-4xy'+6y=0,\quad y(x_0)=k_0,\quad y'(x_0)=k_1
+\end{equation}
+has infinitely many solutions on $(-\infty,\infty)$.  On what interval does
+\ref{eq:eqB5.1.42} have a unique solution?
+
+\begin{solution}
+    If $x_0>0$, then $c_1$ and $c_2$ in (C) are uniquely
+determined by $k_0$ and $k_1$, but $c_3$ can be chosen arbitrarily.
+Therefore,(B) has a unique solution on
+$(0,\infty)$, but infinitely many solutions on $(-\infty,\infty)$.
+  If $x_0<0$, then $c_1$ and $c_3$ in (C) are uniquely
+determined by $k_0$ and $k_1$, but $c_2$ can be chosen arbitrarily.
+Therefore,(B) has a unique solution on
+$(-\infty,0)$, but infinitely many solutions on $(-\infty,\infty)$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.43} %\exercisec
+\begin{enumerate}
+\item % (a)
+Verify  that $y_1=x$ and $y_2=x^2$ satisfy
+\begin{equation}\label{eq:eqA5.1.43}
+x^2y''-2xy'+2y=0
+\end{equation}
+on $(-\infty,\infty)$ and that $\{y_1,y_2\}$ is a fundamental set of
+solutions of \ref{eq:eqA5.1.43} on $(-\infty,0)$ and
+$(0,\infty)$.
+\item % (b)
+Let $a_1$, $a_2$, $b_1$, and $b_2$ be constants. Show that
+$$
+y=\left\{\begin{array}{rr}
+a_1x+a_2x^2,&x\ge 0,\\
+b_1x+b_2x^2,&x<0\phantom{,}
+\end{array}\right.
+$$
+is a solution of  \ref{eq:eqA5.1.43} on $(-\infty,\infty)$
+if and only if $a_1=b_1$ and $a_2=b_2$. From this, justify the
+statement that the
+ general solution of \ref{eq:eqA5.1.43} on $(-\infty,\infty)$
+is $y=c_1x+c_2x^2$, where $c_1$ and $c_2$ are arbitrary
+constants.
+
+\item % (c)
+ For what values of $k_0$ and  $k_1$
+does the initial value problem
+$$
+x^2y''-2xy'+2y=0,\quad  y(0)=k_0,\quad y'(0)=k_1
+$$
+have a solution? What are the solutions?
+
+\item % (d)
+ Show that if $x_0\ne0$ and $k_0,k_1$  are
+arbitrary constants then the initial value problem
+$$
+x^2y''-2xy'+2y=0,\quad  y(x_0)=k_0,\quad y'(x_0)=k_1
+$$
+has a unique  solution on $(-\infty,\infty)$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.1.44}
+\begin{enumerate}
+\item % (a)
+Verify  that $y_1=x^3$ and $y_2=x^4$ satisfy
+\begin{equation}\label{eq:eqA5.1.44}
+x^2y''-6xy'+12y=0
+\end{equation}
+on $(-\infty,\infty)$, and that $\{y_1,y_2\}$ is a fundamental set of
+solutions of \ref{eq:eqA5.1.44} on $(-\infty,0)$ and
+$(0,\infty)$.
+
+\begin{solution}
+     If $y_1=x^3$, then $y_1'=3x^2$ and $y_1''=6x$, so
+$x^2y_1''-6xy_1'+12y_1=x^2(6x)-6x(3x^2)+12x^3=0$
+for $x$ in $(-\infty,\infty)$.
+ If $y_2=x^4$, then $y_2'=4x^3$ and $y_2''=12x^2$, so
+$x^2y_2''-6xy_2'+12y_2=x^2(12x^2)-6x(4x^3)+12x^4=0$
+for $x$ in $(-\infty,\infty)$.
+If $x\ne0$, then $y_2(x)/y_1(x)=x$, which
+is nonconstant on $(-\infty,0)$ and $(0,\infty)$, so
+Theorem \ref{thmtype:5.1.6} implies that  $\{y_1,y_2\}$ is a fundamental
+set of solutions of (A) on each of these intervals.
+\end{solution}
+\item % (b)
+Show that
+$y$ is a solution of  \ref{eq:eqA5.1.44} on $(-\infty,\infty)$
+if and only if
+$$
+y=\left\{\begin{array}{rr}
+a_1x^3+a_2x^4,&x\ge 0,\\
+b_1x^3+b_2x^4,&x<0,
+\end{array}\right.
+$$
+where $a_1$, $a_2$, $b_1$, and $b_2$  are arbitrary constants.
+
+\begin{solution}
+    Theorem \ref{thmtype:5.1.2} and part (a) imply that $y$ satisfies (A) on
+$(-\infty,0)$ and on $(0,\infty)$ if and only if
+(C) $y=\left\{\begin{array}{rr}
+a_1x^3+a_2x^4,&x> 0,\\
+b_1x^3+b_2x^4,&x<0.
+\end{array}\right.$
+Since $y(0)=0$ we can  complete the proof that $y$ is
+a solution of
+(A) on $(-\infty,\infty)$ by showing
+that $y'(0)$ and $y''(0)$ both exist for any choice of $a_1$, $a_2$,
+$b_1$, and $b_2$. Since
+$\frac{y(x)-y(0)}{
+x-0}=\left\{\begin{array}{cl}a_1x^2+a_2x^3,&\mbox{
+if }x>0,\\ b_1x^2+b_2x^3,&\mbox{ if }x<0,\end{array}\right.$ it
+follows
+that $y'(0)=\lim_{x\to0}\frac{y(x)-y(0)}{ x-0}=0$. Therefore,
+$y'=\left\{\begin{array}{rr}
+3a_1x^2+4a_2x^3,&x\ge 0,\\
+3b_1x^2+4b_2x^3,&x<0.
+\end{array}\right.$
+Since
+$\frac{y'(x)-y'(0)}{
+x-0}=\left\{\begin{array}{cl}3a_1x+4a_2x^2,&\mbox{
+if }x>0,\\ 3b_1x+4b_2x^2,&\mbox{ if }x<0,\end{array}\right.$ it
+follows that $y''(0)=\lim_{x\to0}\frac{y'(x)-y'(0)}{ x-0}=0$.
+Therefore,(B) is a solution of (A) on $(-\infty,\infty)$.
+\end{solution}
+\item % (c)
+ For what values of $k_0$ and  $k_1$
+does the initial value problem
+$$
+x^2y''-6xy'+12y=0, \quad  y(0)=k_0,\quad y'(0)=k_1
+$$
+have a solution? What are the solutions?
+
+\begin{solution}
+    We have shown that $y(0)=y'(0)=0$ for any choice
+of $a_1$, $a_2$, $b_1$, and $b_2$ in (B). Therefore,the given initial
+value
+problem has a solution if and only if $k_0=k_1=0$, in which case every
+function of the form (B) is a solution.
+\end{solution}
+\item % (d)
+ Show that if $x_0\ne0$ and $k_0,k_1$  are
+arbitrary constants then the initial value problem
+\begin{equation}\label{eq:eqB5.1.44}
+x^2y''-6xy'+12y=0, \quad  y(x_0)=k_0,\quad y'(x_0)=k_1
+\end{equation}
+has infinitely many solutions on $(-\infty,\infty)$.  On what interval does
+\ref{eq:eqB5.1.44} have a unique solution?
+
+\begin{solution}
+    If $x_0>0$, then $a_1$ and $a_2$ in (B) are uniquely
+determined by $k_0$ and $k_1$, but $b_1$ and $b_2$ can be chosen
+arbitrarily. Therefore,(C) has a unique solution on
+$(0,\infty)$, but infinitely many solutions on $(-\infty,\infty)$.
+  If $x_0<0$, then $b_1$ and $b_2$ in (B) are uniquely
+determined by $k_0$ and $k_1$, but $a_1$ and $a_2$ can be chosen
+arbitrarily. Therefore,(C) has a unique solution on
+$(-\infty,0)$, but infinitely many solutions on $(-\infty,\infty)$.
+
+\end{solution}
+\end{enumerate}
+\end{problem}
 
 \end{document}
