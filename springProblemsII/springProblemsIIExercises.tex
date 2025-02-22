@@ -85,6 +85,22 @@ initially displaced 6 inches above equilibrium and given a downward
 velocity of 3 ft/sec. Find its displacement for $t>0$ if the medium
 resists the motion with a force  equal to 3 times the speed
 in ft/sec.
+
+\begin{solution}
+Since $k=\frac{mg}{\Delta l}=\frac{32}{1}=32$ the equation of
+motion is (A) $y''+3y'+32y=0$. The characteristic polynomial of (A) is
+$p(r)=r^2+3r+32=\left(r+\frac{3}{2}\right)^2+\frac{119}{4}$.
+Therefore,the general solution of (A) is
+$y=e^{-3t/2}\left(c_1\cos\frac{\sqrt{119}}{2}t
++c_2\sin\frac{\sqrt{119}}{2}t\right)$, so $y'=-\frac{3}{2}y+
+\frac{\sqrt{119}}{2}e^{-3t/2}
+\left(-c_1\sin\frac{\sqrt{119}}{2}t+c_2\cos\frac{\sqrt{119}}{2}t\right)$.
+Now $y(0)=\frac{1}{2}$ and $y'(0)=-3\Rightarrow c_1=\frac{1}{2}$
+and $-3=-\frac{3}{4}+\frac{\sqrt{119}}{2}c_2$, or
+$c_2=-\frac{9}{2\sqrt{119}}$. Therefore,
+$y=e^{-\frac{3}{2}t}\left(\frac{1}{2}\cos \frac{\sqrt{119}}{2} t
+-\frac{9}{2\sqrt{119}}\sin\frac{\sqrt{119}}{2}t\right)$ ft.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:6.2.11}
@@ -157,6 +173,20 @@ A mass of one kg stretches a spring 49 cm in equilibrium. It is
 attached to a dashpot that supplies a damping force of 4 N for each
 m/sec of speed. Find the steady state component of its displacement if
 it's subjected to an external force $F(t)=8\sin2t-6\cos2t$ N.
+
+\begin{solution}
+Since $k=\frac{mg}{\Delta l}=\frac{9.8}{.49}=20$ the
+equation of motion is
+(A) $y''+4y'+20y=8\sin2t-6\cos2t$.
+The steady state component of the solution of (A)
+is of the form
+$y_p=A\cos2t+B\sin2t$; therefore $y_p'=-2A\sin2t+2B\cos2t$
+and $y_p''=-4A\cos2t-4B\sin2t$, so
+$y_p''+4y_p'+20y_p=(16A+8B)\cos2t-(8A-16B)\sin2t=8\sin2t-6\cos2t$
+if $16A+8B=-6$, $-8A+16B=8$; therefore $A=-\frac{1}{2}$,
+$B=\frac{1}{4}$, and
+$y=\frac{-{1}{2}\cos2t+\frac{1}{4}\sin2t}$ m.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:6.2.21}
