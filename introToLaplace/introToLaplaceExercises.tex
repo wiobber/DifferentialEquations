@@ -1,0 +1,315 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+\begin{problem}\label{exer:8.1.1}
+Find the Laplace transforms of the following functions by evaluating
+the integral $F(s)=\int_0^\infty e^{-st} f(t)\,dt$.
+
+\begin{enumerate}
+    \item $t$
+    \item $te^{-t}$ 
+    \item $\sinh bt$
+    \item $e^{2t}-3e^t$
+    \item $t^2$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.1.2}
+Use  the table of Laplace transforms to
+find the Laplace transforms of the following functions.
+
+\begin{enumerate}
+    \item $\cosh t\sin t$
+    \item $\sin^2t$
+    \item $\cos^2 2t$
+    \item $\cosh^2 t$
+    \item $t\sinh 2t$
+    \item $\sin t\cos t$
+    \item $\sin\left(t+\frac{\pi}{4}\right)$
+    \item $\cos 2t -\cos 3t$
+    \item $\sin 2t +\cos 4t$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.1.3}
+ Show that
+$$
+\int_0^\infty e^{-st}e^{t^2} dt=\infty
+$$
+for every real number $s$.
+\end{problem}
+
+\begin{problem}\label{exer:8.1.4}
+ Graph the following piecewise continuous functions and evaluate
+$f(t+)$, $f(t-)$, and $f(t)$ at each point of discontinuity.
+
+\begin{enumerate}
+    \item $f(t)=\left\{\begin{array}{cl} -t,
+& 0\le t<2,\\ t-4, & 2\le t<3,\\ 1, & t\ge
+3.\end{array}\right.$
+    \item $f(t)=\left\{\begin{array}{cl} t^2+2, & 0
+\le t<1,\\4, & t=1,\\ t, & t>
+1.\end{array}\right.$
+    \item $f(t)=\left\{\begin{array}{rl}
+\sin t, & 0\le t<\pi/ 2,\\ 2\sin t, &\pi/ 2
+\le t<\pi,\\ \cos t, & t\ge\pi.\end{array}\right.$
+    \item $f(t)=\left\{\begin{array}{cl}t,
+ & 0\le t<1,\\ 2, & t=1,\\ 2-t, & 1
+\le t<2,\\ 3, & t=2,\\ 6, & t>
+2.\end{array}\right.$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.1.5}
+ Find the Laplace transform:
+
+\begin{enumerate}
+    \item $f(t)=\left\{\begin{array}{rl} e^{-t}, &
+0\le t<1,\\ e^{-2t}, & t\ge 1.\end{array}\right.$ 
+    \item $f(t)=\left\{\begin{array}{rl} 1, & 0\le t<
+4,\\ t, & t\ge 4.\end{array}\right.$
+    \item $f(t)=\left\{\begin{array}{rl} t, & 0\le
+t<1,\\ 1, & t\ge 1.\end{array}\right.$
+    \item $f(t)=\left\{\begin{array}{rl} te^t, & 0\le
+t<1,\\t e^t, & t\ge 1.\end{array}\right.$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.1.6}
+Prove that if $f(t)\leftrightarrow F(s)$ then $t^kf(t)\leftrightarrow
+(-1)^kF^{(k)}(s)$.
+
+\begin{hint}
+    Assume that it's permissible to differentiate
+the integral $\int_0^\infty e^{-st}f(t)\,dt$ with respect to $s$ under
+the integral sign.
+\end{hint}
+\end{problem}
+
+\begin{problem}\label{exer:8.1.7}
+Use the known Laplace transforms
+$$
+{\cal L}(e^{\lambda t}\sin\omega t)=\frac{\omega}{(s-\lambda)^2+\omega^2}
+\quad\text{and }\quad
+{\cal L}(e^{\lambda t}\cos\omega t)=\frac{s-\lambda}{(s-\lambda)^2+\omega^2}
+$$
+  and the result of Exercise~\ref{exer:8.1.6} to find
+${\cal L}(te^{\lambda t}\cos\omega t)$ and
+${\cal L}(te^{\lambda t}\sin\omega t)$.
+\end{problem}
+
+\begin{problem}\label{exer:8.1.8}
+ Use the known Laplace transform ${\cal L}(1)=1/s$ and the result of
+Exercise~\ref{exer:8.1.6} to show that
+$$
+{\cal L}(t^n)=\frac{n!}{s^{n+1}},\quad n=\text{ integer}.
+$$
+\end{problem}
+
+\begin{problem}\label{exer:8.1.9}
+\begin{enumerate}
+\item % (a)
+ Show that if $\lim_{t\to\infty} e^{-s_0t} f(t)$ exists and
+is finite then  $f$ is of exponential order $s_0$.
+\item % (b)
+ Show that if $f$ is of exponential order $s_0$ then $\lim_{t
+\to\infty} e^{-st} f(t)=0$ for all $s>s_0$.
+\item % (c)
+Show that if $f$ is of exponential order $s_0$  and $g(t)=f(t+\tau)$
+where $\tau>0$, then $g$ is also of exponential order $s_0$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.1.10}
+Recall the following theorem from calculus.
+
+\begin{theorem}
+    Let $g$ be integrable on $[0,T]$ for
+every $T>0.$  Suppose there is a function $w$ defined on some
+interval $[\tau,\infty)$ (with $\tau\ge 0$) such that $|g(t)|\le
+w(t)$ for $t\ge\tau$ and $\int^\infty_\tau w(t)\,dt$
+converges.  Then $\int_0^\infty g(t)\,dt$ converges.
+\end{theorem} 
+
+Use this theorem to show that if $f$ is piecewise continuous on
+$[0,\infty)$ and of exponential order $s_0$, then $f$ has a Laplace
+transform $F(s)$ defined for $s>s_0$.
+\end{problem}
+
+\begin{problem}\label{exer:8.1.11}
+ Prove: If $f$ is piecewise continuous and of exponential order
+then $\lim_{s\to\infty}F(s)~=~0$.
+\end{problem}
+
+\begin{problem}\label{exer:8.1.12}
+Prove: If $f$ is continuous on $[0,\infty)$ and of exponential order
+$s_0>0$, then
+$$
+{\cal L}\left(\int^t_0 f(\tau)\,d\tau\right)=\frac{1}{s} {\cal L} (f),
+\quad s>s_0.
+$$
+\begin{hint}
+Use integration by parts to evaluate the transform on
+the left. 
+\end{hint}
+\end{problem}
+
+\begin{problem}\label{exer:8.1.13}
+Suppose $f$ is piecewise continuous and of exponential
+order, and that $\lim_{t\to 0+} f(t)/t$ exists.  Show that
+$$
+{\cal L}\left(\frac{f(t)}{t}\right)=\int^\infty_s F(r)\,dr.
+$$
+\begin{hint}
+    Use  the results of Exercises~$6$ and $11$.
+\end{hint}
+\end{problem}
+
+\begin{problem}\label{exer:8.1.14}
+Suppose $f$ is piecewise continuous on $[0,\infty)$.
+\begin{enumerate}
+\item % (a)
+Prove: If the integral $g(t)=\int^t_0 e^{-s_0\tau} f(\tau)\,d\tau$
+satisfies the inequality $|g(t)|\le M\; (t\ge 0)$, then $f$ has a
+Laplace transform $F(s)$ defined for $s>s_0$.
+
+\begin{hint}
+Use integration by
+parts to show that
+$$
+\int_0^T e^{-st}f(t)\,dt = e^{-(s-s_0)T}g(T)
++(s-s_0)\int_0^Te^{-(s-s_0)t}g(t)\,dt.
+$$
+\end{hint}
+
+\item % (b)
+ Show that if ${\cal L}(f)$ exists for
+$s=s_0$ then it exists for $s>s_0$.
+Show that the function
+$$
+f(t)=te^{t^2}\cos(e^{t^2})
+$$
+has a Laplace transform defined for $s>0$, even though $f$ is not of exponential order.
+
+\item % (c)
+Show that the function
+$$
+f(t)=te^{t^2}\cos(e^{t^2})
+$$
+has a Laplace transform defined for $s>0$, even though $f$ is not of exponential order.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.1.15}
+Use the table of Laplace transforms and the result of
+Exercise~\ref{exer:8.1.13} to find the Laplace transforms of the following
+functions.
+
+\begin{enumerate}
+    \item $\frac{\sin\omega t}{t}\quad(\omega>0)$
+    \item $\frac{\cos\omega t-1}{t}\quad (\omega>0)$
+    \item $\frac{e^{at}-e^{bt}}{t}$
+    \item $\frac{\cosh t-1}{t}$
+    \item $\frac{\sinh^2 t}{t}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.1.16}
+  The \emph{gamma function} is defined by
+$$
+\Gamma (\alpha)=\int_0^\infty x^{\alpha-1}e^{-x}\,dx,
+$$
+which can be shown to converge if $\alpha>0$.
+
+\begin{enumerate}
+\item % (a)
+ Use integration by parts to show that
+$$
+\Gamma (\alpha+1)=\alpha\Gamma (\alpha),\quad\alpha>0.
+$$
+\item % (b)
+ Show that $\Gamma(n+1)=n!$ if $n=1$, $2$, $3$,\dots.
+\item % (c)
+ Use the above facts and the table of Laplace transforms to show
+$$
+{\cal L}(t^\alpha)=\frac{\Gamma (\alpha+1)}{s^{\alpha+1}},\quad s>0,
+$$
+if $\alpha$ is a nonnegative integer.  Show that this formula is valid for
+any $\alpha>-1$.
+\begin{hint}
+Change the variable of integration in the
+integral for $\Gamma (\alpha+1)$.
+\end{hint}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.1.17}
+  Suppose $f$ is continuous on $[0, T]$ and $f(t+T)=f(t)$
+for all $t\ge 0$.  (We say in this case that $f$ is \emph{periodic with
+period\/} $T$.)
+\begin{enumerate}
+\item % (a)
+ Conclude from Theorem~\ref{thmtype:8.1.6} that the Laplace transform of
+$f$ is defined for $s>0$. 
+\begin{hint}
+   Since $f$ is
+continuous on $[0,T]$ and periodic with period $T$, it's bounded
+on $[0,\infty)$. 
+\end{hint}
+\item\label{exer:8.1.17b} % (b) 
+Show that
+$$
+F(s)=\frac{1}{1-e^{-sT}}\int_0^T e^{-st}f(t)\,dt,\quad s>0.
+$$
+\begin{hint}
+    Write
+$$
+F(s)=\sum^\infty_{n=0}\int^{(n+1)T}_{nT}e^{-st} f(t)\,dt.
+$$
+Then show that
+$$
+\int^{(n+1)T}_{nT} e^{-st}f(t)\,dt=e^{-nsT}\int_0^T e^{-st}f(t)\,dt,
+$$
+and recall the formula for the sum of a geometric series.
+\end{hint}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.1.18}
+  Use the formula given in Exercise~\ref{exer:8.1.17b} to find
+the
+Laplace transforms of the given periodic functions:
+\begin{enumerate}
+\item % (a)
+ $f(t)=\left\{\begin{array}{cl} t, & 0\le
+t<1,\\ 2-t, & 1\le t<2,\end{array}\right.\hskip30pt f(t+2)=f(t),
+\quad t\ge 0$
+\item % (b)
+ $f(t)=\left\{\begin{array}{rl}1, & 0\le
+t<\frac{1}{2},\\ -1, & \frac{1}{2}\le t<1,\end{array}\right.
+\hskip30pt f(t+1)=f(t),\quad t\ge 0$
+\item % (c)
+ $f(t)=|\sin t|$
+\item % (d)
+ $f(t)=\left\{\begin{array}{cl}\sin t, & 0\le t<
+\pi,
+\\ 0, &\pi\le t<2\pi,\end{array}\right.\hskip30pt
+f(t+2\pi)=f(t)$
+\end{enumerate}
+\end{problem}
+
+
+\end{document}
