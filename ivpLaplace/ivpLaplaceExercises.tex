@@ -206,6 +206,42 @@ y'(0)=2$
 \end{problem}
 
 \begin{problem}\label{exer:8.3.28} Use the Laplace transform to solve the initial value problem. $y''+2y'+2y=2t, \quad  y(0)=2,\quad y'(0)=-7$
+
+\begin{solution}
+$$
+(s^2+2s+2)Y(s)=\frac{2}{s^2}+(-7+2s)+4.
+$$
+Since $(s^2+2s+2)=(s+1)^2+1$,
+$$
+Y(s)=\frac{2}{s^2((s+1)^2+1)}+{2s-3\over (s+1)^2+1}.
+\text{(A)}
+$$
+$$
+\frac{2s-3}{(s+1)^2+1}=\frac{2(s+1)-5}{(s+1)^2+1}
+\leftrightarrow e^{-t}(2\cos t-5\sin t).
+\text{(B)}
+$$
+$$
+\frac{2}{s^2((s+1)^2+1)}=\frac{A}{s}+\frac{B}{s^2}+\frac{C(s+1)+D}{(s+1)^2+1},
+$$
+where
+$(As+B)\left((s+1)^2+1\right)+s^2\left(C(s+1)+D\right)=2$.
+$$
+\begin{array}{rcll}
+2B&=&2&(\mbox{set }s=0);\\
+-A+B+D&=&2&(\mbox{set }s=-1);\\
+A+C&=&0&(\mbox{equate coefficients of }s^3);\\
+2A+B+C+D&=&0&(\mbox{equate coefficients of }s^2).
+\end{array}
+$$
+Solving this system yields $A=-1$, $B=1$, $C=1$, $D=0$. Therefore,
+$$
+\frac{2}{s^2((s+1)^2+1)}=-\frac{1}{s}+\frac{1}{s^2}+\frac{(s+1)}{(s+1)^2+1}\leftrightarrow-1+t+e^{-t}\cos t.
+$$
+From this, (A), and (B),
+$y=-1+t+e^{-t}(\cos t-5\sin t)$.
+
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.3.29} Use the Laplace transform to solve the initial value problem. $y''-2y'+2y=5\sin t+10\cos t, \quad  y(0)=1,\;
@@ -221,6 +257,21 @@ y(0)=0,\quad y'(0)=4$
 \end{problem}
 
 \begin{problem}\label{exer:8.3.32} Use the Laplace transform to solve the initial value problem. $2y''-3y'-2y=4e^t, \quad   y(0)=1,\;  y'(0)=-2$
+
+\begin{solution}
+$$
+(2s^2-3s-2)Y(s)=\frac{4}{s-1}+2(-2+s)-3=\frac{4+(2s-7)(s-1)}{s-1}
+$$
+
+Since $2s^2-3s-2=(s-2)(2s+1)$,
+$$
+Y(s)=\frac{4+(2s-7)(s-1)}{2(s-2)(s-1)(s+1/2)}=
+\frac{1}{5}\frac{1}{s-2}-\frac{4}{3}\frac{1}{s-1}+\frac{32}{15}\frac{1}{s+1/2}
+$$
+and
+ $y=\frac{1}{5}e^{2t}-\frac{4}{3}e^t
++\frac{32}{15}e^{-t/2}$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.3.33} Use the Laplace transform to solve the initial value problem. $6y''-y'-y=3e^{2t}, \quad   y(0)=0,\;  y'(0)=0$
