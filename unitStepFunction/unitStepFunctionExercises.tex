@@ -47,6 +47,37 @@ $f$ in terms of unit step functions as in Eqn.~\eqref{eq:8.4.6}, and use
 Theorem~\ref{thmtype:8.4.1} to find ${\cal L}(f)$.  Graph $f$.
 $f(t)=\left\{\begin{array}{cl}1,
 &0\le t<1,\\ t+2,&t\ge1.\end{array}\right.$
+
+\begin{solution}
+$$
+{\cal L}(f)  =\int_0^\infty e^{-st}f(t)\, dt
+ =\int_0^1 e^{-st}\,dt+\int_1^\infty e^{-st}(t+2)\,dt.
+\text{(A)}
+$$
+To relate the first term to a Laplace transform we  add and subtract
+$\int_1^\infty e^{-st}\, dt$
+  in (A) to obtain
+$$
+{\cal L}(f)=\int_0^\infty e^{-st}\,dt+
+\int_1^\infty e^{-st}(t+1)\, dt
+={\cal L}(t)+\int_1^\infty e^{-st}(t+1)\,dt.
+\text{(B)}
+$$
+Letting $t=x+1$  in the last integral yields
+$$
+\int_1^\infty e^{-st}(t+1)\,dt=\int_0^\infty e^{-s(x+1)}(x+2)\,dx
+ =e^{-s}{\cal L}(t+2).
+$$
+This and (B) imply that
+$ {\cal L}(f)={\cal L}(1)+e^{-s}{\cal L}(t+2)
+=\frac{1}{s}+e^{-s}\left(\frac{1}{s^2}+\frac{2}{s}\right)$.
+
+Alternatively,
+
+ $f(t)= 1+u(t-1)(t+1)\leftrightarrow {\cal L}(1)+e^{-s}{\cal
+L}(t+2)=
+\frac{1}{s}+e^{-s}\left(\frac{1}{s^2}+\frac{2}{s}\right)$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.5}
@@ -99,6 +130,15 @@ given function $f$ in terms of unit step functions
 $f(t)=\left\{\begin{array}{cl}
 e^{2-t}, &0\le t<1,\\ 
 e^{-2t},&t\ge1.\end{array}\right.$
+
+\begin{solution}
+$f(t)=e^{-t}+u(t-1)(e^{-2t}-e^{-t})
+\leftrightarrow {\cal L}(e^{-t})+e^{-s}{\cal
+L}(e^{-2(t+1)})-e^{-s}{\cal L}(e^{-t-1})=
+ {\cal L}(e^{-t})+e^{-(s+2)}{\cal
+L}(e^{-2t})-e^{-(s+1)}{\cal L}(e^{-t})=
+\frac{1-e^{-(s+1)}}{s+1}+\frac{e^{-(s+2)}}{s+2}$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.11}
@@ -143,6 +183,13 @@ Express the given function $f$ in terms of unit step functions and use Theorem~\
 $f(t)=\left\{\begin{array}{cl}- 2,&0\le
 t<1,\\ -2t+2,&1\le t<3,\\ -3t,&t\ge
 3.\end{array}\right.$
+
+\begin{solution}
+$f(t)=2-2u(t-1)t+u(t-3)(5t-2)
+\leftrightarrow {\cal L}(2)-2e^{-s}{\cal L}(t+1)+e^{-3s}{\cal
+L}(5t+13)=
+\frac{2}{s}-e^{-s}\left(\frac{2}{s^2}+\frac{2}{s}\right)+e^{-3s}\left(\frac{5}{s^2}+\frac{13}{s}\right)$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.17}  Express the given function $f$ in terms of unit step functions and use Theorem~\ref{thmtype:8.4.1} to find ${\cal L}(f)$.  Graph $f$.
@@ -165,6 +212,8 @@ $H(s)=\frac{e^{-2s}}{s-2}$
 Use Theorem~\ref{thmtype:8.4.2} to express the inverse transforms in terms of step functions, and then find distinct formulas for the inverse transforms on the appropriate intervals, as in
 Example~\ref{example:8.4.7}.
 $H(s)=\frac{e^{-s}}{s(s+1)}$
+
+
 \end{problem}
 
 \begin{problem}\label{exer:8.4.21}
@@ -177,6 +226,25 @@ $H(s)=\frac{e^{-s}}{s^3}+
 \begin{problem}\label{exer:8.4.22} Use Theorem~\ref{thmtype:8.4.2} to express the inverse transforms in terms of step functions, and then find distinct formulas for the inverse transforms on the appropriate intervals, as in
 Example~\ref{example:8.4.7}.  Graph the inverse transform.  $H(s)=\left(\frac{2}{s}+\frac{1}{s^2}\right)
 +e^{-s}\left(\frac{3}{s}-\frac{1}{s^2}\right)+e^{-3s}\left(\frac{1}{s}+\frac{1}{s^2}\right)$
+
+\begin{solution}
+$$
+\frac{3}{s}-\frac{1}{s^2}\leftrightarrow 3-t\Rightarrow
+e^{-s}\left(\frac{3}{s}-\frac{1}{s^2}\right)\leftrightarrow
+u(t-1)\left(3-(t-1)\right)=u(t-1)(4-t);
+$$
+$$
+\frac{1}{s}+\frac{1}{s^2}\leftrightarrow 1+t\Rightarrow
+e^{-3s}\left(\frac{1}{s}+\frac{1}{s^2}\right)\leftrightarrow
+u(t-3)\left(1+(t-3)\right)=u(t-3)(t-2);
+$$
+therefore
+$$
+h(t)=2+t+u(t-1)(4-t)+u(t-3)(t-2)=\left\{\begin{array}{cl} 2+t,&
+0\le t<1,\\  6,&1\le t<3,\\  t+4,&t\ge
+3.\end{array}\right.
+$$
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.23} Use Theorem~\ref{thmtype:8.4.2} to express the inverse transforms in terms of step functions, and then find distinct formulas for the inverse transforms on the appropriate intervals, as in
@@ -209,6 +277,27 @@ $H(s)=\frac{1}{s}+\frac{1}{s^2}+e^{-s}\left(\frac{3}{s}+\frac{2}{s^2}\right) +e^
 Use Theorem~\ref{thmtype:8.4.2} to express the inverse transforms in terms of step functions, and then find distinct formulas for the inverse transforms on the appropriate intervals, as in
 Example~\ref{example:8.4.7}.
 $H(s)=\frac{1}{s}-\frac{2}{s^3}+e^{-2s}\left(\frac{3}{s}-\frac{1}{s^3}\right) +\frac{e^{-4s}}{s^2}$
+
+\begin{solution}
+$$
+\frac{3}{s}-\frac{1}{s^3}\leftrightarrow 3-{t^2\over2}\Rightarrow
+e^{-2s}\left(\frac{3}{s}-\frac{1}{s^3}\right)\leftrightarrow
+u(t-2)\left(3-\frac{(t-2)^2}{2}\right)=u(t-2)
+\left(-\frac{t^2}{2}+2t+1\right);
+$$
+$$
+\frac{1}{s^2}\leftrightarrow t\Rightarrow
+\frac{e^{-4s}}{s^2}\leftrightarrow u(t-4)(t-4);
+$$
+therefore
+\begin{eqnarray*}
+h(t)&=&1-t^2+u(t-2)\left(-\frac{t^2}{2}+2t+1\right) +u(t-4)(t-4)
+\\&=&
+\left\{\begin{array}{cl} 1-t^2,&0\le
+t<2\\ -\frac{3t^2}{2} +2t+2,&2\le
+t<4,\\ -\frac{3t^2}{2}+3t-2,&t\ge 4.\end{array}\right.
+\end{eqnarray*}
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.29} Find ${\cal L}\left(u(t-\tau)\right)$.
