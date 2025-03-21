@@ -83,65 +83,164 @@ $\frac{1}{s^7(s-2)^6}$
 
 $\int_0^t\sin a\tau\cos b(t-\tau)\, d\tau$
 
+\begin{solution}
+$\sin at\leftrightarrow\frac{a}{s^2+a^2}$ and
+$\cos bt\leftrightarrow\frac{s}{s^2+b^2}$, so
+   $H(s)=\frac{a s}{(s^2+a^2)(s^2+b^2)}$.
+\end{solution}
+
 \item Find the Laplace transform.
 
 $\int_0^t e^\tau\sin a(t-\tau)\,d\tau$ 
 
+\begin{solution}
+$e^t\leftrightarrow\frac{1}{s-1}$ and
+$\sin at\leftrightarrow\frac{a}{s^2+a^2}$, so
+$H(s)=\frac{a}{(s-1)(s^2+a^2)}$.
+\end{solution}
+
 \item Find the Laplace transform. 
 
 $\int_0^t\sinh a\tau\cosh a(t-\tau)\,d\tau$
+
+\begin{solution}
+$\sinh at\leftrightarrow\frac{a}{s^2-a^2}$ and
+$\cosh at\leftrightarrow\frac{1}{s^2-a^2}$, so
+$H(s)=\frac{as}{(s^2-a^2)^2}$.
+\end{solution}
 
 \item Find the Laplace transform. 
 
 $\int_0^t\tau(t-\tau)\sin \omega\tau\cos\omega
 (t-\tau)\,d\tau$
 
+\begin{solution}
+$t\sin\omega t\leftrightarrow\frac{2\omega
+s}{(s^2+\omega^2)^2}$ and $t\cos\omega
+t\leftrightarrow\frac{s^2-\omega^2}{(s^2+\omega^2)^2}$, so
+$H(s)=\frac{2\omega s (s^2-\omega^2)}{(s^2+\omega^2)^4}$.
+\end{solution}
+
 \item Find the Laplace transform. 
 
 $e^t\int_0^t\sin\omega\tau
 \cos\omega (t-\tau)\,d\tau$
 
+\begin{solution}
+$e^t\int_0^t\sin\omega\tau\cos\omega
+(t-\tau)\,d\tau=\int_0^t
+\left(e^\tau\sin\omega\tau\right)\left(e^{(t-\tau)}\cos\omega
+(t-\tau)\right)\,d\tau$; $e^t\sin\omega
+t\leftrightarrow\frac{\omega}{(s-1)^2+\omega^2}$ and $e^t\cos\omega
+t\leftrightarrow\frac{s-1}{(s-1)^2+\omega^2}$, so
+$H(s)=\frac{(s-1)\omega}{\left((s-1)^2+\omega^2\right)^2}$.
+\end{solution}
+
 \item Find the Laplace transform. 
 
 $e^t\int_0^t\tau^2 (t-\tau)e^\tau\,d\tau$
 
+\begin{solution}
+$e^t\int_0^t\tau^2
+(t-\tau)e^\tau\,d\tau = \int_0^t\tau^2e^{2\tau}(t-\tau)e^{(t-\tau)}\,d\tau$;
+$t^2e^{2t}\leftrightarrow\frac{2}{(s-2)^3}$ and
+$te^t\leftrightarrow\frac{1}{(s-1)^2}$, so
+ $H(s)=\frac{2}{(s-2)^3 (s-1)^2}$.
+\end{solution}
+
 \item Find the Laplace transform. 
 
 $e^{-t}\int_0^t e^{-\tau}\tau\cos\omega (t-\tau)\,d\tau$
+
+\begin{solution}
+$e^{-t}\int_0^t e^{-\tau}\tau\cos\omega
+(t-\tau)\,d\tau=
+\int_0^t\tau e^{-2\tau}e^{-(t-\tau)}\cos\omega(t-\tau)\,d\tau$;
+$te^{-2t}\leftrightarrow\frac{1}{(s+2)^2}$ and
+$e^{-t}\cos\omega t\leftrightarrow\frac{s+1}{(s+1)^2+\omega^2}$, so
+$H(s)=\frac{s+1}{(s+2)^2\left[(s+1)^2+
+\omega^2\right]}$.
+\end{solution}
 
 \item Find the Laplace transform. 
 
 $e^t\int_0^t e^{2\tau}\sinh
 (t-\tau)\,d\tau$
 
+\begin{solution}
+$e^t\int_0^t e^{2\tau}\sinh (t-\tau)\,d\tau=
+\int_0^t e^{3\tau}\left(e^{(t-\tau)}\sinh
+(t-\tau)\right)\,d\tau$; $e^{3t}\leftrightarrow\frac{1}{s-3}$ and
+$e^t\sinh t\leftrightarrow\frac{1}{(s-1)^2-1}$, so
+$H(s)=\frac{1}{(s-3)\left((s-1)^2-1\right)}$.
+\end{solution}
+
 \item Find the Laplace transform. 
 
 $\int_0^t\tau e^{2\tau}\sin
 2(t-\tau)\,d\tau$
 
+\begin{solution}
+$te^{2t}\leftrightarrow\frac{1}{(s-2)^2}$ and
+$\sin2t\leftrightarrow\frac{2}{s^2+4}$, so
+ $H(s)=\frac{2}{(s-2)^2(s^2+4)}$.
+\end{solution}
+
 \item Find the Laplace transform. 
 
 $\int_0^t (t-\tau)^3 e^\tau\, d\tau$
+
+\begin{solution}
+$t^3\leftrightarrow\frac{6}{s^4}$  and
+$e^t\leftrightarrow\frac{1}{s-1}$, so
+$H(s)=\frac{6}{s^4(s-1)}$.
+\end{solution}
 
 \item Find the Laplace transform. 
 
 $\int_0^t\tau^6
 e^{-(t-\tau)}\sin 3(t-\tau)\,d\tau$
 
+\begin{solution}
+ $t^6\leftrightarrow \frac{6!}{s^7}$ and
+$e^{-t}\sin3t \leftrightarrow\frac{3}{(s+1)^2+9}$, so
+$H(s)=\frac{3\cdot 6!}{s^7\left[(s+1)^2+
+9\right]}$.
+\end{solution}
+
 \item Find the Laplace transform. 
 
 $\int_0^t\tau^2 (t-\tau)^3\,
 d\tau$
+
+\begin{solution}
+$t^2\leftrightarrow\frac{2}{s^3}$ and
+$t^3\leftrightarrow\frac{6}{s^4}$, so
+ $H(s)=\frac{12}{s^7}$.
+\end{solution}
 
 \item Find the Laplace transform. 
 
 $\int_0^t (t-\tau)^7 e^{-\tau}
 \sin 2\tau\,d\tau$
 
+\begin{solution}
+$t^7\leftrightarrow\frac{7!}{s^8}$ and
+$e^{-t}\sin2t \leftrightarrow\frac{2}{(s+1)^2+4}$, so
+  $H(s)=\frac{2\cdot 7!}{s^8\left[(s+1)^2+
+4\right]}$.
+\end{solution}
+
 \item Find the Laplace transform. 
 
 $\int_0^t (t-\tau)^4\sin
 2\tau\,d\tau$
+
+\begin{solution}
+$t^4\leftrightarrow\frac{24}{s^5}$ and
+$\sin2t\leftrightarrow\frac{2}{s^2+4}$, so
+ $H(s)=\frac{48}{s^5(s^2+4)}$.
+\end{solution}
 \end{enumerate}
 \end{problem}
 
@@ -190,30 +289,76 @@ $y''+\omega^2y=f(t),\quad y(0)=k_0,\quad y'(0)=k_1$
 $y(t)=t-\int_0^t (t-\tau)
 y(\tau)\,d\tau$
 
+\begin{solution}
+$Y(s)=\frac{1}{s^2}-\frac{Y(s)}{s^2}$;
+$Y(s)\left(1+\frac{1}{s^2}\right)=\frac{1}{s^2}$; $Y(s)\frac{s^2+1}{s^2}=\frac{1}{s^2}$; $Y(s)=\frac{1}{s^2+1}$, so $y=\sin t$.
+\end{solution}
+
 \item Solve the integral equation.
 
 $y(t)=\sin t-2
 \int_0^t\cos (t-\tau) y (\tau)\,d\tau$
+
+\begin{solution}
+$Y(s)=\frac{1}{s^2+1}-\frac{2sY(s)}{s^2+1}$;
+$Y(s)\left(1+\frac{2s}{s^2+1}\right)=\frac{1}{s^2+1}$; $Y(s)\frac{(s+1)^2}{s^2+1}=\frac{1}{s^2+1}$; $Y(s)=\frac{1}{(s+1)^2}$, so
+$y=te^{-t}$.
+\end{solution}
 
 \item Solve the integral equation.
 
 $y(t)=1+2
 \int_0^ty(\tau)\cos(t-\tau)\,d\tau$
 
+\begin{solution}
+$Y(s)=\frac{1}{s}+\frac{2sY(s)}{s^2+1}$;
+$Y(s)\left(1-\frac{2s}{s^2+1}\right)=\frac{1}{s}$; $Y(s)\frac{(s-1)^2}{s^2+1}=\frac{1}{s}$;
+$Y(s)=\frac{(s^2+1)}{s(s-1)^2}=\frac{A}{s}+\frac{B}{s^2}
++\frac{C}{(s-1)^2}$, where $A(s-1)^2+Bs(s-1)+Cs=s^2+1$.
+Setting $s=0$ and $s=1$ shows that $A=1$ and $C=2$; equating
+coefficients of $s^2$ yields $A+B=1$, so $B=0$.  Therefore,
+$Y(s)=\frac{1}{s}
++\frac{1}{(s-1)^2}$, so $y=1+2te^t$.
+\end{solution}
+
 \item Solve the integral equation.
 
 $y(t)=t+\int_0^t
 y(\tau)e^{-(t-\tau)}\,d\tau$
+
+\begin{solution}
+$Y(s)=\frac{1}{s^2}+\frac{Y(s)}{s+1}$;
+$Y(s)\left(1-\frac{1}{s+1}\right)=\frac{1}{s^2}$;
+$Y(s)\left(\frac{s}{s+1}\right)=\frac{1}{s^2}$;
+$Y(s)=\frac{s+1}{s^3}
+=\frac{1}{s^2}+\frac{1}{s^3}$, so
+$y=t+\frac{t^2}{2}$.
+\end{solution}
 
 \item Solve the integral equation. 
 
 $y'(t)=t+\int_0^t y(\tau)\cos
 (t-\tau)\,d\tau,\, y(0)=4$
 
+\begin{solution}
+$sY(s)-4=\frac{1}{s^2}+\frac{sY(s)}{s^2+1}$;
+$Y(s)\left(s-\frac{s}{s^2+1}\right)=4+\frac{1}{s^2}$; $Y(s)\frac{s^3}{s^2+1}=\frac{4s^2+1}{s^2}$;
+$Y(s)=\frac{(4s^2+1)(s^2+1)}{s^5}=\frac{4s^4+5s^2+1}{s^5}
+=\frac{4}{s}+\frac{5}{s^3}+\frac{1}{s^5}$, so
+$y=4+\frac{5}{2}t^2+\frac{1}{24}t^4$.
+\end{solution}
+
 \item Solve the integral equation.
 
 $y(t)=\cos t-\sin t+
 \int_0^t y(\tau)\sin (t-\tau)\,d\tau$
+
+\begin{solution}
+$Y(s)=\frac{s-1}{s^2+1}+\frac{Y(s)}{s^2+1}$;
+$Y(s)\left(1-\frac{1}{s^2+1}\right)=\frac{s-1}{s^2+1}$; $Y(s)\frac{s^2}{s^2+1}=\frac{s-1}{s^2+1}$; $Y(s)=\frac{s-1}{s^2}
+=\frac{1}{s}-\frac{1}{s^2}$, so
+ $y=1-t$.
+\end{solution}
 
 \end{enumerate}
 \end{problem}
@@ -253,6 +398,12 @@ $$
 $$
 by introducing the new variable of integration $x=t-\tau$ in the first
 integral.
+
+\begin{solution}
+Substituting $x=t-\tau$ yields
+$\int_0^tf(t-\tau)g(\tau)\,d\tau=-\int_t^0f(x)g(t-x)(-\,dx)=
+\int_0^tf(x)g(t-x)\,dx=\int_0^tf(\tau)g(t-\tau)\,d\tau$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.6.7} Use the convolution theorem to show that if
