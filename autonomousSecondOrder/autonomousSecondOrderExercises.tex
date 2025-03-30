@@ -1,0 +1,360 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+\begin{problem}
+In Exercises~\ref{exer:4.4.1}--\ref{exer:4.4.4} find the equations of the
+trajectories of the given undamped equation. Identify the equilibrium
+solutions, determine whether they are stable or unstable, and
+plot some trajectories. 
+\begin{hint}
+  Use Eqn.~$\eqref{eq:4.4.8}$ to
+obtain the equations of the trajectories.  
+\end{hint}
+
+\begin{enumerate}
+\item\label{exer:4.4.1}   $y''+y^3=0$ 
+
+\begin{solution}
+$\overline y=0$ is a stable equilibrium.
+The phase plane equivalent is $v\frac{dv}{dy}+y^3=0$, so the
+ trajectories are $v^2+\frac{y^4}{4}=c$.
+\end{solution}
+
+\item\label{exer:4.4.2}   $y''+y^2=0$
+
+\begin{solution}
+$\overline y=0$ is an unstable equilibrium.
+The phase plane equivalent is $v\frac{dv}{dy}+y^2=0$, so the
+ trajectories are $v^2+\frac{2y^3}{3}=c$.
+\end{solution}
+
+\item\label{exer:4.4.3}  
+$y''+y|y|=0$ 
+
+\item\label{exer:4.4.4}   $y''+ye^{-y}=0$
+
+\begin{solution}
+$\overline y=0$ is a stable equilibrium.
+The phase plane equivalent is $v\frac{dv}{dy}+ye^{-y}=0$, so the
+ trajectories are $v^2-e^{-y}(y+1)=c$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+In Exercises~\ref{exer:4.4.5}--\ref{exer:4.4.8} find the equations of the
+trajectories of the given undamped equation. Identify the equilibrium
+solutions,
+determine whether they are stable or unstable, and find the equations
+of the separatrices (that is, the curves through the unstable
+equilibria). Plot the separatrices and some
+trajectories in each of the regions of Poincar\'e plane determined by
+them. 
+\begin{hint}
+  Use Eqn.~$\eqref{eq:4.4.17}$ to determine the separatrices.  
+\end{hint}
+
+\begin{enumerate}
+\item\label{exer:4.4.5}   $y''-y^3+4y=0$
+
+\item\label{exer:4.4.6}   $y''+y^3-4y=0$
+
+\begin{solution}
+$p(y)=y^3-4y=(y+2)y(y-2)$, so the
+ equilibria are $-2,0,2$.
+Since
+$$
+\begin{array}{rcl}
+y(y-2)(y+2)&<0& \mbox{ if } y<-2\mbox{ or }0<y<2,\\
+&>0&\mbox{ if }-2<y<0\mbox{ or }y>2,
+\end{array}
+$$
+$0$ is unstable and $-2,2$ are stable. The phase plane equivalent is
+$v\frac{dv}{dy}+y^3-4y=0$, so the trajectories are
+$2v^2+y^4-8y^2=c$. Setting $(y,v)=(0,0)$ yields $c=0$, so the equation
+of the separatrix is $2v^2-y^4+8y^2=0$.
+\end{solution}
+
+\item\label{exer:4.4.7}   $y''+y(y^2-1)(y^2-4)=0$
+
+\item\label{exer:4.4.8}   $y''+y(y-2)(y-1)(y+2)=0$
+
+\begin{solution}
+$p(y)=y(y-2)(y-1)(y+2)$, so the
+ equilibria are $-2,0,1,2$.
+Since
+$$
+\begin{array}{rcl}
+y(y-2)(y-1)(y+2)&>0& \mbox{ if } y<-2\mbox{ or }0<y<1\mbox{ or }
+y>2,\\
+&<0&\mbox{ if }-2<y<0\mbox{ or }1<y<2,
+\end{array}
+$$
+$0,2$ are stable and $-2,1$ are unstable. The phase plane
+equivalent is
+$v\frac{dv}{dy}+y(y-2)(y-1)(y+2)=0$, so the trajectories are
+$30v^2+y^2(12y^3-15y^2-80y+120)=c$. Setting $(y,v)=(-2,0)$
+and $(y,v)=(1,0)$
+yields
+$c=496$ and $c=37$ respectively, so the equations of the separatrices
+are $30v^2+y^2(12y^3-15y^2-80y+120)=496$
+and $30v^2+y^2(12y^3-15y^2-80y+120)=37$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+In Exercises~\ref{exer:4.4.9}--\ref{exer:4.4.12}
+plot some trajectories of the given equation for various values
+(positive, negative, zero) of the parameter $a$. Find the equilibria
+of the equation and classify them as stable or unstable. Explain why
+the phase plane plots corresponding to positive and negative values of
+$a$ differ so markedly. Can you think of a reason why zero deserves to
+be called the \emph{critical value} of $a$?
+
+\begin{enumerate}
+\item\label{exer:4.4.9} $y''+y^2-a=0$
+
+\item\label{exer:4.4.10} $y''+y^3-ay=0$
+
+\begin{solution}
+$p(y)=y^3-ay$.
+If $a\le0$, then $p(0)=0$, $p(y)>0$ if $y>0$, and $p(y)<0$ if $y<0$, so
+$0$ is stable.
+ If $a>0$, then
+\begin{eqnarray*}
+y^3-ay=y(y-\sqrt a)(y+\sqrt a)&>&0\mbox{ if }-\sqrt a<y<0\mbox{ or }
+y>\sqrt a,\\
+&<&0\mbox{ if }y<-\sqrt a\mbox{ or }0<y<\sqrt a,
+\end{eqnarray*}
+so $-\sqrt a$ and $\sqrt a$ are  stable  and $0$
+is unstable. We say that $a=0$ is a critical value
+because it separates the two cases.
+\end{solution}
+
+\item\label{exer:4.4.11} $y''-y^3+ay=0$
+
+\item\label{exer:4.4.12} $y''+y-ay^3=0$
+\begin{solution}
+$p(y)=y-ay^3$. If $a\le0$, then $p(0)=0$, $p(y)>0$ if $y>0$, and
+$p(y)<0$ if $y<0$, so $0$ is stable. If $a>0$, then
+\begin{eqnarray*}
+y-ay^3=-ay(y-1/\sqrt a)(y+1/\sqrt a)&>&0\mbox{ if }y<-1/\sqrt
+a<y<0\mbox{ or } 0<y<1/\sqrt a\\
+&<&0\mbox{ if }-1/\sqrt a<y<0\mbox{ or }y>1/\sqrt a,
+\end{eqnarray*}
+so $-\sqrt a$ and $\sqrt a$ are unstable and $0$ is stable. We say
+that $a=0$ is a critical value because it separates the two cases.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+In Exercises~\ref{exer:4.4.13}-\ref{exer:4.4.18}
+plot trajectories of the given equation for $c=0$ and small nonzero
+(positive and negative) values of $c$ to observe the effects of
+damping.
+
+\begin{enumerate}
+\item\label{exer:4.4.13} $y''+cy'+y^3=0$
+\item\label{exer:4.4.14} $y''+cy'-y=0$
+\item\label{exer:4.4.15} $y''+cy'+y^3=0$
+\item\label{exer:4.4.16} $y''+cy'+y^2=0$
+\item\label{exer:4.4.17} $y''+cy'+y|y|=0$
+\item\label{exer:4.4.18} $y''+y(y-1)+cy=0$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.4.19} 
+The \href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Van_der_Pol.html}
+{\emph{van der Pol equation}}
+\begin{equation}\label{eqA:4.4.19}
+y''-\mu(1-y^2)y'+y=0,
+\end{equation}
+where $\mu$ is a positive constant and $y$ is electrical current
+\ref{Section~6.3}, arises in the study of an electrical circuit
+whose resistive properties depend upon the current. The damping term
+$-\mu(1-y^2)y'$ works to reduce $|y|$ if $|y|<1$ or to increase $|y|$
+if
+$|y|>1$. It can be shown that van der
+Pol's equation has exactly one closed trajectory, which is called a
+\emph{limit cycle}. Trajectories inside the limit cycle spiral
+outward to it, while trajectories outside the limit cycle spiral
+inward to it. 
+%(See the figure below). 
+Use your favorite differential equations software  to verify this for
+$\mu=.5,1.1.5,2$. Use a grid with $-4<y<4$ and $-4<v<4$.
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040416.jpg}
+%\end{image}
+\end{problem}
+
+
+\begin{problem}\label{exer:4.4.20}  
+\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Rayleigh.html}
+{\emph{Rayleigh's equation}},
+$$
+y''-\mu(1-(y')^2/3)y'+y=0
+$$
+also has a limit cycle. Follow the directions of
+Exercise~\ref{exer:4.4.19} for this equation.
+\end{problem}
+
+\begin{problem}\label{exer:4.4.21}
+In connection with Eqn~\eqref{eq:4.4.15},
+suppose   $y(0)=0$ and $y'(0)=v_0$, where $0<v_0<v_c$.
+\begin{enumerate}
+\item % (a)
+Let  $T_1$ be the time
+required for  $y$ to increase from zero to
+$y_{\max}=2\sin^{-1}(v_0/v_c)$. Show that
+\begin{equation}\label{eqA:4.4.21}
+\frac{dy}{dt}=\sqrt{v_0^2-v_c^2\sin^2y/2},\quad 0\le t<T_1.
+\end{equation}
+\item % (b)
+Separate variables in (\ref{eqA:4.4.21}) and show that
+\begin{equation}\label{eqB:4.4.21}
+T_1=\int_0^{y_{\max}}\frac{du}{\sqrt{v_0^2-v_c^2\sin^2u/2}}
+\end{equation}
+\item % (c)
+Substitute $\sin u/2=(v_0/v_c)\sin\theta$ in (\ref{eqB:4.4.21}) to obtain
+\begin{equation}\label{eqC:4.4.21}
+T_1=2\int_0^{\pi/2}\frac{d\theta}{\sqrt{v_c^2-v_0^2\sin^2\theta}}.
+\end{equation}
+\item % (d)
+Conclude from  symmetry
+that  the time required for  $(y(t),v(t))$ to traverse the
+trajectory
+$$
+v^2=v_0^2-v_c^2\sin^2y/2
+$$
+is $T=4T_1$, and that consequently $y(t+T)=y(t)$ and $v(t+T)=v(t)$;
+that is, the oscillation is periodic with period $T$.
+\item % (e)
+Show that if $v_0=v_c$,  the integral in (\ref{eqC:4.4.21}) is improper and
+diverges to $\infty$. Conclude from this  that $y(t)<\pi$
+for all $t$ and $\lim_{t\to\infty}y(t)=\pi$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.4.22}
+Give a direct definition of an unstable equilibrium of $y''+p(y)=0$.
+\end{problem}
+
+\begin{problem}\label{exer:4.4.23}
+Let $p$ be continuous for all $y$ and $p(0)=0$. Suppose there's
+a positive number $\rho$ such that $p(y)>0$ if $0<y\le \rho$ and
+$p(y)<0$ if $-\rho\le y<0$. For $0<r\le\rho$ let
+$$
+\alpha(r)=\min\left\{\int_0^r p(x)\,dx,\ \int_{-r}^0
+|p(x)|\,dx\right\}
+\mbox{\quad and \quad}
+\beta(r)=\max\left\{\int_0^r p(x)\,dx,\ \int_{-r}^0
+|p(x)|\,dx\right\}.
+$$
+Let $y$ be the solution of the initial value problem
+$$
+y''+p(y)=0,\quad y(0)=v_0,\quad y'(0)=v_0,
+$$
+and define
+$c(y_0,v_0)=v_0^2+2\int_0^{y_0}p(x)\,dx$.
+\begin{enumerate}
+\item % (a)
+Show that
+$$
+0<c(y_0,v_0) <v_0^2+2\beta(|y_0|)\mbox{\quad if \quad} 0<|y_0|\le\rho.
+$$
+\item\label{partB:4.4.23} % (b)
+Show that
+$$
+v^2+2\int_0^y p(x)\,dx=c(y_0,v_0),\quad t>0.
+$$
+\item % (c)
+Conclude from \ref{partB:4.4.23} that if $c(y_0,v_0)<2\alpha(r)$ then $|y|<r,\,t>0$.
+\item % (d)
+Given $\epsilon>0$, let  $\delta>0$ be chosen so that
+$$
+\delta^2+2\beta(\delta)<\max\left\{\epsilon^2/2,2\alpha(\epsilon/\sqrt2)
+\right\}.
+$$
+Show that if $\sqrt{y_0^2+v_0^2}<\delta$ then
+$\sqrt{y^2+v^2}<\epsilon$ for $t>0$, which implies that $\overline
+  y=0$ is a stable equilibrium of $y''+p(y)=0$.
+\item % (e)
+Now let $p$
+be continuous for all $y$ and $p(\overline y)=0$, where $\overline y$
+is not necessarily zero. Suppose there's a positive number
+$\rho$ such that $p(y)>0$ if $\overline y<y\le \overline y+\rho$ and
+$p(y)<0$ if $\overline y-\rho\le y<\overline y$. Show that $\overline
+y$ is a stable equilibrium of $y''+p(y)=0$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.4.24}
+Let $p$ be continuous for all $y$.
+\begin{enumerate}
+\item\label{partA:4.4.24} % (a)
+Suppose $p(0)=0$ and there's a positive number $\rho$ such that
+$p(y)<0$ if  $0<y\le \rho$. Let $\epsilon$ be any
+number such that
+$0<\epsilon<\rho$.
+Show that if $y$ is the solution of the initial value problem
+$$
+y''+p(y)=0,\quad y(0)=y_0,\quad y'(0)=0
+$$
+with $0<y_0<\epsilon$, then
+$y(t)\ge\epsilon$ for some
+$t>0$. Conclude that $\overline y=0$ is an unstable equilibrium of
+$y''+p(y)=0$.
+\begin{hint}
+   Let $k=\min_{y_0\le
+x\le\epsilon}\left(-p(x)\right)$,
+which is positive. Show that if $y(t)<\epsilon$ for $0\le t<T$ then
+$kT^2<2(\epsilon-y_0)$. 
+\end{hint}
+
+\begin{solution}
+Since $v'=-p(y)\ge k$ and $v(0)=0$, $v\ge kt$ and therefore
+$y\ge y_0+kt^2/2$ for $0\le t<T$.
+\end{solution}
+
+\item\label{partB:4.4.24} % (b)
+Now let $p(\overline y)=0$, where $\overline y$ isn't  necessarily
+zero. Suppose there's a positive number $\rho$ such that
+$p(y)<0$ if $\overline y<y\le \overline y+\rho$. Show that $\overline
+y$ is an unstable equilibrium of $y''+p(y)=0$.
+
+\begin{solution}
+Let $0<\epsilon<\rho$.
+Suppose that $y$ is the solution of the initial value problem
+(A) $y''+p(y)=0,\quad y(0)=y_0,\quad y'(0)=0$, where $\overline
+y<y_0<\overline y+\epsilon$. Now let $Y=y-\overline y$ and
+$P(Y)=p(Y+\overline y)$. Then $P(0)=0$ and $P(Y)<0$ if
+$0<Y\le\rho$ . Moreover, $Y$ is the solution of
+ $Y''+p(Y)=0,\quad Y(0)=Y_0,\quad Y''(0)=0$, where $Y_0=y_0-\overline
+y$, so $0<Y_0<\epsilon$. From \ref{partA:4.4.24}, $Y(t)\ge\epsilon$ for some
+$t>0$. Therefore,$y(t)>\overline y+\epsilon$ for some $t>0$,
+so $\overline y$ is an unstable equilibrium of $y''+p(y)=0$.
+\end{solution}
+
+\item % (c)
+Modify your proofs above to show that if there is a
+positive number $\rho$ such that $p(y)>0$ if $\overline y-\rho\le y<\overline
+y$, then $\overline y$ is an unstable equilibrium of $y''+p(y)=0$.
+\end{enumerate}
+\end{problem}
+
+\end{document}
