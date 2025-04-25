@@ -48,6 +48,12 @@ $$y'''+5y''+9y'+5y=0$$
 
 $$4y'''-8y''+5y'-y=0$$
 
+\begin{solution}
+$p(r)=4r^3-8r^2+5r-1=(r-1)(2r-1)^2$;
+
+$y=c_1e^x+e^{x/2}(c_2+c_3x)$.
+\end{solution}
+
 \end{problem}
 
 \begin{problem}\label{exer:9.2.7} Find the general solution.
@@ -114,6 +120,25 @@ $y'''-2y''+4y'-8y=0, \quad  y(0)=2,\quad y'(0)=-2,\;  y''(0)=0$
 initial value problem.
 
 $y'''+3y''-y'-3y=0, \quad  y(0)=0,\quad y'(0)=14,\quad y''(0)=-40$
+
+\begin{solution}
+$p(r)=r^3+3r^2-r-3=(r-1)(r+1)(r+3)$;
+$$
+\begin{array}{lcl}
+y&=&c_1e^x+c_2e^{-x}+c_3e^{-3x}\\
+y'&=&c_1e^x-c_2e^{-x}-3c_3e^{-3x}\\
+y''&=&c_1e^x+c_2e^{-x}+9c_3e^{-3x}
+\end{array};\quad
+\begin{array}{rcr}
+c_1+c_2+c_3&=&0\\
+c_1-c_2-3c_3&=&14\\
+c_1+c_2+9c_3&=&-40
+\end{array};
+$$
+$c_1=2$, $c_2=3$, $c_3=-5$;
+
+ $$y=2e^x+3e^{-x}-5e^{-3x}$$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:9.2.17} Solve the
@@ -175,6 +200,31 @@ $4y^{(4)}-13y''+9y=0, \quad  y(0)=1,\quad y'(0)=3,\quad y''(0)=1,\quad y'''(0)=3
 initial value problem.
 
 $y^{(4)}+2y'''-2y''-8y'-8y=0, \quad  y(0)=5,\quad y'(0)=-2,\quad y''(0)=6,\quad y'''(0)=8$
+
+\begin{solution}
+$p(r)=r^4+2r^3-2r^2-8r-8=(r-2)(r+2)(r^2+2r+2)$;
+$$
+\begin{array}{lcl}
+y&=&c_1e^{2x}+c_2e^{-2x}+e^{-x}(c_3\cos x+c_4\sin x)\\
+y'&=&2c_1e^{2x}-2c_2e^{-2x}-e^{-x}((c_3-c_4)\cos x+(c_3+c_4)\sin x)\\
+y''&=&4c_1e^{2x}+4c_2e^{-2x}+e^{-x}(2c_3\sin x-2c_4\cos x)\\
+y'''&=&8c_1e^{2x}-8c_2e^{-2x}+e^{-x}((2c_3+2c_4)\cos x+2(c_4-c_3)\sin
+x)
+\end{array};
+$$
+$$
+\begin{array}{rcr}
+c_1+c_2+c_3&=&5\\
+2c_1-2c_2-c_3+c_4&=&-2\\
+4c_1+4c_2-2c_4&=&6\\
+8c_1-8c_2+2c_3+2c_4&=&8
+\end{array};
+$$
+$c_1=1$, $c_2=1$, $c_3=3$, $c_4=1$;
+
+$$y=e^{2x}+e^{-2x}+e^{-x}(3\cos x+\sin x)$$.
+
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:9.2.27}  Solve the
