@@ -1,0 +1,458 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+
+\begin{problem}\label{exer:9.1.1}
+Verify that the given function is the solution of the initial
+value problem.
+
+\begin{enumerate}
+
+\item $ x^3y'''-3x^2y''+6xy'-6y=-\frac{24}{x}, \quad  y(-1)=0$, $
+y'(-1)=0, \quad  y''(-1)=0$;
+
+$y=-6x-8x^2-3x^3+\frac{1}{x}$
+
+\item $ y'''-\frac{1}{x}y''-y'+\frac{1}{x}y=\frac{x^2-4}{x^4}, \quad
+y(1)=\frac{3}{2},\quad y'(1)=\frac{1}{2}$, $ y''(1)=1$;
+
+$y=x+\frac{1}{2x}$
+
+\item $xy'''-y''-xy'+y=x^2, \quad  y(1)=2,\quad y'(1)=5,\quad
+y''(1)=-1$;
+
+$y=-x^2-2+2e^{(x-1)}-e^{-(x-1)}+4x$
+
+\item $4x^3y'''+4x^2y''-5xy'+2y=30x^2, \quad  y(1)=5,\quad
+y'(1)=\frac{17}{2},\quad y''(1)=\frac{63}{4} $;
+
+$y=2x^2\ln
+x-x^{1/2}+2x^{-1/2}+4x^2$
+
+\item $x^4y^{(4)}-4x^3y'''+12x^2y''-24xy'+24y=6x^4, \quad  y(1)=-2, \quad y'(1)=-9, \quad  y''(1)=-27,\quad y'''(1)=-52$;
+
+$y=x^4\ln x+x-2x^2+3x^3-4x^4$
+
+\item 
+$xy^{(4)}-y'''-4xy''+4y'=96x^2, \quad  y(1)=-5,\quad y'(1)=-24; \quad y''(1)=-36; \quad   y'''(1)=-48;$
+
+$y=9-12x+6x^2-8x^3$
+
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.2}
+Solve the initial value problem
+$$
+x^3y'''-x^2 y''-2xy'+6y=0,
+\quad   y(-1)=-4, \quad   y'(-1)=-14,\quad   y''(-1)=-20.
+$$
+
+\begin{hint}
+See Example~$\ref{example:9.1.1}$.
+\end{hint}
+\end{problem}
+
+
+\begin{problem}\label{exer:9.1.3}
+Solve the initial value problem
+$$
+y^{(4)}+y'''-7y''-y'+6y=0,
+\quad   y(0)=5,\quad   y'(0)=-6,\quad   y''(0)=10,\quad   y'''(0)-36.
+$$
+
+\begin{hint}
+See Example~$\ref{example:9.1.2}$.
+\end{hint}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.4}
+Find solutions $y_1$, $y_2$, \dots, $y_n$ of the equation $y^{(n)}=0$
+that satisfy the initial conditions
+$$
+y_i^{(j)}(x_0)=\left\{\begin{array}{cl}
+0,&j\ne i-1,\\ 
+1,&j=i-1,\end{array}\right.\; 1\le i\le n.
+$$
+\end{problem}
+
+\begin{problem}\label{exer:9.1.5}
+\begin{enumerate}
+\item %(a)
+Verify that the function
+$$
+y=c_1x^3+c_2x^2+\frac{c_3}{x}
+$$
+satisfies
+$$
+x^3 y'''-x^2y''-2xy'+6y=0
+\text{(A)}
+$$
+if $c_1$, $c_2$, and $c_3$ are constants.
+
+\item %(b)
+Use what you just showed to find solutions $y_1$, $y_2$, and $y_3$ of
+(A) such that
+$$
+\begin{array}{rl}
+y_1(1)&=1,\quad y_1'(1)=0,\quad  y_1''(1)=0  \\ 
+y_2(1)&=0,\quad  y_2'(1)=1,\quad  y_2''(1)=0  \\ 
+y_3(1)&=0,\quad  y_3'(1)=0,\quad  y_3''(1)=1.
+\end{array}
+$$
+
+
+\item %(c)
+Now find the solution of (A) such that
+$$
+y(1)=k_0,\quad y'(1)=k_1,\quad   y''(1)=k_2.
+$$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.6}
+Verify that the given functions are solutions of the given equation, and show that they  form a fundamental set of solutions of the
+equation on any interval on which the equation is normal.
+
+\begin{enumerate}
+     
+\item $y'''+y''-y'-y=0;  \quad\{e^x,\,e^{-x},\,xe^{-x}\}$
+
+\item $y'''-3y''+7y'-5y=0;  \quad\{e^x,\,e^x\cos2x,\,e^x\sin2x\}$.
+
+\item $xy'''-y''-xy'+y=0;  \quad \{e^x,\,e^{-x},\,x\}$
+
+\item $x^2y'''+2xy''-(x^2+2)y=0;  \quad\{e^x/ x,\,e^{-x}/
+x,\,1\}$
+
+\item $(x^2-2x+2)y'''-x^2y''+2xy'-2y=0;  \quad \{x,\,x^2,\,e^x\}$
+
+\item
+$(2x-1)y^{(4)}-4xy'''+(5-2x)y''+4xy'-4y=0;
+\quad\{x,\,e^x,\,e^{-x},e^{2x}\}$
+
+\item $xy^{(4)}-y'''-4xy'+4y'=0;  \quad\{1,x^2,\,e^{2x},\,e^{-2x}\}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.7}Find the Wronskian $W$ of a set of three solutions of 
+$$ y'''+2xy''+e^xy'-y=0, $$ given that $W(0)=2$.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.8}
+Find the Wronskian $W$ of a set of four solutions of
+$$
+y^{(4)}+(\tan x)y'''+x^2y''+2xy=0,
+$$
+given that $W(\pi/4)=K$.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.9}
+\begin{enumerate}
+\item %(a)
+Evaluate the Wronskian $W$ $\{e^x,\,xe^x,\,
+x^2e^x\}$. Evaluate $W(0)$.
+
+\item %(b)
+Verify that $y_1$, $y_2$, and $y_3$ satisfy
+$$
+y'''-3y''+3y'-y=0.
+\text{(A)}
+$$
+
+\item %(c)
+Use your calculation of $W(0)$ and Abel's formula to calculate $W(x)$.
+
+\item %(d)
+What is the general solution of  (A)?
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.10}
+Compute the Wronskian of the given set of functions.
+
+\begin{enumerate}
+\item  $\{1,\,e^x,\,e^{-x}\}$
+
+\item $\{e^x,\, e^x\sin x,\,e^x\cos x\}$
+
+\item $\{2,\,x+1,\,x^2+2\}$
+
+\item $ x,\,x\ln x,\,1/x\}$
+
+\item $\{1,\,x,\,{x^2\over2!},\,
+\frac{x^3}{3!}\,,\cdots,\,\frac{x^n}{n!}\}$
+
+\item $\{e^x,\,e^{-x},\,x\}$
+
+\item $\{e^x/x,\,e^{-x}/x,\,1\}$
+
+\item $\{x,\,x^2,\,e^x\}$
+
+\item $\{x,\,x^3,\,1/x,\,1/x^2\}$
+
+\item $\{e^x,\,e^{-x},\,x,\,e^{2x}\}$
+
+\item $\{e^{2x},\,e^{-2x},\,1,\,x^2\}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.11}
+Suppose $Ly=0$ is normal on $(a,b)$ and $x_0$ is in $(a,b)$. Use
+Theorem~\ref{thmtype:9.1.1} to show that $y\equiv0$ is the only solution
+of the initial value problem
+$$
+Ly=0, \quad  y(x_0)=0,\quad y'(x_0)=0,\dots, y^{(n-1)}(x_0)=0,
+$$
+on $(a,b)$.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.12}
+Prove:  If $y_1$, $y_2$, \dots, $y_n$ are solutions of $Ly=0$ and the
+functions
+$$
+z_i=\sum^n_{j=1}a_{ij}y_j,\quad 1\le i\le n,
+$$
+form a fundamental set of solutions of $Ly=0$, then so do $y_1$, $y_2$,
+\dots, $y_n$.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.13}
+Prove:  If
+$$
+y=c_1y_1+c_2y_2+\cdots+c_ky_k+y_p
+$$
+is a solution of a linear equation $Ly=F$ for every choice of the
+constants $c_1$, $c_2$ ,\dots, $c_k$, then $Ly_i=0$ for $1\le i\le k$.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.14}
+Suppose $Ly=0$ is normal on $(a,b)$ and let $x_0$ be in $(a,b)$.
+For $1\le i\le n$, let $y_i$ be the solution of the initial value
+problem
+$$
+Ly_i=0, \quad  y_i^{(j)} (x_0)=
+\left\{\begin{array}{cl}
+0,& j\ne i-1,\\  
+1,&j=i-1,\end{array}\right. 1\le i\le n,
+$$
+where $x_0$ is an arbitrary point in $(a,b)$.  Show that any solution
+of $Ly=0$ on $(a, b)$, can be written as
+$$
+y=c_1y_1+c_2y_2+\cdots+c_ny_n,
+$$
+with $c_j=y^{(j-1)}(x_0)$.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.15}
+Suppose $\{y_1, y_2,\dots, y_n\}$ is a fundamental set of
+solutions of
+$$
+P_0(x)y^{(n)}+P_1(x)y^{(n-1)}+\cdots+P_n(x)y=0
+$$
+on $(a,b)$, and let
+$$
+\begin{array}{rl}
+z_1&=a_{11}y_1+a_{12}y_2+\cdots+a_{1n}y_n\\
+z_2&=a_{21}y_1+a_{22}y_2+\cdots+a_{2n}y_n\\
+ z_1&\vdots _1y_1+a\vdots
+ _2y_2+\cdots+a\vdots _ny_n  =b\vdots\\
+z_n&=a_{n1}y_1+a_{n2}y_2+\cdots+a_{nn}y_n,
+\end{array}
+$$
+where the $\{a_{ij}\}$ are constants. Show that $\{z_1, z_2,\dots,
+z_n\}$ is a fundamental set of solutions  of (A) if and only if the
+determinant
+$$
+\left|\begin{array}{cccc}
+a_{11}&a_{12}&\cdots&a_{1n}\\
+a_{21}&a_{22}&\cdots&a_{2n}\\
+\vdots&\vdots&\ddots&\vdots\\
+a_{n1}&a_{n2}&\cdots&a_{nn}\end{array}\right|
+$$
+is nonzero.
+
+\begin{hint}
+The determinant of a product of  $n\times
+n$ matrices equals the product of the determinants.
+\end{hint}
+\end{problem}
+
+
+\begin{problem}\label{exer:9.1.16}
+Show that $\{y_1,y_2,\dots,y_n\}$ is linearly dependent on $(a,b)$ if
+and only if at least one of the functions $y_1$, $y_2$, \dots, $y_n$ can be
+written as a linear combination of the others on $(a,b)$.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.17}
+Prove:  If
+$$
+A(u_1,u_2,\dots,u_n)=
+\left|\begin{array}{cccc}
+a_{11}&a_{12}&\cdots&a_{1n}\\ 
+a_{21}&a_{22}&\cdots&a_{2n}\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+a_{n-1,1}&a_{n-1,2}&\cdots&a_{n-1,n}\\ 
+u_1&u_2&\cdots&u_n\end{array}\right|,
+$$
+then
+$$
+A(u_1+v_1, u_2+v_2,\dots,
+  u_n+v_n)=A(u_1,u_2,\dots,u_n)+A(v_1,v_2,\dots,
+  v_n).
+$$
+
+\begin{hint}
+By the definition of determinant,
+$$
+\left|\begin{array}{cccc}
+a_{11}&a_{12}&\cdots&a_{1n}\\ 
+a_{21}&a_{22}&\cdots&a_{2n}\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+a_{n1}&a_{n2}&\cdots&a_{nn}\end{array}\right|
+=\sum\pm a_{1i_1}a_{2i_2},\dots,a_{ni_n},
+$$
+where the sum is over all permutations $(i_1,i_2,\dots,i_n)$ of
+$(1,2,\dots, n)$ and the choice of $+$ or $-$ in each term depends
+only on the permutation associated with that term.
+\end{hint}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.18}
+Let
+$$
+F=\left|\begin{array}{cccc}
+f_{11}&f_{12}&\cdots&f_{1n}\\ 
+f_{21}&f_{22}&\cdots&f_{2n}\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+f_{n1}&f_{n2}&\cdots&f_{nn}\end{array}\right|,
+$$
+where $f_{ij}\; (1\le i,\;   j\le n)$ is differentiable.  Show that
+$$
+F'=F_1+F_2+\cdots+F_n,
+$$
+where $F_i$ is the determinant obtained by differentiating the
+$i$th row of $F$.
+
+\begin{hint}
+By the definition of determinant,
+$$
+\left|\begin{array}{cccc}
+a_{11}&a_{12}&\cdots&a_{1n}\\ 
+a_{21}&a_{22}&\cdots&a_{2n}\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+a_{n1}&a_{n2}&\cdots&a_{nn}\end{array}\right|
+=\sum\pm a_{1i_1}a_{2i_2},\dots,a_{ni_n},
+$$
+where the sum is over all permutations $(i_1,i_2,\dots,i_n)$ of
+$(1,2,\dots, n)$ and the choice of $+$ or $-$ in each term depends
+only on the permutation associated with that term.
+\end{hint}
+\end{problem}
+
+
+\begin{problem}\label{exer:9.1.19}
+Use Exercise~\ref{exer:9.1.18}  to show that if $W$ is the
+Wronskian of the
+$n$-times differentiable functions $y_1$, $y_2$, \dots, $y_n$, then
+$$
+W'=
+\left|\begin{array}{cccc}
+y_1&y_2&\cdots&y_n\\ 
+y'_1&y'_2&\cdots&y'_n\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+y_1^{(n-2)}&y_2^{(n-2)}&\cdots&y_n^{(n-2)}\\ 
+y_1^{(n)}&y_2^{(n)}&\cdots&y_n^{(n)}
+\end{array}\right|.
+$$
+\end{problem}
+
+\begin{problem}\label{exer:9.1.20}
+Use Exercises~\ref{exer:9.1.17} and \ref{exer:9.1.19} to show that if $W$ is
+the Wronskian
+of  solutions $\{y_1,y_2,\dots,y_n\}$ of the normal equation
+$$
+P_0(x)y^{(n)}+P_1(x)y^{(n-1)}+\cdots+P_n(x)y=0,
+\text{(A)}
+$$
+then $W'=-P_1W/P_0$.
+Derive Abel's formula (Eqn.~\eqref{eq:9.1.15}) from this.
+\begin{hint}
+Use (A) to write $y^{(n)}$ in terms of
+$y,y',\dots,y^{(n-1)}$.
+\end{hint}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.21}  Prove Theorem~\ref{thmtype:9.1.6}.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.22}  Prove Theorem~\ref{thmtype:9.1.7}.
+\end{problem}
+
+
+\begin{problem}\label{exer:9.1.23}
+Show that if the Wronskian of the $n$-times continuously
+differentiable functions $\{y_1,y_2,\dots,y_n\}$ has no zeros in
+$(a,b)$, then the differential equation obtained by expanding the
+determinant
+$$
+\left|\begin{array}{ccccc}
+y&y_1&y_2&\cdots&y_n\\ 
+y'&y'_1&y'_2&\cdots&y'_n\\ 
+\vdots&\vdots&\vdots&\ddots&
+ \vdots\\ 
+y^{(n)}&y_{1}^{(n)}&y_2^{(n)}&\cdots&y_n^{(n)}
+\end{array}\right|=0,
+$$
+in cofactors of its first column is normal and has
+$\{y_1,y_2,\dots,y_n\}$ as a fundamental set of solutions on $(a,b)$.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.24}
+Use the method suggested by Exercise~\ref{exer:9.1.23}  to find a linear
+homogeneous equation such that the given set of functions
+is a fundamental set of solutions on intervals on which the Wronskian
+of the set has no zeros.
+
+\begin{enumerate}
+ \item  $\{x,\,x^2-1,\,x^2+1\}$
+ 
+ \item  $\{e^x,\,e^{-x},\,x\}$
+
+ \item  $\{e^x,\,xe^{-x},\,1\}$
+ 
+\item $\{x,\,x^2,\,e^x\}$
+
+ \item $\{x,\,x^2,\,1/x\}$
+ 
+\item $\{x+1,\,e^x,\,e^{3x}\}$
+
+ \item $\{x,\,x^3,\,1/x,\,1/x^2\}$
+ 
+  \item $\{x,\,x\ln x,\,1/x,\,x^2\}$
+
+ \item $\{e^x,\,e^{-x},\,x,\,e^{2x}\}$
+ 
+  \item $\{e^{2x},\,e^{-2x},\,1,\,x^2\}$
+\end{enumerate}
+\end{problem}
+
+
+
+
+
+\end{document}
