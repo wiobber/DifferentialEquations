@@ -568,7 +568,24 @@ Find the inverse Laplace transform.
 \begin{enumerate}
 \item $\frac{2s+1}{(s^2+1)(s-1)(s-3)}$
 
-
+\begin{solution}
+$$
+\frac{2s+1}{(s^2+1)(s-1)(s-3)}
+=\frac{A}{s-1}+\frac{B}{s-3}+\frac{Cs+D}{s^2+1}
+$$
+where
+$$
+(A(s-3)+B(s-1))(s^2+1)+(Cs+D)(s-1)(s-3)=2s+1.
+$$
+$$
+\begin{array}
+-4A&=&3&(\mbox{set }s=1);\\
+20B&=&7& (\mbox{set }s=3);\\
+-3A-B+3D&=&1& (\mbox{set }s=0);\\
+A+B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+\end{solution}
 
 \item $\frac{s+2}{(s^2+2s+2)(s^2-1)}$
 
