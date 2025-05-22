@@ -776,18 +776,46 @@ $$
 Multiply through by $s-s_i$ to show that
  $A_i$ can be obtained by ignoring the factor $s-s_i$ on the
 left and setting $s=s_i$ elsewhere.
+
+\begin{solution}
+Let $i=1$. (The proof for $i=2,\dots,n$) is similar.
+Multiplying the given equation through by $s-s_1$ yields
+$$
+\frac{P(s)}{(s-s_2)\cdots(s-s_n)}=
+A_1+(s-s_1)\left[\frac{A_2}{s-s_2}+\cdots+\frac{A_n}{s-s_n}\right],
+$$
+and setting $s=s_1$ yields
+$A_1=\frac{P(s_1)}{(s_1-s_2)\cdots(s_2-s_n)}$.
+\end{solution}
+
 \item % (b)
 Suppose $P$ and $Q_1$ are polynomials such that
 $\text{degree}(P)\le\text{degree}(Q_1)$ and $Q_1(s_1)\ne0$.
-Show that the coefficient of $1/(s-s_1)$ in the partial fraction
-expansion of
+Show that the coefficient of $1/(s-s_1)$ in the partial fraction expansion of
 $$
 F(s)=\frac{P(s)}{(s-s_1)Q_1(s)}
 $$
 is $P(s_1)/Q_1(s_1)$.
+
+\begin{solution}
+From calculus we know that $F$  has a partial
+fraction expansion of the form
+$\frac{P(s)}{(s-s_1)Q_1(s)}=\frac{A}{s-s_1}+G(s)$ where $G$ is
+continuous at $s_1$. Multiplying through by $s-s_1$ shows that
+$\frac{P(s)}{Q_1(s)}=A+(s-s_1)G(s)$. Now set $s=s_1$ to obtain
+$A=\frac{P(s_1)}{Q(s_1)}$.
+\end{solution}
+
 \item % (c)
 Explain how the two results above are related.
+
+\begin{solution}
+The second result is generalization of the first, since it shows that if $s_1$ is a simple zero
+of the denominator of the rational function, then Heaviside's
+method can be used to determine the coefficient of $1/(s-s_1)$
+in the partial fraction expansion even if some of the other zeros
+of the denominator are repeated or complex.
+\end{solution}
 \end{enumerate}
 \end{problem}
-
 \end{document}
