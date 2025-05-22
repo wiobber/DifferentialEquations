@@ -634,6 +634,38 @@ $C=1/5$, $D=-3/5$. Therefore,
 
 \begin{solution}
 $$
+\frac{2s-1}{(s^2-2s+2)(s+1)(s-2)}
+=\frac{A}{s-2}+\frac{B}{s+1}+\frac{C(s-1)+D}{(s-1)^2+1}
+$$
+where
+$$
+(A(s+1)+B(s-2))((s-1)^2+1)+(C(s-1)+D)(s-2)(s+1)=2s-1.
+$$
+$$
+\begin{array}{rcrl}
+6A&=&3&(\mbox{set }s=2);\\
+-15B&=&-3& (\mbox{set }s=-1);\\
+2A-4B+2C-2D&=&-1& (\mbox{set }s=0);\\
+A+B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=1/2$, $B=1/5$,
+$C=-7/10$, $D=-1/10$. Therefore,
+\begin{eqnarray*}
+\frac{2s-1}{(s^2-2s+2)(s+1)(s-2)}
+&=&
+=\frac{1}{2}\frac{1}{s-2}+\frac{1}{5}\frac{1}{s+1}-\frac{7}{10}\frac{s-1}{(s-1)^2+1}
+-\frac{1}{10}\frac{1}{(s-1)^2+1}
+\\&\leftrightarrow&
+\frac{1}{2}e^{2t}+\frac{1}{5} e^{-t}
+-\frac{7}{10}e^t\cos t-\frac{1}{10}e^t\sin t.
+\end{eqnarray*}
+\end{solution}
+
+\item $\frac{s-6}{(s^2-1)(s^2+4)}$
+
+\begin{solution}
+$$
 \frac{s-6}{(s^2-1)(s^2+4)}
 =\frac{A}{s-1}+\frac{B}{s+1}+\frac{Cs+D}{s^2+4}
 $$
