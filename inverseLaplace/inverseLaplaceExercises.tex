@@ -630,10 +630,100 @@ $C=1/5$, $D=-3/5$. Therefore,
 \end{eqnarray*}
 \end{solution}
 
-    \item $\frac{2s-1}{(s^2-2s+2)(s+1)(s-2)}$
-    \item $\frac{s-6}{(s^2-1)(s^2+4)}$
-    \item $\frac{2s-3}{s(s-2)(s^2-2s+5)}$
-    \item $\frac{5s-15}{(s^2-4s+13)(s-2)(s-1)}$
+\item $\frac{2s-1}{(s^2-2s+2)(s+1)(s-2)}$
+
+\begin{solution}
+$$
+\frac{s-6}{(s^2-1)(s^2+4)}
+=\frac{A}{s-1}+\frac{B}{s+1}+\frac{Cs+D}{s^2+4}
+$$
+where
+$$
+(A(s+1)+B(s-1))(s^2+4)+(Cs+D)(s^2-1)=s-6.
+$$
+$$
+\begin{array}{rcrl}
+10A&=&-5&(\mbox{set }s=1);\\
+-10B&=&-7& (\mbox{set }s=-1);\\
+4A-4B-D&=&-6& (\mbox{set }s=0);\\
+A+B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=-1/2$, $B=7/10$,
+$C=-1/5$, $D=6/5$. Therefore,
+\begin{eqnarray*}
+\frac{s-6}{(s^2-1)(s^2+4)}
+&=&
+=-\frac{1}{2}\frac{1}{s-1}+\frac{7}{10}\frac{1}{s+1}-\frac{1}{5}\frac{s}{s^2+4}
++\frac{3}{5}+\frac{1}{s^2+4}
+\\&\leftrightarrow&
+-\frac{1}{2}e^t+\frac{7}{10}e^{-t}-\frac{1}{5}\cos 2t+\frac{3}{5}\sin 2t.
+\end{eqnarray*}
+\end{solution}
+
+\item $\frac{2s-3}{s(s-2)(s^2-2s+5)}$
+
+\begin{solution}
+$$
+\frac{2s-3}{s(s-2)(s^2-2s+5)}
+=\frac{A}{s}+\frac{B}{s-2}+\frac{C(s-1)+D}{(s-1)^2+4}
+$$
+where
+$$
+(A(s-2)+Bs)((s-1)^2+4)+(C(s-1)+D)s(s-2)=2s-3.
+$$
+$$
+\begin{array}{rcrl}
+-10A&=&-3&(\mbox{set }s=0);\\
+10B&=&1& (\mbox{set }s=2);\\
+-4A+4B-D&=&-1& (\mbox{set }s=1);\\
+A+B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=3/10$, $B=1/10$,
+$C=-2/5$, $D=1/5$. Therefore,
+\begin{eqnarray*}
+\frac{2s-3}{s(s-2)(s^2-2s+5)}
+&=&
+=\frac{3}{10s}+\frac{1}{10}\frac{1}{s-2}-\frac{2}{5}\frac{s-1}{(s-1)^2+4}
++\frac{1}{5}\frac{1}{(s-1)^2+4}
+\\&\leftrightarrow&
+\frac{3}{10}+\frac{1}{10}e^{2t}-\frac{2}{5}e^t\cos 2t
++\frac{1}{10}e^t\sin2t.
+\end{eqnarray*}
+\end{solution}
+
+\item $\frac{5s-15}{(s^2-4s+13)(s-2)(s-1)}$
+
+\begin{solution}
+$$
+\frac{5s-15}{(s^2-4s+13)(s-2)(s-1)}
+=\frac{A}{s-1}+\frac{B}{s-2}+\frac{C(s-2)+D}{(s-2)^2+9}
+$$
+where
+$$
+(A(s-2)+B(s-1))((s-2)^2+9)+(C(s-2)+D)(s-1)(s-2)=5s-15.
+$$
+$$
+\begin{array}{rcrl}
+-10A&=&-10&(\mbox{set }s=1);\\
+9B&=&-5& (\mbox{set }s=2);\\
+-26A-13B-4C+2D&=&-15& (\mbox{set }s=0);\\
+A+B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=1$, $B=-5/9$,
+$C=-4/9$, $D=1$. Therefore,
+\begin{eqnarray*}
+\frac{5s-15}{(s^2-4s+13)(s-2)(s-1)}
+&=&
+=\frac{1}{s-1}-\frac{5}{9}\frac{1}{s-2}-\frac{4}{9}\frac{s-2}{(s-2)^2+9}
++\frac{1}{(s-2)^2+9}
+\\&\leftrightarrow&
+e^t-\frac{5}{9}e^{2t}-\frac{4}{9}e^{2t}\cos 3t+\frac{1}{3}e^{2t}\sin 3t.
+\end{eqnarray*}
+\end{solution}
+
 \end{enumerate}
 \end{problem}
 
