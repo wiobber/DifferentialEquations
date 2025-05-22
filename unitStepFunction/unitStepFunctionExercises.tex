@@ -29,9 +29,38 @@ $f$ in terms of unit step functions as in Eqn.~\eqref{eq:8.4.6}, and use
 Theorem~\ref{thmtype:8.4.1} to find ${\cal L}(f)$.
 $f(t)=\left\{\begin{array}{cl} t,&0
 \le t<1,\\ 1,&t\ge1.\end{array}\right.$
+
+\begin{solution}
+$$
+{\cal L}(f)  =\int_0^\infty e^{-st}f(t)\, dt
+ =\int_0^1 e^{-st}t\,dt+\int_1^\infty e^{-st}\,dt.
+\text{ (A)}
+$$
+To relate the first term to a Laplace transform we add and subtract
+$\int_1^\infty e^{-st}t\, dt$
+  in (A) to obtain
+$$
+{\cal L}(f)=\int_0^\infty e^{-st}t\,dt+
+\int_1^\infty e^{-st}(1-t)\, dt
+={\cal L}(t)-\int_1^\infty e^{-st}(t-1)\,dt.
+\text{ (B)}
+$$
+Letting $t=x+1$  in the last integral yields
+$$
+\int_1^\infty e^{-st}(t-1)\,dt=-\int_0^\infty e^{-s(x+1)}x\,dx
+ =e^{-s}{\cal L}(t).
+$$
+This and (B) imply that
+${\cal L}(f)=(1-e^{-s}){\cal L}(t)
+= \frac{1-e^{-s}}{s^2}$.
+
+Alternatively,
+$f(t)=t-u(t-1)(t-1)\leftrightarrow(1-e^{-s}){\cal
+L}(t)= \frac{1-e^{-s}}{s^2}$.
+\end{solution}
 \end{problem}
 
-\begin{problem}\label{exer:8.4.3} 
+\begin{problem}\label{exer:8.4.3}
 Find the Laplace transform by
 the method of Example~\ref{example:8.4.1}. Then express the given function
 $f$ in terms of unit step functions as in Eqn.~\eqref{eq:8.4.6}, and use
@@ -96,6 +125,31 @@ $f$ in terms of unit step functions as in Eqn.~\eqref{eq:8.4.6}, and use
 Theorem~\ref{thmtype:8.4.1} to find ${\cal L}(f)$.
 $f(t)=\left\{\begin{array}{cl} t^2,& 0\le
 t<1,\\ 0,&t\ge1.\end{array}\right.$
+
+\begin{solution}
+$$
+{\cal L}(f)  =\int_0^\infty e^{-st}f(t)\, dt
+ =\int_0^1 e^{-st}t^2={\cal L}(t^2)-\int_1^\infty t^2\,dt.
+\text{ (A)}
+$$
+Letting $t=x+1$  in the last integral yields
+$$
+\int_1^\infty e^{-st}t^2\,dt=\int_0^\infty e^{-s(x+1)}(t^2+2t+1)\,dx
+ =e^{-s}{\cal L}(t^2+2t+1).
+$$
+This and (A) imply that
+$$
+{\cal L}(f)={\cal L}(t^2)+e^{-s}{\cal L} (t^2+2t+1)
+=\frac{2}{s^3}-e^{-s}\left(\frac{2}{s^3}+\frac{2}{s^2}+\frac{1}{s}\right).
+$$
+
+Alternatively,
+$$
+f(t)=t^2\left(1-u(t-1)\right)\leftrightarrow
+{\cal L}(t^2)+e^{-s}{\cal L} (t^2+2t+1)=
+\frac{2}{s^3}-e^{-s}\left(\frac{2}{s^3}+\frac{2}{s^2}+\frac{1}{s}\right)
+$$
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.7}
@@ -112,9 +166,18 @@ given function $f$ in terms of unit step functions
  and use Theorem~\ref{thmtype:8.4.1} to find ${\cal L}(f)$.
  $f(t)=\left\{\begin{array}{cl} t^2+2, &0\le
 t<1,\\ t,&t\ge1.\end{array}\right.$
+
+\begin{solution}
+$f(t)=t^2+2+u(t-1)(t-t^2-2)$.
+Since $t^2+2\leftrightarrow\frac{2}{s^3}+\frac{2}{s}$  and
+\begin{eqnarray*}
+{\cal L}\left(u(t-1)(t-t^2-2)\right)&=&e^{-s}{\cal
+L}\left((t+1)-(t+1)^2-2\right)\\&=&-e^{-s}{\cal
+L}(t^2+t+2)=-e^{-s}\left(\frac{2}{s^3}+\frac{1}{s^2}+\frac{2}{s}\right),
+\end{eqnarray*}
+it follows that $F(s)=\frac{2}{s^3} +\frac{2}{s}-e^{-s}\left(\frac{2}{s^3}+\frac{1}{s^2}+\frac{2}{s}\right)$.
+\end{solution}
 \end{problem}
-
-
  \begin{problem}\label{exer:8.4.9}
 Express the
 given function $f$ in terms of unit step functions
@@ -152,6 +215,13 @@ t<2,\\ t-4,&2\le t<3,\\ 1,&t\ge3.
 
 \begin{problem}\label{exer:8.4.12} $f(t)=\left\{\begin{array}{cl} 0,&0 \le
 t<1,\\ t,&1\le t<2,\\ 0,&t\ge2.\end{array}\right.$
+
+\begin{solution}
+$f(t)=\left[u(t-1)-u(t-2)\right]t\leftrightarrow
+e^{-s}{\cal L}(t+1)-e^{-2s}{\cal L}(t+2)\\=
+e^{-s}\left(\frac{1}{s^2}+\frac{1}{s}\right)-e^{-2s}\left(\frac{1}{s^2}
++\frac{2}{s}\right)$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.13} 
@@ -168,6 +238,15 @@ given function $f$ in terms of unit step functions
  and use Theorem~\ref{thmtype:8.4.1} to find ${\cal L}(f)$.
  $f(t)=\left\{\begin{array}{cl} t,&0\le
 t<1,\\ 2-t,&1\le t<2,\\ 6,&t > 2. \end{array}\right.$
+
+\begin{solution}
+\begin{eqnarray*}
+f(t)&=&t-2u(t-1)(t-1)+u(t-2)(t+4)\leftrightarrow
+   \frac{1}{s^2}-2e^{-s}{\cal L}(t)+e^{-2s}{\cal L}(t+6)\\
+  &=&\frac{1}{s^2}-\frac{2e^{-s}}{s^2}
++e^{-2s}\left(\frac{1}{s^2}+\frac{6}{s}\right).
+\end{eqnarray*}
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.15} 
@@ -201,6 +280,14 @@ t<4,\\ 4t,&t\ge
 \begin{problem}\label{exer:8.4.18}  Express the given function $f$ in terms of unit step functions and use Theorem~\ref{thmtype:8.4.1} to find ${\cal L}(f)$.  Graph $f$.
 $f(t)=\left\{\begin{array}{ll}(t+1)^2,&0\le t<1,
 \\(t+2)^2,&t\ge1.\end{array}\right.$
+
+\begin{solution}
+$f(t)=(t+1)^2+u(t-1)\left((t+2)^2-(t+1)^2\right)
+=t^2+2t+1+u(t-1)(2t+3)
+\leftrightarrow
+{\cal L}(t^2+2t+1)+e^{-s}{\cal L}(2t+5)=
+\frac{2}{s^3 }+\frac{2}{s^2}+\frac{1}{s}+e^{-s}\left(\frac{2}{s^2}+\frac{5}{s}\right)$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.19} Use Theorem~\ref{thmtype:8.4.2} to express the inverse transforms in terms of step functions, and then find distinct formulas for the inverse transforms on the appropriate intervals, as in
@@ -213,7 +300,15 @@ Use Theorem~\ref{thmtype:8.4.2} to express the inverse transforms in terms of st
 Example~\ref{example:8.4.7}.
 $H(s)=\frac{e^{-s}}{s(s+1)}$
 
-
+\begin{solution}
+$\frac{1}{s(s+1)}=\frac{1}{s}-\frac{1}{s+1}\leftrightarrow
+ 1-e^{-t}
+\Rightarrow
+e^{-s}\frac{1}{s(s+1)}\leftrightarrow
+u(t-1)\left(1-e^{-(t-1)}\right)=
+\left\{\begin{array}{cl} 0,&0\le t<1,\\
+1-e^{-(t-1)},&t\ge1.\end{array}\right.$
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.21}
@@ -257,6 +352,20 @@ $H(s)=\left(\frac{5}{s}-\frac{1}{s^2}\right)
 Use Theorem~\ref{thmtype:8.4.2} to express the inverse transforms in terms of step functions, and then find distinct formulas for the inverse transforms on the appropriate intervals, as in
 Example~\ref{example:8.4.7}.
 $H(s)=\frac{e^{-\pi s} (1-2s)}{s^2+4s+5}$
+
+\begin{solution}
+$$
+\frac{1-2s}{s^2+4s+5}=\frac{5-2(s+2)}{(s+2)^2+1}\leftrightarrow
+e^{-2t}(5\sin t-2\cos t);
+$$
+therefore,
+\begin{eqnarray*}
+h(t)&=&u(t-\pi)e^{-2(t-\pi)} \left(5\sin(t-\pi)-2\cos(t-\pi)\right)\\
+&=&u(t-\pi)e^{-2(t-\pi)} (2\cos t-5\sin t)\\
+&=&\left\{\begin{array}{cl} 0, &0\le t<\pi,\\[2\jot]
+e^{-2(t-\pi)}(2\cos t-5\sin t),&t\ge\pi. \end{array}\right..
+\end{eqnarray*}
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.25} Use Theorem~\ref{thmtype:8.4.2} to express the inverse transforms in terms of step functions, and then find distinct formulas for the inverse transforms on the appropriate intervals, as in
@@ -266,6 +375,20 @@ $H(s)=\left(\frac{1}{s}-\frac{s}{s^2+1}\right)+e^{-\frac{\pi}{2}s}\left(\frac{3s
 
 \begin{problem}\label{exer:8.4.26} Use Theorem~\ref{thmtype:8.4.2} to express the inverse transforms in terms of step functions, and then find distinct formulas for the inverse transforms on the appropriate intervals, as in
 Example~\ref{example:8.4.7}.  $H(s)= e^{-2s}\left[\frac{3(s-3)}{(s+1)(s-2)}-\frac{s+1}{(s-1)(s-2)}\right]$
+
+\begin{solution}
+Denote $F(s)=\frac{3(s-3)}{(s+1)(s-2)}-\frac{s+1}{(s-1)(s-2)}$.
+Since $\frac{3(s-3)}{(s+1)(s-2)}=\frac{4}{s+1}-\frac{1}{s-2}$ and
+$\frac{s+1}{(s-1)(s-2)}=\frac{3}{s-2}-\frac{2}{s-1}$,
+  $F(s)=\frac{4}{s+1}-\frac{4}{s-2}+\frac{2}{s-1}
+\leftrightarrow4e^{-t}-4e^{2t}+2e^t$.
+Therefore,$e^{-2s}F(s)\leftrightarrow $
+$u(t-2)\left
+(4e^{-(t-2)}-4e^{2(t-2)}+2e^{(t-2)}\right)=
+\left\{\begin{array}{cl} 0,&0\le
+t<2,\\4e^{-(t-2)}-4e^{2(t-2)}+2e^{(t-2)},&t\ge
+2.\end{array}\right.$
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.27} Use Theorem~\ref{thmtype:8.4.2} to express the inverse transforms in terms of step functions, and then find distinct formulas for the inverse transforms on the appropriate intervals, as in
@@ -319,6 +442,17 @@ f(t)=f_0(t)+\sum_{m=1}^\infty u(t-t_m)\left(f_m(t)-f_{m-1}(t)\right),\,
 $$
 How do we know that the series on the right converges for all $t$
 in $[0,\infty)$?
+
+\begin{solution}
+Let $T$ be an arbitrary positive number.
+Since $\lim_{m\to\infty}t_m=\infty$, only finitely many
+members of  $\{t_m\}$ are in $[0,T]$.
+Since $f_m$ is continuous on $[t_m,\infty)$ for each $m$,
+$f$ is piecewise continuous on $[0,T]$.
+If $t_M\le t<t_{M+1}$, then   $u(t-t_m)=1$ if $m\le M$, while
+$u(t-t_m)=0$ if $m>M$. Therefore,
+$f(t)= f_0(t)+\sum_{m=1}^M(f_m(t)-f_{m-1}(t))=f_M(t)$
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.31}
@@ -388,6 +522,14 @@ there is a positive constant $K$ such that $t_m\ge Km$ for $m$
 sufficiently large. Show that the series (B) of
 Exercise~\ref{exer:8.4.31} converges for any $\rho>0$, and conclude from
 this that (C) of Exercise~\ref{exer:8.4.31} holds for $s>s_0$.
+
+\begin{solution}
+Since $\sum_{m=0}^\infty e^{-\rho Km}$
+converges if $\rho>0$, $\sum_{m=0}^\infty e^{-\rho t_m}$ converges
+if $\rho>0$, by the comparison test. Therefore,(C) of
+Exercise~8.3.31 holds if $s>s_0+\rho$ if $\rho$ is any positive
+number. This implies that it holds if $s>s_0$.
+\end{solution}
 \end{problem}
 
 
@@ -406,6 +548,18 @@ function representation of $f$ and use the result of
 Exercise~\ref{exer:8.4.32} to find ${\cal L}(f)$. (You will need
 formulas related to the formula for the sum of a geometric series.)
 $f(t)=(-1)^m,\,m\le t<m+1\; (m=0,1,2,\dots)$
+
+\begin{solution}
+Let $t_m=m$ and $f_m(t)=(-1)^m$, $m=0,1,2,\dots$.
+Then $f_m(t)-f_{m-1}(t)=(-1)^m2$, so
+$f(t)=1+2\sum_{m=1}^\infty (-1)^mu(t-m)$ and
+$F(s)=\frac{1}{s}\left(1+2\sum_{m=1}^\infty(-1)^me^{-ms}
+\right)$
+Substituting $x=e^{-s}$ in the identity $\dst\sum_{m=1}^\infty
+(-1)^mx^m=-\frac{x}{1+x}$ ($|x|<1$) yields
+$F(s)=\frac{1}{s}\left(1-\frac{2e^{-s}}{1+e^{-s}}\right)=
+\frac{1}{s}\ \frac{1-e^{-s}}{1+e^{-s}}$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.4.35}
@@ -420,6 +574,19 @@ function representation of $f$ and use the result of
 Exercise~\ref{exer:8.4.32} to find ${\cal L}(f)$. (You will need
 formulas related to the formula for the sum of a geometric series.)
 $f(t)=(-1)^mm,\,m\le t<m+1\; (m=0,1,2,\dots)$
+
+\begin{solution}
+Let $t_m=m$ and $f_m(t)=(-1)^mm$, $m=0,1,2,\dots$.
+Then $f_m(t)-f_{m-1}(t)=(-1)^m(2m-1)$, so
+$f(t)=\sum_{m=1}^\infty(-1)^m(2m-1)u(t-m)$and
+$F(s)=\frac{1}{s}\sum_{m=1}^\infty(-1)^m(2m-1)e^{-ms}$.
+Substituting $x=e^{-s}$ in the identities $\sum_{m=1}^\infty
+(-1)^mx^m=-\frac{x}{1+x}$ and $\sum_{m=1}^\infty
+(-1)^mmx^m=-{x\over(1+x)^2}$
+($|x|<1$) yields
+$F(s)=\frac{1}{s}\left[\frac{e^{-s}}{1+e^{-s}}-\frac{2e^{-s}}{(1+e^{-s})^2}\right]=
+\frac{1}{s}\frac{(1-e^s)}{(1+e^s)^2}$.
+\end{solution}
 \end{problem}
 
 
