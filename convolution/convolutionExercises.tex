@@ -401,7 +401,7 @@ integral.
 
 \begin{solution}
 Substituting $x=t-\tau$ yields
-$\int_0^tf(t-\tau)g(\tau)\,d\tau=\int_t^0f(x)g(t-x)(-\,dx)=
+$\int_0^tf(t-\tau)g(\tau)\,d\tau=-\int_t^0f(x)g(t-x)(-\,dx)=
 \int_0^tf(x)g(t-x)\,dx=\int_0^tf(\tau)g(t-\tau)\,d\tau$.
 \end{solution}
 \end{problem}
@@ -426,6 +426,37 @@ y(t)&=&\; k_0\frac{r_2e^{r_1t}-r_1e^{r_2t}}{r_2-r_1}+k_1\frac{e^{r_2t}-e^{r_1t}
 \\
 &&+\frac{1}{a(r_2-r_1)}\int_0^t(e^{r_2\tau}-e^{r_1\tau})f(t-\tau)\,d\tau.
 \end{eqnarray*}
+
+\begin{solution}
+$p(s)Y(s)=F(s)+a(k_1+k_0s)+bk_0$, so
+(A) $Y(s)=\frac{F(s)}{p(s)}+\frac{k_0(as+b)+k_1a}{p(s)}$.
+Since $p(s)=a(s-r_1)(s-r_2)$ and therefore $b=-a(r_1+r_2)$,
+(A) can be rewritten as
+$$
+Y(s)=\frac{F(s)}{a(s-r_1)(s-r_2)}+\frac{k_0(s-r_1-r_2)}{(s-r_1)(s-r_2)}
++\frac{k_1}{(s-r_1)(s-r_2)}.
+$$
+$$
+\frac{1}{(s-r_1)(s-r_2)}=\frac{1}{r_2-r_1}\left(\frac{1}{s-r_2}
+-\frac{1}{s-r_1}\right)\leftrightarrow\frac{e^{r_2t}-e^{r_1t}}{r_2-r_1},
+$$
+so the convolution theorem implies that
+$$
+\frac{F(s)}{a(s-r_1)(s-r_2)}\leftrightarrow
+\frac{1}{a}\int_0^t\frac{e^{r_2\tau}-e^{r_1\tau}}{r_2-r_1}f(t-\tau)\,d\tau.
+$$
+$$
+\frac{s-r_1-r_2}{(s-r_1)(s-r_2)}=\frac{r_2}{r_2-r_1}\frac{1}{s-r_1}
+-\frac{r_1}{r_2-r_1}\frac{1}{s-r_2}\leftrightarrow
+\frac{r_2e^{r_1t}-r_1e^{r_2}t}{r_2-r_1}.
+$$
+Therefore,
+$$
+y(t)=\ k_0\frac{r_2e^{r_1t}-r_1e^{r_2t}}{r_2-r_1}+k_1\frac{e^{r_2t}-e^{r_1t}}{r_2-r_1}
++\frac{1}{a}
+\int_0^t\frac{e^{r_2\tau}-e^{r_1\tau}}{r_2-r_1}f(t-\tau)\,d\tau.
+$$
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.6.9}
@@ -458,6 +489,39 @@ t)+\frac{k_1}{\omega}\sin\omega t\right]
 &&+\frac{1}{a\omega}\int_0^te^{\lambda t}f(t-\tau)\sin\omega\tau\,
 d\tau.
 \end{eqnarray*}
+
+\begin{solution}
+$p(s)Y(s)=F(s)+a(k_1+k_0s)+bk_0$, so
+(A) $Y(s)=\frac{F(s)}{p(s)}+\frac{k_0(as+b)+k_1a}{p(s)}$.
+Since $p(s)=a(s-\lambda)^2+\omega^2$ and therefore $b=-2a\lambda$,
+(A) can be rewritten as
+$$
+Y(s)=\frac{F(s)}{a[(s-\lambda)^2+\omega^2}]+\frac{k_0(s-2\lambda)}{(s-\lambda)^2+\omega^2}
++\frac{k_1}{(s-\lambda)^2+\omega^2}.
+$$
+$\frac{1}{(s-\lambda)^2+\omega^2}\leftrightarrow
+\frac{1}{\omega}e^{\lambda t}\sin\omega t$, so the convolution theorem
+implies that
+$$
+\frac{F(s)}{a[(s-\lambda)^2+\omega^2]}\leftrightarrow
+\frac{1}{a\omega}\int_0^te^{\lambda t}f(t-\tau)\sin\omega\tau\,
+d\tau.
+$$
+$$
+\frac{s-2\lambda}{(s-\lambda)^2+\omega^2}=
+\frac{(s-\lambda)-\lambda}{(s-\lambda)^2+\omega^2}\leftrightarrow
+e^{\lambda t}\left(\cos\omega
+t-\frac{\lambda}{\omega}\sin\omega t\right).
+$$
+Therefore,
+$$
+y(t)=e^{\lambda t}\left[k_0\left(\cos\omega
+t-\frac{\lambda}{\omega}\sin\omega
+t\right)+\frac{k_1}{\omega}\sin\omega t\right]
++\frac{1}{a\omega}\int_0^te^{\lambda t}f(t-\tau)\sin\omega\tau\,
+d\tau.
+$$
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:8.6.11}
@@ -472,7 +536,7 @@ Show that $w$ is the solution of
 $$
 aw''+bw'+cw=0,\quad w(0)=0,\quad w'(0)=\frac{1}{a}.
 $$
-\item % (b)
+\item\label{exer:8.6.11b} % (b)
 Let $f$ be continuous on $[0,\infty)$  and define
 $$
 h(t)=\int_0^t w(t-\tau)f(\tau)\,d\tau.
@@ -494,7 +558,7 @@ thus, it's not necessary to assume that $f$ has a Laplace transform.
 Consider the initial value problem
 $$
 ay''+by'+cy=f(t),\quad y(0)=0,\quad y'(0)=0,
-\text{(A)}
+\text{ (A)}
 $$
 where $a,b$, and $c$ are constants, $a\ne0$, and
 $$
@@ -515,6 +579,21 @@ $$
 Y(s)=\frac{F_0(s)+e^{-st_1}G(s)}{p(s)}
 $$
 where  $g(t)=f_1(t+t_1)-f_0(t+t_1)$.
+
+\begin{solution}
+$$
+ay''+by'+cy=f_0(t)+u(t-t_1)(f_1(t)-f_0(t)),\,y(0)=0,\,y'(0)=0;
+$$
+$$
+p(s)Y(s)=F_0(s)+{\cal L}(u(t-t_1)(f_1(t)-f_0(t)))
+=F_0(s)+e^{-st_1}{\cal L}(g);
+$$
+$$
+Y(s)=\frac{F_0(s)+e^{-st_1}G(s)}{p(s)}.
+\text{ (B)}
+$$
+\end{solution}
+
 \item % (b)
 Let $w$ be as in Exercise~\ref{exer:8.6.11}.
 Use Theorem~\ref{thmtype:8.4.2} and the convolution theorem
@@ -525,10 +604,32 @@ w(t-\tau)f_0(\tau)\,d\tau+u(t-t_1)\int_0^{t-t_1}
 w(t-t_1-\tau)g(\tau)\,d\tau
 $$
 for $t>0$.
+
+\begin{solution}
+Since $F_0(s)\leftrightarrow f_0(t)$, $G(s)\leftrightarrow
+g(t)$, and $\frac{1}{p(s)}\leftrightarrow w(t)$, the convolution
+theorem implies that
+$$
+\frac{F_0(s)}{p(s)}\leftrightarrow
+\int_0^tw(t-\tau)f_0(\tau)\,d\tau\mbox{\quad and \quad}
+ \frac{G(s)}{p(s)}\leftrightarrow
+\int_0^tw(t-\tau)g(\tau)\,d\tau.
+$$
+ Now Theorem~\ref{thmtype:8.4.2} implies that
+ $\frac{e^{-st_1}G(s)}{p(s)}\leftrightarrow
+u(t-t_1)\int_0^tw(t-t_1-\tau)g(\tau)\,d\tau$, and (B) implies
+that
+$$
+y(t)=\int_0^t
+w(t-\tau)f_0(\tau)\,d\tau+u(t-t_1)\int_0^{t-t_1}
+w(t-t_1-\tau)g(\tau)\,d\tau.
+$$
+\end{solution}
+
 \item % (c)
 Henceforth, assume only that $f_0$ is continuous on $[0,\infty)$ and $f_1$
  is continuous on $[t_1,\infty)$.
- Use  Exercise~\ref{exer:8.6.11} what you did above to show that
+ Use  Exercise~\ref{exer:8.6.11} and what you did above to show that
 $$
 y'(t)=\int_0^t
 w'(t-\tau)f_0(\tau)\,d\tau+u(t-t_1)\int_0^{t-t_1}
@@ -543,8 +644,70 @@ $$
 for $0<t<t_1$ and $t>t_1$. Also, show
  $y$ satisfies the differential equation in
 (A) on$(0,t_1)$ and $(t_1,\infty)$.
+
+\begin{solution}
+Let $z_0(t)=\int_0^tw(t-\tau)f_0(\tau)\,d\tau$
+and $z_1(t)=\int_0^tw(t-\tau)g(\tau)\,d\tau$.
+Then $y(t)=z_0(t)+u(t-t_1)z_1(t-t_1)$. Using Leibniz's rule as in the
+solution of Exercise~\ref{exer:8.6.11b} shows that
+$$
+z_0'(t)=\int_0^tw'(t-\tau)f_0(\tau)\,d\tau,\quad
+z_1'(t)=\dst\int_0^tw'(t-\tau)g(\tau)\,d\tau,\quad t>0,
+$$
+$$
+z_0''(t)=\frac{f_0(t)}{a}+\int_0^tw''(t-\tau)f_0(\tau)\,d\tau,
+z_1''(t)=\frac{g(t)}{a}+\int_0^tw''(t-\tau)g(\tau)\,d\tau,\quad
+t>0,
+$$
+ if $t>0$, and that
+$$
+az_0''+bz_0'+cz_0=f_0(t)\quad \mbox{and} \quad
+az_1''+bz_1'+cz_1=f_1(t+t_1)-f_0(t+t_1),\quad  t>0.
+$$
+This implies the stated conclusion for $y'$ and $y''$  on $(0,t)$ and
+$(t,\infty)$, and that $ay''+by'+cy=f(t)$ on these intervals.
+\end{solution}
+
 \item % (d)
 Show that $y$ and $y'$ are continuous on $[0,\infty)$.
+
+\begin{solution}
+Since  the functions $z_0(t)$ and  $h(t)=u(t-t_1)z_1(t-t_1)$
+are both continuous on $[0,\infty)$ and $h(t)=0$ if $0\le t\le t_1$,
+$y$ is continuous on $[0,\infty)$. From the previous part, $y'$ is continuous
+on $[0,t_1)$ and $(t_1,\infty)$, so we need only show that $y'$
+is continuous at $t_1$.
+For this it suffices to show  that $h'(t_1)=0$.
+ Since $h(t_1)=0$ if $t\le t_1$,
+(B) $\lim_{t\to t_1-}\frac{h(t)-h(t_1)}{t-t_1}=0$.
+If $t>t_1$, then $h(t)=\int_0^{t-t_1}w(t-t_1\tau)g(\tau)\,d\tau$.
+Since $h(t_1)=0$,
+$$
+\left|\frac{h(t)-h(t_1)}{t-t_1}\right|\le\int_0^{t-t_1}
+|w(t-t_1-\tau)g(\tau)|\,d\tau.
+\text{ (B)}
+$$
+ Since $g$ is continuous from the right at
+$0$, we can choose constants $T>0$  and $M>0$ so that
+$|g(\tau)|<M$ if $0\le \tau\le T$. Then (B) implies that
+$$
+\left|{h(t)-h(t_1)\over t-t_1}\right|\le M\int_0^{t-t_1}
+|w(t-t_1-\tau)|\,d\tau,\quad t_1<t<t_1+T.
+\text{ (C)}
+$$
+Now suppose $\epsilon>0$. Since $w(0)=0$, we can choose $T_1$
+such that $0<T_1<T$ and $|w(x)|<\epsilon/M$ if $0\le x<T_1$.
+If $t_1<t<t_1+T_1$ and $0\le\tau\le t-t_1$, then $0\le t-t_1-\tau<T_1$,
+so (C) implies that
+$$
+\left|\frac{h(t)-h(t_1)}{t-t_1}\right|< \epsilon,\quad
+t_1<t<t_1+T.
+$$
+Therefore,
+ $\lim_{t\to t_1+}\frac{h(t)-h(t_1)}{t-t_1}=0$. This and
+(B) imply that $h'(t_1)=0$.
+
+\end{solution}
 \end{enumerate}
 \end{problem}
 
