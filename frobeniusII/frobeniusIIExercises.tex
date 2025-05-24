@@ -1,0 +1,1512 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+\begin{problem}\label{exer:7.6.1}
+Find a fundamental set of Frobenius solutions. Compute the terms involving $x^{n+r_1}$, where $0\leq n \leq N$ ($N$ at least 7) and $r_1$ is the root of the indicial equation. Optionally, write a computer
+program to implement the applicable recurrence formulas and take $N > 7$.
+
+$x^2y''-x(1-x)y'+(1-x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.2}
+Find a fundamental set of Frobenius solutions. Compute the terms involving $x^{n+r_1}$, where $0\leq n \leq N$ ($N$ at least 7) and $r_1$ is the root of the indicial equation. Optionally, write a computer
+program to implement the applicable recurrence formulas and take $N > 7$.
+
+$x^2(1+x+2x^2)y'+x(3+6x+7x^2)y'+(1+6x-3x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(r+1)^2$;
+$p_1(r)=(r+2)(r+3)$;
+$p_2(r)=(r+3)(2r-1)$;
+
+$a_1(r)=-\frac{r+3}{ r+2}$;
+$a_n(r)=-\frac{n+r+2}{ n+r+1}a_{n-1}(r)-\frac{2n+2r-5}{
+n+r+1}a_{n-2}(r)$,
+$n\geq 2$.
+
+$a_1'(r)=\frac{1}{(r+2)^2}$;
+$a_n'(r)=-\frac{n+r+2}{ n+r+1}a_{n-1}'(r)-\frac{2n+2r-5}{
+n+r+1}a_{n-2}'(r)+\frac{1}{(n+r+1)^2}a_{n-1}(r)-\frac{7}{(n+r+1)^2}a_{n-2}(r)$,
+$n\geq 2$.
+
+$r_1=-1$;
+$a_1(-1)=-2$;
+$a_n(-1)=-\frac{n+1}{ n}a_{n-1}(-1)-\frac{2n-7}{ n}a_{n-2}(-1)$,
+$n\geq 2$;
+
+$y_1=x^{-1}\left(1-2x+\frac{9}{2}x^2-\frac{20}{3}x^3+\cdots\right)$;
+
+$a_1'(-1)=1$;
+$a_n'(-1)=-\frac{n+1}{ n}a_{n-1}(-1)-\frac{2n-7}{ n}a_{n-2}(-1)
++\frac{1}{ n^2}a_{n-1}(-1)-\frac{7}{ n^2}a_{n-2}(-1)$,
+$n\geq 2$;
+
+$y_2=
+y_1\ln x+1-\frac{15}{4}x+\frac{133}{18}x^2+\cdots$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.3}
+Find a fundamental set of Frobenius solutions. Compute the terms involving $x^{n+r_1}$, where $0\leq n \leq N$ ($N$ at least 7) and $r_1$ is the root of the indicial equation. Optionally, write a computer
+program to implement the applicable recurrence formulas and take $N > 7$.
+
+$x^2(1+2x+x^2)y''+x(1+3x+4x^2)y'-x(1-2x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.4}
+Find a fundamental set of Frobenius solutions. Compute the terms involving $x^{n+r_1}$, where $0\leq n \leq N$ ($N$ at least 7) and $r_1$ is the root of the indicial equation. Optionally, write a computer
+program to implement the applicable recurrence formulas and take $N > 7$.
+
+$4x^2(1+x+x^2)y''+12x^2(1+x)y'+(1+3x+3x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(2r-1)^2$;
+$p_1(r)=(2r+1)(2r+3)$;
+$p_2(r)=(2r+1)(2r+3)$;
+
+$a_1(r)=-\frac{2r+3}{2r+1}$;
+$a_n(r)=
+-\frac{(2n+2r+1)a_{n-1}(r)-(2n+2r-3)a_{n-2}(r)}{2n+2r-1}$,
+$n\geq 2$.
+
+$a_1'(r)=\frac{4}{(2r+1)^2}$;
+$a_n'(r)=
+-\frac{(2n+2r+1)a_{n-1}'(r)-(2n+2r-3)a_{n-2}'(r)}{2n+2r-1}
++\frac{4(a_{n-1}(r)-a_{n-2}(r))}{(2n+2r-1)^2}$;
+$n\geq 2$.
+
+$r_1=1/2$;
+$a_1(1/2)=-2$;
+$a_n(1/2)=
+-\frac{(n+1)a_{n-1}(1/2)+(n-1)a_{n-2}(1/2)}{ n}$;
+$n\geq 2$;
+
+$y_1=x^{1/2}\left(1-2x+\frac{5}{2}x^2-2x^3+\cdots\right)$;
+
+$a_1'(1/2)=1$;
+$a_n'(1/2)=
+-\frac{(n+1)a_{n-1}'(1/2)+(n-1)a_{n-2}'(1/2)}{ n}
++\frac{a_{n-1}(1/2)-a_{n-2}(1/2)}{ n^2}$,
+$n\geq 2$;
+
+$y_2=
+y_1\ln x+x^{3/2}\left(1-\frac{9}{4}x+\frac{17}{6}x^2+
+\cdots\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.5}
+Find a fundamental set of Frobenius solutions. Compute the terms involving $x^{n+r_1}$, where $0\leq n \leq N$ ($N$ at least 7) and $r_1$ is the root of the indicial equation. Optionally, write a computer
+program to implement the applicable recurrence formulas and take $N > 7$.
+
+$x^2(1+x+x^2)y''-x(1-4x-2x^2)y'+y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.6}
+Find a fundamental set of Frobenius solutions. Compute the terms involving $x^{n+r_1}$, where $0\leq n \leq N$ ($N$ at least 7) and $r_1$ is the root of the indicial equation. Optionally, write a computer
+program to implement the applicable recurrence formulas and take $N > 7$.
+
+$9x^2y''+3x(5+3x-2x^2)y'+(1+12x-14x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(3r+1)^2$;
+$p_1(r)=3(3r+4)$;
+$p_2(r)=-2(3r+7)$;
+
+$a_1(r)=-{3}{3r+4}$;
+$a_n(r)=
+\frac{-3a_{n-1}(r)+2a_{n-2}(r)}{3n+3r+1}$;
+$n\geq 2$;
+
+$a_1'(r)=\frac{9}{(3r+4)^2}$;
+$a_n'(r)=\frac
+{-3a_{n-1}'(r)+2a_{n-2}'(r)}{3n+3r+1}
++\frac{9a_{n-1}(r)-6a_{n-2}(r)}{(3n+3r+1)^2}$;
+$n\geq 2$.
+
+$r_1=-1/3$;
+$a_1(-1/3)=-1$;
+$a_n(-1/3)=\frac
+{-3a_{n-1}(-1/3)+2a_{n-2}(-1/3)}{3n}$,
+$n\geq 2$;
+
+$y_1=x^{-1/3}\left(1-x+\frac{5}{6}x^2-\frac{1}{2}x^3+\cdots\right)$;
+
+$a_1'(-1/3)=1$;
+$a_n'(-1/3)=\frac
+{-3a_{n-1}'(r)+2a_{n-2}'(r)}{3n}
++\frac{3a_{n-1}(r)-2a_{n-2}(r)}{3n^2}$;
+$n\geq 2$;
+
+$y_2=
+y_1\ln x+x^{2/3}\left(1-\frac{11}{12}x+\frac{25}{36}x^2+
+\cdots\right)$.
+
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.7}
+Find a fundamental set of Frobenius solutions. Compute the terms involving $x^{n+r_1}$, where $0\leq n \leq N$ ($N$ at least 7) and $r_1$ is the root of the indicial equation. Optionally, write a computer
+program to implement the applicable recurrence formulas and take $N > 7$. 
+
+$x^2y''+x(1+x+x^2)y'+x(2-x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.8}
+Find a fundamental set of Frobenius solutions. Compute the terms involving $x^{n+r_1}$, where $0\leq n \leq N$ ($N$ at least 7) and $r_1$ is the root of the indicial equation. Optionally, write a computer
+program to implement the applicable recurrence formulas and take $N > 7$.
+
+$x^2(1+2x)y''+x(5+14x+3x^2)y'+(4+18x+12x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(r+2)^2$;
+$p_1(r)=2(r+3)^2$;
+$p_2(r)=3(r+4)$;
+
+$a_1(r)=-2$;
+$a_n(r)=
+-2a_{n-1}(r)-\frac{3a_{n-2}(r)}{ n+r+2}$;
+$n\geq 2$;
+
+
+$a_1'(r)=0$;
+$a_n'(r)=
+-2a_{n-1}'(r)-\frac{3a_{n-2}'(r)}{ n+r+2}
++\frac{3a_{n-2}(r)}{(n+r+2)^2}$,
+$n\geq 2$.
+
+$r_1=-2$;
+$a_1(-2)=-2$;
+$a_n(-2)=
+-2a_{n-1}(-2)-\frac{3a_{n-2}(-2)}{ n}$,
+$n\geq 2$;
+
+$y_1=x^{-2}\left(1-2x+\frac{5}{2}x^2-3x^3+\cdots\right)$;
+
+$a_1'(-2)=0$;
+$a_n'(-2)=
+-2a_{n-1}(-2)-\frac{3a_{n-2}(-2)}{ n}+\frac{3a_{n-2}(-2)}{ n^2}$;
+$n\geq 2$;
+
+$y_2=y_1\ln x+\frac{3}{4}-\frac{13}{6}x+\cdots$.
+
+\end{solution}
+
+\end{problem}
+
+\begin{problem}\label{exer:7.6.9}
+Find a fundamental set of Frobenius solutions. Compute the terms involving $x^{n+r_1}$, where $0\leq n \leq N$ ($N$ at least 7) and $r_1$ is the root of the indicial equation. Optionally, write a computer
+program to implement the applicable recurrence formulas and take $N > 7$.
+
+$4x^2y''+2x(4+x+x^2)y'+(1+5x+3x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.10}
+Find a fundamental set of Frobenius solutions. Compute the terms involving $x^{n+r_1}$, where $0\leq n \leq N$ ($N$ at least 7) and $r_1$ is the root of the indicial equation. Optionally, write a computer
+program to implement the applicable recurrence formulas and take $N > 7$.
+
+$16x^2y''+4x(6+x+2x^2)y'+(1+5x+18x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(4r+1)^2$;
+$p_1(r)=4r+5$;
+$p_2(r)=2(4r+9)$;
+
+$a_1(r)=-\frac{1}{4r+5}$;
+$a_n(r)=
+-\frac{a_{n-1}(r)+2a_{n-2}(r)}{4n+4r+1}$;
+$n\geq 2$;
+
+
+$a_1'(r)={4}{(4r+5)^2}$;
+$a_n'(r)=
+-\frac{a_{n-1}'(r)+2a_{n-2}'(r)}{4n+4r+1}
++\frac{4a_{n-1}(r)+8a_{n-2}(r)}{(4n+4r+1)^2}$;
+$n\geq 2$.
+
+
+$r_1=-1/4$;
+$a_1(-1/4)=-1/4$;
+$a_n(-1/4)=
+-\frac{a_{n-1}(-1/4)+2a_{n-2}(-1/4)}{4n}$;
+$n\geq 2$;
+
+$y_1=x^{-1/4}\left(1-\frac{1}{4}x-\frac{7}{32}x^2+\frac{23}{384}x^3
++\cdots\right)$;
+
+$a_1'(-1/4)=1/4$;
+$a_n'(-1/4)=
+-\frac{a_{n-1}'(-1/4)+2a_{n-2}'(-1/4)}{4n}
++\frac{a_{n-1}(-1/4)+2a_{n-2}(-1/4)}{4n^2}$;
+$n\geq 2$;
+
+$y_2=
+y_1\ln x+x^{3/4}\left(\frac{1}{4}+\frac{5}{64}x-\frac{157}{2304}x^2
++\cdots\right)$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.11}
+Find a fundamental set of Frobenius solutions. Compute the terms involving $x^{n+r_1}$, where $0\leq n \leq N$ ($N$ at least 7) and $r_1$ is the root of the indicial equation. Optionally, write a computer
+program to implement the applicable recurrence formulas and take $N > 7$.
+
+$9x^2(1+x)y''+3x(5+11x-x^2)y'+(1+16x-7x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.12}
+Find a fundamental set of Frobenius  solutions.
+Give explicit formulas for the coefficients.
+
+$4x^2y''+(1+4x)y=0$
+
+\begin{solution}
+    $p_0(r)=(2r-1)^2$;
+$p_1(r)=4$;
+
+$a_n(r)=-\frac{4}{(2n+2r-1)^2}a_{n-1}(r)$;
+
+ $a_n(r)=\frac{(-4)^n}{\prod_{j=1}^n(2j+2r-1)}$.
+
+By logarithmic differentiation,
+$a_n'(r)=a_n(r)\sum_{j=1}^n\frac{2}{2j+2r-1}$;
+
+$r_1=1/2$;
+$a_n(1/2)=\frac{(-1)^n}{(n!)^2}$;
+
+$a_n'(1/2)=a_n(1/2)\left(-2\sum_{j=1}^n\frac{1}{ j}\right)$;
+
+$y_1=x^{1/2}\sum_{n=0}^\infty \frac{(-1)^n}{(n!)^2}x^n$;
+
+$y_2=y_1\ln x-2x^{1/2}\sum_{n=1}^\infty
+\frac{(-1)^n}{(n!)^2}\left(\sum_{j=1}^n\frac{1}{ j}\right)x^n$;
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.13}
+Find a fundamental set of Frobenius  solutions.
+Give explicit formulas for the coefficients.
+
+$36x^2(1-2x)y''+24x(1-9x)y'+(1-70x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.14}
+Find a fundamental set of Frobenius  solutions.
+Give explicit formulas for the coefficients.
+
+$x^2(1+x)y''-x(3-x)y'+4y=0$
+
+\begin{solution}
+    $p_0(r)=(r-2)^2$;
+$p_1(r)=r^2$;
+$a_n(r)=-\frac{(n+r-1)^2}{(n+r-2)^2}a_{n-1}(r)$;
+ $a_n(r)=(-1)^n\frac{(n+r-1)^2}{(r-1)^2}$;
+$a_n'(r)=(-1)^{n+1}\frac{2n(r+n-1)}{(r-1)^3}$;
+$r_1=2$;
+$a_n(2)=(-1)^n(n+1)^2$;
+$a_n'(2)=(-1)^{n+1}2n(n+1)$;
+$y_1=x^2\sum_{n=0}^\infty (-1)^n(n+1)^2x^n$;
+$y_2=y_1\ln
+x-2x^2\sum_{n=1}^\infty(-1)^nn(n+1)x^n$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.15}
+Find a fundamental set of Frobenius  solutions.
+Give explicit formulas for the coefficients.
+
+$x^2(1-2x)y''-x(5-4x)y'+(9-4x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.16}
+Find a fundamental set of Frobenius  solutions.
+Give explicit formulas for the coefficients.
+
+$25x^2y''+x(15+x)y'+(1+x)y=0$
+
+\begin{solution}
+    $p_0(r)=(5r-1)^2$;
+$p_1(r)=r+1$;
+
+$a_n(r)=-\frac{(n+r)}{(5n+5r-1)^2}
+a_{n-1}(r)$;
+
+ $a_n(r)=(-1)^n\prod_{j=1}^n\frac{(j+r)}{(5j+5r-1)^2}$;
+
+By logarithmic differentiation,
+
+$a_n'(r)=-a_n(r)\sum_{j=1}^n\frac{(5j+5r+1)}{(j+r)(5j+5r-1)}$;
+
+$r_1=1/5$;
+$a_n(1/5)=(-1)^n\prod_{j=1}^n\frac{(5j+1)}{125^n(n!)^2}$;
+
+$a_n'(1/5)=a_n(1/5)
+\sum_{j=1}^n\frac{5j+2}{ j(5j+1)}$;
+
+$y_1=x^{1/5}\sum_{n=0}^\infty\frac{(-1)^n\prod_{j=1}^n(5j+1)}{
+125^n(n!)^2} x^n$;
+
+$y_2=
+y_1\ln
+x-x^{1/5}\sum_{n=1}^\infty\frac{(-1)^n\prod_{j=1}^n(5j+1)}{125^n(n!)^2}
+\left(\sum_{j=1}^n\frac{5j+2}{ j(5j+1)}\right)x^n$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.17}
+Find a fundamental set of Frobenius  solutions.
+Give explicit formulas for the coefficients.
+
+$2x^2(2+x)y''+x^2y'+(1-x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.18}
+Find a fundamental set of Frobenius  solutions.
+Give explicit formulas for the coefficients.
+
+$x^2(9+4x)y''+3xy'+(1+x)y=0$
+
+\begin{solution}
+    $p_0(r)=(3r-1)^2$;
+$p_1(r)=(2r-1)^2$;
+
+$a_n(r)=-\frac{(2n+2r-3)^2}{(3n+3r-1)^2}a_{n-1}(r)$;
+
+ $a_n(r)=(-1)^n\prod_{j=1}^n\frac{(2j+2r-3)^2}{(3j+3r-1)^2}$;
+
+By logarithmic differentiation,
+
+$a_n'(r)=14 a_n(r)\sum_{j=1}^n\frac{1}{(2j+2r-3)(3j+3r-1)}$;
+
+$r_1=1/3$;
+$a_n(1/3)=\frac{(-1)^n\prod_{j=1}^n(6j-7)^2}{81^n(n!)^2}$;
+
+$a_n'(1/3)=14a_n(1/3)
+\sum_{j=1}^n\frac{1}{ j(6j-7)})$;
+
+$y_1=x^{1/3}\sum_{n=0}^\infty\frac{(-1)^n\prod_{j=1}^n(6j-7)^2}{
+81^n(n!)^2}
+x^n$;
+
+$y_2=y_1\ln
+x+14x^{1/3}\sum_{n=1}^\infty\frac{(-1)^n\prod_{j=1}^n(6j-7)^2}{
+81^n(n!)^2}\left(\sum_{j=1}^n\frac{1}{ j(6j-7)}\right)x^n$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.19}
+Find a fundamental set of Frobenius  solutions.
+Give explicit formulas for the coefficients.
+
+$x^2y''-x(3-2x)y'+(4+3x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.20}
+Find a fundamental set of Frobenius  solutions.
+Give explicit formulas for the coefficients. 
+
+$x^2(1-4x)y''+3x(1-6x)y'+(1-12x)y=0$
+
+\begin{solution}
+    $p_0(r)=(r+1)^2$;
+$p_1(r)=-2(r+2)(2r+3)$;
+
+$a_n(r)=\frac{2(2n+2r+1)}{ n+r+1}
+a_{n-1}(r)$, $n\geq 1$;
+ $a_n(r)=2^n\prod_{j=1}^n\frac{2j+2r+1}{ j+r+1}$;
+
+By logarithmic differentiation,
+
+$a_n'(r)=a_n(r)\sum_{j=1}^n\frac{1}{(j+r+1)(2j+2r+1)}$;
+
+$r_1=-1$;
+$a_n(-1)=\frac{2^n\prod_{j=1}^n(2j-1)}{ n!}$;
+
+$a_n'(-1)=a_n(-1)\sum_{j=1}^n\frac{1}{ j(2j-1)}$;
+
+$y_1=\frac{1}{ x}\sum_{n=0}^\infty \frac{2^n\prod_{j=1}^n(2j-1)}{ n!}
+x^n$;
+
+$y_2=y_1\ln
+x+\frac{1}{ x}\sum_{n=1}^\infty\frac{2^n\prod_{j=1}^n(2j-1)}{ n!}
+\left(\sum_{j=1}^n\frac{1}{ j(2j-1)}\right)x^n$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.21}
+Find a fundamental set of Frobenius  solutions.
+Give explicit formulas for the coefficients.
+
+$x^2(1+2x)y''+x(3+5x)y'+(1-2x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.22}
+Find a fundamental set of Frobenius  solutions.
+Give explicit formulas for the coefficients.
+
+$2x^2(1+x)y''-x(6-x)y'+(8-x)y=0$
+
+\begin{solution}
+    $p_0(r)=2(r-2)^2$;
+$p_1(r)=(r-1)(2r+1)$;
+
+$a_n(r)=-\frac{2n+2r-1}{2(n+r-2)}a_{n-1}(r)$;
+
+ $a_n(r)=\frac{(-1)^n}{ 2^n}\prod_{j=1}^n\frac{2j+2r-1}{ j+r-2}$;
+
+By logarithmic differentiation,
+
+$a_n'(r)=-3a_n(r)\sum_{j=1}^n\frac{1}{(j+r-2)(2j+2r-1)}$;
+
+$r_1=2$;
+$a_n(2)=\frac{(-1)^n\prod_{j=1}^n(2j+3)}{2^nn!}$;
+
+$a_n'(2)=-3a_n(2)\sum_{j=1}^n\frac{1}{ j(2j+ 3)}$;
+
+$y_1=x^2\sum_{n=0}^\infty
+\frac{(-1)^n\prod_{j=1}^n(2j+3)}{2^nn!}x^n$;
+
+$y_2=y_1\ln x-3x^2\sum_{n=0}^\infty
+\frac{(-1)^n\prod_{j=1}^n(2j+3)}{2^nn!}
+\left(\sum_{j=1}^n\frac{1}{ j(2j+ 3)}\right)x^n$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.23}
+Find a
+fundamental set of Frobenius solutions. Compute the terms involving
+$x^{n+r_1}$, where $0\le n\le N$ ($N$ at least $7$) and $r_1$ is the
+root of the indicial equation. Optionally, write a computer program to
+implement the applicable recurrence formulas and take $N>7$.
+
+$x^2(1+2x)y''+x(5+9x)y'+(4+3x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.24}
+Find a
+fundamental set of Frobenius solutions. Compute the terms involving
+$x^{n+r_1}$, where $0\le n\le N$ ($N$ at least $7$) and $r_1$ is the
+root of the indicial equation. Optionally, write a computer program to
+implement the applicable recurrence formulas and take $N>7$.
+
+$x^2(1-2x)y''-x(5+4x)y'+(9+4x)y=0$
+
+\begin{solution}
+    $p_0(r)=(r-3)^2$;
+$p_1(r)=-2(r-1)(r+2)$;
+
+$a_n(r)=\frac
+{2(n+r-2)(n+r+1)}{(n+r-3)^2}a_{n-1}(r)$;
+
+
+$a_n'(r)=\frac
+{2(n+r-2)(n+r+1)}{(n+r-3)^2}a_{n-1}'(r)
+-\frac{2(5n+5r-7)}{(n+r-3)^3}a_{n-1}(r)$;
+
+$r_1=3$;
+$a_n(3)=\frac
+{2(n+1)(n+4)}{ n^2}a_{n-1}(3)$;
+
+$y_1=x^3(1+20x+180x^2+1120x^3+\cdots$;
+
+$a_n'(3)=\frac
+{2(n+1)(n+4)}{ n^2}a_{n-1}'(3)
+-\frac{2(5n+8)}{ n^3}a_{n-1}(3)$;
+
+$y_2=y_1\ln
+x-x^4\left(26+324x+\frac{6968}{3}x^2+\cdots\right)$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.25}
+Find a
+fundamental set of Frobenius solutions. Compute the terms involving
+$x^{n+r_1}$, where $0\le n\le N$ ($N$ at least $7$) and $r_1$ is the
+root of the indicial equation. Optionally, write a computer program to
+implement the applicable recurrence formulas and take $N>7$.
+
+$x^2(1+4x)y''-x(1-4x)y'+(1+x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.26}
+Find a
+fundamental set of Frobenius solutions. Compute the terms involving
+$x^{n+r_1}$, where $0\le n\le N$ ($N$ at least $7$) and $r_1$ is the
+root of the indicial equation. Optionally, write a computer program to
+implement the applicable recurrence formulas and take $N>7$.
+
+$x^2(1+x)y''+x(1+2x)y'+xy=0$
+
+\begin{solution}
+    $p_0(r)=r^2$;
+$p_1(r)=r^2+r+1$;
+
+$a_n(r)=
+-\frac{(n^2+n(2r-1)+r^2-r+1)}{(n+r)^2}a_{n-1}(r)$;
+
+
+$a_n'(r)=
+-\frac{(n^2+n(2r-1)+r^2-r+1)}{(n+r)^2}a_{n-1}'(r)
+-\frac{(n+r-2)}{(n+r)^3}a_{n-1}(r)$;
+
+$r_1=0$;
+$a_n(0)=-\frac{(n^2-n+1)}{ n^2}a_{n-1}(0)$;
+
+$y_1=1-x+\frac{3}{4}x^2-\frac{7}{12}x^3+\cdots$;
+
+$a_n'(0)=
+-\frac{(n^2-n+1)}{ n^2}a_{n-1}'(0)-\frac{(n-2)}{ n^3}a_{n-1}(0)$;
+
+$y_2=y_1\ln x+x\left(1-\frac{3}{4}x+\frac{5}{9}x^2+\cdots\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.27}
+Find a
+fundamental set of Frobenius solutions. Compute the terms involving
+$x^{n+r_1}$, where $0\le n\le N$ ($N$ at least $7$) and $r_1$ is the
+root of the indicial equation. Optionally, write a computer program to
+implement the applicable recurrence formulas and take $N>7$. 
+
+$x^2(1-x)y''+x(7+x)y'+(9-x)y=0$
+\end{problem}
+
+
+\begin{problem}\label{exer:7.6.28}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$x^2y''-x(1-x^2)y'+(1+x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(r-1)^2$;
+$p_2(r)=r+1$;
+
+$a_{2m}(r)=-\frac{1}{ 2m+r-1}
+a_{2m-2}(r)$, $n\geq 1$;
+ $a_{2m}(r)=\frac{(-1)^m}{\prod_{j=1}^m(2j+r-1)}$;
+
+By logarithmic differentiation,
+
+$a_{2m}'(r)= a_{2m}(r)\sum_{j=1}^m$;
+
+$r_1=1$;
+$a_{2m}(1)=\frac{(-1)^m}{2^mm!}$;
+
+$a_{2m}'(1)=-\frac{1}{2}a_{2m}(1)\sum_{j=1}^m\frac{1}{ j}$;
+
+$y_1=x\sum_{m=0}^\infty\frac{(-1)^m}{2^mm!}x^{2m}$;
+
+$y_2=y_1\ln x-\frac{x}{2}\sum_{m=1}^\infty\frac{(-1)^m}{
+2^mm!}\left(\sum_{j=1}^m\frac{1}{ j}\right)x^{2m}$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.29}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$x^2(1+x^2)y''-3x(1-x^2)y'+4y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.30}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$4x^2y''+2x^3y'+(1+3x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(2r-1)^2$;
+$p_2(r)=2r+3$;
+
+$a_{2m}(r)=-\frac{1}{4m+2r-1}
+a_{2m-2}(r)$;
+
+ $a_{2m}(r)=\frac{(-1)^m}{\prod_{j=1}^m(4j+2r-1)}$;
+
+By logarithmic differentiation,
+
+$a_{2m}'(r)=-2a_{2m}(r)\sum_{j=1}^m\frac{1}{4j+2r-1}$;
+
+$r_1=1/2$;
+$a_{2m}(1/2)=\frac{(-1)^m}{4^mm!}$;
+
+$a_{2m}'(1/2)=-\frac{1}{2}a_{2m}(1/2)\sum_{j=1}^m\frac{1}{ j}$;
+
+$y_1=x^{1/2}\sum_{m=0}^\infty\frac{(-1)^m}{4^mm!}x^{2m}$;
+
+$y_2=y_1\ln x-\frac{x^{1/2}}{2}\sum_{m=1}^\infty\frac{(-1)^m}{
+4^mm!}\left(\sum_{j=1}^m\frac{1}{ j}\right) x^{2m}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.31}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$x^2(1+x^2)y''-x(1-2x^2)y'+y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.32}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$2x^2(2+x^2)y''+7x^3y'+(1+3x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(2r-1)^2$;
+$p_2(r)=(r+1)(2r+3)$;
+$a_{2m}(r)=-\frac{2m+r-1}{4m+2r-1}
+a_{2m-2}(r)$;
+
+ $a_{2m}(r)=(-1)^m\prod_{j=1}^m\frac{2j+r-1}{4j+2r-1}$;
+
+By logarithmic differentiation,
+
+$a_{2m}'(r)=a_{2m}(r)\sum_{j=1}^m\frac{1}{(2j+r-1)(4j+2r-1)}$;
+
+$r_1=1/2$;
+$a_{2m}(1/2)=\frac{(-1)^m\prod_{j=1}^m(4j-1)}{8^mm!}$;
+
+$a_{2m}'(1/2)=a_{2m}(1/2)\sum_{j=1}^m\frac{1}{2j(4j-1)}$;
+
+
+$y_1=x^{1/2}\sum_{m=0}^\infty\frac{(-1)^m\prod_{j=1}^m(4j-1)}{8^mm!}
+x^{2m}$;
+
+$y_2=y_1\ln
+x+\frac{x^{1/2}}{2}\sum_{m=1}^\infty\frac{(-1)^m\prod_{j=1}^m(4j-1)}{8^mm!}
+\left(\sum_{j=1}^m\frac{1}{ j(4j-1)}\right)x^{2m}$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.33}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$x^2(1+x^2)y''-x(1-4x^2)y'+(1+2x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.34}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$4x^2(4+x^2)y''+3x(8+3x^2)y'+(1-9x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(4r+1)^2$;
+$p_2(r)=(r-1)(4r+9)$;
+
+$a_{2m}(r)=-\frac{2m+r-3}{8m+4r+1}
+a_{2m-2}(r)$;
+
+ $a_{2m}(r)=(-1)^m\prod_{j=1}^m\frac{2j+r-3}{8j+4r+1}$;
+
+By logarithmic differentiation,
+
+$a_{2m}'(r)=a_{2m}(r)\sum_{j=1}^m\frac{13}{(2j+r-3)(8j+4r+1)}$;
+
+$r_1=-1/4$;
+$a_{2m}(-1/4)=\frac{(-1)^m\prod_{j=1}^m(8j-13)}{(32)^mm!}$;
+
+$a_{2m}'(-1/4)=a_{2m}(-1/4)\sum_{j=1}^m\frac{13}{2j(8j-13)}$;
+
+
+$y_1=x^{-1/4}\sum_{m=0}^\infty\frac{(-1)^m\prod_{j=1}^m(8j-13)}{(32)^mm!}
+x^{2m}$;
+
+$y_2=y_1\ln
+x+\frac{13}{2}x^{-1/4}\sum_{m=1}^\infty\frac{(-1)^m\prod_{j=1}^m(8j-13)}{(32)^mm!}
+\left(\sum_{j=1}^m\frac{1}{ j(8j-13)}\right)x^{2m}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.35}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$3x^2(3+x^2)y''+x(3+11x^2)y'+(1+5x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.36}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$4x^2(1+4x^2)y''+32x^3y'+y=0$
+
+\begin{solution}
+    $p_0(r)=(2r-1)^2$;
+$p_2(r)=16r(r+1)$;
+
+$a_{2m}(r)=-\frac{16(2m+r-2)(2m+r-1)}{(4m+2r-1)^2}
+a_{2m-2}(r)$;
+
+
+$a_{2m}(r)=(-16)^m\prod_{j=1}^m\frac{(2j+r-2)(2j+r-1)}{(4j+2r-1)^2}$;
+
+By logarithmic differentiation,
+
+$a_{2m}'(r)=
+a_{2m}(r)\sum_{j=1}^m\frac{8j+4r-5}{(2j+r-2)(2j+r-1)(4j+2r-1)}$;
+
+$r_1=1/2$;
+$a_{2m}(1/2)=\frac{(-1)^m\prod_{j=1}^m(4j-3)(4j-1)}{4^m(m!)^2}$;
+
+$a_{2m}'(1/2)=a_{2m}(1/2)\sum_{j=1}^m\frac{8j-3}{ j(4j-3) (4j-1)}$;
+
+
+$y_1=x^{1/2}\sum_{m=0}^\infty\frac{(-1)^m\prod_{j=1}^m(4j-3)(4j-1)}{4^m(m!)^2}
+x^{2m}$;
+
+$y_2=y_1\ln
+x+x^{1/2}\sum_{m=1}^\infty\frac{(-1)^m\prod_{j=1}^m(4j-3)(4j-1)}{4^m(m!)^2}
+\left(\sum_{j=1}^m\frac{8j-3}{ j(4j-3) (4j-1)}\right)x^{2m}$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.37}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$9x^2y''-3x(7-2x^2)y'+(25+2x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.38}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$x^2(1+2x^2)y''+x(3+7x^2)y'+(1-3x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(r+1)^2$;
+$p_2(r)=(r+3)(2r-1)$;
+
+$a_{2m}(r)=-\frac{4m+2r-5}{2m+r+1}
+a_{2m-2}(r)$;
+
+ $a_{2m}(r)=(-1)^m\prod_{j=1}^m\frac{4j+2r-5}{2j+r+1}$;
+
+By logarithmic differentiation,
+
+$a_{2m}'(r)= a_{2m}(r)\sum_{j=1}^m\frac{7}{(2j+r+1)(4j+2r-5)}$;
+
+$r_1=-1$;
+$a_{2m}(-1)=\frac{(-1)^m\prod_{j=1}^m(4j-7)}{2^mm!}$;
+
+$a_{2m}'(-1)=a_{2m}(-1)\sum_{j=1}^m\frac{7}{2j(4j-7)}$;
+
+$y_1=\frac{1}{ x
+}\sum_{m=0}^\infty\frac{(-1)^m\prod_{j=1}^m(4j-7)}{2^mm!} x^{2m}$;
+
+$y_2=y_1\ln
+x+\frac{7}{2x}\sum_{m=1}^\infty\frac{(-1)^m\prod_{j=1}^m(4j-7)}{2^mm!}
+\left(\sum_{j=1}^m\frac{1}{ j(4j-7)}\right)x^{2m}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.39}
+Find a
+fundamental set of Frobenius solutions. Compute the terms involving
+$x^{2m+r_1}$, where $0\le m\le M$ ($M$ at least $3$) and $r_1$ is the
+root of the indicial equation. Optionally, write a computer program to
+implement the applicable recurrence formulas and take $M>3$.
+
+$x^2(1+x^2)y''+x(3+8x^2)y'+(1+12x^2)y$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.40}
+Find a
+fundamental set of Frobenius solutions. Compute the terms involving
+$x^{2m+r_1}$, where $0\le m\le M$ ($M$ at least $3$) and $r_1$ is the
+root of the indicial equation. Optionally, write a computer program to
+implement the applicable recurrence formulas and take $M>3$.
+
+$x^2y''-x(1-x^2)y'+(1+x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(r-1)^2$;
+$p_2(r)=r+1$;
+
+$a_{2m}(r)=-\frac{1}{2m+r-1}a_{2m-2}(r)$;
+
+
+$a_{2m}'(r)=
+-\frac{1}{2m+r-1}a_{2m-2}'(r)+\frac{1}{(2m+r-1)^2}a_{2m-2}(r)$;
+
+$r_1=1$;
+$a_{2m}(1)=-\frac{1}{2m}a_{2m-2}(1)$;
+
+$y_1=x\left(1-\frac{1}{2}x^2+\frac{1}{8}x^4-\frac{1}{48}x^6+\cdots\right)$;
+
+$a_{2m}'(1)=
+-\frac{1}{2m}a_{2m-2}'(1)+\frac{1}{4m^2}a_{2m-2}(1)$,
+$m\geq 1$;
+
+
+$y_2=y_1 \ln x+x^3\left(\frac{1}{4}-\frac{3}{32}x^2+
+\frac{11}{576}x^4+\cdots\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.41}
+Find a
+fundamental set of Frobenius solutions. Compute the terms involving
+$x^{2m+r_1}$, where $0\le m\le M$ ($M$ at least $3$) and $r_1$ is the
+root of the indicial equation. Optionally, write a computer program to
+implement the applicable recurrence formulas and take $M>3$.
+
+$x^2(1-2x^2)y''+x(5-9x^2)y'+(4-3x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.42}
+Find a
+fundamental set of Frobenius solutions. Compute the terms involving
+$x^{2m+r_1}$, where $0\le m\le M$ ($M$ at least $3$) and $r_1$ is the
+root of the indicial equation. Optionally, write a computer program to
+implement the applicable recurrence formulas and take $M>3$.
+
+$x^2(2+x^2)y''+x(14-x^2)y'+2(9+x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=2(r+3)^2$;
+$p_2(r)=r^2-2r+2$;
+
+$a_{2m}(r)=
+-\frac{4m^2+4m(r-3)+r^2-6r+10}{2(2m+r+3)^2}a_{2m-2}(r)$;
+
+
+$a_{2m}'(r)=
+-\frac{4m^2+4m(r-3)+r^2-6r+10}{2(2m+r+3)^2}a_{2m-2}'(r)
+-\frac{12m+6r-19}{(2m+r+3)^3}a_{2m-2}(r)$;
+
+$r_1=-3$;
+$a_{2m}(-3)=-\frac{4m^2-24m+37}{8m^2}a_{2m-2}(-3)$;
+
+$y_1=x^{-3}\left(1-\frac{17}{8}x^2+\frac{85}{256}x^4-
+\frac{85}{18432}x^6+\cdots\right)$;
+
+
+$a_{2m}'(-3)=
+-\frac{4m^2-24m+37}{8m^2}a_{2m-2}'(-3)+\frac{37-12m}{8m^3}a_{2m-2}(-3)$,
+$m\geq 1$;
+
+$y_2=y_1\ln x
++x^{-1}\left(\frac{25}{8}-\frac{471}{512}x^2+\frac{1583}{110592}x^4
++\cdots\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.43}
+Find a
+fundamental set of Frobenius solutions. Compute the terms involving
+$x^{2m+r_1}$, where $0\le m\le M$ ($M$ at least $3$) and $r_1$ is the
+root of the indicial equation. Optionally, write a computer program to
+implement the applicable recurrence formulas and take $M>3$.
+
+$x^2(1+x^2)y''+x(3+7x^2)y'+(1+8x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.44}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$x^2(1-2x)y''+3xy'+(1+4x)y=0$
+
+\begin{solution}
+    $p_0(r)=(r+1)^2$;
+$p_1(r)=2(2-r)(r+1)$;
+$r_1=-1$.
+
+$a_n(r)=\frac{2(n+r)(n+r-3)}{(n+r+1)^2}
+a_{n-1}(r)$;
+ $a_n(r)=2^n\prod_{j=1}^n\frac{(j+r)(j+r-3)}{(j+r+1)^2}$,
+$n\geq 0$. Therefore,$a_n(-1)=0$ if $n\geq 1$ and $y_1=1/x$.
+If $n\geq 4$, then $a_n(r)=(r+1)^2b_n(r)$, where $b_n'(-1)$
+exists; therefore $a_n'(-1)=0$ if $n\geq 4$. For $r=1,2,3$,
+$a_n(r)=(r+1)c_n(r)$, where
+$c_1(r)=\frac{2(r-2)}{(r+2)^2}$,
+$c_2(r)=\frac{4(r-2)(r-1)}{(r+2)(r+3)^2}$,
+$c_3(r)=\frac
+{8r(r-2)(r-1)}{(r+2)(r+3)(r+4)^2}$. Hence,
+$a_1'(-1)=c_1(-1)=-6$, $a_2'(-1)=c_2(-1)=6$, $a_3'(-1)=c_3(-1)=-8/3$,
+and
+ $y_2=y_1\ln x-6+6x-\frac{8}{3}x^2$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.45}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$x(1+x)y''+(1-x)y'+y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.46}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$x^2(1-x)y''+x(3-2x)y'+(1+2x)y=0$
+
+\begin{solution}
+    $p_0(r)=(r+1)^2$;
+$p_1(r)=-(r-1)(r+2)$;
+$r_1=-1$.
+
+
+$a_n(r)=\frac{n+r-2}{ n+r+1}
+a_{n-1}(r)$;
+ $a_n(r)=\prod_{j=1}^m{j+r-2}{ j+r+1}$,
+$n\geq 0$. Therefore,$a_1(-1)=-2$, $a_2(-1)=1$, and $a_n(-1)=0$
+if $n\geq 3$, so
+$y_1={(x-1)^2}{ x}$.
+
+$a_1(r)=\frac{r-1}{ r+2}$, $a_1'(r)=\frac{3}{(r+2)^2}$,
+$a_1'(-1)=3$;
+$a_2(r)=\frac
+{r(r-1)}{(r+2)(r+3)}$,
+$a_2'(r)=\frac
+{6(r^2+2r-1)}{(r+2)^2(r+3)^2}$,
+$a_2'(-1)=-3$;
+if $n\geq 3$
+$a_n(r)=(r+1)c_n(r)$ where
+$c_n(r)=\frac{r(r-1)}{(n+r)(n+r-1)(n+r+1)}$, so $a_n'(-1)=c_n(-1)=
+\frac{2}{ n(n-2)(n-1)}$ and
+ $y_2=y_1\ln x+3-3x+2\sum_{n=2}^\infty
+\frac{1}{ n(n^2-1)}x^n$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.47}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$4x^2(1+x)y''-4x^2y'+(1-5x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.48}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$x^2(1-x)y''-x(3-5x)y'+(4-5x)y=0$
+
+\begin{solution}
+    $p_0(r)=(r-2)^2$;
+$p_1(r)=-(r-5)(r-1)$;
+$r_1=2$.
+
+
+$a_n(r)=\frac{n+r-6}{ n+r-2}
+a_{n-1}(r)$;
+
+ $a_n(r)=\prod_{j=1}^m\frac{j+r-6}{ j+r-2}$,
+$n\geq 0$. Therefore,$a_1(2)=-3$, $a_2(2)=3$, $a_3(2)=-1$, and
+$a_n(2)=0$ if $n\geq 4$, so $y_1=x^2(1-x)^3$.
+
+
+$a_1(r)=\frac{r-5}{ r-1}$, $a_1'(r)=\frac{4}{(r-1)^2}$,
+$a_1'(2)=4$;
+
+$a_2(r)=\frac{(r-5)(r-4)}{ r(r-1)}$,
+$a_2'(r)=\frac{4(2r^2-10r+5)}{ r^2(r-1)^2}$,
+$a_2'(2)=-7$;
+
+$a_3(r)=\frac{(r-5)(r-4)(r-3)}{ r(r-1)(r+1)}$,
+$a_3'(r)=\frac{12(r^4-8r^3+16r^2-5)}{ r^2(r-1)^2(r+1)^2}$,
+$a_3'(2)=11/3$; if $n\geq 4$, then
+$a_n(r)=(r-2)c_n(r)$ where
+$c_n(r)=\frac
+{(r-5)(r-4)(r-3)}{(n+r-5)(n+r-4)(n+r-3)(n+r-2)}$, so
+$a_n'(2)=c_n(2)=-\frac{6}{ n(n-2)(n^2-1)}$ and
+
+$y_2=y_1\ln
+x+x^3\left(4-7x+\frac{11}{3}x^2-6\sum_{n=3}^\infty\frac{1}{
+n(n-2)(n^2-1)}x^n\right)$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.49}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$x^2(1+x^2)y''-x(1+9x^2)y'+(1+25x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.50}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$9x^2y''+3x(1-x^2)y'+(1+7x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(3r-1)^2$;
+$p_2(r)=7-3r$;
+$r_1=1/3$.
+
+$a_{2m}(r)=\frac{6m+3r-13}{(6m+3r-1)^2}
+a_{2m-2}(r)$;
+
+ $a_{2m}(r)=\prod_{j=1}^m\frac{6j+3r-13}{(6j+3r-1)^2}$,
+$m\geq 0$. Therefore,$a_2(1/3)=1/6$ and $a_{2m}(1/3)=0$ if $m\geq 2$,
+so $y_1=x^{1/3}\left(1-\frac{1}{6}x^2\right)$.
+
+
+$a_2(r)=\frac{3r-7}{(3r+5)^2}$;
+$a_2'(r)=\frac{3(19-3r)}{(3r+5)^3}$; $a_2'(1/3)= 1/4$.
+If $m\geq 2$, then $a_{2m}(r)=(r-1/3)c_{2m}(r)$ where
+$c_{2m}(r)=\frac{3(3r-7)}{(6m+3r-7)(6m+3r-1)\prod_{j=1}^m(6j+3r-1)}$,
+so
+$a_{2m}'(1/3)=c_{2m}(1/3)=-\frac{1}{12}\frac{1}{6^{m-1}(m-1)m\,m!}$,
+and
+
+ $y_2=y_1\ln x
++x^{7/3}\left(\frac{1}{4}-\frac{1}{12}\sum_{m=1}^\infty
+\frac{1}{6^mm(m+1)(m+1)!}x^{2m}\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.51}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$x(1+x^2)y''+(1-x^2)y'-8xy=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.52}
+Find a
+fundamental set of Frobenius solutions. Give explicit formulas for the
+coefficients.
+
+$4x^2y''+2x(4-x^2)y'+(1+7x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(2r+1)^2$;
+$p_2(r)=7-2r$;
+$r_1=-1/2$.
+
+$a_{2m}(r)=\frac{4m+2r-11}{(4m+2r+1)^2}
+a_{2m-2}(r)$;
+
+ $a_{2m}(r)=\prod_{j=1}^m{4j+2r-11}{(4j+2r+1)^2}$,
+$m\geq 0$. Therefore,$a_2(-1/2)=-1/2$, $a_4(-1/2)=1/32$, and
+$a_{2m}(-1/2)=0$ if $m\geq 3$, so
+$y_1=x^{-1/2}\left(1-\frac{1}{2}x^2+\frac{1}{32}x^4\right)$.
+
+
+
+$a_2(r)=\frac{2r-7}{(2r+5)^2}$,
+$a_2'(r)=\frac{2(19-2r)}{(2r+5)^3}$,
+$a_2'(-1/2)=5/8$,
+
+
+$a_4(r)=\frac{(2r-7)(2r-3)}{(2r+5)^2(2r+9)^2}$,
+$a_4'(r)=-\frac{4(8r^3-60r^2-146r+519)}{(2r+5)^3(2r+9)^3}$,
+$a_4'(-1/2)=-9/128$; if $m\geq 3$, then $a_{2m}(r)=(r+1/2)c_{2m}(r)$
+where
+
+$c_{2m}(r)=\frac{2(2r-7)(2r-3)}{(4m+2r-7)(4m+2r-3)(4m+2r+1)\prod_{j=1}^m
+(4j+2r+1)}$, so
+$a_{2m}'(-1/2)=c_{2m}(-1/2)=\frac{1}{4^m(m-2)(m-1)m\,m!}$, and
+
+$y_2=y_1\ln x+x^{3/2}\left(\frac{5}{8}-\frac{9}{128}x^2
++\sum_{m=2}^\infty\frac{1}{4^{m+1}(m-1)m(m+1)(m+1)!}x^{2m}\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.53}
+Under the assumptions of Theorem~\ref{thmtype:7.6.2}, suppose
+the power series
+$$
+\sum_{n=0}^\infty a_n(r_1)x^n \quad\mbox{ and }\quad
+\sum_{n=1}^\infty a_n'(r_1)x^n
+$$
+  converge on $(-\rho,\rho)$.
+\begin{enumerate}
+\item % (a)
+Show that
+$$
+y_1=x^{r_1}\sum_{n=0}^\infty a_n(r_1)x^n\quad\mbox{ and }\quad
+y_2=y_1\ln x+x^{r_1}\sum_{n=1}^\infty a_n'(r_1)x^n
+$$
+are linearly independent on $(0,\rho)$. 
+
+\begin{hint}
+Show that if $c_1$
+and $c_2$ are constants such that $c_1y_1+c_2y_2\equiv0$ on $(0,\rho)$,
+then
+$$
+(c_1+c_2\ln x)\sum_{n=0}^\infty a_n(r_1)x^n+
+c_2\sum_{n=1}^\infty a_n'(r_1)x^n=0,\quad 0<x<\rho.
+$$
+Then let $x\to0+$ to conclude that $c_2=0$.
+\end{hint}
+
+\item % (b)
+Use the result of part (a) to
+complete the proof of Theorem~\ref{thmtype:7.6.2}.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.54}
+Let
+$$
+Ly=x^2(\alpha_0+\alpha_1x)y''+x(\beta_0+\beta_1x)y'+(\gamma_0+\gamma_1x)y
+$$
+and define
+$$
+p_0(r)=\alpha_0r(r-1)+\beta_0r+\gamma_0\quad\mbox{ and }\quad
+p_1(r)=\alpha_1r(r-1)+\beta_1r+\gamma_1.
+$$
+Theorem~\ref{thmtype:7.6.1}  and Exercise~\ref{exer:7.5.55} part (a)
+imply that if
+$$
+y(x,r)=x^r\sum_{n=0}^\infty a_n(r)x^n
+$$
+where
+$$
+a_n(r)=(-1)^n\prod_{j=1}^n\frac{p_1(j+r-1)}{ p_0(j+r)},
+$$
+then
+$$
+Ly(x,r)=p_0(r)x^r.
+$$
+Now suppose
+$p_0(r)=\alpha_0(r-r_1)^2$ and $p_1(k+r_1)\neq 0$ if $k$
+is a nonnegative integer.
+\begin{enumerate}
+\item % (a)
+Show that $Ly=0$ has the solution
+$$
+y_1=x^{r_1}\sum_{n=0}^\infty a_n(r_1)x^n,
+$$
+where
+$$
+a_n(r_1)=\frac{(-1)^n}{\alpha_0^n(n!)^2}\prod_{j=1}^np_1(j+r_1-1).
+$$
+
+\begin{solution}
+    If $p_0(r)=\alpha_0(r-r_1)^2$, then
+(A) $a_n(r)=\frac{(-1)^n}{\alpha_0^n}
+\prod_{j=1}^n\frac{p_1(j+r-1)}{(j+r-r_1)^2}$.
+Therefore,
+$a_n(r_1)=\frac{(-1)^n}{\alpha_0^n(n!)^2}\prod_{j=1}^np_1(j+r_1-1)$.
+Theorem~\ref{thmtype:7.6.2}  implies  $Ly_1=0$.
+\end{solution}
+
+\item % (b)
+Show that $Ly=0$ has the second solution
+$$
+y_2=y_1\ln x+x^{r_1}\sum_{n=1}^\infty a_n(r_1)J_nx^n,
+$$
+where
+$$
+J_n=\sum_{j=1}^n\frac{p_1'(j+r_1-1)}{ p_1(j+r_1-1)}-2\sum_{j=1}^n\frac{1}{ j}.
+$$
+
+\begin{solution}
+    From (A),
+$\ln|a_n(r)|=-n\ln|\alpha_0|+\sum_{j=1}^n\left(\ln|p_1(j+r-1)|
+-2\ln|j+r-r_1|\right)$, so
+$a_n'(r)=a_n(r)\sum_{j=1}^n\left(\frac{p_1'(j+r-1)}{
+p_1(j+r-1)}-\frac{2}{ j+r-r_1}\right)$ and
+$a_n'(r_1)=a_n(r_1)\sum_{j=1}^n\left(\frac{p_1'(j+r_1-1)}{
+p_1(j+r_1-1)}-\frac{2}{ j}\right)$.
+Theorem~\ref{thmtype:7.6.2}  implies that $Ly_2=0$.
+\end{solution}
+
+\item % (c)
+Conclude from part (a) and part (b) that if
+ $\gamma_1\neq 0$ then
+$$
+y_1=x^{r_1}\sum_{n=0}^\infty
+\frac{(-1)^n}{(n!)^2}\left(\frac{\gamma_1}{\alpha_0}\right)^nx^n
+$$
+and
+$$
+y_2=y_1\ln x-2x^{r_1}\sum_{n=1}^\infty
+\frac{(-1)^n}{(n!)^2}\left(\frac{\gamma_1}{\alpha_0}\right)^n
+\left(\sum_{j=1}^n\frac{1}{ j}\right)x^n
+$$
+are solutions of
+$$
+\alpha_0x^2y''+\beta_0xy'+(\gamma_0+\gamma_1x)y=0.
+$$
+(The conclusion is also valid if $\gamma_1=0$. Why?)
+
+\begin{solution}
+    Since $p_1(r)=\gamma_1$, $y_1$ and $y_2$ reduce to the
+stated forms.  If $\gamma_1=0$, then $y_1=x^{r_1}$ and $y_2=x^{r_1}\ln
+x$, which are solutions of the Euler equation $\alpha_0
+x^2y''+\beta_0 xy'+\gamma_0 y$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.55}
+Let
+$$
+Ly=x^2(\alpha_0+\alpha_qx^q)y''+x(\beta_0+\beta_qx^q)y'+(\gamma_0+\gamma_qx^q)y
+$$
+where $q$ is a positive integer, and define
+$$
+p_0(r)=\alpha_0r(r-1)+\beta_0r+\gamma_0\quad\mbox{ and }\quad
+p_q(r)=\alpha_qr(r-1)+\beta_qr+\gamma_q.
+$$
+Suppose
+$$
+p_0(r)=\alpha_0(r-r_1)^2 \quad\mbox{ and }\quad p_q(r)\not\equiv0.
+$$
+\begin{enumerate}
+\item % (a)
+Recall from  Exercise~\ref{exer:7.5.59}  that
+ $Ly~=0$ has the solution
+$$
+y_1=x^{r_1}\sum_{m=0}^\infty a_{qm}(r_1)x^{qm},
+$$
+where
+$$
+a_{qm}(r_1)=\frac{(-1)^m}{
+(q^2\alpha_0)^m(m!)^2}\prod_{j=1}^mp_q\left(q(j-1)+r_1\right).
+$$
+\item % (b)
+Show that $Ly=0$ has the second solution
+$$
+y_2=y_1\ln x+x^{r_1}\sum_{m=1}^\infty a_{qm}'(r_1)J_mx^{qm},
+$$
+where
+$$
+J_m=\sum_{j=1}^m\frac{p_q'\left(q(j-1)+r_1\right)}{
+p_q\left(q(j-1)+r_1\right)}-\frac{2}{ q}\sum_{j=1}^m\frac{1}{ j}.
+$$
+\item % (c)
+Conclude from part (a) and part (b) that if
+ $\gamma_q\neq 0$ then
+$$
+y_1=x^{r_1}\sum_{m=0}^\infty
+\frac{(-1)^m}{(m!)^2}\left(\frac{\gamma_q}{ q^2\alpha_0}\right)^mx^{qm}
+$$
+and
+$$
+y_2=y_1\ln x-\frac{2}{ q}x^{r_1}\sum_{m=1}^\infty
+\frac{(-1)^m}{(m!)^2}\left(\frac{\gamma_q}{
+q^2\alpha_0}\right)^m\left(\sum_{j=1}^m\frac{1}{ j}\right)x^{qm}
+$$
+are solutions of
+$$
+\alpha_0x^2y''+\beta_0xy'+(\gamma_0+\gamma_qx^q)y=0.
+$$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.56}
+The equation
+$$
+xy''+y'+xy=0
+$$
+is
+\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Bessel.html}{Bessel's equation of order zero.} (See
+Exercise~\ref{exer:7.5.53}.)
+  Find two linearly independent Frobenius solutions of this equation.
+
+  \begin{solution}
+      $p_0(r)=r^2$; $p_1(r)=1$; $r_1=0$.
+$a_{2m}(r)=-\frac{a_{2m-1}(r)}{(2m+r)^2}$, $m\geq 1$;
+$a_{2m}(r)=\frac{(-1)^m}{\prod_{j=1}^m(2j+r)^2}$,  $m\geq 0$.
+Therefore,$a_{2m}(0)=\frac{(-1)^m}{4^m(m!)^2}$, so
+$y_1=\sum_{m=0}^\infty\frac{(-1)^m}{4^m(m!)^2}x^{2m}$.
+
+By logarithmic differentiation, $a_{2m}'(r)=-2a_{2m}(r)
+\sum_{j=1}^m\frac{1}{2m+r}$, so
+ $a_{2m}'(0)=-a_{2m}(0)\sum_{j=1}^m\frac{1}{ j}$ and
+$y_2=y_1\ln x-
+\sum_{m=1}^\infty\frac{(-1)^m}{4^m(m!)^2}
+\left(\sum_{j=1}^m\frac{1}{ j}\right)x^{2m}$.
+  \end{solution}
+  \end{problem}
+
+\begin{problem}\label{exer:7.6.57}
+Suppose the assumptions of Exercise~\ref{exer:7.5.53}
+hold, except that
+$$
+p_0(r)=\alpha_0(r-r_1)^2.
+$$
+ Show that
+$$
+y_1=\frac{x^{r_1}}{\alpha_0+\alpha_1x+\alpha_2x^2}\quad\mbox{ and }\quad
+y_2=\frac{x^{r_1}\ln x}{\alpha_0+\alpha_1x+\alpha_2x^2}
+$$
+are linearly independent Frobenius  solutions of
+$$
+x^2(\alpha_0+\alpha_1x+\alpha_2 x^2)y''+x(\beta_0+\beta_1x+\beta_2x^2)y'+
+(\gamma_0+\gamma_1x+\gamma_2x^2)y=0
+$$
+on any interval $(0,\rho)$ on which
+$\alpha_0+\alpha_1x+\alpha_2x^2$ has no zeros.
+\end{problem}
+
+\begin{problem}\label{exer:7.6.58}
+Use the method
+suggested by Exercise~\ref{exer:7.6.57} to find the general solution on
+some interval $(0,\rho)$.
+
+$4x^2(1+x)y''+8x^2y'+(1+x)y=0$
+
+\begin{solution}
+    $p_0(r)=(2r-1)^2$;
+$p_1(r)=(2r+1)^2$;
+$p_2(r)=0$;
+$\frac{p_1(r-1)}{ p_0(r)}=1=\frac{\alpha_1}{\alpha_0}$;
+$\frac{p_2(r-2)}{ p_0(r)}=0=\frac{\alpha_2}{\alpha_0}$;
+$y_1=\frac{x^{1/2}}{1+x}$; $y_2=\frac{x^{1/2}\ln x}{1+x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.59}
+Use the method
+suggested by Exercise~\ref{exer:7.6.57} to find the general solution on
+some interval $(0,\rho)$.
+
+$9x^2(3+x)y''+3x(3+7x)y'+(3+4x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.60}
+Use the method
+suggested by Exercise~\ref{exer:7.6.57} to find the general solution on
+some interval $(0,\rho)$.
+
+$x^2(2-x^2)y''-x(2+3x^2)y'+(2-x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=2(r-1)^2$;
+$p_1(r)=0$;
+$p_2(r)=-(r+1)^2$;
+$\frac{p_1(r-1)}{ p_0(r)}=0=\frac{\alpha_1}{\alpha_0}$;
+$\frac{p_2(r-2)}{ p_0(r)}=-1/2=\frac{\alpha_2}{\alpha_0}$;
+$y_1=\frac{x}{2-x^2}$; $y_2=\frac{x\ln x}{2-x^2}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.61}
+Use the method
+suggested by Exercise~\ref{exer:7.6.57} to find the general solution on
+some interval $(0,\rho)$.
+
+$16x^2(1+x^2)y''+8x(1+9x^2)y'+(1+49x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.62}
+Use the method
+suggested by Exercise~\ref{exer:7.6.57} to find the general solution on
+some interval $(0,\rho)$.
+
+$x^2(4+3x)y''-x(4-3x)y'+4y=0$
+
+\begin{solution}
+    $p_0(r)=4(r-1)^2$;
+$p_1(r)=3r^2$;
+$p_2(r)=0$;
+$\frac{p_1(r-1)}{ p_0(r)}=3/4=\frac{\alpha_1}{\alpha_0}$;
+$\frac{p_2(r-2)}{ p_0(r)}=0=\frac{\alpha_2}{\alpha_0}$;
+$y_1=\frac{x}{4+3x}$; $y_2=\frac{x\ln x}{4+3x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.63}
+Use the method
+suggested by Exercise~\ref{exer:7.6.57} to find the general solution on
+some interval $(0,\rho)$.
+
+$4x^2(1+3x+x^2)y''+8x^2(3+2x)y'+(1+3x+9x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.64}
+Use the method
+suggested by Exercise~\ref{exer:7.6.57} to find the general solution on
+some interval $(0,\rho)$.
+
+$x^2(1-x)^2y''-x(1+2x-3x^2)y'+(1+x^2)y=0$
+
+\begin{solution}
+    $p_0(r)=(r-1)^2$;
+$p_1(r)=-2r^2$;
+$p_2(r)=(r+1)^2$;
+$\frac{p_1(r-1)}{ p_0(r)}=-2=\frac{\alpha_1}{\alpha_0}$;
+$\frac{p_2(r-2)}{ p_0(r)}=1=\frac{\alpha_2}{\alpha_0}$;
+$y_1=\frac{x}{(1-x)^2}$; $y_2=\frac{x\ln x}{(1-x)^2}$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.6.65}
+Use the method
+suggested by Exercise~\ref{exer:7.6.57} to find the general solution on
+some interval $(0,\rho)$.
+
+$9x^2(1+x+x^2)y''+3x(1+7x+13x^2)y'+(1+4x+25x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.6.66}
+\begin{enumerate}
+\item % (a)
+Let $L$ and $y(x,r)$ be as in Exercises~\ref{exer:7.5.57} and
+\ref{exer:7.5.58}. Extend Theorem~\ref{thmtype:7.6.1} by showing that
+$$
+L\left(\frac{\partial y}{ \partial
+r}(x,r)\right)=p'_0(r)x^r+x^rp_0(r)\ln x.
+$$
+\item % (b)
+Show that if
+$$
+p_0(r)=\alpha_0(r-r_1)^2
+$$
+then
+$$
+y_1=y(x,r_1) \mbox{\quad and \quad} y_2=\frac{\partial
+y}{\partial r}(x,r_1)
+$$
+ are solutions of $Ly=0$.
+\end{enumerate}
+\begin{solution}
+    See the proofs of Theorems~\ref{thmtype:7.6.1} and \ref{thmtype:7.6.2}.
+\end{solution}
+\end{problem}
+
+
+\end{document}
