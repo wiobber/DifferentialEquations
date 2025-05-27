@@ -1,0 +1,1000 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+\begin{problem}\label{exer:7.7.1}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2y''-3xy'+(3+4x)y=0$
+\end{problem}
+
+
+\begin{problem}\label{exer:7.7.2}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$xy''+y=0$
+
+\begin{solution}
+    $p_0(r)=r(r-1)$;
+$p_1(r)=1$;
+$r_1=1$; $r_2=0$; $k=r_1-r_2=1$;
+
+$a_n(r)=-\frac{1}{(n+r)(n+r-1)}
+a_{n-1}(r)$;
+
+
+ $a_n(r)=\frac{(-1)^n}{\prod_{j=1}^n(j+r)(j+r-1)}$;
+
+$a_n(1)=\frac{(-1)^n}{ n!(n+1)!}$;
+
+$y_1=x\sum_{n=0}^\infty\frac{(-1)^n}{ n!(n+1)!}x^n$;
+
+$z=1$; $C=-p_1(0)a_0(0)=-1$.
+
+By logarithmic differentiation,
+
+$a_n'(r)=-a_n(r)\sum_{j=1}^n\frac{2n+2r-1}{(n+r)(n+r-1)}$;
+
+$a_n'(1)=-a_n(1)\sum_{j=1}^n\frac{2j+1}{ j(j+1)}$;
+
+$y_2=1-y_1\ln x
++x\sum_{n=1}^\infty\frac{(-1)^n}{
+n!(n+1)!}\left(\sum_{j=1}^n\frac{2j+1}{ j(j+1)}\right)x^n$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.3}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$4x^2(1+x)y''+4x(1+2x)y'-(1+3x)y=0$
+\end{problem}
+
+
+\begin{problem}\label{exer:7.7.4}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$xy''+xy'+y=0$
+
+\begin{solution}
+    $p_0(r)=r(r-1)$;
+$p_1(r)=r+1$;
+$r_1=1$; $r_2=0$; $k=r_1-r_2=1$;
+$a_n(r)=-\frac{a_{n-1}(r)}{ n+r-1}$;
+ $a_n(r)=\frac{(-1)^n}{\prod_{j=1}^n(j+r-1)}$;
+$a_n(1)=\frac{(-1)^n}{ n!}$;
+$y_1=x\sum_{n=0}^\infty\frac{(-1)^n}{ n!}x^n=xe^{-x}$;
+$z=1$;
+$C=-p_1(0)a_0(0)=-1$.
+By logarithmic differentiation,
+$a_n'(r)=-a_n(r)\sum_{j=1}^n\frac{1}{ j+r-1}$;
+$a_n'(1)=-a_n(1)\sum_{j=1}^n\frac{1}{ j}$;
+$y_2=1-y_1\ln x+x\sum_{n=1}^\infty\frac{(-1)^n}{
+n!}\left(\sum_{j=1}^n\frac{1}{ j}\right)x^n$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.5}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$2x^2(2+3x)y''+x(4+21x)y'-(1-9x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.6}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2y''+x(2+x)y'-(2-3x)y=0$
+
+\begin{solution}
+    $p_0(r)=(r-1)(r+2)$;
+$p_1(r)=r+3$;
+$r_1=1$; $r_2=-2$; $k=r_1-r_2=3$.
+$a_n(r)=-\frac{1}{ n+r-1}
+a_{n-1}(r)$;
+ $a_n(r)=\frac{(-1)^n}{\prod_{j=1}^n(j+r-1)}$;
+$a_n(1)=\frac{(-1)^n}{ n!}$;
+$y_1=x\sum_{n=0}^\infty \frac{(-1)^n}{ n!}x^n=xe^{-x}$;
+$z=x^{-2}\left(1+\frac{1}{2}x+\frac{1}{2}x^2\right)$;
+$C=-\frac{p_1(0)}{ 3}a_2(-2)=-1/2$.
+By logarithmic differentiation,
+$a_n'(r)=-a_n(r)\sum_{j=1}^n\frac{1}{ j+r-1}$;
+$a_n'(1)=a_n(1)\sum_{j=1}^n\frac{1}{ j}$;
+ $y_2=x^{-2}\left(1+\frac{1}{2}x+\frac{1}{2}x^2\right)-\frac{1}{2}
+\left(y_1\ln x-x\sum_{n=1}^\infty\frac{(-1)^n}{
+n!}\left(\sum_{j=1}^n\frac{1}{ j}\right)x^n\right)$;
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.7}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$4x^2y''+4xy'-(9-x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.8}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2y''+10xy'+(14+x)y=0$
+
+\begin{solution}
+    $p_0(r)=(r+2)(r+7)$;
+$p_1(r)=1$;
+$r_1=-2$; $r_2=-7$; $k=r_1-r_2=5$;
+$a_n(r)=-\frac{a_{n-1}(r)}{(n+r+2)(n+r+7)}$;
+$a_n(r)=\frac{(-1)^n}{\prod_{j=1}^n(j+r+2)(j+r+7)}$;
+$a_n(-2)=120\prod_{j=1}^n\frac{(-1)^n}{ n!(n+5)!}$;
+$y_1=\frac{120}{ x^2}\sum_{n=0}^\infty\frac{(-1)^n}{
+n!(n+5)!}x^n$;
+
+$z=
+x^{-7}\left(1+\frac{1}{4}x+\frac{1}{24}x^2+\frac{1}{144}x^3
++\frac{1}{576}x^4\right)$;
+$C=-\frac{p_1(-3)}{5}a_4(-7)=-1/2880$.
+By logarithmic differentiation,
+$a_n'(r)=-a_n(r)\sum_{j=1}^n-\frac{2j+2r+9}{(j+r+2)(j+r+7)}$;
+$a_n'(-2)=-a_n(-2)\sum_{j=1}^n\frac{2j+5}{ j(j+5)}$;
+
+$y_2=x^{-7}\left(1+\frac{1}{4}x+\frac{1}{24}x^2+\frac{1}{144}x^3
++\frac{1}{576}x^4\right)-\frac{1}{2880}\left(y_1\ln x-\frac{120}{ x^2}
+\sum_{n=1}^\infty\frac{(-1)^n}{
+n!(n+5)!}\left(\sum_{j=1}^n\frac{2j+5}{ j(j+5)}\right)x^n\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.9}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$4x^2(1+x)y''+4x(3+8x)y'-(5-49x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.10}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2(1+x)y''-x(3+10x)y'+30xy=0$
+
+\begin{solution}
+    $p_0(r)=r(r-4)$;
+$p_1(r)=(r-6)(r-5)$;
+$r_1=4$; $r_2=0$; $k=r_1-r_2=4$;
+$a_n(r)=
+-\frac{(n+r-7)(n+r-6)}{(n+r)(n+r-4)}
+a_{n-1}(r)$;
+ $a_n(r)=(-1)^n\prod_{j=1}^n\frac{(j+r-7)(j+r-6)}{(j+r)(j+r-4)}$.
+Setting $r=4$ yields
+$y_1=x^4\left(1-\frac{2}{5}x\right)$.
+$z=1+10x+50x^2+200x^3$;
+$C=-\frac{p_1(3)}{ 4}a_3(0)=-300$.
+$a_1(r)=-\frac{(r-6)(r-5)}{(r-3)(r+1)}$;
+$a_1'(r)=-\frac{3(3r^2-22r+31)}{(r-3)^2(r+1)^2}$;
+$a_1'(4)=27/25$.
+$a_2(r)=(r-4)c_2(r)$, with
+$c_2(r)=\frac{(r-6)(r-5)^2}{(r-3)(r-2)(r+1)(r+2)}$, so
+$a_2'(4)=c_2(4)=-1/30$.
+If $n\geq 3$, then $a_n(r)=(r-4)^2b_n(r)$ where $b_n'(4)$ exists, so
+$a_n'(4)=0$  and
+$y_2=1+10x+50x^2+200x^3-300\left(y_1\ln
+x+\frac{27}{25}x^5-\frac{1}{30}x^6\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.11}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2y''+x(1+x)y'-3(3+x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.12}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2y''+x(1-2x)y'-(4+x)y=0$
+\begin{solution}
+    $p_0(r)=(r-2)(r+2)$;
+$p_1(r)=-2r-1$;
+$r_1=2$; $r_2=-2$; $k=r_1-r_2=4$;
+$a_n(r)=\frac{2j+2r-1}{(j+r-2)(j+r+2)}
+a_{n-1}(r)$;
+ $a_n(r)=\prod_{j=1}^n\frac{2n+2r-1}{(n+r-2)(n+r+2)}$;
+$a_n(2)=\frac{1}{ n!}\left(\prod_{j=1}^n\frac{2j+3}{ j+4}\right)$;
+$y_1=x^2\sum_{n=0}^\infty\frac{1}{ n!}\left(\prod_{j=1}^n\frac{2j+3}{
+j+4}\right)x^n$;
+$z=x^{-2}\left(1+x+\frac{1}{4}x^2-\frac{1}{12}x^3\right)$;
+$C=-\frac{p_1(1)}{ 4}a_3(-2)=-1/16$.
+By logarithmic differentiation,
+
+$a_n'(r)=-2a_n(r)\sum_{j=1}^n
+\frac{j^2+j(2r-1)+r^2-r+4}{(j+r-2)(j+r+2)(2j+2r-1)}$;
+$a_n'(2)=-2a_n(2)\sum_{j=1}^n\frac{(j^2+3j+6)}{
+j(j+4)(2j+3)}$;
+
+$y_2=x^{-2}\left(1+x+\frac{1}{4}x^2-\frac{1}{12}x^3\right)-\frac{1}{16}
+y_1\ln x+ \frac{x^2}{8}\sum_{n=1}^\infty\frac{1}{
+n!}\left(\prod_{j=1}^n\frac{2j+3}{ j+4}
+\right)\left(\sum_{j=1}^n\frac{(j^2+3j+6)}{ j(j+4)(2j+3)}\right)x^n$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:7.7.13}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x(1+x)y''-4y'-2y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.14}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2(1+2x)y''+x(9+13x)y'+(7+5x)y=0$
+\begin{solution}
+    $p_0(r)=(r+1)(r+7)$;
+$p_1(r)=(r+5)(2r+1)$;
+$r_1=-1$; $r_2=-7$; $k=r_1-r_2=6$;
+$a_n(r)=-\frac{(n+r+4)(2n+2r-1)}{(n+r+1)(n+r+7)} a_{n-1}(r)$;
+ $a_n(r)=(-1)^n\prod_{j=1}^n
+\frac{(j+r+4)(2j+2r-1)}{(j+r+1)(j+r+7)}$;
+$a_n(-1)=
+\frac{(-1)^n}{
+n!}\left(\prod_{j=1}^n\frac{(j+3)(2j-3)}{ j+6}\right)$;
+$y_1=\frac{1}{ x}\sum_{n=0}^\infty\frac{(-1)^n}{
+n!}\left(\prod_{j=1}^n\frac{(j+3)(2j-3)}{ j+6}\right)x^n$;
+$z=x^{-7}\left(1+\frac{26}{5}x+\frac{143}{20}x^2\right)$;
+$C=-\frac{p_1(-2)}{ 6}a_5(-7)=0$;
+$y_2=x^{-7}\left(1+\frac{26}{5}x+\frac{143}{20}x^2\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.15}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$4x^2y''-2x(4-x)y'-(7+5x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.16}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$3x^2(3+x)y''-x(15+x)y'-20y=0$
+\begin{solution}
+    $p_0(r)=(3r-10)(3r+2)$;
+$p_1(r)=r(3r-4)$;
+$r_1=10/3$; $r_2=-2/3$; $k=r_1-r_2=4$;
+$a_n(r)=-\frac{(n+r-1)(3n+3r-7)}{(3n+3r-10)(3n+3r+2)}
+a_{n-1}(r)$;
+$a_n(r)=(-1)^n\prod_{j=1}^n\frac{(j+r-1)(3j+3r-7)}{(3j+3r-10)(3j+3r+2)}$;
+$a_n(10/3)=\frac{(-1)^n(n+1)}{9^n}\left(\prod_{j=1}^n\frac{3j+7}{
+j+4}\right)$;
+$y_1=x^{10/3}\sum_{n=0}^\infty\frac{(-1)^n(n+1)}{9^n}
+\left(\prod_{j=1}^n\frac{3j+7}{ j+4}\right)x^n$;
+$z=x^{-2/3}\left(1+\frac{4}{27}x-\frac{1}{243}x^2\right)$;
+$C=-\frac{p_1(7/3)}{36}a_3(-2/3)=0$;
+$y_2=x^{-2/3}\left(1+\frac{4}{27}x-\frac{1}{243}x^2\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.17}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2(1+x)y''+x(1-10x)y'-(9-10x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.18}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2(1+x)y''+3x^2y'-(6-x)y=0$
+\begin{solution}
+    $p_0(r)=(r-3)(r+2)$;
+$p_1(r)=(r+1)^2$;
+$r_1=3$; $r_2=-2$; $k=r_1-r_2=5$;
+$a_n(r)=-\frac{(n+r)^2}{(n+r-3)(n+r+2)} a_{n-1}(r)$;
+ $a_n(r)=(-1)^n\prod_{j=1}^n\frac{(j+r)^2}{(j+r-3)(j+r+2)}$;
+$a_n(3)= \frac{(-1)^n}{ n!}\left(\prod_{j=1}^n\frac{(j+3)^2}{
+j+5}\right)$;
+$y_1=x^3\sum_{n=0}^\infty\frac{(-1)^n}{
+n!}\left(\prod_{j=1}^n\frac{(j+3)^2}{
+j+5}\right)x^n$;
+$z=x^{-2}\left(1+\frac{1}{4}x\right)$;
+$C=-\frac{p_1(2)}{5}a_4(-2)=0$;
+$y_2=x^{-2}\left(1+\frac{1}{4}x\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.19}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2(1+2x)y''-2x(3+14x)y'+(6+100x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.20}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2(1+x)y''-x(6+11x)y'+(6+32x)y=0$
+\begin{solution}
+    $p_0(r)=(r-6)(r-1)$;
+$p_1(r)=(r-8)(r-4)$;
+$r_1=6$; $r_2=1$; $k=r_1-r_2=5$;
+$a_n(r)=-\frac{(n+r-9)(n+r-5)}{(n+r-6)(n+r-1)}
+a_{n-1}(r)$;
+$y_1=x^6\left(1+\frac{2}{3}x+\frac{1}{7}x^2\right)$;
+$z=x\left(1+\frac{21}{4}x+\frac{21}{2}x^2+\frac{35}{4}x^3\right)$;
+$C=-\frac{p_1(5)}{6}a_5(1)=0$;
+$y_2=x\left(1+\frac{21}{4}x+\frac{21}{2}x^2+\frac{35}{4}x^3\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.21}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$4x^2(1+x)y''+4x(1+4x)y'-(49+27x)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.22}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2(1+2x)y''-x(9+8x)y'-12xy=0$
+\begin{solution}
+    $p_0(r)=r(r-10)$;
+$p_1(r)=2(r-6)(r+1)$;
+$r_1=10$; $r_2=0$; $k=r_1-r_2=10$;
+$a_n(r)= -\frac{2(n+r-7)}{ n+r-10}a_{n-1}(r)$;
+ $a_n(r)=(-2)^n\frac{(n+r-9)(n+r-8)(n+r-7)}{(r-9)(r-8)(r-7)}$;
+$a_n(10)=\frac{(-1)^n2^n(n+1)(n+2)(n+3)}{6}$;
+$y_1=\frac{x^{10}}{6}\sum_{n=0}^\infty(-1)^n2^n(n+1)(n+2)(n+3)x^n$;
+$z=\left(1-\frac{4}{3}x+\frac{5}{3}x^2-\frac{40}{21}x^3
++\frac{40}{21}x^4-\frac{32}{21}x^5+\frac{16}{21}x^6\right)$;
+$C=-\frac{p_1(9)}{10}a_9(0)=0$;
+$y_2=\left(1-\frac{4}{3}x+\frac{5}{3}x^2-\frac{40}{21}x^3
++\frac{40}{21}x^4-\frac{32}{21}x^5+\frac{16}{21}x^6\right)$.
+\end{solution}
+\end{problem}
+
+
+
+\begin{problem}\label{exer:7.7.23}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2(1+x^2)y''-x(7-2x^2)y'+12y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.24}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2y''-x(7-x^2)y'+12y=0$
+\begin{solution}
+\textbf{Note that $z=x^{r_2}\sum_{m=0}^{k-1}a_{2m}(r_2)x^{2m}$.}
+
+    $p_0(r)=(r-6)(r-2)$;
+$p_2(r)=r$;
+$r_1=6$; $r_2=2$; $k=(r_1-r_2)/2=2$;
+$a_{2m}(r)=-\frac{a_{2m-2}(r)}{2m+r-6}
+$;
+ $a_{2m}(r)=\frac{(-1)^m}{\prod_{j=1}^m(2j+r-6)}$;
+$a_{2m}(6)=\frac{(-1)^m}{2^mm!}$;
+$y_1=x^6\sum_{m=0}^\infty\frac{(-1)^m}{2^mm!}x^{2m}=x^6e^{-x^2/2}$;
+$z=x^2\left(1+\frac{1}{2}x^2\right)$;
+$C=-\frac{p_2(4)}{4}a_2(2)=-1/2$.
+By logarithmic differentiation,
+$a_{2m}'(r)=- a_{2m}(r)\sum_{j=1}^m\frac{1}{2j+r-6}$;
+$a_{2m}'(6)=-a_{2m}(6)\sum_{j=1}^m\frac{1}{2j}$;
+$y_2=x^2\left(1+\frac{1}{2}x^2\right)-\frac{1}{2}y_1\ln
+x+\frac{x^6}{4}\sum_{m=1}^\infty\frac{(-1)^m}{2^mm!}\left(\sum_{j=1}^m
+\frac{1}{ j}\right)x^{2m}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.25}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$xy''-5y'+xy=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.26}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2y''+x(1+2x^2)y'-(1-10x^2)y=0$
+
+\begin{solution}
+    \textbf{Note that $z=x^{r_2}\sum_{m=0}^{k-1}a_{2m}(r_2)x^{2m}$.}
+
+    $p_0(r)=(r-1)(r+1)$;
+$p_2(r)=2r+10$;
+$r_1=1$; $r_2=-1$; $k=(r_1-r_2)/2=1$;
+$a_{2m}(r)=-\frac{2(2m+r+3)}{(2m+r-1)(2m+r+1)}a_{2m-2}(r)$;
+ $a_{2m}(r)=(-2)^m\prod_{j=1}^m\frac{2j+r+3}{(2j+r-1)(2j+r+1)}$;
+$a_{2m}(1)=\frac{(-1)^m(m+2)}{2\, m!}$;
+$y_1=\frac{x}{2}\sum_{m=0}^\infty\frac{(-1)^m(m+2)}{ m!}x^{2m}$;
+$z=x^{-1}$;
+$C=-\frac{p_2(-1)}{ 2}a_0(-1)=-4$.
+By logarithmic differentiation,
+
+$a_{2m}'(r)=-a_{2m}(r)\sum_{j=1}^m
+\frac{(4j^2+4j(r+3)+r^2+6r+1)}{(2j+r-1)(2j+r+1)(2j+r+3)}$;
+
+$a_{2m}'(1)=-a_{2m}(1)\sum_{j=1}^m\frac{j^2+4j+2}{2j(j+1)(j+2)}$;
+
+$y_2=x^{-1}-4y_1\ln x+x\sum_{m=1}^\infty\frac{(-1)^m(m+2)}{
+m!}\left(\sum_{j=1}^m\frac{j^2+4j+2}{ j(j+1)(j+2)} \right)x^{2m}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.27}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2y''-xy'-(3-x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.28}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$4x^2y''+2x(8+x^2)y'+(5+3x^2)y=0$
+
+\begin{solution}
+    \textbf{Note that $z=x^{r_2}\sum_{m=0}^{k-1}a_{2m}(r_2)x^{2m}$.}
+
+    $p_0(r)=(2r+1)(2r+5)$;
+$p_2(r)=2r+3$;
+$r_1=-1/2$; $r_2=-5/2$; $k=(r_1-r_2)/2=1$;
+$a_{2m}(r)=-\frac{(4m+2r-1)}{(4m+2r+1)(4m+2r+5)}a_{2m-2}(r)$;
+$a_{2m}(r)=(-1)^m\prod_{j=1}^m\frac{(4j+2r-1)}{(4j+2r+1)(4j+2r+5)}$;
+$a_{2m}(-1/2)=\frac{(-1)^m\prod_{j=1}^m(2j-1)}{8^mm!(m+1)!}$;
+$y_1=x^{-1/2}\sum_{m=0}^\infty
+\frac{(-1)^m\prod_{j=1}^m(2j-1)}{8^mm!(m+1)!}
+x^{2m}$;
+$z=x^{-5/2}$;
+$C=-\frac{p_2(-5/2)}{8}a_0(-5/2)=1/4$.
+By logarithmic differentiation,
+
+$a_{2m}'(r)=-2a_{2m}(r)\sum_{j=1}^m
+\frac{(16j^2+8j(2r-1)+4r^2-4r-11)}{(4j+2r-1)(4j+2r+1)(4j+2r+5)}$;
+$a_{2m}'(-1/2)=-a_{2m}(-1/2)\sum_{j=1}^m\frac{2j^2-2j-1}{
+2j(j+1)(2j-1)}$;
+
+$y_2=x^{-5/2}+\frac{1}{4}y_1\ln x
+-x^{-1/2}\sum_{m=1}^\infty\frac{(-1)^m\prod_{j=1}^m(2j-1)}{8^{m+1}m!(m+1)!}
+\left(\sum_{j=1}^m\frac{2j^2-2j-1}{ j(j+1)(2j-1)}\right) x^{2m}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.29}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2y''+x(1+x^2)y'-(1-3x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.30}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2y''+x(1-2x^2)y'-4(1+2x^2)y=0$
+
+\begin{solution}
+    \textbf{Note that $z=x^{r_2}\sum_{m=0}^{k-1}a_{2m}(r_2)x^{2m}$.}
+
+    $p_0(r)=(r-2)(r+2)$;
+$p_2(r)=-2(r+4)$;
+$r_1=2$; $r_2=-2$; $k=(r_1-r_2)/2=2$;
+$a_{2m}(r)=\frac{2}{2m+r-2}a_{2m-2}(r)$;
+ $a_{2m}(r)=\frac{2^m}{\prod_{j=1}^m(2j+r-2)}$;
+$a_{2m}(2)=\frac{1}{ m!}$;
+$y_1=x^2\sum_{m=0}^\infty\frac{1}{ m!}x^{2m}=x^2e^{x^2}$;
+$z=x^{-2}(1-x^2)$;
+$C=-\frac{p_2(0)}{4}a_2(-2)=-2$.
+By logarithmic differentiation,
+$a_{2m}'(r)=-a_{2m}(r)\sum_{j=1}^m\frac{1}{2j+r-2} $;
+$a_{2m}'(2)=-a_{2m}(2)\sum_{j=1}^m\frac{1}{2j}$;
+$y_2=x^{-2}(1-x^2)-2y_1\ln x+x^2\sum_{m=1}^\infty\frac{1}{
+m!}\left(\sum_{j=1}^m\frac{1}{ j}\right)x^{2m}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.31}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$4x^2y''+8xy'-(35-x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.32}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$9x^2y''-3x(11+2x^2)y'+(13+10x^2)y=0$
+
+\begin{solution}
+    \textbf{Note that $z=x^{r_2}\sum_{m=0}^{k-1}a_{2m}(r_2)x^{2m}$.}
+
+    $p_0(r)=(3r-13)(3r-1)$;
+$p_2(r)=2(5-3r)$;
+$r_1=13/3$; $r_2=1/3$; $k=(r_1-r_2)/2=2$;
+$a_{2m}(r)=\frac{2(6m+3r-11)}{(6m+3r-13)(6m+3r-1)}a_{2m-2}(r)$;
+$a_{2m}(r)=2^m\prod_{j=1}^m\frac{(6j+3r-11)}{(6j+3r-13)(6j+3r-1)}$;
+$a_{2m}(13/3)=\frac{\prod_{j=1}^m(3j+1) }{9^mm!(m+2)!}$;
+$y_1=2x^{13/3}\sum_{m=0}^\infty\frac{\prod_{j=1}^m(3j+1)
+}{9^mm!(m+2)!}x^{2m}$;
+$z=x^{1/3}\left(1+\frac{2}{9}x^2\right)$;
+$C=-\frac{p_2(7/3)}{36}a_2(1/3)=2/81$.
+By logarithmic differentiation,
+$a_{2m}'(r)=-9a_{2m}(r)\sum_{j=1}^m
+\frac{(12j^2+4j(3r-11)+3r^2-22r+47)}{(6j+3r-13)(6j+3r-11)(6j+3r-1)}$;
+$a_{2m}'(13/3)=-
+a_{2m}(13/3)\sum_{j=1}^m\frac{3j^2+2j+2}{2j(j+2)(3j+1)}$;
+
+$y_2=x^{1/3}\left(1+\frac{2}{9}x^2\right)+\frac{2}{81}\left(
+y_1\ln
+x-x^{13/3}\sum_{m=0}^\infty\frac{\prod_{j=1}^m(3j+1)}{9^mm!(m+2)!}
+\left(\sum_{j=1}^m\frac{3j^2+2j+2}{ j(j+2)(3j+1)}\right)x^{2m}\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.33}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2y''+x(1-2x^2)y'-4(1-x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.34}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2y''+x(1-3x^2)y'-4(1-3x^2)y=0$
+
+\begin{solution}
+    \textbf{Note that $z=x^{r_2}\sum_{m=0}^{k-1}a_{2m}(r_2)x^{2m}$.}
+
+    $p_0(r)=(r-2)(r+2)$;
+$p_2(r)=-3(r-4)$;
+$r_1=2$; $r_2=-2$; $k=(r_1-r_2)/2=2$;
+$a_{2m}(r)=\frac{3(2m+r-6)}{(2m+r-2)(2m+r+2)}
+a_{2m-2}(r)$;
+$y_1=x^2\left(1-\frac{1}{2}x^2\right)$;
+$z=x^{-2}\left(1+\frac{9}{2}x^2\right)$;
+$C=-\frac{p_2(0)}{4}a_2(-2)=-27/2$;
+$a_2(r)=\frac{3(r-4)}{ r(r+4)}$,
+$a_2'(r)=-\frac{3(r^2-8r-16)}{ r^2(r+4)^2}$,
+$a_2'(2)=7/12$. If $m\geq 2$, then $a_{2m}(r)=(r-2)c_{2m}(r)$ where
+$c_{2m}(r)=\frac{3^m(r-4)}{(2m+r-4)(2m+r-2)\prod_{j=1}^m(2j+r+2)}$,
+so $a_{2m}'(2)=c_{2m}(2)=-\frac{\left(3/2\right)^m }{
+m(m-1)(m+2)!}$;
+$y_2=x^{-2}\left(1+\frac{9}{2}x^2\right)-\frac{27}{2}\left(
+y_1\ln x+\frac{7}{12}x^4-x^2\sum_{m=2}^\infty\frac{\left(3/2\right)^m
+}{ m(m-1)(m+2)!}x^{2m}\right)$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.35}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2(1+x^2)y''+x(5+11x^2)y'+24x^2y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.36}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$4x^2(1+x^2)y''+8xy'-(35-x^2)y=0$
+
+\begin{solution}
+    \textbf{Note that $z=x^{r_2}\sum_{m=0}^{k-1}a_{2m}(r_2)x^{2m}$.}
+
+    $p_0(r)=(2r-5)(2r+7)$;
+$p_2(r)=(2r-1)^2$;
+$r_1=5/2$; $r_2=-7/2$; $k=(r_1-r_2)/2=3$;
+$a_{2m}(r)=-\frac{4m+2r-5}{4m+2r+7}a_{2m-2}(r)$;
+ $a_{2m}(r)=\frac
+{(2r-1)(2r+3)(2r+7)}{(4m+2r-1)(4m+2r+3)(4m+2r+7)}$;
+$a_{2m}(5/2)=\frac{(-1)^m}{(m+1)(m+2)(m+3)}$;
+$y_1=x^{5/2}\sum_{m=0}^\infty\frac{(-1)^m}{(m+1)(m+2)(m+3)}x^{2m}$;
+$z=x^{-7/2}(1+x^2)^2$
+$C=-\frac{p_2(1/2)}{24}a_4(-7/2)=0$;
+$y_2=x^{-7/2}(1+x^2)^2$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.37}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2(1+x^2)y''-x(5-x^2)y'-(7+25x^2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.38}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2(1+x^2)y''+x(5+2x^2)y'-21y=0$
+
+\begin{solution}
+    \textbf{Note that $z=x^{r_2}\sum_{m=0}^{k-1}a_{2m}(r_2)x^{2m}$.}
+
+    $p_0(r)=(r-3)(r+7)$;
+$p_2(r)=r(r+1)$;
+$r_1=3$; $r_2=-7$; $k=(r_1-r_2)/2=5$;
+$a_{2m}(r)=-\frac{(2m+r-2)(2m+r-1)}{(2m+r-3)(2m+r+7)}
+a_{2m-2}(r)$;
+$a_{2m}(r)=(-1)^m\prod_{j=1}^m\frac{(2j+r-2)(2j+r-1)}{(2j+r-3)(2j+r+7)}$;
+$a_{2m}(3)=(-1)^m\frac{m+1}{2^m}\left(\prod_{j=1}^m\frac{2j+1}{
+j+5}\right)$;
+$y_1=x^3\sum_{m=0}^\infty(-1)^m\frac{m+1}{2^m}\left(\prod_{j=1}^m\frac{2j+1}{
+j+5}\right)x^{2m}$;
+$z=x^{-7}\left(1+\frac{21}{8}x^2+\frac{35}{16}x^4+\frac{35}{64}x^6\right)$
+$C=-\frac{p_2(1)}{10}a_8(-7)=0$;
+$y_2=x^{-7}\left(1+\frac{21}{8}x^2+\frac{35}{16}x^4+\frac{35}{64}x^6\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.39}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$x^2(1+2x^2)y''-x(3+x^2)y'-2x^2y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.7.40}
+Find
+a fundamental set  of Frobenius solutions. Give explicit formulas for
+the coefficients.
+
+$4x^2(1+x^2)y''+4x(2+x^2)y'-(15+x^2)y=0$
+
+\begin{solution}
+    \textbf{Note that $z=x^{r_2}\sum_{m=0}^{k-1}a_{2m}(r_2)x^{2m}$.}
+
+    $p_0(r)=(2r-3)(2r+5)$;
+$p_2(r)=(2r-1)(2r+1)$;
+$r_1=3/2$; $r_2=-5/2$; $k=(r_1-r_2)/2=2$;
+$a_{2m}(r)=-\frac{4m+2r-5}{4m+2r+5}
+a_{2m-2}(r)$;
+ $a_{2m}(r)=(-1)^m\prod_{j=1}^m\frac{4j+2r-5}{4j+2r+5}$;
+$a_{2m}(3/2)=\frac{(-1)^m \prod_{j=1}^m(2j-1)}{2^{m-1}(m+2)!}$;
+$y_1=x^{3/2}\sum_{m=0}^\infty\frac{(-1)^m
+\prod_{j=1}^m(2j-1)}{2^{m-1}(m+2)!}x^{2m}$;
+$z=x^{-5/2}\left(1+\frac{3}{2}x^2\right)$
+$C=-\frac{p_2(-1/2)}{16}a_2(-5/2)=0$;
+$y_2=x^{-5/2}\left(1+\frac{3}{2}x^2\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.41}
+\begin{enumerate}
+\item % (a)
+Under the assumptions of Theorem~\ref{thmtype:7.7.1}, show that
+$$
+y_1=x^{r_1}\sum_{n=0}^\infty  a_n(r_1)x^n
+$$
+and
+$$
+y_2=x^{r_2}\sum_{n=0}^{k-1}a_n(r_2)x^n+C\left(y_1\ln
+x+x^{r_1}\sum_{n=1}^\infty a_n'(r_1)x^n\right)
+$$
+are linearly independent. 
+\begin{hint}Show that if $c_1$ and $c_2$
+are constants such that $c_1y_1+c_2y_2\equiv0$ on an interval
+$(0,\rho)$, then
+$$
+x^{-r_2}(c_1y_1(x)+c_2y_2(x))=0,\quad 0<x<\rho.
+$$
+Then let $x\to0+$ to conclude that $c_2$=0.
+\end{hint}
+\item % (b)
+Use the result of part (a) to
+complete the proof of Theorem~\ref{thmtype:7.7.1}.
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}\label{exer:7.7.42}
+Find a fundamental set of Frobenius solutions of Bessel's equation
+$$
+x^2y''+xy'+(x^2-\nu^2)y=0
+$$
+in the case where $\nu$  is a positive integer.
+
+\begin{solution}
+    $p_0(r)=r^2-\nu^2$; $p_2(r)=1$; $r_1=\nu$;
+$r_2=-\nu$; $k=(r_1-r_2)/2=\nu$;
+$a_{2m}(r)=-\frac{a_{2m-2}(r)}{(2m+r+\nu)(2m+r-\nu)}$;
+$a_{2m}(r)=\frac{(-1)^m}{\prod_{j=1}^m(2j+r+\nu)(2j+r-\nu)}$;
+$a_{2m}(\nu)=\frac{(-1)^m}{4^mm!\prod_{j=1}^m(j+\nu)}$;
+$a_{2m}(-\nu)=\frac{(-1)^m}{4^mm!\prod_{j=1}^m(j-\nu)}$,
+$j=0,\dots,\nu-1$; $y_1=x^\nu\sum_{m=0}^\infty\frac{(-1)^m}{4^mm!
+\prod_{j=1}^m(j+\nu)}x^{2m}$; $
+z=x^{-\nu}\sum_{m=0}^{\nu-1}\frac{(-1)^m}{4^mm!
+\prod_{j=1}^m(j-\nu)}x^{2m}$; $C=-\frac{p_2(\nu-2)}{
+2\nu}a_{2\nu-2}(-\nu)= -\frac{a_{2\nu-2}(-\nu)}{ 2\nu}=
+-\frac{2}{4^\nu\nu!(\nu-1)!}$. 
+
+By logarithmic differentiation,
+
+$a_{2m}'(r)=-2
+a_{2m}(r)\sum_{j=1}^m\frac{2j+\nu}{(2j+r+\nu)(2j+r-\nu)}$;
+
+$a_{2m}'(\nu)=-a_{2m}(\nu)\sum_{j=1}^m\frac{2j+\nu}{2j(j+\nu)}$;
+
+$y_2=x^{-\nu}\sum_{m=0}^{\nu-1}\frac{(-1)^m}{4^mm!\prod_{j=1}^m(j-\nu)}x^{2m}
+-\frac{2}{4^\nu\nu!(\nu-1)!}\left(y_1 \ln x-\frac{x^\nu}{2}
+\sum_{m=1}^\infty\frac{(-1)^m}{4^mm!\prod_{j=1}^m(j+\nu)}
+\left(\sum_{j=1}^m\frac{2j+\nu}{ j(j+\nu)}\right) x^{2m}\right)$.
+
+\end{solution}
+\end{problem}
+
+
+
+\begin{problem}\label{exer:7.7.43}
+Prove Theorem~\ref{thmtype:7.7.2}.
+\end{problem}
+
+\begin{problem}\label{exer:7.7.44}
+Under the assumptions of Theorem~\ref{thmtype:7.7.1}, show that $C=0$
+ if and only if $p_1(r_2+\l)=0$ for some
+integer $\l$ in $\{0,1,\dots,k-1\}$.
+
+\begin{solution}
+    Since
+$a_n(r_2)=-\frac{p_1(n+r_2-1)}{ p_0(n+r_2)}a_{n-1}(r_2)$,
+$1\le n\le k-1$, $a_{k-1}(r_2)=(-1)^{k-1}\prod_{j=1}^{k-1}
+\frac{p_1(r_2+j-1)}{ p_0(r_2+j)}$. But $C=-\frac{p_1(r_1-1)}{
+k\alpha_0}a_{k-1}(r_2)=-\frac{p_1(r_2+k-1)}{ k\alpha_0}a_{k-1}(r_2)
+=(-)^k\frac{\prod_{j=1}^kp_1(r_2+j-1)}{ k\alpha_0\prod_{j=1}^{k-1}
+p_0(r_2+j)}=0$ if and only if $\prod_{j=1}^kp_1(r_2+j-1)=0$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:7.7.45}
+Under the assumptions of Theorem~\ref{thmtype:7.7.2}, show that $C=0$
+ if and only if $p_2(r_2+2\l)=0$ for some
+integer $\ell$ in $\{0,1,\dots,k-1\}$.
+\end{problem}
+
+\begin{problem}\label{exer:7.7.46}
+Let
+$$
+Ly=\alpha_0x^2y''+\beta_0xy'+(\gamma_0+\gamma_1x)y
+$$
+and define
+$$
+p_0(r)=\alpha_0r(r-1)+\beta_0r+\gamma_0.
+$$
+Show that if
+$$
+p_0(r)=\alpha_0(r-r_1)(r-r_2)
+$$
+where $r_1-r_2=k$, a positive integer, then $Ly=0$ has the solutions
+$$
+y_1=x^{r_1}\sum_{n=0}^\infty \frac{(-1)^n}{
+n!\prod_{j=1}^n(j+k)}\left(\frac{\gamma_1}{\alpha_0}\right)^n x^n
+$$
+and
+\begin{eqnarray*}
+y_2&=&x^{r_2}\sum_{n=0}^{k-1} frac{(-1)^n}{ n!\prod_{j=1}^n(j-k)}
+\left(\frac{\gamma_1}{\alpha_0}\right)^n
+x^n\\[10pt]&&-\frac{1}{
+k!(k-1)!}\left(\frac{\gamma_1}{\alpha_0}\right)^k\left(y_1\ln x-
+x^{r_1}\sum_{n=1}^\infty \frac{(-1)^n}{
+n!\prod_{j=1}^n(j+k)}\left(\frac{\gamma_1}{\alpha_0}\right)^n
+\left(\sum_{j=1}^n\frac{2j+k}{ j(j+k)}\right)x^n\right).
+\end{eqnarray*}
+
+\begin{solution}
+    Since $p_1(r)=\gamma_1$,
+$a_n(r)=-\frac{\gamma_1}{\alpha_0(n+r-r_1)(n+r-r_2)}a_{n-1}(r)$ and
+(A) $a_n(r)=(-1)^n\left(\frac{\gamma_1}{\alpha_0}\right)^n
+\frac{1}{\prod_{j=1}^n(j+r-r_1)(j+r-r_2)}$. Therefore,
+$a_n(r_1)=\frac{(-1)^n}{ n!}\left(\frac{\gamma_1}{\alpha_0}\right)^n
+\frac{1}{\prod_{j=1}^n(j+k)}$ for $n\geq 0$ (so $Ly_1=0$) and
+$a_n(r_2)=\frac{(-1)^n}{ n!}\left(\frac{\gamma_1}{\alpha_0}\right)^n
+\frac{1}{\prod_{j=1}^n(j-k)}$ for $n=0,\dots,k-1$. $Ly_2=0$ if $y_2=
+x^{r_2}\sum_{n=0}^{k-1} a_n(r_2)x^n+C\left(y_1\ln x+
+x^{r_1}\sum_{n=1}^\infty a_n'(r_1)x^n\right)$ if
+$C=-\frac{\gamma_1}{ k\alpha_0}a_{k-1}(r_2)=-\frac{\gamma_1}{
+k\alpha_0}\frac{(-1)^{k-1}}{(k-1)!}
+\left(\frac{\gamma_1}{\alpha_0}\right)^{k-1}\frac{(-1)^{k-1}}{(k-1)!}
+=-\frac{1}{ k!(k-1)!} \left(\frac{\gamma_1}{\alpha_0}\right)^k$. From (A),
+$\ln|a_n(r)|=-n\ln\left|\frac{\gamma_1}{\alpha_0}\right|
+-\sum_{j=1}^n(\left(\ln|j+r-r_1|+\ln|j+r-r_2|\right)$, so
+$a_n'(r)=-a_n(r)\sum_{j=1}^n\left(\frac{1}{ j+r-r_1}+ \frac{1}{
+j+r-r_2}\right)$ and $a_n'(r_1)=-a_n(r_1)\sum_{j=1}^n \frac{2j+k}{
+j(j+k)}$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.47}
+Let
+$$
+Ly=\alpha_0x^2y''+\beta_0xy'+(\gamma_0+\gamma_2x^2)y
+$$
+and define
+$$
+p_0(r)=\alpha_0r(r-1)+\beta_0r+\gamma_0.
+$$
+Show that if
+$$
+p_0(r)=\alpha_0(r-r_1)(r-r_2)
+$$
+where $r_1-r_2=2k$, an even  positive integer, then $Ly=0$ has the
+solutions
+$$
+y_1=x^{r_1}\sum_{m=0}^\infty \frac{(-1)^m}{
+4^mm!\prod_{j=1}^m(j+k)}\left(\frac{\gamma_2}{\alpha_0}\right)^m x^{2m}
+$$
+and
+\begin{eqnarray*}
+y_2&=&x^{r_2}\sum_{m=0}^{k-1} \frac{(-1)^m}{4^mm!\prod_{j=1}^m(j-k)}
+\left(\frac{\gamma_2}{\alpha_0}\right)^m
+x^{2m}\\[10pt]&&-\frac{2}{
+4^kk!(k-1)!}\left(\frac{\gamma_2}{\alpha_0}\right)^k\left(y_1\ln x-
+\frac{x^{r_1}}{2}\sum_{m=1}^\infty \frac{(-1)^m}{
+4^mm!\prod_{j=1}^m(j+k)}\left(\frac{\gamma_2}{\alpha_0}\right)^m
+\left(\sum_{j=1}^m\frac{2j+k}{ j(j+k)}\right)x^{2m}\right).
+\end{eqnarray*}
+\end{problem}
+
+\begin{problem}\label{exer:7.7.48}
+Let $L$ be as in Exercises~\ref{exer:7.5.57} and
+ \ref{exer:7.5.58}, and
+suppose the indicial polynomial  of $Ly=0$ is
+$$
+p_0(r)=\alpha_0(r-r_1)(r-r_2),
+$$
+with $k=r_1-r_2$, where $k$ is a positive integer. Define $a_0(r)=1$
+for all $r$.  If $r$ is a real number such that $p_0(n+r)$
+is nonzero for all positive integers $n$,  define
+$$
+a_n(r)=-\frac{1}{ p_0(n+r)}\sum_{j=1}^n p_j(n+r-j)a_{n-j}(r),\,n\geq 1,
+$$
+and let
+$$
+y_1=x^{r_1}\sum_{n=0}^\infty a_n(r_1)x^n.
+$$
+Define
+$$
+a_n(r_2)=-\frac{1}{ p_0(n+r_2)}\sum_{j=1}^n p_j(n+r_2-j)a_{n-j}(r_2)\mbox{
+if } n\geq 1\mbox{ and }n\neq k,
+$$
+and let $a_k(r_2)$ be arbitrary.
+\begin{enumerate}
+\item % (a)
+Conclude from Exercise~\ref{exer:7.6.66} that
+$$
+L\left(y_1\ln x+x^{r_1}\sum_{n=1}^\infty
+a_n'(r_1)x^n\right)=k\alpha_0x^{r_1}.
+$$
+
+\begin{solution}
+    From Exercise~\ref{exer:7.6.66} (a) of the previous section, $L\left(\frac{\partial y}{ \partial
+r}(x,r)\right)=p'_0(r)x^r+x^rp_0(r)\ln x$. Setting $r=r_1$ yields
+$L\left(y_1\ln x+x^{r_1}\sum_{n=1}^\infty
+a_n'(r_1)\right)=p_0'(r_1)x^{r_1}$. Since
+$p_0'(r)=\alpha_0(2r-r_1-r_2)$, $p_0'(r_1)~=~k\alpha_0$.
+\end{solution}
+\item % (b)
+Conclude from Exercise~\ref{exer:7.5.57} that
+$$
+L\left(x^{r_2}\sum_{n=0}^\infty a_n(r_2)x^n\right)=Ax^{r_1},
+$$
+where
+$$
+A=\sum_{j=1}^k p_j(r_1-j)a_{k-j}(r_2).
+$$
+
+\begin{solution}
+    From Exercise~\ref{exer:7.5.57}, 
+    $L\left(x^{r_2}\sum_{n=0}^\infty a_n(r_2)x^n\right)=x^{r_2}
+\sum_{n=0}^\infty b_nx^n$, where $b_0=p_0(r_2)=0$ and
+$b_n=\sum_{j=0}^np_j(n+r_2-j)a_{n-j}(r_2)$ if $n\geq 1$. From the
+definition of $\{a_n(r_2)\}$, $b_n=0$ if $n\neq k$, while
+$b_k=\sum_{j=0}^kp_k(k+r_2-j)a_{k-j}(r_2)=
+\sum_{j=1}^kp_j(r_1-j)a_{k-j}(r_2)$.
+\end{solution}
+\item % (c)
+Show that $y_1$  and
+$$
+y_2=x^{r_2}\sum_{n=0}^\infty a_n(r_2)x^n
+-\frac{A}{ k\alpha_0}
+\left(y_1 \ln x+x^{r_1}\sum_{n=1}^\infty a_n'(r_1)x^n\right)
+$$
+form a fundamental set of Frobenius solutions of $Ly=0$.
+\item % (d)
+Show that choosing the arbitrary quantity $a_k(r_2)$ to be nonzero
+merely adds a multiple of $y_1$ to $y_2$. Conclude that we may
+as well take $a_k(r_2)~=~0$.
+
+\begin{solution}
+    Let $\{\tilde a_n(r_2)\}$ be the coefficients that would
+obtained if $\tilde a_k(r_2)=0$. Then $a_n(r_2)=\tilde a_n(r_2)$ if
+$n=0,\dots,k-1$, and (A) $a_n(r_2)-\tilde a_n(r_2)=-\frac{1}{
+p_0(n+r_2)}\sum_{j=0}^{n-k} p_j(n+r_2-j)(a_{n-j}(r_2)-\tilde
+a_{n-j}{r_2})$ if $n>k$. Now let $c_m=a_{k+m}(r_2)-\tilde
+a_{k+m}(r_2)$. Setting $n=m+k$ in (A) and recalling the $k+r_2=r_1$
+yields (B) $c_m=-\frac{1}{ p_0(m+r_1)}\sum_{j=0}^m
+p_j(m+r_1-j)c_{m-j}$. Since $c_k=a_k(r_2)$, (B) implies that
+$c_m=a_k(r_2)a_m(r_1)$ for all $m\geq 0$, which implies the conclusion.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+
+
+\end{document}
+
