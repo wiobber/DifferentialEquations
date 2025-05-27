@@ -23,6 +23,11 @@ $$y'''-3y''+3y'-y=0$$
 
 $$y^{(4)}+8y''-9y=0$$
 
+\begin{solution}
+$p(r)=r^4+8r^2-9=(r-1)(r+1)(r^2+9)$;
+ $y=c_1e^x+c_2e^{-x}+c_3\cos3x+c_4\sin3x$.
+\end{solution}
+
 \end{problem}
 
 \begin{problem}\label{exer:9.2.3} Find the general solution.
@@ -35,6 +40,11 @@ $$y'''-y''+16y'-16y=0$$
 \begin{problem}\label{exer:9.2.4} Find the general solution.
 
 $$2y'''+3y''-2y'-3y=0$$
+
+\begin{solution}
+$p(r)=2r^3+3r^2-2r-3=(r-1)(r+1)(2r+3)$;
+$y=c_1e^x+c_2e^{-x}+c_3e^{-3x/2}$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:9.2.5} Find the general solution.
@@ -67,6 +77,11 @@ $$27y'''+27y''+9y'+y=0$$
 
 $$y^{(4)}+y''=0$$
 
+\begin{solution}
+$p(r)=r^4+r^2=r^2(r^2+1)$;
+ $y=c_1+c_2x+c_3\cos x+c_4\sin x$.
+\end{solution}
+
 \end{problem}
 
  \begin{problem}\label{exer:9.2.9}  Find the general solution.
@@ -79,6 +94,11 @@ $$y^{(4)}-16y=0$$
 \begin{problem}\label{exer:9.2.10} Find the general solution.
 
 $$y^{(4)}+12y''+36y=0$$
+
+\begin{solution}
+$p(r)=r^4+12r^2+36=(r^2+6)^2$;
+ $y=(c_1+c_2x)\cos\sqrt{6} x+(c_3+c_4x)\sin\sqrt{6} x$.
+\end{solution}
 \end{problem}
 
 
@@ -93,6 +113,10 @@ $$16y^{(4)}-72y''+81y=0$$
 
 $$6y^{(4)}+5y'''+7y''+5y'+y=0$$
 
+\begin{solution}
+$p(r)=6r^4+5r^3+7r^2+5r+1=(2r+1)(3r+1)(r^2+1)$;
+$y=c_1e^{-x/2}+c_2e^{-x/3}+c_3\cos x+c_4\sin x$.
+\end{solution}
 \end{problem}
 
 
@@ -106,6 +130,10 @@ $$4y^{(4)}+12y'''+3y''-13y'-6y=0$$
 
 $$y^{(4)}-4y'''+7y''-6y'+2y=0$$
 
+\begin{solution}
+$p(r)=r^4-4r^3+7r^2-6r+2=(r-1)^2(r^2-2r+2)$;
+$y=e^x(c_1+c_2x+c_3\cos x+c_4\sin x)$.
+\end{solution}
 \end{problem}
 
 
@@ -150,6 +178,24 @@ $y'''-y''-y'+y=0, \quad  y(0)=-2,\quad y'(0)=9,\quad y''(0)=4$
 initial value problem, and graph the solution.
 
 $y'''-2y'-4y=0, \quad  y(0)=6,\quad y'(0)=3,\quad y''(0)=22$
+
+\begin{solution}
+$p(r)=r^3-2r-4=(r-2)(r^2+2r+2)$;
+$$
+\begin{array}{lcl}
+y&=&e^{-x}(c_1\cos x+c_2\sin x)+c_3e^{2x}\\
+y'&=&-e^{-x}((c_1-c_2)\cos x+(c_1+c_2)\sin x)+2c_3e^{2x}\\
+y''&=&e^{-x}(2c_1\sin x-2c_2\cos x)+4c_3e^{2x}
+\end{array};
+\begin{array}{rcr}
+c_1+c_3&=&6\\
+-c_1+c_2+2c_3&=&3\\
+-2c_2+4c_3&=&22
+\end{array};
+$$
+$c_1=2$, $c_2=-3$, $c_3=4$;
+ $y=2e^{-x}\cos x-3e^{-x}\sin x+4e^{2x}$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:9.2.19} Solve the
@@ -162,6 +208,24 @@ $3y'''-y''-7y'+5y=0, \quad  y(0)=\frac{14}{5},\quad y'(0)=0,\quad y''(0)=10$
 initial value problem.
 
 $y'''-6y''+12y'-8y=0, \quad  y(0)=1,\quad y'(0)=-1,\quad y''(0)=-4$
+
+\begin{solution}
+$p(r)=r^3-6r^2+12r-8=(r-2)^3$;
+$$
+\begin{array}{lcl}
+y&=&e^{2x}(c_1+c_2x+c_3x^2)\\
+y'&=&e^{2x}(2c_1+c_2+(2c_2+2c_3)x+2c_3x^2)\\
+y''&=&2e^{2x}(2c_1+2c_2+c_3+2(c_2+2c_3)x+2c_3x^2)
+\end{array};
+\begin{array}{rcr}
+c_1&=&1\\
+2c_1+c_2&=&-1\\
+4c_1+4c_2+2c_3&=&-4
+\end{array}
+$$
+$c_1=1$, $c_2=-3$, $c_3=2$;
+ $y=e^{2x}(1-3x+2x^2)$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:9.2.21}  Solve the
@@ -174,6 +238,24 @@ $2y'''-11y''+12y'+9y=0, \quad  y(0)=6,\quad y'(0)=3,\quad y''(0)=13$
 initial value problem.
 
 $8y'''-4y''-2y'+y=0, \quad  y(0)=4,\quad y'(0)=-3,\quad y''(0)=-1$
+
+\begin{solution}
+$p(r)=8r^3-4r^2-2r+1=(2r+1)(2r-1)^2$;
+$$
+\begin{array}{lcl}
+y&=&e^{x/2}(c_1+c_2x)+c_3e^{-x/2}\\
+y'&=&\frac{1}{2}e^{x/2}(c_1+2c_2+c_2x)-\frac{1}{2}c_3e^{-x/2}\\
+y''&=&\frac{1}{4}e^{x/2}(c_1+4c_2+c_2x)+\frac{1}{4}c_3e^{-x/2}
+\end{array};
+\begin{array}{rcr}
+c_1+c_3&=&4\\
+\frac{1}{2}c_1+c_2-\frac{1}{2}c_3&=&-3\\
+\frac{1}{4}c_1+c_2+\frac{1}{4}c_3&=&-1
+\end{array};
+$$
+$c_1=1$, $c_2=-2$, $c_3=3$;
+ $y=e^{x/2}(1-2x)+3e^{-x/2}$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:9.2.23}  Solve the
@@ -186,8 +268,27 @@ $y^{(4)}-16y=0, \quad   y(0)=2,\;  y'(0)=2,\;  y''(0)=-2,\;  y'''(0)=0$
 initial value problem.
 
 $y^{(4)}-6y'''+7y''+6y'-8y=0, \quad  y(0)=-2,\quad y'(0)=-8,\quad y''(0)=-14$,
-
  $y'''(0)=-62$
+
+\begin{solution}
+$p(r)=r^4-6r^3+7r^2+6r-8=(r-1)(r-2)(r-4)(r+1)$;
+$$
+\begin{array}{lcl}
+y&=&c_1e^x+c_2e^{2x}+c_3e^{4x}+c_4e^{-x}\\
+y'&=&c_1e^x+2c_2e^{2x}+4c_3e^{4x}-c_4e^{-x}\\
+y''&=&c_1e^x+4c_2e^{2x}+16c_3e^{4x}+c_4e^{-x}\\
+y'''&=&c_1e^x+8c_2e^{2x}+64c_3e^{4x}-c_4e^{-x}
+\end{array};
+\begin{array}{rcr}
+c_1+c_2+c_3+c_4&=&-2\\
+c_1+2c_2+4c_3-c_4&=&-8\\
+c_1+4c_2+16c_3+c_4&=&-14\\
+c_1+8c_2+64c_3-c_4&=&-62
+\end{array};
+$$
+$c_1=-4$, $c_2=1$, $c_3=-1$, $c_4=2$;
+ $y=-4e^x+e^{2x}-e^{4x}+2e^{-x}$.
+\end{solution}
 \end{problem}
 
 \begin{problem}\label{exer:9.2.25}  Solve the
