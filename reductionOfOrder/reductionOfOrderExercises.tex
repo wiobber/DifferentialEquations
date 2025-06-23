@@ -1,0 +1,683 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+\begin{problem}\label{exer:5.6.1}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $(2x+1)y''-2y'-(2x+3)y=(2x+1)^2;  \quad y_1=e^{-x}$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.2}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $x^2y''+xy'-y=\frac{4}{x^2};   \quad y_1=x$
+
+\begin{solution}
+    If $y=ux$, then $y'=u'x+u$ and $y''=u''x+2u'$, so
+$x^2y''+xy'-y=x^3u''+3x^2u'=\frac{4}{ x^2}$ if $u'=z$, where (A)
+$z'+\frac{3}{ x}z=\frac{4}{ x^5}$. Since $\int\frac{3}{
+x}\,dx=3\ln|x|$, $z_1=\frac{1}{ x^3}$ is a solution of the
+complementary equation for (A). Therefore,the solutions of (A) are of
+the form (B) $z=\frac{v}{ x^3}$, where $\frac{v'}{
+x^3}=\frac{4}{ x^5}$, so $v'=\frac{4}{ x^2}$. Hence,
+$v=-\frac{4}{ x}+C_1$;\ $u'=z=-\frac{4}{ x^4}+\frac{C_1}{ x^3}$
+(see (B));\ $u=\frac{4}{ 3x^3}-\frac{C_1}{2x^2}+C_2$;\;
+$y=ux=\frac{4}{ 3x^2}-\frac{C_1}{2x}+C_2x$, or $y=\frac{4}{
+3x^2}+c_1x+\frac{c_2}{ x}$. As a byproduct, $\{x,1/x\}$ is a
+fundamental set of solutions of the complementary equation.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.3}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $x^2y''-xy'+y=x;   \quad y_1=x$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.4}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $y''-3y'+2y=\frac{1}{1+e^{-x}};   \quad y_1=e^{2x}$
+
+\begin{solution}
+    If $y=ue^{2x}$, then $y'=(u'+2u)e^{2x}$ and $y''=(u''+4u'+4u)e^{2x}$,
+so $y''-3y'+2y=(u''+u')e^{2x}=\frac{1}{1+e^{-x}}$ if $u'=z$, where
+(A) $z'+z=\frac{e^{-2x}}{1+e^{-x}}$. Since $z_1=e^{-x}$ is a
+solution of the complementary equation for (A), the solutions of (A)
+are of the form (B) $z=ve^{-x}$, where
+$v'e^{-x}=\frac{e^{-2x}}{1+e^{-x}}$, so
+$v'=\frac{e^{-x}}{1+e^{-x}}$. Hence, $v=-\ln(1+e^{-x})+C_1$;\;
+$u'=z=-e^{-x}\ln(1+e^{-x})+C_1e^{-x}$ (see (B));\;
+$u=(1+e^{-x})\ln(1+e^{-x})-1-e^{-x}-C_1e^{-x}+C_2$;\;
+$y=ue^{2x}=(e^{2x}+e^x)\ln(1+e^{-x})-(C_1+1)e^x+(C_2-1)e^{2x}$, or
+$y=(e^{2x}+e^x) \ln (1+e^{-x})+c_1e^{2x}+c_2e^x$. As a byproduct,
+$\{e^{2x},e^x\}$ is a fundamental set of solutions of the
+complementary equation.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.5}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $y''-2y'+y=7x^{3/2}e^x;   \quad y_1=e^x$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.6}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $4x^2y''+(4x-8x^2)y'+(4x^2-4x-1)y=4x^{1/2}e^x(1+4x);   \quad
+y_1=x^{1/2}e^x$
+
+\begin{solution}
+    If $y=ux^{1/2}e^x$, then
+$y'=u'x^{1/2}e^x+u{\left(x^{1/2}+\frac{x^{-1/2}}{2}\right)}e^x$ and
+$y''=u''x^{1/2}e^x+2u'{\left(x^{1/2}+\frac{x^{-1/2}}{2}\right)}e^x+\cdots$
+so $4x^2y''+(4x-8x^2)y'+(4x^2-4x-1)y=e^x(4x^{5/2}u''+8x^{3/2}u')
+=4x^{1/2}e^x(1+4x)$ if $u'=z$, where (A) $z'+\frac{2}{
+x}z=\frac{1+4x}{ x^2}$. Since ${\int\frac{2}{ x}\,dx}=
+2\ln|x|$, $z_1=\frac{2}{ x^2}$ is a solution of the complementary
+equation for (A). Therefore,the solutions of (A) are of the form (B)
+$z=\frac{v}{ x^2}$, where $\frac{v'}{ x^2}=\frac{1+4x}{ x^2}$,
+so $v'=1+4x$. Hence, $v=x+2x^2+C_1$;\ $u'=z=\frac{1}{
+x}+2+\frac{C_1}{ x^2}$ (see (B));\ $u=\ln x+2x-\frac{C_1}{
+x}+C_2$;\ $y=ux^{1/2}e^x=e^x(2x^{3/2}+x^{1/2}\ln
+x-C_1x^{-1/2}+C_2x^{1/2})$, or $y=e^x(2x^{3/2}+x^{1/2}\ln
+x+c_1x^{1/2}+c_2x^{-1/2})$. As a byproduct,
+$\{x^{1/2}e^x,x^{-1/2}e^{-x}\}$ is a fundamental set of solutions of
+the complementary equation.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.7}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $y''-2y'+2y=e^x\sec x;   \quad y_1=e^x\cos x$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.8}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $y''+4xy'+(4x^2+2)y=8e^{-x(x+2)};   \quad y_1=e^{-x^2}$
+
+\begin{solution}
+    If $y=ue^{-x^2}$, then $y'=u'e^{-x^2}-2xue^{-x^2}$ and
+$y''=u''e^{-x^2}-4xu'e^{-x^2}+\cdots$, so
+$y''+4xy'+(4x^2+2)y=u''e^{-x^2}=8e^{-x(x+2)}=8e^{-x^2}e^{-2x}$ if
+$u''=8e^{-2x}$. Therefore,$u'=-4e^{-2x}+C_1$;\ $u=2e^{-2x}+C_1x+C_2$,
+and $y=ue^{-x^2}=e^{-x^2}(2e^{-2x}+C_1x+C_2)$, or
+$y=e^{-x^2}(2e^{-2x}+c_1+c_2x)$. As a byproduct,
+$\{e^{-x^2},xe^{-x^2}\}$ is a fundamental set of solutions of the
+complementary equation.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.9}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $x^2y''+xy'-4y=-6x-4;  \quad y_1=x^2$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.10}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $x^2y''+2x(x-1)y'+(x^2-2x+2)y=x^3e^{2x};   \quad y_1=xe^{-x}$
+
+\begin{solution}
+    If $y=uxe^{-x}$, then $y'=u'xe^{-x}-ue^{-x}(x-1)$ and
+$y''=u''xe^{-x}-2u'e^{-x}(x-1)+\cdots$, so
+$x^2y''+2x(x-1)y'+(x^2-2x+2)y=x^3u''=x^3e^{2x}$ if $u''=e^{3x}$.
+Therefore,$u'=\frac{e^{3x}}{3}+C_1$;\;
+$u=\frac{e^{3x}}{9}+C_1x+C_2$, and
+$y=uxe^{-x}=\frac{xe^{2x}}{9}+xe^{-x}(C_1x+C_2)$, or
+$y=\frac{xe^{2x}}{9}+xe^{-x}(c_1+c_2x)$. As a byproduct,
+$\{xe^{-x},x^2e^{-x}\}$ is a fundamental set of solutions of the
+complementary equation.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.11}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $x^2y''-x(2x-1)y'+(x^2-x-1)y=x^2e^x;  \quad y_1=xe^x$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.12}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $(1-2x)y''+2y'+(2x-3)y=(1-4x+4x^2)e^x;  \quad y_1=e^x$
+
+\begin{solution}
+    If $y=ue^x$, then $y'=(u'+u)e^x$ and $y''=(u''+2u'+u)e^x$, so
+$(1-2x)y''+2y'+(2x-3)y=e^x\left[(1-2x)u''+(4-4x)u'\right]=(1-4x+4x^2)e^x$
+if $u'=z$, where (A) $z'+\frac{4-4x}{1-2x}z=1-2x$. Since
+$\int\frac{4-4x}{1-2x}\,dx=
+\int{\left(2+\frac{2}{1-2x}\right)}\,dx=2x-\ln|1-2x|$,
+$z_1=(1-2x)e^{-2x}$ is a solution of the complementary equation for
+(A). Therefore,the solutions of (A) are of the form (B)
+$z=v(1-2x)e^{-2x}$, where $v'(1-2x)e^{-2x}=(1-2x)$, so $v'=e^{2x}$.
+Hence, $v=\frac{e^{2x}}{2}+C_1$;\;
+$u'=z=\left(\frac{1}{2}+C_1e^{-2x}\right)(1-2x)$ (see (B));\;
+$u=-\frac{(2x-1)^2}{8}+C_1xe^{-2x}+C_2$;\;
+$y=ue^x=-\frac{(2x-1)^2e^x}{8}+C_1xe^{-x}+C_2e^x$, or
+$y=-\frac{(2x-1)^2e^x}{8}+c_1e^x+c_2xe^{-x}$. As a byproduct,
+$\{e^x,xe^{-x}\}$ is a fundamental set of solutions of the
+complementary equation.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.13}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $x^2y''-3xy'+4y=4x^4;  \quad y_1=x^2$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.14}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $2xy''+(4x+1)y'+(2x+1)y=3x^{1/2}e^{-x};  \quad y_1=e^{-x}$
+
+\begin{solution}
+    If $y=ue^{-x}$, then $y'=(u'-u)e^{-x}$ and $y''=(u''-2u'+u)e^{-x}$, so
+$2xy''+(4x+1)y'+(2x+1)y=e^{-x}(2xu''+u')=3x^{1/2}e^{-x}$ if $u'=z$,
+where (A) $z'+\frac{1}{2x}z=\frac{3}{2}x^{-1/2}$. Since $\int
+\frac{1}{2x}\,dx=\frac{1}{2}\ln|x|$, $z_1=x^{-1/2}$ is a solution of
+the complementary equation for (A). Therefore,the solutions of (A) are
+of the form (B) $z=vx^{-1/2}$, where
+$v'x^{-1/2}=\frac{3}{2}x^{-1/2}$, so $v'=\frac{3}{2}$. Hence,
+$v=\frac{3x}{2}+C_1$;\ $u'=z=\frac{3}{2}x^{1/2}+C_1x^{-1/2}$ (see
+(B));\ $u=x^{3/2}+2C_1x^{1/2}+C_2$;\;
+$y=ue^{-x}=e^{-x}(x^{3/2}+2C_1x^{1/2}+C_2)$, or
+$y=e^{-x}(x^{3/2}+c_1+c_2x^{1/2})$ As a byproduct, is a
+$\{e^{-x},x^{1/2}e^{-x}\}$ fundamental set of solutions of the
+complementary equation.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.15}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $xy''-(2x+1)y'+(x+1)y=-e^x;  \quad y_1=e^x$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.16}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $4x^2y''-4x(x+1)y'+(2x+3)y=4x^{5/2}e^{2x};  \quad y_1=x^{1/2}$
+
+\begin{solution}
+    If $y=ux^{1/2}$, then $y'=u'x^{1/2}+\frac{u}{2x^{1/2}}$ and
+$y''=u''x^{1/2}+\frac{u'}{ x^{1/2}}+\cdots$ so
+$4x^2y''-4x(x+1)y'+(2x+3)y=4x^{5/2}(u''-u')=4x^{5/2}e^{2x}$ if $u'=z$,
+where (A) $z'-z=e^{2x}$. Since $z_1=e^x$ is a solution of the
+complementary equation for (A), the solutions of (A) are of the form
+(B) $z=ve^x$, where $v'e^x=e^{2x}$, so $v'=e^x$. Hence, $v=e^x+C_1$;\;
+$u'=z=e^{2x}+C_1e^x$ (see (B));\ $u=\frac{e^{2x}}{2}+C_1e^x+C_2$;\;
+$y=ux^{1/2}=x^{1/2}\left(\frac{e^{2x}}{2}+C_1e^x+C_2\right)$, or
+$y=x^{1/2}\left(\frac{e^{2x}}{2}+c_1+c_2e^x\right)$. As a
+byproduct, $\{x^{1/2},x^{1/2}e^x\}$ is a fundamental set of solutions
+of the complementary equation.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.17}
+Find the general solution,
+given that $y_1$ satisfies the complementary equation. As a by-product,
+find a fundamental set of solutions of the complementary equation. $x^2y''-5xy'+8y=4x^2;  \quad y_1=x^2$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.18} Find a
+fundamental set of solutions, given that $y_1$ is a solution. $xy''+(2-2x)y'+(x-2)y=0;    \quad y_1=e^x$
+
+\begin{solution}
+    If $y=ue^x$, then $y'=(u'+u)e^x$ and $y''=(u''+2u'+u)e^x$, so
+$xy''+(2-2x)y'+(x-2)y=e^x(xu''+2u')=0$ if $\frac{u''}{
+u'}=-\frac{2}{ x}$;\ $\ln|u'|=-2\ln|x|+k$; $u'=\frac{C_1}{ x^2}$;\;
+$u=-\frac{C_1}{ x}+C_2$. Therefore,$y=ue^x=e^x\left(-\frac{C_1}{
+x}+C_2\right)$ is the general solution, and $\{e^x,e^x/x\}$ is a
+fundamental set of solutions.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.19}
+Find a
+fundamental set of solutions, given that $y_1$ is a solution. $x^2y''-4xy'+6y=0;   \quad y_1=x^2$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.20}
+Find a
+fundamental set of solutions, given that $y_1$ is a solution. $x^2(\ln |x|)^2y''-(2x \ln |x|)y'+(2+\ln |x|)y=0;   \quad y_1=\ln |x|$
+
+\begin{solution}
+    If $y=u\ln|x|$, then $y'=u'\ln|x|+\frac{u}{ x}$ and
+$y''=u''\ln|x|+\frac{2u'}{ x}\cdots$, so $x^2(\ln |x|)^2y''-(2x \ln
+|x|)y'+(2+\ln |x|)y=x^2(\ln|x|)^3u''=0$ if $u''=0$;\ $u'=C_1$;\;
+$u=C_1x+C_2$. Therefore,$y=u\ln|x|=(C_1x+C_2)\ln|x|$ is the general
+solution, and $\{\ln|x|,x\ln|x|\}$ is a fundamental set of solutions.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.21}
+Find a
+fundamental set of solutions, given that $y_1$ is a solution. $4xy''+2y'+y=0;  \quad y_1=\sin \sqrt{x}$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.22}
+Find a
+fundamental set of solutions, given that $y_1$ is a solution. $xy''-(2x+2)y'+(x+2)y=0;   \quad y_1=e^x$
+
+\begin{solution}
+    If $y=ue^x$, then $y'=u'e^x+ue^x$ and $y''=u''e^x+2u'e^x+ue^x$, so
+$xy''-(2x+2)y'+(x+2)y=e^x(xu''-2u')=0$ if $\frac{u''}{
+u'}=\frac{2}{ x}$;\ $\ln|u'|=2\ln|x|+k$;\ $u'=C_1x^2$;\;
+$u=\frac{C_1x^3}{3}+C_2$. Therefore,
+$y=ue^x=\left(\frac{C_1x^3}{3}+C_2\right)e^x$ is the general
+solution, and $\{e^x,x^3e^x\}$ is a fundamental set of solutions.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.23}
+Find a
+fundamental set of solutions, given that $y_1$ is a solution. $x^2y''-(2a-1)xy'+a^2y=0;   \quad y_1=x^a$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.24}
+Find a
+fundamental set of solutions, given that $y_1$ is a solution. $x^2y''-2xy'+(x^2+2)y=0;   \quad y_1=x \sin x$
+
+\begin{solution}
+    If $y=ux\sin x$, then $y'=u'x\sin x+u(x\cos x+\sin x)$ and
+$y''=u''x\sin x+2u'(x\cos x+\sin x)+\cdots$, so
+$x^2y''-2xy'+(x^2+2)y=(x^3\sin x)u''+2(x^3\cos x)u'=0$ if
+$\frac{u''}{ u'}=-\frac{2\cos x}{\sin x}$;\ $\ln|u'|=-2\ln|\sin
+x|+k$;\ $u'=\frac{C_1}{\sin^2x}$;\ $u=-C_1\cot x+C_2$. Therefore,
+$y=ux\sin x=x(-C_1\cos x+C_2\sin x)$ is the general solution, and
+$\{x\sin x,x\cos x\}$ is a fundamental set of solutions.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.25}
+Find a
+fundamental set of solutions, given that $y_1$ is a solution. $xy''-(4x+1)y'+(4x+2)y=0;  \quad y_1=e^{2x}$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.26}
+Find a
+fundamental set of solutions, given that $y_1$ is a solution. $4x^2(\sin x)y''-4x(x\cos x+\sin x)y'+(2x\cos x+3\sin x)y=0;  \quad
+y_1=x^{1/2}$
+
+\begin{solution}
+    If $y=ux^{1/2}$, then $y'=u'x^{1/2}+\frac{u}{2x^{1/2}}$ and
+$y''=u''x^{1/2}+\frac{u'}{ x^{1/2}}+\cdots$ so $4x^2(\sin
+x)y''-4x(x\cos x+\sin x)y'+(2x\cos x+3\sin x)y=4x^{5/2}(u''\sin
+x-u'\cos x)=0$ if $\frac{u''}{ u'}=\frac{\cos x}{\sin x}$;\;
+$\ln|u'|=\ln|\sin x|+k$;\ $u'=C_1\sin x$;\ $u=-C_1\cos x+C_2$.
+Therefore,$y=ux^{1/2}=(-C_1\cos x+C_2)x^{1/2}$ is the general
+solution, and $\{x^{1/2},x^{1/2}\cos x\}$ is a fundamental set of
+solutions.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.27}
+Find a
+fundamental set of solutions, given that $y_1$ is a solution. $4x^2y''-4xy'+(3-16x^2)y=0;  \quad y_1=x^{1/2}e^{2x}$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.28}
+Find a
+fundamental set of solutions, given that $y_1$ is a solution. $(2x+1)xy''-2(2x^2-1)y'-4(x+1)y=0;  \quad y_1=1/x$
+
+\begin{solution}
+    If $y=\frac{u}{ x}$, then $y'=\frac{u'}{ x}-\frac{u}{ x^2}$ and
+$y''=\frac{u''}{ x}-\frac{2u'}{ x^2}+\cdots$, so
+$(2x+1)xy''-2(2x^2-1)y'-4(x+1)y=(2x+1)u''-(4x+4)u'=0$ if
+$\frac{u''}{ u'}=\frac{4x+4}{2x+1}=2+\frac{2}{2x+1}$;\;
+$\ln|u'|=2x+\ln|2x+1|+k$; $u'=C_1(2x+1)e^{2x}$;\ $u=C_1xe^{2x}+C_2$.
+Therefore,$y=\frac{u}{ x}=C_1e^{2x}+\frac{C_2}{ x}$ is the general
+solution, and $\{1/x,e^{2x}\}$ is a fundamental set of solutions.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.29}
+Find a
+fundamental set of solutions, given that $y_1$ is a solution. $(x^2-2x)y''+(2-x^2)y'+(2x-2)y=0;  \quad y_1=e^x$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.30}
+Find a
+fundamental set of solutions, given that $y_1$ is a solution. $xy''-(4x+1)y'+(4x+2)y=0;  \quad y_1=e^{2x}$
+
+\begin{solution}
+    If $y=ue^{2x}$, then $y'=(u'+2u)e^{2x}$ and $y''=(u''+4u'+4u)e^{2x}$,
+so $xy''-(4x+1)y'+(4x+2)y =e^{2x}(xu''-u')=0$ if $\frac{u''}{
+u'}=\frac{1}{ x}$;\ $\ln|u'|=\ln|x|+k$; $u'=C_1x$;\;
+$u=\frac{C_1x^2}{ 2}+C_2$. Therefore,
+$y=ue^{2x}=e^{2x}\left(\frac{C_1x^2}{2}+C_2\right)$ is the general
+solution, and $\{e^{2x},x^2e^{2x}\}$ is a fundamental set of
+solutions.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.31}
+Solve the
+initial value problem, given that $y_1$ satisfies the complementary
+equation. $x^2y''-3xy'+4y=4x^4,\quad y(-1)=7,\quad  y'(-1)=-8;   \quad y_1=x^2$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.32}
+Solve the
+initial value problem, given that $y_1$ satisfies the complementary
+equation. $(3x-1)y''-(3x+2)y'-(6x-8)y=0, \quad   y(0)=2,\;  y'(0)=3;    \quad
+y_1=e^{2x}$
+
+\begin{solution}
+    If $y=ue^{2x}$, then $y'=(u'+2u)e^{2x}$ and $y''=(u''+4u'+4u)e^{2x}$,
+so
+$(3x-1)y''-(3x+2)y'-(6x-8)y=e^{2x}\left[(3x-1)u''+(9x-6)u'\right]=0$
+if $\frac{u''}{ u'}=-\frac{9x-6}{3x-1}=-3+\frac{3}{3x-1}$.
+Therefore,$\ln|u'|=-3x+\ln|3x-1|+k$, so $u'=C_1(3x-1)e^{-3x}$,
+$u=-C_1xe^{-3x}+C_2$. Therefore,the general solution is
+$y=ue^{2x}=-C_1xe^{-x}+C_2e^{2x}$, or (A) $y=c_1e^{2x}+c_2xe^{-x}$.
+Now $y(0)=2\Rightarrow c_1=2$. Differentiating (A) yields
+$y'=2c_1e^{2x}+c_2(e^{-x}-xe^{-x})$. Now $y'(0)=3\Rightarrow
+3=2c_1+c_2$, so $c_2=-1$ and $y=2e^{2x}-xe^{-x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.33}
+Solve the
+initial value problem, given that $y_1$ satisfies the complementary
+equation. $(x+1)^2y''-2(x+1)y'-(x^2+2x-1)y=(x+1)^3e^x, \quad  y(0)=1,\quad y'(0)=~-1$;
+
+$y_1=(x+1)e^x$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.34} Solve the
+initial value problem and graph the solution, given that $y_1$
+satisfies the complementary equation.
+$x^2y''+2xy'-2y=x^2, \quad   y(1)=\frac{5}{4},\;
+y'(1)=\frac{3}{2};   \quad y_1=x$
+
+\begin{solution}
+    If $y=ux$, then $y'=u'x+u$  and $y''=u''x+2u'$, so
+$x^2y''+2xy'-2y=x^3u''+4x^2u'=x^2$
+if $u'=z$, where  (A) $z'+\frac{4}{ x}z=\frac{1}{ x}$.
+Since $\int\frac{4}{ x}\,dx=4\ln|x|$,
+$z_1=\frac{1}{ x^4}$
+is a solution of the complementary equation for  (A). Therefore,the
+solutions of (A) are of the form (B) $z=\frac{v}{ x^4}$, where
+$\frac{v'}{ x^4}=\frac{1}{ x}$, so $v'=x^3$.
+Hence, $v=\frac{x^4}{ 4}+C_1$;\;
+$u'=z=\frac{1}{4}+\frac{C_1}{ x^4}$ (see (B));\;
+$u=\frac{x}{4}-\frac{C_1}{3x^3}+C_2$.
+ Therefore,the general solution is
+$y=ux=\frac{x^2}{4}-\frac{C_1}{3x^2}+C_2x$, or
+(C) $y=\frac{x^2}{4}+c_1x+\frac{c_2}{ x^2}$.
+Differentiating (C) yields
+ $y'=\frac{x}{2}+c_1-2\frac{c_2}{ x^3}.$
+Now $y(1)=\frac{5}{4},\ y'(1)=\frac{3}{2}\Rightarrow
+c_1+c_2=1,\ c_1-2c_2=1$, so $c_1=1$, $c_2=0$ and
+$y=\frac{x^2}{4}+x$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.35} Solve the
+initial value problem and graph the solution, given that $y_1$
+satisfies the complementary equation.
+$(x^2-4)y''+4xy'+2y=x+2, \quad  y(0)=-\frac{1}{3},\quad y'(0)=-1;
+\quad y_1=\frac{1}{x-2}$
+\end{problem}
+
+\begin{problem}\label{exer:5.6.36}
+Suppose $p_1$ and $p_2$ are continuous on $(a,b)$. Let $y_1$
+be a solution of
+\begin{equation}\label{eq:eqA5.6.36}
+ y''+p_1(x)y'+p_2(x)y=0
+\end{equation}
+that has no zeros on $(a,b)$, and let $x_0$ be in $(a,b)$.
+Use reduction of order to show that $y_1$ and
+$$
+y_2(x)=y_1(x)\int^x_{x_0}\frac{1}{y^2_1(t)} \exp
+\left(-\int^t_{x_0}p_1(s)\, ds\right)\,dt
+$$
+form a fundamental set of solutions of \ref{eq:eqA5.6.36} on
+$(a,b)$.
+(This exercise is related to Exercise~\ref{exer:5.1.9}.)
+
+\begin{solution}
+    If $y=uy_1$, then $y'=u'y_1+uy_1'$  and $y''=u''y_1+2u'y_1'+uy_1''$,
+so  $y''+p_1(x)y'+p_2(x)y=y_1u''+(2y_1'+p_1y_1)u'=0$ if $u$
+is any function such that
+(B) $\frac{u''}{ u'}=-2\frac{y_1'}{ y_1}-p_1$. If
+ $\ln|u'(x)|=-2\ln|y_1(x)|-\frac{\int_{x_0}^x} p_1(t)\,dt$,
+then $u$ satisfies (B); therefore, if
+(C) $u'(x)=\frac{1}{ y_1^2(x)}\exp\left(-\int_{x_0}^x
+p_1(s)\,ds\right)$, then $u$ satisfies (B).
+Since $u(x)=\int^x_\frac{x_0}{1}{ y^2_1(t)} \exp
+\left(-\int^t_{x_0}p_1(s) ds\right)$ satisfies (C), $y_2=uy_1$ is a
+solution of (A) on $(a,b)$. Since $\frac{y_2}{ y_1}=u$ is
+nonconstant, Theorem~\ref{thmtype:5.1.6} implies that $\{y_1,y_2\}$ is a
+fundamental set of solutions of (A) on $(a,b)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.37}
+The nonlinear first order equation
+\begin{equation}\label{eq:eqA5.6.37}
+y'+y^2+p(x)y+q(x)=0
+\end{equation}
+is a
+\href{http://http://www-history.mcs.st-and.ac.uk/Indexes/Riccati.html}
+{Riccati equation}.  (See
+Exercise~\ref{exer:2.4.55}.) Assume that $p$ and $q$ are continuous.
+\begin{enumerate}
+\item %(a)
+Show that $y$ is a solution of \ref{eq:eqA5.6.37} if and only if $y={z'/z}$, where
+\begin{equation}\label{eq:eqB5.6.37}
+z''+p(x)z'+q(x)z=0.
+\end{equation}
+
+\item %(b)
+ Show that the general solution of \ref{eq:eqA5.6.37} is
+\begin{equation}\label{eq:eqC5.6.37}
+y=\frac{c_1z'_1+c_2z'_2}{c_1z_1+c_2z_2},
+\end{equation}
+where $\{z_1,z_2\}$ is a fundamental
+set of solutions of \ref{eq:eqB5.6.37} and $c_1$ and $c_2$ are
+arbitrary constants.
+
+\item %(c)
+Does the formula \ref{eq:eqC5.6.37} imply that the first order equation
+\ref{eq:eqA5.6.37} has a two--parameter family of solutions?
+Explain your answer.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.38}
+Use a method suggested by Exercise~\ref{exer:5.6.37}  to find all
+solutions of the equation.
+
+\begin{enumerate}
+
+\item $y'+y^2+k^2=0$
+
+\begin{solution}
+    The associated linear equation is (A) $z''+k^2z=0$, with
+characteristic polynomial $p(r)=r^2+k^2$. The general solution of (A)
+is $z=c_1\cos kx+c_2\sin kx$. Since $z'=-kc_1\sin kx+kc_2\cos kx$,
+$y=\frac{z'}{ z}=\frac{-kc_1\sin kx+kc_2\cos kx}{ c_1 \cos
+kx+c_2\sin kx}$.
+\end{solution}
+
+\item $y'+y^2-3y+2=0$
+
+\begin{solution}
+    The associated linear equation is (A) $z''-3z'+2z=0$, with
+characteristic polynomial $p(r)=r^2-3r+2=(r-1)(r-2)$. The general
+solution of (A) is $z=c_1e^x+c_2e^{2x}$. Since $z'=c_1e^x+c_2e^{2x}$,
+$y=\frac{z'}{ z}=\frac{c_1+2c_2e^x}{ c_1+c_2e^x}$.
+\end{solution}
+
+\item $y'+y^2+5y-6=0$
+
+\begin{solution}
+    The associated linear equation is (A) $z''+5z'-6z=0$, with
+characteristic polynomial $p(r)=r^2+5r-6=(r+6)(r-1)$. The general
+solution of (A) is $z=c_1e^{-6x}+c_2e^x$. Since
+$z'=-6c_1e^{-6x}+c_2e^x$, $y=\frac{z'}{ z}=\frac{-6c_1+c_2e^{7x}}{
+c_1+c_2e^{7x}}$.
+\end{solution}
+
+\item $y'+y^2+8y+7=0$
+
+\begin{solution}
+    The associated linear equation is (A) $z''+8z'+7z=0$, with
+characteristic polynomial $p(r)=r^2+8r+7=(r+7)(r+1)$. The general
+solution of (A) is $z=c_1e^{-7x}+c_2e^{-x}$. Since
+$z'=-7c_1e^{-7x}-2c_2e^{-x}$, $y=\frac{z'}{
+z}=-\frac{7c_1+c_2e^{6x}}{ c_1+c_2e^{6x}}$.
+\end{solution}
+
+\item $y'+y^2+14y+50=0$
+
+\begin{solution}
+    The associated linear equation is (A) $z''+14z'+50z=0$, with
+characteristic polynomial $p(r)=r^2+14r+50=(r+7)^2+1$. The general
+solution of (A) is $z=e^{-7x}(c_1\cos x+c_2\sin x)$. Since
+$z'=-7e^{-7x}(c_1\cos x+c_2\sin x)+ e^{-7x}(-c_1\sin x+c_2\cos
+x)=-(7c_1-c_2)\cos x-(c_1+7c_2)\sin x$, $y=\frac{z'}{
+z}=-\frac{(7c_1-c_2)\cos x+(c_1+7c_2)\sin x}{ c_1\cos x+c_2\sin x}$.
+\end{solution}
+
+\item $6y'+6y^2-y-1=0$
+
+\begin{solution}
+    The given equation is equivalent to (A)
+$y'+y^2-\frac{1}{6}y-\frac{1}{6}=0$. The associated linear
+equation is (B) $z''-\frac{1}{6}z'-\frac{1}{6}z=0$, with
+characteristic polynomial
+$p(r)=r^2-\frac{1}{6}r-\frac{1}{6}=\left(r+\frac{1}{3}\right)
+\left(r-\frac{1}{2}\right)$. The general solution of (B) is
+$z=c_1e^{-x/3}+c_2e^{x/2}$. Since
+$z'=-\frac{c_1}{3}e^{-x/3}+\frac{c_2}{2}e^{x/2}$, $y=\frac{z'}{
+z} =\frac{-2c_1+3c_2e^{5x/6}}{ 6(c_1+c_2e^{5x/6})}$.
+\end{solution}
+
+\item $36y'+36y^2-12y+1=0$
+
+\begin{solution}
+    The given equation is equivalent to (A)
+$y'+y^2-\frac{1}{3}y+\frac{1}{36}=0$. The associated linear
+equation is (B) $z''-\frac{1}{3}z'+\frac{1}{36}z=0$, with
+characteristic polynomial $p(r)=r^2-\frac{1}{3}r+\frac{1}{36}=
+\left(r-\frac{1}{6}\right)^2$. The general solution of (B) is
+$z=e^{x/6}(c_1+c_2x)$. Since
+$z'=\frac{e^{x/6}}{6}(c_1+c_2x)+c_2e^{x/6}=\frac{e^{x/6}}{6}
+(c_1+c_2(x+6))$, $y=\frac{z'}{
+z}=\frac{c_1+c_2(x+6)}{6(c_1+c_2x)}$.
+\end{solution}
+
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.39}
+Use a method suggested by Exercise~\ref{exer:5.6.37} and reduction of
+order to find all solutions of the equation, given that $y_1$ is
+a solution.
+
+\begin{enumerate}
+\item %(a)
+$x^2(y'+y^2)-x(x+2)y+x+2=0;  \quad y_1=1/x$
+
+\item %(b)
+$y'+y^2+4xy+4x^2+2=0;   \quad y_1=-2x$
+
+\item %(c)
+$(2x+1)(y'+y^2)-2y-(2x+3)=0;   \quad y_1=-1$
+
+\item %(d)
+$(3x-1)(y'+y^2)-(3x+2)y-6x+8=0;   \quad y_1=2$
+
+\item %(e)
+$x^2(y'+y^2)+xy+x^2-\frac{1}{4}=0;
+\quad y_1=-\tan x -\frac{1}{2x}$
+
+\item %(f)
+$x^2(y'+y^2)-7xy+7=0;  \quad y_1=1/x$
+
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.6.40}
+The nonlinear first order equation
+\begin{equation}\label{eq:eqA5.6.40}
+ y'+r(x)y^2+p(x)y+q(x)=0
+\end{equation}
+is the
+\href{http://http://www-history.mcs.st-and.ac.uk/Indexes/Riccati.html}
+{generalized Riccati equation}.
+(See Exercise~\ref{exer:2.4.55}.)
+Assume that $p$ and $q$ are continuous and $r$ is differentiable.
+
+\begin{enumerate}
+\item %(a)
+Show that $y$ is a solution of \ref{eq:eqA5.6.40} if and only if
+ $y={z'/rz}$,  where \begin{equation}\label{eq:eqB5.6.40}
+z''+\left[p(x)-\frac{r'(x)}{r(x)}\right]
+z'+r(x)q(x)z=0.
+\end{equation}
+
+\begin{solution}
+    Suppose that $z$ is a solution of (B)
+and let $y=\frac{z'}{ rz}$. Then
+(D) $\frac{z''}{ rz}+\left[p(x)-\frac{r'(x)}{ r(x)}\right]
+y+q(x)=0$
+and  $y'=\frac{z''}{ rz}-\frac{1}{ r}\left(\frac{z'}{
+z}\right)^2-\frac{r'z'}{ r^2z}=\frac{z''}{
+rz}-ry^2-\frac{r'}{ r}y$, so
+$\frac{z''}{ rz}=y'+ry^2+\frac{r'}{ r}y$. Therefore,
+(D) implies that
+$y$
+satisfies (A). Now suppose that $y$ is a solution of (A) and let $z$
+be any function such that $z'=ryz$. Then $z''=r'yz+ry'z+ryz'=
+\frac{r'}{ r}z'+
+(y'+ry^2)rz
+=\frac{r'}{ r}z'-(p(x)y+q(x))rz$, so
+$z''-\frac{r'}{ r}z'+p(x)ryz+q(x)rz=0$,
+which implies that $z$ satisfies (B), since $ryz=z'$.
+\end{solution}
+
+\item %(b)
+ Show that the general solution of \ref{eq:eqA5.6.40} is
+$$
+ y=\frac{c_1z'_1+c_2z'_2}{r(c_1z_1+c_2z_2)},
+$$
+where $\{z_1,z_2\}$ is a fundamental set of solutions of
+\ref{eq:eqB5.6.40} and $c_1$ and $c_2$ are arbitrary constants.
+
+\begin{solution}
+    If $\{z_1,z_2\}$ is a fundamental set of solutions of
+(B) on  $(a,b)$, then $z=c_1z_1+c_2z_2$ is the general solution of
+(B) on $(a,b)$. This and part (a) imply that (C) is the general
+solution of (A) on $(a,b)$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\end{document}

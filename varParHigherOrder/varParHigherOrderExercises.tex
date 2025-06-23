@@ -1,0 +1,1295 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+\begin{problem}\label{exer:9.4.1}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$x^3y'''-x^2(x+3)y''+2x(x+3)y'-2(x+3)y=-4x^4$;\quad
+$\{x,\,x^2,\,xe^x\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.2}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$y'''+6xy''+(6+12x^2)y'+(12x+8x^3)y=x^{1/2}e^{-x^2}$;\quad
+ $\{e^{-x^2},\,xe^{-x^2},\,x^2e^{-x^2}\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+e^{-x^2}&xe^{-x^2}&x^2e^{-x^2}\\
+-2xe^{-x^2}&e^{-x^2}(1-2x^2)&2x
+e^{-x^2}(1-x^2)\\
+e^{-x^2}(4x^2-2)&2xe^{-x^2}(2x^2-3)&2e^{-x^2}(2x^4-5x^2+1)
+\end{array}\right|=2e^{-3x^2}$;
+
+$W_1=\left|\begin{array}{cccc}
+xe^{-x^2}&x^2e^{-x^2}\\
+e^{-x^2}(1-2x^2)&2xe^{-x^2}(1-x^2)
+\end{array}\right|=x^2e^{-2x^2}$;
+$W_2=\left|\begin{array}{cccc}
+e^{-x^2}&x^2e^{-x^2}\\
+-2xe^{-x^2}&2xe^{-x^2}(1-x^2)
+\end{array}\right|=2xe^{-2x^2}$;
+$W_3=\left|\begin{array}{cccc}
+e^{-x^2}&xe^{-x^2}\\
+-2xe^{-x^2}&e^{-x^2}(1-2x^2)
+\end{array}\right|=e^{-2x^2}$;
+$u_1'=\frac{FW_1}{P_0W}=\frac{1}{2}x^{5/2}$;
+$u_2'=-\frac{FW_2}{P_0W}=-x^{3/2}$;
+$u_3'=\frac{FW_2}{P_0W}= \sqrt{x}/2$;
+$u_1=x^{7/2}/7$;
+$u_2=-\frac{2}{5}x^{5/2}$;
+$u_3=x^{3/2}/3$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=\frac{8}{105}e^{-x^2}x^{7/2}$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:9.4.3} 
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$x^3y'''-3x^2y''+6xy'-6y=2x$;
+ \quad  $\{x,x^2,x^3\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.4}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$x^2y'''+2xy''-(x^2+2)y'=2x^2$;\quad   $\{1,\,e^x/x,\,e^{-x}/x\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+1&\frac{e^x}{x}&\frac{e^{-x}}{x}\\
+0&\frac{e^x(x-1)}{x^2}&-\frac{e^{-x}(x+1)}{x^2}\\
+0&\frac{e^x(x^2-2x+2)}{x^3}&\frac{e^{-x}(x^2+2x+2)}{x^3}
+\end{array}\right|=2/x^2$;
+$W_1=\left|\begin{array}{cccc}
+\frac{e^x}{x}&\frac{e^{-x}}{x}
+\\\frac{e^x(x-1)}{x^2}&-\frac{e^{-x}(x+1)}{x^2}
+\end{array}\right|=-\frac{2}{x^2}$;
+$W_2=
+\left|\begin{array}{cccc}1&\frac{e^{-x}}{x}\\
+0&-\frac{e^{-x}(x+1)}{x^2}
+\end{array}\right|=-\frac{e^{-x}(x+1)}{x^2}$;
+$W_3=\left|\begin{array}{cccc}
+1&\frac{e^x}{x}\\
+0&\frac{e^x(x-1)}{x^2}
+\end{array}\right|=\frac{e^x(x-1)}{x^2}$;
+$u_1'=\frac{FW_1}{P_0W}=-2$;
+$u_2'=-\frac{FW_2}{P_0W}=e^{-x}(x+1)$;
+$u_3'=\frac{FW_2}{P_0W}=e^x(x-1)$;
+$u_1=-2x$;
+$u_2=-e^{-x}(x+2)$;
+$u_3=e^x(x-2)$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=-2(x^2+2)/x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.5}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$x^3y'''-3x^2(x+1)y''+3x(x^2+2x+2)y'-(x^3+3x^2+6x+6)y=x^4e^{-3x}$;\quad
+
+$\{xe^x,\,x^2e^x,\,x^3e^x\}$
+\end{problem}
+
+
+\begin{problem}\label{exer:9.4.6}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$x(x^2-2)y'''+(x^2-6)y''+x(2-x^2)y'+(6-x^2)y=2(x^2-2)^2$; \quad
+ $\{e^x,\,e^{-x},\,1/x\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+e^x&e^{-x}&\frac{1}{x}\\
+e^x&-e^{-x}&-{1/x^2}\\e^x&e^{-x}&\frac{2}{x^3}
+\end{array}\right|=\frac{2(x^2-2)}{x^3}$;
+$W_1=\left|\begin{array}{cccc}
+e^{-x}&\frac{1}{x}\\-e^{-x}&-\frac{1}{x^2}
+\end{array}\right|=\frac{e^{-x}(x-1)}{x^2}$;
+$W_2=\left|\begin{array}{cccc}
+e^x&\frac{1}{x}\\e^x&-\frac{1}{x^2}
+\end{array}\right|=-\frac{e^x(x+1)}{x^2}$;
+$W_3=\left|\begin{array}{cccc}
+e^x&e^{-x}\\e^x&-e^{-x}
+\end{array}\right|=-2$;
+$u_1'=\frac{FW_1}{P_0W}=e^{-x}(x-1)$;
+$u_2'=-\frac{FW_2}{P_0W}=e^x(x+1)$;
+$u_3'=\frac{FW_2}{P_0W}=-2x^2$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=-\frac{2}{3}x^2$. 
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.7}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$xy'''-(x-3)y''-(x+2)y'+(x-1)y=-4e^{-x}$; \quad
+$\{e^x,\,e^x/x,\,e^{-x}/x\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.8}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$4x^3y'''+4x^2y''-5xy'+2y=30x^2$; \quad  $\{\sqrt x,\,1/\sqrt x,\,x^2\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+\sqrt{x}&\frac{1}{\sqrt{x}}&x^2\\
+\frac{1}{2\sqrt{x}}&-\frac{1}{2x^{3/2}}&2x\\
+-\frac{1}{4x^{3/2}}&\frac{3}{4x^{5/2}}&2
+\end{array}\right|=-\frac{15}{4x}$;
+$W_1=\left|\begin{array}{cccc}
+\frac{1}{\sqrt{x}}&x^2\\
+-\frac{1}{2x^{3/2}}&2x
+\end{array}\right|=\frac{5\sqrt{x}}{2}$;
+$W_2=\left|\begin{array}{cccc}
+\sqrt{x}&x^2\\
+\frac{1}{2\sqrt{x}}&2x
+\end{array}\right|=\frac{3x^{3/2}}{2}$;
+$W_3=\left|\begin{array}{cccc}
+\sqrt{x}&\frac{1}{\sqrt{x}}\\
+\frac{1}{2\sqrt{x}}&-\frac{1}{2x^{3/2}}
+\end{array}\right|=-\frac{1}{x}$;
+$u_1'=\frac{FW_1}{P_0W}=-5\sqrt{x}$;
+$u_2'=-\frac{FW_2}{P_0W}=3x^{3/2}$;
+$u_3'=\frac{FW_2}{P_0W}=\frac{2}{x}$;
+$u_1=-\frac{10}{3}x^{3/2}$;
+$u_2=\frac{6}{5}x^{5/2}$;
+$u_3=2\ln|x|$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=2x^2\ln|x|-\frac{32}{15}x^2$.
+Since $-\frac{32}{15}x^2$ satisfies the complementary equation
+we take $y_p=\ln|x|$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.9}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$x(x^2-1)y'''+(5x^2+1)y''+2xy'-2y=12x^2$; \quad
+$\{x,\,1/(x-1),\,1/(x+1)\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.10}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$x(1-x)y'''+(x^2-3x+3)y''+xy'-y=2(x-1)^2$; \quad
+$\{x,\,1/x,e^x/x\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+x&1/x&\frac{e^x}{x}\\1&-\frac{1}{x^2}&\frac{e^x(x-1)}{x^2}\\
+0&\frac{2}{x^3}&\frac{e^x(x^2-2x+2)}{x^3}
+\end{array}\right|=\frac{2e^x(1-x)}{x^3}$;
+$W_1=\left|\begin{array}{cccc}
+\frac{1}{x}&\frac{e^x}{x}\\-\frac{1}{x^2}&\frac{e^x(x-1)}{x^2}
+\end{array}\right|=\frac{e^x}{x^2}$;
+$W_2=\left|\begin{array}{cccc}
+x&\frac{e^x}{x}\\
+1&\frac{e^x(x-1)}{x^2}
+\end{array}\right|=\frac{e^x(x-2)}{x}$;
+$W_3=\left|\begin{array}{cccc}
+x&\frac{1}{x}\\
+1&-\frac{1}{x^2}
+\end{array}\right|=-\frac{2}{x}$;
+$u_1'=\frac{FW_1}{P_0W}=1$;
+$u_2'=-\frac{FW_2}{P_0W}=x(2-x)$;
+$u_3'=\frac{FW_2}{P_0W}=-2xe^{-x}$;
+$u_1=x$;
+$u_2=\frac{x^2(3-x)}{3}$;
+$u_3=2e^{-x}(x+1)$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=\frac{2x^3+3x^2+6x+6}{3x}$.
+Since $x+\frac{2}{x}$ satisfies the complementary equation
+we take $y_p=\frac{2x^2+6}{3}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.11}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$x^3y'''+x^2y''-2xy'+2y=x^2$;  \quad  $\{x,\,x^2,\,1/x\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.12} 
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$xy'''-y''-xy'+y=x^2$; \quad
+$\{x,\,e^x,\,e^{-x}\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}x&e^x&e^{-x}\\
+1&e^x&-e^{-x}\\0&e^x&e^{-x}
+\end{array}\right|=2x$;
+$W_1=\left|\begin{array}{cccc}
+e^x&e^{-x}\\e^x&-e^{-x}
+\end{array}\right|=-2$;
+$W_2=\left|\begin{array}{cccc}
+x&e^{-x}\\1&-e^{-x}
+\end{array}\right|=-e^{-x}(x+1)$;
+$W_3=\left|\begin{array}{cccc}x&e^x\\1&e^x
+\end{array}\right|=e^x(x-1)$;
+$u_1'=\frac{FW_1}{P_0W}=-1$;
+$u_2'=-\frac{FW_2}{P_0W}=e^{-x}(x+1)/2$;
+$u_3'=\frac{FW_2}{P_0W}=e^x(x-1)/2$;
+$u_1=-x$;
+$u_2=-e^{-x}(x+2)/2$;
+$u_3=e^x(x-2)/2$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=-x^2-2$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.13}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$xy^{(4)}+4y'''=6 \ln |x|$; \quad   $\{1,\,x,\,x^2,\,1/x\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.14}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$16x^4y^{(4)}+96x^3y'''+72x^2y''-24xy'+9y=96x^{5/2}$; \quad
+$\{\sqrt x,\,1/\sqrt x,\,x^{3/2},\,x^{-3/2}\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+\sqrt{x}&1/\sqrt{x}&x^{3/2}&\frac{1}{x^{3/2}}
+\\\frac{1}{2\sqrt{x}}&-\frac{1}{2x^{3/2}}&\frac{3\sqrt{x}}{2}&-\frac{3}{2x^{5/2}}\\
+-\frac{1}{4x^{3/2}}&\frac{3}{4x^{5/2}}&\frac{3}{4\sqrt{x}}&\frac{15}{4x^{7/2}}\\
+\frac{3}{8x^{5/2}}&-\frac{15}{8x^{7/2}}&-\frac{3}{8x^{3/2}}&-\frac{105}{8x^{9/2}}
+\end{array}\right|=\frac{12}{x^6}$;
+$W_1=
+\left|\begin{array}{cccc}
+\frac{1}{\sqrt{x}}&x^{3/2}&\frac{1}{x^{3/2}}\\
+-\frac{1}{2x^{3/2}}&\frac{3\sqrt{x}}{2}&-\frac{3}{2x^{5/2}}\\
+\frac{3}{4x^{5/2}}&\frac{3}{4\sqrt{x}}&\frac{15}{4x^{7/2}}
+\end{array}\right|=\frac{6}{x^{7/2}}$;
+$W_2=\left|\begin{array}{cccc}
+\sqrt{x}&x^{3/2}&\frac{1}{x^{3/2}}\\
+\frac{1}{2\sqrt{x}}&\frac{3\sqrt{x}}{2}&-\frac{3}{2x^{5/2}}\\
+-\frac{1}{4x^{3/2}}&\frac{3}{4\sqrt{x}}&\frac{15}{4x^{7/2}}
+\end{array}\right|=\frac{6}{x^{5/2}}$;
+$W_3=\left|\begin{array}{cccc}
+\sqrt{x}&\frac{1}{\sqrt{x}}&\frac{1}{x^{3/2}}\\
+\frac{1}{2\sqrt{x}}&-\frac{1}{2x^{3/2}}&-\frac{3}{2x^{5/2}}\\
+-\frac{1}{4x^{3/2}}&\frac{3}{4x^{5/2}}&\frac{15}{4x^{7/2}}
+\end{array}\right|=-\frac{2}{x^{9/2}}$;
+$W_4=\left|\begin{array}{cccc}
+\sqrt{x}&\frac{1}{\sqrt{x}}&x^{3/2}\\
+\frac{1}{2\sqrt{x}}&-\frac{1}{2x^{3/2}}&\frac{3\sqrt{x}}{2}\\
+-\frac{1}{4x^{3/2}}&\frac{3}{4x^{5/2}}&\frac{3}{4\sqrt{x}}
+\end{array}\right|=-\frac{2}{x^{3/2}}$;
+$u_1'=-\frac{FW_1}{P_0W}=-3x$;
+$u_2'=\frac{FW_2}{P_0W}=3x^2$;
+$u_3'=-\frac{FW_2}{P_0W}=1$;
+$u_4'=\frac{FW_4}{P_0W}=-x^3$;
+$u_1=-\frac{3x^2}{2}$;
+$u_2=x^3$;
+$u_3=x$;
+$u_4=-\frac{x^4}{4}$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=\frac{x^{5/2}}{4}$. 
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.15}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$x(x^2-6)y^{(4)}+2(x^2-12)y'''+x(6-x^2)y''+2(12-x^2)y'=2(x^2-6)^2$; \quad
+
+ $\{1,\,1/x,\,e^x,\,e^{-x}\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.16}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$x^4y^{(4)}-4x^3y'''+12x^2y''-24xy'+24y=x^4$; \quad
+$\{x,\,x^2,\,x^3,\,x^4\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}x&x^2&x^3&x^4\\
+1&2x&3x^2&4x^3\\0&2&6x&12x^2\\0&0&6&24x
+\end{array}\right|=12x^4$;
+$W_1=\left|\begin{array}{cccc}x^2&x^3&x^4\\
+2x&3x^2&4x^3\\2&6x&12x^2\end{array}\right|=2x^6$;
+$W_2=\left|\begin{array}{cccc}x&x^3&x^4\\
+1&3x^2&4x^3\\0&6x&12x^2\end{array}\right|=6x^5$;
+$W_3=\left|\begin{array}{cccc}x&x^2&x^4\\
+1&2x&4x^3\\0&2&12x^2\end{array}\right|=6x^4$;
+$W_4=\left|\begin{array}{cccc}x&x^2&x^3\\
+1&2x&3x^2\\0&2&6x\end{array}\right|=2x^3$;
+$u_1'=-\frac{FW_1}{P_0W}=-\frac{x^2}{6}$;
+$u_2'=\frac{FW_2}{P_0W}=\frac{x}{2}$;
+$u_3'=-\frac{FW_2}{P_0W}=-\frac{1}{2}$;
+$u_4'=\frac{FW_4}{P_0W}=\frac{1}{6x}$;
+$u_1=-\frac{x^3}{18}$;
+$u_2=\frac{x^2}{4}$;
+$u_3=-\frac{x}{2}$;
+$u_4=\frac{\ln|x|}{6}$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=\frac
+{x^4\ln|x|}{6}-\frac{11x^4}{36}$.
+Since $-\frac{11x^4}{36}$ satisfies the complementary equation we
+take
+$y_p=\frac{x^4\ln|x|}{6}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.17}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$x^4y^{(4)}-4x^3y'''+2x^2(6-x^2)y''+4x(x^2-6)y'+(x^4-4x^2+24)y=4x^5e^x$;
+\quad
+
+ $\{xe^x,\,x^2e^x,\,xe^{-x},\,x^2e^{-x}\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.18}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$x^4y^{(4)}+6x^3y'''+2x^2y''-4xy'+4y=12x^2$;   \quad
+$\{x,x^2,1/x,1/x^2\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+x&x^2&1/x&1/x^2\\
+1&2x&-1/x^2&-2/x^3\\
+0&2&2/x^3&6/x^4\\0&0&-6/x^4&-24/x^5
+\end{array}\right|=-72/x^6$;
+$W_1=\left|\begin{array}{cccc}
+x^2&1/x&1/x^2\\2x&-1/x^2&-2/x^3
+\\2&2/x^3&6/x^4\end
+{array}\right|=-12/x^4$;
+$W_2=\left|\begin{array}{cccc}
+x&1/x&1/x^2\\1&-1/x^2&-2/x^3\\
+0&2/x^3&6/x^4\end{array}\right|=-6/x^5$;
+$W_3=\left|\begin{array}{cccc}
+x&x^2&1/x^2\\1&2x&-2/x^3\\
+0&2&6/x^4\end{array}\right|=12/x^2$;
+$W_4=\left|\begin{array}{cccc}
+x&x^2&1/x\\1&2x&-1/x^2\\
+0&2&2/x^3\end{array}\right|=6/x$;
+$u_1'=-\frac{FW_1}{P_0W}=-2$;
+$u_2'=\frac{FW_2}{P_0W}=1/x$;
+$u_3'=-\frac{FW_2}{P_0W}=2x^2$;
+$u_4'=\frac{FW_4}{P_0W}=-x^3$;
+$u_1=-2x$;
+$u_2=\ln|x|$;
+$u_3=2x^3/3$;
+$u_4=-x^4/4$;
+$y_p=u_1y_1+u_2y_2+u_3y_3= x^2\ln|x|-19x^2/12$.
+Since $-19x^2/12$ satisfies the complementary equation we take
+$y_p= x^2\ln|x|$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.19}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$xy^{(4)}+4y'''-2xy''-4y'+xy=4e^x$; \quad
+$\{e^x,\,e^{-x},\,e^x/x,\,e^{-x}/x\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.20}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$xy^{(4)}+(4-6x)y'''+(13x-18)y''+(26-12x)y'+(4x-12)y=3e^x$; \quad
+ $\{e^x,\,e^{2x},\,e^x/x,\,e^{2x}/x\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+e^x&e^{2x}&e^x/x&\frac{e^{2x}}{x}\\
+e^x&2e^{2x}&\frac{e^x(x-1)}{x^2}&\frac{e^{2x}(2x-1)}{x^2}\\
+e^x&4e^{2x}&\frac{e^x(x^2-2x+2)}{x^3}&\frac{2e^{2x}(2x^2-2x+1)}{x^3}\\
+e^x&8e^{2x}&\frac{e^x(x^3-3x^2+6x-6)}{x^4}
+&\frac{2e^{2x}(4x^3-6x^2+6x-3)}{x^4}
+\end{array}\right|=-\frac{e^{6x}}{x^4}$;
+
+$W_1=\left|\begin{array}{cccc}
+e^{2x}&\frac{e^x}{x}&\frac{e^{2x}}{x}\\
+2e^{2x}&\frac{e^x(x-1)}{x^2}&\frac{e^{2x}(2x-1)}{x^2}\\
+4e^{2x}&\frac{e^x(x^2-2x+2)}{x^3}&\frac{2e^{2x}(2x^2-2x+1)}{x^3}
+\end{array}\right|=\frac{e^{5x}}{x^3}$;
+
+$W_2=\left|\begin{array}{cccc}
+e^x&\frac{e^x}{x}&\frac{e^{2x}}{x}\\
+e^x&\frac{e^x(x-1)}{x^2}&\frac{e^{2x}(2x-1)}{x^2}\\
+e^x&\frac{e^x(x^2-2x+2)}{x^3}&\frac{2e^{2x}(2x^2-2x+1)}{x^3}
+\end{array}\right|=-\frac{e^{4x}}{x^3}$;
+
+$W_3=\left|\begin{array}{cccc}
+e^x&e^{2x}&\frac{e^{2x}}{x}\\
+e^x&2e^{2x}&\frac{e^{2x}(2x-1)}{x^2}\\
+e^x&4e^{2x}&\frac{2e^{2x}(2x^2-2x+1)}{x^3}
+\end{array}\right|=\frac{e^{5x}(2-x)}{x^3}$;
+
+$W_4=\left|\begin{array}{cccc}
+e^x&e^{2x}&\frac{e^x}{x}\\
+e^x&2e^{2x}&\frac{e^x(x-1)}{x^2}\\
+e^x&4e^{2x}&\frac{e^x(x^2-2x+2)}{x^3}
+\end{array}\right|=\frac{e^{4x}(x+2)}{x^3}$;
+
+$u_1'=-\frac{FW_1}{P_0W}=3$;
+$u_2'=\frac{FW_2}{P_0W}=3e^{-x}$;
+$u_3'=-\frac{FW_2}{P_0W}=3(2-x)$;
+$u_4'=\frac{FW_4}{P_0W}=-3e^{-x}(x+2)$;
+$u_1=3x$;
+$u_2=-3e^{-x}$;
+$u_3=3x(4-x)/2$;
+$u_4=3e^{-x}(x+3)$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=\frac{3e^x(x^2+4x+6)}{2x}$.
+Since
+$\frac{3e^x(2x+3)}{x}$ is a solution of the complementary
+equation we take $y_p=\frac{3xe^x}{2}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.21}
+Find a particular
+solution, given the fundamental set of solutions of the complementary equation.
+
+$x^4y^{(4)}-4x^3y'''+x^2(12-x^2)y''+2x(x^2-12)y'+2(12-x^2)y=2x^5$;
+ $\{x,\,x^2,\,xe^x,\,xe^{-x}\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.22} Solve the
+initial value problem, given the fundamental set of solutions of the complementary equation, and graph the solution.
+
+$x^3y'''-2x^2y''+3xy'-3y=4x, \quad  y(1)=4,\quad y'(1)=4,
+\quad y''(1)=2$; \quad     $\{x,\,x^3,\,x \ln x\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+x&x^3&x\ln x\\1&3x^2&1+\ln x\\0&6x&1/x
+\end{array}\right|=-4x^2$;
+$W_1=\left|\begin{array}{cccc}
+x^3&x\ln x\\3x^2&1+\ln x
+\end{array}\right|=x^3-2x^3\ln x$;
+$W_2=\left|\begin{array}{cccc}
+x&x\ln x\\1&1+\ln x\end{array}\right|=x$;
+$W_3=\left|\begin{array}{cccc}x&x^3\\1&3x^2
+\end{array}\right|=2x^3$;
+$u_1'=\frac{FW_1}{P_0W}=2\ln x/x-\frac{1}{x}$;
+$u_2'=-\frac{FW_2}{P_0W}=\frac{1}{x^3}$;
+$u_3'=\frac{FW_2}{P_0W}=-\frac{2}{x}$;
+$u_1=(\ln x)^2-\ln x$;
+$u_2=-\frac{1}{2x^2}$;
+$u_3=-2\ln x$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=-x(\ln x)^2-x\ln x-\frac{x}{2}$.
+Since $-x\ln x-\frac{x}{2}$ satisfies the complementary equation
+we take $y_p=-x(\ln x)^2$
+
+
+The general solution is $y=-x(\ln x)^2+c_1x+c_2x^3+c_3x\ln x$,
+so
+$$
+\left[\begin{array}{l}y\\y'\\y''
+\end{array}\right]=
+\left[\begin{array}{c}
+-x(\ln x)^2\\ -(\ln x)^2-2\ln x\\-\frac{2\ln x}{x}-\frac{2}{x}
+\end{array}\right]+
+\left[\begin{array}{cccc}
+x&x^3&x\ln x\\1&3x^2&1+\ln x\\0&6x&\frac{1}{x}
+\end{array}\right]
+\left[\begin{array}{ccccccc}
+c_{1}\\ c_{2}\\ c_{3}
+\end{array}\right]
+$$
+Setting $x=1$ and imposing the initial conditions yields
+$$
+\left[\begin{array}{ccccccc}
+4\\ 4\\ -2
+\end{array}\right]
+=
+\left[\begin{array}{ccccccc}
+0\\ 0\\ -2
+\end{array}\right]
++
+\left[\begin{array}{ccc}
+1&1&0\\ 1&3&1\\0&6&1
+\end{array}\right]
+\left[\begin{array}{ccccccc}
+c_{1}\\ c_{2}\\ c_{3}
+\end{array}\right]
+$$
+Solving this system yields $c_1=3$, $c_2=1$, $c_3=-2$.
+Therefore,$y=-x(\ln x)^2+3x+x^3-2x\ln x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.23}
+Solve the
+initial value problem, given the fundamental set of solutions of the complementary equation.
+
+$x^3y'''-5x^2y''+14xy'-18y=x^3, \quad  y(1)=0,\quad y'(1)=1,\quad
+y''(1)=7$;
+\quad $\{x^2,\, x^3,\,x^3 \ln x\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.24}
+Solve the
+initial value problem, given the fundamental set of solutions of the complementary equation.
+
+$(5-6x)y'''+(12x-4)y''+(6x-23)y'+(22-12x)y=-(6x-5)^2e^x$
+
+
+$y(0)=-4, \quad  y'(0)=-\frac{3}{2},\quad y''(0)=-19$;\quad
+ $\{e^x,\,e^{2x},\,xe^{-x} \}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+e^x&e^{2x}&xe^{-x}\\e^x&2e^{2x}&e^{-x}(1-x)\\e^x&4e^{2x}&e
+^{-x}(x-2)\end{array}\right|=e^{2x}(6x-5)$;
+$W_1=\left|\begin{array}{cccc}
+e^{2x}&xe^{-x}\\2e^{2x}&e^{-x}(1-x)\end{array}\right|=e^x(1-3x)$;
+$W_2=\left|\begin{array}{cccc}
+e^x&xe^{-x}\\e^x&e^{-x}(1-x)\end{array}\right|=1-2x$;
+$W_3=\left|\begin{array}{cccc}
+e^x&e^{2x}\\e^x&2e^{2x}\end{array}\right|=e^{3x}$;
+$u_1'=\frac{FW_1}{P_0W}=1-3x$;
+$u_2'=-\frac{FW_2}{P_0W}=e^{-x}(2x-1)$;
+$u_3'=\frac{FW_2}{P_0W}=e^{2x}$;
+$u_1=\frac{x(2-3x)}{2}$;
+$u_2=-e^{-x}(2x+1)$;
+$u_3=\frac{e^{2x}}{2}$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=-e^x(3x^2+x+2)/2$. Since
+$-\frac{e^x}{2}$ is a solution of the complementary equation
+we take $y_p=-\frac{e^x(3x+1)x}{2}$.
+
+The general solution is
+$y=-\frac{e^x(3x+1)x}{2}+c_1e^x+c_2e^{2x}+c_3xe^{-x}$, so
+$$
+\left[\begin{array}{l}
+y\\y'\\y''
+\end{array}\right]=
+\left[\begin{array}{c}
+-\frac{e^x(3x+1)x}{2}\\
+-\frac{e^x(3x^2+7x+1)}{2}\\
+-\frac{e^x(3x^2+13x+8)}{2}
+\end{array}\right]+
+\left|\begin{array}{cccc}
+e^x&e^{2x}&xe^{-x}\\e^x&2e^{2x}&e^{-x}(1-x)\\e^x&4e^{2x}&e
+^{-x}(x-2)\end{array}\right|
+\left[\begin{array}{c}
+c_{1}\\ c_{2}\\ c_{3}
+\end{array}\right].
+$$
+Setting $x=0$  and imposing the initial conditions yields
+$$
+\left[\begin{array}{c}
+-4\\-\frac{3}{2}\\-19
+\end{array}\right]=
+\left[\begin{array}{r}
+0\\--\frac{1}{2}\\-4
+\end{array}\right]+
+\left[\begin{array}{rrr}
+1&1&0\\ 1&2&1\\ 1&4&-2
+\end{array}\right]
+\left[\begin{array}{c}
+c_{1}\\ c_{2}\\ c_{3}
+\end{array}\right].
+$$
+Solving this system yields $c_1=-3$, $c_2=-1$, $c_3=4$.
+Therefore,
+$y=-\frac{e^x(3x+1)x}{2}-3e^x-e^{2x}+4xe^{-x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.25}
+Solve the
+initial value problem, given the fundamental set of solutions of the complementary equation.
+
+$x^3y'''-6x^2y''+16xy'-16y=9x^4, \quad  y(1)=2,\quad y'(1)=1,\quad y''(1)=5$;
+
+ $\{x,\,x^4,\,x^4 \ln |x|\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.26} Solve the
+initial value problem, given the fundamental set of solutions of the complementary equation, and graph the solution.
+
+$(x^2-2x+2)y'''-x^2y''+2xy'-2y=(x^2-2x+2)^2, \quad  y(0)=0,\quad y'(0)=5$,
+
+$y''(0)=0$;\quad       $\{x,\,x^2,\,e^x\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+x&x^2&e^x\\1&2x&e^x\\0&2&e^x\end{array}\right|=e^x(x^2-2x+2)$;
+$W_1=\left|\begin{array}{cccc}
+x^2&e^x\\2x&e^x\end{array}\right|=e^x(x^2-2x)$;
+$W_2=\left|\begin{array}{cccc}x&e^x\\1&e^x\end{array}\right|=e^x(x-1)$;
+$W_3=\left|\begin{array}{cccc}x&x^2\\1&2x\end{array}\right|=x^2$;
+$u_1'=\frac{FW_1}{P_0W}=x(x-2)$;
+$u_2'=-\frac{FW_2}{P_0W}=1-x$;
+$u_3'=\frac{FW_2}{P_0W}=x^2e^{-x}$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=-\frac{x^4+6x^2+12x+12}{6}$. Since
+$-\frac{6x^2+12x}{6}$ is a solution of the complementary equations
+we take $y_p=-\frac{x^4+12}{6}$.
+
+The general solution is
+$y=-\frac{x^4+12}{6}+c_1x+c_2x^2+c_3e^x$, so
+$$
+\left[\begin{array}{l}y\\y'\\y''
+\end{array}\right]=-
+\left[\begin{array}{c}
+(x^4+12)/6\\2x^3/3\\2x^2
+\end{array}\right]+
+\left|\begin{array}{cccc}
+x&x^2&e^x\\1&2x&e^x\\0&2&e^x\end{array}\right|
+\left[\begin{array}{c}
+c_{1}\\ c_{2}\\ c_{3}
+\end{array}\right].
+$$
+Setting $x=0$ and imposing the initial conditions yields
+$$
+\left[\begin{array}{c}
+0\\ 5\\ 0
+\end{array}\right]
+=
+-\left[\begin{array}{c}
+2\\ 0\\ 0
+\end{array}\right]
++
+\left[\begin{array}{ccc}
+0&0&1\\ 1&0&1\\ 0&2&1
+\end{array}\right]
+\left[\begin{array}{c}
+c_{1}\\ c_{2}\\ c_{3}
+\end{array}\right].
+$$
+Solving this system yields $c_1=3$, $c_2=-1$, $c_3=2$.
+Therefore,
+$y=-\frac{x^4+12}{6}+3x-x^2+2e^x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.27}
+Solve the
+initial value problem, given the fundamental set of solutions of the complementary equation.
+
+$x^3y'''+x^2y''-2xy'+2y=x(x+1), \quad  y(-1)=-6,\quad y'(-1)=\frac{43}{6},\quad y''(-1)=
+-\frac{5}{2}$;\quad
+
+  $\{x,\,x^2,\,1/x\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.28}
+Solve the
+initial value problem, given the fundamental set of solutions of the complementary equation.
+
+$(3x-1)y'''-(12x-1)y''+9(x+1)y'-9y=2e^x(3x-1)^2, \quad  y(0)=\frac{3}{4}$,
+
+$y'(0)=\frac{5}{4}, \quad  y''(0)=\frac{1}{4}$;\quad
+$\{x+1,\,e^x,\,e^{3x}\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+x+1&e^x&e^{3x}\\1&e^x&3e^{3x}\\0&e^x&9e^{3x}
+\end{array}\right|=2e^{4x}(3x-1)$;
+$W_1=\left|\begin{array}{cccc}
+e^x&e^{3x}\\e^x&3e^{3x}\end{array}\right|=2e^{4x}$;
+$W_2=\left|\begin{array}{cccc}
+x+1&e^{3x}\\1&3e^{3x}\end{array}\right|=e^{3x}(3x+2)$;
+$W_3=\left|\begin{array}{cccc}
+x+1&e^x\\1&e^x\end{array}\right|=xe^x$;
+$u_1'=\frac{FW_1}{P_0W}=2e^x$;
+$u_2'=-\frac{FW_2}{P_0W}=-3x-2$;
+$u_3'=\frac{FW_2}{P_0W}= xe^{-2x}$;
+$u_1=2e^x$;
+$u_2=-\frac{x(3x+4)}{2}$;
+$u_3=-\frac{e^{-2x}(2x+1)}{4}$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=-\frac{e^x(6x^2+2x-7)}{4}$.
+Since $\frac{7e^x}{4}$ is a solution of the complementary
+equation we take
+$y_p=-\frac{xe^x(3x+1)}{2}$
+
+The general solution is
+$y=-\frac{xe^x(3x+1)}{2}+c_1(x+1)+c_2e^x+c_3e^{2x}$, so
+$$
+\left[\begin{array}{l}y\\y'\\y''
+\end{array}\right]=
+\left[\begin{array}{c}
+-xe^x(3x+1)/2\\
+-e^x(3x^2+7x+1)/2\\
+-e^x(3x^2+13x+8)/2
+\end{array}\right]+
+\left|\begin{array}{cccc}
+x+1&e^x&e^{3x}\\1&e^x&3e^{3x}\\0&e^x&9e^{3x}
+\end{array}\right|.
+$$
+Setting $x=0$ and imposing the initial conditions yields
+$$
+\left[\begin{array}{c}
+\frac{3}{4}\\\frac{5}{4}\\\frac{1}{4}
+\end{array}\right]=
+\left[\begin{array}{r}
+0\\-\frac{1}{2}\\-4
+\end{array}\right]
++
+\left[\begin{array}{ccc}
+1&1&1\\ 1&1&3\\ 0&1&9
+\end{array}\right]
+\left[\begin{array}{c}
+c_{1}\\ c_{2}\\ c_{3}
+\end{array}\right].
+$$
+Solving this system yields $c_1=\frac{1}{2}$, $c_2=-\frac{1}{4}$,
+$c_3=\frac{1}{2}$. Therefore,
+$y=-\frac{xe^x(3x+1)}{2}+\frac{x+1}{2}-\frac{e^x}{4}+\frac{e^{2x}}{2}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.29}  Solve the
+initial value problem, given the fundamental set of solutions of the complementary equation, and graph the solution.
+
+$(x^2-2)y'''-2xy''+(2-x^2)y'+2xy=2(x^2-2)^2, \quad  y(0)=1,\quad y'(0)=-5$,
+
+ $y''(0)=5$;\quad      $\{x^2,\,e^x,\,e^{-x}\}$
+\end{problem}
+
+
+\begin{problem}\label{exer:9.4.30} Solve the
+initial value problem, given the fundamental set of solutions of the complementary equation, and graph the solution.
+
+$x^4y^{(4)}+3x^3y'''-x^2y''+2xy'-2y=9x^2, \quad  y(1)=-7,\quad y'(1)=
+-11,\quad y''(1)=-5$,\;
+$y'''(1)=6; \quad \{x,\,x^2,\,1/x,\,x\ln x\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+x&x^2&\frac{1}{x}&x\ln x\\1&2x&-\frac{1}{x^2}&\ln x+1\\
+0&2&\frac{2}{x^3}&\frac{1}{x}\\0&0&-\frac{6}{x^2}&-\frac{1}{x^2}
+\end{array}\right|=-\frac{12}{x^3}$;
+$W_1=\left|\begin{array}{cccc}
+x^2&\frac{1}{x}&x\ln x\\2x&-\frac{1}{x^2}&\ln x+1\\
+2&\frac{2}{x^3}&\frac{1}{x}\end{array}\right|=6\frac{\ln
+x}{x}-\frac{3}{x}$;
+$W_2=\left|\begin{array}{cccc}
+x&\frac{1}{x}&x\ln x\\1&-\frac{1}{x^2}&\ln x+1\\
+0&\frac{2}{x^3}&\frac{1}{x}\end{array}\right|=-\frac{4}{x^2}$;
+$W_3=\left|\begin{array}{cccc}x&x^2&x\ln x\\
+1&2x&\ln x+1\\0&2&\frac{1}{x}\end{array}\right|=-x$;
+$W_4=\left|\begin{array}{cccc}
+x&x^2&\frac{1}{x}\\1&2x&-\frac{1}{x^2}\\0&2&\frac{2}{x^3}
+\end{array}\right|=\frac{6}{x}$;
+$u_1'=-\frac{FW_1}{P_0W}=9\ln x/2-\frac{9}{4}$;
+$u_2'=\frac{FW_2}{P_0W}=\frac{3}{x}$;
+$u_3'=-\frac{FW_2}{P_0W}=-\frac{3x^2}{4}$;
+$u_4'=\frac{FW_4}{P_0W}=-\frac{9}{2}$;
+$u_1=\frac{9x\ln x}{2}-\frac{27x}{4}$;
+$u_2=3\ln x$;
+$u_3=-\frac{x^3}{4}$;
+$u_4=-\frac{9x}{2}$;
+$y_p=u_1y_1+u_2y_2+u_3y_3=3x^2\ln x-7x^2$.
+Since $-7x^2$ satisfies the complementary equation we take
+$y_p=3x^2\ln x$.
+
+The general solution is $y=3x^2\ln x+c_1x+c_2x^2+\frac{c_3}{x}
++c_4x\ln x$, so
+$$
+\left[\begin{array}{l}y\\y'\\y''\\y'''
+\end{array}\right]=
+\left[\begin{array}{c}
+3x^2\ln x\\6x\ln x+3x\\6\ln x+9\\\frac{6}{x}
+\end{array}\right]+
+\left|\begin{array}{cccc}
+x&x^2&\frac{1}{x}&x\ln x\\1&2x&-\frac{1}{x^2}&\ln x+1\\
+0&2&\frac{2}{x^3}&\frac{1}{x}\\0&0&-\frac{6}{x^2}&-\frac{1}{x^2}
+\end{array}\right|
+\left[\begin{array}{c}
+c_1\\c_2\\c_3\\c_4
+\end{array}\right].
+$$
+Setting $x=1$ and imposing the initial conditions yields
+$$
+\left[\begin{array}{c}
+-7\\-11\\-5\\6
+\end{array}\right]=
+\left[\begin{array}{r}
+0\\3\\9\\6
+\end{array}\right]+
+\left|\begin{array}{rrrr}1&1&1&0\\1&2&-1&1
+\\0&2&2&1\\0&0&-6&-1\end{array}\right|
+\left[\begin{array}{c}
+c_1\\c_2\\c_3\\c_4
+\end{array}\right].
+$$
+Solving this system yields $c_1=0$, $c_2=-7$, $c_3=0$, $c_4=0$.
+Therefore,
+ $y=3x^2\ln x-7x^2$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:9.4.31}
+Solve the
+initial value problem, given the fundamental set of solutions of the complementary equation.
+
+$(2x-1)y^{(4)}-4xy'''+(5-2x)y''+4xy'-4y=6(2x-1)^2, \quad  y(0)=\frac{55}{4},
+\quad y'(0)=0$,
+
+$y''(0)=13, \quad  y'''(0)=1$;\quad    $\{x,\,e^x,\,e^{-x},\,e^{2x}\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.32}
+Solve the
+initial value problem, given the fundamental set of solutions of the complementary equation.
+
+$4x^4y^{(4)}+24x^3y'''+23x^2y''-xy'+y=6x$,\quad $y(1)=2,\quad
+y'(1)=0,\quad y''(1)=4,\quad y'''(1)=-\frac{37}{4}$;
+\quad $\{x,\sqrt x,1/x,1/\sqrt x\}$
+
+\begin{solution}
+$W=\left|\begin{array}{cccc}
+x&\sqrt{x}&1/x&1/\sqrt{x}\\
+1&1/2\sqrt{x}&-1/x^2&-1/2x^{3/2}\\
+0&-1/4x^{3/2}&2/x^3&3/4x^{5/2}\\
+0&3/8x^{5/2}&-6/x^4&-15/8x^{7/2}
+\end{array}\right|=-9/8x^6$;
+$W_1=\left|\begin{array}{cccc}
+\sqrt{x}&1/x&1/\sqrt{x}\\
+1/2\sqrt{x}&-1/x^2&-1/2x^{3/2}\\
+-1/4x^{3/2}&2/x^3&3/4x^{5/2}\end{array}\right|=3/4x^4$;
+$W_2=\left|\begin{array}{cccc}
+x&1/x&1/\sqrt{x}\\1&-1/x^2&-1/2x^{3/2}\\
+0&2/x^3&3/4x^{5/2}\end{array}\right|=3/2x^{7/2}$;
+$W_3=\left|\begin{array}{cccc}
+x&\sqrt{x}&1/\sqrt{x}\\
+1&1/2\sqrt{x}&-1/2x^{3/2}\\0&-1/4x^{3/2}&3/4x^{5/2}
+\end{array}\right|=-3/4x^2$;
+$W_4=\left|\begin{array}{cccc}
+x&\sqrt{x}&1/x\\1&1/2\sqrt{x}&-1/x^2\\
+0&-1/4x^{3/2}&2/x^3\end{array}\right|=-3/2x^{5/2}$;
+$u_1'=-\frac{FW_1}{P_0W}=1/x$;
+$u_2'=\frac{FW_2}{P_0W}=-2/\sqrt{x}$;
+$u_3'=-\frac{FW_2}{P_0W}=-x$;
+$u_4'=\frac{FW_4}{P_0W}=2\sqrt{x}$;
+$u_1=\ln x$;
+$u_2=-4\sqrt{x}$;
+$u_3=-x^2/2$;
+$u_4=4x^{3/2}/3$;
+$y_p=u_1y_1+u_2y_2+u_3y_3= x\ln x-19x/6$.
+since $-19x/6$ satisfies the complementary equation we take
+$y_p=x\ln x$.
+
+The general solution is $y=x\ln x+c_1x+c_2\sqrt x+c_3/x+c_4/\sqrt x$,
+so
+$$
+\left[\begin{array}{l}y\\y'\\y''\\y'''
+\end{array}\right]=
+\left[\begin{array}{c}
+x\ln x\\\ln x+1\\1/x\\-1/x^2
+\end{array}\right]+
+\left|\begin{array}{cccc}
+x&\sqrt{x}&1/x&1/\sqrt{x}\\
+1&1/2\sqrt{x}&-1/x^2&-1/2x^{3/2}\\
+0&-1/4x^{3/2}&2/x^3&3/4x^{5/2}\\
+0&3/8x^{5/2}&-6/x^4&-15/8x^{7/2}
+\end{array}\right|
+\left[\begin{array}{c}
+c_1\\c_2\\c_3\\c_4
+\end{array}\right].
+$$
+Setting $x=1$ and imposing the initial conditions yields
+$$
+\left[\begin{array}{c}
+2\\0\\4\\-\frac{37}{4}
+\end{array}\right]=
+\left[\begin{array}{r}
+0\\1\\1\\-1
+\end{array}\right]+
+\left|\begin{array}{cccc}1&1&1&1\\1&1/2&-1&-1/2\\
+0&-1/4&2&3/4\\0&3/8&-6&-15/8\end{array}\right|
+\left[\begin{array}{c}
+c_1\\c_2\\c_3\\c_4
+\end{array}\right].
+$$
+Solving this system yields $c_1=1$, $c_2=-1$, $c_3=1$, $c_4=1$.
+Therefore,  $y=x\ln x+x-\sqrt x+\frac{1}{x}+\frac{1}{\sqrt x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.33}
+Solve the
+initial value problem, given the fundamental set of solutions of the complementary equation.
+
+$x^4y^{{(4)}}+5x^3y'''-3x^2y''-6xy'+6y=40x^3,
+\quad  y(-1)=-1, \;  y'(-1)=-7$,
+
+$y''(-1)=-1,\quad y'''(-1)=-31$;\quad
+$\{x,\, x^3,\,1/x,\,1/x^2\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.34}
+Suppose the equation
+$$
+P_0(x)y^{(n)}+P_1(x)y^{(n-1)}+\cdots+P_n(x)y=F(x)
+\text{(A)}
+$$
+is normal on an interval $(a,b)$. Let $\{y_1,y_2,\dots,y_n\}$ be a
+fundamental set of solutions of its complementary equation on $(a,b)$,
+let $W$ be the Wronskian of $\{y_1,y_2,\dots,y_n\}$, and let $W_j$ be
+the determinant obtained by deleting the last row and the $j$-th
+column of $W$. Suppose $x_0$ is in $(a,b)$, let
+$$
+u_j(x)=(-1)^{(n-j)}\int_{x_0}^x{F(t)W_j(t)\over P_0(t)W(t)}\,dt,
+\quad 1\le j\le n,
+$$
+and define
+$$
+y_p=u_1y_1+u_2y_2+\cdots+u_ny_n.
+$$
+\begin{enumerate}
+\item % (a)
+Show that $y_p$ is a solution of (A) and that
+$$
+y_p^{(r)}=u_1y^{(r)}_1+u_2y_2^{(r)}\cdots+u_ny^{(r)}_n,\quad 1
+\le r \le n-1,
+$$
+and
+$$
+y_p^{(n)}=u_1y_1^{(n)}+u_2y_2^{(n)}+\cdots+u_ny_n^{(n)}+\frac{F}{P_0}.
+$$
+\begin{hint}
+See the derivation of the method of variation of
+parameters at the beginning of the section.
+\end{hint}
+
+\begin{solution}
+Since
+$u'_j=(-1)^{n-j}\frac{FW_j}{P_0W}$  ($1\le j\le n$), the argument
+used in the derivation of the method of variation of parameters
+implies that $y_p$ is a solution of (A).
+\end{solution}
+
+\item % (b)
+Show that  $y_p$  is the
+solution of the initial value problem
+$$
+\begin{array}{r}
+P_0(x)y^{(n)}+P_1(x)y^{(n-1)}+\cdots+P_n(x)y=F(x),\\y(x_0)=0,\;
+y'(x_0)=0,\dots,\quad y^{(n-1)}(x_0)=0.
+\end{array}
+$$
+
+\begin{solution}
+Follows immediately from the previous part, since $u_j(x_0)=0$,
+$j=1,2,\dots,n$.
+\end{solution}
+
+\item % (c)
+Show that  $y_p$  can be written as
+$$
+y_p(x)=\int_{x_0}^x G(x,t)F(t)\,dt,
+$$
+where
+$$
+G(x,t)=\frac{1}{P_0(t)W(t)}\left|\begin{array}{cccc}
+y_1(t)&y_2(t)&\cdots&y_n(t)\\ 
+y_1'(t)&y_2'(t)&\cdots&y_n'(t)\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+y_1^{(n-2)}(t)&y_2^{(n-2)}(t)&\cdots&y_n^{(n-2)}(t)\\ 
+y_1(x)&y_2(x)&\cdots&y_n(x)\end{array}\right|,
+$$
+which is called  the
+\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Green.html}
+{Green's function} for (A).
+
+\begin{solution}
+Expand the determinant in cofactors of its $n$th row.
+\end{solution}
+
+\item % (d)
+Show that
+$$
+{\partial^{j}G(x,t)\over\partial x^j}
+=\frac{1}{P_0(t)W(t)}\left|\begin{array}{cccc}
+y_1(t)&y_2(t)&\cdots&y_n(t)\\ 
+y_1'(t)&y_2'(t)&\cdots&y_n'(t)\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+y_1^{(n-2)}(t)&y_2^{(n-2)}(t)&\cdots&y_n^{(n-2)}(t)\\ 
+y_1^{(j)}(x)&y_2^{(j)}(x)&\cdots&y_n^{(j)}(x)\end{array}\right|,\quad 0\le j\le
+n.
+$$
+
+\begin{solution}
+Just differentiate the determinant $n-1$ times.
+\end{solution}
+
+\item % (e)
+Show that if $a<t<b$ then
+$$
+\left.\frac{\partial^{j}G(x,t)}{\partial x^j}\right|_{x=t}=
+\left\{\begin{array}{cl} 0,&1\le j\le n-2,\\ 
+\frac{1}{P_0(t)},&j=n-1.
+\end{array}\right.
+$$
+
+\begin{solution}
+If $0\le j\le n-2$, then
+$\left.\frac{\partial^{j}G(x,t)}{\partial x^j}\right|_{x=t}$
+has two identical rows, and is therefore zero, while
+$\left.\frac{\partial^{n-1}G(x,t)}{\partial x^j}\right|_{x=t}=W(t)$.
+\end{solution}
+
+\item % (f)
+Show that
+$$
+ y_p^{(j)}(x)=\left\{\begin{array}{cl}\int_{x_0}^x
+\frac{\partial^{j}G(x,t)}{\partial x^j}F(t)\,dt,&1\le j\le n-1,\\
+\frac{{F(x)}{P_0(x)}+
+\int_{x_0}^x\frac{\partial^{(n)}G(x,t)}{\partial x^n}F(t)\,dt},&j=n.
+\end{array}\right.
+$$
+
+\begin{solution}
+Since
+$y_p(x)=\int_{x_0}^x G(x,t)F(t)\,dt$,
+$y_p'(x)=G(x,x)F(x)+\int_{x_0}^x\frac{\partial
+G(x,t)}{\partial x}F(t)\,dt$. But $G(x,x)=0$ from the previous part, so
+$y_p'(x)=\int_{x_0}^x\frac{\partial
+G(x,t)}{\partial x}F(t)\,dt$. Repeating this argument for
+$j=1,\dots,n$ and invoking the previous part each time yields the conclusion.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}\label{exer:9.4.35}
+Use the method suggested by Exercise~\ref{exer:9.4.34} to find a particular solution in the form
+$y_p=\int_{x_0}^x G(x,t)F(t)\,dt$, given the indicated fundamental set of solutions.  Assume that $x$ and $x_0$ are in an interval on which
+the equation is normal.
+
+$y'''+2y'-y'-2y=F(x); \quad \{e^x,\,e^{-x},e^{-2x}\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.36}
+Use the method suggested by Exercise~\ref{exer:9.4.34} to find a particular solution in the form
+$y_p=\int_{x_0}^x G(x,t)F(t)\,dt$, given the indicated fundamental set of solutions.  Assume that $x$ and $x_0$ are in an interval on which
+the equation is normal.
+
+$x^3y'''+x^2y''-2xy'+2y=F(x); \quad \{x,\,x^2,\,1/x\}$
+
+\begin{solution}
+\begin{eqnarray*}
+\left|\begin{array}{ccc}
+y_1(t)&y_1(t)&y_2(t)\\
+y_1'(t)&y_1'(t)&y_2'(t)\\
+y_1(x)&y_1(x)&y_2(x)\\
+\end{array}\right| &=&
+\left|\begin{array}{cccc}
+t&t^2&1/t\\
+1&2t&-1/t^2\\
+x&x^2&1/x
+\end{array}\right|\\
+&=&
+x\left|\begin{array}{cccc}t^2&1/t\\2t&-1/t^2\end{array}\right|
+-x^2\left|\begin{array}{cccc}t&1/t\\1&-1/t^2\end{array}\right|
++\frac{1}{x}\left|\begin{array}{cccc}t&t^2\\1&2t\end{array}\right|\\
+&=&-3x+2\frac{x^2}{t}+\frac{t^2}{x}=\frac{(x-t)^2(2x+t)}{xt}.
+\end{eqnarray*}
+Since $P_0(t)=t^3$ and
+$W(t)=\left|\begin{array}{ccc}
+t&t^2&1/t\\
+1&2t&-1/t^2\\
+x&x^2&1/x
+\end{array}\right|=\frac{6}{t}$,
+$G(x,t)=\frac{(x-t)^2(2x+t)}{6xt^3}$,
+so
+$y_p={\int_{x_0}^x \frac{(x-t)^2(2x+t)}{6xt^3}
+F(t)\,dt}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.37}
+Use the method suggested by Exercise~\ref{exer:9.4.34} to find a particular solution in the form
+$y_p=\int_{x_0}^x G(x,t)F(t)\,dt$, given the indicated fundamental set of solutions.  Assume that $x$ and $x_0$ are in an interval on which
+the equation is normal.
+
+$x^3y'''-x^2(x+3)y''+2x(x+3)y'-2(x+3)y=F(x); \{x,x^2,xe^x\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.38}
+Use the method suggested by Exercise~\ref{exer:9.4.34} to find a particular solution in the form
+$y_p=\int_{x_0}^x G(x,t)F(t)\,dt$, given the indicated fundamental set of solutions.  Assume that $x$ and $x_0$ are in an interval on which
+the equation is normal.
+
+$x(1-x)y'''+(x^2-3x+3)y''+xy'-y=F(x); \quad \{x,\,1/x,\,e^x/x\}$
+
+\begin{solution}
+\begin{eqnarray*}
+\left|\begin{array}{ccc}
+y_1(t)&y_1(t)&y_2(t)\\
+y_1'(t)&y_1'(t)&y_2'(t)\\
+y_1(x)&y_1(x)&y_2(x)
+\end{array}\right|&=&
+\left|\begin{array}{ccc}
+t&1/t&e^t/t\\
+1&-1/t^2&e^t(1/t-1/t^2)\\
+x&1/x&e^x/x\\
+\end{array}\right|\\
+&=&x\left|\begin{array}{ccc}1/t&e^t/t\\
+-1/t^2&e^t(1/t-1/t^2)\end{array}\right|
+-\frac{1}{x}\left|\begin{array}{ccc}t&e^t/t\\
+1&e^t(1/t-1/t^2)\end{array}\right|
++\frac{e^x}{x}\left|\begin{array}{ccc}t&1/t\\
+1&-1/t^2\end{array}\right|\\
+&=&\frac{xe^t}{t^2}-\frac{e^t(t-2)}{xt}-\frac{2e^x}{xt}
+=\frac{x^2e^t-e^tt(t-2)-2te^x}{xt^2}
+\end{eqnarray*}
+Since $P_0(t)=t(1-t)$ and
+$W(t)=\left|\begin{array}{ccc}
+t&1/t&e^t/t\\
+1&-1/t^2&e^t(1/t-1/t^2)\\
+0&2/t^3&e^t(1/t-2/t^2+2/t^3)
+\end{array}\right|=\frac{2e^t(1-t)}{t^3}$,
+$G(x,t)=\frac{x^2-t(t-2)-2te^{(x-t)}}{2x(t-1)^2}$, so
+$y_p=\int_{x_0}^x \frac{x^2-t(t-2)-2te^{(x-t)}}{2x(t-1)^2}
+F(t)\,dt$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.39}
+Use the method suggested by Exercise~\ref{exer:9.4.34} to find a particular solution in the form
+$y_p=\int_{x_0}^x G(x,t)F(t)\,dt$, given the indicated fundamental set of solutions.  Assume that $x$ and $x_0$ are in an interval on which
+the equation is normal.
+
+$y^{(4)}-5y''+4y=F(x); \quad \{e^x,\,e^{-x},\,e^{2x},\,e^{-2x}\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.40}
+Use the method suggested by Exercise~\ref{exer:9.4.34} to find a particular solution in the form
+$y_p=\int_{x_0}^x G(x,t)F(t)\,dt$, given the indicated fundamental set of solutions.  Assume that $x$ and $x_0$ are in an interval on which
+the equation is normal.
+
+$xy^{(4)}+4y'''=F(x); \quad  \{1,\,x,\,x^2,\,1/x\}$
+
+\begin{solution}
+\begin{eqnarray*}
+\left|\begin{array}{crcc}
+y_1(t)&y_1(t)&y_2(t)&y_3(t)\\
+y_1'(t)&y_1'(t)&y_2'(t)&y_3'(t)\\
+y_1''(t)&y_1''(t)&y_2''(t)&y_3''(t)\\
+y_1(x)&y_1(x)&y_2(x)&y_3(x)
+\end{array}\right|&=&
+\left|\begin{array}{cccc}
+1&t&t^2&1/t\\
+0&1&2t&-1/t^2\\
+0&0&2&2/t^3\\
+1&x&x^2&1/x\\
+\end{array}\right|\\
+&=&-\left|\begin{array}{cccc}
+t&t^2&1/t\\
+1&2t&-1/t^2\\
+0&2&2/t^3\end{array}\right|
++x\left|\begin{array}{cccc}
+1&t^2&1/t\\
+0&2t&-1/t^2\\
+0&2&2/t^3
+\end{array}\right|\\
+&&-x^2\left|\begin{array}{cccc}
+1&t&1/t\\0&1&-1/t^2\\
+0&0&2/t^3\end{array}\right|
++\frac{1}{x}\left|\begin{array}{cccc}
+1&t&t^2\\0&1&2t\\0&0&2\end{array}\right|\\
+&=&-\frac{6}{t}+\frac{6x}{t^2}-\frac{2x^2}{t^3}+\frac{2}{x}
+=\frac{2(t-x)^3}{xt^3}.
+\end{eqnarray*}
+Since $P_0(t)=t$ and
+$W(t)=\left|\begin{array}{cccc}
+1&t&t^2&1/t\\
+0&1&2t&-1/t^2\\
+0&0&2&2/t^3\\
+0&0&0&-6/t^4
+\end{array}\right|=-\frac{12}{t^4}$,
+$G(x,t)=\frac{(x-t)^3}{6x}$, so
+$y_p=\int_{x_0}^x \frac{(x-t)^3}{6x}F(t)\,dt$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.4.41}
+Use the method suggested by Exercise~\ref{exer:9.4.34} to find a particular solution in the form
+$y_p=\int_{x_0}^x G(x,t)F(t)\,dt$, given the indicated fundamental set of solutions.  Assume that $x$ and $x_0$ are in an interval on which
+the equation is normal.
+
+$x^4y^{(4)}+6x^3y'''+2x^2y''-4xy'+4y=F(x)$;\quad
+$\{x,x^2,1/x,1/x^2\}$
+\end{problem}
+
+\begin{problem}\label{exer:9.4.42}
+Use the method suggested by Exercise~\ref{exer:9.4.34} to find a particular solution in the form
+$y_p=\int_{x_0}^x G(x,t)F(t)\,dt$, given the indicated fundamental set of solutions.  Assume that $x$ and $x_0$ are in an interval on which
+the equation is normal.
+
+$xy^{(4)}-y'''-4xy'+4y'=F(x); \quad \{1,\,x^2,\,e^{2x}, e^{-2x}\}$
+
+\begin{solution}
+\begin{eqnarray*}
+\left|\begin{array}{crcc}
+y_1(t)&y_1(t)&y_2(t)&y_3(t)\\
+y_1'(t)&y_1'(t)&y_2'(t)&y_3'(t)\\
+y_1''(t)&y_1''(t)&y_2''(t)&y_3''(t)\\
+y_1(x)&y_1(x)&y_2(x)&y_3(x)
+\end{array}\right|&=&
+\left|\begin{array}{cccc}
+1&t^2&e^{2t}&e^{-2t}\\
+0&2t&2e^{2t}&-2e^{-2t}\\
+0&2&4e^{2t}&4e^{-2t}\\
+1&x^2&e^{2x}&e^{-2x}
+\end{array}\right|\\
+&=&-\left|\begin{array}{cccc}t^2&e^{2t}&e^{-2t}\\
+2t&2e^{2t}&-2e^{-2t}\\2&4e^{2t}&4e^{-2t}\end{array}\right|
++x^2\left|\begin{array}{cccc}1&e^{2t}&e^{-2t}\\
+0&2e^{2t}&-2e^{-2t}\\0&4e^{2t}&4e^{-2t}\end{array}\right|\\
+&&-e^{2x}\left|\begin{array}{cccc}1&t^2&e^{-2t}\\
+0&2t&-2e^{-2t}\\0&2&4e^{-2t}\end{array}\right|
++e^{-2x}\left|\begin{array}{cccc}1&t^2&e^{2t}\\0&2t&2e^{2t}\\
+0&2&4e^{2t}\end{array}\right|\\
+&=&-(16t^2-8)+16x^2-e^{2(x-t)t}(8t+4)+e^{-2(x-t)}(8t-4).
+\end{eqnarray*}
+Since $P_0(t)=t$ and
+$W(t)=\left|\begin{array}{cccc}
+1&t^2&e^{2t}&e^{-2t}\\
+0&2t&2e^{2t}&-2e^{-2t}\\
+0&2&4e^{2t}&4e^{-2t}\\
+0&0&8e^{2t}&-8e^{-2t}
+\end{array}\right|=-128t$,
+
+$G(x,t)=\frac{e^{2(x-t)}(1+2t)+e^{-2(x-t)}(1-2t)-4x^2+4t^2-2}{32t^2}$,
+so
+
+$y_p=\int_{x_0}^x
+\frac{e^{2(x-t)}(1+2t)+e^{-2(x-t)}(1-2t)-4x^2+4t^2-2}{32t^2}
+F(t)\,dt$.
+\end{solution}
+\end{problem}
+
+\end{document}

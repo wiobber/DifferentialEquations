@@ -1,0 +1,448 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+Except where directed otherwise, assume that the magnitude of the
+gravitational force on an object with mass $m$ is constant and equal
+to $mg$. In exercises involving vertical motion take the upward
+direction to be positive.
+
+
+
+\begin{problem}\label{exer:4.3.1}
+A firefighter who weighs 192 lb slides down an infinitely long
+fire pole
+that exerts a frictional resistive force with magnitude proportional
+to his speed, with $k=2.5$ lb-s/ft. Assuming that he starts from
+rest, find his velocity as a function of time and find his terminal
+velocity.
+\end{problem}
+
+\begin{problem}\label{exer:4.3.2}
+A firefighter who weighs 192 lb slides down an infinitely long
+fire pole
+that exerts a frictional resistive force with magnitude proportional
+to her speed, with constant of proportionality $k$. Find $k$, given
+that her terminal velocity is -16 ft/s, and then find her velocity
+$v$ as a function of $t$. Assume that she starts from rest.
+
+\begin{solution}
+The firefighter's mass is $m=\frac{192}{32}=6$ sl, so
+ $6v'=-192-kv$, or (A) $v'+\frac{k}{6}v=-32$.
+Since $v_1=e^{-kt/6}$ is a solution of the complementary equation,
+the solutions of (A) are $v=ue^{-kt/6}$ where $u'e^{-kt/6}=-32$.
+Therefore,$u'=-32e^{kt/6}$;\ $u=-\frac{192}{k}e^{kt/6}+c$;\;
+$v=-\frac{192}{k}+ce^{-kt/6}$. Now $v(0)=0\Rightarrow
+c=\frac{192}{k}$. Therefore,$v=-\frac{192}{k}(1-e^{-kt/6})$
+and $\lim_{t\to\infty}v(t)=-\frac{192}{k}=-16$ ft/s, so $k=12$
+lb-s/ft and $v=-16(1-e^{-2t})$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.3.3}
+A boat weighs 64,000 lb. Its propellor produces a constant thrust of
+50,000 lb and the water exerts a resistive force with magnitude
+proportional to the speed, with $k=2000$ lb-s/ft. Assuming that the
+boat starts from rest, find its velocity as a function of time, and
+find its terminal velocity.
+
+\begin{solution}
+$m=\frac{64000}{32}=2000$, so
+ $2000v'=50000-2000v$, or (A)
+$v'+v=25$.
+Since $v_1=e^{-t}$ is a solution of the complementary equation,
+the solutions of (A) are $v=ue^{-t}$ where $u'e^{-t}=25$.
+Therefore,$u'=25e^t$;\ $u=25e^t+c$;\;
+$v=25+ce^{-t}$. Now $v(0)=0\Rightarrow
+c=-25$. Therefore,$v=25(1-e^{-t})$
+and $\lim_{t\to\infty}v(t)=25$ ft/s.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.3.4}
+A constant horizontal force of 10 N pushes a 20 kg-mass through a
+medium that resists its motion with .5 N for every m/s of speed. The
+initial velocity of the mass is 7 m/s in the direction opposite to
+the direction of the applied force. Find the velocity of the mass for
+$t > 0$.
+
+\begin{solution}
+$20v'=10-\frac{1}{2}v$, or (A)
+$v'+\frac{1}{20}v=\frac{1}{2}$.
+Since $v_1=e^{-t/40}$ is a solution of the complementary equation,
+the solutions of (A) are $v=ue^{-t/40}$ where
+$u'e^{-t/40}=\frac{1}{2}$. Therefore,$u'=\frac{e^{t/40}}{2}$;\;
+$u=20e^{t/40}+c$;\;
+$v=20+ce^{-t/40}$. Now $v(0)=-7\Rightarrow
+c=-27$. Therefore,$v=20-27e^{-t/40}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.3.5}
+A stone weighing 1/2 lb is thrown upward from an initial height of 5
+ft with an initial speed of 32 ft/s. Air resistance is
+proportional to speed, with $k=1/128$ lb-s/ft. Find the
+maximum height attained by the stone.
+\end{problem}
+
+\begin{problem}\label{exer:4.3.6}
+A 3200-lb car is moving at 64 ft/s down a 30-degree grade when it
+runs out of fuel. Find its velocity after that if friction exerts a
+resistive force with magnitude proportional to the square of the
+speed, with $k=1\ \mbox{lb-s}^2/{\mbox ft}^2$. Also find its
+terminal velocity.
+
+\begin{solution}
+$m=\frac{3200}{32}=100$ sl. The
+component of the gravitational force in the direction of motion is
+$-3200\cos(\pi/3)=-1600$ lb. Therefore,
+$100v'=-1600+v^2$. Separating variables yields
+$\frac{v'}{(v-40)(v+40)}=\frac{1}{100}$, or $\left[\frac{1}{v-40}-\frac{1}{v+40}\right]=\frac{4}{5}$. Therefore,
+$\ln\left|\frac{v-40}{v+40}\right|=\frac{4t}{5}+k$ and $\frac{v-40}{v+40}=ce^{4t/5}$.
+Now $v(0)=-64\Rightarrow c=\frac{13}{3}$; therefore $\frac{v-40}{v+40}=\frac{13e^{4t/5}}{3}$, so
+$v=\frac{40(3+13e^{4t/5})}{3-13e^{4t/5}}$, or
+$v=-\frac{40(13+3e^{-4t/5})}{13-3e^{-4t/5}}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.3.7}
+A 96 lb weight is dropped from rest in a medium that exerts a
+resistive force with magnitude proportional to the speed. Find its
+velocity as a function of time if its terminal velocity is -128
+ft/s.
+\end{problem}
+
+\begin{problem}\label{exer:4.3.8}
+An object with mass $m$ moves vertically through a medium that exerts
+a resistive force with magnitude proportional to the  speed. Let
+$y=y(t)$ be the
+altitude of the object at time $t$, with $y(0)=y_0$. Use the results
+of Example~\ref{example:4.3.1} to show that
+$$
+ y(t)=y_0+\frac{m}{k}(v_0-v-gt).
+$$
+
+\begin{solution}
+From Example~4.3.1, (A) $v=-\frac{mg}{k}+\left(v_0+\frac{mg}{k}\right)e^{-kt/m}$. Integrating this yields
+(B) $y=-\frac{mgt}{k}-\frac{m}{k}\left(v_0+\frac{mg}{k}\right)e^{-kt/m}+c$.
+Now $y(0)=y_0\Rightarrow c=y_0+\frac{m}{k}\left(v_0+\frac{mg}{k}\right)$. Substituting this into (B) yields
+\begin{eqnarray*}
+y&=&-\frac{mgt}{k}-\frac{m}{k}\left(v_0+\frac{mg}{k}\right)e^{-kt/m}+
+y_0+\frac{m}{k}\left(v_0+\frac{mg}{k}\right)\\
+&=&y_0+\frac{m}{k}\left(v_0-gt+\frac{mg}{k}-\left(v_0+\frac{mg}{k}\right)e^{-kt/m}\right)\\
+&=&y_0+\frac{m}{k}(v_0-v-gt)
+\end{eqnarray*}
+where the last equality follows from (A).
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.3.9}
+An object with mass $m$ is launched vertically upward with initial
+velocity $v_0$ from Earth's surface ($y_0=0$) in a medium that exerts
+a resistive force with magnitude proportional to the speed. Find the
+time $T$ when the object attains its maximum altitude $y_m$. Then use
+the result of Exercise~\ref{exer:4.3.8} to find $y_m$.
+\end{problem}
+
+\begin{problem}\label{exer:4.3.10}
+An object weighing 256 lb is dropped from rest in a medium that
+exerts a resistive force with magnitude proportional to the square of
+the speed. The magnitude of the resisting force is 1 lb when $|v|=4\
+\mbox{ft/s}$. Find $v$ for $t > 0$, and find its terminal
+velocity.
+
+\begin{solution}
+$m=\frac{256}{32}=8$ sl.
+Since the
+resisting force is 1 lb when $|v|=4\ \mbox{ft/s}$,
+$k=\frac{1}{16}$.
+ Therefore,
+$8v'=-256+\frac{1}{16}v^2=\frac{1}{16}\left(v^2-(64)^2\right)$.
+Separating variables yields
+$\frac{v'}{(v-64)(v+64)}=\frac{1}{128}$, or $\left[\frac{1}{v-64}-\frac{1}{v+64}\right]v'=1$. Therefore,$\ln\left|\frac{v-64}{v+64}\right|=t+k$ and $\frac{v-64}{v+64}=ce^t$.
+Now $v(0)=0\Rightarrow c=-1$; therefore $\frac{v-64}{v+64}=-e^t$, so
+$v=\frac{64(1-e^t)}{1+e^t}$, or
+$v=-\frac{64(1-e^{-t})}{1+e^{-t}}$.  Therefore,
+$\lim_{t\to\infty}v(t)=-64$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.3.11}
+An object with mass $m$ is given an initial velocity $v_0\le0$ in
+a medium that exerts
+a resistive force with magnitude proportional to the square of the
+speed. Find the velocity of the object for $t > 0$, and find its
+terminal velocity.
+\end{problem}
+
+\begin{problem}\label{exer:4.3.12}
+An object with mass $m$ is launched vertically upward with initial
+velocity $v_0$ in a medium that exerts a resistive force
+with magnitude  proportional to the square of the  speed.
+
+
+\begin{enumerate}
+\item %(a)
+Find the time $T$ when the object reaches its maximum
+altitude.
+
+\begin{solution}
+$mv'=-mg-kv^2=-mg(1+\gamma^2v^2)$, where
+$\gamma=\sqrt{\frac{k}{mg}}$. Therefore,(A)  $\frac{v'}{1+\gamma^2v^2}=-g$. With the
+substitution $u=\gamma v$,
+ $\int{\frac{dv}{1+\gamma^2 v^2}}
+=\frac{1}{\gamma}\int{\frac{du}{1+u^2}}=\frac{1}{\gamma}\tan^{-1}u=
+\frac{1}{\gamma}\tan^{-1}(\gamma v)$.
+Therefore,
+$\frac{1}{\gamma}\tan^{-1}(\gamma v)=-gt+c$. Now
+$v(0)=v_0\Rightarrow c=\frac{1}{\gamma}\tan^{-1}(\gamma v_0)$, so
+$\frac{1}{\gamma}\tan^{-1}(\gamma v)=-gt+
+\frac{1}{\gamma}\tan^{-1}(\gamma v_0)$.
+Since $v(T)=0$, it follows that $T=\frac{1}{\gamma g}\tan^{-1}\gamma v_0
+=\sqrt{\frac{m}{kg}
+\tan^{-1}\left(v_0 \sqrt{\frac{k}{mg}}\right)}$.
+\end{solution}
+
+\item %(b)
+Use the result of Exercise~\ref{exer:4.3.11} to find the velocity of the
+object for $t > T$.
+\end{enumerate}
+
+\begin{solution}
+Replacing $t$ by $t-T$ and setting $v_0=0$in the answer to
+the previous exercise yields
+$v =-\sqrt{\frac{mg}{k}} \,
+\frac{1-e^{-2\sqrt\frac{gk}{m}\, (t-T)}}{{1+e^{-2\sqrt{\frac{gk}{m}}\,
+(t-T)}}}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.3.13}  
+An object with mass $m$ is given an  initial velocity $v_0\le0$
+in a medium that exerts a resistive force of the form
+ $a|v|/(1+|v|)$, where  $a$ is positive constant.
+
+\begin{enumerate}
+\item % (a)
+Set up a differential equation for the speed of the object.
+\item % (b)
+Use your favorite numerical method to solve the equation you just found to convince yourself that there's a unique number $a_0$ such
+that $\lim_{t\to\infty}s(t)=\infty$ if $a\le a_0$ and
+$\lim_{t\to\infty}s(t)$ exists (finite) if $a>a_0$. (We say that $a_0$
+is the \emph{bifurcation value} of $a$.) Try to find $a_0$ and
+$\lim_{t\to\infty}s(t)$ in the case where $a>a_0$.
+\begin{hint}
+See Exercise~$\ref{exer:4.3.14}$
+\end{hint}
+
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.3.14}
+An object of mass $m$ falls in a medium that exerts a resistive force
+$f=f(s)$, where $s=|v|$ is the speed of the object. Assume that
+$f(0)=0$ and $f$ is strictly increasing and differentiable on
+$(0,\infty)$.
+\begin{enumerate}
+\item % (a)
+Write a differential equation for the speed $s=s(t)$ of the object.
+Take it as given that all solutions of this equation with $s(0)\ge0$
+are defined for all $t>0$ (which makes good sense on physical
+grounds).
+
+\begin{solution}
+$mv'=-mg+f(|v|)$; since $s=|v|=-v$, (A) $ms'=mg-f(s)$.
+\end{solution}
+
+\item % (b)
+Show that if $\lim_{s\to\infty}f(s)\le mg$ then
+$\lim_{t\to\infty}s(t)=\infty$.
+
+\begin{solution}
+Since $f$ is increasing and $\lim_{t\to\infty}f(s)\le mg$,
+$mg-f(s)>0$ for all~$s$. This and (A) imply that $s$ is an increasing
+function of $t$, so either (B) $\lim_{t\to\infty}s(t)=\infty$
+or (C ) $\lim_{t\to\infty}s(t)=\overline s<\infty$. However,
+(A) and (C) imply that $s'(t)>K=g-f(\overline s)/m$ for all $t>0$.
+Consequently, $s(t)>s_0+Kt$ for all $t>0$, which contradicts (C)
+because $K>0$.
+\end{solution}
+
+\item\label{exer:4.3.14c} % (c)
+Show that if $\lim_{s\to\infty}f(s)>mg$ then
+$\lim_{t\to\infty}s(t)=s_T$ (terminal speed), where $f(s_T)=mg$.
+\begin{hint}
+    Use Theorem~\ref{thmtype:2.3.1}
+\end{hint}
+
+\begin{solution}
+There is a unique positive number $s_T$ such that
+$f(s_T)=mg$, and $s\equiv s_T$ is a constant solution of (A).
+Now suppose that $s(0)<s_T$. Then Theorem~2.3.1
+implies that (D) $s(t)<s_T$ for all $t>0$, so (A) implies that
+$s$ is strictly increasing. This and (D) imply that
+$\lim_{t\to\infty}s(t)=\overline s\le s_T$. If $\overline s<s_T$
+then (A) implies that $s'(t)>K=g-f(\overline s)/m$. Consequently,
+$s(t)>s(0)+Kt$, which contradicts (D) because $K>0$. Therefore,
+$s(0)<s_T\Rightarrow\lim_{t\to\infty}s(t)=s_T$. A similar proof with
+inequlities reversed shows that
+$s(0)>s_T\Rightarrow\lim_{t\to\infty}s(t)=s_T$.
+\end{solution}
+
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.3.15}
+A 100-g mass with initial velocity $v_0\le0$ falls in a medium that
+exerts a resistive force proportional to the fourth power of the
+speed. The resistance is $.1$ N if the speed is 3 m/s.
+
+\begin{enumerate}
+\item\label{exer:4.3.15a} % (a)
+Set up the initial value problem for the velocity $v$ of the mass for
+$t>0$.
+\item\label{exer:4.3.15b} % (b)
+Use Exercise~\ref{exer:4.3.14c} to determine the terminal velocity of
+the object.
+
+\item % (c)
+To confirm your answer to \ref{exer:4.3.15b},  use one of the numerical methods  studied
+in Chapter~3 to compute  approximate solutions on $[0,1]$
+(seconds) of the initial value problem of \ref{exer:4.3.15a}, with initial values
+$v_0=0$, $-2$, $-4$, \dots, $-12$. Present your results in graphical form
+similar to Figure~\ref{figure:4.3.3}.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.3.16}
+A 64-lb object with initial velocity $v_0\le0$ falls through a dense
+fluid that exerts a resistive force proportional to the square root of
+the speed. The resistance is $64$ lb if the speed is 16 ft/s.
+
+\begin{enumerate}
+\item\label{exer:4.3.16a} % (a)
+Set up the initial value problem for the velocity $v$ of the mass for
+$t>0$.
+
+\begin{solution}
+(A) $mv'=-mg+k\sqrt{|v|}$; since the magnitude of the
+resistance is 64 lb when $v=16$ ft/s, $4k=64$, so $k=16 \
+\mbox{lb$\cdot$ s}^{1/2}/\mbox{ft}^{1/2}$. Since $m=2$ and $g=32$,
+(A) becomes $2v'=-64+16\sqrt{|v|}$, or $v'=-32+8\sqrt{|v|}$.
+\end{solution}
+
+\item\label{exer:4.3.16b} % (b)
+Use Exercise~\ref{exer:4.3.14c} to determine the terminal velocity of
+the object.
+
+\begin{solution}
+From Exercise~\ref{exer:4.3.14c}, $v_T$ is the negative
+number such that $-32+8\sqrt{|v_T|}=0$; thus, $v_T=-16$ ft/s.
+\end{solution}
+
+\item % (c)
+ 
+To confirm your answer to \label{exer:4.3.16b}, use one of the numerical methods
+studied in Chapter~3 to compute approximate
+solutions on
+$[0,4]$ (seconds) of the initial value problem of \label{exer:4.3.16a}, with
+initial values $v_0=0$, $-5$, $-10$, \dots, $-30$. Present your results in
+graphical form similar to Figure~\ref{figure:4.3.3}.
+\end{enumerate}
+
+\end{problem}
+
+\begin{problem}\label{exer:4.3.17}
+A space probe is to be launched from a space station 200
+miles above Earth.  Determine its escape velocity in
+miles/s.  Take Earth's radius to be 3960 miles.  Assume
+that the
+force due to gravity is given by Newton's law of gravitation. Take the
+upward direction to be positive.
+\end{problem}
+
+\begin{problem}\label{exer:4.3.18}
+A space vehicle is to be launched from the moon, which has a
+radius of about 1080 miles.  The acceleration due to
+gravity at the surface of the moon is about $5.31$
+ft/s$^2$.  Find the escape velocity in miles/s.  Assume
+that the
+force due to gravity is given by Newton's law of gravitation. Take the
+upward direction to be positive.
+
+\begin{solution}
+With $h=0$, $v_e=\sqrt{2gR}$, where $R$ is the radius of the moon and
+$g$ is the acceleration due to gravity at the moon's surface. With
+length in miles, $g=\frac{5.31}{5280}$ mi/s$^2$, so
+$v_e=\sqrt{\frac{2\cdot5.31\cdot1080}{5280}} \approx 1.47$
+miles/s.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.3.19}
+\begin{enumerate}
+\item %(a)
+Show that Eqn.~(\ref{eq:4.3.23})  can be rewritten as
+$$
+v^2=\frac{h-y}{y+R} v^2_e+v_0^2.
+$$
+
+\item %(b)
+Show that if $v_0=\rho v_e$ with $ 0\le \rho < 1$, then
+the maximum altitude $y_m$ attained by the space
+vehicle is
+$$
+y_m=\frac{h+R\rho^2}{1-\rho^2}.
+$$
+
+\item %(c)
+By requiring that $v(y_m)=0$, use Eqn.~(\ref{eq:4.3.22}) to
+deduce that if $v_0 < v_e$ then
+$$
+|v|=v_e\left[\frac{(1-\rho^2)(y_m-y)}{y+R}\right]^{1/2},
+$$
+where $y_m$ and $\rho$ are as defined in the previous part and
+$y \ge h$.
+
+\item %(d)
+Deduce that if $v < v_e$,  the vehicle takes
+equal times to climb from $y=h$ to $y=y_m$ and to
+fall back from $y=y_m$ to $y=h$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.3.20}
+In the situation considered in the discussion of escape velocity, show
+that $\lim_{t\to\infty}y(t)=\infty$ if $v(t)>0$ for all $t>0$.
+
+\begin{hint}
+    Use a proof by contradiction. Assume that there's a number
+$y_m$ such that $y(t)\le y_m$ for all $t>0$. Deduce from this that
+there's positive number $\alpha$ such that $y''(t)\le-\alpha$ for all
+$t\ge0$. Show that this contradicts the assumption that $v(t)>0$ for
+all $t>0$.
+\end{hint}
+
+\begin{solution}
+Suppose that there is a number $y_m$ such that $y(t)\le y_m$ for all $t\ge0$ and let $\alpha=\frac{gR^2}{(y_m+R)^2}$. Then
+$\frac{d^2y}{dt^2}\le-\alpha$ for all $t\ge 0$. Integrating this
+inequality from $t=0$ to $t=T>0$ yields $v(T)-v_0\le -\alpha T$, or
+$v(T)\le v_0-\alpha T$, so $v(T) < 0$ for $T>\frac{v_0}{\alpha}$.
+This implies that the vehicle must eventually fall back to Earth, which contradicts the assumption that it continues to climb forever.
+\end{solution}
+
+\end{problem}
+
+\end{document}

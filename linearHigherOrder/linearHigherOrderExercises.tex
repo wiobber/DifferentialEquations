@@ -1,0 +1,1825 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+
+\begin{problem}\label{exer:9.1.1}
+Verify that the given function is the solution of the initial
+value problem.
+
+\begin{enumerate}
+
+\item $ x^3y'''-3x^2y''+6xy'-6y=-\frac{24}{x}, \quad  y(-1)=0$, $
+y'(-1)=0, \quad  y''(-1)=0$;
+
+$y=-6x-8x^2-3x^3+\frac{1}{x}$
+
+\item $ y'''-\frac{1}{x}y''-y'+\frac{1}{x}y=\frac{x^2-4}{x^4}, \quad
+y(1)=\frac{3}{2},\quad y'(1)=\frac{1}{2}$, $ y''(1)=1$;
+
+$y=x+\frac{1}{2x}$
+
+\item $xy'''-y''-xy'+y=x^2, \quad  y(1)=2,\quad y'(1)=5,\quad
+y''(1)=-1$;
+
+$y=-x^2-2+2e^{(x-1)}-e^{-(x-1)}+4x$
+
+\item $4x^3y'''+4x^2y''-5xy'+2y=30x^2, \quad  y(1)=5,\quad
+y'(1)=\frac{17}{2},\quad y''(1)=\frac{63}{4} $;
+
+$y=2x^2\ln
+x-x^{1/2}+2x^{-1/2}+4x^2$
+
+\item $x^4y^{(4)}-4x^3y'''+12x^2y''-24xy'+24y=6x^4, \quad  y(1)=-2, \quad y'(1)=-9, \quad  y''(1)=-27,\quad y'''(1)=-52$;
+
+$y=x^4\ln x+x-2x^2+3x^3-4x^4$
+
+\item 
+$xy^{(4)}-y'''-4xy''+4y'=96x^2, \quad  y(1)=-5,\quad y'(1)=-24; \quad y''(1)=-36; \quad   y'''(1)=-48;$
+
+$y=9-12x+6x^2-8x^3$
+
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.2}
+Solve the initial value problem
+$$
+x^3y'''-x^2 y''-2xy'+6y=0,
+\quad   y(-1)=-4, \quad   y'(-1)=-14,\quad   y''(-1)=-20.
+$$
+
+\begin{hint}
+See Example~$\ref{example:9.1.1}$.
+\end{hint}
+
+\begin{solution}
+From Example~9.1.1,
+$y= c_1x^2+c_2x^3+\frac{c_3}{x}$
+$y'=2c_1x+3c_2x^2-\frac{c_3}{x^2}$, and
+$y''=2c_1+6c_2x+\frac{2c_3}{x^3}$, where
+$$
+\begin{array}{rcr}
+c_1-c_2-c_3&=&4 \\
+-2c_1+3c_2-c_3&=&-14 \\
+2c_1-6c_2-2c_3&=&20,
+\end{array}
+$$
+so $c_1=2$, $c_2=-3$, $c_3=1$, and
+$y=2x^2-3x^3+\frac{1}{x}$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:9.1.3}
+Solve the initial value problem
+$$
+y^{(4)}+y'''-7y''-y'+6y=0,
+\quad   y(0)=5,\quad   y'(0)=-6,\quad   y''(0)=10,\quad   y'''(0)-36.
+$$
+
+\begin{hint}
+See Example~$\ref{example:9.1.2}$.
+\end{hint}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.4}
+Find solutions $y_1$, $y_2$, \dots, $y_n$ of the equation $y^{(n)}=0$
+that satisfy the initial conditions
+$$
+y_i^{(j)}(x_0)=\left\{\begin{array}{cl}
+0,&j\ne i-1,\\ 
+1,&j=i-1,\end{array}\right.\; 1\le i\le n.
+$$
+
+\begin{solution}
+The general solution of $y^{(n)}=0$
+can be written as $y(x)=\sum_{m=0}^{n-1}c_m(x-x_0)^m$. Since
+$y^{(j)}(x)=\sum_{m=j}^{n-1}m(m-1)\cdots(m-j+1)c_m(x-x_0)^{m-j}$,
+$y^{(j)}(x_0)=j!c_j$. Therefore,
+$y_i=\frac{(x-x_0)^{i-1}}{(i-1)!},\,1\le i
+\le n$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.5}
+\begin{enumerate}
+\item %(a)
+Verify that the function
+$$
+y=c_1x^3+c_2x^2+\frac{c_3}{x}
+$$
+satisfies
+$$
+x^3 y'''-x^2y''-2xy'+6y=0
+\text{(A)}
+$$
+if $c_1$, $c_2$, and $c_3$ are constants.
+
+\item %(b)
+Use what you just showed to find solutions $y_1$, $y_2$, and $y_3$ of
+(A) such that
+$$
+\begin{array}{rl}
+y_1(1)&=1,\quad y_1'(1)=0,\quad  y_1''(1)=0  \\ 
+y_2(1)&=0,\quad  y_2'(1)=1,\quad  y_2''(1)=0  \\ 
+y_3(1)&=0,\quad  y_3'(1)=0,\quad  y_3''(1)=1.
+\end{array}
+$$
+
+
+\item %(c)
+Now find the solution of (A) such that
+$$
+y(1)=k_0,\quad y'(1)=k_1,\quad   y''(1)=k_2.
+$$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.6}
+Verify that the given functions are solutions of the given equation, and show that they  form a fundamental set of solutions of the
+equation on any interval on which the equation is normal.
+
+\begin{enumerate}
+     
+\item $y'''+y''-y'-y=0;  \quad\{e^x,\,e^{-x},\,xe^{-x}\}$
+
+\begin{solution}
+We omit the verification that the given functions are solutions of the
+given equations.  The equation is normal on $(-\infty,\infty)$.
+$W(x)=\left|\begin{array}{cccc}e^x&e^{-x}&xe^{-x}\\
+e^x&-e^{-x}&e^{-x}(1-x)\\e^x&e^{-x}&e^{-x}
+(x-2)\end{array}\right|$;
+$W(0)=
+\left|\begin{array}{cccc}1&1&0\\1&-1&1\\1&1&-2\end{array}\right|=4$.
+Apply  Theorem~\ref{thmtype:9.1.4}.
+\end{solution}
+
+\item $y'''-3y''+7y'-5y=0;  \quad\{e^x,\,e^x\cos2x,\,e^x\sin2x\}$.
+
+\begin{solution}
+The equation is normal on $(-\infty,\infty)$.
+
+$W(x)=
+\left|\begin{array}{cccc}e^x&e^x\cos 2x&e^x\sin 2x\\
+e^x&e^x(\cos 2x-2\sin 2x)&e^x(2\cos2x
++\sin 2x)\\e^x&-e^x(3\cos 2x+4\sin 2x)&e^x(4\cos 2x-3\sin2x
+)\end{array}\right|$;
+
+$W(0)=
+\left|\begin{array}{cccc}1&1&0\\1&1&2\\1&-3&4\end{array}\right|
+=8$. Apply Theorem~\ref{thmtype:9.1.4}.
+\end{solution}
+
+\item $xy'''-y''-xy'+y=0;  \quad \{e^x,\,e^{-x},\,x\}$
+
+\begin{solution}
+The equation is normal on $(-\infty,0)$ and $(0,\infty)$.
+
+$W(x)=
+\left|\begin{array}{cccc}e^x&e^{-x}&x\\e^x&-e^{-x}&1\\
+e^x&e^{-x}&0\end{array}\right|=2x$. Apply Theorem~\ref{thmtype:9.1.4}.
+\end{solution}
+
+\item $x^2y'''+2xy''-(x^2+2)y=0;  \quad\{e^x/ x,\,e^{-x}/
+x,\,1\}$
+
+\begin{solution}
+The equation is normal on $(-\infty,0)$ and $(0,\infty)$.
+
+$W(x)=
+\left|\begin{array}{cccc}e^x/x&e^{-x}/x&1\\
+e^x(1/x-1/x^2)&-e^{-x}(x+1)/x^2&0\\e^x(1/x-2/x^2
++2/x^3)&e^{-x}(x^2+2x+2)/x^3&0\end{array}\right|=2/x^2$. 
+
+Apply Theorem~\ref{thmtype:9.1.4}.
+\end{solution}
+
+\item $(x^2-2x+2)y'''-x^2y''+2xy'-2y=0;  \quad \{x,\,x^2,\,e^x\}$
+
+\begin{solution}
+The equation is normal on $(-\infty,\infty)$.
+$W(x)=
+\left|\begin{array}{cccc}x&x^2&e^x\\1&2x&e^x\\0&2&e^x\end{array}\right|$;
+$W(0)=
+\left|\begin{array}{cccc}0&0&1\\1&0&1\\0&2&1\end{array}\right|=2$; Apply Theorem~\ref{thmtype:9.1.4}.
+\end{solution}
+
+\item
+$(2x-1)y^{(4)}-4xy'''+(5-2x)y''+4xy'-4y=0;
+\quad\{x,\,e^x,\,e^{-x},e^{2x}\}$
+
+\begin{solution}
+he equation is normal on $(-\infty,1/2)$ and $(1/2,\infty)$.
+
+$W(x)=
+\left|\begin{array}{cccc}x&e^x&e^{-x}&e^{2x}\\
+1&e^x&-e^{-x}&2e^{2x}\\0&e^x&e^{-x}&4e^(
+2x)\\0&e^x&-e^{-x}&8e^{2x}\end{array}\right|
+=e^{2x}(12x-6)$. Apply Theorem~\ref{thmtype:9.1.4}.
+\end{solution}
+
+\item $xy^{(4)}-y'''-4xy'+4y'=0;  \quad\{1,x^2,\,e^{2x},\,e^{-2x}\}$
+
+\begin{solution}
+The equation is normal on $(-\infty,0)$ and $(0,\infty)$.
+
+$W(x)=
+\left|\begin{array}{cccc}1&x^2&e^{2x}&e^{-2x}\\
+0&2x&2e^{2x}&-2e^{-2x}\\0&2&4e^{2x}&4
+e^{-2x}\\0&0&8e^{2x}&-8e^{-2x}\end{array}\right|
+=-128x$. Apply Theorem~\ref{thmtype:9.1.4}.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.7}Find the Wronskian $W$ of a set of three solutions of 
+$$ y'''+2xy''+e^xy'-y=0, $$ given that $W(0)=2$.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.8}
+Find the Wronskian $W$ of a set of four solutions of
+$$
+y^{(4)}+(\tan x)y'''+x^2y''+2xy=0,
+$$
+given that $W(\pi/4)=K$.
+
+\begin{solution}
+From Abel's formula, (A) $W(x)=
+W(\pi/2)\exp\left(-\int_{\pi/4}^x\tan t\,dt\right)$;
+$\int_{\pi/4}^x \tan t\,dt=-\ln \cos
+t\bigg|_{\pi/4}^x=-\ln(\sqrt2\cos x)$; therefore (A) implies that
+$W(x)=\sqrt2K\cos x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.9}
+\begin{enumerate}
+\item %(a)
+Evaluate the Wronskian $W$ $\{e^x,\,xe^x,\,
+x^2e^x\}$. Evaluate $W(0)$.
+
+\item %(b)
+Verify that $y_1$, $y_2$, and $y_3$ satisfy
+$$
+y'''-3y''+3y'-y=0.
+\text{(A)}
+$$
+
+\item %(c)
+Use your calculation of $W(0)$ and Abel's formula to calculate $W(x)$.
+
+\item %(d)
+What is the general solution of  (A)?
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.10}
+Compute the Wronskian of the given set of functions.
+
+\begin{enumerate}
+\item  $\{1,\,e^x,\,e^{-x}\}$
+
+\begin{solution}
+$W(x)=\left|\begin{array}{ccr}1&e^x&e^{-x}\\0&e^x
+&-e^{-x}\\0&e^x&e^{-x}\end{array}\right|=(e^x)(e^{-x})
+\left|\begin{array}{ccr}1&1&1\\0&1&-1\\0&1&1\end{array}\right|=2$.
+\end{solution}
+
+\item $\{e^x,\, e^x\sin x,\,e^x\cos x\}$
+
+\begin{solution}
+\begin{eqnarray*}
+W(x)&=&\left|\begin{array}{ccc}e^x&e^x\sin x&e^x\cos x\\e^x&e^x(\cos
+x+\sin x)&
+e^x(\cos x-\sin x)\\e^x&2e^x\cos x&-2e^x\sin x\end{array}\right|=\\
+&=&e^{3x}\left|\begin{array}{ccc}1&\sin x&\cos x\\1&\cos x+\sin x&
+\cos x-\sin x\\1&2\cos x&-2\sin x\end{array}\right|\\
+&=&e^{3x}\left|\begin{array}{ccc}1&\sin x&-\cos x\\0&\cos x&
+-\sin x\\1&2\cos x-\sin x&-2\sin x-\cos x\end{array}\right|\\
+&=&e^{3x}\left|\begin{array}{crr}1&\sin x&\cos x\\0&\cos x&
+-\sin x\\0&-\sin x&-\cos x\end{array}\right|=-e^{3x}
+\end{eqnarray*}
+\end{solution}
+
+\item $\{2,\,x+1,\,x^2+2\}$
+
+\begin{solution}
+$W(x)=\left|\begin{array}{ccc}2&x+1&x^2+2\\
+0&1&2x\\0&0&2\end{array}\right|=4$.
+\end{solution}
+
+\item $ x,\,x\ln x,\,1/x\}$
+
+\begin{solution}
+\begin{eqnarray*}
+W(x)&=&\left|\begin{array}{ccr}x&x\ln|x|&1/x
+\\1&\ln|x|+1&-1/x^2\\0&1/x&2/x^3\end{array}\right|
+=\left|\begin{array}{ccr}1&\ln|x|&1/x^2
+\\1&\ln|x|+1&-1/x^2\\0&1&2/x^2\end{array}\right|\\
+&=&\frac{1}{x^2}\left|\begin{array}{ccr}1&\ln|x|&1
+\\1&\ln|x|+1&-1\\0&1&2\end{array}\right|
+=\frac{1}{x^2}\left|\begin{array}{ccr}1&\ln|x|&1
+\\0&1&-2\\0&1&2\end{array}\right|\\
+&=&\frac{1}{x^2}\left|\begin{array}{ccr}1&\ln|x|&1
+\\0&1&-2\\0&0&4\end{array}\right|
+=4/x^2.
+\end{eqnarray*}
+
+\end{solution}
+
+\item $\{1,\,x,\,\frac{x^2}{2!},\,
+\frac{x^3}{3!}\,,\cdots,\,\frac{x^n}{n!}\}$
+
+\begin{solution}
+$W(x)=
+\left[\begin{array}{cccccc}
+1&x&x^2/2&x^3/3&\cdots&x^n/n!\\
+0&1&x&x^2/2&\cdots&x^{n-1}/(n-1)!\\
+0&0&1&x&\cdots&x^{n-2}/(n-2)!\\
+0&0&0&1&\cdots&x^{n-3}/(n-3)!\\
+\vdots&\vdots&\vdots&\vdots&\ddots&\vdots\\
+0&0&0&0&\cdots&1
+\end{array}\right]=1$.
+\end{solution}
+
+\item $\{e^x,\,e^{-x},\,x\}$
+
+\begin{solution}
+$W(x)=\left|\begin{array}{crc}e^x&e^{-x}&x\\e^x&-e^{-x}&1
+\\e^x&e^{-x}&0\end{array}\right|
+=\left|\begin{array}{crc}1&1&x\\1&-1&1
+\\1&1&0\end{array}\right|
+=\left|\begin{array}{crc}1&1&x\\0&-2&1-x
+\\0&0&-x\end{array}\right|=
+2x$.
+\end{solution}
+
+\item $\{e^x/x,\,e^{-x}/x,\,1\}$
+
+\begin{solution}
+\begin{eqnarray*}
+W(x)&=&\left|\begin{array}{ccc}e^x/x&e^{-x}/x&1\\
+e^x/x-e^x/x^2&-e^{-x}/x-e^{-x}/x^2&0\\
+e^x/x-2e^x/x^2+2e^x/x^3&e^{-x}/x+2e^{-x}/x^2+2e^{-x}/x^3&0
+\end{array}\right|\\
+&=&\left|\begin{array}{ccc}1/x&1/x&1\\
+1/x-1/x^2&-1/x-1/x^2&0\\
+1/x-2/x^2+2/x^3&1/x+2/x^2+2/x^3&0
+\end{array}\right|\\
+&=&\left|\begin{array}{cc}
+1/x-1/x^2&-1/x-1/x^2\\
+1/x-2/x^2+2/x^3&1/x+2/x^2+2/x^3
+\end{array}\right|\\
+&=&\left|\begin{array}{cr}
+1/x-1/x^2&-2/x\\
+1/x-2/x^2+2/x^3&4/x^2
+\end{array}\right|=2/x^2.
+\end{eqnarray*}
+\end{solution}
+
+\item $\{x,\,x^2,\,e^x\}$
+
+\begin{solution}
+$W(x)=\left|\begin{array}{ccc}x&x^2&e^x
+\\1&2x&e^x\\0&2&e^x\end{array}\right|
+=e^x\left|\begin{array}{ccc}x&x^2&1
+\\1&2x&1\\0&2&1\end{array}\right|=
+e^x\left(
+x\left[\begin{array}{cc}2x&1\\2&1\end{array}\right]-
+\left[\begin{array}{cc}x^2&1\\2&1\end{array}\right]
+\right)\\
+=e^x(x^2-2x+2)$.
+\end{solution}
+
+\item $\{x,\,x^3,\,1/x,\,1/x^2\}$
+
+\begin{solution}
+\begin{eqnarray*}
+W(x)&=&\left|\begin{array}{cccc}
+x&x^3&1/x&1/x^2\\
+1&3x^2&-1/x^2&-2/x^3\\
+0&6x&2/x^3&6/x^4\\
+0&6&-6/x^4&-24/x^5
+\end{array}\right|
+=\left|\begin{array}{cccc}
+0&-2x^3&2/x&3/x^2\\
+1&3x^2&-1/x^2&-2/x^3\\
+0&6x&2/x^3&6/x^4\\
+0&6&-6/x^4&-24/x^5
+\end{array}\right|\\
+&=&-\left|\begin{array}{ccc}
+-2x^3&2/x&3/x^2\\
+6x&2/x^3&6/x^4\\
+6&-6/x^4&-24/x^5
+\end{array}\right|
+=-x^4\left|\begin{array}{rcc}
+-2&2/x^4&3/x^5\\
+6&2/x^4&6/x^5\\
+6&-6/x^4&-24/x^5
+\end{array}\right|\\
+&=&-x^4\left|\begin{array}{rcr}
+-2&2/x^4&3/x^5\\
+0&8/x^4&15/x^5\\
+0&0&-15/x^5
+\end{array}\right|=-240/x^5.
+\end{eqnarray*}
+\end{solution}
+
+\item $\{e^x,\,e^{-x},\,x,\,e^{2x}\}$
+
+\begin{solution}
+\begin{eqnarray*}
+W(x)&=&\left|\begin{array}{crcc}
+e^x&e^{-x}&x&e^{2x}\\
+e^x&-e^{-x}&1&2e^{2x}\\
+e^x&e^{-x}&0&4e^{2x}\\
+e^x&-e^{-x}&0&8e^{2x}
+\end{array}\right|
+=e^{2x}\left|\begin{array}{crcc}
+1&1&x&1\\
+1&-1&1&2\\
+1&1&0&4\\
+1&-1&0&8
+\end{array}\right|\\
+&=&e^{2x}\left|\begin{array}{cccc}
+1-x&1+x&0&1-2x\\
+1&-1-&1&2\\
+1&1&0&4\\
+1&-1-&0&8
+\end{array}\right|
+=-e^{2x}\left|\begin{array}{ccc}
+1-x&1+x&1-2x\\
+1&1&4\\
+1&-1-&8
+\end{array}\right|\\
+&=&-e^{2x}\left|\begin{array}{ccc}
+2&1+x&1-2x\\
+2&1&4\\
+0&-1-&8
+\end{array}\right|
+=-e^{2x}\left|\begin{array}{ccc}
+2&1+x&1-2x\\
+0&-x&3+2x\\
+0&-1-&8
+\end{array}\right|=6e^{2x}(2x-1).
+\end{eqnarray*}
+\end{solution}
+
+\item $\{e^{2x},\,e^{-2x},\,1,\,x^2\}$
+
+\begin{solution}
+\begin{eqnarray*}
+W(x)&=&\left|\begin{array}{crcc}
+e^{2x}&e^{-2x}&1&x^2\\
+2e^{2x}&-2e^{-2x}&0&2x\\
+4e^{2x}&4e^{-2x}&0&2\\
+8e^{2x}&-8e^{-2x}&0&0
+\end{array}\right|=
+\left|\begin{array}{crcc}
+1&1&1&x^2\\
+2&-2&0&2x\\
+4&4&0&2\\
+8&-8&0&0
+\end{array}\right|\\
+&=&\left|\begin{array}{crcc}
+2&-2&2x\\
+4&4&2\\
+8&-8&0
+\end{array}\right|
+=\left|\begin{array}{crcc}
+0&-2&2x\\
+8&4&2\\
+0&-8&0
+\end{array}\right|=-128x.
+\end{eqnarray*}
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.11}
+Suppose $Ly=0$ is normal on $(a,b)$ and $x_0$ is in $(a,b)$. Use
+Theorem~\ref{thmtype:9.1.1} to show that $y\equiv0$ is the only solution
+of the initial value problem
+$$
+Ly=0, \quad  y(x_0)=0,\quad y'(x_0)=0,\dots, y^{(n-1)}(x_0)=0,
+$$
+on $(a,b)$.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.12}
+Prove:  If $y_1$, $y_2$, \dots, $y_n$ are solutions of $Ly=0$ and the
+functions
+$$
+z_i=\sum^n_{j=1}a_{ij}y_j,\quad 1\le i\le n,
+$$
+form a fundamental set of solutions of $Ly=0$, then so do $y_1$, $y_2$,
+\dots, $y_n$.
+
+\begin{solution}
+Let $y$ be an arbitrary solution of $Ly=0$ on $(a,b)$. Since
+$\{z_1,\dots,z_n\}$ is a fundamental set of solutions of $Ly=0$
+on $(a,b)$, there are constants $c_1$, $c_2$,\dots, $c_n$
+such that $y=\\sum_{i=1}^nc_iy_i$. Therefore,
+$y=\sum_{i=1}^nc_i\sum_{j=1}^n a_{ij}y_j=\sum_{j=1}^n C_jy_j$,
+with $C_j=\sum_{i=1}^na_{ij}c_i$.
+Hence $\{y_1,\dots,y_n\}$ is a fundamental set of solutions of
+$Ly=0$ on $(a,b)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.13}
+Prove:  If
+$$
+y=c_1y_1+c_2y_2+\cdots+c_ky_k+y_p
+$$
+is a solution of a linear equation $Ly=F$ for every choice of the
+constants $c_1$, $c_2$ ,\dots, $c_k$, then $Ly_i=0$ for $1\le i\le k$.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.14}
+Suppose $Ly=0$ is normal on $(a,b)$ and let $x_0$ be in $(a,b)$.
+For $1\le i\le n$, let $y_i$ be the solution of the initial value
+problem
+$$
+Ly_i=0, \quad  y_i^{(j)} (x_0)=
+\left\{\begin{array}{cl}
+0,& j\ne i-1,\\  
+1,&j=i-1,\end{array}\right. 1\le i\le n,
+$$
+where $x_0$ is an arbitrary point in $(a,b)$.  Show that any solution
+of $Ly=0$ on $(a, b)$, can be written as
+$$
+y=c_1y_1+c_2y_2+\cdots+c_ny_n,
+$$
+with $c_j=y^{(j-1)}(x_0)$.
+
+\begin{solution}
+Let $y$ be a given solution of $Ly=0$ and
+$z=\sum_{j=1}^ny^{(j-1)}(x_0)y_j$ Then
+$z^{(r)}(x_0)=y^{(r)}(x_0)$,
+$r=0,\dots,n-1$. Since the solution of every initial value problem
+is unique (Theorem~\ref{thmtype9.1.1}), $z=y$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.15}
+Suppose $\{y_1, y_2,\dots, y_n\}$ is a fundamental set of
+solutions of
+$$
+P_0(x)y^{(n)}+P_1(x)y^{(n-1)}+\cdots+P_n(x)y=0
+$$
+on $(a,b)$, and let
+$$
+\begin{array}{rl}
+z_1&=a_{11}y_1+a_{12}y_2+\cdots+a_{1n}y_n\\
+z_2&=a_{21}y_1+a_{22}y_2+\cdots+a_{2n}y_n\\
+ z_1&\vdots _1y_1+a\vdots
+ _2y_2+\cdots+a\vdots _ny_n  =b\vdots\\
+z_n&=a_{n1}y_1+a_{n2}y_2+\cdots+a_{nn}y_n,
+\end{array}
+$$
+where the $\{a_{ij}\}$ are constants. Show that $\{z_1, z_2,\dots,
+z_n\}$ is a fundamental set of solutions  of (A) if and only if the
+determinant
+$$
+\left|\begin{array}{cccc}
+a_{11}&a_{12}&\cdots&a_{1n}\\
+a_{21}&a_{22}&\cdots&a_{2n}\\
+\vdots&\vdots&\ddots&\vdots\\
+a_{n1}&a_{n2}&\cdots&a_{nn}\end{array}\right|
+$$
+is nonzero.
+
+\begin{hint}
+The determinant of a product of  $n\times
+n$ matrices equals the product of the determinants.
+\end{hint}
+\end{problem}
+
+
+\begin{problem}\label{exer:9.1.16}
+Show that $\{y_1,y_2,\dots,y_n\}$ is linearly dependent on $(a,b)$ if
+and only if at least one of the functions $y_1$, $y_2$, \dots, $y_n$ can be
+written as a linear combination of the others on $(a,b)$.
+
+\begin{solution}
+If $\{y_1,y_2,\dots,y_n\}$ is linearly dependent on $(a,b)$
+there are constants $c_1,\dots,c_n$, not all zeros, such that
+$c_1y_1+c_2y_2+\cdots+c_ny_n$. Let $k$ be the smallest integer
+such that $c_k\ne0$.  If $k=1$, then $y_1=\frac{1}{c_1}(c_2y_2+\cdots + c_ny_n)$; if $1<k<n$, then $y_k=0\cdot y_1+
+\cdots+ 0\cdot y_{k-1}+\frac{1}{c_k}(c_{k+1}y_{k+1}+\cdots+c_ny_n)$;
+ if $k=n$, then $y_n=0$, so $y_n=0\cdot y_1+0\cdot
+y_2+\cdots+ 0\cdot y_n$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.17}
+Prove:  If
+$$
+A(u_1,u_2,\dots,u_n)=
+\left|\begin{array}{cccc}
+a_{11}&a_{12}&\cdots&a_{1n}\\ 
+a_{21}&a_{22}&\cdots&a_{2n}\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+a_{n-1,1}&a_{n-1,2}&\cdots&a_{n-1,n}\\ 
+u_1&u_2&\cdots&u_n\end{array}\right|,
+$$
+then
+$$
+A(u_1+v_1, u_2+v_2,\dots,
+  u_n+v_n)=A(u_1,u_2,\dots,u_n)+A(v_1,v_2,\dots,
+  v_n).
+$$
+
+\begin{hint}
+By the definition of determinant,
+$$
+\left|\begin{array}{cccc}
+a_{11}&a_{12}&\cdots&a_{1n}\\ 
+a_{21}&a_{22}&\cdots&a_{2n}\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+a_{n1}&a_{n2}&\cdots&a_{nn}\end{array}\right|
+=\sum\pm a_{1i_1}a_{2i_2},\dots,a_{ni_n},
+$$
+where the sum is over all permutations $(i_1,i_2,\dots,i_n)$ of
+$(1,2,\dots, n)$ and the choice of $+$ or $-$ in each term depends
+only on the permutation associated with that term.
+\end{hint}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.18}
+Let
+$$
+F=\left|\begin{array}{cccc}
+f_{11}&f_{12}&\cdots&f_{1n}\\ 
+f_{21}&f_{22}&\cdots&f_{2n}\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+f_{n1}&f_{n2}&\cdots&f_{nn}\end{array}\right|,
+$$
+where $f_{ij}\; (1\le i,\;   j\le n)$ is differentiable.  Show that
+$$
+F'=F_1+F_2+\cdots+F_n,
+$$
+where $F_i$ is the determinant obtained by differentiating the
+$i$th row of $F$.
+
+\begin{hint}
+By the definition of determinant,
+$$
+\left|\begin{array}{cccc}
+a_{11}&a_{12}&\cdots&a_{1n}\\ 
+a_{21}&a_{22}&\cdots&a_{2n}\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+a_{n1}&a_{n2}&\cdots&a_{nn}\end{array}\right|
+=\sum\pm a_{1i_1}a_{2i_2},\dots,a_{ni_n},
+$$
+where the sum is over all permutations $(i_1,i_2,\dots,i_n)$ of
+$(1,2,\dots, n)$ and the choice of $+$ or $-$ in each term depends
+only on the permutation associated with that term.
+\end{hint}
+
+\begin{solution}
+Since
+$F=\sum\pm f_{1i_1}f_{2i_2},\dots,f_{ni_n}$,
+\begin{eqnarray*}
+F'&=&\sum\pm f'_{1i_1}f_{2i_2},\dots,f_{ni_n}
++\sum\pm f_{1i_1}f'_{2i_2},\dots,f_{ni_n}+\cdots+
+\sum\pm f_{1i_1}f_{2i_2},\dots,f'_{ni_n}\\
+&=&F_1+F_2+\cdots+F_n.
+\end{eqnarray*}
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:9.1.19}
+Use Exercise~\ref{exer:9.1.18}  to show that if $W$ is the
+Wronskian of the
+$n$-times differentiable functions $y_1$, $y_2$, \dots, $y_n$, then
+$$
+W'=
+\left|\begin{array}{cccc}
+y_1&y_2&\cdots&y_n\\ 
+y'_1&y'_2&\cdots&y'_n\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+y_1^{(n-2)}&y_2^{(n-2)}&\cdots&y_n^{(n-2)}\\ 
+y_1^{(n)}&y_2^{(n)}&\cdots&y_n^{(n)}
+\end{array}\right|.
+$$
+\end{problem}
+
+\begin{problem}\label{exer:9.1.20}
+Use Exercises~\ref{exer:9.1.17} and \ref{exer:9.1.19} to show that if $W$ is
+the Wronskian
+of  solutions $\{y_1,y_2,\dots,y_n\}$ of the normal equation
+$$
+P_0(x)y^{(n)}+P_1(x)y^{(n-1)}+\cdots+P_n(x)y=0,
+\text{(A)}
+$$
+then $W'=-P_1W/P_0$.
+Derive Abel's formula (Eqn.~\eqref{eq:9.1.15}) from this.
+\begin{hint}
+Use (A) to write $y^{(n)}$ in terms of
+$y,y',\dots,y^{(n-1)}$.
+\end{hint}
+
+\begin{solution}
+Since $y_j^{(n)}=-\sum_{k=1}^n(P_k/P_0)y_j^{(n-k)}$,
+Exercise~\ref{exer:9.1.19} implies that
+$$
+W'=-
+\left|\begin{array}{cccc}
+y_1&y_2&\cdots&y_n\\ 
+y'_1&y'_2&\cdots&y'_n\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+y_1^{(n-2)}&y_2^{(n-2)}&\cdots&y_n^{(n-2)}\\ 
+\sum_{k=1}^n(P_k/P_0)y_1^{(n-k)}&
+\sum_{k=1}^n(P_k/P_0)y_2^{(n-k)}&\cdots&
+\sum_{k=1}^n(P_k/P_0)y_n^{(n-k)}
+\end{array}\right|,
+$$
+so Exercise~\ref{exer:9.1.17} implies that
+$$
+W'=-\sum_{k=1}^n\frac{P_k}{P_0}
+\left|\begin{array}{cccc}
+y_1&y_2&\cdots&y_n\\ 
+y'_1&y'_2&\cdots&y'_n\\ 
+\vdots&\vdots&\ddots&\vdots\\ 
+y_1^{(n-2)}&y_2^{(n-2)}&\cdots&y_n^{(n-2)}\\ 
+y_1^{(n-k)}&
+y_2^{(n-k)}&\cdots&
+y_n^{(n-k)}
+\end{array}\right|.
+$$
+However, the determinants on the right each have two identical rows
+if $k=2,\dots,n$. Therefore,$W'=-\frac{P_1W}{P_0}$.  Separating
+variables yields $\frac{W'}{W}=-\frac{P_1}{P_0}$; hence
+$\ln \frac{W(x)}{W(x_0)}=-\int_{x_0}^x \frac{P_1(t)}{P_0(t)}\,dt$, which implies Abel's formula.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.1.21}  Prove Theorem~\ref{thmtype:9.1.6}.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.22}  Prove Theorem~\ref{thmtype:9.1.7}.
+
+\begin{solution}
+See the proof of Theorem~\ref{thmtype5.3.3}.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:9.1.23}
+Show that if the Wronskian of the $n$-times continuously
+differentiable functions $\{y_1,y_2,\dots,y_n\}$ has no zeros in
+$(a,b)$, then the differential equation obtained by expanding the
+determinant
+$$
+\left|\begin{array}{ccccc}
+y&y_1&y_2&\cdots&y_n\\ 
+y'&y'_1&y'_2&\cdots&y'_n\\ 
+\vdots&\vdots&\vdots&\ddots&
+ \vdots\\ 
+y^{(n)}&y_{1}^{(n)}&y_2^{(n)}&\cdots&y_n^{(n)}
+\end{array}\right|=0,
+$$
+in cofactors of its first column is normal and has
+$\{y_1,y_2,\dots,y_n\}$ as a fundamental set of solutions on $(a,b)$.
+\end{problem}
+
+\begin{problem}\label{exer:9.1.24}
+Use the method suggested by Exercise~\ref{exer:9.1.23}  to find a linear
+homogeneous equation such that the given set of functions
+is a fundamental set of solutions on intervals on which the Wronskian
+of the set has no zeros.
+
+\begin{enumerate}
+ \item  $\{x,\,x^2-1,\,x^2+1\}$
+
+\begin{solution}
+$$
+P_0(x)=
+-\left|\begin{array}{ccc}
+x&x^2-1&x^2+1\\
+1&2x&2x\\0&2&2
+\end{array}\right|=
+-\left|\begin{array}{ccc}
+x&x^2-1&x^2+1\\
+1&0&0\\0&2&2
+\end{array}\right|=
+\left|\begin{array}{cc}
+x^2-1&x^2+1\\2&2
+\end{array}\right|=-4;
+$$
+$P_1(x)=
+\left|\begin{array}{ccc}x&x^2-1&x^2+1\\1&2x&2x\\0&0&0\end{array}\right|=0$;
+$P_2(x)=-
+\left|\begin{array}{ccc}x&x^2-1&x^2+1\\0&2&2\\0&0&0\end{array}\right|=0$;
+$P_3(x)=
+\left|\begin{array}{ccc}1&2x&2x\\0&2&2\\0&0&0\end{array}\right|=0$.
+Therefore, $-4y'''=0$, which is equivalent
+to $y'''=0$.
+\end{solution}
+ 
+ \item  $\{e^x,\,e^{-x},\,x\}$
+
+\begin{solution}
+$$
+P_0=-
+\left|\begin{array}{crc}
+e^x&e^{-x}&x\\
+e^x&-e^{-x}&1\\
+e^x&e^{-x}&0
+\end{array}\right|=
+-\left|\begin{array}{crc}
+1&1&x\\1&-1&1\\1&1&0
+\end{array}\right|=
+-\left|\begin{array}{crc}
+0&0&x\\0&-2&1\\1&1&0
+\end{array}\right|=-2x;
+$$
+$$
+P_1=
+\left|\begin{array}{crc}
+e^x&e^{-x}&x\\e^x&-e^{-x}&1\\e^x&-e^{-x}&0
+\end{array}\right|=
+\left|\begin{array}{crc}
+1&1&x\\1&-1&1\\1&-1&0
+\end{array}\right|=
+\left|\begin{array}{crc}
+0&2&x\\0&0&1\\1&-1&0
+\end{array}\right|=2;
+$$
+$$
+P_2=
+-\left|\begin{array}{crc}
+e^x&e^{-x}&x\\e^x&e^{-x}&0\\e^x&-e^{-x}&0
+\end{array}\right|=
+-\left|\begin{array}{crc}
+1&1&x\\1&1&0\\1&-1&0
+\end{array}\right|=
+-\left|\begin{array}{crc}
+0&0&x\\1&1&0\\0&-2&0
+\end{array}\right|=2x;
+$$
+$$
+P_3=
+\left|\begin{array}{crc}
+e^x&-e^{-x}&1\\e^x&e^{-x}&0\\e^x&-e^{-x}&0
+\end{array}\right|=
+\left|\begin{array}{crc}
+1&-1&1\\1&1&0\\1&-1&0
+\end{array}\right|=
+\left|\begin{array}{crc}
+0&0&1\\1&2&0\\1&-1&0
+\end{array}\right|=-2.
+$$
+Therefore,
+$-2xy'''+2y''+2xy'-2y=0$,
+which is equivalent to
+$xy'''-y''-xy'+y=0$.
+\end{solution}
+
+ \item  $\{e^x,\,xe^{-x},\,1\}$
+
+\begin{solution}
+$$
+P_0(x)=
+-\left|\begin{array}
+{ccc}e^x&xe^{-x}&1\\
+e^x&e^{-x}(1-x)&0\\
+e^x&e^{-x}(x-2)&0
+\end{array}\right|=
+-\left|\begin{array}{ccc}
+1&x&1\\1&1-x&0\\1&x-2&0
+\end{array}\right|=
+-\left|\begin{array}{ccc}
+1&1-x\\1&x-2
+\end{array}\right|=3-2x;
+$$
+$$
+P_1(x)=
+\left|\begin{array}{ccc}
+e^x&xe^{-x}&1\\
+e^x&e^{-x}(1-x)&0\\
+e^x&e^{-x}(3-x)&0
+\end{array}\right|=
+\left|\begin{array}{ccc}
+1&x&1\\
+1&1-x&0\\
+1&3-x&0
+\end{array}\right|=
+\left|\begin{array}{ccc}
+1&1-x\\
+1&3-x
+\end{array}\right|=2;
+$$
+$$
+P_2(x)=
+-\left|\begin{array}{ccc}
+e^x&xe^{-x}&1\\
+e^x&e^{-x}(x-2)&0\\
+e^x&e^{-x}(3-x)&0
+\end{array}\right|=
+-\left|\begin{array}{ccc}
+1&x&1\\
+1&x-2&0\\
+1&3-x&0
+\end{array}\right|=
+-\left|\begin{array}{ccc}
+1&x-2\\
+1&3-x
+\end{array}\right|=2x-5;
+$$
+$$
+P_3(x)=
+\left|\begin{array}{ccc}
+e^x&e^{-x}(1-x)&0\\
+e^x&e^{-x}(x-2)&0\\
+e^x&e^{-x}(3-x)&0
+\end{array}\right|=0.
+$$
+Therefore,
+$(3-2x)y'''+2y''+(2x-5)y'=0$.
+\end{solution}
+ 
+\item $\{x,\,x^2,\,e^x\}$
+
+\begin{solution}
+\begin{eqnarray*}
+P_0(x)&=&
+-\left|\begin{array}{ccc}
+x&x^2&e^x\\
+1&2x&e^x\\
+0&2&e^x
+\end{array}\right|=
+-e^x\left|\begin{array}{ccc}
+x&x^2&1\\
+1&2x&1\\
+0&2&1
+\end{array}\right|=
+-e^x\left|\begin{array}{ccc}
+x&x^2-2&0\\
+1&2x-2&0\\
+0&2&1
+\end{array}\right|\\
+&=&-e^x\left|\begin{array}{ccc}
+x&x^2-2\\
+1&2x-2
+\end{array}\right|=-e^x(x^2-2x+2);
+\end{eqnarray*}
+$$
+P_1(x)=
+\left|\begin{array}{ccc}
+x&x^2&e^x\\
+1&2x&e^x\\
+0&0&e^x
+\end{array}\right|=
+e^x\left|\begin{array}{ccc}
+x&x^2\\
+1&2x
+\end{array}\right|=x^2e^x;
+$$
+$$
+P_2(x)=
+-\left|\begin{array}{ccc}
+x&x^2&e^x\\
+0&2&e^x\\
+0&0&e^x
+\end{array}\right|=
+-e^x\left|\begin{array}{ccc}
+x&x^2\\
+0&2&
+\end{array}\right|=-2xe^x;
+$$
+$$
+P_3(x)=
+\left|\begin{array}{ccc}
+1&2x&e^x\\
+0&2&e^x\\
+0&0&e^x
+\end{array}\right|=
+e^x\left|\begin{array}{ccc}
+1&2x\\
+0&2\\
+\end{array}\right|=2e^x.
+$$
+Therefore,
+$-e^x(x^2-2x+2)y'''+x^2e^xy''-2xe^xy'+2e^xy=0$;
+which is equivalent to
+ $(x^2-2x+2)y'''-x^2y''+2xy'-2y=0$.
+\end{solution}
+
+ \item $\{x,\,x^2,\,1/x\}$
+
+\begin{solution}
+\begin{eqnarray*}
+P_0(x)&=&
+-\left|\begin{array}{ccc}
+x&x^2&1/x\\
+1&2x&-1/x^2\\
+0&2&2/x^3
+\end{array}\right|=
+-x\left|\begin{array}{ccr}
+1&x&1/x^2\\
+1&2x&-1/x^2\\
+0&2&2/x^3
+\end{array}\right|=
+-x\left|\begin{array}{ccr}
+1&x&1/x^2\\
+0&x&-2/x^2\\
+0&2&2/x^3
+\end{array}\right|\\
+&=&-x\left|\begin{array}{cr}
+x&-2/x^2\\
+2&2/x^3
+\end{array}\right|=-\frac{6}{x};
+\end{eqnarray*}
+$$
+P_1(x)=
+\left|\begin{array}{ccc}
+x&x^2&1/x\\
+1&2x&-1/x^2\\
+0&0&-6/x^4
+\end{array}\right|=
+-\frac{6}{x^4}\left|\begin{array}{ccc}
+x&x^2\\
+1&2x
+\end{array}\right|=-\frac{6}{x^2};
+$$
+$$
+P_2(x)=
+-\left|\begin{array}{ccc}
+x&x^2&1/x\\
+0&2&2/x^3\\
+0&0&-6/x^4
+\end{array}\right|=
+\frac{6}{x^4}\left|\begin{array}{ccc}
+x&x^2\\
+0&2\\
+\end{array}\right|=\frac{12}{x^3};
+$$
+$$
+P_3(x)=
+\left|\begin{array}{ccc}
+1&2x&-1/x^2\\
+0&2&2/x^3\\
+0&0&-6/x^4
+\end{array}\right|=
+-\frac{6}{x^4}\left|\begin{array}{ccc}
+1&2x\\
+0&2\\
+\end{array}\right|=-\frac{12}{x^4}.
+$$
+Therefore,
+$-\frac{6}{x}y'''-\frac{6}{x^2}y''+\frac{12}{x^3}y'-\frac{12}{x^4}y=0$,
+which is equivalent to $x^3y'''+x^2y''-2xy'+2y=0$.
+\end{solution}
+ 
+\item $\{x+1,\,e^x,\,e^{3x}\}$
+
+\begin{solution}
+\begin{eqnarray*}
+P_0(x)&=&
+-\left|\begin{array}{ccc}
+x+1&e^x&e^{3x}\\
+1&e^x&3e^{3x}\\
+0&e^x&9e^{3x}
+\end{array}\right|=
+-e^{4x}\left|\begin{array}{ccc}
+x+1&1&1\\
+1&1&3\\
+0&1&9
+\end{array}\right|=
+-e^{4x}\left|\begin{array}{ccc}
+x+1&0&-8\\
+1&0&-6\\
+0&1&9
+\end{array}\right|\\
+&=&e^{4x}\left|\begin{array}{cc}
+x+1&-8\\
+1&-6\\
+\end{array}\right|
+=2e^{4x}(1-3x);
+\end{eqnarray*}
+\begin{eqnarray*}
+P_1(x)&=&
+\left|\begin{array}{ccc}
+x+1&e^x&e^{3x}\\
+1&e^x&3e^{3x}\\
+0&e^x&27e^{3x}
+\end{array}\right|=
+e^{4x}\left|\begin{array}{ccc}
+x+1&1&1\\
+1&1&3\\
+0&1&27
+\end{array}\right|=
+e^{4x}\left|\begin{array}{ccc}
+x+1&0&-26\\
+1&0&-24\\
+0&1&27
+\end{array}\right|\\
+&=&-e^{4x}\left|\begin{array}{ccc}
+x+1&-26\\
+1&-24\\
+\end{array}\right|=2e^{4x}(12x-1);
+\end{eqnarray*}
+\begin{eqnarray*}
+P_2(x)&=&
+-\left|\begin{array}{ccc}
+x+1&e^x&e^{3x}\\
+0&e^x&9e^{3x}\\
+0&e^x&27e^{3x}
+\end{array}\right|=
+-e^{4x}\left|\begin{array}{ccc}
+x+1&1&1\\
+0&1&9\\
+0&1&27
+\end{array}\right|\\
+&=&-e^{4x}\left|\begin{array}{ccc}
+x+1&1&1\\
+0&1&9\\
+0&0&18
+\end{array}\right|=-18e^{4x}(x+1);
+\end{eqnarray*}
+$$
+P_3(x)=
+\left|\begin{array}{ccc}
+1&e^x&3e^{3x}\\
+0&e^x&9e^{3x}\\
+0&e^x&27e^{3x}
+\end{array}\right|=
+e^{4x}\left|\begin{array}{ccc}
+1&1&3\\
+0&1&9\\
+0&1&27
+\end{array}\right|=
+e^{4x}\left|\begin{array}{ccc}
+1&1&3\\
+0&1&9\\
+0&0&18
+\end{array}\right|=18e^{4x}.
+$$
+Therefore,
+$$
+2e^{4x}(1-3x)y'''+2e^{4x}(12x-1)y''-18e^{4x}(x+1)y'+18e^{4x}y=0,
+$$
+which is equivalent to
+$$
+(3x-1)y'''-(12x-1)y''+9(x+1)y'-9y=0.
+$$
+\end{solution}
+
+ \item $\{x,\,x^3,\,1/x,\,1/x^2\}$
+
+\begin{solution}
+\begin{eqnarray*}
+P_0(x)&=&
+\left|\begin{array}{ccrc}
+x&x^3&1/x&1/x^2\\
+1&3x^2&-1/x^2&-2/x^3\\
+0&6x&2/x^3&6/x^4\\
+0&6&-6/x^4&-24/x^5
+\end{array}\right|=
+x\left|\begin{array}{ccrc}
+1&x^2&1/x^2&1/x^3\\
+1&3x^2&-1/x^2&-2/x^3\\
+0&6x&2/x^3&6/x^4\\
+0&6&-6/x^4&-24/x^5
+\end{array}\right|\\
+&=&x\left|\begin{array}{ccrc}
+1&x^2&1/x^2&1/x^3\\
+0&2x^2&-2/x^2&-3/x^3\\
+0&6x&2/x^3&6/x^4\\
+0&6&-6/x^4&-24/x^5
+\end{array}\right|=
+x\left|\begin{array}{crc}
+2x^2&-2/x^2&-3/x^3\\
+6x&2/x^3&6/x^4\\
+6&-6/x^4&-24/x^5
+\end{array}\right|\\
+&=&x^2\left|\begin{array}{crc}
+2x&-2/x^3&-3/x^4\\
+6x&2/x^3&6/x^4\\
+6&-6/x^4&-24/x^5
+\end{array}\right|
+=x^2\left|\begin{array}{crc}
+2x&-2/x^3&-3/x^4\\
+0&8/x^3&15/x^4\\
+0&0&-15/x^5
+\end{array}\right|=-\frac{240}{x^5}
+\end{eqnarray*}
+\begin{eqnarray*}
+P_1(x)&=&
+-\left|\begin{array}{cccc}
+x&x^3&1/x&1/x^2\\
+1&3x^2&-1/x^2&-2/x^3\\
+0&6x&2/x^3&6/x^4\\0&0&24/x^5&120/x^6
+\end{array}\right|=
+-x\left|\begin{array}{cccc}
+1&x^2&1/x^2&1/x^3\\
+1&3x^2&-1/x^2&-2/x^3\\
+0&6x&2/x^3&6/x^4\\0&0&24/x^5&120/x^6
+\end{array}\right|\\
+&=&-x\left|\begin{array}{cccc}
+1&x^2&1/x^2&1/x^3\\
+0&2x^2&-2/x^2&-3/x^3\\
+0&6x&2/x^3&6/x^4\\0&0&24/x^5&120/x^6
+\end{array}\right|
+=-x^2\left|\begin{array}{cccc}
+2x&-2/x^3&-3/x^4\\
+6x&2/x^3&6/x^4\\
+0&24/x^5&120/x^6
+\end{array}\right|\\
+&=&-x^2\left|\begin{array}{cccc}
+2x&-2/x^3&-3/x^4\\
+0&8/x^3&15/x^4\\
+0&24/x^5&120/x^6
+\end{array}\right|=
+-2x^3\left|\begin{array}{cccc}
+8/x^3&15/x^4\\
+24/x^5&120/x^6
+\end{array}\right|=-\frac{1200}{x^6};
+\end{eqnarray*}
+\begin{eqnarray*}
+P_2(x)&=&
+\left|\begin{array}{cccc}
+x&x^3&1/x&1/x^2\\
+1&3x^2&-1/x^2&-2/x^3\\
+0&6&-6/x^4&-24/x^5\\
+0&0&24/x^5&120/x^6
+\end{array}\right|=
+x\left|\begin{array}{cccc}
+1&x^2&1/x^2&1/x^3\\
+1&3x^2&-1/x^2&-2/x^3\\
+0&6&-6/x^4&-24/x^5\\
+0&0&24/x^5&120/x^6
+\end{array}\right|\\
+&=&x\left|\begin{array}{cccc}
+1&x^2&1/x^2&1/x^3\\
+0&2x^2&-2/x^2&-3/x^3\\
+0&6&-6/x^4&-24/x^5\\
+0&0&24/x^5&120/x^6
+\end{array}\right|
+=x^3\left|\begin{array}{cccc}
+2&-2/x^4&-3/x^5\\
+6&-6/x^4&-24/x^5\\
+0&24/x^5&120/x^6
+\end{array}\right|\\
+&=&x^3\left|\begin{array}{cccc}
+2&-2/x^4&-3/x^5\\
+0&0&-15/x^5\\
+0&24/x^5&120/x^6
+\end{array}\right|
+=2x^3\left|\begin{array}{cccc}
+0&-15/x^5\\
+24/x^5&120/x^6
+\end{array}\right|=\frac{720}{x^7};
+\end{eqnarray*}
+\begin{eqnarray*}
+P_3(x)&=&
+-\left|\begin{array}{cccc}
+x&x^3&1/x&1/x^2\\
+0&6x&2/x^3&6/x^4\\
+0&6&-6/x^4&-24/x^5\\0&0&24/x^5&120/x^6
+\end{array}\right|=
+-x^2\left|\begin{array}{cccc}
+6&2/x^4&6/x^5\\
+6&-6/x^4&-24/x^5\\
+0&24/x^5&120/x^6
+\end{array}\right|\\
+&=&-x^2\left|\begin{array}{cccc}
+6&2/x^4&6/x^5\\
+0&-8/x^4&-30/x^5\\
+0&24/x^5&120/x^6
+\end{array}\right|
+=-6x^2\left|\begin{array}{cccc}
+-8/x^4&-30/x^5\\
+24/x^5&120/x^6
+\end{array}\right|=\frac{1440}{x^6};
+\end{eqnarray*}
+\begin{eqnarray*}
+P_4(x)&=&
+\left|\begin{array}{cccc}
+1&3x^2&-1/x^2&-2/x^3\\
+0&6x&2/x^3&6/x^4\\
+0&6&-6/x^4&-24/x^5\\0&0&24/x^5&120/x^6
+\end{array}\right|=
+x\left|\begin{array}{cccc}
+6&2/x^4&6/x^5\\
+6&-6/x^4&-24/x^5\\
+0&0&24/x^5&120/x^6
+\end{array}\right|\\
+&=&x\left|\begin{array}{cccc}
+6&2/x^4&6/x^5\\
+0&-8/x^4&-30/x^5\\
+0&0&24/x^5&120/x^6
+\end{array}\right|
+=6x\left|\begin{array}{cccc}
+-8/x^4&-30/x^5\\
+24/x^5&120/x^6
+\end{array}\right|=-\frac{1440}{x^9}.
+\end{eqnarray*}
+Therefore,
+$$
+-\frac{240}{x^5}y^{(4)}-\frac{1200}{x^6}y'''+\frac{720}{x^7}y''+\frac{1440}{x^8}y'-\frac{1440}{x^9}y=0,
+$$
+which is equivalent to
+$x^4y^{(4)}+5x^3y'''-3x^2y''-6xy'+6y=0$.
+\end{solution}
+ 
+  \item $\{x,\,x\ln x,\,1/x,\,x^2\}$
+
+\begin{solution}
+\begin{eqnarray*}
+P_0(x)&=&
+\left|\begin{array}{cccc}
+x&x\ln|x|&1/x&x^2\\
+1&\ln|x|+1&-1/x^2&2x\\
+0&1/x&2/x^3&2\\
+0&-1/x^2&-6/x^4&0
+\end{array}\right|=
+x\left|\begin{array}{ccrc}
+1&\ln|x|&1/x^2&x\\
+1&\ln|x|+1&-1/x^2&2x\\
+0&1/x&2/x^3&2\\
+0&-1/x^2&-6/x^4&0
+\end{array}\right|\\
+&=&x\left|\begin{array}{ccrc}
+1&\ln|x|&1/x^2&x\\
+0&1&-2/x^2&x\\
+0&1/x&2/x^3&2\\
+0&-1/x^2&-6/x^4&0
+\end{array}\right|
+=x\left|\begin{array}{ccrc}
+1&-2/x^2&x\\
+1/x&2/x^3&2\\
+-1/x^2&-6/x^4&0
+\end{array}\right|\\
+&=&x\left|\begin{array}{crc}
+1&-2/x^2&x\\
+1/x&2/x^3&2\\
+-1/x^2&-6/x^4&0
+\end{array}\right|
+=x\left|\begin{array}{crc}
+1&-2/x^2&x\\
+0&4/x^3&1\\
+0&-8/x^4&1/x
+\end{array}\right|
+=x\left|\begin{array}{rc}
+4/x^3&1\\
+-8/x^4&1/x
+\end{array}\right|=\frac{12}{x^3};
+\end{eqnarray*}
+\begin{eqnarray*}
+P_1(x)&=&
+-\left|\begin{array}{cccc}
+x&x\ln|x|&1/x&x^2\\
+1&\ln|x|+1&-1/x^2&2x\\
+0&1/x&2/x^3&2\\
+0&2/x^3&24/x^5&0
+\end{array}\right|=
+-x\left|\begin{array}{cccc}
+1&\ln|x|&1/x^2&x\\
+1&\ln|x|+1&-1/x^2&2x\\
+0&1/x&2/x^3&2\\
+0&2/x^3&24/x^5&0
+\end{array}\right|\\
+&=&-x\left|\begin{array}{cccc}
+1&\ln|x|&1/x^2&x\\
+0&1&-2/x^2&x\\
+0&1/x&2/x^3&2\\
+0&2/x^3&24/x^5&0
+\end{array}\right|
+=-x\left|\begin{array}{cccc}
+1&-2/x^2&x\\
+1/x&2/x^3&2\\
+2/x^3&24/x^5&0
+\end{array}\right|\\
+&=&-x\left|\begin{array}{cccc}
+1&-2/x^2&x\\
+0&4/x^3&1\\
+0&28/x^5&-2/x^2
+\end{array}\right|
+=-x\left|\begin{array}{cccc}
+4/x^3&1\\
+28/x^5&-2/x^2
+\end{array}\right|=\frac{36}{x^4};
+\end{eqnarray*}
+\begin{eqnarray*}
+P_2(x)&=&
+\left|\begin{array}{cccc}
+x&x\ln|x|&1/x&x^2\\
+1&\ln|x|+1&-1/x^2&2x\\
+0&-1/x^2&-6/x^4&0\\
+0&2/x^3&24/x^5&0
+\end{array}\right|=
+x\left|\begin{array}{cccc}
+1&\ln|x|&1/x^2&x\\
+1&\ln|x|+1&-1/x^2&2x\\
+0&-1/x^2&-6/x^4&0\\
+0&2/x^3&24/x^5&0
+\end{array}\right|\\
+&=&x\left|\begin{array}{cccc}
+1&\ln|x|&1/x^2&x\\
+0&1&-2/x^2&x\\
+0&-1/x^2&-6/x^4&0\\
+0&2/x^3&24/x^5&0
+\end{array}\right|=
+x\left|\begin{array}{cccc}
+1&-2/x^2&x\\
+-1/x^2&-6/x^4&0\\
+2/x^3&24/x^5&0
+\end{array}\right|\\
+&=&x\left|\begin{array}{cccc}
+1&-2/x^2&x\\
+0&-8/x^4&1/x\\
+0&28/x^5&-2/x^2
+\end{array}\right|=
+x\left|\begin{array}{cccc}
+-8/x^4&1/x\\
+28/x^5&-2/x^2
+\end{array}\right|=-\frac{12}{x^5};
+\end{eqnarray*}
+\begin{eqnarray*}
+P_3(x)&=&
+-\left|\begin{array}{cccc}
+x&x\ln|x|&1/x&x^2\\
+0&1/x&2/x^3&2\\
+0&-1/x^2&-6/x^4&0\\
+0&2/x^3&24/x^5&0
+\end{array}\right|=
+-x\left|\begin{array}{crcc}
+1/x&2/x^3&2\\
+-1/x^2&-6/x^4&0\\
+2/x^3&24/x^5&0
+\end{array}\right|\\
+&=&-x\left|\begin{array}{crcc}
+1/x&2/x^3&2\\
+0&-4/x^4&2/x\\
+0&20/x^5&-4/x^2
+\end{array}\right|=
+-\left|\begin{array}{cccc}
+-4/x^4&2/x\\
+20/x^5&-4/x^2
+\end{array}\right|=
+\frac{24}{x^6};
+\end{eqnarray*}
+\begin{eqnarray*}
+P_4(x)&=&
+\left|\begin{array}{ccrc}
+1&\ln|x|+1&-1/x^2&2x\\
+0&1/x&2/x^3&2\\
+0&-1/x^2&-6/x^4&0\\
+0&2/x^3&24/x^5&0
+\end{array}\right|=
+\left|\begin{array}{ccrc}
+1/x&2/x^3&2\\
+-1/x^2&-6/x^4&0\\
+2/x^3&24/x^5&0
+\end{array}\right|\\
+&=&2\left|\begin{array}{rc}
+-1/x^2&-6/x^4\\
+2/x^3&24/x^5
+\end{array}\right|=-\frac{24}{x^7}.
+\end{eqnarray*}
+Therefore,
+$$
+\frac{12}{x^3}y^{(4)}+\frac{36}{x^4}y'''-\frac{12}{x^5}y''+\frac{24}{x^6}y'-\frac{24}{x^7}y=0,
+$$
+which is equivalent to
+ $x^4y^{(4)}+3x^2y'''-x^2y''+2xy'-2y=0$.
+\end{solution}
+
+ \item $\{e^x,\,e^{-x},\,x,\,e^{2x}\}$
+
+\begin{solution}
+\begin{eqnarray*}
+P_0(x)&=&
+\left|\begin{array}{crcc}
+e^x&e^{-x}&x&e^{2x}\\
+e^x&-e^{-x}&1&2e^{2x}\\
+e^x&e^{-x}&0&4e^{2x}\\
+e^x&-e^{-x}&0&8e^{2x}
+\end{array}\right|=
+e^{2x}\left|\begin{array}{crcc}
+1&1&x&1\\
+1&-1&1&2\\
+1&1&0&4\\
+1&-1&0&8
+\end{array}\right|\\
+&=&e^{2x}\left|\begin{array}{crcc}
+2&1&x&1\\
+0&-1&1&2\\
+2&1&0&4\\
+0&-1&0&8
+\end{array}\right|=
+e^{2x}\left|\begin{array}{crrc}
+2&1&x&1\\
+0&-1&1&2\\
+0&0&-x&3\\
+0&-1&0&8
+\end{array}\right|\\
+&=&2e^{2x}\left|\begin{array}{rrc}
+-1&1&2\\
+0&-x&3\\
+-1&0&8
+\end{array}\right|
+=2e^{2x}\left|\begin{array}{rrc}
+-1&1&2\\
+0&-x&3\\
+0&-1&6
+\end{array}\right|\\
+&=&-2e^{2x}\left|\begin{array}{rrc}
+-x&3\\
+-1&6
+\end{array}\right|=6e^{2x}(2x-1);
+\end{eqnarray*}
+\begin{eqnarray*}
+P_1(x)&=&
+-\left|\begin{array}{crcc}
+e^x&e^{-x}&x&e^{2x}\\
+e^x&-e^{-x}&1&2e^{2x}\\
+e^x&e^{-x}&0&4e^{2x}\\
+e^x&e^{-x}&0&16e^{2x}
+\end{array}\right|=
+-e^{2x}\left|\begin{array}{crcc}
+1&1&x&1\\
+1&-1&1&2\\
+1&1&0&4\\
+1&1&0&16
+\end{array}\right|\\
+&=&-e^{2x}\left|\begin{array}{crcc}
+0&1&x&1\\
+2&-1&1&2\\
+0&1&0&4\\
+0&1&0&16
+\end{array}\right|
+=2e^{2x}\left|\begin{array}{crcc}
+1&x&1\\
+1&0&4\\
+1&0&16
+\end{array}\right|\\
+&=&2e^{2x}\left|\begin{array}{crcc}
+1&x&1\\
+0&-x&3\\
+0&-x&15
+\end{array}\right|
+=2e^{2x}\left|\begin{array}{crcc}
+-x&3\\
+-x&15
+\end{array}\right|=-24xe^{2x};
+\end{eqnarray*}
+\begin{eqnarray*}
+P_2(x)&=&
+\left|\begin{array}{crcc}
+e^x&e^{-x}&x&e^{2x}\\
+e^x&-e^{-x}&1&2e^{2x}\\
+e^x&-e^{-x}&0&8e^{2x}\\
+e^x&e^{-x}&0&16e^{2x}
+\end{array}\right|=
+e^{2x}\left|\begin{array}{crcc}
+1&1&x&1\\
+1&-1&1&2\\
+1&-1&0&8\\
+1&1&0&16
+\end{array}\right|\\
+&=&e^{2x}\left|\begin{array}{crcc}
+0&1&x&1\\
+2&-1&1&2\\
+2&-1&0&8\\
+0&1&0&16
+\end{array}\right|
+=e^{2x}\left|\begin{array}{crrc}
+0&1&x&1\\
+2&-1&1&2\\
+0&0&-1&6\\
+0&1&0&16
+\end{array}\right|
+=-2e^{2x}\left|\begin{array}{crrc}
+1&x&1\\
+0&-1&6\\
+1&0&16
+\end{array}\right|\\
+&=&-2e^{2x}\left|\begin{array}{crrc}
+1&x&1\\
+0&-1&6\\
+0&-x&15
+\end{array}\right|
+=-2e^{2x}\left|\begin{array}{crrc}
+-1&6\\
+-x&15
+\end{array}\right|=6e^{2x}(5-2x);
+\end{eqnarray*}
+\begin{eqnarray*}
+P_3(x)&=&
+-\left|\begin{array}{crcc}
+e^x&e^{-x}&x&e^{2x}\\
+e^x&e^{-x}&0&4e^{2x}\\
+e^x&-e^{-x}&0&8e^{2x}\\
+e^x&e^{-x}&0&16e^{2x}
+\end{array}\right|=
+-e^{2x}\left|\begin{array}{crcc}
+1&1&x&1\\
+1&1&0&4\\
+1&-1&0&8\\
+1&1&0&16
+\end{array}\right|\\
+&=&-e^{2x}\left|\begin{array}{crcc}
+0&1&x&1\\
+0&1&0&4\\
+2&-1&0&8\\
+0&1&0&16
+\end{array}\right|
+=-2e^{2x}\left|\begin{array}{crcc}
+1&x&1\\
+0&-x&3\\
+0&-x&15
+\end{array}\right|
+=-2e^{2x}\left|\begin{array}{crcc}
+-x&3\\
+-x&15
+\end{array}\right|=24xe^{2x};
+\end{eqnarray*}
+\begin{eqnarray*}
+P_4(x)&=&
+\left|\begin{array}{cccc}
+e^x&-e^{-x}&1&2e^{2x}\\
+e^x&e^{-x}&0&4e^{2x}\\
+e^x&-e^{-x}&0&8e^{2x}\\
+e^x&e^{-x}&0&16e^{2x}
+\end{array}\right|=
+e^{2x}\left|\begin{array}{crcc}
+1&-1&1&2\\
+1&1&0&4\\
+1&-1&0&8\\
+1&1&0&16
+\end{array}\right|\\
+&=&e^{2x}\left|\begin{array}{crcc}
+0&-1&1&2\\
+2&1&0&4\\
+0&-1&0&8\\
+2&1&0&16
+\end{array}\right|
+=e^{2x}\left|\begin{array}{crcc}
+0&-1&1&2\\
+2&1&0&4\\
+0&-1&0&8\\
+0&0&0&12
+\end{array}\right|\\
+&=&-2e^{2x}\left|\begin{array}{rcc}
+-1&1&2\\
+-1&0&8\\
+0&0&12
+\end{array}\right|
+=-2e^{2x}\left|\begin{array}{rcc}
+-1&1&2\\
+0&-1&6\\
+0&0&12
+\end{array}\right|=-24e^{2x}.
+\end{eqnarray*}
+Therefore,
+$$
+6e^{2x}(2x-1)y^{(4)}-24xe^{2x}y'''
++6e^{2x}(5-2x)y''+24xe^{2x}y'-24e^{2x}y=0,
+$$
+which is equivalent to
+ $(2x-1)y^{(4)}-4xy'''+(5-2x)y''+4xy'-4y=0$.
+\end{solution}
+ 
+  \item $\{e^{2x},\,e^{-2x},\,1,\,x^2\}$
+
+\begin{solution}
+\begin{eqnarray*}
+P_0(x)&=&
+\left|\begin{array}{crcc}
+e^{2x}&e^{-2x}&1&x^2\\
+2e^{2x}&-2e^{-2x}&0&2x\\
+4e^{2x}&4e^{-2x}&0&2\\
+8e^{2x}&-8e^{-2x}&0&0
+\end{array}\right|=
+\left|\begin{array}{crcc}
+1&1&1&x^2\\
+2&-2&0&2x\\
+4&4&0&2\\
+8&-8&0&0
+\end{array}\right|\\
+&=&\left|\begin{array}{crcc}
+2&-2&2x\\
+4&4&2\\
+8&-8&0
+\end{array}\right|
+=\left|\begin{array}{crcc}
+2&-2&2x\\
+0&8&2-4x\\
+0&0&-8x
+\end{array}\right|=-128x
+\end{eqnarray*}
+\begin{eqnarray*}
+P_1(x)&=&
+-\left|\begin{array}{crcc}
+e^{2x}&e^{-2x}&1&x^2\\
+2e^{2x}&-2e^{-2x}&0&2x\\
+4e^{2x}&4e^{-2x}&0&2\\
+16e^{2x}&16e^{-2x}&0&0
+\end{array}\right|=
+-\left|\begin{array}{crcc}
+1&1&1&x^2\\
+2&-2&0&2x\\
+4&4&0&2\\
+16&16&0&0
+\end{array}\right|\\
+&=&-\left|\begin{array}{crcc}
+2&-2&2x\\
+4&4&2\\
+16&16&0
+\end{array}\right|
+=-\left|\begin{array}{crcc}
+2&-2&2x\\
+0&8&2-4x\\
+0&0&-8
+\end{array}\right|=128;
+\end{eqnarray*}
+\begin{eqnarray*}
+P_2(x)&=&
+\left|\begin{array}{crcc}
+e^{2x}&e^{-2x}&1&x^2\\
+2e^{2x}&-2e^{-2x}&0&2x\\
+8e^{2x}&-8e^{-2x}&0&0\\
+16e^{2x}&16e^{-2x}&0&0
+\end{array}\right|=
+\left|\begin{array}{crcc}
+1&1&1&x^2\\
+2&-2&0&2x\\
+8&-8&0&0\\
+16&16&0&0
+\end{array}\right|\\
+&=&\left|\begin{array}{crcc}
+2&-2&2x\\
+8&-8&0\\
+16&16&0
+\end{array}\right|
+=2x\left|\begin{array}{crcc}
+8&-8\\
+16&16
+\end{array}\right|=512x;
+\end{eqnarray*}
+\begin{eqnarray*}
+P_3(x)&=&
+-\left|\begin{array}{cccc}
+e^{2x}&e^{-2x}&1&x^2\\
+4e^{2x}&4e^{-2x}&0&2\\
+8e^{2x}&-8e^{-2x}&0&0\\
+16e^{2x}&16e^{-2x}&0&0
+\end{array}\right|=
+-\left|\begin{array}{crcc}
+1&1&1&x^2\\
+4&4&0&2\\
+8&-8&0&0\\
+16&16&0&0
+\end{array}\right|\\
+&=&-\left|\begin{array}{crcc}
+4&4&2\\
+8&-8&0\\
+16&16&0
+\end{array}\right|
+=-2\left|\begin{array}{crcc}
+8&-8\\
+16&16
+\end{array}\right|=-512;
+\end{eqnarray*}
+$$
+P_4(x)=
+\left|\begin{array}{crcc}
+2e^{2x}&-2e^{-2x}&0&2x\\
+4e^{2x}&4e^{-2x}&0&2\\
+8e^{2x}&-8e^{-2x}&0&0\\
+16e^{2x}&16e^{-2x}&0&0
+\end{array}\right|=0.
+$$
+Therefore,
+$-128xy^{(4)}+128y'''+512xy''-512y=0$,
+which is equivalent to
+ $xy^{(4)}-y'''-4xy''+4y'=0$.
+
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+
+
+
+
+\end{document}

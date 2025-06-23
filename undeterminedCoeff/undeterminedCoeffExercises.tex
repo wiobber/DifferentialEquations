@@ -1,0 +1,569 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+\begin{problem}\label{exer:5.4.1} Find a particular
+solution of $y''-3y'+2y=e^{3x}(1+x)$
+\end{problem}
+ \begin{problem}\label{exer:5.4.2} Find a particular
+solution of $y''-6y'+5y=e^{-3x}(35-8x)$
+
+\begin{solution}
+If $y=ue^{-3x}$, then
+$y''-6y'+5y=e^{-3x}\left[(u''-6u'+9u)-6(u'-3u)+5u\right]=
+e^{-3x}(35-8x)$, so $u''-12u'+32u =35-8x$ and $u_p=A+Bx$, where
+$-12B+32(A+Bx)=35-8x$. Therefore,$32B=-8$, $32A-12B=35$, so
+$B=-\frac{1}{4}$, $A=1$, and $u_p=1-\frac{x}{4}$. Therefore,
+$y_p=e^{-3x}\left(1-\frac{x}{4}\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.3} Find a particular
+solution of $y''-2y'-3y=e^x(-8+3x)$
+\end{problem}
+
+\begin{problem}\label{exer:5.4.4} Find a particular
+solution of $y''+2y'+y=e^{2x}(-7-15x+9x^2)$
+\begin{solution}
+If $y=ue^{2x}$, then
+$y''+2y'+y=e^{2x}\left[(u''+4u'+4u)+2(u'+2u)+u\right]=
+e^{2x}(-7-15x+9x^2)$ so $u''+6u'+9u =-7-15x+9x^2$ and $u_p=A+Bx+Cx^2$,
+where $2C+6(B+2Cx)+9(A+Bx+Cx^2)=-7-15x+9x^2$. Therefore,$9C=9$,
+$9B+12C=-15$, $9A+6B+2C=-7$, so $C=1$, $B=-3$, $A=1$, and
+$u_p=1-3x+x^2$. Therefore,$y_p=e^{2x}(1-3x+x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.5} Find a particular
+solution of $y''+4y=e^{-x}(7-4x+5x^2)$
+\end{problem}
+
+\begin{problem}\label{exer:5.4.6} Find a particular
+solution of $y''-y'-2y=e^x(9+2x-4x^2)$
+\begin{solution}
+If $y=ue^x$, then $y''-y'-2y=e^x\left[(u''+2u'+u)-(u'+u)-2u\right]=
+e^x(9+2x-4x^2)$ so $u''+u'-2u =9+2x-4x^2$, and $u_p=A+Bx+Cx^2$, where
+$2C+(B+2Cx)-2(A+Bx+Cx^2)=9+2x-4x^2$. Therefore,$-2C=-4$, $-2B+2C=2$,
+$-2A+B+2C=9$, so $C=2$, $B=1$, $A=-2$, and $u_p=-2+x+2x^2$. Therefore,
+$y_p=e^x(-2+x+2x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.7} Find a particular
+solution of $y''-4y'-5y=-6xe^{-x}$
+\end{problem}
+
+\begin{problem}\label{exer:5.4.8} Find a particular
+solution of $y''-3y'+2y=e^x(3-4x)$
+\begin{solution}
+If $y=ue^x$, then $y''-3y'+2y=e^x\left[(u''+2u'+u)-3(u'+u)+2u\right]=
+e^x(3-4x)$, so $u''-u'=3-4x$ and $u_p=Ax+Bx^2$, where
+$2B-(A+2Bx)=3-4x$. Therefore,$-2B=-4$, $-A+2B=3$, so $B=2$, $A=1$, and
+$u_p=x(1+2x)$. Therefore,$y_p=xe^x(1+2x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.9} Find a particular
+solution of $y''+y'-12y=e^{3x}(-6+7x)$
+\end{problem}
+
+\begin{problem}\label{exer:5.4.10} Find a particular
+solution of $2y''-3y'-2y=e^{2x}(-6+10x)$
+\begin{solution}
+If $y=ue^{2x}$, then
+$2y''-3y'-2y=e^{2x}\left[2(u''+4u'+4u)-3(u'+2u)-2u\right]=
+e^{2x}(-6+10x)$, so $2u''+5u'=-6+10x$ and $u_p=Ax+Bx^2$, where
+$2(2B)+5(A+2Bx)=-6+10x$. Therefore,$10B=10$, $5A+4B=-6$, so $B=1$,
+$A=-2$, and $u_p=x(-2+x)$. Therefore,$y_p=xe^{2x}(-2+x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.11} Find a particular
+solution of $y''+2y'+y=e^{-x}(2+3x)$ 
+\end{problem}
+
+\begin{problem}\label{exer:5.4.12} Find a particular
+solution of $y''-2y'+y=e^x(1-6x)$
+\begin{solution}
+If $y=ue^x$, then $y''-2y'+y=e^x\left[(u''+2u'+u)-2(u'+u)+u\right]=
+e^x(1-6x)$, so $u''=1-6x$ Integrating twice and taking the constants
+of integration to be zero yields
+$u_p=x^2\left(\frac{1}{2}-x\right)$. Therefore,
+$y_p=x^2e^x\left(\frac{1}{2}-x\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.13} Find a particular
+solution of $y''-4y'+4y=e^{2x}(1-3x+6x^2)$
+\end{problem}
+
+\begin{problem}\label{exer:5.4.14} Find a particular
+solution of $9y''+6y'+y=e^{-x/3}(2-4x+4x^2)$
+\begin{solution}
+If $y=ue^{-x/3}$, then
+$9y''+6y'+y=e^{-x/3}\left[9\left(u''-\frac{2u'}{3}+\frac{u}{9}\right)
++6\left(u'-\frac{u}{3}\right)+u\right]= e^{-x/3}(2-4x+4x^2)$, so
+$9u''=2-4x+4x^2$, or $u''=\frac{1}{9}(2-4x+4x^2)$. Integrating twice
+and taking the constants of integration to be zero yields
+$u_p=\frac{x^2}{27}(3-2x+x^2)$. Therefore,
+$y_p=\frac{x^2e^{-x/3}}{27}(3-2x+x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.15} Find the general
+solution of $y''-3y'+2y=e^{3x}(1+x)$ 
+\end{problem}
+
+\begin{problem}\label{exer:5.4.16} Find the general
+solution of $y''-6y'+8y=e^x(11-6x)$
+\begin{solution}
+If $y=ue^x$, then $y''-6y'+8y=e^x\left[(u''+2u'+u)-6(u'+u)+8u\right]=
+e^x(11-6x)$, so $u''-4u'+3u =11-6x$ and $u_p=A+Bx$, where
+$-4B+3(A+Bx)=11-6x$. Therefore,$3B=-6$, $3A-4B=11$, so $B=-2$, $A=1$
+and $u_p=1-2x$. Therefore,$y_p=e^x(1-2x)$. The characteristic
+polynomial of the complementary equation is
+$p(r)=r^2-6r+8=(r-2)(r-4)$, so $\{e^{2x},e^{4x}\}$ is a fundamental
+set of solutions of the complementary equation. Therefore,
+$y=e^x(1-2x)+c_1e^{2x}+c_2e^{4x}$ is the general solution of the
+nonhomogeneous equation.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.17} Find the general
+solution of $ y''+6y'+9y=e^{2x}(3-5x)$ 
+\end{problem}
+
+\begin{problem}\label{exer:5.4.18} Find the general
+solution of $y''+2y'-3y=-16xe^x$
+\begin{solution}
+If $y=ue^x$, then $y''+2y'-3y=e^x\left[(u''+2u'+u)+2(u'+u)-3u\right]=
+-16xe^x$, so $u''+4u'=-16x$ and $u_p=Ax+Bx^2$, where
+$2B+4(A+2Bx)=-16x$. Therefore,$8B=-16$, $4A+2B=0$, so $B=-2$, $A=1$,
+and $u_p=x(1-2x)$. Therefore,$y_p=xe^x(1-2x)$. The characteristic
+polynomial of the complementary equation is
+$p(r)=r^2+2r-3=(r+3)(r-1)$, so $\{e^x,e^{-3x}\}$ is a fundamental set
+of solutions of the complementary equation. Therefore,
+$y=xe^x(1-2x)+c_1e^x+c_2e^{-3x}$ is the general solution of the
+nonhomogeneous equation.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.19} Find the general
+solution of $y''-2y'+y=e^x(2-12x)$
+\end{problem}
+
+\begin{problem}\label{exer:5.4.20} Solve the
+initial value problem and plot the solution. $y''-4y'-5y=9e^{2x}(1+x), \quad  y(0)=0,\quad y'(0)=-10$
+\begin{solution}
+If $y=ue^{2x}$, then
+$y''-4y'-5y=e^{2x}\left[(u''+4u'+4u)-4(u'+2u)-5u\right]=
+9e^{2x}(1+x)$, so $u''-9u =9+9x$ and $u_p=A+Bx$, where
+$-9(A+Bx)=9+9x$. Therefore,$-9B=-9$, $-9A=9$, so $B=-1$, $A=-1$, and
+$u_p=-1-x$. Therefore,$y_p=-e^{2x}(1+x)$. The characteristic
+polynomial of the complementary equation is
+$p(r)=r^2-4r-5=(r-5)(r+1)$, so $\{e^{-x},e^{5x}\}$ is a fundamental
+set of solutions of the complementary equation. Therefore,(A)
+$y=-e^{2x}(1+x)+c_1e^{-x}+c_2e^{5x}$ is the general solution of the
+nonhomogeneous equation. Differentiating (A) yields
+$y'=-2e^{2x}(1+x)-e^{2x}-c_1e^{-x}+5c_2e^{5x}$. Now $y(0)=0,\
+y'(0)=-10\Rightarrow 0=-1+c_1+c_2,\ -10=-3-c_1+5c_2$, so $c_1=2$,
+$c_2=-1$. Therefore,$y=-e^{2x}(1+x)+2e^{-x}-e^{5x}$ is the solution of
+the initial value problem.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.21} Solve the
+initial value problem and plot the solution. $y''+3y'-4y=e^{2x}(7+6x), \quad  y(0)=2,\quad y'(0)=8$
+\end{problem}
+
+\begin{problem}\label{exer:5.4.22} Solve the
+initial value problem and plot the solution. 
+$y''+4y'+3y=-e^{-x}(2+8x), \quad  y(0)=1,\quad y'(0)=2$
+\begin{solution}
+If $y=ue^{-x}$, then
+$y''+4y'+3y=e^{-x}\left[(u''-2u'+u)+4(u'-u)+3u\right]= -e^{-x}(2+8x)$,
+so $u''+2u'=-2-8x$ and $u_p=Ax+Bx^2$, where $2B+2(A+2Bx)=-2-8x$.
+Therefore,$4B=-8$, $2A+2B=-2$, so $B=-2$, $A=1$, and $u_p=x(1-2x)$.
+Therefore,$y_p=xe^{-x}(1-2x)$. The characteristic polynomial of the
+complementary equation is $p(r)=r^2+4r+3=(r+3)(r+1)$, so
+$\{e^{-x},e^{-3x}\}$ is a fundamental set of solutions of the
+complementary equation. Therefore,(A)
+$y=xe^{-x}(1-2x)+c_1e^{-x}+c_2e^{-3x}$ is the general solution of the
+nonhomogeneous equation. Differentiating (A) yields
+$y'=-xe^{-x}(1-2x)+e^{-x}(1-4x)-c_1e^{-x}-3c_2e^{-3x}$. Now $y(0)=1,\
+y'(0)=2\Rightarrow 1=c_1+c_2,\ 2=1-c_1-3c_2$, so $c_1=2$, $c_2=-1$.
+Therefore,$y=e^{-x}(2+x-2x^2)-e^{-3x}$ is the solution of the initial
+value problem.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.23} Solve the
+initial value problem and plot the solution. $y''-3y'-10y=7e^{-2x}, \quad  y(0)=1,\quad y'(0)=-17$
+\end{problem}
+
+\begin{problem}\label{exer:5.4.24} Use
+the principle of superposition to find a particular solution. $y''+y'+y=xe^x+e^{-x}(1+2x)$
+\begin{solution}
+We must find particular solutions $y_{p_1}$ and $y_{p_2}$ of (A)
+$y''+y'+y=xe^x$ and (B) $y''+y'+y=e^{-x}(1+2x)$, respectively. To find
+a particular solution of (A) we write $y=ue^x$. Then
+$y''+y'+y=e^x\left[(u''+2u'+u)+(u'+u)+u\right]= xe^x$ so $u''+3u'+3u
+=x$ and $u_p=A+Bx$, where $3B+3(A+Bx)=x$. Therefore,$3B=1$, $3A+3B=0$,
+so $B=\frac{1}{3}$, $A=-\frac{1}{3}$, and $u_p=-\frac{1}{3}(1-x)
+$, so $y_{p_1}=-\frac{e^x}{3}(1-x)$. To find a particular solution
+of (B) we write $y=ue^{-x}$. Then
+$y''+y'+y=e^{-x}\left[(u''-2u'+u)+(u'-u)+u\right]= e^{-x}(1+2x)$, so
+$u''-u'+u =1+2x$ and $u_p=A+Bx$, where $-B+(A+Bx)=1+2x$. Therefore,
+$B=2$, $A-B=1$, so $A=3$, and $u_p=2+3x$, so $y_{p_2}=e^{-x}(3+2x)$.
+Now $y_p=y_{p_1}+y_{p_2}=-\frac{e^x}{3}(1-x)+e^{-x}(3+2x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.25} Use
+the principle of superposition to find a particular solution. $y''-7y'+12y=-e^x(17-42x)-e^{3x}$
+\end{problem}
+
+\begin{problem}\label{exer:5.4.26} Use
+the principle of superposition to find a particular solution. $y''-8y'+16y=6xe^{4x}+2+16x+16x^2$
+\begin{solution}
+We must find particular solutions $y_{p_1}$ and $y_{p_2}$ of (A)
+$y''-8y'+16y=6xe^{4x}$ and (B) $y''-8y'+16y=2+16x+16x^2$,
+respectively. To find a particular solution of (A) we write
+$y=ue^{4x}$. Then
+$y''-8y'+16y=e^x\left[(u''+8u'+16u)-8(u'+4u)+16u\right]= 6xe^{4x}$, so
+$u'' =6x$, $u_p=x^3$. and $y_{p_1}=x^3e^{4x}$. To find a particular
+solution of (B) we write $y_p=A+Bx+Cx^2$. Then
+$y_p''-8y_p'+16y_p=2C-8(B+2Cx)+16(A+Bx+Cx^2)=(16A-8B+2C)
++(16B-16C)x+16Cx^2=2+16x+16x^2$ if $16C=16$, $16B-16C=16$,
+$16A-8B+2C=2$. Therefore,$C=1$, $B=2$, $A=1$, and $y_{p_2}=1+2x+x^2$.
+Now $y_p=y_{p_1}+y_{p_2}=x^3e^{4x}+1+2x+x^2$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.27} Use
+the principle of superposition to find a particular solution. $y''-3y'+2y=-e^{2x}(3+4x)-e^x$
+\end{problem}
+
+\begin{problem}\label{exer:5.4.28} Use
+the principle of superposition to find a particular solution. $y''-2y'+2y=e^x(1+x)+e^{-x}(2-8x+5x^2)$
+\begin{solution}
+We must find particular solutions $y_{p_1}$ and $y_{p_2}$ of (A)
+$y''-2y'+2y=e^x(1+x)$ and (B) $y''-2y'+2y=e^{-x}(2-8x+5x^2)$,
+respectively. To find a particular solution of (A) we write $y=ue^x$.
+Then $y''-2y'+2y=e^x\left[(u''+2u'+u)-2(u'+u)+2u\right]= e^x(1+x)$, so
+$u''+u=1+x$ and $u_p=1+x$, so $y_{p_1}=e^x(1+x)$. To find a particular
+solution of (B) we write $y=ue^{-x}$. Then
+$y''-2y'+2y=e^{-x}\left[(u''-2u'+u)-2(u'-u)+2u\right]=
+e^{-x}(2-8x+5x^2)$, so $u''-4u'+5u =2-8x+5x^2$ and $u_p=A+Bx+Cx^2$,
+where $2C-4(B+2Cx)+5(A+Bx+Cx^2)=2-8x+5x^2$. Therefore,$5C=5$,
+$5B-8C=-8$, $5A-4B+2C=2$, so $C=1$, $B=0$, $A=0$, and $u_p=x^2$.
+Therefore,$y_{p_2}=x^2e^{-x}$. Now
+$y_p=y_{p_1}+y_{p_2}=e^x(1+x)+x^2e^{-x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.29} Use
+the principle of superposition to find a particular solution.
+$y''+y=e^{-x}(2-4x+2x^2)+e^{3x}(8-12x-10x^2)$
+\end{problem}
+
+\begin{problem}\label{exer:5.4.30}
+\begin{enumerate}
+ \item % (a)
+Prove that  $y$ is a solution of the constant coefficient equation \begin{equation}\label{eq:eqA5.4.30}
+ay''+by'+cy=e^{\alpha x}G(x)
+\end{equation}
+if and only if $y=ue^{\alpha x}$, where $u$ satisfies \begin{equation}\label{eq:eqB5.4.30}
+au''+p'(\alpha)u'+p(\alpha)u=G(x)
+\end{equation}
+and   $p(r)=ar^2+br+c$ is the characteristic polynomial of
+the complementary equation
+$$
+ay''+by'+cy=0.
+$$
+\begin{solution}
+If $y=ue^{\alpha x}$, then $ay''+by'+cy=e^{\alpha x}\left[a(u''+2\alpha
+u'+\alpha^2u)+b(u'+\alpha u)+cu\right]= e^{\alpha x}
+\left[au''+(2a\alpha+b))u'+(a\alpha^2+b\alpha+c)u\right] =e^{\alpha
+x}(au''+p'(\alpha)u'+p(\alpha)u)$. Therefore,$ay''+by'+cy=e^{\alpha
+x}G(x)$ if and only if $au''+p'(\alpha)u'+p(\alpha)u=G(x)$.
+\end{solution}
+
+For the rest of this exercise, let $G$ be
+ a polynomial. Give the requested proofs for the case where
+$$
+G(x)=g_0+g_1x+g_2x^2+g_3x^3.
+$$
+
+\item % (b)
+Prove that if $e^{\alpha x}$ isn't  a solution of the complementary
+equation then \ref{eq:eqB5.4.30} has a particular solution of the
+form $u_p=A(x)$, where $A$ is a polynomial of the same degree as $G(x)=g_0+g_1x+g_2x^2+g_3x^3$,
+as in Example~\ref{example:5.4.4}. Conclude that \ref{eq:eqA5.4.30} has
+a particular solution of the form $y_p=e^{\alpha x}A(x)$.
+\begin{solution}
+Substituting $u_p=A+Bx+Cx^2+Dx^3$ into (B) yields
+\begin{eqnarray*}
+&&a(2C+6Dx)+p'(\alpha)(B+2Cx+3Dx^2)+p(\alpha)(A+Bx+Cx^2+Dx^3)\\
+&&=[p(\alpha)A+p'(\alpha)B+2aC]+[p(\alpha)B+2p'(\alpha)C+6aD]x
+\\ &&\quad+[p(\alpha)C +3p'(\alpha)D]x^2+p(\alpha)Dx^3=
+g_0+g_1x+g_2x^2+g_3x^3
+\end{eqnarray*}
+ if (C)
+$$
+\begin{array}{rcr}
+p(\alpha)D&=&g_3\\
+p(\alpha)C+3p'(\alpha)D&=&g_2\\
+p(\alpha)B+2p'(\alpha)C+6aD&=&g_1\\
+p(\alpha)A+p'(\alpha)B+2aC\phantom{+6aD}&=&g_0.
+\end{array}
+$$
+Since $e^{\alpha x}$ is not a solution of the complementary equation,
+$p(\alpha)\ne0$. Therefore,the triangular system
+(C) can be solved successively for $D$, $C$, $B$
+and $A$.
+\end{solution}
+
+\item % (c)
+Show that if $e^{\alpha x}$ is a solution of the complementary
+equation and $xe^{\alpha x}$ isn't , then \ref{eq:eqB5.4.30} has a
+particular solution of the form $u_p=xA(x)$, where $A$ is a polynomial
+of the same degree as $G(x)=g_0+g_1x+g_2x^2+g_3x^3$, as in Example~\ref{example:5.4.5}. Conclude
+that \ref{eq:eqA5.4.30} has a particular solution of the form
+$y_p=xe^{\alpha x}A(x)$.
+\begin{solution}
+Since $e^{\alpha x}$ is a solution of the complementary equation while
+$xe^{\alpha x}$ is not, $p(\alpha)=0$ and $p'(\alpha)\ne0$. Therefore,
+(B) reduces to  (D) $au''+p'(\alpha)u=G(x)$.
+Substituting $u_p=Ax+Bx^2+Cx^3+Dx^4$ into (D) yields
+\begin{eqnarray*}
+&&a(2B+6Cx+12Dx^2)+p'(\alpha)(A+2Bx+3Cx^2+4Dx^3)\\
+&&=(p'(\alpha)A+2aB)+(2p'(\alpha)B+6aC)x
++(3p'(\alpha)C +12aD)x^2\\  &&\quad+4p'(\alpha)Dx^3=
+g_0+g_1x+g_2x^2+g_3x^3
+\end{eqnarray*}
+ if
+$$
+\begin{array}{rcr}
+4p'(\alpha)D&=&g_3\\
+3p'(\alpha)C+12aD&=&g_2\\
+2p'(\alpha)B+6aC\phantom{+12aD}&=&g_1\\
+p'(\alpha)A+2aB\phantom{+6aC+12aD}&=&g_0.
+\end{array}
+$$
+Since $p'(\alpha)\ne0$ this triangular system can be solved
+successively for $D$, $C$, $B$ and $A$.
+\end{solution}
+
+\item % (d)
+Show that if $e^{\alpha x}$ and $xe^{\alpha x}$ are both solutions of
+the complementary equation then \ref{eq:eqB5.4.30} has a
+particular solution of the form $u_p=x^2A(x)$, where $A$ is a
+polynomial of the same degree as $G(x)=g_0+g_1x+g_2x^2+g_3x^3$, and $x^2A(x)$ can be obtained by
+integrating $G(x)=g_0+g_1x+g_2x^2+g_3x^3$ with respect to a twice, taking the constants of integration to be
+zero, as in Example~\ref{example:5.4.6}. Conclude that
+\ref{eq:eqA5.4.30} has a particular solution of the form
+$y_p=x^2e^{\alpha x}A(x)$.
+\begin{solution}
+Since $e^{\alpha x}$ and $xe^{\alpha x}$ are solutions of the
+complementary equation,
+ $p(\alpha)=0$ and $p'(\alpha)=0$. Therefore,
+(B) reduces to  (D) $au''=G(x)$, so $u''=\frac{G(x)}{a}$.
+Integrating this twice and taking the constants of integration yields
+the particular solution $u_p=x^2\left(\frac{g_0}{2}+
+\frac{g_1}{6}x+\frac{g_2}{12}x^2+\frac{g_3}{20}x^3\right)$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.31}  Substitute $y_p=Ae^{2x}$ into the equation $y''-7y'+12y=4e^{2x}$ and equate the resulting coefficients of like functions on the two sides of the resulting equation to derive a set of simultaneous equations for the coefficients in $y_p$. Then
+solve for the coefficients to obtain $y_p$.
+Compare with Example~\ref{example:5.4.1}.
+\end{problem}
+
+
+\begin{problem}\label{exer:5.4.32}
+Substitute $y_p=Axe^{4x}$ into the equation $y''-7y'+12y=5e^{4x}$ and equate the resulting coefficients of like functions on the two sides of the resulting equation to derive a set of simultaneous equations for the coefficients in $y_p$. Then
+solve for the coefficients to obtain $y_p$.
+Compare with Example~\ref{example:5.4.2}.
+\begin{solution}
+If $y_p=Axe^{4x}$, then
+$y_p''-7y_p'+12y_p=[(8+16x)-7(1+4x)+12x]Ae^{4x}=Ae^{4x}=5e^{4x}$
+if $A=5$, so $y_p=5xe^{4x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.33}
+Substitute $y_p=Ax^2e^{4x}$ into the equation $y''-8y'+16y=2e^{4x}$ and equate the resulting coefficients of like functions on the two sides of the resulting equation to derive a set of simultaneous equations for the coefficients in $y_p$. Then
+solve for the coefficients to obtain $y_p$.
+Compare with Example~\ref{example:5.4.3}.
+\end{problem}
+
+\begin{problem}\label{exer:5.4.34}
+Substitute $y_p=e^{3x}(A+Bx+Cx^2)$ into the equation $y''-3y'+2y=e^{3x}(-1+2x+x^2)$ and equate the resulting coefficients of like functions on the two sides of the resulting equation to derive a set of simultaneous equations for the coefficients in $y_p$. Then
+solve for the coefficients to obtain $y_p$.
+Compare with Example~\ref{example:5.4.4}.
+\begin{solution}
+If $y_p=e^{3x}(A+Bx+Cx^2)$, then
+\begin{eqnarray*}
+y_p''-3y_p'+2y_p&=&e^{3x}[(9A+6B+2C)+(9B+12C)x+9Cx^2]\\
+&&\quad-3e^{3x}[(3A+B)+(3B+2C)x+3Cx^2]\\ &&\quad+2e^{3x}(A+Bx+Cx^2)\\
+&=&e^{3x}[(2A+3B+2C)+(2B+6C)x+2Cx^2]\\&=& e^{3x}(-1+2x+x^2)
+\end{eqnarray*}
+if $2C=1,\ 2B+6C=2,\ 2A+3B+2C= -1$. Therefore,$C=\frac{1}{2}$,
+$B=-\frac{1}{2}$, $A=-\frac{1}{4}$, and
+$y_p=-\frac{e^{3x}}{4}(1+2x-2x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.35}
+Substitute $y_p=e^{3x}(Ax+Bx^2+Cx^3)$ into the equation $y''-4y'+3y=e^{3x}(6+8x+12x^2)$ and equate the resulting coefficients of like functions on the two sides of the resulting equation to derive a set of simultaneous equations for the coefficients in $y_p$. Then
+solve for the coefficients to obtain $y_p$.
+Compare with Example~\ref{example:5.4.5}.
+\end{problem}
+
+\begin{problem}\label{exer:5.4.36}
+Substitute $y_p=e^{-x/2}(Ax^2+Bx^3+Cx^4)$ into the equation $4y''+4y'+y=e^{-x/2}(-8+48x+144x^2)$ and equate the resulting coefficients of like functions on the two sides of the resulting equation to derive a set of simultaneous equations for the coefficients in $y_p$. Then
+solve for the coefficients to obtain $y_p$.
+Compare with Example~\ref{example:5.4.6}.
+\begin{solution}
+If $y_p=e^{-x/2}(Ax^2+Bx^3+Cx^4)$, then
+\begin{eqnarray*}
+4y_p''+4y_p'+y_p&=&e^{-x/2}[8A-(8A-24B)x+(A-12B+48C)x^2]\\
+ &&\quad+e^{-x/2}[(B-16C)x^3+Cx^4]\\
+&&+e^{-x/2}[8Ax-(2A-12B)x^2-(2B-16C)x^3-2Cx^4]\\
+&&\quad+e^{-x/2}(Ax^2+Bx^3+Cx^4)\\ &=&e^{-x/2}(8A+24Bx+48Cx^2)=
+e^{-x/2}(-8+48x+144x^2)
+\end{eqnarray*}
+if $48C=144$, $24B=48$, and $8A=-8$. Therefore,$C=3$, $B=2$, $A=-1$,
+and $y_p=x^2e^{-x/2}(-1+2x+3x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.37}
+Write $y=ue^{\alpha x}$ to find the general
+solution.
+
+\begin{enumerate}
+\item $y''+2y'+y=\frac{e^{-x}}{\sqrt x}$ 
+
+\item $y''+6y'+9y=e^{-3x}\ln x$
+
+\item $y''-4y'+4y=\frac{e^{2x}}{1+x}$ 
+
+\item $4y''+4y'+y=4e^{-x/2}\left(\frac{1}{x}+x\right)$
+
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.38}
+Suppose $\alpha\ne0$ and $k$ is a positive integer. In most calculus books integrals like $\int x^k e^{\alpha x}\,dx$ are
+evaluated by integrating by parts $k$ times. This exercise presents
+another method. Let
+$$
+y=\int e^{\alpha x}P(x)\,dx
+$$
+with
+$P(x)=p_0+p_1x+\cdots+p_kx^k, \quad \text{(where } p_k\ne0).$
+
+\begin{enumerate}
+\item %  (a)
+Show that $y=e^{\alpha x}u$, where \begin{equation}\label{eq:eqA5.4.38}
+u'+\alpha u=P(x).
+\end{equation}
+\begin{solution}
+If $y=\int e^{\alpha x}P(x)\,dx$, then
+$y'=e^{\alpha x}P(x)$. Let $y=ue^{\alpha x}$; then $(u'+\alpha
+u)e^{\alpha x}=e^{\alpha x}P(x)$.
+\end{solution}
+
+\item % (b)
+Show that \ref{eq:eqA5.4.38} has a particular solution of the form
+$$
+u_p=A_0+A_1x+\cdots+A_kx^k,
+$$
+where $A_k$, $A_{k-1}$, \dots, $A_0$ can be computed successively
+by equating coefficients of $x^k,x^{k-1}, \dots,1$ on both sides of the
+equation
+$$
+u_p'+\alpha u_p=P(x).
+$$
+Conclude that
+$$
+\int e^{\alpha x}P(x)\,dx=\left(A_0+A_1x+\cdots+A_kx^k\right)e^{\alpha x}
++c,
+$$
+where $c$ is a constant of integration.
+\begin{solution}
+We must show that
+it is possible to choose $A_0,\dots,A_k$ so that
+$$(A_0+A_1x\cdots+A_kx^k)'+\alpha(A_0+A_1x\cdots+A_kx^k)=
+p_0+p_1x+\cdots+p_kx^k.  \quad (B)$$ By equating the coefficients of $x^k,
+x^{k-1},\dots,1$ (in that order) on the two sides of (B), we see that
+(B) holds if and only if $\alpha A_k=p_k$ and $(k-j+1)A_{k-j+1}+\alpha
+A_k=p_{k-j},\ 1\le j\le k$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.39}
+
+\begin{enumerate}
+\item  Use the method of Exercise~\ref{exer:5.4.38} to evaluate $  \int e^x(4+x)\,dx$
+ 
+\item  Use the method of Exercise~\ref{exer:5.4.38} to evaluate $\int e^{-x}(-1+x^2)\,dx$
+
+ \item Use the method of Exercise~\ref{exer:5.4.38} to evaluate $\int x^3e^{-2x}\,dx$
+
+\item Use the method of Exercise~\ref{exer:5.4.38} to evaluate $\int e^x(1+x)^2\,dx$
+
+\item Use the method of Exercise~\ref{exer:5.4.38} to evaluate $\int e^{3x}(-14+30x+27x^2)\,dx$
+
+\item Use the method of Exercise~\ref{exer:5.4.38} to evaluate $\int e^{-x}(1+6x^2-14x^3+3x^4)\,dx$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.4.40}
+Use the method suggested in Exercise~\ref{exer:5.4.38} to
+evaluate $\int x^ke^{\alpha x}\,dx$, where $k$ is an arbitrary
+positive integer and $\alpha\ne0$.
+
+\begin{solution}
+If $y=\int x^ke^{\alpha x}\,dx$, then $y'=x^ke^{\alpha x}$. Let
+$y=ue^{\alpha x}$; then $(u'+\alpha u)e^{\alpha x}=x^ke^{\alpha x}$,
+so $u'+\alpha u=x^k$. This equation has a
+particular solution $u_p=A_0+A_1x\cdots+A_kx^k$, where 
+$$(A_0+A_1x\cdots+A_kx^k)'+\alpha(A_0+A_1x\cdots+A_kx^k)=
+x^k. \quad (A)$$
+
+By equating the coefficients of $x^k,
+x^{k-1},\dots,1$  on the two sides of (A), we see that
+(A) holds if and only if $\alpha A_k=1$ and
+$(k-j+1)A_{k-j+1}+\alpha
+A_k-j=0,\ 1\le j\le k$.  Therefore, $A_k=\frac{1}{\alpha}$,
+$A_{k-1}=-\frac{k}{\alpha^2}$, $A_{k-2}=\frac{k(k-1)}{\alpha^3}$,
+and, in general,
+$A_{k-j}=(-1)^j\frac{k(k-1)\cdots(k-j+1)}{\alpha^{j+1}}=
+\frac{(-1)^jk!}{\alpha^{j+1}(k-j)!},\
+1\le
+j\le k$. By introducing the index $r=k-j$ we can rewrite this as
+$A_r=\frac{(-1)^{k-r}k!}{\alpha^{k-r+1}r!},\ 0\le r\le k$.
+Therefore,
+$u_p=\frac{(-1)^kk!}{\alpha^{k+1}}\sum_{r=0}^k\frac{(-\alpha x)^r}{r!}$ and
+$y=\frac{(-1)^kk!e^{\alpha x}}{\alpha^{k+1}}\sum_{r=0}^k \frac{(-\alpha x)^r}{r!}+c$.
+\end{solution}
+\end{problem}
+
+\end{document}

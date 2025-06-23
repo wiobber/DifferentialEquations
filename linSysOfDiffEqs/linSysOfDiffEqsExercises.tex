@@ -1,0 +1,457 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+\begin{problem}\label{exer:10.2.1}
+Rewrite the system in matrix form and
+ verify that the given vector function satisfies the  system for
+any choice of the constants $c_1$ and $c_2$.
+
+\begin{enumerate}
+\item % (a)
+ $\begin{array}{ccccc}y'_1&=&2y_1& + &4y_2\\
+y_2'&=&4y_1&+&2y_2\end{array}  \quad
+{\bf y}=c_1\begin{bmatrix}1\\1\end{bmatrix}e^{6t}+c_2\begin{bmatrix}1\\-1\end{bmatrix}e^{-2t}$
+
+\item % (b)
+ $\begin{array}{ccccc}y'_1&=&-2y_1& -& 2y_2\\
+y_2'&=&-5y_1 &+&y_2\end{array}  \quad
+{\bf y}=c_1\begin{bmatrix}1\\1\end{bmatrix}e^{-4t}+c_2\begin{bmatrix}-2\\5\end{bmatrix}e^{3t}$
+
+\item % (c)
+ $\begin{array}{ccccc}y'_1&=&-4y_1& -&10y_2\\
+y_2'&=&3y_1 &+& 7y_2\end{array}  \quad
+{\bf y}=c_1\begin{bmatrix}-5\\3\end{bmatrix}e^{2t}+c_2\begin{bmatrix}2\\-1\end{bmatrix}e^t$
+
+\item % (d)
+ $\begin{array}{ccccc}y'_1&=&2y_1& +&y_2 \\
+y_2'&=&y_1 &+& 2y_2\end{array}  \quad
+ {\bf y}=c_1\begin{bmatrix}1\\1\end{bmatrix}e^{3t}+c_2\begin{bmatrix}1\\-1\end{bmatrix}e^t$
+\end{enumerate}
+
+\end{problem}
+
+\begin{problem}\label{exer:10.2.2}
+Rewrite the system in matrix form and
+ verify that the given vector function satisfies the  system for
+any choice of the constants $c_1$, $c_2$, and $c_3$.
+
+\begin{enumerate}
+\item % (a)
+ $\begin{array}{ccccccc}y'_1&=&- y_1&+&2y_2& +& 3y_3 \\
+y_2'&=&&&y_2 &+& 6y_3\\y_3'&=& && &-&2y_3;\end{array}$
+
+${\bf
+y}=c_1\begin{bmatrix}1\\1\\0\end{bmatrix}e^t+c_2\begin{bmatrix}1\\0\\0\end{bmatrix}e^{-t}+c_3\begin{bmatrix}1\\-2\\1\end{bmatrix}e^{-2t}$
+
+\item % (b)
+ $\begin{array}{ccccccc}y'_1&=& & &2y_2 &+& 2y_3 \\
+y_2'&=&2y_1& & & + &2y_3\\
+y_3'&=&2y_1& +&
+2y_2& &\end{array}$
+
+${\bf
+y}=c_1\begin{bmatrix}-1\\0\\1\end{bmatrix}e^{-2t}+c_2\begin{bmatrix}0\\-1\\1\end{bmatrix}e^{-2t}+c_3\begin{bmatrix}1\\1\\1\end{bmatrix}e^{4t}$
+
+\item % (c)
+ $\begin{array}{ccccccc}y'_1&=&-y_1 &+&2y_2& + &2y_3\\
+y_2'&=&2y_1& -&y_2 &+&2y_3\\
+y_3'&=&2y_1& +& 2y_2
+&-&y_3\end{array}$
+
+${\bf
+y}=c_1\begin{bmatrix}-1\\0\\1\end{bmatrix}e^{-3t}+c_2\begin{bmatrix}0\\-1\\1\end{bmatrix}e^{-3t}+c_3\begin{bmatrix}1\\1\\1\end{bmatrix}e^{3t}$
+
+\item % (d)
+ $\begin{array}{ccccccc}y'_1&=&3y_1& -& y_2&
+-&y_3\\ 
+y_2'&=&-2y_1& +& 3y_2& +& 2y_3\\
+y_3'&=&4y_1& -&y_2& -&
+2y_3\end{array}$
+
+${\bf
+y}=c_1\begin{bmatrix}1\\0\\1\end{bmatrix}e^{2t}+c_2\begin{bmatrix}1\\-1\\1\end{bmatrix}e^{3t}+c_3\begin{bmatrix}1\\-3\\7\end{bmatrix}e^{-t}$
+\end{enumerate}
+
+\end{problem}
+
+\begin{problem}\label{exer:10.2.3}
+Rewrite the initial value problem in matrix form and
+ verify that the given vector function is a solution.
+
+\begin{enumerate}
+\item % (a)
+ $\begin{array}{ccccc}
+ y'_1&=&y_1&+&y_2\\
+y_2'&=&-2y_1& +&4y_2\end{array}$
+
+$\begin{array}{ccc}y_1(0)&=&1\\y_2(0)&=&0\end{array}$  
+
+${\bf y}=2\begin{bmatrix}1\\1\end{bmatrix}e^{2t}-\begin{bmatrix}1\\2\end{bmatrix}e^{3t}$
+
+\item % (b)
+ $\begin{array}{ccccc}
+ y'_1&=&5y_1& +& 3y_2 \\
+y_2'&=&- y_1 &+& y_2\end{array}$
+
+$\begin{array}{ccc}y_1(0)&=&12\\y_2(0)&=&-6;\end{array}$ 
+
+${\bf y}=3\begin{bmatrix}1\\-1\end{bmatrix}e^{2t}+3\begin{bmatrix}3\\-1\end{bmatrix}e^{4t}$
+\end{enumerate}
+
+\end{problem}
+
+\begin{problem}\label{exer:10.2.4}
+Rewrite the initial value problem in matrix form and
+ verify that the given vector function is a solution.
+
+\begin{enumerate}
+\item % (a)
+ $\begin{array}{ccccccc}
+ y'_1&=&6y_1 &+& 4y_2& +& 4y_3 \\
+y_2'&=&-7y_1 &-&2y_2& -& y_3\\
+y_3'&=&7y_1& + &4y_2& +& 3y_3\end{array}$
+
+$\begin{array}{ccc}y_1(0)&=&3\\
+y_2(0)&=&-6\\ y_3(0)&=&4\end{array}$
+
+${\bf
+y}=\begin{bmatrix}1\\-1\\1\end{bmatrix}e^{6t}+2\begin{bmatrix}1\\-2\\1\end{bmatrix}e^{2t}+\begin{bmatrix}0\\-1\\1\end{bmatrix}e^{-t}$
+
+\item % (b)
+ $\begin{array}{ccccccc}
+ y'_1&=&8y_1& +& 7y_2& +&7y_3 \\
+y_2'&=&-5y_1& -&6y_2 &-&9y_3\\
+y_3'&=&5y_1& +& 7y_2& +&10y_3\end{array}$
+
+$\begin{array}{ccc}y_1(0)&=&2\\
+y_2(0)&=&-4\\ y_3(0)&=&3\end{array}$
+
+${\bf
+y}=\begin{bmatrix}1\\-1\\1\end{bmatrix}e^{8t}+\begin{bmatrix}0\\-1\\1\end{bmatrix}e^{3t}+\begin{bmatrix}1\\-2\\1\end{bmatrix}e^t$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:10.2.5}
+Rewrite the system in matrix form and
+ verify that the given vector function satisfies the  system for
+any choice of the constants $c_1$ and $c_2$.
+
+\begin{enumerate}
+\item % (a)
+ $\begin{array}{ccccccccc}
+ y'_1&=&-3y_1&+&2y_2&+&3&-&2t \\
+y_2'&=&-5y_1&+&3y_2&+&6&-&3t\end{array}$
+
+${\bf y}=c_1\begin{bmatrix}2\cos t\\3\cos t-\sin
+t\end{bmatrix}+c_2\begin{bmatrix}2\sin t\\3\sin t+\cos t
+\end{bmatrix}+\begin{bmatrix}1\\t\end{bmatrix}$
+
+\item % (b)
+ $\begin{array}{ccccccc}
+ y'_1&=&3y_1&+&y_2&-&5e^t \\
+y_2'&=&-y_1&+&y_2&+&e^t\end{array}$
+
+${\bf
+y}=c_1\begin{bmatrix}-1\\1\end{bmatrix}e^{2t}+c_2\begin{bmatrix}1+t\\-t\end{bmatrix}e^{2t}+\begin{bmatrix}1\\3\end{bmatrix}e^t$
+
+\item % (c)
+ $\begin{array}{ccccccccc}
+ y'_1&=&-y_1&-&4y_2&+&4e^t&+&8te^t \\
+y_2'&=&-y_1&-&y_2&+&e^{3t}&+&(4t+2)e^t\end{array}$
+
+${\bf y}=c_1\begin{bmatrix}2\\1\end{bmatrix}e^{-3t}+c_2\begin{bmatrix}-2\\1\end{bmatrix}e^t+\begin{bmatrix}
+e^{3t}\\2te^t\end{bmatrix}$
+
+\item % (d)
+ $\begin{array}{ccccccccc}
+ y'_1&=&-6y_1&-&3y_2&+&14e^{2t}&+&12e^t \\
+y_2'&=&y_1&-&2y_2&+&7e^{2t}&-&12e^t\end{array}$
+
+${\bf y}=c_1\begin{bmatrix}-3\\1\end{bmatrix}e^{-5t}+c_2\begin{bmatrix}-1\\1\end{bmatrix}e^{-3t}+
+\begin{bmatrix}e^{2t}+3e^t\\2e^{2t}-3e^t\end{bmatrix}$
+
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:10.2.6}
+Convert the linear scalar equation
+$$
+P_0(t)y^{(n)}+P_1(t)y^{(n-1)}+\cdots+P_n(t)y(t)=F(t)
+\quad\text{(A)}
+$$
+into an equivalent $n\times n$ system
+$$
+{\bf y'}=A(t){\bf y}+{\bf f}(t),
+$$
+and show that $A$ and ${\bf f}$ are continuous on an interval
+$(a,b)$ if and only if (A) is normal on $(a,b)$.
+
+\begin{solution}
+    Let  $y_i=y^{(i-1)}$, $i=1,2,\dots,n$; then $y_i'=y_{i+1}$,
+$i=1,2,\dots,n-1$ and $P_0(t)y_n'+P_1(t)y_n+\cdots+P_n(t)y_1=F(t)$, so
+$$A=-\frac{1}{ P_0}
+\begin{bmatrix}
+0&1&0&\cdots&0\\
+0&0&1&\cdots&0\\
+\vdots&\vdots&\vdots&\ddots&\vdots\\
+0&0&0&\cdots&1\\
+P_n&P_{n-1}&P_{n-2}&\cdots&P_1
+\end{bmatrix}\quad
+\mbox{and}\quad
+{\bf f}=\frac{1}{ P_0}
+\begin{bmatrix}
+0\\ 0\\\vdots\\0\\F
+\end{bmatrix}.
+$$
+If $P_0,P_1,\dots,P_n$ and $F$ are continuous and $P_0$
+has no zeros on $(a,b)$, then $P_1/P_0,\dots,P_n/P_0$  and
+$F/P_0$ are continuous on $(a,b)$.
+\end{solution}
+
+\end{problem}
+
+\begin{problem}\label{exer:10.2.7}
+ A matrix function
+$$
+Q(t)=\begin{bmatrix}
+           q_{11}(t) & q_{12}(t) &\dots& q_{1s}(t)\\
+           q_{21}(t) & q_{22} &\dots& q_{2s}(t)\\
+        \vdots & \vdots& \ddots & \vdots\\
+        q_{r1}(t) &q_{r2}(t) &\dots& q_{rs}(t)
+         \end{bmatrix}
+$$
+is  said to be  {\color{blue}\it differentiable\/}
+if its entries $\{q_{ij}\}$ are  differentiable.  Then the {\color{blue}\it
+derivative\/}  $Q'$ is defined by
+ $$
+Q'(t)=\begin{bmatrix}
+           q'_{11}(t) & q'_{12}(t) &\dots& q'_{1s}(t)\\
+           q'_{21}(t) & q'_{22} &\dots& q'_{2s}(t)\\
+        \vdots & \vdots& \ddots & \vdots\\
+        q'_{r1}(t) &q'_{r2}(t) &\dots& q'_{rs}(t)
+         \end{bmatrix}
+$$
+\begin{enumerate}
+\item % (a)
+Prove: If $P$ and $Q$ are differentiable matrices such that $P+Q$ is
+defined and if  $c_1$ and $c_2$ are constants, then
+$$
+(c_1P+c_2Q)'=c_1P'+c_2Q'.
+$$
+
+\begin{solution}
+    $(c_1P+c_2Q)'_{ij}=
+(c_1p_{ij}+c_2q_{ij})'=c_1p_{ij}'+c_2q_{ij}'=(c_1P'+c_2Q')_{ij}$;
+hence
+$(c_1P+c_2Q)'=c_1P'+c_2Q'$.
+\end{solution}
+
+\item % (b)
+Prove: If $P$ and $Q$ are differentiable matrices such that $PQ$ is
+defined, then
+$$
+(PQ)'=P'Q+PQ'.
+$$
+
+\begin{solution}
+    Let $P$ be $k\times r$ and $Q$ be $r\times s$; then
+$PQ$ is $k\times s$ and $(PQ)_{ij}=\sum_{l=1}^rp_{il}q_{l j}$.
+Therefore,
+$(PQ)_{ij}'=\sum_{l=1}^rp_{il}'q_{l j}
++\sum_{l=1}^rp_{il}q_{l j}'=(P'Q)_{ij}+(PQ')_{ij}$. Therefore,
+$(PQ)'=P'Q+PQ'$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:10.2.8}
+ Verify that $Y' = AY$.
+
+\begin{enumerate}
+\item  % (a)
+ $Y = \begin{bmatrix} e^{6t} & e^{-2t}\\
+e^{6t} & -e^{-2t}\end{bmatrix}, \quad A = \begin{bmatrix} 2 & 4\\ 4 &2\end{bmatrix}$
+
+\item % (b)
+ $Y = \begin{bmatrix} e^{-4t}  &
+-2e^{3t}\\ e^{-4t} & 5e^{3t}\end{bmatrix}, \quad A = \begin{bmatrix} -2 &
+-2\\ -5 & 1\end{bmatrix}$
+
+\item % (c)
+ $Y  = \begin{bmatrix} -5e^{2t} &
+2e^t\\ 3e^{2t} & -e^t\end{bmatrix}, \quad A =
+\begin{bmatrix} -4 & -10\\ 3 & 7\end{bmatrix}$
+
+\item % (d)
+ $Y = \begin{bmatrix} e^{3t} &
+e^t\\ e^{3t} & -e^t\end{bmatrix}, \quad A = \begin{bmatrix} 2 & 1\\ 1 & 2\end{bmatrix}$
+
+\item % (e)
+ $Y = \left[\begin{array}{crr} e^t&e^{-t}&
+e^{-2t}\\ e^t&0&-2e^{-2t}\\ 0&0&e^{-2t}\end{array}\right], \quad
+A = \begin{bmatrix} -1 & 2 & 3\\ 0 & 1 &
+6\\ 0 & 0 & -2\end{bmatrix}$
+
+\item % (f)
+ $Y = \begin{bmatrix} -e^{-2t} &
+-e^{-2t} & e^{4t}\\ 0 & e^{-2t} & e^{4t} \\
+e^{-2t} & 0 & e^{4t}\end{bmatrix}, \quad A =
+\begin{bmatrix} 0 & 2 & 2 \\ 2 & 0 & 2\\ 2 & 2 & 0\end{bmatrix}$
+
+\item % (g)
+ $Y = \begin{bmatrix}e^{3t} & 
+e^{-3t} & 0\\ e^{3t} & 0 & -e^{-3t}\\ e^{3t} &
+e^{-3t} & \phantom{-}e^{-3t}\end{bmatrix}, \quad A = \begin{bmatrix}
+-9 & 6& 6\\-6& 3 &6\\-6 & 6 & 3\end{bmatrix}$
+
+\item % (h)
+ $Y = \left[\begin{array}{crr} e^{2t}&e^{3t}&
+e^{-t}\\ 0&-e^{3t}&-3e^{-t}\\ e^{2t}&e^{3t}&7e^{-t}\end{array}\right] ,
+\quad A =
+\begin{bmatrix} 3 & -1 & -1\\-2 & 3 & 2\\  4 & -1 & -2\end{bmatrix}$
+ \end{enumerate}
+ \end{problem}
+
+\begin{problem}\label{exer:10.2.9}
+ Suppose
+$$
+{\bf y}_1=\begin{bmatrix}y_{11}\\y_{21}\end{bmatrix}\quad\text{ and }\quad{\bf
+y}_2=\begin{bmatrix}y_{12}\\y_{22}\end{bmatrix}$$ are solutions of the homogeneous system
+$$
+{\bf y}'=A(t){\bf y},
+\quad\text{(A)}
+$$
+and define
+
+$$Y=
+\begin{bmatrix}y_{11} & y_{12} \\ y_{21} & y_{22}\end{bmatrix}.
+$$
+\begin{enumerate}
+\item % (a)
+ Show that $Y'=AY$.
+\item % (b)
+ Show that if ${\bf c}$ is a constant vector then ${\bf y}=
+Y{\bf c}$
+ is a solution of  (A).
+\item % (c)
+ State generalizations of  part (a) and part (b) for $n\times n$
+systems.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:10.2.10}  Suppose $Y$ is a differentiable square
+matrix.
+\begin{enumerate}
+\item % (a)
+Find a formula for the derivative of $Y^2$.
+
+\begin{solution}
+    From Exercise~\ref{exer:10.2.7} part (b) with $P=Q=X$,
+$(X^2)'=(XX)'=X'X+XX'$.
+\end{solution}
+
+\item % (b)
+Find a formula for the derivative of $Y^n$, where $n$ is any
+positive integer.
+
+\begin{solution}
+    By starting from
+ Exercise~\ref{exer:10.2.7} part (b) and using induction it can be shown
+if $P_1,P_2,\dots,P_n$ are square matrices of the same order, then
+ $(P_1P_2\cdots P_n)'=P_1'P_2\cdots P_n+P_1P_2'\cdots P_n+\cdots+
+P_1P_2\cdots P_n'$. Taking $P_1=P_2=\cdots=P_n=X$  yields
+(A) $(Y^n)'=Y'Y^{n-1}+YY'Y^{n-2}+Y^2Y'Y^{n-3}+\cdots+Y^{n-1}Y'=\sum_{r=0}^{n-1}Y^rY'Y^{n-r-1}$.
+\end{solution}
+
+\item % (c)
+State how the results obtained in part (a) and part (b) are analogous to
+results from  calculus  concerning scalar functions.
+\end{enumerate}
+
+\begin{solution}
+    If $Y$ is a scalar function, then (A) reduces to
+the familiar result $(Y^n)'=nY^{n-1}Y'$.
+\end{solution}
+
+\end{problem}
+
+\begin{problem}\label{exer:10.2.11}
+It can be shown that if $Y$ is a differentiable and  invertible
+square matrix function, then $Y^{-1}$ is differentiable.
+
+\begin{enumerate}
+\item % (a)
+Show that ($Y^{-1})'=
+-Y^{-1}Y'Y^{-1}$.
+\begin{hint}
+Differentiate the identity $Y^{-1}Y=I$.
+\end{hint}
+\item % (b)
+Find the derivative of $Y^{-n}=\left(Y^{-1}\right)^n$, where $n$
+is a positive integer.
+\item % (c)
+State how the results obtained in part (a) and part (b) are analogous to
+results from  calculus  concerning scalar functions.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:10.2.12} Show that Theorem~\ref{thmtype:10.2.1} implies
+Theorem~\ref{thmtype:9.1.1}.  
+\begin{hint}Write the scalar equation
+$$
+P_0(x)y^{(n)}+P_1(x)y^{(n-1)}+\cdots+P_n(x)y=F(x)
+$$
+as an $n\times n$ system of linear equations.
+\end{hint}
+
+\begin{solution}
+    From Exercise~10.2.6, the initial value problem
+(A) $P_0(x)y^{(n)}+P_1(x)y^{(n-1)}+\cdots+P_n(x)y=F(x)$,
+$y(x_0)=k_0,\ y'(x_0)=k_1,\dots,\ y^{(n-1)}(x_0)=k_{n-1}$ is
+equivalent to the initial value problem (B) ${\bf y'}=A(t){\bf y}+{\bf
+f}(t)$, with
+$$A=-\frac{1}{ P_0}
+\begin{bmatrix}
+0&1&0&\cdots&0\\
+0&0&1&\cdots&0\\
+\vdots&\vdots&\vdots&\ddots&\vdots\\
+0&0&0&\cdots&1\\
+P_n&P_{n-1}&P_{n-2}&\cdots&P_1
+\end{bmatrix},
+{\bf f}=\frac{1}{ P_0}
+\begin{bmatrix}
+0\\ 0\\\vdots\\0\\F
+\end{bmatrix},
+\quad\text{ and }\quad
+{\bf k}=
+\begin{bmatrix}
+k_0\\k_1\\\vdots\\k_{n-1}
+\end{bmatrix}.
+$$
+Since Theorem~10.2.1 implies that (B) has a unique solution on
+$(a,b)$, it follows that (A) does also.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:10.2.13}
+Suppose ${\bf y}$ is a solution of the $n\times n$ system  ${\bf
+y}'=A(t){\bf y}$ on $(a,b)$, and that the $n\times n$ matrix $P$
+is invertible and differentiable on $(a,b)$. Find a matrix $B$
+such that the function ${\bf x}=P{\bf y}$ is a solution of ${\bf x}'=B{\bf
+x}$ on $(a,b)$.
+\end{problem}
+
+\end{document}

@@ -1,0 +1,169 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+\begin{problem}\label{exer:10.1.1}
+Tanks $T_1$ and $T_2$ contain 50 gallons and 100 gallons of salt
+solutions, respectively. A solution with 2 pounds of salt per gallon
+is pumped into $T_1$ from an external source at $1$~gal/min, and a
+solution with $3$ pounds of salt per gallon is pumped into $T_2$ from an
+external source at $2$~gal/min. The solution from $T_1$ is pumped into
+$T_2$ at $3$ gal/min, and the solution from $T_2$ is pumped into $T_1$
+at $4$ gal/min. $T_1$ is drained at $2$~gal/min and $T_2$ is drained at
+$1$~gal/min. Let $Q_1(t)$ and $Q_2(t)$ be the number of pounds of salt
+in $T_1$ and $T_2$, respectively, at time $t>0$. Derive a system of
+differential equations for $Q_1$ and $Q_2$. Assume that both mixtures
+are well stirred.
+\end{problem}
+
+
+\begin{problem}\label{exer:10.1.2}
+Two 500 gallon tanks $T_1$ and $T_2$ initially contain 100
+gallons each of salt solution. A solution with $2$ pounds of salt per
+gallon is pumped into $T_1$ from an external source at $6$~gal/min, and
+a solution with $1$ pound of salt per gallon is pumped into $T_2$ from
+an external source at $5$~gal/min. The solution from $T_1$ is pumped
+into $T_2$ at $2$ gal/min, and the solution from $T_2$ is pumped into
+$T_1$ at $1$ gal/min. Both tanks are drained at $3$~gal/min. Let $Q_1(t)$
+and $Q_2(t)$ be the number of pounds of salt in $T_1$ and $T_2$,
+respectively, at time $t>0$. Derive a system of differential equations
+for $Q_1$ and $Q_2$ that's valid until a tank is about to overflow.
+Assume that both mixtures are well stirred.
+
+\begin{solution}
+    $Q_1'=(\mbox{rate in})_1-(\mbox{rate out})_1$ and $Q_2'=(\mbox{rate
+in})_2-(\mbox{rate out})_2$.
+
+The volumes of the solutions in $T_1$ and $T_2$ are $V_1(t)=100+2t$
+and $V_2(t)=100+3t$, respectively. $T_1$ receives salt from the
+external source at the rate of $\mbox{(2 lb/gal) }\times\mbox{
+(6~gal/min)}=\mbox{12 lb/min}$, and from $T_2$ at the rate of
+$\mbox{(lb/gal in }T_2)\times\mbox{ (1~gal/min)
+}=\frac{1}{100+3t}Q_2 \mbox{ lb/min}$. Therefore, (A) $\mbox{(rate
+in)}_1= 12+\frac{1}{100+3t}Q_2$. Solution leaves $T_1$ at 5~gal/min,
+since 3~gal/min are drained and 2~gal/min are pumped to $T_2$; hence
+(B) $(\mbox{rate out})_1=(\mbox{ lb/gal in T}_1)\times
+\mbox{(5~gal/min) }
+=\frac{1}{100+2t}Q_1\times5=\frac{5}{100+2t}Q_1$. Now (A) and (B)
+imply that (C) $Q_1'=12-\frac{5}{100+2t}Q_1+\frac{1}{100+3t}Q_2$.
+
+$T_2$ receives salt from the external source at the rate of $\mbox{(1
+lb/gal) }\times\mbox{ (5~gal/min)}=\mbox{ 5 lb/min}$, and from $T_1$
+at the rate of $\mbox{(lb/gal in }T_1)\times\mbox{ (2~gal/min)
+}=\frac{1}{100+2t}Q_1\times2=\frac{1}{50+t}Q_1 \mbox{ lb/min}$.
+Therefore, (D) $\mbox{(rate in)}_2= 5+\frac{1}{50+t}Q_1$. Solution
+leaves $T_2$ at 4~gal/min, since 3~gal/min are drained and 1~gal/min
+is pumped to $T_1$; hence (E) $(\mbox{rate out})_2=(\mbox{ lb/gal in
+T}_2)\times \mbox{(4~gal/min) }
+=\frac{1}{100+3t}Q_2\times4=\frac{4}{100+3t}Q_2$. Now (D) and (E)
+imply that (F) $Q_2'=5+\frac{1}{50+t}Q_1-\frac{4}{100+3t}Q_2$. Now
+(C) and (F) form the desired system.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:10.1.3}
+A mass $m_1$ is suspended from a rigid support on a spring $S_1$ with
+spring constant $k_1$ and damping constant $c_1$. A second mass $m_2$
+is suspended from the first on a spring $S_2$ with spring constant
+$k_2$ and damping constant $c_2$, and a third mass $m_3$ is suspended
+from the second on a spring $S_3$ with spring constant $k_3$ and
+damping
+constant $c_3$. Let $y_1=y_1(t)$, $y_2=y_2(t)$, and $y_3=y_3(t)$ be the
+displacements of the three masses from their equilibrium positions at
+time $t$, measured positive upward. Derive a system of differential
+equations for $y_1$, $y_2$ and $y_3$, assuming that the masses of the
+springs are negligible and that vertical external forces $F_1$, $F_2$,
+and
+$F_3$ also act on the masses.
+\end{problem}
+
+\begin{problem}\label{exer:10.1.4}
+Let ${\bf X}=x\,{\bf i}+y\,{\bf j}+z\,{\bf k}$ be the position vector
+of an object with mass $m$, expressed in terms of a rectangular
+coordinate system with origin at Earth's center
+(Figure~\ref{figure:10.1.3}). Derive a system of differential equations for
+$x$, $y$, and $z$, assuming that the object moves under Earth's
+gravitational force (given by Newton's law of gravitation, as in
+Example~\ref{example:10.1.3} ) and a resistive force proportional to the
+speed of the object. Let $\alpha$ be the constant of proportionality.
+
+\begin{solution}
+    $m{\bf X}''=-\alpha{\bf X'}-mgR^2\frac{{\bf X}}{||{\bf X}||^3}$;
+see Example~~\ref{example:10.1.3}.
+\end{solution}
+\end{problem}
+
+
+
+\begin{problem}\label{exer:10.1.5}
+ Rewrite the given system as a first order system.
+
+\begin{enumerate}
+    \item $\begin{array}{rcl} x''' &=& f(t,x,y,y')\\ 
+    y'' &=&g(t,y,y') \end{array}$
+    \item $\begin{array}{rcl} u' &=&f(t,u,v,v',w')\\ v''&=&g(t,u,v,v',w)
+\\w''&=&h(t,u,v,v',w,w')\end{array}$
+\item $y''' =f(t,y,y',y'')$
+\item $y^{(4)} = f(t,y)$
+\item $\begin{array}{rcl} x'' &=& f(t,x,y)\\ y'' &=&
+g(t,x,y) \end{array}$
+\end{enumerate}
+
+
+\end{problem}
+
+\begin{problem}\label{exer:10.1.6}
+Rewrite the system (\ref{eq:10.1.14}) of differential equations derived in
+Example~\ref{example:10.1.3}   as a first order system.
+\end{problem}
+
+\begin{problem}\label{exer:10.1.7}
+Formulate a version of Euler's method (Section~3.1)
+for the numerical solution of the initial value problem
+$$
+\begin{array}{rcl}
+y_1'&=&g_1(t,y_1,y_2),\quad y_1(t_0)=y_{10},\\
+y_2'&=&g_2(t,y_1,y_2),\quad y_2(t_0)=y_{20},
+\end{array}
+$$
+on an interval $[t_0,b]$.
+\end{problem}
+
+
+\begin{problem}\label{exer:10.1.8}
+Formulate a version of the improved Euler method
+(Section~3.2)
+for the numerical solution of the initial value problem
+$$
+\begin{array}{rcl}
+y_1'&=&g_1(t,y_1,y_2),\quad y_1(t_0)=y_{10},\\
+y_2'&=&g_2(t,y_1,y_2),\quad y_2(t_0)=y_{20},
+\end{array}
+$$
+on an interval $[t_0,b]$.
+
+\begin{solution}
+
+    $\begin{array}{rcl}
+I_{1i}&=&g_1(t_i,y_{1i},y_{2i}),\\
+J_{1i}&=&g_2(t_i,y_{1i},y_{2i}),\\
+I_{2i}&=&g_1\left(t_i+h,y_{1i}+hI_{1i},y_{2i}+hJ_{1i}\right),\\
+J_{2i}&=&g_2\left(t_i+h,y_{1i}+hI_{1i},y_{2i}+hJ_{1i}\right),\\
+y_{1,i+1}&=&y_{1i}+\frac{h}{2}(I_{1i}+I_{2i}),\\
+y_{2,i+1}&=&y_{2i}+\frac{h}{2}(J_{1i}+J_{2i}).
+\end{array}$
+\end{solution}
+\end{problem}
+
+\end{document}

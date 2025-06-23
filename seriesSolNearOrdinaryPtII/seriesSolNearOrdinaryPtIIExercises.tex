@@ -1,0 +1,1203 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+\begin{problem}\label{exer:7.3.1} 
+Find  the coefficients
+$a_0$,\dots, $a_N$ for $N$ at least $7$ in the series solution
+$y=\sum_{n=0}^\infty a_nx^n$ of the initial value problem.
+
+$(1+3x)y''+xy'+2y=0,\quad y(0)=2,\quad y'(0)=-3$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.2} 
+Find  the coefficients
+$a_0$,\dots, $a_N$ for $N$ at least $7$ in the series solution
+$y=\sum_{n=0}^\infty a_nx^n$ of the initial value problem.
+
+$(1+x+2x^2)y''+(2+8x)y'+4y=0,\quad y(0)=-1,\quad y'(0)=2$
+
+\begin{solution}
+    If $y=\sum_{n=0}^\infty a_nx^n$, then
+$$(1+x+2x^2)y''+(2+8x)y'+4y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nx^{n-2}
++\sum_{n=2}^\infty n(n-1)a_nx^{n-1}
++2\sum_{n=2}^\infty n(n-1)a_nx^n
++2\sum_{n=1}^\infty na_nx^{n-1}
++8\sum_{n=1}^\infty na_nx^n
++4\sum_{n=0}^\infty a_nx^n=$$
+$$=\sum_{n=0}^\infty(n+2)(n+1)(a_{n+2}+a_{n+1}+2a_n)x^n=0$$
+if
+$a_{n+2}=-a_{n+1}-2a_n$, $a_n\geq 0$.
+Starting with $a_0=-1$ and $a_1=2$ yields
+$y=-1+2x-4x^3+4x^4+4x^5-12x^6+4x^7+\cdots$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.3}
+Find  the coefficients
+$a_0$,\dots, $a_N$ for $N$ at least $7$ in the series solution
+$y=\sum_{n=0}^\infty a_nx^n$ of the initial value problem.
+
+$(1-2x^2)y''+(2-6x)y'-2y=0,\quad y(0)=1,\quad y'(0)=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.4} 
+Find  the coefficients
+$a_0$,\dots, $a_N$ for $N$ at least $7$ in the series solution
+$y=\sum_{n=0}^\infty a_nx^n$ of the initial value problem.
+
+$(1+x+3x^2)y''+(2+15x)y'+12y=0,\quad y(0)=0,\quad y'(0)=1$
+
+\begin{solution}
+    If $y=\sum_{n=0}^\infty a_nx^n$, then
+$$(1+x+3x^2)y''+(2+15x)y'+12y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nx^{n-2}
++\sum_{n=2}^\infty n(n-1)a_nx^{n-1}
++3\sum_{n=2}^\infty n(n-1)a_nx^n
++2\sum_{n=1}^\infty na_nx^{n-1}
++15\sum_{n=1}^\infty na_nx^n
++12\sum_{n=0}^\infty a_nx^n=$$
+$$=\sum_{n=0}^\infty[(n+2)(n+1)a_{n+2}+(n+1)(n+2)a_{n+1}+3(n+2)^2a_n]x^n=0$$
+if
+$a_{n+2}=-a_{n+1}-\frac{3(n+2)}{ n+1}a_n$,
+$a_n\geq 0$. Starting with $a_0=0$ and $a_1=1$ yields
+$y=x-x^2-\frac{7}{2}x^3+\frac{15}{2}x^4+\frac{45}{8}x^5
+-\frac{261}{8}x^6+\frac{207}{16}x^7+\cdots$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.5} 
+Find  the coefficients
+$a_0$,\dots, $a_N$ for $N$ at least $7$ in the series solution
+$y=\sum_{n=0}^\infty a_nx^n$ of the initial value problem.
+
+$(2+x)y''+(1+x)y'+3y=0,\quad y(0)=4,\quad y'(0)=3$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.6}
+Find  the coefficients
+$a_0$,\dots, $a_N$ for $N$ at least $7$ in the series solution
+$y=\sum_{n=0}^\infty a_nx^n$ of the initial value problem.
+
+$(3+3x+x^2)y''+(6+4x)y'+2y=0,\quad y(0)=7,\quad y'(0)=3$
+
+\begin{solution}
+    If $y=\sum_{n=0}^\infty a_nx^n$, then
+$$(3+3x+x^2)y''+(6+4x)y'+2y=$$
+$$=3\sum_{n=2}^\infty n(n-1)a_nx^{n-2}
++3\sum_{n=2}^\infty n(n-1)a_nx^{n-1}
++\sum_{n=2}^\infty n(n-1)a_nx^n
++6\sum_{n=1}^\infty na_nx^{n-1}
++4\sum_{n=1}^\infty na_nx^n
++2\sum_{n=0}^\infty a_nx^n=$$
+$$=\sum_{n=0}^\infty(n+2)(n+1)[3a_{n+2}+3a_{n+1}+a_n]x^n=0$$
+if
+$a_{n+2}=-a_{n+1}-a_n/3$,
+$a_n\ge0$. Starting with $a_0=7$ and $a_1=3$ yields
+$y=7+3x-\frac{16}{3}x^2+\frac{13}{3}x^3-\frac{23}{9}x^4+\frac{10}{9}x^5
+-\frac{7}{27}x^6-\frac{1}{9}x^7+\cdots$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.7}
+Find  the coefficients
+$a_0$,\dots, $a_N$ for $N$ at least $7$ in the series solution
+$y=\sum_{n=0}^\infty a_nx^n$ of the initial value problem.
+
+$(4+x)y''+(2+x)y'+2y=0,\quad y(0)=2,\quad y'(0)=5$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.8}
+Find  the coefficients
+$a_0$,\dots, $a_N$ for $N$ at least $7$ in the series solution
+$y=\sum_{n=0}^\infty a_nx^n$ of the initial value problem.
+
+$(2-3x+2x^2)y''-(4-6x)y'+2y=0,\quad y(1)=1,\quad y'(1)=-1$
+
+\begin{solution}
+    The equation is equivalent to
+ $(1+t+2t^2)y''+(2+6t)y'+2y=0$ with $t=x-1$.
+If $y=\sum_{n=0}^\infty a_nt^n$, then
+$$(1+t+2t^2)y''+(2+6t)y'+2y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nt^{n-2}
++\sum_{n=2}^\infty n(n-1)a_nt^{n-1}
++2\sum_{n=2}^\infty n(n-1)a_nt^n
++2\sum_{n=1}^\infty na_nt^{n-1}
++6\sum_{n=1}^\infty na_nt^n
++2\sum_{n=0}^\infty a_nt^n=$$
+$$=\sum_{n=0}^\infty(n+1)[(n+2)a_{n+2}+(n+2)a_{n+1}+2(n+1)a_n]t^n=0$$
+if
+$a_{n+2}=-a_{n+1}-
+frac{2(n+1)}{ n+2}a_n$,
+$a_n\geq 0$. Starting with $a_0=1$ and $a_1=-1$ yields
+$y=1-(x-1)+\frac{4}{3}(x-1)^3-\frac{4}{3}(x-1)^4-\frac{4}{5}(x-1)^5
++\frac{136}{45}(x-1)^6-\frac{104}{63}(x-1)^7+\cdots$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.9}
+Find  the coefficients
+$a_0$,\dots, $a_N$ for $N$ at least $7$ in the series solution
+$y=\sum_{n=0}^\infty a_nx^n$ of the initial value problem.
+
+$(3x+2x^2)y''+10(1+x)y'+8y=0,\quad y(-1)=1,\quad y'(-1)=-1$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.10}
+Find  the coefficients
+$a_0$,\dots, $a_N$ for $N$ at least $7$ in the series solution
+$y=\sum_{n=0}^\infty a_nx^n$ of the initial value problem.
+
+$(1-x+x^2)y''-(1-4x)y'+2y=0,\quad y(1)=2,\quad y'(1)=-1$
+
+\begin{solution}
+    The equation is equivalent to
+ $(1+t+t^2)y''+(3+4t)y'+2y=0$ with $t=x-1$.
+If $y=\sum_{n=0}^\infty a_nt^n$, then
+$$(1+t+t^2)y''+(3+4t)y'+2y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nt^{n-2}
++\sum_{n=2}^\infty n(n-1)a_nt^{n-1}
++\sum_{n=2}^\infty n(n-1)a_nt^n
++3\sum_{n=1}^\infty na_nt^{n-1}
++4\sum_{n=1}^\infty na_nt^n
++2\sum_{n=0}^\infty a_nt^n=$$
+$$=\sum_{n=0}^\infty(n+1)[(n+2)a_{n+2}+(n+3)a_{n+1}+(n+2)a_n]t^n=0$$
+if
+$a_{n+2}=-\frac{n+3}{ n+2}a_{n+1}-a_n$,
+$a_n\geq 0$. Starting with $a_0=2$ and $a_1=-1$ yields
+$y=2-(x-1)-\frac{1}{2}(x-1)^2+\frac{5}{3}(x-1)^3-\frac{19}{12}(x-1)^4
++\frac{7}{30}(x-1)^5+\frac{59}{45}(x-1)^6-\frac{1091}{630}(x-1)^7+\cdots$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.11}
+Find  the coefficients
+$a_0$,\dots, $a_N$ for $N$ at least $7$ in the series solution
+$y=\sum_{n=0}^\infty a_nx^n$ of the initial value problem.
+
+$(2+x)y''+(2+x)y'+y=0,\quad y(-1)=-2,\quad y'(-1)=3$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.12}
+Find  the coefficients
+$a_0$,\dots, $a_N$ for $N$ at least $7$ in the series solution
+$y=\sum_{n=0}^\infty a_nx^n$ of the initial value problem.
+
+$x^2y''-(6-7x)y'+8y=0,\quad y(1)=1,\quad y'(1)=-2$
+
+\begin{solution}
+    The equation is equivalent to
+ $(1+2t+t^2)y''+(1+7t)y'+8y=0$ with $t=x-1$.
+If $y=\sum_{n=0}^\infty a_nt^n$, then
+$$(1+2t+t^2)y''+(1+7t)y'+8y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nt^{n-2}
++2\sum_{n=2}^\infty n(n-1)a_nt^{n-1}
++\sum_{n=2}^\infty n(n-1)a_nt^n
++\sum_{n=1}^\infty na_nt^{n-1}
++7\sum_{n=1}^\infty na_nt^n
++8\sum_{n=0}^\infty a_nt^n=$$
+$$=\sum_{n=0}^\infty[(n+2)(n+1)a_{n+2}+(n+1)(2n+1)a_{n+1}+(n+2)(n+4)a_n]t^n=0$$
+if
+$a_{n+2}=-\frac{2n+1}{ n+2}a_{n+1}-\frac{n+4}{ n+1}a_n$,
+$a_n\ge0$. Starting with $a_0=1$ and $a_1=-2$ yields
+$y=1-2(x-1)-3(x-1)^2+8(x-1)^3-4(x-1)^4-\frac{42}{5}(x-1)^5
++19(x-1)^6-\frac{604}{35}(x-1)^7+\cdots$
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:7.3.13}
+Do the following experiment for various choices of
+real numbers  $a_0$, $a_1$, and $r$, with $0<r<1/\sqrt2$.
+\begin{enumerate}
+\item % (a)
+Use  differential equations software  to solve the initial
+value problem
+$$
+(1+x+2x^2)y''+(1+7x)y'+2y=0,\quad y(0)=a_0,\quad y'(0)=a_1,\quad
+\text{(A)}
+$$
+numerically on $(-r,r)$. (See Example~\ref{example:7.3.1}.)
+\item % (b)
+For $N=2$, $3$, $4$, \dots, compute $a_2$, \dots, $a_N$ in the power series
+solution
+$y=\sum_{n=0}^\infty a_nx^n$ of (A), and graph
+$$
+T_N(x)=\sum_{n=0}^N a_nx^n
+$$
+and the solution obtained in part (a) on $(-r,r)$.
+Continue increasing $N$ until there's no perceptible
+difference between the two graphs.
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}\label{exer:7.3.14}
+Do the following experiment for various choices of
+real numbers  $a_0$, $a_1$, and $r$, with $0<r<2$.
+\begin{enumerate}
+\item % (a)
+Use  differential equations software  to solve the initial
+value problem
+$$
+(3+x)y''+(1+2x)y'-(2-x)y=0,\quad y(-1)=a_0,\quad y'(-1)=a_1,\quad
+\text{(A)}
+$$
+numerically on $(-1-r,-1+r)$.  (See Example~\ref{example:7.3.2}. Why this
+interval?)
+\item % (b)
+For $N=2$, $3$, $4$, \dots, compute $a_2,\dots,a_N$ in the power series
+solution
+$$
+y=\sum_{n=0}^\infty a_n(x+1)^n
+$$
+ of (A), and graph
+$$
+T_N(x)=\sum_{n=0}^N a_n(x+1)^n
+$$
+and the solution obtained in part (a) on $(-1-r,-1+r)$.
+Continue increasing $N$ until there's no perceptible
+difference between the two graphs.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.15}
+Do the following experiment for several choices of $a_0$,
+ $a_1$, and $r$, with $r>0$.
+\begin{enumerate}
+\item % (a)
+Use  differential equations software to solve the initial
+value problem
+$$
+y''+3xy'+(4+2x^2)y=0,\quad y(0)=a_0,\quad y'(0)=a_1,\quad
+\text{(A)}
+$$
+numerically on $(-r,r)$. (See Example~\ref{example:7.3.3}.)
+\item % (b)
+Find the coefficients $a_0$, $a_1$, \dots, $a_N$
+in the power series solution $y=\sum_{n=0}^\infty a_nx^n$ of (A), and
+graph
+$$
+T_N(x)=\sum_{n=0}^N a_nx^n
+$$
+and the solution obtained in part (a) on $(-r,r)$.
+Continue increasing $N$ until there's no perceptible
+difference between the two graphs.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.16}
+Do the following experiment for several choices of $a_0$
+and $a_1$.
+\begin{enumerate}
+\item % (a)
+Use differential equations software  to solve the initial
+value problem
+$$
+(1-x)y''-(2-x)y'+y=0,\quad y(0)=a_0,\quad y'(0)=a_1,\quad
+\text{(A)}
+$$
+numerically on $(-r,r)$.
+\item % (b)
+Find the coefficients $a_0$, $a_1$, \dots, $a_N$
+in the power series solution $y=\sum_{n=0}^Na_nx^n$ of (A), and graph
+$$
+T_N(x)=\sum_{n=0}^N a_nx^n
+$$
+and the solution obtained in part (a) on $(-r,r)$.
+Continue increasing $N$ until there's no perceptible
+difference between the two graphs. What happens as you let $r\to 1$?
+\end{enumerate}
+\begin{solution}
+    If $y=\sum_{n=0}^\infty a_nx^n$, then
+$$(1-x)y''-(2-x)y'+y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nx^{n-2}
+-\sum_{n=2}^\infty n(n-1)a_nx^{n-1}
+-2\sum_{n=1}^\infty na_nx^{n-1}
++\sum_{n=1}^\infty na_nx^n
++\sum_{n=0}^\infty a_nx^n=$$
+$$=\sum_{n=0}^\infty[(n+2)(n+1)a_{n+2}-(n+2)(n+1)a_{n+1}+(n+1)a_n]x^n=0$$
+if
+$a_{n+2}=a_{n+1}-\frac{a_n}{ n+2}$,$a_n\geq 0$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:7.3.17}
+Follow the directions of Exercise~\ref{exer:7.3.16} for the
+initial value problem
+$$
+(1+x)y''+3y'+32y=0,\quad y(0)=a_0,\quad y'(0)=a_1.
+$$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.18}
+Follow the directions of Exercise~\ref{exer:7.3.16} for the initial
+value problem
+$$
+(1+x^2)y''+y'+2y=0,\quad y(0)=a_0,\quad y'(0)=a_1.
+$$
+
+\begin{solution}
+    If $y=\sum_{n=0}^\infty a_nx^n$, then
+$$(1+x^2)y''+y'+2y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nx^{n-2}
++\sum_{n=2}^\infty n(n-1)a_nx^n
++\sum_{n=1}^\infty na_nx^{n-1}
++2\sum_{n=0}^\infty a_nx^n=$$
+$$=\sum_{n=0}^\infty[(n+2)(n+1)a_{n+2}+(n+1)a_{n+1}+(n^2-n+2)a_n]x^n=0$$
+if
+ $a_{n+2}=-\frac{1}{ n+2}a_{n+1}-
+\frac{n^2-n+2}{(n+2)(n+1)}a_n$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:7.3.19}
+Find
+the coefficients  $a_0$, \dots, $a_N$  for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the
+initial value problem. Take $x_0$ to be the point where the initial
+conditions are imposed.
+
+$(2+4x)y''-4y'-(6+4x)y=0,\quad y(0)=2,\quad y'(0)=-7$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.20}
+Find
+the coefficients  $a_0$, \dots, $a_N$  for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the
+initial value problem. Take $x_0$ to be the point where the initial
+conditions are imposed.
+
+$(1+2x)y''-(1-2x)y'-(3-2x)y=0,\quad y(1)=1,\quad y'(1)=-2$
+
+\begin{solution}
+    The equation is equivalent to
+ $(3+2t)y''+(1+2t)y'-(1-2t)y=0$ with $t=x-1$.
+If $y=\sum_{n=0}^\infty a_nt^n$, then
+$$(3+2t)y''+(1+2t)y'-(1-2t)y=$$
+$$=3\sum_{n=2}^\infty n(n-1)a_nt^{n-2}
++2\sum_{n=2}^\infty n(n-1)a_nt^{n-1}
++\sum_{n=1}^\infty na_nt^{n-1}
++2\sum_{n=1}^\infty na_nt^n
+-\sum_{n=0}^\infty a_nt^n
++2\sum_{n=0}^\infty a_nt^{n+1}=$$
+$$=(6a_2+a_1-a_0)+
+\sum_{n=1}^\infty[3(n+2)(n+1)a_{n+2}+(n+1)(2n+1)a_{n+1}+
+(2n-1)a_n+2a_{n-1}]t^n=0$$  if $a_2=-\frac{a_1-a_0}{6}$ and
+$a_{n+2}=-\frac{2n+1}{3(n+2)}a_{n+1}-\frac{2n-1}{3(n+2)(n+1)}a_n
+-\frac{2}{3(n+2)(n+1)}a_{n-1}$,
+$n\geq 1$. Starting with $a_0=1$ and $a_1=-2$ yields
+
+$y=1-2(x-1)+\frac{1}{2}(x-1)^2-\frac{1}{6}(x-1)^3+\frac{5}{36}(x-1)^4
+-\frac{73}{1080}(x-1)^5+\cdots$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.21}
+Find
+the coefficients  $a_0$, \dots, $a_N$  for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the
+initial value problem. Take $x_0$ to be the point where the initial
+conditions are imposed.
+
+$(5+2x)y''-y'+(5+x)y=0,\quad y(-2)=2,\quad y'(-2)=-1$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.22}
+Find
+the coefficients  $a_0$, \dots, $a_N$  for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the
+initial value problem. Take $x_0$ to be the point where the initial
+conditions are imposed.
+
+$(4+x)y''-(4+2x)y'+(6+x)y=0,\quad y(-3)=2,\quad y'(-3)=-2$
+
+\begin{solution}
+     The equation is equivalent to
+ $(1+t)y''+(2-2t)y'+(3+t)y=0$ with $t=x+3$.
+If $y=\sum_{n=0}^\infty a_nt^n$, then
+$$(1+t)y''+(2-2t)y'+(3+t)y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nt^{n-2}
++\sum_{n=2}^\infty n(n-1)a_nt^{n-1}
++2\sum_{n=1}^\infty na_nt^{n-1}
+-2\sum_{n=1}^\infty na_nt^n
++3\sum_{n=0}^\infty a_nt^n
++\sum_{n=0}^\infty a_nt^{n+1}=$$
+$$=(2a_2+2a_1+3a_0)+
+\sum_{n=1}^\infty[(n+2)(n+1)a_{n+2}+(n+2)(n+1)a_{n+1}
+-(2n-3)a_n+a_{n-1}]t^n=0$$  if $a_2=-\frac{2a_1+3a_0}{2}$ and
+$a_{n+2}=-a_{n+1}+\frac{(2n-3)a_n-a_{n-1}}{(n+2)(n+1)}$,
+$n\geq 1$. Starting with $a_0=2$ and $a_1=-2$ yields
+
+$y=2-2(x+3)-(x+3)^2+(x+3)^3-\frac{11}{12}(x+3)^4+
+\frac{67}{60}(x+3)^5+\cdots$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.23}
+Find
+the coefficients  $a_0$, \dots, $a_N$  for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the
+initial value problem. Take $x_0$ to be the point where the initial
+conditions are imposed.
+
+$(2+3x)y''-xy'+2xy=0,\quad y(0)=-1,\quad y'(0)=2$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.24}
+Find
+the coefficients  $a_0$, \dots, $a_N$  for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the
+initial value problem. Take $x_0$ to be the point where the initial
+conditions are imposed.
+
+$(3+2x)y''+3y'-xy=0,\quad y(-1)=2,\quad y'(-1)=-3$
+
+\begin{solution}
+    The equation is equivalent to
+ $(1+2t)y''+3y'+(1-t)y=0$ with $t=x+1$.
+If $y=\sum_{n=0}^\infty a_nt^n$, then
+$$(1+2t)y''+3y'+(1-t)y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nt^{n-2}
++2\sum_{n=2}^\infty n(n-1)a_nt^{n-1}
++3\sum_{n=1}^\infty na_nt^{n-1}
++\sum_{n=0}^\infty a_nt^n
+-\sum_{n=0}^\infty a_nt^{n+1}=$$
+$$=(2a_2+3a_1+a_0)+
+\sum_{n=1}^\infty[(n+2)(n+1)a_{n+2}+(2n+3)(n+1)a_{n+1}
++a_n-a_{n-1}]t^n=0$$  if $a_2=-\frac{3a_1+a_0}{2}$ and
+$a_{n+2}=-\frac{2n+3}{ n+2}a_{n+1}-\frac{a_n-a_{n-1}}{(n+2)(n+1)}$,
+$n\geq 1$. Starting with $a_0=2$ and $a_1=-3$ yields
+$y=2-3(x+1)+\frac{7}{2}(x+1)^2-5(x+1)^3+\frac{197}{24}(x+1)^4
+-\frac{287}{20}(x+1)^5+\cdots$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.25}
+Find
+the coefficients  $a_0$, \dots, $a_N$  for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the
+initial value problem. Take $x_0$ to be the point where the initial
+conditions are imposed.
+
+$(3+2x)y''-3y'-(2+x)y=0,\quad y(-2)=-2,\quad y'(-2)=3$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.26}
+Find
+the coefficients  $a_0$, \dots, $a_N$  for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the
+initial value problem. Take $x_0$ to be the point where the initial
+conditions are imposed.
+
+$(10-2x)y''+(1+x)y=0,\quad y(2)=2,\quad y'(2)=-4$
+
+\begin{solution}
+     The equation is equivalent to
+ $(6-2t)y''+(3+t)y=0$ with $t=x-2$.
+If $y=\sum_{n=0}^\infty a_nt^n$, then
+$$(6-2t)y''+(3+t)y=$$
+$$=6\sum_{n=2}^\infty n(n-1)a_nt^{n-2}
+-2\sum_{n=2}^\infty n(n-1)a_nt^{n-1}
++3\sum_{n=0}^\infty a_nt^n
++\sum_{n=0}^\infty a_nt^{n+1}=$$
+$$=(12a_2+3a_0)+
+\sum_{n=1}^\infty[6(n+2)(n+1)a_{n+2}-2(n+1)na_{n+1}+3a_n
++a_{n-1}]t^n=0$$  if $a_2=-\frac{a_0}{4}$ and
+$a_{n+2}=\frac{n}{3(n+2)}a_{n+1}-\frac{3a_n+a_{n-1}}{6(n+2)(n+1)}$,
+$n\geq 1$. Starting with $a_0=2$ and $a_1=-4$ yields
+
+$y=2-4(x-2)-\frac{1}{2}(x-2)^2+\frac{2}{9}(x-2)^3+\frac{49}{432}(x-2)^4
++\frac{23}{1080}(x-2)^5+\cdots$.
+\end{solution}
+\end{problem}
+
+\begin{problem}label{exer:7.3.27}
+Find
+the coefficients  $a_0$, \dots, $a_N$  for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the
+initial value problem. Take $x_0$ to be the point where the initial
+conditions are imposed.
+
+$(7+x)y''+(8+2x)y'+(5+x)y=0,\quad y(-4)=1,\quad y'(-4)=2$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.28}
+Find
+the coefficients  $a_0$, \dots, $a_N$  for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the
+initial value problem. Take $x_0$ to be the point where the initial
+conditions are imposed.
+
+$(6+4x)y''+(1+2x)y=0,\quad y(-1)=-1,\quad y'(-1)=2$
+
+\begin{solution}
+    The equation is equivalent to
+ $(2+4t)y''-(1-2t)y=0$ with $t=x+4$.
+If $y=\sum_{n=0}^\infty a_nt^n$, then
+$$(2+4t)y''-(1-2t)y=$$
+$$=2\sum_{n=2}^\infty n(n-1)a_nt^{n-2}
++4\sum_{n=2}^\infty n(n-1)a_nt^{n-1}
+-\sum_{n=0}^\infty a_nt^n
++2\sum_{n=0}^\infty a_nt^{n+1}=$$
+$$=(4a_2-a_0)+
+\sum_{n=1}^\infty[2(n+2)(n+1)a_{n+2}+4(n+1)na_{n+1}
+-a_n+2a_{n-1}]t^n=0$$  if $a_2=\frac{a_0}{4}$ and
+$a_{n+2}=-\frac{2n}{
+n+2}a_{n+1}+\frac{a_n-2a_{n-1}}{2(n+2)(n+1)}$,
+$n\ge1$. Starting with $a_0=-1$ and $a_1=2$ yields
+$y=-1+2(x+1)-\frac{1}{4}(x+1)^2+\frac{1}{2}(x+1)^3-\frac{65}{96}(x+1)^4
++\frac{67}{80}(x+1)^5+\cdots$.
+
+\begin{verbatim}
+    N=5; 
+    b=zeros(N,1); 
+    b(1)=-1;b(2)=2; 
+    b(3)=b(1)/4;
+for n=1:N-2
+   b(n+3)=-2*n*b(n+2)/(n+2)+(b(n+1)-2*b(n))/(2*(n+2)*(n+1));
+end
+\end{verbatim}
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:7.3.29}
+Show that the coefficients in the power series in $x$  for the general
+solution of
+$$
+(1+\alpha x+\beta x^2)y''+(\gamma+\delta x)y'+\epsilon y=0
+$$
+satisfy the recurrence relation
+$$
+a_{n+2}=-\frac{\gamma+\alpha n}{n+2}\,a_{n+1}-\frac{\beta n(n-1)+\delta n+\epsilon}{(n+2)(n+1)}\, a_n.
+$$
+
+\begin{solution}
+    Let $Ly=(1+\alpha x+\beta x^2)y''+(\gamma+\delta x)y'+\epsilon y$.
+If $y=\sum_{n=0}^\infty a_nx^n$, then
+$$Ly=\sum_{n=2}^\infty n(n-1)a_nx^{n-2}+
+\alpha\sum_{n=2}^\infty n(n-1)a_nx^{n-1}+
+\beta\sum_{n=2}^\infty n(n-1)a_nx^n+
+\gamma\sum_{n=1}^\infty na_nx^{n-1}+
+\delta\sum_{n=1}^\infty na_nx^n+
+\epsilon\sum_{n=0}^\infty a_nx^n=$$
+$$=\sum_{n=0}^\infty (n+2)(n+1)a_{n+2}x^n+
+\alpha\sum_{n=0}^\infty (n+1)na_{n+1}x^n+
+\beta\sum_{n=0}^\infty n(n-1)a_nx^n+
+\gamma\sum_{n=0}^\infty (n+1)a_{n+1}x^n+
+\delta\sum_{n=0}^\infty na_nx^n+
+\epsilon\sum_{n=0}^\infty a_nx^n=$$
+$$=\sum_{n=0}^\infty b_nx^n$$
+where
+$b_n=(n+1)(n+2)a_{n+2}+(n+1)(\alpha
+n+\gamma)a_{n+1}+[\beta n(n-1)+\delta n+\epsilon]a_n$, which implies
+the conclusion.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.30}
+\begin{enumerate}
+\item % (a)
+Let $\alpha$  and $\beta$  be constants, with $\beta\neq 0$. Show that
+$y=\sum_{n=0}^\infty a_nx^n$
+is a solution of
+$$
+(1+\alpha x+\beta x^2)y''+(2\alpha+4\beta x)y'+2\beta y=0\quad
+\text{(A)}
+$$
+if and only if
+$$
+ a_{n+2}+\alpha a_{n+1}+\beta a_n=0,\quad n\geq 0.\quad
+\text{(B)}
+$$
+An equation of this form is called a {\color{blue}\it second order homogeneous linear
+difference equation\/}. The polynomial $p(r)=r^2+\alpha r+\beta$ is called the
+{\color{blue}\it characteristic polynomial\/} of (B).
+If $r_1$
+and $r_2$ are the zeros of $p$, then $1/r_1$ and $1/r_2$ are the
+zeros of
+$$
+P_0(x)=1+\alpha x+\beta x^2.
+$$
+
+\begin{solution}
+    Let $\gamma=2\alpha$, $\delta=4\beta$, and $\epsilon=2\beta$
+in Exercise~\ref{exer:7.3.29} to obtain (B).
+\end{solution}
+
+\item % (b)
+Suppose  $p(r)=(r-r_1)(r-r_2)$ where $r_1$ and $r_2$ are real
+and distinct, and
+let $\rho$ be the smaller of the two numbers $\{1/|r_1|,1/|r_2|\}$. Show
+that if  $c_1$  and $c_2$ are constants then the sequence
+$$
+a_n=c_1r_1^n+c_2r_2^n,\quad n\geq 0
+$$
+satisfies (B). Conclude from this that any function of the form
+$$
+y=\sum_{n=0}^\infty (c_1r_1^n+c_2r_2^n)x^n
+$$
+is a solution of (A) on $(-\rho,\rho)$.
+
+\begin{solution}
+    If $a_n=c_1r_1^n+c_2r_2^n$, then $a_{n+2}+\alpha
+a_{n+1}+\beta a_n=c_1r_1^n(r_1^2+\alpha
+r+\beta)+c_2r_2^n(r_2^2+\alpha
+r_2+\beta)=c_1r_1^nP_0(r_1)+c_2r_2^nP_0(r_2)=0$, so $\{a_n\}$
+satisfies (B). Since $1/r_1$ and $1/r_2$ are the zeros
+of $P_0$, Theorem~\ref{thmtype:7.2.1} implies  that $\sum_{n=0}^\infty
+(c_1r_1^n+c_2r_2^n)x^n$ is a solution of (A) on $(-\rho,\rho)$.
+\end{solution}
+
+\item % (c)
+Use part (b)  and the formula for the sum of a geometric series to show
+that
+the functions
+$$
+y_1=\frac{1}{1-r_1x}\quad\text{ and }\quad y_2=\frac{1}{1-r_2x}
+$$
+form a fundamental set of solutions of (A) on $(-\rho,\rho)$.
+
+\begin{solution}
+    If $|x|<\rho$, then $|r_1x|<\rho$ and $|r_2x|<1$, so
+$\sum_{n=0}^\infty r_i^nx^n=\frac{1}{1-r_ix}=y_i$, $i=1,2$.
+Therefore,
+part (b) implies that $\{y_1,y_2\}$ is a fundamental set of solutions
+of (A) on $(-\rho,\rho)$.
+\end{solution}
+
+\item % (d)
+Show that $\{y_1,y_2\}$ is
+a fundamental set of solutions of (A) on any interval that
+doesn't contain either $1/r_1$ or $1/r_2$.
+
+\begin{solution}
+    (A) can written as $P_0y''+2P_0'y'+P_0''y=(P_0y)''=0$.
+Therefore,$P_0y=a+bx$ where $a$ and $b$ are arbitrary constants, and
+ a partial fraction expansion shows that  the general solution of
+(A)
+on any interval not containing $1/r_1$ or $1/r_2$ is $$y=\frac{a+bx}{
+P_0(x)}=\frac{c_1}{1-r_1x}+\frac{c_2}{1-r_2x}=c_1y_1+c_2y_2$$
+\end{solution}
+
+\item % (e)
+Suppose  $p(r)=(r-r_1)^2$, and let $\rho=1/|r_1|$.
+Show that if   $c_1$  and $c_2$ are constants then the sequence
+$$
+a_n=(c_1+c_2n)r_1^n,\quad n\geq 0
+$$
+satisfies (B). Conclude from this that any function of the form
+$$
+y=\sum_{n=0}^\infty (c_1+c_2n)r_1^nx^n
+$$
+is a solution of (A) on $(-\rho,\rho)$.
+
+\begin{solution}
+    If $a_n=c_1r_1^n+c_2r_2^n$, then $$a_{n+2}+\alpha
+a_{n+1}+\beta a_n=$$
+$$=c_1r_1^n(r_1^2+\alpha
+r+\beta)+c_2r_1^n[(n+2)r_1^2+\alpha(n+1)
+r_2+\beta n)=$$
+$$=(c_1+nc_2)r_1^nP_0(r_1)+c_2r_1^nP_0'(r_1)=0$$ so
+$\{a_n\}$ satisfies (B). Since $1/r_1$ is the only  zero
+of $P_0$, Theorem~\ref{thmtype:7.2.1} implies  that $\sum_{n=0}^\infty
+(c_1+c_2n)r_1^n)x^n$ is a solution of (A) on $(-\rho,\rho)$.
+\end{solution}
+
+\item % (f)
+Use (e)  and the formula for the sum of a geometric series to show
+that the functions
+$$
+y_1=\frac{1}{1-r_1x}\quad\text{ and }\quad y_2=\frac{x}{(1-r_1x)^2}
+$$
+form a fundamental set of solutions of (A) on $(-\rho,\rho)$.
+
+\begin{solution}
+    If $|x|<\rho$, then $|r_1x|<\rho$, so
+$\sum_{n=0}^\infty r_1^nx^n=\frac{1}{1-r_1x}=y_1$.
+Differentiating this and multiplying the result by $x$
+shows that
+$$\sum_{n=0}^\infty nr_1^nx^n=\frac{r_1x}{(1-r_1x)^2}=r_1y_2$$
+Therefore,
+part (e) implies that $\{y_1,y_2\}$ is a fundamental set of solutions
+of (A) on $(-\rho,\rho)$.
+\end{solution}
+
+\item % (g)
+Show that $\{y_1,y_2\}$ is
+ a fundamental set of solutions of (A) on any interval that
+does not contain $1/r_1$.
+
+\begin{solution}
+    The argument is the same as in part (c), but now the
+partial fraction expansion can be written as
+ $$y=\frac{a+bx}{
+P_0(x)}=\frac{c_1}{1-r_1x}+\frac{c_2x}{(1-r_2x)^2}=c_1y_1+c_2y_2$$
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.31}
+Use the results of Exercise~\ref{exer:7.3.30} to find the general solution
+of the given equation on any interval on which polynomial multiplying
+$y''$ has no zeros.
+
+\begin{enumerate}
+\item $(1+3x+2x^2)y''+(6+8x)y'+4y=0$
+
+\item $(1-5x+6x^2)y''-(10-24x)y'+12y=0$
+
+\item $(1-4x+4x^2)y''-(8-16x)y'+8y=0$
+
+\item $(4+4x+x^2)y''+(8+4x)y'+2y=0$
+
+\item $(4+8x+3x^2)y''+(16+12x)y'+6y=0$
+
+\end{enumerate}
+
+\end{problem}
+
+
+
+\begin{problem}\label{exer:7.3.32}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$ in the series
+solution
+$y=\sum_{n=0}^\infty a_nx^n$
+ of the initial value problem.
+ 
+$y''+2xy'+(3+2x^2)y=0,\quad y(0)=1,\quad y'(0)=-2$
+
+\begin{solution}
+    If $y=\sum_{n=0}^\infty a_nx^n$, then
+$$y''+2xy'+(3+2x^2)y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nx^{n-2}
++2\sum_{n=1}^\infty na_nx^n
++3\sum_{n=0}^\infty a_nx^n
++2\sum_{n=0}^\infty a_nx^{n+2}=$$
+$$=(2a_2+3a_0)+(6a_3+5a_1)x+
+\sum_{n=2}^\infty[(n+2)(n+1)a_{n+2}+(2n+3)a_n+2a_{n-2}]x^n=0$$ if
+$a_2=-3a_0/2$, $a_3=-5a_1/6$, and
+$a_{n+2}=-\frac{(2n+3)a_n+2a_{n-2}}{(n+2)(n+1)}$,
+ $n\geq 2$.
+Starting with $a_0=1$ and $a_1=-2$ yields
+$$y=1-2x-\frac{3}{2}x^2+\frac{5}{3}x^3+\frac{17}{24}x^4-\frac{11}{20}x^5+\cdots$$
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:7.3.33}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$ in the series
+solution
+$y=\sum_{n=0}^\infty a_nx^n$
+ of the initial value problem.
+ 
+$y''-3xy'+(5+2x^2)y=0,\quad y(0)=1,\quad y'(0)=-2$
+\end{problem}
+
+
+\begin{problem}\label{exer:7.3.34}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$ in the series
+solution
+$y=\sum_{n=0}^\infty a_nx^n$
+ of the initial value problem.
+ 
+$y''+5xy'-(3-x^2)y=0,\quad y(0)=6,\quad y'(0)=-2$
+
+\begin{solution}
+    If $y=\sum_{n=0}^\infty a_nx^n$, then
+$$y''+5xy'-(3-x^2)y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nx^{n-2}
++5\sum_{n=1}^\infty na_nx^n
+-3\sum_{n=0}^\infty a_nx^n
++\sum_{n=0}^\infty a_nx^{n+2}=$$
+$$=(2a_2-3a_0)+(6a_3+2a_1)x+
+\sum_{n=2}^\infty[(n+2)(n+1)a_{n+2}+(5n-3)a_n+a_{n-2}]x^n=0$$ if
+$a_2=3a_0/2$, $a_3=-a_1/3$, and
+$a_{n+2}=-\frac{(5n-3)a_n+a_{n-2}}{(n+2)(n+1)}$,
+ $n\geq 2$.
+Starting with $a_0=6$ and $a_1=-2$ yields
+$$y=6-2x+9x^2+\frac{2}{3}x^3-\frac{23}{4}x^4-\frac{3}{10}x^5+\cdots$$
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:7.3.35}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$ in the series
+solution
+$y=\sum_{n=0}^\infty a_nx^n$
+ of the initial value problem.
+ 
+$y''-2xy'-(2+3x^2)y=0,\quad y(0)=2,\quad y'(0)=-5$
+\end{problem}
+
+
+\begin{problem}\label{exer:7.3.36}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$ in the series
+solution
+$y=\sum_{n=0}^\infty a_nx^n$
+ of the initial value problem.
+ 
+$y''-3xy'+(2+4x^2)y=0,\quad y(0)=3,\quad y'(0)=6$
+
+\begin{solution}
+    If $y=\sum_{n=0}^\infty a_nx^n$, then
+$$y''-3xy'+(2+4x^2)y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nx^{n-2}
+-3\sum_{n=1}^\infty na_nx^n
++2\sum_{n=0}^\infty a_nx^n
++4\sum_{n=0}^\infty a_nx^{n+2}=$$
+$$=(2a_2+2a_0)+(6a_3-a_1)x+
+\sum_{n=2}^\infty[(n+2)(n+1)a_{n+2}-(3n-2)a_n+4a_{n-2}]x^n=0$$ if
+$a_2=-a_0$, $a_3=a_1/6$, and
+$a_{n+2}=\frac{(3n-2)a_n-4a_{n-2}}{(n+2)(n+1)}$,
+ $n\geq 2$.
+Starting with $a_0=3$ and $a_1=6$ yields
+$$y=3+6x-3x^2+x^3-2x^4-\frac{17}{20}x^5+\cdots$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.37}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$ in the series
+solution
+$y=\sum_{n=0}^\infty a_nx^n$
+ of the initial value problem.
+ 
+$2y''+5xy'+(4+2x^2)y=0,\quad y(0)=3,\quad y'(0)=-2$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.38}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$ in the series
+solution
+$y=\sum_{n=0}^\infty a_nx^n$
+ of the initial value problem.
+ 
+$3y''+2xy'+(4-x^2)y=0,\quad y(0)=-2,\quad y'(0)=3$
+
+\begin{solution}
+    If $y=\sum_{n=0}^\infty a_nx^n$, then
+$$3y''+2xy'+(4-x^2)y=$$
+$$=3\sum_{n=2}^\infty n(n-1)a_nx^{n-2}
++2\sum_{n=1}^\infty na_nx^n
++4\sum_{n=0}^\infty a_nx^n
+-\sum_{n=0}^\infty a_nx^{n+2}=$$
+$$=(6a_2+4a_0)+(18a_3+6a_1)x+
+\sum_{n=2}^\infty[3(n+2)(n+1)a_{n+2}+(2n+4)a_n-a_{n-2}]x^n=0$$ if
+$a_2=-2a_0/3$, $a_3=-a_1/3$, and
+$a_{n+2}=-\frac{(2n+4)a_n-a_{n-2}}{3(n+2)(n+1)}$,
+ $n\geq 2$.
+Starting with $a_0=-2$ and $a_1=3$ yields
+$$y=-2+3x+\frac{4}{3}x^2-x^3-\frac{19}{54}x^4+\frac{13}{60}x^5+\cdots$$
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:7.3.39}
+  Find power series in $x$ for the solutions $y_1$
+ and $y_2$ of
+$$
+y''+4xy'+(2+4x^2)y=0
+$$
+such that $y_1(0)=1$,\;  $y'_1(0)=0$,\;  $y_2(0)=0$,\;
+ $y'_2(0)=1$, and identify $y_1$  and $y_2$ in terms of familiar elementary
+functions.
+\end{problem}
+
+
+\begin{problem}\label{exer:7.3.40}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the initial value problem. Take $x_0$ to be the point where the
+initial conditions are imposed.
+
+$(1+x)y''+x^2y'+(1+2x)y=0,\quad y(0)-2,\quad y'(0)=3$
+
+\begin{solution}
+    If $y=\sum_{n=0}^\infty a_nx^n$, then
+$$(1+x)y''+x^2y'+(1+2x)y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nx^{n-2}
++ \sum_{n=2}^\infty n(n-1)a_nx^{n-1}
++\sum_{n=1}^\infty na_nx^{n+1}
++\sum_{n=0}^\infty a_nx^n
++2\sum_{n=0}^\infty a_nx^{n+1}=$$
+$$=(2a_2+a_0)+
+\sum_{n=1}^\infty[(n+2)(n+1)a_{n+2}+(n+1)na_{n+1}+a_n+(n+1)a_{n-1}]x^n=0$$
+if
+$a_2=-a_0/2$ and
+$a_{n+2}=-\frac{(n+1)na_{n+1}+a_n+(n+1)a_{n-1}}{(n+2)(n+1)}$,
+ $n\geq 1$.
+Starting with $a_0=-2$ and $a_1=3$ yields
+$$y=-2+3x+x^2-\frac{1}{6}x^3-\frac{3}{4}x^4+\frac{31}{120}x^5+\cdots$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.41}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the initial value problem. Take $x_0$ to be the point where the
+initial conditions are imposed.
+
+$y''+(1+2x+x^2)y'+2y=0,\quad y(0)=2,\quad y'(0)=3$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.42}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the initial value problem. Take $x_0$ to be the point where the
+initial conditions are imposed.
+
+$(1+x^2)y''+(2+x^2)y'+xy=0,\quad y(0)=-3,\quad y'(0)=5$
+
+\begin{solution}
+    If $y=\sum_{n=0}^\infty a_nx^n$, then
+$$(1+x^2)y''+(2+x^2)y'+xy=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nx^{n-2}
++\sum_{n=2}^\infty n(n-1)a_nx^n
++2\sum_{n=1}^\infty na_nx^{n-1}
++\sum_{n=1}^\infty na_nx^{n+1}
++\sum_{n=1}^\infty a_nx^{n+1}$$
+$$=(2a_2+2a_1)+
+\sum_{n=1}^\infty[(n+2)(n+1)a_{n+2}+2(n+1)a_{n+1}+n(n-1)a_n+na_{n-1}]x^n=0$$
+if
+$a_2=-a_1$ and
+$a_{n+2}=-\frac{[2(n+1)a_{n+1}+n(n-1)a_n+na_{n-1}]}{(n+2)(n+1)}$,
+ $n\geq 1$.
+Starting with $a_0=-3$ and $a_1=5$ yields
+$$y=-3+5x-5x^2+\frac{23}{6}x^3-\frac{23}{12}x^4+\frac{11}{30}x^5+\cdots$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.43}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the initial value problem. Take $x_0$ to be the point where the
+initial conditions are imposed.
+
+$(1+x)y''+(1-3x+2x^2)y'-(x-4)y=0,\quad y(1)=-2,\quad y'(1)=3$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.44}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the initial value problem. Take $x_0$ to be the point where the
+initial conditions are imposed.
+
+$y''+(13+12x+3x^2)y'+(5+2x),\quad y(-2)=2,\quad y'(-2)=-3$
+
+\begin{solution}
+     The equation is equivalent to
+ $y''+(1+3t^2)y'+(1+2t)y=0$ with $t=x-2$.
+If $y=\sum_{n=0}^\infty a_nt^n$, then
+$$y''+(1+3t^2)y'+(1+2t)y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nt^{n-2}
++\sum_{n=1}^\infty na_nt^{n-1}
++3\sum_{n=1}^\infty na_nt^{n+1}
++\sum_{n=0}^\infty a_nt^n
++2\sum_{n=0}^\infty a_nt^{n+1}=$$
+$$=(2a_2+a_1+a_0)+
+\sum_{n=1}^\infty[(n+2)(n+1)a_{n+2}+
+(n+1)a_{n+1}+a_n+(3n-1)a_{n-1}]t^n=0$$ if $a_2=-(a_1+a_0)/2$ and
+$a_{n+2}=-\frac{[(n+1)a_{n+1}+a_n+(3n-1)a_{n-1}]}{
+(n+2)(n+1)}$,
+$n\geq 1$. Starting with $a_0=2$ and $a_1=-3$ yields
+
+$$y=2-3(x+2)+\frac{1}{2}(x+2)^2-\frac{1}{3}(x+2)^3+\frac{31}{24}(x+2)^4-
+\frac{53}{120}(x+2)^5+\cdots$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.45}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the initial value problem. Take $x_0$ to be the point where the
+initial conditions are imposed.
+
+$(1+2x+3x^2)y''+(2-x^2)y'+(1+x)y=0,\quad y(0)=1,\quad y'(0)=-2$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.46}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the initial value problem. Take $x_0$ to be the point where the
+initial conditions are imposed.
+
+$(3+4x+x^2)y''-(5+4x-x^2)y'-(2+x)y=0,\quad y(-2)=2,\quad y'(-2)=-1$
+
+\begin{solution}
+     The equation is equivalent to
+ $(1-t^2)y''-(7-8t+t^2)y'+ty=0$ with $t=x+2$.
+If $y=\sum_{n=0}^\infty a_nt^n$, then
+$$(1-t^2)y''-(7-8t+t^2)y'+ty=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nt^{n-2}
+- \sum_{n=2}^\infty n(n-1)a_nt^n
+-7\sum_{n=1}^\infty na_nt^{n-1}
++8\sum_{n=1}^\infty na_nt^n
+-\sum_{n=1}^\infty na_nt^{n+1}
++\sum_{n=0}^\infty a_nt^{n+1}=$$
+$$=(2a_2-7a_1)+
+\sum_{n=1}^\infty[(n+2)(n+1)a_{n+2}
+-7(n+1)a_{n+1}-n(n-9)a_n-(n-2)a_{n-1}]t^n=0$$ if $a_2=7a_1/2$
+and
+$a_{n+2}=\frac{[7(n+1)a_{n+1}+n(n-9)a_n+(n-2)a_{n-1}]}{
+(n+2)(n+1)}$,
+$n\ge1$. Starting with $a_0=2$ and $a_1=-1$ yields
+
+$$y=2-(x+2)-\frac{7}{2}(x+2)^2-\frac{43}{6}(x+2)^3-\frac{203}{24}(x+2)^4-\frac{167
+}{30}(x+2)^5+\cdots$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.47}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the initial value problem. Take $x_0$ to be the point where the
+initial conditions are imposed.
+
+$(1+2x+x^2)y''+(1-x)y=0,\quad y(0)=2,\quad y'(0)=-1$
+\end{problem}
+
+\begin{problem}\label{exer:7.3.48}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the initial value problem. Take $x_0$ to be the point where the
+initial conditions are imposed.
+
+$(x-2x^2)y''+(1+3x-x^2)y'+(2+x)y=0,\quad y(1)=1,\quad y'(1)=0$
+
+\begin{solution}
+    The equation is equivalent to
+ $(1+3t+2t^2)y''-(3+t-t^2)y'-(3+t)y=0$ with $t=x-1$.
+If $y=\sum_{n=0}^\infty a_nt^n$, then
+$$(1+3t+2t^2)y''-(3+t-t^2)y'-(3+t)y=$$
+$$=\sum_{n=2}^\infty n(n-1)a_nt^{n-2}
++3\sum_{n=2}^\infty n(n-1)a_nt^{n-1}
++2\sum_{n=2}^\infty n(n-1)a_nt^n
+-3\sum_{n=1}^\infty na_nt^{n-1}
+-\sum_{n=1}^\infty na_nt^n
++\sum_{n=1}^\infty na_nt^{n+1}
+-3\sum_{n=0}^\infty a_nt^n
+-\sum_{n=0}^\infty a_nt^{n+1}=$$
+$$=(2a_2-3a_1-3a_0)+
+\sum_{n=1}^\infty[(n+2)(n+1)a_{n+2}
++3(n^2-1)a_{n+1}+(2n^2-3n-3)(n+1)a_n+(n-2)a_{n-1}]t^n=0$$ if
+$a_2=3(a_1+a_0)/2$ and
+$a_{n+2}=-\frac{[3(n^2-1)a_{n+1}+(2n^2-3n-3)(n+1)a_n+(n-2)a_{n-1}]}{
+(n+2)(n+1)}$,
+$n\geq 1$. Starting with $a_0=1$ and $a_1=0$ yields
+$$y=1+\frac{3}{2}(x-1)^2+\frac{1}{6}(x-1)^3-\frac{1}{8}(x-1)^5+\cdots$$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.3.49}
+Find
+the coefficients  $a_0$, \dots, $a_N$ for $N$ at least $7$
+in the series solution
+$$
+y=\sum_{n=0}^\infty a_n(x-x_0)^n
+$$
+of the initial value problem. Take $x_0$ to be the point where the
+initial conditions are imposed.
+
+$(16-11x+2x^2)y''+(10-6x+x^2)y'-(2-x)y,\quad y(3)=1,\quad y'(3)=-2$
+\end{problem}
+
+\end{document}

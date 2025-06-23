@@ -1,0 +1,607 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+\begin{problem}\label{exer:10.3.1}
+Prove: If ${\bf y}_1$, ${\bf y}_2$, \dots, ${\bf y}_n$ are solutions of
+${\bf y}'=A(t){\bf y}$ on  $(a,b)$, then any linear
+combination of ${\bf y}_1$, ${\bf y}_2$, \dots, ${\bf y}_n$ is also a
+solution of ${\bf y}'=A(t){\bf y}$ on $(a,b)$.
+\end{problem}
+
+\begin{problem}\label{exer:10.3.2}
+In Section~5.1 the Wronskian of two
+solutions $y_1$ and $y_2$ of the scalar second order equation
+$$
+P_0(x)y''+P_1(x)y'+P_2(x)y=0
+\quad\quad\text{(A)}
+$$
+was defined to be
+$$
+W=\begin{vmatrix} y_1&y_2 \\ y'_1&y'_2\end{vmatrix}.
+$$
+\begin{enumerate}
+\item % (a)
+Rewrite  (A)   as a system of first order equations and show
+that $W$ is
+the Wronskian (as defined in this section) of two solutions of this system.
+
+\begin{solution}
+    The system equivalent of (A) is $$\text{(B)}\quad\quad {\bf
+y}'=-\frac{1}{P_0(x)}\begin{bmatrix}0&1\\P_2(x)&P_1(x)\end{bmatrix}{\bf y}$$, where
+${\bf y}=\begin{bmatrix}y\\y'\end{bmatrix}$. Let ${\bf y}_1=\begin{bmatrix}y_1\\y_1'\end{bmatrix}$ and
+ ${\bf y}_1=\begin{bmatrix}y_2\\y_2'\end{bmatrix}$. Then the Wronskian of $\{{\bf
+y}_1,{\bf y}_2\}$ as defined in this section is
+$\begin{bmatrix}y_1&y_2\\y_1'&y_2'\end{bmatrix}=W$.
+\end{solution}
+
+\item % (b)
+Apply Eqn.~\ref{eq:10.3.6} to the system  derived in part (a), and
+show that
+$$
+W(x)=W(x_0)\exp\left\{-\int^x_{x_0}\frac{P_1(s)}{ P_0(s)}\,
+ds\right\},
+$$
+which is the form of Abel's formula given in
+Theorem~\ref{thmtype:9.1.3}.
+
+\begin{solution}
+    The trace of the matrix in (B) is $-P_1(x)/P_0(x)$, so Eqn.~\ref{eq:10.3.6} implies
+that
+$W(x)=W(x_0)\exp\left\{-\int^x_{x_0}\frac{P_1(s)}{P_0(s)}\,
+ds\right\}$.
+\end{solution}
+
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:10.3.3}
+In Section~9.1 the Wronskian of $n$
+solutions $y_1$, $y_2$, \dots, $y_n$  of the $n-$th order
+equation
+$$
+P_0(x)y^{(n)}+P_1(x)y^{(n-1)}+\cdots+P_n(x)y=0
+\text{(A)}
+$$
+was defined to be
+$$W=\begin{vmatrix}
+           y_1&y_2&\cdots&y_n \\
+y'_1&y'_2&\cdots&y_n'\\
+\vdots&\vdots&\ddots&\vdots\\
+y_1^{(n-1)}&y_2^{(n-1)}&\cdots&y_n^{(n-1)}
+         \end{vmatrix}$$
+
+
+\begin{enumerate}
+\item % (a)
+Rewrite (A) as a system of first order equations and
+show that $W$ is the Wronskian (as defined in this section) of $n$
+solutions of this system.
+\item % (b)
+Apply Eqn.~\ref{eq:10.3.6} to the system  derived in part (a), and
+show that
+$$
+W(x)=W(x_0)\exp\left\{-\int^x_{x_0}\frac{P_1(s)}{ P_0(s)}\,
+ds\right\},
+$$
+which is the form of Abel's formula given in
+Theorem~\ref{thmtype:9.1.3}.
+\end{enumerate}
+
+\end{problem}
+
+
+\begin{problem}\label{exer:10.3.4}
+ Suppose
+$$
+{\bf y}_1=\begin{bmatrix}y_{11}\\y_{21}\end{bmatrix}\quad\text{ and }\quad
+{\bf y}_2=\begin{bmatrix}y_{12}\\y_{22}\end{bmatrix}
+$$
+are solutions of the $2\times 2$ system ${\bf y}'=A{\bf y}$ on
+$(a,b)$, and let
+$$
+ Y=\begin{bmatrix} y_{11} & y_{12}\\ y_{21} & y_{22}\end{bmatrix}\quad\text{ and }\quad
+W=\begin{vmatrix} y_{11}&y_{12}\\y_{21}&y_{22}\end{vmatrix};
+$$ thus, $W$ is the Wronskian of $\{{\bf y}_1,{\bf y}_2\}$.
+\begin{enumerate}
+\item % (a)
+ Deduce from the definition of  determinant that
+$$
+W'=\left|\begin{array}{cc} {y'_{11}}&{y'_{12}}\\ {y_{21}}&
+{y_{22}}\end{array}\right|
++\left|\begin{array}{cc} {y_{11}}&{y_{12}}\\
+ {y'_{21}}&{y'_{22}}\end{array}\right|.
+$$
+\begin{solution}
+    See the solution of Exercise~{exer:9.1.18}.
+\end{solution}
+\item % (b)
+ Use the equation $Y'=A(t)Y$ and
+the definition of matrix multiplication to show that
+$$
+[y'_{11}\quad y'_{12}]=a_{11} [y_{11}\quad y_{12}]+a_{12} [y_{21}
+\quad y_{22}]
+$$
+and
+$$
+[y'_{21}\quad  y'_{22}]=a_{21} [y_{11}\quad y_{12}]+a_{22}
+[y_{21}\quad y_{22}].
+$$
+\item % (c)
+ Use  properties of determinants to deduce from part (a) and part (b)
+ that
+$$
+\left|\begin{array}{cc} {y'_{11}}&{y'_{12}}\\ {y_{21}}&
+{y_{22}}\end{array}\right|=a_{11}W\quad\text{ and }\quad
+\left|\begin{array}{cc} {y_{11}}&{y_{12}}\\
+ {y'_{21}}&{y'_{22}}\end{array}\right|=a_{22}W.
+$$
+
+\begin{solution}
+    $
+\begin{vmatrix}
+y_{11}'&y_{12}'\\y_{21}&y_{22}
+\end{vmatrix}=
+\begin{vmatrix}
+a_{11}y_{11}+a_{12}y_{21}&a_{11}y_{12}+a_{12}y_{22}\\
+y_{21}&y_{22}
+\end{vmatrix}=
+a_{11}\begin{vmatrix}
+y_{11}&y_{12}\\y_{21}&y_{22}
+\end{vmatrix}
++a_{12}\begin{vmatrix}
+y_{21}&y_{22}\\y_{21}&y_{22}
+\end{vmatrix}=a_{11}W+a_{12}0=a_{11}W$.
+Similarly,
+$
+\begin{vmatrix}
+y_{11}&y_{12}\\y_{21}'&y_{22}'
+\end{vmatrix}=a_{22}W$.
+\end{solution}
+
+\item % (d)
+ Conclude from part (c) that
+$$
+W'=(a_{11}+a_{22})W,
+$$
+and use this to show that if $a<t_0<b$  then
+$$
+W(t)=W(t_0)\exp\left(\int^t_{t_0} \left[a_{11}(s)+a_{22} (s)
+\right]\, ds\right)\quad a<t<b.
+$$
+\end{enumerate}
+
+\end{problem}
+
+\begin{problem}\label{exer:10.3.5}
+Suppose  the $n\times n$ matrix $A=A(t)$ is continuous on $(a,b)$. Let
+$$
+ Y=
+\begin{bmatrix} y_{11}&y_{12}&\cdots&y_{1n} \\
+y_{21}&y_{22}&\cdots&y_{2n} \\
+\vdots&\vdots&\ddots&\vdots \\
+y_{n1}&y_{n2}&\cdots&y_{nn}
+\end{bmatrix},
+$$
+where the columns of $Y$ are solutions of ${\bf y}'=A(t){\bf y}$. Let
+$$
+r_i=[y_{i1}\, y_{i2}\, \dots\, y_{in}]
+$$
+be the $i$th row of $Y$, and let $W$ be the determinant of $Y$.
+
+\begin{enumerate}
+\item % (a)
+ Deduce from the definition of  determinant that
+$$
+W'=W_1+W_2+\cdots+W_n,
+$$
+where, for $1 \le m \le n$, the $i$th row of $W_m$ is $r_i$ if $i \ne m$,
+and $r'_m$ if $i=m$.
+
+\item % (b)
+ Use the equation $Y'=A Y$
+and the definition of matrix multiplication to show that
+$$
+r'_m=a_{m1}r_1+a_{m2} r_2+\cdots+a_{mn}r_n.
+$$
+
+\item % (c)
+ Use  properties of determinants to deduce
+from part (b) that
+$$
+\det (W_m)=a_{mm}W.
+$$
+
+\item % (d)
+ Conclude from part (a) and part (c) that
+$$
+W'=(a_{11}+a_{22}+\cdots+a_{nn})W,
+$$
+and use this to  show that  if $a<t_0<b$ then
+$$
+W(t)=W(t_0)\exp\left(
+\int^t_{t_0}\big[a_{11}(s)+a_{22}(s)+\cdots+a_{nn}(s)]\,
+ds\right), \quad a < t < b.
+$$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:10.3.6}
+Suppose the $n\times n$ matrix $A$ is continuous on $(a,b)$
+and $t_0$ is a point in  $(a,b)$. Let $Y$  be a fundamental matrix for
+${\bf y}'=A(t){\bf y}$ on  $(a,b)$.
+\begin{enumerate}
+\item % (a)
+Show that $Y(t_0)$  is invertible.
+
+\begin{solution}
+    From  the equivalence of Theorem~\ref{thmtype:10.3.3} parts (b) and (e)
+$Y(t_0)$ is invertible.
+\end{solution}
+
+\item % (b)
+Show that if ${\bf k}$ is an arbitrary $n$-vector then the solution
+of the initial value problem
+$$
+{\bf y}'=A(t){\bf y},\quad {\bf y}(t_0)={\bf k}
+$$
+is
+$$
+{\bf y}=Y(t)Y^{-1}(t_0){\bf k}.
+$$
+
+\begin{solution}
+    From  the equivalence of Theorem~\ref{thmtype:10.3.3} parts (a) and (b),
+the solution of the initial value problem is ${\bf y}=Y(t){\bf
+c}$, where ${\bf c}$ is a constant vector. To satisfy ${\bf
+y}(t_0)={\bf k}$, we must have
+$Y(t_0){\bf c}={\bf k}$, so ${\bf c}=Y^{-1}(t_0){\bf k}$
+and ${\bf y}=Y^{-1}(t_0)Y(t){\bf k}$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:10.3.7}
+Let
+$$
+ A=\begin{bmatrix}2 & 4\\4 & 2\end{bmatrix}, \quad {\bf y}_1=\begin{bmatrix} e^{6t} \\
+e^{6t}
+\end{bmatrix}, \quad {\bf y}_2=\begin{bmatrix}
+e^{-2t} \\
+-e^{-2t}\end{bmatrix}, \quad {\bf k}=\begin{bmatrix}-3
+\\ 9\end{bmatrix}.
+$$
+\begin{enumerate}
+\item % (a)
+ Verify that $\{{\bf y}_1,{\bf y}_2\}$
+is a fundamental set of solutions for
+${\bf y}'=A{\bf y}$.
+
+\item % (b)
+Solve  the initial value problem
+$$
+{\bf y}'=A{\bf y},\quad   {\bf y}(0)={\bf k}.
+\text{ (A)}
+$$
+
+\item % (c)
+Use the result of Exercise~\ref{exer:10.3.6} (b) to find a formula for
+the solution of (A) for an arbitrary initial vector ${\bf
+k}$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:10.3.8}
+ Repeat Exercise~\ref{exer:10.3.7}  with
+$$
+ A=\begin{bmatrix} -2& -2\\ -5 &1\end{bmatrix}, \quad {\bf y}_1=\begin{bmatrix}
+e^{-4t} \\ e^{-4t}\end{bmatrix}, \quad {\bf y}_2=
+\begin{bmatrix}-2e^{3t}
+\\ 5e^{3t}\end{bmatrix}, \quad {\bf k}=\begin{bmatrix}
+10 \\-4\end{bmatrix}.
+$$
+
+\begin{solution}
+    ${\bf y}=\begin{bmatrix}
+e^{-4t} \\ e^{-4t}\end{bmatrix}+c_2
+\begin{bmatrix}-2e^{3t}
+\\ 5e^{3t}\end{bmatrix}$ where
+
+$$\begin{array}{rcl}
+c_1-2c_2&=&10\\c_1+5c_2&=&-4
+\end{array},
+$$
+ so $c_1=6$, $c_2=-2$, and
+$${\bf y}=\begin{bmatrix}6e^{-4t}+4e^{3t}\\6e^{-4t}-10e^{3t}
+\end{bmatrix}$$.
+
+$Y(t)=\begin{bmatrix}e^{-4t}&-2e^{3t}\\
+e^{-4t}&5e^{3t}\end{bmatrix}$;
+$Y(0)=\begin{bmatrix}1&-2\\1&5\end{bmatrix}$;
+$Y^{-1}(0)=
+\frac{1}{7}\begin{bmatrix}5&2\\-1&1\end{bmatrix}$;
+${\bf y}=Y(t)Y^{-1}(0){\bf k}=
+\frac{1}{7}\begin{bmatrix}5e^{-4t}+2e^{3t}&2e^{-4t}-2e^{3t}
+\\5e^{-4t}-5e^{3t}&2e^{-4t}+5e^{3t}\end{bmatrix}{\bf k}$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:10.3.9}
+Repeat Exercise~\ref{exer:10.3.7}  with
+$$
+ A=\begin{bmatrix}-4 & -10\\ 3& 7\end{bmatrix}, \quad
+{\bf y}_1=\begin{bmatrix}-5e^{2t} \\ 3e^{2t}
+\end{bmatrix}, \quad
+{\bf y}_2=\begin{bmatrix} 2e^t \\-e^t
+\end{bmatrix}, \quad
+{\bf k}=\begin{bmatrix}-19 \\ 11\end{bmatrix}. $$
+\end{problem}
+
+\begin{problem}\label{exer:10.3.10}
+ Repeat Exercise~\ref{exer:10.3.7} with
+$$
+ A=\begin{bmatrix} 2 &1\\ 1& 2\end{bmatrix}, \quad {\bf y}_1=\begin{bmatrix} e^{3t} \\
+e^{3t}
+\end{bmatrix}, \quad {\bf y}_2=\begin{bmatrix}e^t \\
+-e^t\end{bmatrix}, \quad {\bf k}=\begin{bmatrix} 2 \\ 8
+\end{bmatrix}.$$
+
+\begin{solution}
+    ${\bf y}_1=c_1\begin{bmatrix} e^{3t} \\e^{3t}
+\end{bmatrix}+c_2\begin{bmatrix}e^t \\
+-e^t\end{bmatrix}$,
+where
+
+$$\begin{array}{rcl}
+c_1+c_2&=&2\\c_1-c_2&=&8
+\end{array},
+$$
+
+ so $c_1=5$, $c_2=-3$, and
+$${\bf y}=\begin{bmatrix}5e^{3t}-3e^t\\5e^{3t}+3e^t
+\end{bmatrix}$$
+
+$Y(t)=\begin{bmatrix}e^{3t}&e^t\\
+3e^{3t}&-e^t\end{bmatrix}$;
+$Y(0)=\begin{bmatrix}1&1\\1&-1\end{bmatrix}$;
+
+$Y^{-1}(0)=
+\frac{1}{2}\begin{bmatrix}1&1\\1&-1\end{bmatrix}$;
+${\bf y}=Y(t)Y^{-1}(0){\bf k}=
+\frac{1}{2}\begin{bmatrix}e^{3t}+e^t&e^{3t}-e^t
+\\e^{3t}-e^t&e^{3t}+e^t\end{bmatrix}{\bf k}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:10.3.11}
+Let
+
+$$ A=\begin{bmatrix} 3 &-1 & -1\\ -2 & 3 &
+2\\4 & -1 & -2\end{bmatrix}$$
+
+$${\bf y}_1=\begin{bmatrix} e^{2t} \\ 0 \\ e^{2t}\end{bmatrix}, \quad
+{\bf y}_2=\begin{bmatrix} e^{3t} \\-e^{3t} \\
+e^{3t}\end{bmatrix}, \quad
+{\bf y}_3=\begin{bmatrix} e^{-t} \\-3e^{-t} \\
+7e^{-t}
+\end{bmatrix}, \quad {\bf k}=\begin{bmatrix}
+2 \\-7 \\ 20\end{bmatrix}.$$
+
+
+\begin{enumerate}
+\item % (a)
+ Verify that $\{{\bf y}_1,{\bf y}_2,{\bf y}_3\}$
+is a fundamental set of solutions for
+${\bf y}'=A{\bf y}$.
+
+\item % (b)
+ Solve the initial value problem
+$$
+{\bf y}'=A{\bf y}, \quad   {\bf y}(0)={\bf k}.
+\text{ (A)}
+$$
+
+\item % (c)
+Use the result of Exercise~\ref{exer:10.3.6} (b) to find a formula
+for
+ the solution of  (A)
+for an arbitrary initial vector ${\bf k}$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:10.3.12}
+ Repeat Exercise~\ref{exer:10.3.11} with
+
+$$ A=\begin{bmatrix} 0 & 2 & 2\\ 2 & 0 & 2\\ 2 & 2 & 0\end{bmatrix}$$
+$${\bf y}_1=\begin{bmatrix}-e^{-2t} \\ 0 \\ e^{-2t}
+\end{bmatrix}, \quad
+{\bf y}_2=\begin{bmatrix}-e^{-2t} \\ e^{-2t} \\
+0\end{bmatrix}, \quad
+{\bf y}_3=\begin{bmatrix} e^{4t} \\ e^{4t} \\ e^{4t}\end{bmatrix}, \quad
+{\bf k}=\begin{bmatrix} 0 \\-9 \\ 12\end{bmatrix}$$
+
+\begin{solution}
+    ${\bf y}=c_1\begin{bmatrix}-e^{-2t} \\ 0 \\ e^{-2t}
+\end{bmatrix}+c_2
+\begin{bmatrix}-e^{-2t} \\ e^{-2t} \\
+0\end{bmatrix}+
+c_3\begin{bmatrix} e^{4t} \\ e^{4t} \\ e^{4t}\end{bmatrix}$,
+where
+
+$$\begin{array}{rcr}
+-c_1-c_2+c_3&=&0\\c_2+c_3&=&-9\\c_1+c_3&=&12
+\end{array},
+$$
+ so $c_1=11$, $c_2=-10$, $c_3=1$, and
+$${\bf y
+}=\frac{1}{3}\begin{bmatrix}-e^{-2t}+e^{4t}\\-10e^{-2t}+e^{4t}\\
+11e^{-2t}+e^{4t}\end{bmatrix}$$
+
+
+$Y(t)=
+\begin{bmatrix}-e^{-2t}&-e^{-2t}&e^{4t}\\
+0&e^{-2t}&e^{4t}\\e^{-2t}&0&e^{4t}\end{bmatrix}$;
+$Y(0)=
+\begin{bmatrix}-1&-1&1\\0&1&1\\1&0&1\end{bmatrix}$;
+$Y^{-1}(0)=
+\frac{1}{3}\begin{bmatrix}-1&-1&2\\-1&2&-1
+\\1&1&1\end{bmatrix}$;
+${\bf y}=Y(t)Y^{-1}(0){\bf k}=
+\frac{1}{3}\begin{bmatrix}2e^{-2t}+e^{4t}&-e^{-2t}+e^{4t}
+&-e^{-2t}+e^{4t}
+\\-e^{-2t}+e^{4t}&2e^{-2t}+e^{4t}&-e^{-2t}+e^{4t}\\
+-e^{-2t}+e^{4t}&-e^{-2t}+e^{4t}&2e^{-2t}+e^{4t}
+\end{bmatrix}{\bf k}$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:10.3.13}
+ Repeat Exercise~\ref{exer:10.3.11}  with
+
+$$ A=\begin{bmatrix} -1 & 2 & 3 \\ 0 & 1 & 6\\
+0 & 0 & -2\end{bmatrix}$$
+$${\bf y}_1=\begin{bmatrix} e^t \\ e^t \\ 0\end{bmatrix},
+\quad
+{\bf y}_2=\begin{bmatrix} e^{-t} \\ 0 \\ 0\end{bmatrix},
+\quad {\bf y}_3=\begin{bmatrix} e^{-2t} \\-2e^{-2t}
+\\ e^{-2t}\end{bmatrix}, \quad
+{\bf k}=\begin{bmatrix} 5 \\ 5 \\-1
+\end{bmatrix}$$
+
+\end{problem}
+
+\begin{problem}\label{exer:10.3.14}
+Suppose $Y$ and $Z$ are fundamental matrices for the $n\times n$
+system ${\bf y}'=A(t){\bf y}$. Then some of the four matrices
+$YZ^{-1}$, $Y^{-1}Z$, $Z^{-1}Y$, $Z Y^{-1}$ are necessarily
+constant. Identify them and prove that they are constant.
+
+\begin{solution}
+    If $Y$  and $Z$ are both fundamental matrices for ${\bf y}'=A(t){\bf y
+}$, then $Z=CY$, where $C$ is a constant invertible matrix. Therefore,
+$ZY^{-1}=C$ and $YZ^{-1}=C^{-1}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:10.3.15}
+Suppose the columns of an $n\times n$ matrix $Y$ are solutions of
+the $n\times n$ system ${\bf y}'=A{\bf y}$ and $C$ is an $n \times n$
+constant matrix.
+
+\begin{enumerate}
+\item % (a)
+Show that the matrix $Z=YC$ satisfies the differential equation
+$Z'=AZ$.
+
+\item % (b)
+Show that $Z$ is a fundamental matrix for ${\bf y}'=A(t){\bf y}$ if
+and only if $C$ is invertible and $Y$ is a fundamental matrix for
+${\bf y}'=A(t){\bf y}$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:10.3.16}
+ Suppose the $n\times n$  matrix $A=A(t)$ is
+continuous on $(a,b)$ and $t_0$ is in $(a,b)$.
+ For $i=1$, $2$, \dots, $n$, let ${\bf y}_i$ be the solution of the initial
+value
+problem ${\bf y}_i'=A(t){\bf y}_i,\; {\bf y}_i(t_0)={\bf e}_i$, where
+$$
+{\bf e}_1=\begin{bmatrix} 1\\0\\ \vdots\\0\end{bmatrix},\quad
+ {\bf e}_2=\begin{bmatrix} 0\\1\\
+\vdots\\0\end{bmatrix},\quad\cdots\quad
+ {\bf e}_n=\begin{bmatrix} 0\\0\\ \vdots\\1\end{bmatrix};
+$$
+that is, the $j$th component of ${\bf e}_i$ is $1$ if $j=i$, or $0$ if
+$j\ne i$.
+
+\begin{enumerate}
+\item % (a)
+ Show that $\{{\bf y}_1,{\bf y}_2,\dots,{\bf y}_n\}$ is a fundamental set of
+solutions of ${\bf y}'=A(t){\bf y}$ on  $(a,b)$.
+
+\begin{solution}
+    The Wronskian  of $\{{\bf y}_1,{\bf y}_2,\dots,{\bf y}_n\}$ equals
+one when $t=t_0$. Apply Theorem~\ref{thmtype:10.3.3} .
+\end{solution}
+
+\item % (b)
+ Conclude from part (a) and Exercise~\ref{exer:10.3.15}  that ${\bf y}'=
+A(t){\bf y}$ has infinitely many fundamental sets of solutions on
+$(a,b)$.
+
+\begin{solution}
+    Let $Y$ be the matrix with columns $\{{\bf y}_1,{\bf y}_2,\dots,{\bf
+y}_n\}$. From part (a), $Y$ is a fundamental matrix for ${\bf
+y}'=A(t){\bf y}$ on $(a,b)$. From Exercise~\ref{exer:10.3.15} (b),
+so is $Z=YC$ if $C$ is any invertible constant matrix.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:10.3.17}
+ Show that $Y$ is a
+fundamental matrix for the system ${\bf y}'=A(t){\bf y}$ if and only
+if $Y^{-1}$ is a fundamental matrix for ${\bf y}'=-
+A^T(t){\bf y}$, where $A^T$ denotes the transpose of $A$.
+\begin{hint}
+    See Exercise \ref{exer:10.2.11}.
+\end{hint}
+\end{problem}
+
+\begin{problem}\label{exer:10.3.18}
+Let $Z$ be the fundamental matrix for the constant coefficient system
+ ${\bf y}'=A{\bf y}$ such that $Z(0)=I$.
+\begin{enumerate}
+\item % (a)
+Show that $Z(t)Z(s)=Z(t+s)$ for all $s$ and $t$. 
+\begin{hint}
+For
+fixed
+$s$ let $\Gamma_1(t)=Z(t)Z(s)$ and $\Gamma_2(t)=Z(t+s)$. Show that
+$\Gamma_1$ and $\Gamma_2$ are both solutions of the matrix initial value
+problem $\Gamma'=A\Gamma,\quad\Gamma(0)=Z(s)$. Then conclude from
+Theorem~\ref{thmtype:10.2.1} that $\Gamma_1=\Gamma_2$.
+\end{hint}
+
+\begin{solution}
+    $\Gamma_1'(t)=Z'(t)Z(s)=AZ(t)Z(s)=A\Gamma(t)$ and $\Gamma_1(0)=Z(s)$,
+since $Z(0)=I$.
+$\Gamma_2'(t)=Z'(t+s)=AZ(t+s)=A\Gamma_2(t)$ (since $A$ is constant)
+and $\Gamma_2(0)=Z(s)$. Applying Theorem~\ref{thmtype:10.2.1}  to the columns of
+$\Gamma_1$ and $\Gamma_2$  shows that $\Gamma_1=\Gamma_2$.
+\end{solution}
+\item % (b)
+Show that $(Z(t))^{-1}=Z(-t)$.
+
+\begin{solution}
+    With $s=-t$, part (a) implies that $Z(t)Z(-t)=Z(0)=I$;
+therefore $(Z(t))^{-1}=Z(-t)$.
+\end{solution}
+\item % (c)
+The matrix $Z$ defined above is sometimes denoted by $e^{tA}$. Discuss
+ the motivation for this notation.
+
+ \begin{solution}
+     $e^{0\cdot A}=I$ is analogous to $e^{o\cdot a}=e^{0}=1$ when
+$a$ is a scalar, while $e^{(t+s)A}=e^{tA}e^{sA}$  is analagous
+to $e^{(t+s)a}=e^{ta}e^{sa}$ when $a$ is a scalar.
+ \end{solution}
+\end{enumerate}
+\end{problem}
+
+
+\end{document}

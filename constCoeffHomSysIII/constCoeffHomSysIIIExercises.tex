@@ -1,0 +1,882 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+ \begin{problem}\label{exer:10.6.1}  
+ Find the general solution.
+ 
+ $ {\bf y}'= \begin{bmatrix}-1&2\\-5&5\end{bmatrix}{\bf y}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.2}  
+ Find the general solution.
+ 
+ $ {\bf y}'= \begin{bmatrix}-11&4\\-26&9\end{bmatrix}{\bf y}$
+
+ \begin{solution}
+     $\begin{vmatrix}-11-\lambda&4\\-26&9-\lambda
+\end{vmatrix}=(\lambda+1)^2+4$.
+The augmented matrix of
+$\left(A-\left(-1+2i\right)I\right){\bf x}={\bf 0}$ is
+$ \begin{bmatrix}-10-2i&4&\vdots&0\\
+-26&10-2i&\vdots&0  \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&(-5+i)/13&\vdots&0\\
+0&0&\vdots&0
+ \end{bmatrix}$.
+Therefore,    $x_1=(5-i)x_2/13$. Taking $x_2=13$ yields the eigenvector
+${\bf x}= \begin{bmatrix}5-i\\13 \end{bmatrix}$.
+Taking  real and imaginary parts of
+$e^{-t}(\cos2t+i\sin2t)\begin{bmatrix}5-i\\13 \end{bmatrix}$ yields
+$$
+ {\bf y}= c_1e^{-t} \begin{bmatrix}5\cos2t+\sin2t\\13\cos2t \end{bmatrix}
++c_2e^{-t} \begin{bmatrix}5\sin2t-\cos2t\\13\sin2t \end{bmatrix}.
+$$
+ \end{solution}
+\end{problem}
+
+
+ \begin{problem}\label{exer:10.6.3}  
+ Find the general solution.
+ 
+ $ {\bf y}'= \begin{bmatrix}1&2\\ -4&5\end{bmatrix}{\bf y}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.4}  
+ Find the general solution.
+ 
+ $ {\bf y}'= \begin{bmatrix}5&-6\\3&-1\end{bmatrix}{\bf y}$
+
+ \begin{solution}
+     $\begin{vmatrix} 5-\lambda&-6\\ 3&-1-\lambda
+\end{vmatrix}=(\lambda-2)^2+9$.
+Hence, $\lambda=2+3i$ is an eigenvalue of $A$. The associated
+eigenvectors satisfy $\left(A-\left(2+3i\right)I\right){\bf x}={\bf
+0}$. The augmented matrix of this system is
+$ \begin{bmatrix} 3-3i&-6&\vdots&0\\
+3&-3-3i&\vdots&0   \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&-1-i&\vdots&0\\
+0&0&\vdots&0
+ \end{bmatrix}$.
+Therefore,    $x_1=(1+i)x_2$. Taking $x_2=1$ yields $x_1=1+i$, so
+${\bf x}= \begin{bmatrix}1+i\\1 \end{bmatrix}$
+is an eigenvector.  Taking  real and imaginary parts of
+$e^{2t}(\cos3t+i\sin3t)
+ \begin{bmatrix}1+i\\1 \end{bmatrix}$ yields
+ ${\bf y}=c_1e^{2t} \begin{bmatrix}\cos3t-\sin3t\\\cos3t \end{bmatrix}
++c_2e^{2t} \begin{bmatrix}\sin3t+\cos3t\\\sin3t \end{bmatrix}$.
+
+ \end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.5}  
+ Find the general solution.
+ 
+ $ {\bf
+y}'= \begin{bmatrix}3&-3&1\\0&2&2\\5&1&1\end{bmatrix}{\bf y}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.6}
+ Find the general solution.
+ 
+ $ {\bf
+y}'= \begin{bmatrix}-3&3&1\\1&-5&-3\\-3&7&3\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $\begin{vmatrix}-3-\lambda&3&1\\1&-5-\lambda&-3\\-3
+&7&3-\lambda\end{vmatrix}=-(\lambda+1)\left((\lambda+2)^2+4\right)$.
+ The augmented matrix of $(A+I){\bf x=0}$ is
+$ \begin{bmatrix}-2&3&1&\vdots&0\\1&-4&-3&\vdots&0\\
+-3&7&4&\vdots&0 \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&0&1&\vdots&0\\ 0&1&1&
+\vdots&0\\ 0&0&0&\vdots&0 \end{bmatrix}$.
+Therefore,    $x_1=x_2=-x_3$.  Taking $x_3=1$ yields
+ ${\bf y}_1= \begin{bmatrix}-1\\-1\\1 \end{bmatrix}e^{-t}$.
+The augmented matrix of
+$\left(A-(-2+2i)I\right){\bf x=0}$ is
+$ \begin{bmatrix}-1-2i&3&1&\vdots&0\\1&
+-3-2i&-3&\vdots&0\\-3&7&5-2i&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&0&-(1+i)/2&\vdots&0\\
+0&1&(1-i)/2&
+\vdots&0\\ 0&0&0&\vdots&0 \end{bmatrix}$.
+Therefore,    $x_1=\frac{(1+i) }{2}x_3$ and $x_2=-\frac{(1-i) }{2}x_3$.
+Taking $x_3=2$ yields the eigenvector
+${\bf x}_2= \begin{bmatrix}1+i\\-1+i\\2 \end{bmatrix}$.
+The real and imaginary parts of
+$e^{-2t}(\cos2t+i\sin2t) \begin{bmatrix}1+i\\-1+i\\2 \end{bmatrix}$
+ are
+${\bf y}_2=e^{-2t} \begin{bmatrix}\cos2t-\sin2t\\-\cos2t-\sin2t\\2\cos2t \end{bmatrix}$
+ and
+${\bf y}_3=e^{-2t} \begin{bmatrix}\sin2t+\cos2t\\-\sin2t+\cos2t\\2\sin2t \end{bmatrix}$.
+ Therefore,   
+$$
+{\bf y}=c_1 \begin{bmatrix}-1\\-1\\1 \end{bmatrix}e^{-t}+c_2e^{-2t} \begin{bmatrix}\cos2t-\sin
+2t\\-\cos2t-\sin  2t\\2\cos2t \end{bmatrix}+c_3e^{-2t} \begin{bmatrix}
+\sin2t+\cos2t\\-\sin2t+\cos2t\\2\sin2t \end{bmatrix}.
+$$
+\end{solution}
+\end{problem}
+
+
+ \begin{problem}\label{exer:10.6.7}
+ Find the general solution.
+ 
+ $ {\bf
+y}'= \begin{bmatrix}2&1&-1\\0&1&1\\1&0&1\end{bmatrix}{\bf y}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.8}
+ Find the general solution.
+ 
+ $ {\bf
+y}'= \begin{bmatrix}-3&1&-3\\4&-1&2\\4&-2&3\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $\begin{vmatrix}-3-\lambda&1&-3\\4&-1-\lambda&2\\4
+&-2&3-\lambda\end{vmatrix}=-(\lambda-1)\left((\lambda+1)^2+4\right)$.
+ The augmented matrix of $(A-I){\bf x=0}$ is
+$ \begin{bmatrix}-4&1&-3&\vdots&0\\4&-2&2&\vdots&0\\
+4&-2&2&\vdots&0 \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&0&1&\vdots&0\\ 0&1&1&
+\vdots&0\\ 0&0&0&\vdots&0 \end{bmatrix}$.
+Therefore,   $x_1=x_2=-x_3$.  Taking $x_3=1$ yields
+${\bf y}_1= \begin{bmatrix}-1\\-1\\1 \end{bmatrix}e^t$. The augmented matrix of
+$\left(A-(-1+2i)I\right){\bf x=0}$ is
+$ \begin{bmatrix}-2-2i&1&-3&\vdots&0\\4&-2i&2&\vdots&0\\
+4&-2&4-2i&\vdots&0 \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&0&(1-i)/2&\vdots&0\\
+0&1&-1&\vdots&0\\ 0&0&0&\vdots&0 \end{bmatrix}$.
+Therefore,   $x_1=-\frac{1-i}{2}x_3$ and $x_2=x_3$.
+Taking $x_3=2$ yields the eigenvector
+${\bf x}_2= \begin{bmatrix}-1+i\\2\\2 \end{bmatrix}$.
+The real and imaginary parts of
+$e^{-t}(\cos2t+i\sin2t) \begin{bmatrix}-1+i\\2\\2 \end{bmatrix}$
+are ${\bf y}_2=e^{-t} \begin{bmatrix}-\sin2t-\cos2t\\2\cos2t\\2\cos2t \end{bmatrix}$
+and ${\bf y}_3=e^{-t} \begin{bmatrix} \cos2t-\sin2t\\2\sin2t\\2\sin2t \end{bmatrix}$.
+Therefore,   
+$$
+ {\bf
+y}=c_1 \begin{bmatrix}-1\\1\\1 \end{bmatrix}e^{-t}+c_2e^{-t} \begin{bmatrix}-\sin
+2t-\cos2t\\2\cos2t\\2\cos2t \end{bmatrix}+c_3e^{-t} \begin{bmatrix}
+\cos2t-\sin2t\\2\sin2t\\2\sin2t \end{bmatrix}.
+$$
+\end{solution}
+\end{problem}
+
+
+ \begin{problem}\label{exer:10.6.9} 
+ Find the general solution.
+ 
+ $ {\bf y}'= \begin{bmatrix}5&-4\\10&1\end{bmatrix}{\bf
+y}$
+\end{problem}
+
+  \begin{problem}\label{exer:10.6.10} 
+  Find the general solution.
+  
+  $ {\bf
+y}'=\frac{1}{3} \begin{bmatrix}7&-5\\2&5\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $\frac{1 }{3}\begin{vmatrix}7-3\lambda&-5\\2&5-3\lambda
+\end{vmatrix}= \left(\lambda-2\right)^2+1$.
+The augmented matrix of
+$ \left(A-(2+i)I\right){\bf x}={\bf 0}$ is
+$\frac{1 }{3} \begin{bmatrix}1-3i&-5&\vdots&0\\2&-1-3i&\vdots&0
+ \end{bmatrix}$, which is row equivalent to
+$ \begin{bmatrix} 1&-(1+3i)/2&\vdots&0\\ 0&0&\vdots&0
+ \end{bmatrix}$. Therefore,  $x_1=\frac{1+3i }{2}x_2$. Taking
+$x_2=2$ yields the eigenvector
+${\bf x}= \begin{bmatrix}1+3i\\2 \end{bmatrix}$.
+ Taking real and imaginary parts of
+$e^{2t}(\cos t+i\sin t)
+ \begin{bmatrix}1+3i\\2 \end{bmatrix}$
+yields
+$$
+ {\bf y}=c_1e^{2t} \begin{bmatrix}\cos t-3\sin t
+\\2\cos t \end{bmatrix}+
+c_2e^{2t} \begin{bmatrix}
+\sin t+3\cos t\\ 2\sin t \end{bmatrix}.
+$$
+
+\end{solution}
+\end{problem}
+ 
+
+ \begin{problem}\label{exer:10.6.11} 
+ Find the general solution.
+ 
+ $ {\bf y}'= \begin{bmatrix}3&2\\-5&1\end{bmatrix}{\bf y}$
+ \end{problem}
+
+ \begin{problem}\label{exer:10.6.12}  
+ Find the general solution.
+ 
+ $ {\bf
+y}'= \begin{bmatrix}34&52\\-20&-30\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $\begin{vmatrix}34-\lambda&52\\-20&-30-\lambda
+\end{vmatrix}=(\lambda-2)^2+16$. The augmented matrix of
+$\left(A-\left(2+4i\right)I\right){\bf x}={\bf 0}$ is
+$ \begin{bmatrix}32-4i&52&\vdots&0\\-20&-32-4i&\vdots&0
+ \end{bmatrix}$, which is row equivalent to
+$ \begin{bmatrix} 1&(8+i)/5&\vdots&0\\ 0&0&\vdots&0
+ \end{bmatrix}$. Therefore,   $x_1=-\frac{(8+i)}{5}x_2$. Taking
+$x_2=5$ yields the eigenvector ${\bf
+x}= \begin{bmatrix}-8-i\\5 \end{bmatrix}$.
+Taking real and imaginary parts of $e^{2t}(\cos4t+i\sin
+4t) \begin{bmatrix}-8-i\\5 \end{bmatrix}$ yields ${\bf
+y}=c_1e^{2t} \begin{bmatrix}\sin4t-8\cos4t\\
+5\cos4t \end{bmatrix}+c_2e^{2t} \begin{bmatrix}
+-\cos4t-8\sin4t\\ 5\sin4t \end{bmatrix}$.
+\end{solution}
+\end{problem}
+ 
+
+
+ \begin{problem}\label{exer:10.6.13} 
+ Find the general solution.
+ 
+ $ {\bf y}'
+= \begin{bmatrix}1&1&2\\1&0&-1\\-1&-2&-1\end{bmatrix}{\bf y}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.14} 
+ Find the general solution.
+ 
+ $ {\bf y}'
+= \begin{bmatrix}3&-4&-2\\-5&7&-8\\-10&13&-8\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $\begin{vmatrix}3-\lambda&-4&-2\\-5&7-\lambda&-8\\-10
+&13&-8-\lambda\end{vmatrix}=-(\lambda+2)\left((\lambda-2)^2+9\right)$.
+ The augmented matrix of $(A+2I){\bf x=0}$ is
+$ \begin{bmatrix}5&-4&-2&\vdots&0\\-5&9&-8&\vdots&0\\
+-10&13&-6&\vdots&0 \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&0&-2&\vdots&0\\ 0&1&-2&
+\vdots&0\\ 0&0&0&\vdots&0 \end{bmatrix}$.
+Therefore,  $x_1=x_2=2x_3$.  Taking $x_3=1$ yields
+${\bf y}_1= \begin{bmatrix}2\\2\\1 \end{bmatrix}e^{-2t}$.
+The augmented matrix of
+$\left(A-(2+3i)I\right){\bf x=0}$ is
+$ \begin{bmatrix}1-3i&-4&-2&\vdots&0\\-5&5-3i&-8&\vdots&0\\
+-10&13&-10-3i&\vdots&0 \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&0&1-i&\vdots&0\\
+0&1&-i&\vdots&0\\ 0&0&0&\vdots&0 \end{bmatrix}$.
+Therefore,  $x_1=-(1-i)x_3$ and $x_2=ix_3$.
+Taking $x_3=1$ yields the eigenvector
+${\bf x}_2= \begin{bmatrix}-1+i\\i\\1 \end{bmatrix}$.
+The real and imaginary parts of $e^{2t}(\cos3t+i\sin3t)
+ \begin{bmatrix}-1+i\\i\\1 \end{bmatrix}$ are
+${\bf y}_2=e^{2t} \begin{bmatrix}-\cos3t-\sin3t\\-\sin3t\\
+\cos3t \end{bmatrix}$ and ${\bf y}_3=
+c_3e^{2t} \begin{bmatrix}-\sin3t+\cos3t\\\cos3t\\
+\sin3t \end{bmatrix}$. Therefore,  
+$$
+ {\bf
+y}=c_1 \begin{bmatrix} 2\\ 2\\1  \end{bmatrix}e^{-2t}+
+c_2e^{2t} \begin{bmatrix}-\cos3t-\sin3t\\-\sin3t\\
+\cos3t \end{bmatrix}+c_3e^{2t} \begin{bmatrix}{c}
+-\sin3t+\cos3t\\\cos3t\\\sin3t \end{bmatrix}.
+$$
+
+\end{solution}
+\end{problem}
+ 
+
+
+ \begin{problem}\label{exer:10.6.15}  
+ Find the general solution.
+ 
+ $ {\bf
+y}'= \begin{bmatrix}6&0&-3\\-3&3&3\\1&-2&6\end{bmatrix}{\bf y}'$
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.16} 
+ Find the general solution.
+ 
+ $ {\bf
+y}'= \begin{bmatrix}1&2&-2\\0&2&-1\\1&0&0\end{bmatrix}{\bf y}'$
+
+\begin{solution}
+    $\begin{vmatrix}1-\lambda&2&-2\\0&2-\lambda&-1\\1
+&0&-\lambda\end{vmatrix}=-(\lambda-2)\left((\lambda-1)^2+1\right)$.
+The augmented matrix of $(A-I){\bf x=0}$ is
+$ \begin{bmatrix}0&2&-2&\vdots&0\\0&
+1&-1&\vdots&0\\ 1&0&-1&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix}1&0&-1&\vdots&0\\ 0&1&-1&
+\vdots&0\\ 0&0&0&\vdots&0 \end{bmatrix}$.
+Therefore,  $x_1=x_2=1$.  Taking $x_3=1$ yields
+ ${\bf y}_1= \begin{bmatrix}1\\1\\1 \end{bmatrix}e^t$.
+The augmented matrix of
+$\left(A-(1+i)I\right){\bf x=0}$ is
+$ \begin{bmatrix}-i&2&-2&\vdots&0\\0&
+1-i&-1&\vdots&0\\ 1&0&-1-i&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&0&-1-i&\vdots&0\\ 0&1&-(1+i)/2&
+\vdots&0\\ 0&0&0&\vdots&0 \end{bmatrix}$.
+Therefore,  $x_1=(1+i)x_3$ and $x_2=\frac{(1+i)}{2}x_3$.
+Taking $x_3=2$ yields the eigenvector
+${\bf x}_2= \begin{bmatrix}2+2i\\1+i\\2 \end{bmatrix}$.
+The real and imaginary parts of
+$e^{4t}(\cos t+i\sin t) \begin{bmatrix}2+2i
+\\1+i\\2 \end{bmatrix}$  are
+${\bf y}_2=e^t \begin{bmatrix} 2\cos t-2\sin t\\\cos t-\sin
+t\\ 2\cos t \end{bmatrix}$ and
+${\bf y}_3=
+c_3e^t \begin{bmatrix} 2\sin t+2\cos t\\\cos t+\sin t\\
+2\sin t \end{bmatrix}$. Therefore,  
+$$
+ {\bf y}=c_1 \begin{bmatrix} 1\\1\\1
+ \end{bmatrix}e^t+
+c_2e^t \begin{bmatrix} 2\cos t-2\sin t
+\\\cos t-\sin t\\ 2\cos t \end{bmatrix}+
+c_3e^t \begin{bmatrix} 2\sin t+2\cos t\\\cos t+\sin t\\
+2\sin t \end{bmatrix}.
+$$
+\end{solution}
+\end{problem}
+ 
+
+ \begin{problem}\label{exer:10.6.17}
+ Solve the initial value problem.
+ 
+$ {\bf y}'= \begin{bmatrix}4&-6\\3&-2\end{bmatrix}{\bf y},\quad {\bf
+y}(0)= \begin{bmatrix}5\\2\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.18}
+ Solve the initial value problem.
+ 
+$ {\bf y}'= \begin{bmatrix}7&15\\-3&1\end{bmatrix}{\bf y},\quad {\bf
+y}(0)= \begin{bmatrix}5\\1\end{bmatrix}$
+
+\begin{solution}
+    $\begin{vmatrix}7-\lambda&15\\-3&1-\lambda
+\end{vmatrix}=(\lambda-4)^2+36$. The augmented matrix of
+$\left(A-\left(4+6i\right)I\right){\bf x}={\bf 0}$ is
+$ \begin{bmatrix}3-6i&15&\vdots&0\\-3&-3-6i&\vdots&0
+ \end{bmatrix}$, which is row equivalent to
+$ \begin{bmatrix} 1&1+2i&\vdots&0\\ 0&0&\vdots&0
+ \end{bmatrix}$. Therefore,  $x_1=-(1+2i)x_2$. Taking $x_2=1$ yields
+the eigenvector ${\bf
+x}= \begin{bmatrix}-1-2i\\1 \end{bmatrix}$.
+Taking real and imaginary parts of
+$e^{4t}(\cos6t+i\sin6t) \begin{bmatrix}-1-2i\\1 \end{bmatrix}$
+yields ${\bf y}= c_1e^{4t}\begin{bmatrix}2\sin6t-\cos6t\\\cos6t \end{bmatrix}
++c_2e^{4t}\begin{bmatrix}-2\cos6t-\sin6t\\\sin6t \end{bmatrix}$. Now ${\bf
+y}(0)=\begin{bmatrix}5\\1 \end{bmatrix}\Rightarrow
+\begin{bmatrix}-1&-2\\1&0 \end{bmatrix}\begin{bmatrix}c_1\\c_2 \end{bmatrix}=\begin{bmatrix}5\\1 \end{bmatrix}$, so $c_1=1$, $c_2=-3$,
+and $ {\bf
+y}=e^{4t} \begin{bmatrix}5\cos6t+5\sin6t\\\cos6t-3\sin6t
+ \end{bmatrix}$.
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.19}
+ Solve the initial value problem.
+ 
+$ {\bf y}'= \begin{bmatrix}7&-15\\3&-5\end{bmatrix}{\bf y},\quad {\bf
+y}(0)= \begin{bmatrix}17\\7\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.20}
+ Solve the initial value problem.
+ 
+$ {\bf y}'=\frac{1}{6} \begin{bmatrix}4&-2\\5&2\end{bmatrix}{\bf y},\quad {\bf
+y}(0)= \begin{bmatrix}1\\-1\end{bmatrix}$
+
+\begin{solution}
+    $\frac{1}{6}\begin{vmatrix}4-6\lambda&-2\\5&2-6\lambda
+\end{vmatrix}= \left(\lambda-
+\frac{1}{2}\right)^2+\frac{1}{4}$.
+The augmented matrix of
+$ \left(A-\frac{1+i}{2}I\right){\bf x}={\bf 0}$ is
+$\frac{1}{6} \begin{bmatrix}1-3i&-2&\vdots&0\\5&-1-3i&\vdots&0
+ \end{bmatrix}$, which is row equivalent to
+$ \begin{bmatrix} 1&-(1+3i)/5&\vdots&0\\ 0&0&\vdots&0
+ \end{bmatrix}$. Therefore,  $x_1=\frac{1+3i}{5}x_2$. Taking
+$x_2=5$ yields the eigenvector
+${\bf x}= \begin{bmatrix}1+3i\\5 \end{bmatrix}$.
+ Taking real and imaginary parts of
+$e^{t/2}(\cos t/2+i\sin
+t/2) \begin{bmatrix}1+3i\\5 \end{bmatrix}$
+yields ${\bf y}= c_1e^{t/2}\begin{bmatrix}\cos t/2-3\sin t/2\\5\cos t/2 \end{bmatrix}
++c_2e^{t/2}\begin{bmatrix}\sin t/2+3\cos t/2\\5\sin t/2 \end{bmatrix}$. Now ${\bf
+y}(0)=\begin{bmatrix}1\\-1 \end{bmatrix}\Rightarrow
+\begin{bmatrix}1&3\\5&0 \end{bmatrix}\begin{bmatrix}c_1\\c_2 \end{bmatrix}=\begin{bmatrix}1\\-1 \end{bmatrix}$, so
+$c_1=-\frac{1}{5}$,
+$c_2=\frac{2}{5}$, and
+${\bf y}= e^{t/2} \begin{bmatrix}\cos(t/2)+
+\sin(t/2)\\-\cos(t/2)+2\sin(t/2)
+ \end{bmatrix}$.
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.21}
+ Solve the initial value problem.
+ 
+$ {\bf y}'= \begin{bmatrix}5&2&-1\\-3&2&2\\1&3&2\end{bmatrix}{\bf y},\quad {\bf
+y}(0)= \begin{bmatrix}4\\0\\6\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.22}
+ Solve the initial value problem.
+ 
+$ {\bf y}'= \begin{bmatrix}4&4&0\\8&10&-20\\2&3&-2\end{bmatrix}{\bf y},\quad {\bf
+y}(0)= \begin{bmatrix}8\\6\\5\end{bmatrix}$
+
+\begin{solution}
+    $\begin{vmatrix}4-\lambda&4&0\\8&10-\lambda&-20\\2
+&3&-2-\lambda\end{vmatrix}=-(\lambda-8)\left((\lambda-2)^2+4\right)$.
+ The augmented matrix of $(A-8I){\bf x=0}$ is
+$ \begin{bmatrix}0&4&0&\vdots&0\\8&6&-20&\vdots&0\\
+2&3&-6&\vdots&0 \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix}1&0&-2&\vdots&0\\ 0&1&-2&
+\vdots&0\\ 0&0&0&\vdots&0 \end{bmatrix}$.
+Therefore,  $x_1=x_2=2x_3$. Taking $x_3=2$ yields
+${\bf y}_1= \begin{bmatrix}2\\2\\1 \end{bmatrix}e^{8t}$.
+The augmented matrix of
+$\left(A-(2+2i)I\right){\bf x=0}$ is
+$ \begin{bmatrix}2-2i&4&0&\vdots&0\\8&
+8-2i&-20&\vdots&0\\2&3&-4-2i&\vdots&0 \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&0&-2+2i&\vdots&0\\
+0&1&-2i&\vdots&0\\ 0&0&0&\vdots&0 \end{bmatrix}$.
+Therefore,  $x_1=(2-2i)x_3$ and $x_2=2ix_3$.
+Taking $x_3=1$ yields the eigenvector
+${\bf x}_2= \begin{bmatrix}2-2i\\2i\\1 \end{bmatrix}$.
+The real and imaginary parts of
+$e^{2t}(\cos2t+i\sin
+2t) \begin{bmatrix}2-2i\\2i\\1 \end{bmatrix}$
+are ${\bf y}_2=e^{2t} \begin{bmatrix}2\cos2t+2\sin2t
+\\-2\sin2t\\2\cos2t \end{bmatrix}$ and
+${\bf y}_3=e^{2t} \begin{bmatrix}2\sin2t+2\cos2t
+\\2\cos2t\\\sin2t \end{bmatrix}$, so the general solution
+is ${\bf y}=c_1 \begin{bmatrix}2\\2\\1 \end{bmatrix}e^{8t}+c_2
+e^{2t} \begin{bmatrix}2\cos2t+2\sin2t
+\\-2\sin2t\\2\cos2t \end{bmatrix}+
+c_3e^{2t} \begin{bmatrix}2\sin2t+2\cos2t
+\\2\cos2t\\\sin2t \end{bmatrix}$.
+Now ${\bf y}(0)= \begin{bmatrix}8\\6\\5 \end{bmatrix}\Rightarrow \begin{bmatrix}2&2&-2\\2&0&2\\1&1&0 \end{bmatrix}
+ \begin{bmatrix}c_1\\c_2\\c_3 \end{bmatrix}= \begin{bmatrix}8\\6\\5 \end{bmatrix}$, so $c_1=2$, $c_2=3$,
+$c_3=1$, and $ {\bf y}= \begin{bmatrix}4\\4\\2 \end{bmatrix}e^{8t}
++e^{2t} \begin{bmatrix}4\cos2t+8\sin2t\\
+-6\sin2t+2\cos2t\\3\cos2t+\sin2t
+ \end{bmatrix}$.
+
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.23}
+ Solve the initial value problem.
+ 
+$ {\bf
+y}'= \begin{bmatrix}1&15&-15\\-6&18&-22\\-3&11&-15\end{bmatrix}{\bf
+y},\quad {\bf y}(0)= \begin{bmatrix}15\\17\\10\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.24}
+ Solve the initial value problem.
+ 
+$ {\bf y}'= \begin{bmatrix}4&-4&4\\-10&3&15\\2&-3&1\end{bmatrix}{\bf y},\quad
+{\bf y}(0)= \begin{bmatrix}16\\14\\6\end{bmatrix}$
+
+\begin{solution}
+    $\begin{vmatrix}4-\lambda&-4&4\\-10&3-\lambda&15\\2
+&-3&1-\lambda\end{vmatrix}=-(\lambda-8)(\lambda^2+16)$.
+ The augmented matrix of $(A-8I){\bf x=0}$ is
+$ \begin{bmatrix}-4&-4&4&\vdots&0\\-10&-5&15&\vdots&0\\
+2&-3&-7&\vdots&0 \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&0&-2&\vdots&0\\ 0&1&1&
+\vdots&0\\ 0&0&0&\vdots&0 \end{bmatrix}$.
+Therefore,  $x_1=2x_3$ and $x_2=-x_3$. Taking $x_3=1$ yields
+${\bf y}_1= \begin{bmatrix}2\\-1\\1 \end{bmatrix}e^{8t}$.
+The augmented matrix of
+$\left(A-4iI\right){\bf x=0}$ is
+$ \begin{bmatrix}4-4i&-4&4&\vdots&0\\-10&3-4i&15&\vdots&0\\
+2&-3&1-4i&\vdots&0 \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix}1&0&-1+i&\vdots&0\\
+0&1&-1+2i&\vdots&0\\ 0&0&0&\vdots&0 \end{bmatrix}$.
+Therefore,  $x_1=(1-i)x_3$ and $x_2=(1-2i)x_3$.
+Taking $x_3=1$ yields the eigenvector
+${\bf x}_2= \begin{bmatrix}1-i\\1-2i\\1 \end{bmatrix}$.
+The real and imaginary parts of
+$(\cos4t+i\sin
+4t) \begin{bmatrix}1-i\\1-2i\\1 \end{bmatrix}$
+are ${\bf y}_2= \begin{bmatrix}\cos4t+\sin4t
+\\\cos4t+2\sin4t\\\cos4t \end{bmatrix}$ and
+${\bf y}_3= \begin{bmatrix}\sin4t-\cos4t
+\\\sin4t-2\cos4t\\\sin4t \end{bmatrix}$, so the general solution
+is ${\bf y}=c_1  \begin{bmatrix}2\\-1\\1 \end{bmatrix}e^{8t}+
+c_2 \begin{bmatrix}\cos4t+\sin4t
+\\\cos4t+2\sin4t\\\cos4t \end{bmatrix}
++c_3 \begin{bmatrix}\sin4t-\cos4t
+\\\sin4t-2\cos4t\\\sin4t \end{bmatrix}$.
+Now ${\bf
+y}(0)= \begin{bmatrix}16\\14\\6 \end{bmatrix}\Rightarrow \begin{bmatrix}2&1&-1\\-1&1&-\\1&1&0 \end{bmatrix}
+ \begin{bmatrix}c_1\\c_2\\c_3 \end{bmatrix}= \begin{bmatrix}16\\14\\6 \end{bmatrix}$, so $c_1=3$, $c_2=3$,
+$c_3=-7$, and $ {\bf y}= \begin{bmatrix}6\\-3\\3 \end{bmatrix}e^{8t}
++ \begin{bmatrix}10\cos4t-4\sin4t\\17\cos4t-\sin4t\\3\cos4t-7\sin4t
+ \end{bmatrix}$.
+
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.25}
+Suppose an $n\times n$ matrix $A$ with
+real entries has a complex eigenvalue $\lambda=\alpha+i\beta$
+($\beta\ne0$) with associated eigenvector ${\bf x}={\bf u}+i{\bf v}$,
+where ${\bf u}$ and ${\bf v}$ have real components. Show that ${\bf
+u}$ and ${\bf v}$ are both nonzero.
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.26}
+Verify that
+$$
+{\bf y}_1=e^{\alpha t}({\bf u}\cos\beta t-{\bf v}\sin\beta t)
+\mbox{\quad and\quad}
+{\bf y}_2=e^{\alpha t}({\bf u}\sin\beta t+{\bf v}\cos\beta t),
+$$
+are the real and imaginary parts of
+$$
+e^{\alpha t}(\cos\beta t+i\sin\beta t)({\bf u}+i{\bf v}).
+$$
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.27}
+ Show that if the vectors ${\bf u}$ and ${\bf v}$ are not both ${\bf
+0}$ and $\beta\ne0$ then the vector functions
+$$
+{\bf y}_1=e^{\alpha t}({\bf u}\cos\beta t-{\bf v}\sin\beta t)\quad
+\mbox{ and }\quad
+{\bf y}_2=e^{\alpha t}({\bf u}\sin\beta t+{\bf v}\cos\beta t)
+$$
+are linearly independent on every interval. 
+\begin{hint}There are
+two
+cases to consider: {\rm(i)} $\{{\bf u},{\bf v}\}$ linearly
+independent, and {\rm(ii)}
+ $\{{\bf u},{\bf v}\}$ linearly dependent. In either case, exploit the
+the linear independence of $\{\cos\beta t,\sin\beta t\}$
+on every interval.
+\end{hint}
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.28}
+Suppose ${\bf u}=  \begin{bmatrix}u_1\\u_2\end{bmatrix}$ and ${\bf
+v}=  \begin{bmatrix}v_1\\v_2\end{bmatrix}$ are not orthogonal; that is, $({\bf
+u},{\bf v})\ne0$.
+\begin{enumerate}
+\item % (a)
+Show that  the quadratic equation
+$$
+({\bf u},{\bf v})k^2+(||{\bf v}||^2-||{\bf u}||^2)k-({\bf u},{\bf
+v})=0
+$$
+has a positive root $k_1$ and a negative root $k_2=-1/k_1$.
+
+\begin{solution}
+    From the quadratic formula the roots are
+$$
+k_1=\frac{||{\bf u}||^2-||{\bf v}^2||+\sqrt{(||{\bf u}||^2-||{\bf
+v}^2||)^2+4({\bf u},{\bf v})^2}}{2({\bf u},{\bf v})}
+$$
+$$
+k_2=\frac{||{\bf u}||^2-||{\bf v}^2||-\sqrt{(||{\bf u}||^2-||{\bf
+v}^2||)^2+4({\bf u},{\bf v})^2}}{2({\bf u},{\bf v})}
+$$
+Clearly $k_1>0$ and $k_2<0$. Moreover,
+$$
+k_1k_2=\frac{(||{\bf u}||^2-||{\bf v}^2||)^2-\left[(||{\bf u}||^2-||{\bf
+v}^2||)^2+4({\bf u},{\bf v})^2\right]}{4({\bf u},{\bf v})^2}=-1.
+$$
+\end{solution}
+
+\item % (b)
+Let ${\bf u}_1^{(1)}={\bf u}-k_1{\bf v}$, ${\bf v}_1^{(1)}={\bf
+v}+k_1{\bf u}$, ${\bf u}_1^{(2)}={\bf u}-k_2{\bf v}$, and ${\bf
+v}_1^{(2)}={\bf v}+k_2{\bf u}$, so that $({\bf u}_1^{(1)},{\bf
+v}_1^{(1)}) =({\bf u}_1^{(2)},{\bf v}_1^{(2)})=0$, from the discussion
+given above. Show that
+$$
+{\bf u}_1^{(2)}=\frac{{\bf v}_1^{(1)}}{ k_1}
+\quad\text{ and }\quad
+{\bf v}_1^{(2)}=-\frac{{\bf u}_1^{(1)}}{ k_1}.
+$$
+
+\begin{solution}
+    Since $k_2=-1/k_1$,
+$$
+{\bf u}_1^{(2)}={\bf u}-k_2{\bf v}={\bf u}+\frac{1}{k_1}{\bf
+v}=\frac{1}{k_1}({\bf v}+k_1{\bf u})=\frac{1}{k_1}{\bf v}_1^{(1)}
+$$
+$$
+{\bf v}_1^{(2)}={\bf v}+k_2{\bf u}={\bf v}-\frac{1}{k_1}{\bf
+u}=-\frac{1}{k_1}({\bf u}-k_1{\bf v})=-\frac{1}{k_1}{\bf u}_1^{(1)}.
+$$
+\end{solution}
+
+\item % (c)
+Let ${\bf U}_1$, ${\bf V}_1$, ${\bf U}_2$, and ${\bf V}_2$ be unit
+vectors in the directions of ${\bf u}_1^{(1)}$, ${\bf v}_1^{(1)}$,
+${\bf u}_1^{(2)}$, and ${\bf v}_1^{(2)}$, respectively. Conclude from
+part (a) that ${\bf U}_2={\bf V}_1$ and ${\bf V}_2=-{\bf U}_1$, and
+that therefore the counterclockwise angles from ${\bf U}_1$ to ${\bf
+V}_1$ and from ${\bf U}_2$ to ${\bf V}_2$ are both $\pi/2$ or both
+$-\pi/2$.
+\end{enumerate}
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.29}
+ Find vectors
+${\bf U}$ and ${\bf V}$ parallel to the axes of symmetry of the
+trajectories, and plot some typical trajectories.
+
+$ {\bf y}'= \begin{bmatrix}3&-5\\5&-3\end{bmatrix}{\bf
+y}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.6.30}   
+ Find vectors
+${\bf U}$ and ${\bf V}$ parallel to the axes of symmetry of the
+trajectories, and plot some typical trajectories.
+
+$ {\bf y}'= \begin{bmatrix}-15&10\\-25&15\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $\begin{vmatrix}-15-\lambda&10\\-25&15-\lambda
+\end{vmatrix}=\lambda^2+25$.
+The augmented matrix of $(A-5iI){\bf x}={\bf 0}$ is
+$\begin{bmatrix}-15-5i&10&\vdots&0\\
+-25&15-5i&\vdots&0 \end{bmatrix}$,
+which is row equivalent to
+$\begin{bmatrix} 1&(-3+i)/5&\vdots&0\\ 0&0&\vdots&0
+\end{bmatrix}$.
+Therefore, $x_1=\frac{(3-i)}{5}x_2$. Taking $x_2=5$
+yields the eigenvector
+ ${\bf x}=\begin{bmatrix}3-i\\5\end{bmatrix}$,
+so ${\bf u}=  \begin{bmatrix}3\\5\end{bmatrix}$ and ${\bf v}=  \begin{bmatrix}-1\\0\end{bmatrix}$.
+The quadratic equation is $-3k^2-33k+3=0$, with positive root
+$k\approx.0902$.
+ Routine calculations yield
+ ${\bf U}\approx  \begin{bmatrix}.5257\\.8507\end{bmatrix}$,
+${\bf V}\approx  \begin{bmatrix}-.8507\\.5257\end{bmatrix}$.
+\end{solution}
+ \end{problem}
+ 
+
+
+ \begin{problem}\label{exer:10.6.31}   
+ Find vectors
+${\bf U}$ and ${\bf V}$ parallel to the axes of symmetry of the
+trajectories, and plot some typical trajectories.
+
+$ {\bf y}'= \begin{bmatrix}-4&8\\-4&4\end{bmatrix}{\bf y}$
+ \end{problem}
+
+ \begin{problem}\label{exer:10.6.32}  
+ Find vectors
+${\bf U}$ and ${\bf V}$ parallel to the axes of symmetry of the
+trajectories, and plot some typical trajectories.
+
+$ {\bf y}'= \begin{bmatrix}-3&-15\\3&3\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $\begin{vmatrix}-3-\lambda&-15\\3&3-\lambda
+\end{vmatrix}=\lambda^2+36$.
+The augmented matrix of $(A-6iI){\bf x}={\bf 0}$ is
+$ \begin{bmatrix}-3-6i&-15&\vdots&0\\
+3&3-6i&\vdots&0  \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&1-2i&\vdots&0\\ 0&0&\vdots&0
+ \end{bmatrix}$.
+Therefore, $x_1=-(1-2i)x_2$. Taking $x_2=1$
+yields the eigenvector
+ ${\bf x}= \begin{bmatrix}-1+2i\\1 \end{bmatrix}$,
+so ${\bf u}=  \begin{bmatrix}-1\\1\end{bmatrix}$ and ${\bf v}=  \begin{bmatrix}2\\0\end{bmatrix}$.
+The quadratic equation is $-2k^2+2k+2=0$, with positive root
+$k\approx1.6180$.
+ Routine calculations yield
+ ${\bf U}\approx  \begin{bmatrix}-.9732\\.2298\end{bmatrix}$,
+${\bf V}\approx  \begin{bmatrix}.2298\\.9732\end{bmatrix}$.
+\end{solution}
+ \end{problem}
+ 
+
+ \begin{problem}\label{exer:10.6.33}   
+ Find vectors
+${\bf U}$ and ${\bf V}$ parallel to the axes of symmetry of the shadow
+trajectories, and plot a typical trajectory.
+
+$ {\bf y}'= \begin{bmatrix}-5&6\\-12&7\end{bmatrix}{\bf y}$
+ \end{problem}
+
+ \begin{problem}\label{exer:10.6.34}  
+ Find vectors
+${\bf U}$ and ${\bf V}$ parallel to the axes of symmetry of the shadow
+trajectories, and plot a typical trajectory.
+
+$ {\bf y}'= \begin{bmatrix}5&-12\\6&-7\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $\begin{vmatrix}5-\lambda&-12\\6&-7-\lambda
+\end{vmatrix}=(\lambda+1)^2+36$.
+The augmented matrix of $(A-(-1+6i)I){\bf x}={\bf 0}$ is
+$ \begin{bmatrix}6-6i&-12&\vdots&0\\
+6&-6-6i&\vdots&0  \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&-(1+i)&\vdots&0\\ 0&0&\vdots&0
+ \end{bmatrix}$.
+Therefore, $x_1=(1+i)x_2$. Taking $x_2=1$
+yields the eigenvector
+ ${\bf x}= \begin{bmatrix}1+i\\1 \end{bmatrix}$,
+so ${\bf u}=  \begin{bmatrix}1\\1\end{bmatrix}$ and ${\bf v}=  \begin{bmatrix}1\\0\end{bmatrix}$.
+The quadratic equation is $k^2-k-1=0$, with positive root
+$k\approx1.6180$.
+ Routine calculations yield
+ ${\bf U}\approx  \begin{bmatrix}-.5257\\.8507\end{bmatrix}$,
+${\bf V}\approx  \begin{bmatrix}.8507\\.5257\end{bmatrix}$.
+\end{solution}
+ \end{problem}
+ 
+
+
+ \begin{problem}\label{exer:10.6.35}  
+ Find vectors
+${\bf U}$ and ${\bf V}$ parallel to the axes of symmetry of the shadow
+trajectories, and plot a typical trajectory.
+
+$ {\bf y}'= \begin{bmatrix}4&-5\\9&-2\end{bmatrix}{\bf y}$
+ \end{problem}
+
+ \begin{problem}\label{exer:10.6.36}  
+ Find vectors
+${\bf U}$ and ${\bf V}$ parallel to the axes of symmetry of the shadow
+trajectories, and plot a typical trajectory.
+
+$ {\bf y}'= \begin{bmatrix}-4&9\\-5&2\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $\begin{vmatrix}-4-\lambda&9\\-5&2-\lambda
+\end{vmatrix}=(\lambda+1)^2+36$.
+The augmented matrix of $(A-(-1+6i)I){\bf x}={\bf 0}$ is
+$ \begin{bmatrix}-3-6i&9&\vdots&0\\
+-5&3-6i&\vdots&0  \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&-(3-6i)/5&\vdots&0\\ 0&0&\vdots&0
+ \end{bmatrix}$.
+Therefore, $x_1=\frac{3-6i}{5}x_2$. Taking $x_2=5$
+yields the eigenvector
+ ${\bf x}= \begin{bmatrix}3-6i\\5 \end{bmatrix}$,
+so ${\bf u}=  \begin{bmatrix}3\\5 \end{bmatrix}$ and ${\bf v}=  \begin{bmatrix}-6\\0 \end{bmatrix}$.
+The quadratic equation is $-18k^2+2k+18=0$, with positive root
+$k\approx1.0571$.
+ Routine calculations yield
+ ${\bf U}\approx  \begin{bmatrix}.8817\\.4719 \end{bmatrix}$,
+${\bf V}\approx  \begin{bmatrix}-.4719\\.8817 \end{bmatrix}$.
+\end{solution}
+ \end{problem}
+ 
+
+
+ \begin{problem}\label{exer:10.6.37}   
+ Find vectors
+${\bf U}$ and ${\bf V}$ parallel to the axes of symmetry of the shadow
+trajectories, and plot a typical trajectory.
+
+$ {\bf y}'= \begin{bmatrix}-1&10\\-10&-1\end{bmatrix}{\bf y}$
+ \end{problem}
+
+ \begin{problem}\label{exer:10.6.38}    
+ Find vectors
+${\bf U}$ and ${\bf V}$ parallel to the axes of symmetry of the shadow
+trajectories, and plot a typical trajectory.
+
+$ {\bf y}'= \begin{bmatrix}-1&-5\\20&-1\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $\begin{vmatrix}-1-\lambda&-5\\20&-1-\lambda
+\end{vmatrix}=(\lambda+1)^2+100$.
+The augmented matrix of $(A-(-1+10i)I){\bf x}={\bf 0}$ is
+$ \begin{bmatrix}-10i&-5&\vdots&0\\
+20&-10i&\vdots&0  \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&-i/2&\vdots&0\\ 0&0&\vdots&0
+ \end{bmatrix}$.
+Therefore, $x_1=\frac{i}{2}x_2$. Taking $x_2=2$
+yields the eigenvector
+ ${\bf x}= \begin{bmatrix}i\\2 \end{bmatrix}$,
+so ${\bf u}=  \begin{bmatrix}0\\2\end{bmatrix}$ and ${\bf v}=  \begin{bmatrix}1\\0\end{bmatrix}$.
+Since $({\bf u},{\bf v})=0$ we just normalize ${\bf u}$ and ${\bf v}$
+to obtain
+${\bf U}=  \begin{bmatrix}0\\1\end{bmatrix}$, ${\bf V}=  \begin{bmatrix}1\\0\end{bmatrix}$.
+\end{solution}
+ \end{problem}
+ 
+
+
+ \begin{problem}\label{exer:10.6.39}  
+ Find vectors
+${\bf U}$ and ${\bf V}$ parallel to the axes of symmetry of the shadow
+trajectories, and plot a typical trajectory.
+
+$ {\bf y}'= \begin{bmatrix}-7&10\\-10&9\end{bmatrix}{\bf y}$
+ \end{problem}
+
+ \begin{problem}\label{exer:10.6.40}  
+ Find vectors
+${\bf U}$ and ${\bf V}$ parallel to the axes of symmetry of the shadow
+trajectories, and plot a typical trajectory.
+
+$ {\bf y}'= \begin{bmatrix}-7&6\\-12&5\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $\begin{vmatrix}-7-\lambda&6\\-12&5-\lambda
+\end{vmatrix}=(\lambda+1)^2+36$.
+The augmented matrix of $(A-(-1+6i)I){\bf x}={\bf 0}$ is
+$ \begin{bmatrix}-6-6i&6&\vdots&0\\
+-12&6-6i&\vdots&0  \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix} 1&-(1-i)/2&\vdots&0\\ 0&0&\vdots&0
+ \end{bmatrix}$.
+Therefore, $x_1=\frac{1-i }{2}x_2$. Taking $x_2=2$
+yields the eigenvector
+ ${\bf x}= \begin{bmatrix}1-i\\2 \end{bmatrix}$,
+so ${\bf u}=  \begin{bmatrix}1\\2\end{bmatrix}$ and ${\bf v}=  \begin{bmatrix}-1\\0\end{bmatrix}$.
+The quadratic equation is $-k^2-4k+1=0$, with positive root
+$k\approx.2361$.
+ Routine calculations yield
+ ${\bf U}\approx  \begin{bmatrix}.5257\\.8507\end{bmatrix}$,
+${\bf V}\approx  \begin{bmatrix}-.8507\\.5257\end{bmatrix}$.
+\end{solution}
+ \end{problem}
+ 
+\end{document}

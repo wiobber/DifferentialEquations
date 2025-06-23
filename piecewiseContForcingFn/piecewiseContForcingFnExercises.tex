@@ -1,0 +1,898 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+\begin{problem}\label{exer:8.5.1} 
+Use the Laplace transform to solve the initial value problem.
+$y''+y = \left\{\begin{array}{cl} 3,& 0\le t<\pi,\\ 0,&t\ge\pi,\end{array}\right.\qquad y(0)=0, \quad  y'(0)=0$
+\end{problem}
+
+\begin{problem}\label{exer:8.5.2} 
+Use the Laplace transform to solve the initial value problem.
+$y''+y=\left\{\begin{array}{cl} 3,&0\le
+t<4,\\ 2t-5,&t > 4,\end{array}\right.\qquad y(0)=1,\quad y'(0)=0$
+
+\begin{solution}
+ $y''+y=3+u(t-4)(2t-8),\ y(0)=1,\ y'(0)=0$.
+Since
+$$
+{\cal L}\left(u(t-4)(2t-8)\right)=e^{-4s}{\cal L}\left(2(t+4)-8\right)
+=e^{-4s}{\cal L}(2t)=\frac{2e^{-4s}}{s^2},
+$$
+$$
+(s^2+1)Y(s)=\frac{3}{s}+\frac{2e^{-4s}}{s^2}+s.
+$$
+\begin{eqnarray*}
+Y(s)&=&\frac{3}{s(s^2+1)}+\frac{2e^{-4s}}{s^2(s^2+1)}+\frac{s}{s^2+1}\\
+&=&3\left(\frac{1}{s}-\frac{s}{s^2+1}\right)+2e^{-4s}
+\left(\frac{1}{s^2}-\frac{1}{s^2+1}\right)+\frac{s}{s^2+1}\\
+&=&\frac{3}{s}-\frac{2s}{s^2+1}+2e^{-4s}\left(\frac{1}{s^2}-\frac{1}{s^2+1}\right).
+\end{eqnarray*}
+Since
+$$
+\frac{1}{s^2}-\frac{1}{s^2+1}\leftrightarrow t-\sin t\Rightarrow
+e^{-4s}\left(\frac{1}{s^2}-\frac{1}{s^2+1}\right)\leftrightarrow
+u(t-4)\left(t-4-\sin(t-4)\right),
+$$
+$y=3-2\cos t+2u(t-4)\left(t-4-\sin(t-4)\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.5.3} Use the Laplace transform to solve the initial value problem.
+$y''-2y'= \left\{\begin{array}{cl} 4,&0\le
+t<1,\\ 6,&t\ge 1,\end{array}\right.\qquad y(0)=-6,\quad y'(0)=1$
+\end{problem}
+
+\begin{problem}\label{exer:8.5.4} Use the Laplace transform to solve the initial value problem.
+$y''-y=\left\{\begin{array}{cl} e^{2t},&0\le
+t< 2,\\ 1,&t\ge 2,\end{array}\right.\qquad y(0)=3,\quad y'(0)=-1$
+
+\begin{solution}
+$y''-y=e^{2t}+u(t-2)(1-e^{2t}),\ y(0)=3,\ y'(0)=-1$.
+Since
+$$
+{\cal L}(u(t-2)(1-e^{2t}))=e^{-2s}{\cal L}(1-e^{2(t+2)})=e^{-2s}
+\left(\frac{1}{s}-\frac{e^4}{s-2}\right),
+$$
+$$
+(s^2-1)Y(s)=\frac{1}{s-2}+e^{-2s}\left(\frac{1}{s}-\frac{e^4}{s-2}\right)
++(-1+3s).
+$$
+Therefore,
+$$
+\begin{array}{rcl}
+Y(s)&=&\frac{1}{(s-1)(s+1)(s-2)}+\frac{3s-1}{(s-1)(s+1)}\\
+&&+e^{-2s}\left(\frac{1}{s(s-1)(s+1)}-\frac{e^4}{(s-1)(s+1)(s-2)}\right).
+\end{array}
+$$
+$$
+\begin{array}{rcl}
+\frac{1}{(s-1)(s+1)(s-2)}&=&-\frac{1}{2}\frac{1}{s-1}+\frac{1}{6}\frac{1}{s+1}
++\frac{1}{3}\frac{1}{s-2}\\
+&\leftrightarrow& -\frac{1}{2}e^t+\frac{1}{6}e^{-t}+\frac{1}{3}e^{2t};
+\end{array}
+$$
+$$
+\frac{e^{-2s}e^4}{(s-1)(s+1)(s-2)}
+\leftrightarrow u(t-2)\left(
+-\frac{1}{2}e^{t+2}+\frac{1}{6}e^{-(t-6)}+\frac{1}{3}e^{2t}\right);
+$$
+$$
+\frac{1}{s(s-1)(s+1)}=-\frac{1}{s}+\frac{1}{2}\frac{1}{s-1}
++\frac{1}{2}\frac{1}{s+1}
+\leftrightarrow -1+\frac{1}{2}e^t+\frac{1}{2}e^{-t};
+$$
+$$
+\frac{e^{-2s}}{s(s-1)(s+1)}
+\leftrightarrow
+u(t-2)\left(-1+\frac{1}{2}e^{t-2}+\frac{1}{2}e^{-(t-2)}\right);
+$$
+$$
+\frac{3s-1}{(s-1)(s+1)}=\frac{1}{s-1}+\frac{2}{s+1}\leftrightarrow
+e^t+2e^{-t}.
+$$
+Therefore,
+$$
+y=\frac{1}{2}e^t+\frac{13}{6}e^{-t}+ \frac{1}{3}e^{2t}
++u(t-2)\left(-1+\frac{1}{2}e^{t-2}+\frac{1}{2}e^{-(t-2)}+
+\frac{1}{2}e^{t+2}-\frac{1}{6} e^{-(t-6)}-\frac{1}{3}e^{2t}\right).
+$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.5.5} Use the Laplace transform to solve the initial value problem.
+$y''-3y'+2y= \left\{\begin{array}{rl} 0,&0\le
+t<1,\\ 1,&1\le t<2,\\ -1,&t\ge 2,\end{array}\right.\qquad y(0)=-3,\quad y'(0)=1$
+\end{problem}
+
+\begin{problem}\label{exer:8.5.6} Use the Laplace transform to solve the initial value problem.  Graph the solution. 
+$y''+4y= \left\{\begin{array}{cl}|\sin
+t|,&0\le t<2\pi,\\ 0,&t\ge 2\pi,\end{array}\right.\qquad
+y(0)=-3,\quad y'(0)=1$
+
+\begin{solution}
+Note that $|\sin t|=\sin t$ if $0\le t<\pi$, while
+ $|\sin t|=-\sin t$ if $\pi\le t<2\pi$. Rewrite the initial value
+problem as
+$$
+y''+4y=\sin t-2u(t-\pi)\sin t+u(t-2\pi)\sin t,\ y(0)=-3,\ y'(0)=1.
+$$
+Since
+$$
+{\cal L}\left(u(t-\pi)\sin t\right)=e^{-\pi s}{\cal
+L}(\sin(t+\pi))=-e^{-\pi s}{\cal L}(\sin t)
+$$
+ and
+$$
+{\cal L}\left(u(t-2\pi)\sin t\right)=e^{-2\pi s}{\cal
+L}(\sin(t+2\pi))=e^{-2\pi s}{\cal L}(\sin t),
+$$
+$$
+(s^2+4)Y(s)=\frac{1+2e^{-\pi s}+e^{-2\pi s}}{(s^2+1)}+1-3s,\mbox{ so }
+Y(s)=\frac{1+2e^{-\pi s}+e^{-2\pi
+s}}{(s^2+1)(s^2+4)}+\frac{1-3s}{s^2+4}.
+$$
+$$
+\frac{1}{(s^2+1)(s^2+4)}=\left(\frac{1}{s^2+1}-\frac{1}{s^2+4}\right)
+\leftrightarrow \frac{1}{3}\sin t-\frac{1}{6}\sin2t;
+$$
+therefore
+\begin{eqnarray*}
+\frac{e^{-\pi s}}{(s^2+1)(s^2+4)}
+&\leftrightarrow&
+u(t-\pi)\left(\frac{1}{3}\sin(t-\pi)-\frac{1}{6}\sin2(t-\pi)\right)\\
+&=&-u(t-\pi)\left(\frac{1}{3}\sin t+\frac{1}{6}\sin2t\right)
+\end{eqnarray*}
+and
+\begin{eqnarray*}
+\frac{e^{-2\pi s}}{(s^2+1)(s^2+4)}
+&\leftrightarrow&
+u(t-2\pi)\left(\frac{1}{3}\sin(t-2\pi)-\frac{1}{6}\sin2(t-2\pi)\right)\\
+&=&u(t-2\pi)\left(\frac{1}{3}\sin t-\frac{1}{6}\sin2t\right);
+\end{eqnarray*}
+therefore
+$$
+y=\frac{1}{3}\sin2t-3\cos2t+\frac{1}{3}\sin t
+- 2 u(t-\pi)\left(\frac{1}{3}\sin t+\frac{1}{6}\sin2t\right)
++u(t-2\pi)\left(\frac{1}{3}\sin
+t-\frac{1}{6}\sin2t\right).
+$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.5.7} $y''-5y'+4y= \left\{\begin{array}{rl} 1,&0\le
+t<1\\ -1,&1\le t<2,\\ 0,&t\ge 2,\end{array}\right.\qquad
+y(0)=3,\quad y'(0)=-5$
+\end{problem}
+
+\begin{problem}\label{exer:8.5.8} $y''+9y= \left\{\begin{array}{cl} \cos
+t,&0\le t<\frac{3\pi}{2},\\ \sin
+t,&t\ge\frac{3\pi}{2},\end{array}\right.\qquad y(0)=0,\;  y'(0)=0$
+
+\begin{solution}
+$y''+9y=\cos t+u(t-3\pi/2)(\sin t-\cos t),\ y(0)=0,\
+y'(0)=0$. Since
+\begin{eqnarray*}
+{\cal L}\left(u(t-3\pi/2)(\sin t-\cos t)\right)&=&
+e^{-3\pi s/2}{\cal
+L}\left(\sin(t+3\pi/2)-\cos(t+3\pi/2)\right)\\
+&&-e^{-3\pi s/2}{\cal L}(\cos t+\sin t),
+\end{eqnarray*}
+$$
+(s^2+9)Y(s)=\frac{1}{s^2+1}-e^{-3\pi s/2}\frac{s+1}{s^2+1},\quad \mbox{so} \quad
+Y(s)=\frac{1}{(s^2+1)(s^2+9)}-e^{-3\pi s/2}\frac{s+1}{(s^2+1)(s^2+9)}.
+$$
+$$
+\frac{1}{(s^2+1)(s^2+9)}=\frac{1}{8}\left(\frac{1}{s^2+1}-\frac{1}{s^2+9}\right)\leftrightarrow\frac{1}{8}\left(\sin
+t-\frac{1}{3}\sin3t\right) \quad \mbox{and }
+$$
+$$
+\frac{s}{(s^2+1)(s^2+9)}=\frac{1}{8}\left(\frac{s}{s^2+1}-\frac{s}{s^2+9}\right)\leftrightarrow\frac{1}{8}\left(\cos
+t-\cos3t\right).
+$$
+\begin{eqnarray*}
+\frac{s+1}{(s^2+1)(s^2+9)}&=&\frac{s+1}{(s^2+1)(s^2+9)}=
+\frac{s+1}{8}\left(\frac{s+1}{s^2+1}-\frac{s+1}{s^2+9}\right)\\ &\leftrightarrow&\frac{1}{8}\left(\cos t+\sin
+t-\cos3t-\frac{1}{3}\sin3t\right),\mbox{ so }
+\end{eqnarray*}
+\begin{eqnarray*}
+e^{-3\pi s/2}\frac{s+1}{(s^2+1)(s^2+9)}&\leftrightarrow&
+\frac{u(t-3\pi/2)}{8}\left(\cos(t-3\pi/2)+\sin(t-3\pi/2)\right.\\
+&&\left. -\cos3(t-3\pi/2)-\frac{1}{3}\sin3(t-\pi/2)\right)\\
+&=&\frac{u(t-3\pi/2)}{8}\left(\sin t-\cos t+
+\sin3t-\frac{1}{3}\cos3t\right).
+\end{eqnarray*}
+Therefore,
+$y=\frac{1}{8}\left(\cos t-\cos3t\right)
+-\frac{1}{8} u(t-3\pi/2)\left(\sin t-\cos t+
+\sin 3t-\frac{1}{3}\cos 3t\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.5.9} Use the Laplace transform to solve the initial value problem.  Graph the solution. 
+$y''+4y= \left\{\begin{array}{cl} t,&0\le
+t<\frac{\pi}{2},\\ \pi,&t\ge\frac{\pi}{2},
+\end{array}\right.\quad y(0)=0,\quad y'(0)=0$
+\end{problem}
+
+\begin{problem}\label{exer:8.5.10}
+Use the Laplace transform to solve the initial value problem.
+$y''+y=\left\{\begin{array}{cl}t,&0\le t<\pi,
+\\ -t,&t\ge\pi ,\end{array}\right.\;  y(0)=0,\;  y'(0)=0$
+
+\begin{solution}
+$y''+y=t-2u(t-\pi)t,\ y(0)=0,\ y'(0)=0$.
+Since
+$$
+{\cal L}\left(u(t-\pi)t\right)=e^{-\pi s}{\cal L}\left(t+\pi\right)
+=e^{-\pi s}\left(\frac{1}{s^2}+\frac{\pi}{s}\right),
+$$
+$$
+(s^2+1)Y(s)=\frac{1}{s^2}-2e^{-\pi s}\left(\frac{1}{s^2}+\frac{\pi}{s}\right);
+$$
+\begin{eqnarray*}
+Y(s)&=& \frac{1}{s^2(s^2+1)}-2e^{-\pi s}\left(\frac{1}{s^2(s^2+1)}+\frac{\pi}{s(s^2+1)}\right)\\ &=&\left(\frac{1}{s^2}-\frac{1}{s^2+1}\right)-2e^{-\pi s} \left(\frac{1}{s^2}-\frac{1}{s^2+1}\right)-2\pi e^{-\pi s}\left(\frac{1}{s}-\frac{s}{s^2+1}\right).
+\end{eqnarray*}
+Since
+\begin{eqnarray*}
+\frac{1}{s^2}-\frac{1}{s^2+1}&\leftrightarrow& t-\sin t\Rightarrow
+e^{-\pi s}\left(\frac{1}{s^2}-\frac{1}{s^2+1}\right)\\ &\leftrightarrow&
+u(t-\pi)\left(t-\pi-\sin(t-\pi)\right)=u(t-\pi)(t-\pi+\sin t)
+\end{eqnarray*}
+and
+\begin{eqnarray*}
+\frac{1}{s}-\frac{s}{s^2+1}&\leftrightarrow& 1-\cos t\Rightarrow
+e^{-\pi s}\left(\frac{1}{s}-\frac{s}{s^2+1}\right)\\ &\leftrightarrow&
+u(t-\pi)\left(1-\cos(t-\pi)\right)=u(t-\pi)(1+\cos t),
+\end{eqnarray*}
+ $y=t-\sin t-2u(t-\pi)(t+\sin t+\pi\cos t)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.5.11} Use the Laplace transform to solve the initial value problem.
+$y''-3y'+2y=\left\{\begin{array}{cl} 0,&0\le
+t<2,\\2t-4,&t\ge 2,\end{array}\right. ,\quad y(0)=0,\quad y'(0)=0$
+\end{problem}
+
+\begin{problem}\label{exer:8.5.12} Use the Laplace transform to solve the initial value problem.
+$y''+y=\left\{\begin{array}{cl} t,&0\le
+t<2\pi,\\-2t,&t\ge 2\pi,\end{array}\right.\quad y(0)=1,\quad y'(0)=2$
+
+\begin{solution}
+$y''+y=t-3u(t-2\pi)t,\ y(0)=1,\ y'(0)=2;$
+$$
+{\cal L}(u(t-2\pi)t)=e^{-2\pi s}{\cal L}(t+2\pi)=e^{-2\pi s}
+\left(\frac{1}{s^2}+\frac{2\pi}{s}\right);
+$$
+$$
+(s^2+1)Y(s)=\frac{1-3e^{-2\pi s}}{s^2}-\frac{6\pi e^{-2\pi s}}{s}+2+s;
+$$
+$$
+Y(s)=\frac{1-3e^{-2\pi s}}{s^2(s^2+1)}-\frac{6\pi e^{-2\pi s}}{s(s^2+1)}
++\frac{2+s}{s^2+1};
+$$
+$$
+\frac{1}{s^2(s^2+1)}=\frac{1}{s^2}-\frac{1}{s^2+1}\leftrightarrow
+t-\sin t;
+$$
+$$
+\frac{e^{-2\pi s}}{s^2(s^2+1)}\leftrightarrow
+u(t-2\pi)((t-2\pi-\sin(t-2\pi))=u(t-2\pi)(t-2\pi-\sin t);
+$$
+$$
+\frac{1}{s(s^2+1)}=\frac{1}{s}-\frac{s}{s^2+1}\leftrightarrow
+1-\cos t;
+$$
+$$
+\frac{e^{-2\pi s}}{s(s^2+1)}\leftrightarrow u(t-2\pi)
+(1-\cos(t-2\pi))=u(t-2\pi)(1-\cos t);
+$$
+$$
+\frac{2+s}{s^2+1}\leftrightarrow 2\sin t+\cos t;
+$$
+$y=t+\sin t+\cos t-u(t-2\pi)(3t-3\sin t-6\pi\cos t)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.5.13} Use the Laplace transform to solve the initial value problem.  Graph the solution.
+$y''+3y'+2y=\left\{\begin{array}{cl}-1,&0\le
+t<2,\\-1,&t\ge 2,\end{array}\right.\;  y(0)=0,\;  y'(0)=0$
+\end{problem}
+
+\begin{problem}\label{exer:8.5.14} Use the Laplace transform to solve the initial value problem.
+$y''-4y'+3y=\left\{\begin{array}{cl}-1,&0\le
+t<1,\\-1,&t\ge 1,\end{array}\right.\;  y(0)=0,\;  y'(0)=0$
+
+\begin{solution}
+$y''-4y'+3y=-1+2u(t-1),\ y(0)=0,\ y'(0)=0$;
+
+$(s^2-4s+3)Y(s)=\frac{-1+2e^{-s}}{s}$;
+$Y(s)=\frac{-1+2e^{-s}}{s(s-1)(s-3)}$;
+
+$\frac{1}{s(s-1)(s-3)}=\frac{1}{3s}+\frac{1}{6}\frac{1}{s-3}-\frac{1}{2}\frac{1}{s-1}
+\leftrightarrow \frac{1}{3}+\frac{1}{6}e^{3t}-\frac{1}{2}e^t$;
+
+$\frac{e^{-s}}{s(s-1)(s-3)}
+\leftrightarrow u(t-1)\left(
+\frac{1}{3}+\frac{1}{6}e^{3(t-1)}-\frac{1}{2}e^{t-1}\right)$;
+
+$y=-\frac{1}{3}-\frac{1}{6}e^{3t}
++\frac{1}{2}e^t+u(t-1)\left(\frac{2}{3}+\frac{1}{3}e^{3(t-1)}
+-e^{t-1}\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.5.15} Use the Laplace transform to solve the initial value problem.
+$y''+2y'+y=\left\{\begin{array}{cl}
+e^t,&0\le t<1,\\e^t-1,&t\ge 1,\end{array}\right.\;  y(0)=3,\;
+y'(0)=-1$
+\end{problem}
+
+\begin{problem}\label{exer:8.5.16}
+Use the Laplace transform to solve the initial value problem.
+$y''+2y'+y=\left\{\begin{array}{cl}
+4e^t,&0\le t<1,\\0,&t\ge 1,\end{array}\right.\;  y(0)=0,\;
+y'(0)=0$
+
+\begin{solution}
+$y''+2y'+y=4e^t-4u(t-1)e^t,\ y(0)=0,\ y'(0)=0$. Since
+$$
+{\cal L}\left(4u(t-1)e^t\right)=e^{-s}{\cal
+L}\left(4e^{(t+1)}\right)=\frac{4e^{-s+1}}{s-1},
+$$
+$$
+(s^2+2s+1)Y(s)=\frac{4}{s-1}-\frac{4e^{-s+1}}{s-1},\quad\mbox{ so}
+$$
+$$
+Y(s)=\frac{4}{(s-1)(s+1)^2}-\frac{4e^{-s+1}}{(s-1)(s+1)^2}.
+$$
+$$
+\frac{1}{(s-1)(s+1)^2}=\frac{A}{s-1}+\frac{B}{s+1}+
+\frac{C}{(s+1)^2},
+$$
+where
+$$
+A(s+1)^2+B(s-1)(s+1)+C(s-1)=4.
+$$
+$$
+\begin{array}{rcll}
+A&=&1&(\mbox{set }s=1);\\
+C&=&-2&(\mbox{set }s=-1);\\
+A+B&=&0&(\mbox{equate coefficients of }s^2).
+\end{array}
+$$
+Solving this system yields $A=1$, $B=-1$, $C=-2$. Therefore,
+$$
+\frac{1}{(s-1)(s+1)^2}=\frac{1}{s-1}-\frac{1}{s+1}-
+\frac{2}{(s+1)^2}\quad \mbox{and}
+$$
+\begin{eqnarray*}
+y&=&e^t-e^{-t}-2te^{-t}-eu(t-1)\left(e^{t-1}-e^{-(t-1)}-
+2(t-1)e^{-(t-1)}\right)\\
+&=&
+e^t-e^{-t}-2te^{-t}-u(t-1)\left(e^t-e^{-(t-2)}-2(t-1)e^{-(t-2)}\right).
+\end{eqnarray*}
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.5.17} Use the Laplace transform to solve the initial value problem.
+$y''+3y'+2y=\left\{\begin{array}{cl}
+e^{-t},&0\le t<1,\\0,&t\ge 1,\end{array}\right.\;  y(0)=1,\;  y'(0)=-1$
+\end{problem}
+
+\begin{problem}\label{exer:8.5.18} Use the Laplace transform to solve the initial value problem.
+$y''-4y'+4y=\left\{\begin{array}{rl}
+e^{2t},&0\le t<2,\\-e^{2t},&t\ge 2,\end{array}\right.\;  y(0)=0,\;
+y'(0)=-1$
+
+\begin{solution}
+$y''-4y'+4y=e^{2t}-2u(t-2)e^{2t},\ y(0)=0,\ y'(0)=-1$.
+Since
+$$
+{\cal L}\left(u(t-2)e^{2t}\right)=e^{-2s}{\cal
+L}\left(e^{2t+4}\right)=\frac{e^{-2s+4}}{s-2},
+$$
+$$
+(s^2-4s+4)Y(s)=\frac{1}{s-2}-\frac{2e^{-2s+4}}{s-2}-1,\quad\mbox{so}
+$$
+$$
+Y(s)=\frac{1}{(s-2)^3}-\frac{2e^{-2s+4}}{(s-2)^3}-\frac{1}{(s-2)^2}.
+$$
+$$
+\frac{1}{(s-2)^3}\leftrightarrow \frac{t^2e^{2t}}{2}\Rightarrow
+\frac{e^{-2s+4}}{(s-2)^3}\leftrightarrow\frac{e^4}{2}u(t-2)e^{2(t-2)}(t-2)^2
+=u(t-2)\frac{(t-2)^2e^{2t}}{2};
+$$
+therefore
+$y=\frac{t^2e^{2t}}{2}-te^{2t}-u(t-2)(t-2)^2e^{2t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.5.19} Use the Laplace transform to solve the initial value problem.  Graph the solution. 
+$y''=\left\{\begin{array}{cl}t^2,&0\le
+t<1,\\-t,&1\le t<2,\\t+1,&t\ge 2,\end{array}\right.\;  y(0)=1,\;
+y'(0)=0$
+\end{problem}
+
+\begin{problem}\label{exer:8.5.20} Use the Laplace transform to solve the initial value problem.
+$y''+2y'+2y=\left\{\begin{array}{rl}1,&0\le
+t<2\pi,\\t,&2\pi\le t<3\pi,\\-1,&t\ge 3\pi,\end{array}\right.\;
+y(0)=2,\quad y'(0)=-1$
+
+\begin{solution}
+$y''+2y'+2y=1+u(t-2\pi)(t-1)-u(t-3\pi)(t+1),\ y(0)=2,\ y'(0)=-1$;
+$$
+{\cal L}(u(t-2\pi)(t-1))=e^{-2\pi s}{\cal L}((t+2\pi-1))
+=e^{-2\pi s}\left(\frac{1}{s^2}+\frac{2\pi-1}{s}\right);
+$$
+$$
+{\cal L}(u(t-3\pi)(t+1))=e^{-3\pi s}{\cal L}((t+3\pi+1))
+=e^{-3\pi s}\left(\frac{1}{s^2}+\frac{3\pi+1}{s}\right);
+$$
+$$
+(s^2+2s+2)Y(s)=\frac{1}{s}+
+e^{-2\pi s}\left(\frac{1}{s^2}+\frac{2\pi-1}{s}\right)
+-e^{-3\pi s}\left(\frac{1}{s^2}+\frac{3\pi+1}{s}\right)+(-1+2s)+4.
+$$
+Let $G(s)=\frac{1}{s(s^2+2s+2)}$,
+ $H(s)=\frac{1}{s(s^2+2s+2)}$; then
+\begin{equation*}
+Y(s)=Y_1(s)+e^{-2\pi s}Y_2(s)-e^{-3\pi s}Y_3(s),\text{ (A)}
+\end{equation*}
+where
+\begin{equation*}
+Y_1(s)= G(s)+\frac{2s+3}{s^2+2s+2},\quad\text{ (B)}
+\end{equation*}
+\begin{equation*}
+Y_2(s)=H(s)+(2\pi-1)G(s),\quad\text{ (C)}
+\end{equation*}
+\begin{equation*}
+Y_3(s)=H(s)+(3\pi+1)G(s). \quad\text{ (D)}
+\end{equation*}
+Let $y_i(t)={\cal L}^{-1}(Y_i(s))$, $(i=1,2,3)$. From (A),
+\begin{equation*}
+y(t)=y_1(t)+u(t-2\pi)y_2(t-2\pi)-u(t-3\pi)y_3(t-3\pi).\quad\text{ (E)}
+\end{equation*}
+
+Find ${\cal L}^{-1}(G(s))$:
+$$
+G(s)=\frac{A}{s}+\frac{B(s+1)+C}{(s+1)^2+1}
+$$
+where
+$A((s+1)^2+1)+(B(s+1)+C)s=1$. Setting $s=0$ yields $A=1/2$;
+setting $s=-1$ yields $A-C=1$, so $C=-1/2$; since $A+B=0$
+(coefficient of $x^2$), $B=-1/2$. Therefore,
+\begin{equation*}
+G(s)=\frac{1}{2}\left(\frac{1}{s}-\frac{(s+1)+1}{(s+1)^2+1)}\right)
+\leftrightarrow \frac{1}{2}-\frac{1}{2}e^{-t}(\cos t+\sin t).
+\quad\text{ (F)}
+\end{equation*}
+
+
+Find ${\cal L}^{-1}(H(s))$:
+$$
+H(s)=\frac{A}{s}+\frac{B}{s+2}+\frac{C(s+1)+D}{(s+1)^2+1}
+$$
+where
+$(As+B)((s+1)^2+1)+(C(s+1)+D)s^2=1$.
+$$
+\begin{array}{rcrl}
+2B&=&1&(\mbox{set }s=0);\\
+-A+B+D&=&1& (\mbox{set }s=-1);\\
+5A+5B+2C+D&=&1& (\mbox{set }s=1);\\
+A+B=0&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields  $A=-1/2$, $B=1/2$, $C=1/2$, $D=0$;
+therefore
+\begin{equation*}
+H(s)=-\frac{1}{2}\left(\frac{1}{s}-\frac{1}{s^2}-\frac{s+1}{(s+1)^2+1)}\right)
+\leftrightarrow -\frac{1}{2}(1-t-e^{-t}\cos t). \quad\text{ (G)}
+\end{equation*}
+Since
+$$
+\frac{2s+3}{s^2+2s+2}=\frac{2(s+1)+1}{(s+1)^2+1}
+\leftrightarrow e^{-t}(2\cos t+\sin t),
+$$
+(B) and (F)) imply that
+\begin{equation*}
+y_1(t)=\frac{1}{2}e^{-t}(3\cos t+\sin t)+\frac{1}{2}.
+\quad\text{ (H)}
+\end{equation*}
+From (C), (F)), and (G),
+$$
+y_2(t)=\pi-1+\frac{t}{2}+(\pi-1) e^{-t}\cos t-\frac{2\pi-1}{2}e^{-t}\sin
+t,
+$$
+so
+\begin{equation*}
+y_2(t-2\pi)=-\left(
+e^{-(t-2\pi)}\left((\pi-1)\cos t+\frac{2\pi-1}{2}\sin t\right)+
+1-\frac{t}{2}\right). \quad\text{ (I)}
+\end{equation*}
+From (D), (F)), and (G),
+$$
+y_3(t)=\frac{1}{2}\left(-e^{-t}(3\pi\cos t+(3\pi+1)\sin
+t+t+3\pi)\right),
+$$
+so
+\begin{equation*}
+y_3(t-3\pi)=\frac{1}{2}\left(e^{-(t-3\pi)}(3\pi\cos t+(3\pi+1)\sin
+t+t)\right).  \quad\text{ (J)}
+\end{equation*}
+Now (E), (H), (I), and (J) imply
+
+$y=\frac{1}{2}e^{-t}(3\cos t+\sin t)+\frac{1}{2}$ imply that
+
+$-u(t-2\pi)\left(
+e^{-(t-2\pi)}\left((\pi-1)\cos t+\frac{2\pi-1}{2}\sin t\right)+
+1-\frac{t}{2}\right)$
+
+$-\frac{1}{2}u(t-3\pi)\left(e^{-(t-3\pi)}(3\pi\cos
+t+(3\pi+1)\sin t
+)+t\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.5.21} Solve the initial value problem $$ y''=f(t), \quad
+y(0)=0,\quad  y'(0)=0, $$ where $$ f(t)=m+1,\quad m\le t<m+1,\quad
+m=0,1,2,\dots. $$
+\end{problem}
+
+\begin{problem}\label{exer:8.5.22} Solve the given initial value problem and find a
+formula that does not involve step functions and represents $y$ on
+each interval of continuity of $f$.
+\begin{enumerate}
+\item % (a)
+$y''+y=f(t), \quad  y(0)=0,\quad  y'(0)=0$;
+
+$f(t)=m+1,\quad  m\pi\le t<(m+1)\pi,\quad m=0,1,2,\dots$.
+
+\begin{solution}
+$f(t)=\sum_{n=0}^\infty u(t-n\pi)$; $F(s)=\frac{1}{s}\sum_{n=0}^\infty e^{-n\pi s}$; $Y(s)=\frac{1}{s(s^2+1)}\sum_{n=0}^\infty e^{-n\pi s}$;
+ $\frac{1}{s(s^2+1)}=\frac{1}{s}-\frac{s}{s^2+1}
+\leftrightarrow 1-\cos t$;
+ $\frac{e^{-n\pi s}}{s(s^2+1)}\leftrightarrow
+u(t-n\pi)(1-\cos(t-n\pi))=u(t-n\pi)(1-(-1)^n\cos t)$;
+$y(t)=\sum_{n=0}^\infty u(t-n\pi)(1-(-1)^n\cos t)$. If $m\pi\le t<(m+1)\pi$,
+$y(t)=\sum_{n=0}^m (1-(-1)^n\cos t)$. Therefore,
+
+$y(t)=\left\{\begin{array}{cll}2m+1-\cos t,&2m\pi\le
+t<(2m+1)\pi&(m=0,1,\dots)\\ 2m,&(2m-1)\pi\le
+t<2m\pi&(m=1,2,\dots)\end{array}\right.$.
+
+\end{solution}
+
+\item % (b)
+$y''+y=f(t), \quad  y(0)=0,\quad y'(0)=0$;
+
+$f(t)=(m+1)t, \quad   2m\pi\le t<2(m+1)\pi,\quad m=0,1,2,\dots$
+
+\begin{hint}
+You'll need the formula
+$$
+1+2+\cdots+m=\frac{m(m+1)}{2}.
+$$  
+\end{hint}
+
+\begin{solution}
+$f(t)=\sum_{n=0}^\infty u(t-2n\pi)t$;
+ $F(s)=\sum_{n=0}^\infty e^{-2n\pi s}{\cal L}(t+2n\pi s)=
+\sum_{n=0}^\infty e^{-2n\pi s}\left(\frac{1}{s^2}+\frac{2n\pi}{s}\right)$;
+$Y(s)=\sum_{n=0}^\infty e^{-2n\pi s}Y_n(s)$, where
+$Y_n(s)=\frac{1}{s^2(s^2+1)}+\frac{2n\pi}{s(s^2+1)}
+=\frac{1}{s^2}-\frac{1}{s^2+1}+\frac{2n\pi}{s}-\frac{2n\pi}{s^2+1}
+\leftrightarrow y_n(t)=t-\sin t+2n\pi-2n\pi\cos t$.
+Since $\cos(t-2n\pi)=\cos t$ and $\sin(t-2n\pi)=\sin t$,
+$e^{-2n\pi s}Y_n(s)\leftrightarrow
+u(t-2n\pi)y_n(t)=u(t-2n\pi)(t-\sin t-2n\pi\cos t)$; therefore
+$y(t)=\sum_{n=0}^\infty u(t-2n\pi)(t-\sin t-2n\pi\cos t)$.
+If $2m\pi\le t<2(m+1)\pi$, then
+$$
+y(t)=\sum_{n=0}^m (t-\sin t-2n\pi\cos t)=
+(m+1)(t-\sin t-m\pi\cos t).
+$$
+\end{solution}
+
+\item % (c)
+$y''+y=f(t), \quad  y(0)=0,\quad  y'(0)=0$;
+
+$f(t)=(-1)^m,\quad  m\pi\le t<(m+1)\pi,\quad m=0,1,2,\dots.$
+
+\begin{solution}
+$f(t)=1+2\sum_{n=1}^\infty(-1)^n u(t-n\pi)$; $F(s)=\frac{1}{s}\left(1+2\sum_{n=1}^\infty(-1)^n e^{-n\pi s}\right)$;
+$Y(s)=\frac{1}{s(s^2+1)}\left(1+2\sum_{n=1}^\infty(-1)^n e^{-n\pi
+s}\right)$;
+ $\frac{1}{s(s^2+1)}=\frac{1}{s}-\frac{s}{s^2+1}
+\leftrightarrow 1-\cos t$;
+ $\frac{e^{-n\pi s}}{s(s^2+1)}\leftrightarrow
+u(t-n\pi)(1-\cos(t-n\pi))=u(t-n\pi)(1-(-1)^n\cos t)$;
+$y(t)=1-\cos t+
+2\sum_{n=1}^\infty(-1)^n u(t-n\pi)(1-(-1)^n\cos t)$. If
+$m\pi\le t<(m+1)\pi$,
+$$
+y(t)=1-\cos t+
+2\sum_{n=1}^m (-1)^n(1-(-1)^n\cos t)
+=(-1)^m-(2m+1)\cos t.
+$$
+\end{solution}
+
+\item % (d)
+$y''-y=f(t), \quad  y(0)=0,\quad  y'(0)=0$;
+
+$f(t)=m+1,\quad  m\le t<(m+1),\quad m=0,1,2,\dots.$
+
+\begin{hint}
+You will need the formula
+$$
+1+r+\cdots+r^m=\frac{1-r^{m+1}}{1-r}\; (r\ne1).
+$$
+\end{hint}
+
+\begin{solution}
+$f(t)=\sum_{n=0}^\infty u(t-n)$; $F(s)=\frac{1}{s}\sum_{n=0}^\infty e^{-ns}$; $Y(s)=\frac{1}{s(s^2-1)}\sum_{n=0}^\infty e^{-ns}$;
+ $\frac{1}{s(s^2-1)}=\frac{1}{2}\frac{1}{s-1}+\frac{1}{2}\frac{1}{s+1}-\frac{1}{s}
+\leftrightarrow \frac{1}{2}(e^t+e^{-t}-2)$;
+ $\frac{e^{-ns}}{s(s^2-1)}\leftrightarrow
+\frac{u(t-n)}{2}\left(e^t+e^{-t}-2\right)$;
+$y(t)=\frac{1}{2}
+\sum_{n=0}^\infty u(t-n)\left(e^{t-n}+e^{-(t-n)}-2\right)$. If $m\le
+t<(m+1)$,
+\begin{eqnarray*}
+y(t)&=&\frac{1}{2}
+\sum_{n=0}^m\left(e^{t-n}+e^{-(t-n)}-2\right)=
+\frac{1}{2}(e^{t-m}+e^{-t})\sum_{n=0}^me^n-m-1\\
+&=&\frac{1-e^{m+1}}{2(1-e)}(e^{t-m}+e^{-t})-m-1.
+\end{eqnarray*}
+\end{solution}
+
+\item % (e)
+$y''+2y'+2y=f(t), \quad  y(0)=0,\quad  y'(0)=0$;
+
+$f(t)=(m+1)(\sin t+2\cos t),\quad  2m\pi\le t<2(m+1)\pi,\quad
+m=0,1,2,\dots.$
+
+\begin{hint}
+You will need the formula
+$$
+1+r+\cdots+r^m=\frac{1-r^{m+1}}{1-r}\; (r\ne1).
+$$
+\end{hint}
+
+\begin{solution}
+$f(t)=(\sin t+2\cos t)\sum_{n=0}^\infty u(t-2n\pi)$;
+$F(s)=\frac{1+2s}{s^2+1}\sum_{n=0}^\infty e^{-2n\pi s}$;
+$Y(s)=\frac{1+2s}{(s^2+1)(s^2+2s+2)}\sum_{n=0}^\infty e^{-2n\pi s}$;
+$$
+\frac{1+2s}{(s^2+1)(s^2+2s+2)}=\frac{As+B}{s^2+1}+\frac{C(s+1)+D}{(s+1)^2+1}
+$$
+where
+$$
+(As+B)((s+1)^2+1)+(C(s+1)+D)(s^2+1)=1+2s.
+$$
+$$
+\begin{array}{rcrl}
+2B+C+D&=&1&(\mbox{set }s=0);\\
+-A+B+2D&=&-1& (\mbox{set }s=-1);\\
+5A+5B+4C+2D&=&3&(\mbox{set }s=1);\\
+A+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=0$, $B=1$,
+$C=0$, $D=-1$. Therefore,
+\begin{eqnarray*}
+\frac{1+2s}{(s^2+1)(s^2+2s+2)}
+&=&\frac{1}{s^2+1}-\frac{1}{(s+1)^2+1}
+\\&\leftrightarrow&\left(1-e^{-t}\right)\sin t.
+\end{eqnarray*}
+Since $\sin(t-2n\pi)=\sin t$,
+$$
+e^{-2n\pi s}{1+2s\over(s^2+1)(s^2+2s+2)}\leftrightarrow
+u(t-2n\pi)\left(1-e^{-(t-2n\pi)}\right)\sin t,
+$$
+so
+$$
+y(t)=\sin t\sum_{n=0}^\infty u(t-2n\pi)\left(1-e^{-(t-2n\pi)}\right).
+$$
+If $2m\pi\le t<2(m+1)\pi$,
+$$
+y(t)=\sin t\sum_{n=0}^m\left(1-e^{-(t-2n\pi)}\right)=
+\left(m+1-\left(\frac{1-e^{2(m+1)\pi}}{1-e^{2\pi}}\right)e^{-t}\right)\sin t.
+$$
+\end{solution}
+
+\item % (f)
+$y''-3y'+2y=f(t), \quad  y(0)=0,\quad y'(0)=0$;
+
+$f(t)=m+1,\quad  m\le t<m+1,\quad m=0,1,2,\dots.$
+
+\begin{hint}
+You will need the formulas
+$$
+1+2+\cdots+m=\frac{m(m+1)}{2}.
+$$ 
+and
+$$
+1+r+\cdots+r^m=\frac{1-r^{m+1}}{1-r}\; (r\ne1).
+$$
+\end{hint}
+\end{enumerate}
+
+\begin{solution}
+$f(t)=\sum_{n=0}^\infty u(t-n)$; $F(s)=\frac{1}{s}\sum_{n=0}^\infty e^{-ns}$; $Y(s)=\frac{1}{s(s-1)(s-2)}$;
+$$
+\frac{1}{s(s-1)(s-2)}=\frac{1}{2s}-\frac{1}{s-1}+\frac{1}{2}\frac{1}{s-2}
+\leftrightarrow \frac{1}{2}\left(1-2e^t+e^{2t}\right);
+$$
+$$
+\frac{e^{-ns}}{s(s-1)(s-2)}
+\leftrightarrow \frac{1}{2}u(t-n)\left(1-2e^{t-n}+e^{2(t-n)}\right);
+$$
+$$
+y(t)=\frac{1}{2}\sum_{n=0}^\infty
+u(t-n)\left(1-2e^{t-n}+e^{2(t-n)}\right).
+$$
+If $m\le t< m+1$,
+\begin{eqnarray*}
+y(t)&=&\sum_{n=0}^m\left(1-2e^{t-n}+e^{2(t-n)}\right)
+=\frac{m+1}{2}-e^{t-m}\sum_{n=0}^m e^n
+ +\frac{1}{2}e^{2(t-m)}\sum_{n=0}^m e^{2n}\\
+&=&\frac{m+1}{2}-e^{t-m}\frac{1-e^{m+1}}{1-e}+\frac{1}{2}e^{2(t-m)}\frac{1-e^{2m+2}}{1-e^2}.
+\end{eqnarray*}
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:8.5.23}
+\begin{enumerate}
+\item % (a)
+Let $g$ be  continuous on  $(\alpha,\beta)$
+ and differentiable on the  $(\alpha,t_0)$
+and $(t_0,\beta)$. Suppose $A=\lim_{t\to t_0-}g'(t)$
+and $B=\lim_{t\to t_0+}g'(t)$ both exist. Use the mean value theorem
+to show that
+$$
+\lim_{t\to t_0-}{g(t)-g(t_0)\over t-t_0}=A\quad\mbox{ and }\quad
+\lim_{t\to t_0+}\frac{g(t)-g(t_0)}{t-t_0}=B.
+$$
+\item % (b)
+Show we can conclude $g'(t_0)$ exists and $g'$ is continuous at
+$t_0$ if $A=B$.
+
+\item\label{exer:8.5.23c} % (c) 
+Show we can also conclude
+ that if $g$  is differentiable on $(\alpha,\beta)$ then
+$g'$ cannot have a jump discontinuity on $(\alpha,\beta)$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.5.24}
+\begin{enumerate}
+\item % (a)
+Let $a$, $b$, and $c$ be constants, with $a\ne0$. Let $f$ be piecewise
+continuous on an interval $(\alpha,\beta)$, with a single jump
+discontinuity at a point $t_0$ in $(\alpha,\beta)$. Suppose $y$
+and $y'$ are continuous on $(\alpha,\beta)$ and $y''$ on
+$(\alpha,t_0)$ and $(t_0,\beta)$. Suppose  also that
+$$
+ay''+by'+cy=f(t) \quad
+\quad\text{(A)}
+$$
+on $(\alpha,t_0)$ and $(t_0,\beta)$.
+Show that
+$$
+y''(t_0+)-y''(t_0-)=\frac{f(t_0+)-f(t_0-)}{a}\ne0.
+$$
+
+\begin{solution}
+The assumptions imply that
+$y''(t)=\frac{f(t)-by'(t)-cy(t)}{a}$  on $(\alpha,t_0)$
+and $(t_0,\beta)$,
+$y''(t_0+)=\frac{f(t_0+)-by'(t_0)-cy(t_0)}{a}$, and
+$y''(t_0-)=\frac{f(t_0-)-by'(t_0)-cy(t_0)}{a}$. This implies the conclusion.
+\end{solution}
+
+\item % (b)
+Use the above exercise and Exercise~\ref{exer:8.5.23c} to show that
+(A)
+does not  have  solutions on any interval $(\alpha,\beta)$ that contain a jump discontinuity of $f$.
+\end{enumerate}
+
+\begin{solution}
+Since $y''$ has a jump discontinuity at $t_0$, applying
+Exercise~\ref{exer:8.5.23c} to $y'$  shows that $y'$
+is not differentiable at $t_0$. Therefore,$y$ cannot satisfy
+(A) on $(\alpha,\beta)$ if $f$ has a jump discontinuity at some
+$t_0$ in $(\alpha,\beta)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.5.25}
+Suppose $P_0,P_1$, and $P_2$ are continuous and $P_0$
+has no zeros on an open interval $(a,b)$, and  that $F$
+has a jump discontinuity at a point $t_0$ in $(a,b)$.
+Show that the differential equation
+$$
+P_0(t)y''+P_1(t)y'+P_2(t)y=F(t)
+$$
+has no solutions on $(a,b)$.
+
+\begin{hint}
+Generalize the result of
+Exercise~$\ref{exer:8.5.24}$ and use Exercise~$\ref{exer:8.5.23c}$.
+\end{hint}
+\end{problem}
+
+\begin{problem}\label{exer:8.5.26}
+Let $0=t_0<t_1<\cdots <t_n$. Suppose $f_m$ is continuous
+on $[t_m,\infty)$ for $m=1,\dots,n$.
+ Let
+$$
+f(t)=
+\left\{\begin{array}{cl}
+f_m(t),&t_m\le t< t_{m+1},\quad m=1,\dots,n-1,\\
+f_n(t),&t\ge t_n.
+\end{array}\right.
+$$
+Show that the
+solution of
+$$
+ay''+by'+cy=f(t), \quad  y(0)=k_0,\quad y'(0)=k_1,
+$$
+as defined following  Theorem~\ref{thmtype:8.5.1}, is given by
+$$
+y=\left\{\begin{array}{cl}
+ z_0(t),&0\le t<t_1,\\ 
+z_0(t)+ z_1(t),&t_1\le t<t_2,\\
+&\vdots\\
+z_0+\cdots+z_{n-1}(t),&t_{n-1}\le t<t_n,\\ 
+z_0+\cdots+ z_n(t),&t\ge t_n,
+\end{array}\right.
+$$
+where $z_0$ is the solution of
+$$
+az''+bz'+cz=f_0(t), \quad  z(0)=k_0,\quad  z'(0)=k_1
+$$
+and $z_m$ is the solution of
+$$
+az''+bz'+cz=f_m(t)-f_{m-1}(t), \quad  z(t_m)=0,\quad z'(t_m)=0
+$$
+for $m=1,\dots,n$.
+
+\begin{solution}
+If $0\le t<t_0$, then $y(t)=z_0(t)$. Therefore,
+$y(0)=z_0(0)=k_0$ and $y'(0)=z'(0)=k_1$, and
+$$
+ay''+by'+cy=az_0''+bz_0'+cz_0=f_0(t)=f(t),\quad 0<t<t_0.
+$$
+
+Now suppose that $1\le m\le n$.
+For convenience, define $t_{n+1}=\infty$.
+If $t_m\le t<t_{m+1}$, then $y(t)=\sum_{k=0}^m z_m(t)$, so
+$$
+ay''+by+cy=\sum_{k=0}^m(az_k''+bz_k'+cz_k)
+=f_0+\sum_{k=1}^m(f_k-f_{k-1})=f_m=f,\quad t_m<t<t_{m+1}.
+$$
+Thus, $y$ satisfies $ay''+by'+cy=f$ on any open interval that does not
+contain any of the points $t_1$, $t_2$,\dots, $t_n$.
+
+Since $z(t_m)=z'(t_m)$ for $m=1,2,\dots$, $y$ and $y'$
+are continuous on $[0,\infty)$. Since
+$y''(t)=-(by'(t)+cy(t))/a$ if $t\ne t_m$ ($m=1,2,\dots$),
+$y''$ has limits from the left at  $t_1,\dots,t_n$.
+\end{solution}
+\end{problem}
+
+
+\end{document}

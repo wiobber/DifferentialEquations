@@ -1,0 +1,782 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+Most of the following numerical exercises involve initial value
+problems considered in the exercises in Sections~3.2.
+ You'll find it instructive to compare the results that you
+obtain here with the corresponding results that you obtained in those
+sections.
+
+\begin{problem}\label{exer:3.3.1} Use the Runge-Kutta method to
+find approximate values of the solution of the given initial value
+problem at the points $x_i=x_0+ih,$ where $x_0$ is the point where
+the initial condition is imposed and $i=1$, $2$.
+$$y'=2x^2+3y^2-2,\quad y(2)=1;\quad h=0.05$$
+\end{problem}
+
+\begin{problem}\label{exer:3.3.2} Use the Runge-Kutta method to
+find approximate values of the solution of the given initial value
+problem at the points $x_i=x_0+ih,$ where $x_0$ is the point where
+the initial condition is imposed and $i=1$, $2$.
+$$y'=y+\sqrt{x^2+y^2},\quad y(0)=1;\quad h=0.1$$
+
+\begin{solution}
+    $y_1=1.221551366,\ y_2=1.492920208$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.3.3} Use the Runge-Kutta method to
+find approximate values of the solution of the given initial value
+problem at the points $x_i=x_0+ih,$ where $x_0$ is the point where
+the initial condition is imposed and $i=1$, $2$.
+$$y'+3y=x^2-3xy+y^2,\quad y(0)=2;\quad h=0.05$$
+\end{problem}
+
+\begin{problem}\label{exer:3.3.4} Use the Runge-Kutta method to
+find approximate values of the solution of the given initial value
+problem at the points $x_i=x_0+ih,$ where $x_0$ is the point where
+the initial condition is imposed and $i=1$, $2$.
+$$y'=\frac{1+x}{1-y^2},\quad y(2)=3;\quad h=0.1$$
+
+\begin{solution}
+    $ y_1=2.961316248$;\ $ y_2=2.920128958$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.3.5} Use the Runge-Kutta method to
+find approximate values of the solution of the given initial value
+problem at the points $x_i=x_0+ih,$ where $x_0$ is the point where
+the initial condition is imposed and $i=1$, $2$.
+$$y'+x^2y=\sin xy,\quad y(1)=\pi;\quad h=0.2$$
+\end{problem}
+
+\begin{problem}\label{exer:3.3.6}
+Use  the Runge-Kutta method with step sizes $h=0.1$, $h=0.05$, and
+$h=0.025$ to
+find approximate values of the solution of the initial value problem
+$$
+y'+3y=7e^{4x},\quad y(0)=2,
+$$
+at $x=0$, $0.1$, $0.2$, $0.3$, \dots, $1.0$. Compare these approximate
+values with the
+values of the exact solution $y=e^{4x}+e^{-3x}$, which can be obtained
+by the method of Section~2.1. Present your results in a table
+like Table~\ref{table:3.3.1}.
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|}\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{Exact}\\ \hline
+0.0 &   2.000000000 &  2.000000000 &  2.000000000 &   2.000000000 \\
+0.1 &   2.232752507 &  2.232649573 &  2.232643327 &   2.232642918 \\
+0.2 &   2.774582759 &  2.774366625 &  2.774353431 &   2.774352565 \\
+0.3 &   3.727068686 &  3.726710028 &  3.726688030 &   3.726686582 \\
+0.4 &   5.254817388 &  5.254263005 &  5.254228886 &   5.254226636 \\
+0.5 &   7.613077020 &  7.612241222 &  7.612189662 &   7.612186259 \\
+0.6 &  11.189806778 & 11.188557546 & 11.188480365 &  11.188475269 \\
+0.7 &  16.569088310 & 16.567225975 & 16.567110808 &  16.567103199 \\
+0.8 &  24.626206255 & 24.623431201 & 24.623259496 &  24.623248150 \\
+0.9 &  36.669848687 & 36.665712858 & 36.665456874 &  36.665439956 \\
+1.0 &  54.654509699 & 54.648344019 & 54.647962328 &  54.647937102 \\
+\hline
+\end{tabular}}
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.3.7} 
+Use the Runge-Kutta method with step sizes $h=0.1$, $h=0.05$, and
+$h=0.025$ to find approximate values of the solution of the initial
+value problem
+$$
+y'+\frac{2}{x}y=\frac{3}{x^3}+1,\quad y(1)=1
+$$
+at $x=1.0$, $1.1$, $1.2$, $1.3$, \dots, $2.0$. Compare these approximate
+values
+with the values of the exact solution
+$$
+y=\frac{1}{3x^2}(9\ln x+x^3+2),
+$$
+which can be obtained by the method of Section~2.1. Present
+your results in a table like Table~\ref{table:3.3.1}.
+\end{problem}
+
+\begin{problem}\label{exer:3.3.8} 
+Use the Runge-Kutta method with step sizes $h=0.05$, $h=0.025$, and
+$h=0.0125$ to find approximate values of the solution of the initial
+value problem
+$$
+y'=\frac{y^2+xy-x^2}{x^2},\quad y(1)=2
+$$
+at $x=1.0$, $1.05$, $1.10$, $1.15$ \dots, $1.5$. Compare these approximate
+values
+with the values of the exact solution
+$$
+y=\frac{x(1+x^2/3)}{1-x^2/3},
+$$
+which was obtained in Example~\ref{example:2.2.3}. Present your results in
+a table like Table~\ref{table:3.3.1}.
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|}\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{$h=0.0125$}&
+\multicolumn{1}{|c|}{Exact}\\ \hline
+1.00 &  2.000000000 &  2.000000000 &  2.000000000 &  2.000000000 \\
+1.05 &  2.270153785 &  2.270157806 &  2.270158083 &  2.270158103 \\
+1.10 &  2.587139846 &  2.587150083 &  2.587150789 &  2.587150838 \\
+1.15 &  2.963242415 &  2.963262317 &  2.963263689 &  2.963263785 \\
+1.20 &  3.415346864 &  3.415382020 &  3.415384445 &  3.415384615 \\
+1.25 &  3.967327077 &  3.967386886 &  3.967391015 &  3.967391304 \\
+1.30 &  4.654089950 &  4.654191000 &  4.654197983 &  4.654198473 \\
+1.35 &  5.528794615 &  5.528968045 &  5.528980049 &  5.528980892 \\
+1.40 &  6.676590929 &  6.676900116 &  6.676921569 &  6.676923077 \\
+1.45 &  8.242960669 &  8.243549415 &  8.243590428 &  8.243593315 \\
+1.50 & 10.498658198 & 10.499906266 & 10.499993820 & 10.500000000 \\
+\hline
+\end{tabular}}
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.3.9}
+In Example~\ref{example:2.2.3} it was shown that
+$$
+y^5+y=x^2+x-4
+$$
+is an implicit solution of  the initial value problem
+\begin{equation}\label{eqA:3.3.9}
+y'=\frac{2x+1}{5y^4+1},\quad y(2)=1.
+\end{equation}
+Use the Runge-Kutta method with step sizes $h=0.1$, $h=0.05$, and
+$h=0.025$ to find approximate values of the solution of (\ref{eqA:3.3.9}) at
+$x=2.0$, $2.1$, $2.2$, $2.3$, \dots, $3.0$. Present your results in tabular form.
+To check the error in these approximate values, construct another
+table of values of the residual
+$$
+  R(x,y)=y^5+y-x^2-x+4
+$$
+for each value of $(x,y)$ appearing in the first table.
+\end{problem}
+
+\begin{problem}\label{exer:3.3.10} 
+You can see from Example~\ref{example:2.5.1} that
+$$
+x^4y^3+x^2y^5+2xy=4
+$$
+is an implicit solution of  the initial value problem
+\begin{equation}\label{eqA:3.3.10}
+y'=-\frac{4x^3y^3+2xy^5+2y}{3x^4y^2+5x^2y^4+2x},\quad y(1)=1.
+\end{equation}
+Use the Runge-Kutta method with step sizes $h=0.1$, $h=0.05$, and
+$h=0.025$ to find approximate values of the solution of (\ref{eqA:3.3.10}) at
+$x=1.0$, $1.1$, $1.2$, $1.3$, \dots, $2.0$. Present your results in tabular form.
+To check the error in these approximate values, construct another
+table of values of the residual
+$$
+R(x,y)=x^4y^3+x^2y^5+2xy-4
+$$
+for each value of $(x,y)$ appearing in the first table.
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|r|r|}\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}\\ \hline
+1.0 & 1.000000000 & 1.000000000 & 1.000000000 & 0.000000000 &  0.0000000000 &   0.00000000000\\
+1.1 & 0.923730622 & 0.923730677 & 0.923730681 &-0.000000608 & -0.0000000389 &  -0.00000000245 \\
+1.2 & 0.854443253 & 0.854443324 & 0.854443328 &-0.000000819 & -0.0000000529 &  -0.00000000335 \\
+1.3 & 0.791581155 & 0.791581218 & 0.791581222 &-0.000000753 & -0.0000000495 &  -0.00000000316 \\
+1.4 & 0.734680497 & 0.734680538 & 0.734680541 &-0.000000523 & -0.0000000359 &  -0.00000000233 \\
+1.5 & 0.683288034 & 0.683288051 & 0.683288052 &-0.000000224 & -0.0000000178 &  -0.00000000122 \\
+1.6 & 0.636937046 & 0.636937040 & 0.636937040 & 0.000000079 &  0.0000000006 &  -0.00000000009 \\
+1.7 & 0.595153053 & 0.595153029 & 0.595153028 & 0.000000351 &  0.0000000171 &   0.00000000093 \\
+1.8 & 0.557469558 & 0.557469522 & 0.557469520 & 0.000000578 &  0.0000000309 &   0.00000000179 \\
+1.9 & 0.523443129 & 0.523443084 & 0.523443081 & 0.000000760 &  0.0000000421 &   0.00000000248 \\
+2.0 & 0.492663789 & 0.492663738 & 0.492663736 & 0.000000902 &  0.0000000508 &   0.00000000302 \\
+\hline
+&\multicolumn{3}{c|}{Approximate Solutions}&
+\multicolumn{3}{c|}{Residuals}\\\hline
+\end{tabular}}
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.3.11} 
+Use the Runge-Kutta method with step sizes $h=0.1$, $h=0.05$, and
+$h=0.025$ to find approximate values of the solution of the initial
+value problem
+$$
+(3y^2+4y)y'+2x+\cos x=0, \quad y(0)=1 
+$$
+at $x=0$, $0.1$, $0.2$, $0.3$, \dots, $1.0$.  (See Problem \ref{exer:2.2.13}.)
+\end{problem}
+
+\begin{problem}\label{exer:3.3.12}
+Use the Runge-Kutta method with step sizes $h=0.1$, $h=0.05$, and
+$h=0.025$ to find approximate values of the solution of the initial
+value problem
+$$
+y'+\frac{(y+1)(y-1)(y-2)}{x+1}=0, \quad y(1)=0
+$$
+at $x=1.0$, $1.1$, $1.2$, $1.3$, \dots, $2.0$.  (See Problem \ref{exer:2.2.14}.)
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|r|}
+\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+1.0 &  0.000000000 &  0.000000000 &  0.000000000 &  0.000000000 \\
+1.1 & -0.099663901 & -0.099663994 & -0.099664000 & -0.099664000 \\
+1.2 & -0.197315322 & -0.197315504 & -0.197315516 & -0.197315517 \\
+1.3 & -0.291035700 & -0.291035983 & -0.291036001 & -0.291036003 \\
+1.4 & -0.379167790 & -0.379168194 & -0.379168220 & -0.379168221 \\
+1.5 & -0.460450005 & -0.460450552 & -0.460450587 & -0.460450590 \\
+1.6 & -0.534084875 & -0.534085579 & -0.534085623 & -0.534085626 \\
+1.7 & -0.599736802 & -0.599737663 & -0.599737717 & -0.599737720 \\
+1.8 & -0.657472724 & -0.657473726 & -0.657473788 & -0.657473792 \\
+1.9 & -0.707669346 & -0.707670460 & -0.707670529 & -0.707670533 \\
+2.0 & -0.750911103 & -0.750912294 & -0.750912367 & -0.750912371 \\
+\hline
+\end{tabular}}
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.3.13}
+Use the Runge-Kutta method and the Runge-Kutta  semilinear method
+with step sizes
+$h=0.1$, $h=0.05$, and $h=0.025$ to find approximate values of the
+solution of the initial value problem
+$$
+y'+3y=e^{-3x}(1-4x+3x^2-4x^3),\quad y(0)=-3
+$$
+at $x=0$, $0.1$, $0.2$, $0.3$, \dots, $1.0$. Compare these approximate values with the values of the exact solution $y=-e^{-3x}(3-x+2x^2-x^3+x^4)$, which
+can be obtained by the method of Section~2.1. Do
+you notice anything special about the results? Explain.
+\end{problem}
+
+\begin{problem}\label{exer:3.3.14} The following linear initial value problems can't be solved exactly in terms of known elementary functions. Use the Runge-Kutta and the Runge-Kutta semilinear methods with the
+indicated step sizes to find approximate values of the solution of the given initial value problem at $11$ equally spaced points (including the endpoints) in the interval.
+
+$$y'-2y=\frac{1}{1+x^2},\quad y(2)=2$$ 
+$h=0.1,0.05,0.025$ on $[2,3]$.
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Runge--Kutta method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+2.0 &  2.000000000 &  2.000000000 &  2.000000000 &  2.000000000 \\
+2.1 &  2.464113907 &  2.464119185 &  2.464119544 &  2.464119569 \\
+2.2 &  3.029389360 &  3.029402271 &  3.029403150 &  3.029403212 \\
+2.3 &  3.718384519 &  3.718408199 &  3.718409812 &  3.718409925 \\
+2.4 &  4.558632516 &  4.558671116 &  4.558673746 &  4.558673929 \\
+2.5 &  5.583745479 &  5.583804456 &  5.583808474 &  5.583808754 \\
+2.6 &  6.834762639 &  6.834849135 &  6.834855028 &  6.834855438 \\
+2.7 &  8.361796619 &  8.361919939 &  8.361928340 &  8.361928926 \\
+2.8 & 10.226043942 & 10.226216159 & 10.226227891 & 10.226228709 \\
+2.9 & 12.502240429 & 12.502477158 & 12.502493285 & 12.502494409 \\
+3.0 & 15.281660036 & 15.281981407 & 15.282003300 & 15.282004826 \\
+ \hline
+\end{tabular}}
+
+{\small
+\begin{tabular}{|c|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Runge--Kutta semilinear method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+2.0 &  2.000000000 &  2.000000000 &  2.000000000 &  2.000000000 \\
+2.1 &  2.464119623 &  2.464119573 &  2.464119570 &  2.464119569 \\
+2.2 &  3.029403325 &  3.029403219 &  3.029403212 &  3.029403212 \\
+2.3 &  3.718410105 &  3.718409936 &  3.718409925 &  3.718409925 \\
+2.4 &  4.558674188 &  4.558673945 &  4.558673930 &  4.558673929 \\
+2.5 &  5.583809105 &  5.583808776 &  5.583808755 &  5.583808754 \\
+2.6 &  6.834855899 &  6.834855467 &  6.834855440 &  6.834855438 \\
+2.7 &  8.361929516 &  8.361928963 &  8.361928928 &  8.361928926 \\
+2.8 & 10.226229456 & 10.226228756 & 10.226228712 & 10.226228709 \\
+2.9 & 12.502495345 & 12.502494468 & 12.502494413 & 12.502494409 \\
+3.0 & 15.282005990 & 15.282004899 & 15.282004831 & 15.282004826 \\
+\hline
+\end{tabular}}
+\end{solution}
+    
+\end{problem}
+
+\begin{problem}\label{exer:3.3.15} The following linear initial value problems can't be solved exactly in terms of known elementary functions. Use the Runge-Kutta and the Runge-Kutta semilinear methods with the
+indicated step sizes to find approximate values of the solution of the given initial value problem at $11$ equally spaced points (including the endpoints) in the interval.
+
+$$y'+2xy=x^2,\quad y(0)=3$$
+$h=0.2,0.1,0.05$ on $[0,2]$.
+(See Problem \ref{exer:2.1.38}.)
+\end{problem}
+
+\begin{problem}\label{exer:3.3.16} The following linear initial value problems can't be solved exactly in terms of known elementary functions. Use the Runge-Kutta and the Runge-Kutta semilinear methods with the
+indicated step sizes to find approximate values of the solution of the given initial value problem at $11$ equally spaced points (including the endpoints) in the interval.
+$$y'+\frac{1}{x}y=\frac{\sin x}{x^2},\quad y(1)=2$$
+$h=0.2,0.1,0.05$ on $[1,3]$.
+(See Problem \ref{exer:2.1.39}.)
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Runge--Kutta method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.2$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+1.0 & 2.000000000 & 2.000000000 & 2.000000000 & 2.000000000 \\
+1.2 & 1.801636785 & 1.801636775 & 1.801636774 & 1.801636774 \\
+1.4 & 1.650102633 & 1.650102617 & 1.650102616 & 1.650102616 \\
+1.6 & 1.526935904 & 1.526935886 & 1.526935885 & 1.526935885 \\
+1.8 & 1.422074302 & 1.422074284 & 1.422074283 & 1.422074283 \\
+2.0 & 1.329664970 & 1.329664954 & 1.329664953 & 1.329664953 \\
+2.2 & 1.246155357 & 1.246155345 & 1.246155344 & 1.246155344 \\
+2.4 & 1.169334355 & 1.169334347 & 1.169334346 & 1.169334346 \\
+2.6 & 1.097812074 & 1.097812070 & 1.097812069 & 1.097812069 \\
+2.8 & 1.030719113 & 1.030719114 & 1.030719114 & 1.030719114 \\
+3.0 & 0.967523147 & 0.967523152 & 0.967523153 & 0.967523153 \\
+\hline
+\end{tabular}}
+
+{\small
+\begin{tabular}{|c|r|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Runge--Kutta semilinear method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.2$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+1.0 & 2.000000000 & 2.000000000 & 2.000000000 & 2.000000000 \\
+1.2 & 1.801636785 & 1.801636775 & 1.801636774 & 1.801636774 \\
+1.4 & 1.650102633 & 1.650102617 & 1.650102616 & 1.650102616 \\
+1.6 & 1.526935904 & 1.526935886 & 1.526935885 & 1.526935885 \\
+1.8 & 1.422074302 & 1.422074284 & 1.422074283 & 1.422074283 \\
+2.0 & 1.329664970 & 1.329664954 & 1.329664953 & 1.329664953 \\
+2.2 & 1.246155357 & 1.246155345 & 1.246155344 & 1.246155344 \\
+2.4 & 1.169334355 & 1.169334347 & 1.169334346 & 1.169334346 \\
+2.6 & 1.097812074 & 1.097812070 & 1.097812069 & 1.097812069 \\
+2.8 & 1.030719113 & 1.030719114 & 1.030719114 & 1.030719114 \\
+3.0 & 0.967523147 & 0.967523152 & 0.967523153 & 0.967523153 \\
+\hline
+\end{tabular}}
+\end{solution}
+
+\end{problem}
+
+\begin{problem}\label{exer:3.3.17} The following linear initial value problems can't be solved exactly in terms of known elementary functions. Use the Runge-Kutta and the Runge-Kutta semilinear methods with the
+indicated step sizes to find approximate values of the solution of the given initial value problem at $11$ equally spaced points (including the endpoints) in the interval.
+$$y'+y=\frac{e^{-x}\tan x}{x},\quad y(1)=0$$
+$h=0.05,0.025,0.0125$ on $[1,1.5]$.
+(See Problem \ref{exer:2.1.40}.)
+
+\end{problem}
+
+\begin{problem}\label{exer:3.3.18} The following linear initial value problems can't be solved exactly in terms of known elementary functions. Use the Runge-Kutta and the Runge-Kutta semilinear methods with the
+indicated step sizes to find approximate values of the solution of the given initial value problem at $11$ equally spaced points (including the endpoints) in the interval.
+$$y'+\frac{2x}{1+x^2}y=\frac{e^x}{(1+x^2)^2}, \quad y(0)=1$$
+$h=0.2,0.1,0.05$ on $[0,2]$.
+ (See Problem \ref{exer:2.1.41}.)
+
+ \begin{solution}
+     {\small
+\begin{tabular}{|c|r|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Runge--Kutta method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.2$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+0.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+0.2 & 1.171515610 & 1.171515156 & 1.171515152 & 1.171515153 \\
+0.4 & 1.263365845 & 1.263370556 & 1.263370869 & 1.263370891 \\
+0.6 & 1.271238957 & 1.271250529 & 1.271251232 & 1.271251278 \\
+0.8 & 1.218885528 & 1.218900353 & 1.218901230 & 1.218901287 \\
+1.0 & 1.135346772 & 1.135361174 & 1.135362016 & 1.135362070 \\
+1.2 & 1.042049558 & 1.042061864 & 1.042062579 & 1.042062625 \\
+1.4 & 0.951181964 & 0.951191920 & 0.951192495 & 0.951192532 \\
+1.6 & 0.868372923 & 0.868380842 & 0.868381298 & 0.868381328 \\
+1.8 & 0.795511927 & 0.795518241 & 0.795518603 & 0.795518627 \\
+2.0 & 0.732633229 & 0.732638318 & 0.732638609 & 0.732638628 \\
+\hline
+\end{tabular}}
+
+{\small
+\begin{tabular}{|c|r|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Runge--Kutta semilinear method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.2$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+0.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+0.2 & 1.171517316 & 1.171515284 & 1.171515161 & 1.171515153 \\
+0.4 & 1.263374485 & 1.263371110 & 1.263370904 & 1.263370891 \\
+0.6 & 1.271254636 & 1.271251485 & 1.271251291 & 1.271251278 \\
+0.8 & 1.218903802 & 1.218901442 & 1.218901297 & 1.218901287 \\
+1.0 & 1.135363869 & 1.135362181 & 1.135362077 & 1.135362070 \\
+1.2 & 1.042063952 & 1.042062706 & 1.042062630 & 1.042062625 \\
+1.4 & 0.951193560 & 0.951192595 & 0.951192536 & 0.951192532 \\
+1.6 & 0.868382157 & 0.868381378 & 0.868381331 & 0.868381328 \\
+1.8 & 0.795519315 & 0.795518669 & 0.795518629 & 0.795518627 \\
+2.0 & 0.732639212 & 0.732638663 & 0.732638630 & 0.732638628 \\
+\hline
+\end{tabular}}
+
+ \end{solution}
+ \end{problem}
+
+\begin{problem}\label{exer:3.3.19} The following linear initial value problems can't be solved exactly in terms of known elementary functions. Use the Runge-Kutta and the Runge-Kutta semilinear methods with the
+indicated step sizes to find approximate values of the solution of the given initial value problem at $11$ equally spaced points (including the endpoints) in the interval.
+$$xy'+(x+1)y=e^{x^2},\quad y(1)=2$$
+$h=0.05,0.025,0.0125$ on $[1,1.5]$.
+(See Problem \ref{exer:2.1.42}.)
+\end{problem}
+
+\begin{problem}\label{exer:3.3.20} Use the Runge-Kutta method and the Runge-Kutta semilinear method with the indicated step sizes to find approximate values of the solution of the given initial value problem at $11$ equally spaced points (including the endpoints) in the interval.
+$$y'+3y=xy^2(y+1),\quad y(0)=1$$
+$h=0.1,0.05,0.025$ on $[0,1]$.
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Runge--Kutta method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+0.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+0.1 & 0.746430962 & 0.746418992 & 0.746418376 & 0.746418339 \\
+0.2 & 0.561761987 & 0.561743921 & 0.561742975 & 0.561742917 \\
+0.3 & 0.423746057 & 0.423725371 & 0.423724274 & 0.423724207 \\
+0.4 & 0.319489811 & 0.319468612 & 0.319467478 & 0.319467408 \\
+0.5 & 0.240486460 & 0.240466046 & 0.240464947 & 0.240464879 \\
+0.6 & 0.180646105 & 0.180627244 & 0.180626225 & 0.180626161 \\
+0.7 & 0.135412569 & 0.135395665 & 0.135394749 & 0.135394692 \\
+0.8 & 0.101308709 & 0.101293911 & 0.101293107 & 0.101293057 \\
+0.9 & 0.075663769 & 0.075651059 & 0.075650367 & 0.075650324 \\
+1.0 & 0.056426886 & 0.056416137 & 0.056415552 & 0.056415515 \\
+\hline
+\end{tabular}}
+
+{\small
+\begin{tabular}{|c|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{
+ Runge--Kutta  semilinear method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+0.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+0.1 & 0.746416306 & 0.746418217 & 0.746418332 & 0.746418339 \\
+0.2 & 0.561740647 & 0.561742780 & 0.561742908 & 0.561742917 \\
+0.3 & 0.423722193 & 0.423724084 & 0.423724199 & 0.423724207 \\
+0.4 & 0.319465760 & 0.319467308 & 0.319467402 & 0.319467408 \\
+0.5 & 0.240463579 & 0.240464800 & 0.240464874 & 0.240464879 \\
+0.6 & 0.180625156 & 0.180626100 & 0.180626158 & 0.180626161 \\
+0.7 & 0.135393924 & 0.135394645 & 0.135394689 & 0.135394692 \\
+0.8 & 0.101292474 & 0.101293021 & 0.101293055 & 0.101293057 \\
+0.9 & 0.075649884 & 0.075650297 & 0.075650322 & 0.075650324 \\
+1.0 & 0.056415185 & 0.056415495 & 0.056415514 & 0.056415515 \\
+\hline
+\end{tabular}}
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.3.21} Use the Runge-Kutta method and the Runge-Kutta semilinear method with the indicated step sizes to find approximate values of the solution of the given initial value problem at $11$ equally spaced points (including the endpoints) in the interval.
+$$y'-4y=\frac{x}{y^2(y+1)},\quad y(0)=1$$
+ $h=0.1,0.05,0.025$ on $[0,1]$.
+ \end{problem}
+
+\begin{problem}\label{exer:3.3.22} Use the Runge-Kutta method and the Runge-Kutta semilinear method with the indicated step sizes to find approximate values of the solution of the given initial value problem at $11$ equally spaced points (including the endpoints) in the interval.
+$$y'+2y=\frac{x^2}{1+y^2},\quad y(2)=1$$
+ $h=0.1,0.05,0.025$ on $[2,3]$.
+
+ \begin{solution}
+     {\small
+\begin{tabular}{|c|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Runge--Kutta method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+2.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+2.1 & 1.008912398 & 1.008900636 & 1.008900025 & 1.008899988 \\
+2.2 & 1.031740789 & 1.031724368 & 1.031723520 & 1.031723469 \\
+2.3 & 1.063781819 & 1.063765150 & 1.063764295 & 1.063764243 \\
+2.4 & 1.101630085 & 1.101615517 & 1.101614774 & 1.101614730 \\
+2.5 & 1.142915917 & 1.142904393 & 1.142903811 & 1.142903776 \\
+2.6 & 1.186047678 & 1.186039295 & 1.186038876 & 1.186038851 \\
+2.7 & 1.229991054 & 1.229985469 & 1.229985194 & 1.229985178 \\
+2.8 & 1.274095992 & 1.274092692 & 1.274092535 & 1.274092525 \\
+2.9 & 1.317969153 & 1.317967605 & 1.317967537 & 1.317967533 \\
+3.0 & 1.361384082 & 1.361383812 & 1.361383809 & 1.361383810 \\
+\hline
+\end{tabular}}
+
+{\small
+\begin{tabular}{|c|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Runge--Kutta semilinear method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+2.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+2.1 & 1.008913934 & 1.008900843 & 1.008900041 & 1.008899988 \\
+2.2 & 1.031748526 & 1.031725001 & 1.031723564 & 1.031723469 \\
+2.3 & 1.063798300 & 1.063766321 & 1.063764371 & 1.063764243 \\
+2.4 & 1.101656264 & 1.101617259 & 1.101614886 & 1.101614730 \\
+2.5 & 1.142951721 & 1.142906691 & 1.142903955 & 1.142903776 \\
+2.6 & 1.186092475 & 1.186042105 & 1.186039051 & 1.186038851 \\
+2.7 & 1.230043983 & 1.229988742 & 1.229985397 & 1.229985178 \\
+2.8 & 1.274156172 & 1.274096377 & 1.274092762 & 1.274092525 \\
+2.9 & 1.318035787 & 1.317971658 & 1.317967787 & 1.317967533 \\
+3.0 & 1.361456502 & 1.361388196 & 1.361384079 & 1.361383810 \\
+\hline
+\end{tabular}}
+ \end{solution}
+ \end{problem}
+
+\begin{problem}\label{exer:3.3.23}
+Suppose $a<x_0$, so that $-x_0<-a$.
+Use the chain rule to show that if  $z$ is a solution of
+$$
+z'=-f(-x,z),\quad z(-x_0)=y_0,
+$$
+on $[-x_0,-a]$, then $y=z(-x)$ is a solution of
+$$
+y'=f(x,y),\quad y(x_0)=y_0,
+$$
+on $[a,x_0]$.
+\end{problem}
+
+\begin{problem}\label{exer:3.3.24}
+Use the Runge-Kutta  method with step sizes $h=0.1$, $h=0.05$,
+and $h=0.025$ to find approximate values of the solution of
+$$
+y'=\frac{y^2+xy-x^2}{x^2},\quad y(2)=-1
+$$
+at $x=1.1$, $1.2$, $1.3$, \dots $2.0$.
+ Compare these approximate values
+with the values of the exact solution
+$$
+y=\frac{x(4-3x^2)}{4+3x^2}
+$$
+which can be obtained by referring to Example~\ref{example:2.4.3}.
+
+\begin{solution}
+    {\small
+\begin{tabular}{|r|r|r|r|r|}
+\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=.1$}&
+\multicolumn{1}{|c|}{$h=.05$}&
+\multicolumn{1}{|c|}{$h=.025$}&
+\multicolumn{1}{|c|}{Exact}\\ \hline
+1.00  &  0.142854841 &  0.142857001 &  0.142857134 &  0.142857143 \\
+1.10  &  0.053340745 &  0.053341989 &  0.053342066 &  0.053342071 \\
+1.20  & -0.046154629 & -0.046153895 & -0.046153849 & -0.046153846 \\
+1.30  & -0.153363206 & -0.153362764 & -0.153362736 & -0.153362734 \\
+1.40  & -0.266397049 & -0.266396779 & -0.266396762 & -0.266396761 \\
+1.50  & -0.383721107 & -0.383720941 & -0.383720931 & -0.383720930 \\
+1.60  & -0.504109696 & -0.504109596 & -0.504109589 & -0.504109589 \\
+1.70  & -0.626598326 & -0.626598268 & -0.626598264 & -0.626598264 \\
+1.80  & -0.750437351 & -0.750437320 & -0.750437318 & -0.750437318 \\
+1.90  & -0.875050587 & -0.875050574 & -0.875050573 & -0.875050573 \\
+2.00  & -1.000000000 & -1.000000000 & -1.000000000 & -1.000000000 \\
+\hline
+\end{tabular}}
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.3.25}
+Use the Runge-Kutta  method with step sizes $h=0.1$,  $h=0.05$,
+and $h=0.025$
+ to find approximate values of the solution of
+$$
+y'=-x^2y-xy^2,\quad y(1)=1
+$$
+at $x=0$, $0.1$, $0.2$, \dots, $1$.
+\end{problem}
+
+\begin{problem}\label{exer:3.3.26}
+Use the Runge-Kutta  method with step sizes $h=0.1$,  $h=0.05$,
+and $h=0.025$
+ to find approximate values of the solution of
+$$
+y'+\frac{1}{x}y=\frac{7}{x^2}+3,\quad y(1)=\frac{3}{2}
+$$
+at $x=0.5$, $0.6$,\dots, $1.5$.
+ Compare these approximate values
+with the values of the exact solution
+$$
+y=\frac{7\ln x}{x}+\frac{3x}{2}
+$$
+which can be obtained by the method discussed in
+Section~2.1.
+
+\begin{solution}
+    {\small
+\begin{tabular}{|r|r|r|r|r|}
+\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=.1$}&
+\multicolumn{1}{|c|}{$h=.05$}&
+\multicolumn{1}{|c|}{$h=.025$}&
+\multicolumn{1}{|c|}{Exact}\\ \hline
+ 0.50  &  -8.954103230 & -8.954063245 &  -8.954060698 & -8.954060528 \\
+ 0.60  &  -5.059648314 & -5.059633293 &  -5.059632341 & -5.059632277 \\
+ 0.70  &  -2.516755942 & -2.516749850 &  -2.516749465 & -2.516749439 \\
+ 0.80  &  -0.752508672 & -0.752506238 &  -0.752506084 & -0.752506074 \\
+ 0.90  &   0.530528482 &  0.530529270 &   0.530529319 &  0.530529323 \\
+ 1.00  &   1.500000000 &  1.500000000 &   1.500000000 &  1.500000000 \\
+ 1.10  &   2.256519743 &  2.256519352 &   2.256519328 &  2.256519326 \\
+ 1.20  &   2.863543039 &  2.863542454 &   2.863542417 &  2.863542415 \\
+ 1.30  &   3.362731379 &  3.362730700 &   3.362730658 &  3.362730655 \\
+ 1.40  &   3.782361948 &  3.782361231 &   3.782361186 &  3.782361183 \\
+ 1.50  &   4.142171279 &  4.142170553 &   4.142170508 &  4.142170505 \\
+\hline
+\end{tabular}}
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.3.27}
+Use the Runge-Kutta  method with step sizes $h=0.1$,  $h=0.05$,
+and $h=0.025$
+ to find approximate values of the solution of
+$$
+xy'+2y=8x^2,\quad y(2)=5
+$$
+at $x=1.0$, $1.1$, $1.2$, \dots, $3.0$.
+ Compare these approximate values
+with the values of the exact solution
+$$
+y=2x^2-\frac{12}{x^2}
+$$
+which can be obtained by the method discussed in Section~2.1.
+\end{problem}
+
+\begin{problem}\label{exer:3.3.28}
+\emph{Numerical Quadrature.} (See
+Problem \ref{exer:3.1.23}.)
+\begin{enumerate}
+\item % (a)
+Derive the quadrature formula
+\begin{equation}\label{eqA:3.3.28}
+\int_a^bf(x)\,dx\approx \frac{h}{6}(f(a)+f(b))+
+\frac{h}{3}\sum_{i=1}^{n-1}f(a+ih)+\frac{2h}{3}\sum_{i=1}^n
+f\left(a+(2i-1)h/2\right)
+\end{equation}
+(where $h=(b-a)/n)$
+by applying the Runge-Kutta  method to the initial value problem
+$$
+y'=f(x),\quad y(a)=0.
+$$
+This quadrature formula is  called
+\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Simpson.html}
+{Simpson's Rule}.
+
+\begin{solution}
+    Let $x_i=a+ih$, $i=0,1,\dots,n$. If $y$ is the solution of the initial
+value problem $y'=f(x)$, $y(a)=0$, then $y(b)=\int_a^bf(x)\,dx$.
+The Runge-Kutta method yields
+$y_{i+1}=
+y_i+\frac{h}{6}\left(f(a+ih)+4f(a+(2i+1)h/2)+f(a+(i+1)h)\right)$,
+$i=0,1,\dots,n-1$,
+where $y_0=a$ and $y_n$ is an approximation to $\int_a^bf(x)\,dx$.
+But
+$$
+y_n=\sum_{i=0}^{n-1}(y_{i+1}-y_i) =
+\frac{h}{6}(f(a)+f(b))+
+\frac{h}{3}\sum_{i=1}^{n-1}f(a+ih)+\frac{2h}{3}\sum_{i=1}^n
+f\left(a+(2i-1)h/2\right).
+$$
+\end{solution}
+\item % (b)
+For several choices of $a$, $b$, $A$, $B$, $C$, and $D$
+ apply (\ref{eqA:3.3.28}) to $f(x)=A+Bx+Cx+Dx^3$, with $n = 10$, $20$, $40$, $80$, $160$, $320$.
+Compare your results with the exact answers
+and explain what you find.
+
+\begin{solution}
+    The local truncation error is a multiple of
+$y^{(5)}(\tilde x_i)=f^{(4)}(\tilde x_i)$, where $x_i<\tilde
+x_i<x_{i+1}$. Therefore, the quadrature formula is exact
+if $f$ is a polynomial of degree $<4$.
+\end{solution}
+
+\item % (d)
+For several choices of $a$, $b$, $A$, $B$, $C$, $D$, and $E$
+ apply (\ref{eqA:3.3.28}) to $f(x)=A+Bx+Cx^2+Dx^3+Ex^4$, with
+$n=10,20,40,80,160,320$.
+ Compare your results with the exact answers
+and explain what you find.
+
+\begin{solution}
+    $E(f)=\int_a^bf(x)\,dx-y_n$. Note that $E$ is linear.
+If $f$ is a polynomial of degree $4$, then $f(x)=f_0(x)+K(x-a)^4$
+where $\deg(f_0)\le3$ and $K$ is constant. Since
+$E(f_0)=0$ from the previous part and
+\begin{eqnarray*}
+E((x-a)^4)&=&\frac{(b-a)^5}{5}-\frac{(b-a)^4h}{6}-\frac{h^5}{3}\sum_{i=1}^{n-1}
+i^4-\frac{2h^5}{3}\sum_{i=1}^n(i-1/2)^4\\
+&=&h^5\left[\frac{n^5}{5}-\frac{n^4}{6}-\left(\frac{n^5}{15}
+-\frac{n^4}{6}+\frac{n^3}{9}-\frac{n}{90}\right)-\left(
+\frac{2n^5}{15}-\frac{n^3}{9}+\frac{7n}{360}\right)\right]\\
+&=&-\frac{nh^5}{120}=-\frac{(b-a)h^4}{120},
+\end{eqnarray*}
+$E(f)=-\frac{(b-a)h^4}{120}$; thus, the error is proportional to
+$h^4$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\end{document}

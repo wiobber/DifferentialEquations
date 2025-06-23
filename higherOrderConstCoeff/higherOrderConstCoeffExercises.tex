@@ -1,0 +1,1030 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+\begin{problem}\label{exer:9.2.1}  Find the general solution.
+
+$$y'''-3y''+3y'-y=0$$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.2} Find the general solution.
+
+$$y^{(4)}+8y''-9y=0$$
+
+\begin{solution}
+$p(r)=r^4+8r^2-9=(r-1)(r+1)(r^2+9)$;
+ $y=c_1e^x+c_2e^{-x}+c_3\cos3x+c_4\sin3x$.
+\end{solution}
+
+\end{problem}
+
+\begin{problem}\label{exer:9.2.3} Find the general solution.
+
+$$y'''-y''+16y'-16y=0$$
+
+\end{problem}
+
+
+\begin{problem}\label{exer:9.2.4} Find the general solution.
+
+$$2y'''+3y''-2y'-3y=0$$
+
+\begin{solution}
+$p(r)=2r^3+3r^2-2r-3=(r-1)(r+1)(2r+3)$;
+$y=c_1e^x+c_2e^{-x}+c_3e^{-3x/2}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.2.5} Find the general solution.
+
+$$y'''+5y''+9y'+5y=0$$
+
+\end{problem}
+
+
+\begin{problem}\label{exer:9.2.6}  Find the general solution.
+
+$$4y'''-8y''+5y'-y=0$$
+
+\begin{solution}
+$p(r)=4r^3-8r^2+5r-1=(r-1)(2r-1)^2$;
+
+$y=c_1e^x+e^{x/2}(c_2+c_3x)$.
+\end{solution}
+
+\end{problem}
+
+\begin{problem}\label{exer:9.2.7} Find the general solution.
+
+$$27y'''+27y''+9y'+y=0$$
+
+\end{problem}
+
+
+\begin{problem}\label{exer:9.2.8} Find the general solution.
+
+$$y^{(4)}+y''=0$$
+
+\begin{solution}
+$p(r)=r^4+r^2=r^2(r^2+1)$;
+ $y=c_1+c_2x+c_3\cos x+c_4\sin x$.
+\end{solution}
+
+\end{problem}
+
+ \begin{problem}\label{exer:9.2.9}  Find the general solution.
+
+$$y^{(4)}-16y=0$$
+
+\end{problem}
+
+
+\begin{problem}\label{exer:9.2.10} Find the general solution.
+
+$$y^{(4)}+12y''+36y=0$$
+
+\begin{solution}
+$p(r)=r^4+12r^2+36=(r^2+6)^2$;
+ $y=(c_1+c_2x)\cos\sqrt{6} x+(c_3+c_4x)\sin\sqrt{6} x$.
+\end{solution}
+\end{problem}
+
+
+
+\begin{problem}\label{exer:9.2.11} Find the general solution.
+
+$$16y^{(4)}-72y''+81y=0$$
+
+\end{problem}
+
+\begin{problem}\label{exer:9.2.12} Find the general solution.
+
+$$6y^{(4)}+5y'''+7y''+5y'+y=0$$
+
+\begin{solution}
+$p(r)=6r^4+5r^3+7r^2+5r+1=(2r+1)(3r+1)(r^2+1)$;
+$y=c_1e^{-x/2}+c_2e^{-x/3}+c_3\cos x+c_4\sin x$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:9.2.13}  Find the general solution.
+
+$$4y^{(4)}+12y'''+3y''-13y'-6y=0$$
+\end{problem}
+
+
+\begin{problem}\label{exer:9.2.14}  Find the general solution.
+
+$$y^{(4)}-4y'''+7y''-6y'+2y=0$$
+
+\begin{solution}
+$p(r)=r^4-4r^3+7r^2-6r+2=(r-1)^2(r^2-2r+2)$;
+$y=e^x(c_1+c_2x+c_3\cos x+c_4\sin x)$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:9.2.15}
+Solve the
+initial value problem.
+
+$y'''-2y''+4y'-8y=0, \quad  y(0)=2,\quad y'(0)=-2,\;  y''(0)=0$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.16}  Solve the
+initial value problem.
+
+$y'''+3y''-y'-3y=0, \quad  y(0)=0,\quad y'(0)=14,\quad y''(0)=-40$
+
+\begin{solution}
+$p(r)=r^3+3r^2-r-3=(r-1)(r+1)(r+3)$;
+$$
+\begin{array}{lcl}
+y&=&c_1e^x+c_2e^{-x}+c_3e^{-3x}\\
+y'&=&c_1e^x-c_2e^{-x}-3c_3e^{-3x}\\
+y''&=&c_1e^x+c_2e^{-x}+9c_3e^{-3x}
+\end{array};\quad
+\begin{array}{rcr}
+c_1+c_2+c_3&=&0\\
+c_1-c_2-3c_3&=&14\\
+c_1+c_2+9c_3&=&-40
+\end{array};
+$$
+$c_1=2$, $c_2=3$, $c_3=-5$;
+
+ $$y=2e^x+3e^{-x}-5e^{-3x}$$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.2.17} Solve the
+initial value problem, and graph the solution.
+$y'''-y''-y'+y=0, \quad  y(0)=-2,\quad y'(0)=9,\quad y''(0)=4$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.18} Solve the
+initial value problem, and graph the solution.
+
+$y'''-2y'-4y=0, \quad  y(0)=6,\quad y'(0)=3,\quad y''(0)=22$
+
+\begin{solution}
+$p(r)=r^3-2r-4=(r-2)(r^2+2r+2)$;
+$$
+\begin{array}{lcl}
+y&=&e^{-x}(c_1\cos x+c_2\sin x)+c_3e^{2x}\\
+y'&=&-e^{-x}((c_1-c_2)\cos x+(c_1+c_2)\sin x)+2c_3e^{2x}\\
+y''&=&e^{-x}(2c_1\sin x-2c_2\cos x)+4c_3e^{2x}
+\end{array};
+\begin{array}{rcr}
+c_1+c_3&=&6\\
+-c_1+c_2+2c_3&=&3\\
+-2c_2+4c_3&=&22
+\end{array};
+$$
+$c_1=2$, $c_2=-3$, $c_3=4$;
+ $y=2e^{-x}\cos x-3e^{-x}\sin x+4e^{2x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.2.19} Solve the
+initial value problem, and graph the solution.
+
+$3y'''-y''-7y'+5y=0, \quad  y(0)=\frac{14}{5},\quad y'(0)=0,\quad y''(0)=10$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.20}  Solve the
+initial value problem.
+
+$y'''-6y''+12y'-8y=0, \quad  y(0)=1,\quad y'(0)=-1,\quad y''(0)=-4$
+
+\begin{solution}
+$p(r)=r^3-6r^2+12r-8=(r-2)^3$;
+$$
+\begin{array}{lcl}
+y&=&e^{2x}(c_1+c_2x+c_3x^2)\\
+y'&=&e^{2x}(2c_1+c_2+(2c_2+2c_3)x+2c_3x^2)\\
+y''&=&2e^{2x}(2c_1+2c_2+c_3+2(c_2+2c_3)x+2c_3x^2)
+\end{array};
+\begin{array}{rcr}
+c_1&=&1\\
+2c_1+c_2&=&-1\\
+4c_1+4c_2+2c_3&=&-4
+\end{array}
+$$
+$c_1=1$, $c_2=-3$, $c_3=2$;
+ $y=e^{2x}(1-3x+2x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.2.21}  Solve the
+initial value problem.
+
+$2y'''-11y''+12y'+9y=0, \quad  y(0)=6,\quad y'(0)=3,\quad y''(0)=13$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.22}  Solve the
+initial value problem.
+
+$8y'''-4y''-2y'+y=0, \quad  y(0)=4,\quad y'(0)=-3,\quad y''(0)=-1$
+
+\begin{solution}
+$p(r)=8r^3-4r^2-2r+1=(2r+1)(2r-1)^2$;
+$$
+\begin{array}{lcl}
+y&=&e^{x/2}(c_1+c_2x)+c_3e^{-x/2}\\
+y'&=&\frac{1}{2}e^{x/2}(c_1+2c_2+c_2x)-\frac{1}{2}c_3e^{-x/2}\\
+y''&=&\frac{1}{4}e^{x/2}(c_1+4c_2+c_2x)+\frac{1}{4}c_3e^{-x/2}
+\end{array};
+\begin{array}{rcr}
+c_1+c_3&=&4\\
+\frac{1}{2}c_1+c_2-\frac{1}{2}c_3&=&-3\\
+\frac{1}{4}c_1+c_2+\frac{1}{4}c_3&=&-1
+\end{array};
+$$
+$c_1=1$, $c_2=-2$, $c_3=3$;
+ $y=e^{x/2}(1-2x)+3e^{-x/2}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.2.23}  Solve the
+initial value problem.
+
+$y^{(4)}-16y=0, \quad   y(0)=2,\;  y'(0)=2,\;  y''(0)=-2,\;  y'''(0)=0$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.24}  Solve the
+initial value problem.
+
+$y^{(4)}-6y'''+7y''+6y'-8y=0, \quad  y(0)=-2,\quad y'(0)=-8,\quad y''(0)=-14$,
+ $y'''(0)=-62$
+
+\begin{solution}
+$p(r)=r^4-6r^3+7r^2+6r-8=(r-1)(r-2)(r-4)(r+1)$;
+$$
+\begin{array}{lcl}
+y&=&c_1e^x+c_2e^{2x}+c_3e^{4x}+c_4e^{-x}\\
+y'&=&c_1e^x+2c_2e^{2x}+4c_3e^{4x}-c_4e^{-x}\\
+y''&=&c_1e^x+4c_2e^{2x}+16c_3e^{4x}+c_4e^{-x}\\
+y'''&=&c_1e^x+8c_2e^{2x}+64c_3e^{4x}-c_4e^{-x}
+\end{array};
+\begin{array}{rcr}
+c_1+c_2+c_3+c_4&=&-2\\
+c_1+2c_2+4c_3-c_4&=&-8\\
+c_1+4c_2+16c_3+c_4&=&-14\\
+c_1+8c_2+64c_3-c_4&=&-62
+\end{array};
+$$
+$c_1=-4$, $c_2=1$, $c_3=-1$, $c_4=2$;
+ $y=-4e^x+e^{2x}-e^{4x}+2e^{-x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.2.25}  Solve the
+initial value problem.
+
+$4y^{(4)}-13y''+9y=0, \quad  y(0)=1,\quad y'(0)=3,\quad y''(0)=1,\quad y'''(0)=3$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.26}  Solve the
+initial value problem.
+
+$y^{(4)}+2y'''-2y''-8y'-8y=0, \quad  y(0)=5,\quad y'(0)=-2,\quad y''(0)=6,\quad y'''(0)=8$
+
+\begin{solution}
+$p(r)=r^4+2r^3-2r^2-8r-8=(r-2)(r+2)(r^2+2r+2)$;
+$$
+\begin{array}{lcl}
+y&=&c_1e^{2x}+c_2e^{-2x}+e^{-x}(c_3\cos x+c_4\sin x)\\
+y'&=&2c_1e^{2x}-2c_2e^{-2x}-e^{-x}((c_3-c_4)\cos x+(c_3+c_4)\sin x)\\
+y''&=&4c_1e^{2x}+4c_2e^{-2x}+e^{-x}(2c_3\sin x-2c_4\cos x)\\
+y'''&=&8c_1e^{2x}-8c_2e^{-2x}+e^{-x}((2c_3+2c_4)\cos x+2(c_4-c_3)\sin
+x)
+\end{array};
+$$
+$$
+\begin{array}{rcr}
+c_1+c_2+c_3&=&5\\
+2c_1-2c_2-c_3+c_4&=&-2\\
+4c_1+4c_2-2c_4&=&6\\
+8c_1-8c_2+2c_3+2c_4&=&8
+\end{array};
+$$
+$c_1=1$, $c_2=1$, $c_3=3$, $c_4=1$;
+
+$$y=e^{2x}+e^{-2x}+e^{-x}(3\cos x+\sin x)$$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.2.27}  Solve the
+initial value problem, and graph the solution.
+$4y^{(4)}+8y'''+19y''+32y'+12y=0, \quad  y(0)=3,\quad y'(0)=-3,\quad y''(0)=
+-\frac{7}{2}$,
+ $y'''(0)=\frac{31}{4}$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.28}
+Find a fundamental set of solutions of the given equation, and verify that it is a fundamental set by evaluating its Wronskian at $x=0$.
+
+\begin{enumerate}
+    \item $(D-1)^2(D-2)y=0$
+
+\begin{solution}
+$
+W(x)=\left|\begin{array}{ccc}
+e^x&xe^x&e^{2x}\\
+e^x&e^x(x+1)&2e^{2x}\\
+e^x&e^x(x+2)&4e^{2x}
+\end{array}\right|;
+$
+$
+W(0)=\left|\begin{array}{cccc}
+1&0&1\\1&1&2\\1&2&4
+\end{array}\right|=
+\left|\begin{array}{cccc}
+1&0&0\\1&1&1\\1&2&3
+\end{array}\right|
+=\left|\begin{array}{cccc}
+1&1\\2&3\end{array}\right|=1.
+$
+\end{solution}
+
+    \item $(D^2+4)(D-3)y=0$
+
+\begin{solution}
+$
+W(x)=\left|\begin{array}{ccc}
+\cos 2x&\sin 2x&e^{3x}\\
+-2\sin 2x&2\cos 2x&3e^{3x}\\
+-4\cos 2x&-4\sin 2x&9e^{3x}
+\end{array}\right|;
+$
+$
+W(0)=\left|\begin{array}{rccc}
+1&0&1\\0&2&3\\-4&0&9
+\end{array}\right|=
+\left|\begin{array}{rccc}
+1&0&0\\0&2&3\\-4&0&13
+\end{array}\right|=
+\left|\begin{array}{rccc}
+2&3\\0&13\end{array}\right|=26.
+$
+\end{solution}
+
+    \item $(D^2+2D+2)(D-1)y=0$
+
+\begin{solution}
+$
+W(x)=\left|\begin{array}{ccc}
+e^{-x}\cos x&e^{-x}\sin x&e^x\\
+-e^{-x}(\cos x+\sin x)&e^{-x}(\cos x-\sin x)&e^x\\
+2e^{-x}\sin x&-2e^{-x}\cos x&
+e^x\end{array}\right|;
+$
+$
+W(0)=\left|\begin{array}{rrc}
+1&0&1\\-1&1&1\\0&-2&1
+\end{array}\right|=
+\left|\begin{array}{rrc}
+1&0&1\\0&1&2\\0&-2&1
+\end{array}\right|=
+\left|\begin{array}{rcc}
+1&2\\-2&1\end{array}\right|=5.
+$
+\end{solution}
+
+    \item $D^3(D-1)y=0$
+
+\begin{solution}
+$
+W(x)=\left|\begin{array}{cccc}
+1&x&x^2&e^x\\
+0&1&2x&e^x\\0&0&2&e^x\\0&0&0&e^x\end{array}\right|;
+$
+$
+W(0)=\left|\begin{array}{cccc}
+1&0&0&1\\0&1&0&1\\0&0&2&1\\0&0&0&1
+\end{array}\right|=1.
+$
+\end{solution}
+
+    \item $(D^2-1)(D^2+1)y=0$
+
+\begin{solution}
+$
+W(x)=\left|\begin{array}{rrrr}e^x&e^{-x}&\cos x&\sin x\\
+e^x&-e^{-x}&-\sin x&\cos x\\e^x&e^{-x}&-\cos x&-\sin
+x\\e^x&-e^{-x}&\sin x&-\cos x\end{array}\right|;
+$
+\begin{eqnarray*}
+W(0)&=&\left|\begin{array}{rrrr}
+1&1&1&0\\1&-1&0&1\\1&1&-1&0\\1&-1&0&-1
+\end{array}\right|
+=\left|\begin{array}{rrrr}
+1&1&1&0\\1&-1&0&1\\1&1&-1&0\\0&0&0&-2
+\end{array}\right|
+=-2\left|\begin{array}{rrrr}
+1&1&1\\1&-1&0\\1&1&-1\\
+\end{array}\right|\\
+&=&-2\left|\begin{array}{rrrr}
+1&1&1\\1&-1&0\\0&0&-2\\
+\end{array}\right|
+=4\left|\begin{array}{rrrr}
+1&1\\1&-1\\\end{array}\right|=-8.
+\end{eqnarray*}
+\end{solution}
+
+    \item $(D^2-2D+2)(D^2+1)y=0$
+
+\begin{solution}
+$
+W(x)=\left|\begin{array}{rrcc}\cos x&\sin x&e^x\cos x&e^x\sin x\\
+-\sin x&\cos x&e^x(\cos x-\sin x)&e^x(\cos x+\sin x)\\
+-\cos x&-\sin x&-2e^x\sin x&2e^x\cos x\\
+\sin x&-\cos x&-e^x(2\cos x+2\sin x)&e^x(2\cos x-2\sin x)
+\end{array}\right|;
+$
+
+\begin{eqnarray*}
+W(0)&=&\left|\begin{array}{rrrr}
+1&0&1&0\\0&1&1&1\\-1&0&0&2\\0&-1&-2&2
+\end{array}\right|=
+\left|\begin{array}{rrrr}
+1&0&1&0\\0&1&1&1\\0&0&1&2\\0&-1&-2&2
+\end{array}\right|=
+\left|\begin{array}{rrrr}
+1&1&1\\0&1&2\\-1&-2&2
+\end{array}\right|\\
+&=&\left|\begin{array}{rrrr}
+1&1&1\\0&1&2\\0&-1&3
+\end{array}\right|=
+\left|\begin{array}{rrrr}
+1&1&1\\0&1&2\\0&0&5
+\end{array}\right|=5.
+\end{eqnarray*}
+\end{solution}
+
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.2.29} Find a
+fundamental set of solutions.
+
+$(D^2+6D+13)(D-2)^2D^3y=0$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.30} Find a
+fundamental set of solutions.
+
+$(D-1)^2(2D-1)^3(D^2+1)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.31} Find a
+fundamental set of solutions.
+
+$(D^2+9)^3D^2y=0$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.32}  Find a
+fundamental set of solutions.
+
+$(D-2)^3(D+1)^2Dy=0$
+\end{problem}
+
+
+\begin{problem}\label{exer:9.2.33}  Find a
+fundamental set of solutions.
+
+$(D^2+1)(D^2+9)^2(D-2)y=0$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.34} Find a
+fundamental set of solutions.
+
+$(D^4-16)^2y=0$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.35}  Find a
+fundamental set of solutions.
+
+$(4D^2+4D+9)^3y=0$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.36} Find a
+fundamental set of solutions.
+
+$D^3(D-2)^2(D^2+4)^2y=0$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.37}  Find a
+fundamental set of solutions.
+
+$(4D^2+1)^2(9D^2+4)^3y=0$
+\end{problem}
+
+\begin{problem}\label{exer:9.2.38} Find a
+fundamental set of solutions.
+
+$\left[(D-1)^4-16\right]y=0$
+\end{problem}
+
+
+\begin{problem}\label{exer:9.2.39}
+It can be shown that
+$$
+\left|\begin{array}{cccc}
+1&1&\cdots&1\\
+a_1&a_2&\cdots&a_n\\
+a^2_1&a^2_2&\cdots&a^2_n\\
+\vdots&\vdots&\ddots&\vdots\\
+a^{n-1}_1&a^{n-1}_2&\cdots&a^{n-1}_n\end{array}\right|=
+\prod_{1\le i<j\le n}(a_j-a_i),
+\text{(A)}
+$$
+where the left side is  the
+\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Vandermonde.html}{Vandermonde
+  determinant} and
+the right side is the product of all factors of the form $(a_j-a_i)$
+with $i$ and $j$ between $1$ and $n$ and $i<j$.
+
+\begin{enumerate}
+\item %(a)
+Verify  (A) for $n=2$ and $n=3$.
+
+\item %(b)
+Find the Wronskian of $\{e^{{a_1}x}, \quad  e^{{a_2}x},\dots, e^{{a_n}x}\}$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.2.40}
+A theorem from algebra says that if $P_1$ and $P_2$ are polynomials
+with no common factors then there are polynomials $Q_1$ and $Q_2$
+such that
+$$
+Q_1P_1+Q_2P_2=1.
+$$
+This implies that
+$$
+Q_1(D)P_1(D)y+Q_2(D)P_2(D)y=y
+$$
+for every function $y$ with enough derivatives for the left side to be
+defined.
+
+\begin{enumerate}
+\item %(a)
+Use this to show that if $P_1$ and $P_2$ have no common factors and
+$$
+P_1(D)y=P_2(D)y=0
+$$
+then $y=0$.
+
+\begin{solution}
+Since $y=Q_1(D)P_1(D)y+Q_2(D)P_2(D)y$ and $P_1(D)y=P_2(D)y=0$, it
+follows that $y=0$.
+\end{solution}
+
+\item %(b)
+Suppose $P_1$ and $P_2$ are polynomials with no common factors.
+Let $u_1$, \dots, $u_r$ be linearly independent solutions of $P_1(D)y=0$
+and let $v_1$, \dots, $v_s$ be linearly independent solutions of
+$P_2(D)y=0$. Use the previous part to show that $\{u_1,\dots,u_r,\,
+v_1,\dots,v_s\}$ is a linearly independent set.
+
+\begin{solution}
+Suppose that
+(A) $a_1u_1+\cdots+a_ru_r+b_1v_1+\cdots+b_sv_s=0$,
+where $a_1,\dots,a_r$ and $b_1,\dots,b_s$ are constants. Denote
+$u=a_1u_1+\cdots+a_ru_r$ and $v=b_1v_1+\cdots+b_sv_s$. Then
+(B) $P_1(D)u=0$ and (C) $P_2(D)v=0$. Since $u+v=0$, $P_2(D)(u+v)=0$.
+Therefore,$0=P_2(D)(u+v)=P_2(D)u+P_2(D)v$. Now (C) implies that
+$P_2(D)u=0$. This, (B), and the previous part imply that
+$u=a_1u_1+\cdots+a_ru_r=0$, so $a_1=\dots=a_r=0$, since
+$u_1,\dots,u_r$ are linearly independent. Now (A) reduces to
+$b_1v_1+\cdots+b_sv_s=0$,
+ so $b_1=c\dots=b_s=0$, since
+$v_1,\dots,v_s$ are linearly independent.
+Therefore,$u_1,\dots,u_r,
+v_1,\dots,v_r$ are linearly independent.
+\end{solution}
+
+\item %(c)
+Suppose the characteristic polynomial of the constant coefficient
+equation
+$$
+a_0y^{(n)}+a_1y^{(n-1)}+\cdots+a_ny=0
+\text{(A)}
+$$
+has the factorization
+$$
+p(r)=a_0p_1(r)p_2(r)\cdots p_k(r),
+$$
+where each $p_j$ is of the form
+$$
+p_j(r)=(r-r_j)^{n_j} \mbox{ or }
+p_j(r)=[(r-\lambda_j)^2+w^2_j]^{m_j}\quad  (\omega_j>0)
+$$
+and no two of the polynomials $p_1$, $p_2$, \dots, $p_k$ have a common
+factor. Show that we can find a fundamental set of solutions
+$\{y_1,y_2,\dots,y_n\}$ of (A) by finding a
+fundamental set of solutions of each of the equations
+$$
+p_j(D)y=0,\quad 1\le j\le k,
+$$
+ and taking $\{y_1,y_2,\dots,y_n\}$ to be the set of all
+functions in these separate fundamental sets.
+
+\begin{solution}
+It suffices to show that
+ $\{y_1,y_2,\dots,y_n\}$ is linearly independent. Suppose that
+$c_1y_1+\cdots+c_ny_n=0$. We may assume that $y_1,\dots,y_r$
+are linearly independent solutions of $p_1(D)y=0$ and
+$y_{r+1},\dots,y_n$ are solutions of
+$P_2(D)=p_2(D)\cdots p_k(D)y=0$. Since $p_1(r)$ and $P_2(r)$ have no
+common factors,
+the previous part implies
+that (A) $c_1y_1+\cdots+c_ry_r=0$ and
+(B) $c_{r+1}y_{r+1}+\cdots+c_ny_n=0$.
+Now (A) implies that $c_1=\cdots=c_r=0$, since $y_1,\dots,y_r$
+are linearly independent. If $k=2$, then $y_{r+1},\dots,y_n$
+are linearly independent, so $c_{r+1}=\cdots=c_n=0$, and the proof is
+complete. If $k>2$ repeat this argument, starting from (B), with $p_1$
+replaced by $p_2$, and $P_2$ replaced by $P_3=p_3\cdots p_n$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.2.41}
+\begin{enumerate}
+\item % (a)
+Show that if
+$$
+z=p(x)\cos\omega x+q(x)\sin\omega x,
+\text{(A)}
+$$
+where $p$ and $q$ are polynomials of degree $\le k$, then
+$$
+(D^2+\omega^2)z=p_1(x)\cos\omega x+q_1(x)\sin\omega x,
+$$
+where $p_1$ and $q_1$ are polynomials of degree $\le k-1$.
+
+\item % (b)
+Apply the previous part $m$ times to show that if $z$ is of
+the form (A) where $p$ and $q$ are polynomials of
+degree $\le m-1$, then
+$$
+(D^2+\omega^2)^mz=0.
+\text{(B)}
+$$
+
+\item %(c)
+Use Eqn.~\eqref{eq:9.2.17} to show that if $y=e^{\lambda x}z$ then
+$$
+[(D-\lambda)^2+\omega^2]^my=e^{\lambda
+x}(D^2+\omega^2)^mz.
+$$
+
+\item % (d)
+Conclude that if $p$ and $q$ are arbitrary polynomials of degree $\le m-1$ then
+$$
+y=e^{\lambda x}(p(x)\cos\omega x+q(x)\sin\omega x)
+$$
+is a solution of
+$$
+[(D-\lambda)^2+\omega^2]^my=0.
+\text{(C)}
+$$
+
+\item % (e)
+Use this conclusion to show that the functions
+$$
+\begin{array}{rl}
+e^{\lambda x}\cos\omega x, xe^{\lambda x}\cos\omega x,
+&\dots, x^{m-1}e^{\lambda x}\cos\omega x,\\
+e^{\lambda x}\sin\omega x, xe^{\lambda x}\sin\omega x,&
+\dots, x^{m-1}e^{\lambda x}\sin\omega x
+\end{array}
+\text{(D)}
+$$
+are all solutions of (C).
+
+\item % (f)
+Complete the proof of Theorem~\ref{thmtype:9.2.2} by showing that the
+functions in (D) are linearly independent.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.2.42}
+\begin{enumerate}
+\item % (a)
+Use the trigonometric identities
+\begin{eqnarray*}
+\cos(A+B)&=&\cos A\cos B-\sin A\sin B\\
+\sin(A+B)&=&\cos A\sin B+\sin A\cos B
+\end{eqnarray*}
+to show that
+$$
+(\cos A+i\sin A)(\cos B+i\sin B)=\cos(A+B)+i\sin(A+B).
+$$
+
+\begin{solution}
+\begin{eqnarray*}
+(\cos A+i\sin A)(\cos B+i\sin B)&=&(\cos A\cos B-\sin A\sin B)
+\\&&+(\cos A\sin B+\sin A\cos B)\\
+&=&\cos(A+B)+i\sin(A+B).
+\end{eqnarray*}
+\end{solution}
+
+\item % (b)
+Apply the previous part repeatedly to show that if $n$ is a positive
+integer then
+$$
+\prod_{k=1}^n(\cos A_k+i\sin A_k)=\cos(A_1+A_2+\cdots+A_n)
++i\sin(A_1+A_2+\cdots+A_n).
+$$
+
+\begin{solution}
+Obvious for $n=0$. If $n=-1$ write
+\begin{eqnarray*}
+{1\over\cos\theta+i\sin\theta}&=&{1\over\cos\theta+i\sin\theta}
+{\cos\theta-i\sin\theta\over\cos\theta-i\sin\theta}\\
+&=&{\cos\theta-i\sin\theta\over\cos^2\theta+\sin^2\theta}=
+\cos\theta-i\sin\theta=\cos(-\theta)+i\sin(-\theta).
+\end{eqnarray*}
+\end{solution}
+
+\item % (c)
+Infer that if $n$ is a positive integer then
+$$
+(\cos\theta+i\sin\theta)^n=\cos n\theta+i\sin n\theta.
+\text{(A)}
+$$
+
+\item % (d)
+Show that (A) also holds if $n=0$ or a negative integer.
+\begin{hint}
+Verify by direct calculation that
+$$
+(\cos\theta+i\sin\theta)^{-1}=(\cos\theta-i\sin\theta).
+$$
+Then replace $\theta$ by $-\theta$  in (A).
+\end{hint}
+
+\begin{solution}
+If $n$ is a negative integer, then
+(B)
+$(\cos\theta+i\sin\theta)^n=\frac{1}{(\cos\theta+i\sin\theta)^{|n|}}$.
+From the hint,
+(C)
+$\frac{1}{(\cos\theta+i\sin\theta)^{|n|}}=(\cos\theta-i\sin\theta)^{|n|}
+=(\cos(-\theta)+i\sin(-\theta))^{|n|}$.
+Replacing $\theta$ by $-\theta$ and $n$ by $|n|$ in (A) shows that
+(D)
+$(\cos(-\theta)+i\sin(-\theta))^{|n|}=\cos(-|n|\theta)+i\sin(-|n|\theta)$.
+Since $|n|=-n$, (E)
+$\cos(-|n|\theta)+i\sin(-|n|\theta)=\cos n\theta+i\sin n\theta$. Now
+(B), (C), (D), and (E) imply (A).
+\end{solution}
+
+\item\label{exer:9.2.42e} % (e)
+Now suppose $n$ is a positive integer. Infer from (A)
+that if
+$$
+z_k=\cos\left(2k\pi\over n\right)+i\sin\left(2k\pi\over n\right)
+,\quad k=0,1,\dots,n-1,
+$$
+and
+$$
+\zeta_k=\cos\left((2k+1)\pi\over
+n\right)+i\sin\left((2k+1)\pi\over n\right)
+,\quad k=0,1,\dots,n-1,
+$$
+then
+$$
+z_k^n=1\quad\mbox{ and }\quad\zeta_k^n=-1,\quad k=0,1,\dots,n-1.
+$$
+(Why don't we also consider other integer values for $k$?)
+
+\begin{solution}
+From (A), $z_k^n=\cos2k\pi+i\sin2k\pi=1$ and
+$\zeta_k^n=\cos(2k+1)\pi+i\sin(2k+1)\pi=\cos(2k+1)\pi=\cos\pi=-1$.
+\end{solution}
+
+\item % (f)
+Let $\rho$ be a positive number. Use the previous part to show that
+$$
+z^n-\rho=(z-\rho^{1/n} z_0)(z-\rho^{1/n}z_1)\cdots(z-\rho^{1/n} z_{n-1})
+$$
+and
+$$
+z^n+\rho=(z-\rho^{1/n} \zeta_0)(z-\rho^{1/n} \zeta_1)\cdots(z-\rho^{1/n}
+\zeta_{n-1}).
+$$
+\end{enumerate}
+
+\begin{solution}
+From the previous part, $\rho^{1/n}z_0,\dots,\rho^{1/n}z_{n-1}$
+are all zeros of $z^n-\rho$. Since they are distinct numbers,
+$z^n-\rho$ has the stated factorization.
+
+From the previous part, $\rho^{1/n}\zeta_0,\dots,\rho^{1/n}\zeta_{n-1}$
+are all zeros of $z^n+\rho$. Since they are distinct numbers,
+$z^n+\rho$ has the stated factorization.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.2.43}
+Use \ref{exer:9.2.42e} to find a fundamental set of
+solutions of the given equation.
+
+\begin{enumerate}
+\item $y'''-y=0$
+
+\begin{solution}
+$p(r)=r^3-1=(r-z_0)(r-z_1)(r-z_2)$ where
+$z_k=\cos\frac{2k\pi}{3}+i\sin\frac{2k\pi}{3}$, $k=0,1,2$. Hence,
+$z_0=1$, $z_1=-\frac{1}{2}+i\frac{\sqrt3}{2}$, and
+$z_2=-\frac{1}{2}-i\frac{\sqrt3}{2}$. Therefore,
+$p(r)=(r-1)\left(\left(r+\frac{1}{2}\right)^2+\frac{3}{4}\right)$,
+so
+$\left\{e^x,\,e^{-x/2}\cos\left(\frac{\sqrt3}{2}x\right),
+\,e^{-x/2}\sin\left({\sqrt3\over2}x\right)\right\}$
+is a fundamental set of solutions.
+\end{solution}
+
+\item $y'''+y=0$
+
+\begin{solution}
+$p(r)=r^3+1=(r-\zeta_0)(r-\zeta_1)(r-\zeta_2)$ where
+$\zeta_k=\cos\frac{(2k+1)\pi}{3}+i\sin\frac{(2k+1)\pi}{3}$, $k=0,1,2$.
+Hence,
+ $\zeta_0=\frac{1}{2}+i\frac{\sqrt3}{2}$, $\zeta_1=-1$
+$\zeta_2=\frac{1}{2}-i\frac{\sqrt3}{2}$. Therefore,
+$p(r)=(r+1)\left(\left(r-\frac{1}{2}\right)^2+\frac{3}{4}\right)$,
+so
+ $\left\{e^{-x},\,e^{x/2}\cos\left(\frac{\sqrt3}{2}x\right),
+\,e^{x/2}\sin\left(\frac{\sqrt3}{2}x\right)\right\}$
+is a fundamental set of solutions.
+\end{solution}
+
+\item $y^{(4)}+64y=0$
+
+\begin{solution}
+$p(r)=r^4+64=(r-2\sqrt2\zeta_0)(r-2\sqrt2\zeta_1)
+(r-2\sqrt2\zeta_2)(r-2\sqrt2\zeta_3)$,
+where
+$\zeta_k=\cos\frac{(2k+1)\pi}{4}+i\sin\frac{(2k+1)\pi}{4}$,
+$k=0,1,2,3$. Therefore,
+$\zeta_0=\frac{1+i}{\sqrt2}$,
+$\zeta_1=\frac{-1+i}{\sqrt2}$,
+$\zeta_2=\frac{-1-i}{\sqrt2}$,
+and $\zeta_3=\frac{1-i}{\sqrt2}$, so
+ $p(r)=((r-2)^2+4)((r+2)^2+4)$ and
+$\{e^{2x}\cos2x,\,e^{2x}\sin2x,\,e^{-2x}\cos2x,\,e^{-2x}\sin2x\}$
+is a fundamental set of solutions.
+\end{solution}
+
+\item $y^{(6)}-y=0$\label{exer:9.2.43d}
+
+\begin{solution}
+$p(r)=r^6-1=(r-z_0)(r-z_1)(r-z_2)(r-z_3)(r-z_4)(r-z_5)$ where
+$z_k=\cos\frac{2k\pi}{6}+i\sin\frac{2k\pi}{6}$,
+$k=0,1,2,3,4,5$. Therefore,
+$z_0=1$,
+$z_1=\frac{1}{2}+i\frac{\sqrt3}{2}$,
+$z_2=-\frac{1}{2}+i\frac{\sqrt3}{2}$,
+$z_3=-1$,
+$z_4=-\frac{1}{2}-i\frac{\sqrt3}{2}$,
+and $z_5=\frac{1}{2}-i\frac{\sqrt3}{2}$, so
+$p(r)=(r-1)(r+1)\left(\left(r-\frac{1}{2}\right)^2+\frac{3}{4}\right)
+\left(\left(r+\frac{1}{2}\right)^2+\frac{3}{4}\right)$ and
+
+ $\left\{e^x,\,e^{-x}
+,\,e^{x/2}\cos\left(\frac{\sqrt3}{2}x\right),
+\,e^{x/2}\sin\left(\frac{\sqrt3}{2}x\right),
+\,e^{-x/2}\cos\left(\frac{\sqrt3}{2}x\right),
+\,e^{-x/2}\sin\left(\frac{\sqrt3}{2}x\right)\right\}$
+is a fundamental set of solutions.
+\end{solution}
+
+\item $y^{(6)}+64y=0$
+
+\begin{solution}
+$p(r)=r^6+64=(r-2\zeta_0)(r-2\zeta_1)(r-2\zeta_2)(r-2\zeta_3)
+(r-2\zeta_4)(r-2\zeta_5)$ where
+$\zeta_k=\cos\frac{(2k+1)\pi}{6}+i\sin\frac{(2k+1)\pi}{6}$,
+$k=0,1,2,3,4,5$. Therefore,
+$\zeta_0=\frac{\sqrt3}{2}+\frac{i}{2}$,
+$\zeta_1=i$,
+$\zeta_2=-\frac{\sqrt3}{2}+\frac{i}{2}$,
+$\zeta_3=-\frac{\sqrt3}{2}-\frac{i}{2}$,
+$\zeta_4=-i$, and
+$\zeta_5=\frac{\sqrt3}{2}-\frac{i}{2}$,  so
+$p(r)=(r^2+4)((r-\sqrt3)^2+1)((r+\sqrt3)^2+1)$ and
+ $\{\cos2x,\,\sin2x,\,e^{-\sqrt3x}\cos x,\,e^{-\sqrt3x}\sin x
+,\,e^{\sqrt3x}\cos x,\,e^{\sqrt3x}\sin x\}$
+is a fundamental set of solutions.
+\end{solution}
+
+\item $\left[(D-1)^6-1\right]y=0$
+
+\begin{solution}
+$p(r)=(r-1)^6-1=(r-1-z_0)(r-1-z_1)(r-1-z_2)(r-1-z_3)(r-1-z_4)(r-1-z_5)$
+where
+$z_k=\cos\frac{2k\pi}{6}+i\sin\frac{2k\pi}{6}$,
+$k=0,1,2,3,4,5$. Therefore,
+$z_0=1$,
+$z_1=\frac{1}{2}+i\frac{\sqrt3}{2}$,
+$z_2=-\frac{1}{2}+i\frac{\sqrt3}{2}$,
+$z_3=-1$,
+$z_4=-\frac{1}{2}-i\frac{\sqrt3}{2}$,
+and $z_5=\frac{1}{2}-i\frac{\sqrt3}{2}$, so
+$p(r)=r(r-2)\left(\left(r-\frac{3}{2}\right)^2+\frac{3}{4}\right)
+\left(\left(r-\frac{1}{2}\right)^2+\frac{3}{4}\right)$ and
+$\left\{1,\,e^{2x}
+,\,e^{3x/2}\cos\left(\frac{\sqrt3}{2}x\right),
+\,e^{3x/2}\sin\left(\frac{\sqrt3}{2}x\right),
+\,e^{x/2}\cos\left(\frac{\sqrt3}{2}x\right),
+\,e^{x/2}\sin\left(\frac{\sqrt3}{2}x\right)\right\}$
+is a fundamental set of solutions.
+\end{solution}
+
+\item $y^{(5)}+y^{(4)}+y'''+y''+y'+y=0$
+
+\begin{solution}
+$p(r)=r^5+r^4+r^3+r^2+r+1=\frac{r^6-1}{r-1}$. Therefore,
+from the solution of \ref{exer:9.2.43d}
+$p(r)=(r+1)\left(\left(r-\frac{1}{2}\right)^2+\frac{3}{4}\right)
+\left(\left(r+\frac{1}{2}\right)^2+\frac{3}{4}\right)$ and
+
+$\left\{e^{-x}
+,\,e^{x/2}\cos\left(\frac{\sqrt3}{2}x\right),
+\,e^{x/2}\sin\left(\frac{\sqrt3}{2}x\right),
+\,e^{-x/2}\cos\left(\frac{\sqrt3}{2}x\right),
+\,e^{-x/2}\sin\left(\frac{\sqrt3}{2}x\right)\right\}$
+is a fundamental set of solutions.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:9.2.44}
+An equation of the form
+$$
+ a_0x^ny^{(n)}+a_1x^{n-1}y^{(n-1)}+\cdots
++a_{n-1}xy'+a_ny=0,\quad x>0,
+\text{(A)}
+$$
+where $a_0$, $a_1$, \dots, $a_n$ are constants, is an \emph{Euler} or
+\emph{equidimensional} equation.
+
+Show that if
+$$
+ x=e^t \quad \mbox{ and } \quad Y(t)=y(x(t)),
+\text{(B)}
+$$
+then
+\begin{eqnarray*}
+x \frac{dy}{dx}&=&\frac{dY}{dt}\\
+x^2\frac{d^2y}{dx^2}&=&\frac{d^2Y}{dt^2}-\frac{dY}{dt}\\
+x^3\frac{d^3y}{dx^3}&=&\frac{d^3Y}{dt^3}-3\frac{d^2Y}{dt^2}+2\frac{dY}{dt}.
+\end{eqnarray*}
+In general, it can be shown that if $r$ is any integer $\ge2$ then
+$$
+x^r \frac{d^ry}{dx^r}=\frac{d^rY}{dt^r}+
+ A_{1r}\frac{d^{r-1}Y}{dt^{r-1}}+\cdots+A_{r-1,r}
+ \frac{dY}{dt}
+$$
+where $A_{1r}$, \dots, $A_{r-1,r}$ are integers.  Use these results to
+show that the substitution (B) transforms (A) into a
+constant coefficient equation for $Y$ as a function of $t$.
+\end{problem}
+
+\begin{problem}\label{exer:9.2.45}
+Use Exercise~\ref{exer:9.2.44}  to show that a function $y=y(x)$ satisfies
+the equation
+$$
+ a_0x^3y'''+a_1x^2y''+a_2xy'+a_3y=0,
+\text{(A)}
+$$
+on $(0,\infty)$
+if and only if the function $Y(t)=y(e^t)$ satisfies
+$$
+a_0\frac{d^3Y}{dt^3}+(a_1-3a_0) \frac{d^2Y}{dt^2}+(a_2-a_1+2a_0)
+\frac{dY}{dt}+a_3Y=0.
+$$
+Assuming that $a_0$, $a_1$, $a_2$, $a_3$ are real and $a_0 \ne0$, find
+the possible forms for the general solution of (A).
+\end{problem}
+
+\end{document}

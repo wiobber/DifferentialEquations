@@ -1,0 +1,590 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+
+\begin{problem}\label{exer:5.3.1} Find a
+particular solution  by the method used in
+Example~\ref{example:5.3.2}. Then find the general
+solution and, where indicated, solve the initial value problem
+and graph the solution. 
+$y''+5y'-6y=22+18x-18x^2$
+\end{problem}
+
+\begin{problem}\label{exer:5.3.2} Find a
+particular solution  by the method used in
+Example~\ref{example:5.3.2}. Then find the general
+solution and, where indicated, solve the initial value problem
+and graph the solution. $y''-4y'+5y=1+5x$
+\begin{solution}
+The characteristic polynomial of the complementary equation is
+$p(r)=r^2-4r+5=(r-2)^2+1$, so
+$\{e^{2x}\cos x,e^{2x}\sin x\}$
+is a fundamental set of solutions for the complementary equation.
+Let $y_p=A+Bx$; then
+$y_p''-4y_p'+5y_p=-4B+5(A+Bx)=1+5x$.
+Therefore,$5B=5,\  -4B+5A=1$, so $B=1$, $A=1$.
+Therefore,$y_p=1+x$ is a particular solution and
+$y=1+x+e^{2x}(c_1\cos x+c_2\sin x)$ is the general solution.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.3} Find a
+particular solution  by the method used in
+Example~\ref{example:5.3.2}. Then find the general
+solution and, where indicated, solve the initial value problem
+and graph the solution. $y''+8y'+7y=-8-x+24x^2+7x^3$
+\end{problem}
+
+\begin{problem}\label{exer:5.3.4} Find a
+particular solution  by the method used in
+Example~\ref{example:5.3.2}. Then find the general
+solution and, where indicated, solve the initial value problem
+and graph the solution. $y''-4y'+4y=2+8x-4x^2$
+\begin{solution}
+The characteristic polynomial of the complementary equation is
+$p(r)=r^2-4r+4=(r-2)^2$, so  $\{e^{2x},xe^{2x}\}$
+is a fundamental set of solutions for the complementary equation.
+Let $y_p=A+Bx+Cx^2$; then
+$y_p''-4y_p'+4y_p=2C-4(B+2Cx)+4(A+Bx+Cx^2)=(2C-4B+4A)+(-8C+4B)x+4Cx^2
+=2+8x-4x^2$. Therefore,$4C=-4,\ -8C+4B=8,\
+2C-4B+4A=2$, so $C=-1$, $B=0$, and $A=1$.
+Therefore,$y_p=1-x^2$ is a particular solution and
+ $y=1-x^2+e^{2x}(c_1+c_2x)$ is the general solution.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.5} Find a
+particular solution  by the method used in
+Example~\ref{example:5.3.2}. Then find the general
+solution and, where indicated, solve the initial value problem
+and graph the solution. $y''+2y'+10y=4+26x+6x^2+10x^3, \quad  y(0)=2,
+\quad y'(0)=9$
+\end{problem}
+
+\begin{problem}\label{exer:5.3.6} Find a
+particular solution  by the method used in
+Example~\ref{example:5.3.2}. Then find the general
+solution and, where indicated, solve the initial value problem
+and graph the solution. $y''+6y'+10y=22+20x, \quad  y(0)=2,\;
+y'(0)=-2$
+\begin{solution}
+
+The characteristic polynomial of the complementary equation is
+$p(r)=r^2+6r+10=(r+3)^2+1$, so
+$\{e^{-3x}\cos x,e^{-3x}\sin x\}$
+is a fundamental set of solutions for the complementary equation.
+Let $y_p=A+Bx$; then
+$y_p''+6y_p'+10y_p=6B+10(A+Bx)=22+20x$.
+Therefore,$10B=20,\  6B+10A=22$, so $B=2$, $A=1$.
+Therefore,$y_p=1+2x$ is a particular solution and
+(A) $y=1+2x+e^{-3x}(c_1\cos x+c_2\sin x)$ is the general solution.
+Now $y(0)=2\Rightarrow 2=1+c_1\Rightarrow c_1=1$. Differentiating (A)
+yields
+$y'=2-3e^{-3x}(c_1\cos x+c_2\sin x) +e^{-3x}(-c_1\sin x+c_2\cos x)$,
+so $y'(0)=-2\Rightarrow
+-2=2-3c_1+c_2\Rightarrow c_2=-1$.
+ $y=1+2x+e^{-3x}(\cos x-\sin x)$ is the solution of the initial
+value problem.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.7}
+Show that the method used in Example~\ref{example:5.3.2}
+won't yield a particular solution of \begin{equation}\label{eq:eqA5.3.7}
+y''+y'=1+2x+x^2;
+\end{equation}
+that is, \ref{eq:eqA5.3.7} doesn't have a particular
+solution of the form $y_p=A+Bx+Cx^2$, where $A$, $B$, and $C$ are
+constants.
+\end{problem}
+
+\begin{problem}\label{exer:5.3.8} Find a
+particular solution by the method used in Example~\ref{example:5.3.3}. $x^2y''+7xy'+8y=\frac{6}{x}$
+\begin{solution}
+If $y_p=\frac{A}{x}$, then $x^2y_p''+7xy_p'+8y_p=
+A\left(x^2\left(\frac{2}{x^3}\right)+7x\left(\frac{-1}{x^2}\right)+\left(\frac{8}{x}\right)\right)=\frac{3A}{x}=\frac{6}{x}$ if $A=2$. Therefore,$y_p=\frac{2}{x}$ is a particular solution.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.9} Find a
+particular solution by the method used in Example~\ref{example:5.3.3}. $x^2y''-7xy'+7y=13x^{1/2}$
+\end{problem}
+
+\begin{problem}\label{exer:5.3.10} Find a
+particular solution by the method used in Example~\ref{example:5.3.3}. $x^2y''-xy'+y=2x^3$
+\begin{solution}
+If $y_p=Ax^3$, then  $x^2y_p''-xy_p'+y_p=
+A\left(x^2(6x)-x(3x^2)+x^3\right)=4Ax^3=2x^3$ if $A=\frac{1}{2}$.
+
+Therefore,$y_p=\frac{x^3}{2}$ is a particular solution.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.11} Find a
+particular solution by the method used in Example~\ref{example:5.3.3}. $x^2y''+5xy'+4y=\frac{1}{x^3}$
+\end{problem}
+
+\begin{problem}\label{exer:5.3.12} Find a
+particular solution by the method used in Example~\ref{example:5.3.3}. $x^2y''+xy'+y=10x^{1/3}$
+\begin{solution}
+If $y_p=Ax^{1/3}$, then $x^2y_p''+xy_p'+y_p=
+A\left(x^2\left(\frac{-2x^{-5/3}}{9}\right)+x\left(\frac{x^{-2/3}}{3}\right)
++x^{1/3}\right)=\frac{10A}{9}x^{1/3}=10x^{1/3}$
+if $A=9$. Therefore,$y_p=9x^{1/3}$ is a particular solution.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.13} Find a
+particular solution by the method used in Example~\ref{example:5.3.3}. $x^2y''-3xy'+13y=2x^4$
+\end{problem}
+
+\begin{problem}\label{exer:5.3.14}
+Show that the method suggested for finding a particular
+solution in Exercises~\ref{exer:5.3.8}-\ref{exer:5.3.13}
+won't yield a particular solution of \begin{equation}\label{eq:eqA5.3.14}
+x^2y''+3xy'-3y=\frac{1}{x^3};
+\end{equation}
+that is, \ref{eq:eqA5.3.14} doesn't have a particular
+solution of the form $y_p=A/x^3$.
+\begin{solution}
+If $y_p=\frac{A}{x^3}$, then  $x^2y_p''+3xy_p'-3y_p=
+A\left(x^2\left(\frac{12}{x^5}\right)+3x\left(\frac{-3}{x^4}\right)
++\frac{3}{x^3}\right)=0$. Therefore,$y_p$ is not a solution of the
+given equation for any choice of $A$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.15}
+Prove: If $a$, $b$, $c$, $\alpha$, and $M$ are constants and
+$M\ne0$ then
+$$
+ax^2y''+bxy'+cy=M x^\alpha
+$$
+has a particular solution $y_p=Ax^\alpha$ ($A=$ constant)
+ if and only if $a\alpha(\alpha-1)+b\alpha+c\ne0$.
+\end{problem}
+
+
+
+\begin{problem}\label{exer:5.3.16} 
+If $a$, $b$, $c$, and $\alpha$ are constants, then
+$$
+a(e^{\alpha x})''+b(e^{\alpha x})'+ce^{\alpha x}=(a\alpha^2+b\alpha+c)e^{\alpha
+x}.
+$$
+Use this to find a
+particular solution of $y''+5y'-6y=6e^{3x}$.
+\begin{solution}
+The characteristic polynomial of the complementary equation is
+$p(r)=r^2+5r-6=(r+6)(r-1)$, so
+ $\{e^{-6x},e^{x}\}$
+is a fundamental set of solutions for the complementary equation.
+Let $y_p=Ae^{3x}$; then
+$y_p''+5y_p'-6y_p=p(3)Ae^{3x}=18Ae^{3x}=6e^{3x}$ if
+$A=\frac{1}{3}$.
+Therefore,$y_p=\frac{e^{3x}}{3}$ is a particular solution and
+
+$y=\frac{e^{3x}}{3}+c_1e^{-6x}+c_2e^{x}$ is the general solution.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.17} 
+If $a$, $b$, $c$, and $\alpha$ are constants, then
+$$
+a(e^{\alpha x})''+b(e^{\alpha x})'+ce^{\alpha x}=(a\alpha^2+b\alpha+c)e^{\alpha
+x}.
+$$
+Use this to find a
+particular solution of $y''-4y'+5y=e^{2x}$.
+\end{problem}
+
+\begin{problem}\label{exer:5.3.18} 
+If $a$, $b$, $c$, and $\alpha$ are constants, then
+$$
+a(e^{\alpha x})''+b(e^{\alpha x})'+ce^{\alpha x}=(a\alpha^2+b\alpha+c)e^{\alpha
+x}.
+$$
+Use this to find a
+particular solution of $y''+8y'+7y=10e^{-2x}, \quad  y(0)=-2,\;
+y'(0)=10$. Then find the general solution, solve the initial value problem,
+and graph the solution.
+\begin{solution}
+The characteristic polynomial of the complementary equation is
+$p(r)=r^2+8r+7=(r+1)(r+7)$, so
+ $\{e^{-7x},e^{-x}\}$
+is a fundamental set of solutions for the complementary equation.
+Let $y_p=Ae^{-2x}$; then
+$y_p''+8y_p'+7y_p=p(-2)Ae^{-2x}=-5Ae^{-2x}=10e^{-2x}$ if $A=-2$.
+Therefore,$y_p=-2e^{-2x}$ is a particular solution  and
+(A) $y=-2e^{-2x}+c_1e^{-7x}+c_2e^{-x}$ is the general solution.
+Differentiating (A) yields
+ $y'=4e^{-2x}-7c_1e^{-7x}-c_2e^{-x}$.
+Now $y(0)=-2 \Rightarrow -2=-2+c_1+c_2$ and $y'(0)=10\Rightarrow
+10=4-7c_1-c_2$. Therefore,$c_1=-1$ and $c_2=1$, so
+$y=-2e^{-2x}-e^{-7x}+e^{-x}$
+ is the solution of the initial value problem.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.19} If $a$, $b$, $c$, and $\alpha$ are constants, then
+$$
+a(e^{\alpha x})''+b(e^{\alpha x})'+ce^{\alpha x}=(a\alpha^2+b\alpha+c)e^{\alpha
+x}.
+$$
+Use this to find a
+particular solution of $y''-4y'+4y=e^{x}, \quad  y(0)=2,\quad y'(0)=0$. Then find the general solution, solve the initial value problem,
+and graph the solution.
+\end{problem}
+
+\begin{problem}\label{exer:5.3.20} 
+If $a$, $b$, $c$, and $\alpha$ are constants, then
+$$
+a(e^{\alpha x})''+b(e^{\alpha x})'+ce^{\alpha x}=(a\alpha^2+b\alpha+c)e^{\alpha
+x}.
+$$
+Use this to find a
+particular solution of $y''+2y'+10y=e^{x/2}$.
+\begin{solution}
+The characteristic polynomial of the complementary equation is
+$p(r)=r^2+2r+10=(r+1)^2+9$, so
+$\{e^{-x}\cos3x,e^{-x}\sin3x\}$
+is a fundamental set of solutions for the complementary equation.
+If $y_p=Ae^{x/2}$, then
+$y_p''+2y_p'+10y_p=p(1/2)Ae^{x/2}=\frac{45}{4}Ae^{x/2}=e^{x/2}$
+if $A=\frac{4}{45}$.
+Therefore, $y_p=\frac{4}{45}e^{x/2}$ is a particular solution and
+$y=\frac{4}{45}e^{x/2}+e^{-x}(c_1\cos3x+c_2\sin3x)$
+ is the general solution.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.21} 
+If $a$, $b$, $c$, and $\alpha$ are constants, then
+$$
+a(e^{\alpha x})''+b(e^{\alpha x})'+ce^{\alpha x}=(a\alpha^2+b\alpha+c)e^{\alpha
+x}.
+$$
+Use this to find a
+particular solution of $y''+6y'+10y=e^{-3x}$.
+\end{problem}
+
+\begin{problem}\label{exer:5.3.22}
+Show that the method suggested for finding a particular
+solution in Exercises~\ref{exer:5.3.16}-\ref{exer:5.3.21}
+won't yield a particular solution of \begin{equation}\label{eq:eqA5.3.22}
+y''-7y'+12y=5e^{4x};
+\end{equation}
+that is,  \ref{eq:eqA5.3.22} doesn't have a particular solution
+of the form $y_p=Ae^{4x}$.
+\begin{solution}
+The characteristic polynomial of the complementary equation is
+$p(r)=r^2-7r+12=(r-4)(r-3)$. If $y_p=Ae^{4x}$, then
+$y_p''-7y_p'+12y_p=p(4)Ae^{4x}=0\cdot e^{4x}=0$, so
+$y_p''-7y_p'+12y_p\ne5e^{4x}$ for any choice of $A$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.23}
+Prove: If $\alpha$ and $M$ are constants and $M\ne0$  then
+constant coefficient equation
+$$
+ay''+by'+cy=M e^{\alpha x}
+$$
+has a particular solution $y_p=Ae^{\alpha x}$ ($A=$ constant)
+ if and only if $e^{\alpha x}$ isn't  a solution of the
+complementary equation.
+\end{problem}
+
+\begin{problem}\label{exer:5.3.24} 
+If $\omega$ is a constant,  differentiating a linear
+combination of $\cos\omega x$ and $\sin\omega x$ with respect to $x$
+yields another linear combination of $\cos\omega x$ and $\sin\omega
+x$. Use this to find a
+particular solution of $y''-8y'+16y=23\cos x-7\sin x$.
+\begin{solution}
+The characteristic polynomial of the complementary equation is
+$p(r)=r^2-8r+16=(r-4)^2$, so
+ $\{e^{4x},xe^{4x}\}$
+is a fundamental set of solutions for the complementary equation.
+If $y_p=A\cos x+B\sin x$, then
+$y_p''-8y_p'+16y_p=-(A\cos x+B\sin x)-8(-A\sin x+B\cos x)+
+16(A\cos x+B\sin x)=(15A-8B)\cos x+(8A+15B)\sin x$, so
+$15A-8B=23,\ 8A+15B=-7$, which implies that $A=1$ and $B=-1$.
+Hence $y_p=\cos x-\sin x$ and
+ $y=\cos x-\sin x+e^{4x}(c_1+c_2x)$ is the general solution.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.25} If $\omega$ is a constant,  differentiating a linear
+combination of $\cos\omega x$ and $\sin\omega x$ with respect to $x$
+yields another linear combination of $\cos\omega x$ and $\sin\omega
+x$. Use this to find a
+particular solution of $y''+y'=-8\cos2x+6\sin2x$.
+\end{problem}
+
+
+ \begin{problem}\label{exer:5.3.26}  If $\omega$ is a constant,  differentiating a linear
+combination of $\cos\omega x$ and $\sin\omega x$ with respect to $x$
+yields another linear combination of $\cos\omega x$ and $\sin\omega
+x$. Use this to find a
+particular solution of $y''-2y'+3y=-6\cos3x+6\sin3x$.
+\begin{solution}
+The characteristic polynomial of the complementary equation is
+$p(r)=r^2-2r+3=(r-1)^2+2$, so
+$\{e^x\cos \sqrt{2}x,e^{x}\sin \sqrt{2} x\}$
+is a fundamental set of solutions for the complementary equation.
+If $y_p=A\cos3x+B\sin3x$, then
+$y_p''-2y_p'+3y_p=-9(A\cos3x+B\sin3x)-6(-A\sin3x+B\cos3x)+
+3(A\cos3x+B\sin3x)=-(6A+6B)\cos3x+(6A-6B)\sin3x$, so
+$-6A-6B=-6,\ 6A-6B=6$, which implies that $A=1$ and $B=0$.
+Hence $y_p=\cos3x$ is a particular solution and
+$y=\cos3x+e^x(c_1\cos \sqrt{2}x+c_2\sin \sqrt{2} x)$
+ is the general solution.
+\end{solution}
+\end{problem}
+
+
+ \begin{problem}\label{exer:5.3.27}
+ If $\omega$ is a constant,  differentiating a linear
+combination of $\cos\omega x$ and $\sin\omega x$ with respect to $x$
+yields another linear combination of $\cos\omega x$ and $\sin\omega
+x$. Use this to find a
+particular solution of $y''+6y'+13y=18\cos x+6\sin x$.
+\end{problem}
+
+\begin{problem}\label{exer:5.3.28} If $\omega$ is a constant,  differentiating a linear
+combination of $\cos\omega x$ and $\sin\omega x$ with respect to $x$
+yields another linear combination of $\cos\omega x$ and $\sin\omega
+x$. Use this to find a
+particular solution of $y''+7y'+12y=-2\cos2x+36\sin2x, \quad  y(0)=-3,\quad y'(0)=3$. Then find the general
+solution, solve the initial value problem,
+and graph the solution.
+\begin{solution}
+The characteristic polynomial of the complementary equation is
+$p(r)=r^2+7r+12=(r+3)(r+4)$, so $\{e^{-4x},e^{-3x}\}$ is a fundamental
+set of solutions for the complementary equation. If
+$y_p=A\cos2x+B\sin2x$, then
+$y_p''+7y_p'+12y_p=-4(A\cos2x+B\sin2x)+14(-A\sin2x+B\cos2x)+ 12(A\cos
+x+B\sin x)=(8A+14B)\cos2x+(8B-14a)\sin2x$, so $8A+14B=-2,\
+-14A+8B=36$, which implies that $A=-2$ and $B=1$. Hence
+$y_p=-2\cos2x+\sin2x$ is a particular solution and (A)
+$y=-2\cos2x+\sin2x+c_1e^{-4x}+c_2e^{-3x}$ is the general solution.
+Differentiating (A) yields
+$y'=2\sin2x+2\cos2x-4c_1e^{-4x}-3c_2e^{-3x}$. Now $y(0)=-3 \Rightarrow
+-3=-2+c_1+c_2$ and $y'(0)=3\Rightarrow 3=2-4c_1-3c_2$. Therefore,
+$c_1=2$ and $c_2=-3$, so $y=-2\cos2x+\sin2x+2e^{-4x}-3e^{-3x}$ is the
+solution of the initial value problem.
+\end{solution}
+\end{problem}
+ 
+
+\begin{problem}\label{exer:5.3.29} 
+If $\omega$ is a constant,  differentiating a linear
+combination of $\cos\omega x$ and $\sin\omega x$ with respect to $x$
+yields another linear combination of $\cos\omega x$ and $\sin\omega
+x$. Use this to find a
+particular solution of $y''-6y'+9y=18\cos3x+18\sin3x, \quad  y(0)=2,\quad y'(0)=2$. Then find the general
+solution, solve the initial value problem,
+and graph the solution.
+\end{problem}
+
+\begin{problem}\label{exer:5.3.30}
+Find the general solution of
+$$
+y''+\omega_0^2y =M\cos\omega x+N\sin\omega x,
+$$
+where $M$ and $N$ are constants and
+ $\omega$ and $\omega_0$ are distinct  positive numbers.
+ \begin{solution}
+$\{\cos\omega_0x,\sin\omega_0x\}$ is a fundamental set of
+solutions of the complementary equation.
+If $y_p=A\cos\omega x+B\sin\omega x$, then $y_p''+\omega_0^2y_p=
+-\omega^2(A\cos\omega x+B\sin\omega x)+\omega_0^2(A\cos\omega
+x+B\sin\omega x)=(\omega_0^2-\omega^2)(A\cos\omega x+B\sin\omega x)
+=M\cos\omega x+N\sin\omega x$ if
+$A=\frac{M}{\omega_0^2-\omega^2}$ and
+$B=\frac{N}{\omega_0^2-\omega^2}$. Therefore,
+$$
+y_p= \frac{1}{\omega_0^2-\omega^2}(M\cos\omega
+x+N\sin\omega x)
+$$
+is a particular solution of the given equation and
+$$
+y=\frac{1}{\omega_0^2-\omega^2}(M\cos\omega x+N\sin\omega
+x)+c_1\cos\omega_0x+c_2\sin\omega_0x
+$$
+ is the general solution.
+ \end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.31}
+Show that the method suggested for finding a particular
+solution in Exercises~\ref{exer:5.3.24}-\ref{exer:5.3.29}
+won't yield a particular solution of \begin{equation}\label{eq:eqA5.3.31}
+y''+y=\cos x+\sin x;
+\end{equation}
+that is, \ref{eq:eqA5.3.31} does not have a particular
+solution of the form $y_p=A\cos x+B\sin x$.
+\end{problem}
+
+\begin{problem}\label{exer:5.3.32}
+Prove: If $M$, $N$ are constants (not both zero)   and
+$\omega>0$,   the constant coefficient equation \begin{equation}\label{eq:eqA5.3.32}
+ay''+by'+cy=M\cos\omega x+N\sin\omega x
+\end{equation} 
+has a particular solution that's a linear combination
+of $\cos\omega x$ and $\sin\omega x$
+ if and only if the left side of \ref{eq:eqA5.3.32}
+is not of the form $a(y''+\omega^2y)$, so that $\cos\omega x$
+and $\sin\omega x$ are solutions of the complementary equation.
+\begin{solution}
+If $y_p=A\cos\omega x+B\sin\omega x$, then
+$ay_p''+by_p'+cy_p=-a\omega^2(A\cos\omega
+x+B\sin\omega x)+b\omega(-A\sin\omega x+B\cos\omega x)+c(A\cos\omega
+x+B\sin\omega x)=\left[(c-a\omega^2)A+b\omega B\right]\cos\omega
+x +\left[-b\omega A+(c-a\omega^2)B\right]\sin\omega x$. Therefore,
+$y_p$ is a solution of (A) if and only if the set of equations (B)
+$(c-a\omega^2)A+b\omega B=M,\ -b\omega A+(c-a\omega^2)B=N$
+has a solution. If $(c-a\omega^2)^2+(b\omega)^2\ne0$, then (B)
+has the solution
+$A=\frac{(c-a\omega^2)M-b\omega N}{(c-a\omega^2)^2+(b\omega)^2}$,
+$B=\frac{(c-a\omega^2)N+b\omega M}{(c-a\omega^2)^2+(b\omega)^2}$,
+ and $y_p=A\cos\omega x+B\sin\omega x$ is a solution of (A).
+If $(c-a\omega^2)^2+(b\omega)^2=0$  (which is true if and only if
+the left side of (A) is of the form $a(y''+\omega^2y)$, then
+the coefficients of $A$ and $B$ in (B) are all zero, so (B) does not
+have a solution, so (A) does not have a solution of the
+form $y_p=A\cos\omega x+B\sin\omega x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.33} Refer
+to the cited exercises and use the principal of superposition to find
+a particular solution. Then find the general solution. 
+$y''+5y'-6y=22+18x-18x^2+6e^{3x}$
+(See Exercises~\ref{exer:5.3.1} and \ref{exer:5.3.16}.)
+\end{problem}
+
+\begin{problem}\label{exer:5.3.34} Refer
+to the cited exercises and use the principal of superposition to find
+a particular solution. Then find the general solution. 
+$y''-4y'+5y=1+5x+e^{2x}$
+(See Exercises~\ref{exer:5.3.2} and \ref{exer:5.3.17}.)
+\begin{solution}
+From Exercises~\ref{exer:5.3.2} and \ref{exer:5.3.17},
+$y_{p_1}=1+x$ and $y_{p_2}=e^{2x}$  are particular solutions of
+$y''-4y'+5y=1+5x$
+and
+$y''-4y'+5y=e^{2x}$
+respectively, and $\{e^{2x}\cos x,e^{2x}\sin x\}$
+is a fundamental set of solutions of the  complementary equation.
+Therefore,$y_p=y_{p_1}+y_{p_2}=1+x+e^{2x}$
+is a particular solution of the given equation, and
+$y=1+x+e^{2x}(1+c_1\cos x+c_2\sin x)$
+is the general solution.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.35} Refer
+to the cited exercises and use the principal of superposition to find
+a particular solution. Then find the general solution. $y''+8y'+7y=-8-x+24x^2+7x^3+10e^{-2x}$
+(See Exercises~\ref{exer:5.3.3} and \ref{exer:5.3.18}.)
+\end{problem}
+
+\begin{problem}\label{exer:5.3.36} Refer
+to the cited exercises and use the principal of superposition to find
+a particular solution. Then find the general solution. $y''-4y'+4y=2+8x-4x^2+e^{x}$
+(See Exercises~\ref{exer:5.3.4} and \ref{exer:5.3.19}.)
+\begin{solution}
+From Exercises~\ref{exer:5.3.4} and \ref{exer:5.3.19},
+$y_{p_1}=1-x^2$ and $y_{p_2}=e^{x}$  are particular solutions of
+$y''-4y'+4y=2+8x-4x^2$
+and
+$y''-4y'+4y=e^{x}$
+respectively, and $\{e^{2x},xe^{2x}\}$
+is a fundamental set of solutions of the complementary equation.
+Therefore,$y_p=y_{p_1}+y_{p_2}=1-x^2+e^{x}$
+is a particular solution of the given equation, and
+$y=1-x^2+e^{x}+e^{2x}(c_1+c_2x)$
+is the general solution.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.37} Refer
+to the cited exercises and use the principal of superposition to find
+a particular solution. Then find the general solution. $y''+2y'+10y=4+26x+6x^2+10x^3+e^{x/2}$
+(See Exercises~\ref{exer:5.3.5} and \ref{exer:5.3.20}.)
+\end{problem}
+
+\begin{problem}\label{exer:5.3.38} Refer
+to the cited exercises and use the principal of superposition to find
+a particular solution. Then find the general solution. $y''+6y'+10y=22+20x+e^{-3x}$
+(See Exercises~\ref{exer:5.3.6} and \ref{exer:5.3.21}.)
+\begin{solution}
+From Exercises~\ref{exer:5.3.6} and \ref{exer:5.3.21},
+$y_{p_1}=1+2x$ and $y_{p_2}=e^{-3x}$  are particular solutions of
+$y''+6y'+10y=22+20x$
+and
+$y''+6y'+10y=e^{-3x}$
+respectively, and $\{e^{-3x}\cos x,e^{-3x}\sin x\}$
+is a fundamental set of solutions of the complementary equation.
+Therefore,$y_p=y_{p_1}+y_{p_2}=1+2x+e^{-3x}$
+is a particular solution of the given equation, and
+$y=1+2x+e^{-3x}(1+c_1\cos x+c_2\sin x)$
+is the general solution.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.3.39}
+Prove: If $y_{p_1}$
+is a particular solution of
+$$
+P_0(x)y''+P_1(x)y'+P_2(x)y=F_1(x)
+$$
+on $(a,b)$ and $y_{p_2}$ is a particular solution of
+$$
+P_0(x)y''+P_1(x)y'+P_2(x)y=F_2(x)
+$$
+on  $(a,b)$, then $y_p=y_{p_1}+y_{p_2}$ is a solution of
+$$
+P_0(x)y''+P_1(x)y'+P_2(x)y=F_1(x)+F_2(x)
+$$
+on $(a,b)$.
+\end{problem}
+
+\begin{problem}\label{exer:5.3.40}
+Suppose $p$, $q$, and $f$ are continuous on $(a,b)$.
+Let $y_1$, $y_2$, and $y_p$ be twice differentiable on $(a,b)$, such
+that $y=c_1y_1+c_2y_2+y_p$ is a solution of
+$$
+y''+p(x)y'+q(x)y=f
+$$
+on $(a,b)$  for every choice of the
+constants $c_1,c_2$. Show that  $y_1$  and $y_2$ are solutions of
+the complementary equation on $(a,b)$.
+\begin{solution}
+Letting $c_1=c_2=0$ shows that (A) $y_p''+p(x)y_p'+q(x)y_p=f$.
+Letting $c_1=1$ and $c_2=0$ shows that  (B) $(y_1+y_p)''+
+p(x)(y_1+y_p)'+q(x)(y_1+y_p)=f$. Now subtract (A) from (B)
+to see that $y_1''+p(x)y_1'+q(x)y_1=0$.
+Letting $c_1=0$ and $c_2=1$ shows that  (C) $(y_2+y_p)''+
+p(x)(y_2+y_p)'+q(x)(y_2+y_p)=f$. Now subtract (A) from (C)
+to see that $y_2''+p(x)y_2'+q(x)y_2=0$.
+\end{solution}
+\end{problem}
+
+\end{document}

@@ -1,0 +1,960 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+
+
+\begin{problem}\label{exer:10.4.1} 
+Find the general solution.
+
+$ {\bf y}'=
+\begin{bmatrix} 1&2\\2&1\end{bmatrix}{\bf y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.2} 
+Find the general solution.
+
+$ {\bf y}'=
+\frac{1}{4}\begin{bmatrix}-5&3 \\3&-5\end{bmatrix}{\bf
+y}$
+
+\begin{solution}
+    $\frac{1}{4}\begin{vmatrix}-5-4\lambda&3\\
+3&-5-4\lambda\end{vmatrix}
+=(\lambda+1/2)(\lambda+2)$.
+Eigenvectors  associated with $\lambda_1=-1/2$  satisfy
+$\begin{bmatrix}-3&3\\-4&4
+\end{bmatrix}\begin{bmatrix}
+x_1\\x_2\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix}$,
+so $x_1=x_2$.  Taking $x_2=1$ yields
+${\bf y}_1=\begin{bmatrix}1 \\
+1\end{bmatrix}e^{-t/2}$.
+Eigenvectors  associated with $\lambda_2=-2$
+satisfy
+$\begin{bmatrix}3/4&3/4\\1&1
+\end{bmatrix}\begin{bmatrix}
+x_1\\x_2\end{bmatrix}=\begin{bmatrix} 0\\0\end{bmatrix}$,
+so $x_1=-x_2$.  Taking $x_2=1$ yields
+${\bf y}_2=\begin{bmatrix} -1\\
+1\end{bmatrix}e^{-2t}$. Hence
+ ${\bf y}= c_1\begin{bmatrix} 1\\1\end{bmatrix}e^{-t/2}+c_2\begin{bmatrix}-1\\1\end{bmatrix}e^{-2t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:10.4.3}
+Find the general solution.
+
+$ {\bf y}'=
+\frac{1}{5}\begin{bmatrix}-4&3\\
+-2&-11\end{bmatrix}{\bf y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.4}
+Find the general solution.
+
+$ {\bf y}'=
+\begin{bmatrix}-1&-4\\-1&-1\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $\begin{vmatrix}-1-\lambda&-4\\-1&-1-\lambda\end{vmatrix}
+=(\lambda-1)(\lambda+3)$.
+Eigenvectors  associated with $\lambda_1=-3$ satisfy
+$\begin{bmatrix}2&-4\\1&-2
+\end{bmatrix}\begin{bmatrix}
+x_1\\x_2\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix}$,
+so $x_1=2x_2$.  Taking $x_2=1$ yields
+${\bf y}_1=\begin{bmatrix}
+2\\1\end{bmatrix}e^{-3t}$.
+Eigenvectors  associated with $\lambda_2=1$  satisfy
+$\begin{bmatrix}-2&-4\\-1&-2
+\end{bmatrix}\begin{bmatrix}
+x_1\\x_2\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix}$,
+so $x_1=-2x_2$.  Taking $x_2=1$ yields
+${\bf y}_2=\begin{bmatrix} -2\\1\end{bmatrix}e^t$.
+Hence  ${\bf y}= c_1\begin{bmatrix} 2\\1\end{bmatrix}e^{-3t}+c_2\begin{bmatrix}{r}-2\\1\end{bmatrix}e^t$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.5} 
+Find the general solution.
+
+$ {\bf y}'=
+\begin{bmatrix} 2&-4\\-1&-1\end{bmatrix}{\bf y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.6} 
+Find the general solution.
+
+$ {\bf y}'=
+\begin{bmatrix} 4&-3\\2&-1\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $ \begin{vmatrix}4-\lambda&-3\\2&-1-\lambda\end{vmatrix}
+=(\lambda-2)(\lambda-1)$.
+Eigenvectors  associated with $\lambda_1=2$  satisfy
+$  \begin{bmatrix}2&-3\\2&-3
+ \end{bmatrix} \begin{bmatrix}
+x_1\\x_2 \end{bmatrix}= \begin{bmatrix} 0\\0 \end{bmatrix}$,
+so $x_1=\frac{3 }{2}x_2$.  Taking $x_2=2$ yields
+${\bf y}_1=  \begin{bmatrix}3\\2 \end{bmatrix}e^{2t}$.
+Eigenvectors  associated with $\lambda_2=1$ satisfy
+$  \begin{bmatrix}3&-3\\2&-2
+ \end{bmatrix} \begin{bmatrix}
+x_1\\x_2 \end{bmatrix}= \begin{bmatrix} 0\\0 \end{bmatrix}$,
+so $x_1=x_2$.  Taking $x_2=1$ yields
+${\bf y}_2=  \begin{bmatrix}1\\1 \end{bmatrix}e^t$.
+Hence
+ ${\bf y}= c_1 \begin{bmatrix}3\\2 \end{bmatrix}e^{2t}+c_2 \begin{bmatrix}1\\1 \end{bmatrix}e^t$.
+\end{solution}
+
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.7}
+Find the general solution.
+
+$ {\bf y}'=
+\begin{bmatrix}-6&-3\\1&-2\end{bmatrix}{\bf y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.8}
+Find the general solution.
+
+$ {\bf y}'=
+\begin{bmatrix}
+1&-1&-2\\1&-2&-3\\-4&1&-1\end{bmatrix}
+{\bf y}$
+
+\begin{solution}
+    $  \begin{vmatrix}1-\lambda&-1&-2\\1&-2-\lambda&-3 \\
+-4&1&-1-\lambda\end{vmatrix}=-(\lambda+3)(\lambda+1)(\lambda-2)$.
+The eigenvectors associated with
+ with $\lambda_1=-3$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}4&-1&-2&\vdots&0\\1&1
+&-3&\vdots&0\\-4&1&2&\vdots&0
+ \end{bmatrix}$
+which is row equivalent to
+$  \begin{bmatrix}1&0&-1&\vdots&0\\0&1&-2&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence $x_1=x_3$ and $x_2=2x_3$.  Taking $x_3=1$ yields
+${\bf y}_1=  \begin{bmatrix} 1\\2\\1
+ \end{bmatrix}e^{-3t}$.
+The eigenvectors associated with
+ with $\lambda_2=-1$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}2&-1&-2&\vdots&0\\1&-1
+&-3&\vdots&0\\-4&1&0&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&0&1&\vdots&0\\0&1&4&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence $x_1=-x_3$ and $x_2=-4x_3$.  Taking $x_3=1$ yields
+${\bf y}_2=  \begin{bmatrix}-1\\-4\\ 1
+ \end{bmatrix}e^{-t}$.
+The eigenvectors associated with
+ with $\lambda_3=2$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}-1&-1&-2&\vdots&0\\1&
+-4&-3&\vdots&0\\-4&1&-3&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&0&1&\vdots&0\\0&1&1&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence $x_1=-x_3$ and $x_2=-x_3$.  Taking $x_3=1$ yields
+${\bf y}_3=  \begin{bmatrix}-1\\-1\\1
+ \end{bmatrix}e^{2t}$. Hence
+ ${\bf y}= c_1 \begin{bmatrix} 1\\2\\1
+ \end{bmatrix}e^{-3t}+c_2 \begin{bmatrix}{r}-1\\-4\\1 \end{bmatrix}e^{-t}+c_3 \begin{bmatrix}-1\\-1\\1 \end{bmatrix}e^{2t}$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.9}
+Find the general solution.
+
+$ {\bf y}'=
+\begin{bmatrix}
+-6&-4&-8\\-4&0&-4\\-8&-4&-6\end{bmatrix}{\bf y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.10}
+Find the general solution.
+
+$ {\bf y}'=
+\begin{bmatrix}3&5&8\\1&-1&
+-2\\-1&-1&-1\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $ \begin{vmatrix}3-\lambda&5&8\\1&-1-\lambda&-2\\
+-1&-1&-1-\lambda\end{vmatrix}=-(\lambda-1)(\lambda+2)(\lambda-2)$.
+The eigenvectors associated with
+ with $\lambda_1=1$ satisfy the system with  augmented matrix
+$ \begin{bmatrix}2&5&8&\vdots&0\\1&-2
+&-2&\vdots&0\\-1&-1&-2&\vdots&0
+\end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix}1&0&2/3&\vdots&0\\0&1&4/3&
+\vdots&0\\0&0&0&\vdots&0\end{bmatrix}$.
+Hence $x_1=-\frac{2 }{3}x_3$ and $x_2=-\frac{4 }{3}x_3$.  Taking $x_3=3$
+yields
+${\bf y}_1= \begin{bmatrix}-2\\-4\\3
+\end{bmatrix}e^t$.
+The eigenvectors associated with
+ with $\lambda_2=-2$ satisfy the system with  augmented matrix
+$ \begin{bmatrix}5&5&8&\vdots&0\\1&1
+&-2&\vdots&0\\-1&-1&1&\vdots&0
+\end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix}1&1&0&\vdots&0\\0&0&1&
+\vdots&0\\0&0&0&\vdots&0\end{bmatrix}$.
+Hence $x_1=-x_2$ and $x_3=0$.  Taking $x_2=1$ yields
+${\bf y}_2= \begin{bmatrix} -1\\1\\0
+\end{bmatrix}e^{-2t}$.
+The eigenvectors associated with
+ with $\lambda_3=2$ satisfy the system with  augmented matrix
+$ \begin{bmatrix}1&5&8&\vdots&0\\1&-3
+&-2&\vdots&0\\-1&-1&-3&\vdots&0
+\end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix}1&0&7/4&\vdots&0\\0&1&5/4&
+\vdots&0\\0&0&0&\vdots&0\end{bmatrix}$.
+Hence $x_1=-\frac{7 }{4}x_3$ and $x_2=-\frac{5 }{4}x_3$.  Taking $x_3=4$
+yields
+${\bf y}_3= \begin{bmatrix}-7\\-5\\4
+\end{bmatrix}e^{2t}$. Hence
+${\bf y}=  c_1\begin{bmatrix}-2\\-4\\
+3\end{bmatrix}e^t+c_2\begin{bmatrix}-1\\1\\0
+\end{bmatrix}e^{-2t}+c_3\begin{bmatrix}-7\\-5\\4
+\end{bmatrix}e^{2t}$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.11}
+Find the general solution.
+
+$ {\bf y}'=
+\begin{bmatrix}
+1&-1&2\\12&-4
+& 10\\-6&1&-7
+\end{bmatrix}{\bf y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.12}
+Find the general solution.
+
+$ {\bf y}'=
+\begin{bmatrix}
+4&-1&-4\\4&-3&-2\\1&-1&-1\end{bmatrix}{\bf y}$
+
+\begin{solution}
+    $ \begin{vmatrix}4-\lambda&-1&-4\\4&-3-\lambda&-2\\
+1&-1&-1-\lambda\end{vmatrix}=-(\lambda-3)(\lambda+2)(\lambda+1)$.
+The eigenvectors associated
+ with $\lambda_1=3$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}1&-1&-4&\vdots&0\\4&-6
+&-2&\vdots&0\\1&-1&-4&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&0&-11&\vdots&0\\0&1&-7&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence  $x_1=11x_3$ and $x_2=7x_3$.  Taking $x_3=1$ yields
+${\bf y}_1=  \begin{bmatrix}11\\7\\1
+ \end{bmatrix}e^{3t}$.
+The eigenvectors associated
+ with $\lambda_2=-2$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}6&-1&-4&\vdots&0\\4&-1
+&-2&\vdots&0\\1&-1&1&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&0&-1&\vdots&0\\0&1&-2&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence $x_1=x_3$ and $x_2=2x_3$.  Taking $x_3=1$ yields
+${\bf y}_2=  \begin{bmatrix}1\\2\\1
+ \end{bmatrix}e^{-2t}$.
+The eigenvectors associated
+ with $\lambda_3=-1$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}5&-1&-4&\vdots&0\\4&-2
+&-2&\vdots&0\\1&-1&0&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&0&-1&\vdots&0\\0&1&-1&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence  $x_1=x_3$ and $x_2=x_3$.  Taking $x_3=1$ yields
+${\bf y}_3=  \begin{bmatrix}1\\1\\1
+ \end{bmatrix}e^{-t}$. Hence
+ ${\bf y}= c_1 \begin{bmatrix}11\\\phantom{1}7
+\\\phantom{1}1 \end{bmatrix}e^{3t}+c_2 \begin{bmatrix}1\\2
+\\1 \end{bmatrix}e^{-2t}+c_3 \begin{bmatrix}1\\1\\1
+ \end{bmatrix}e^{-t}$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.13} 
+Find the general solution.
+
+$ {\bf y}'=
+\begin{bmatrix}-2&2&-6\\2&6&2\\-2&-2&
+2\end{bmatrix}{\bf y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.14} 
+Find the general solution.
+
+$ {\bf y}'=
+\begin{bmatrix}3&2&-2\\-2&7&-2\\
+-10&10&-5\end{bmatrix}{\bf y}$ 
+
+\begin{solution}
+    $ \begin{vmatrix}3-\lambda&2&-2\\-2&7-\lambda&-2\\-10
+&10&-5-\lambda\end{vmatrix}=-(\lambda+5)(\lambda-5)^2$.
+The eigenvectors associated
+ with $\lambda_1=-5$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}8&2&-2&\vdots&0\\-2&12
+&-2&\vdots&0\\-10&10&0&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&0&-1/5&\vdots&0\\0&1&-1/5&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence  $x_1=\frac{1 }{5}x_3$ and $x_2=\frac{1 }{5}x_3$.  Taking
+$x_3=5$ yields
+${\bf y}_1=  \begin{bmatrix}1\\1\\5
+ \end{bmatrix}e^{-5t}$.
+The eigenvectors associated
+ with $\lambda_2=5$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}-2&2&-2&\vdots&0\\-2&2
+&-2&\vdots&0\\-10&10&-10&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&-1&1&\vdots&0\\0&0&0&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence $x_1=x_2-x_3$.  Taking $x_2=0$ and $x_3=1$ yields
+${\bf y}_2=  \begin{bmatrix}-1\\0\\1
+ \end{bmatrix}e^{5t}$.
+ Taking $x_2=1$ and $x_3=0$ yields
+${\bf y}_3=  \begin{bmatrix}1\\1\\0
+ \end{bmatrix}e^{5t}$. Hence
+ ${\bf y}= c_1 \begin{bmatrix}1\\1\\5
+ \end{bmatrix}e^{-5t}+c_2 \begin{bmatrix}-1\\0\\
+ 1 \end{bmatrix}e^{5t}+c_3 \begin{bmatrix}1\\1\\0 \end{bmatrix}e^{5t}$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.15} 
+Find the general solution.
+
+$ {\bf y}'=
+\begin{bmatrix}3&1&-1\\3&5&1\\-6&2&4
+\end{bmatrix}{\bf y}$
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.16}
+Solve the initial value problem.
+
+$ {\bf y}'=\begin{bmatrix}-7&4\\-6&7\end{bmatrix}{\bf y},\quad{\bf
+y}(0)=\begin{bmatrix}2\\-4\end{bmatrix}$
+
+\begin{solution}
+    $ \left|\begin{array}{cc}-7-\lambda&4\\-6&7-\lambda\end{array}\right|
+=(\lambda-5)(\lambda+5)$.
+Eigenvectors  associated with $\lambda_1=5$  satisfy
+$ \begin{bmatrix}-12&4\\-6&2
+\end{bmatrix}\begin{bmatrix}
+x_1\\x_2\end{bmatrix}=\begin{bmatrix} 0\\0\end{bmatrix}$,
+so $x_1=\frac{x_2 }{3}$.  Taking $x_2=3$ yields
+${\bf y}_1= \begin{bmatrix} 1\\3\end{bmatrix}e^{5t}$.
+Eigenvectors  associated with $\lambda_2=5$
+satisfy
+$ \begin{bmatrix}-2&4\\-6&12
+\end{bmatrix}\begin{bmatrix}
+x_1\\x_2\end{bmatrix}=\begin{bmatrix}{c} 0\\0\end{bmatrix}$,
+so $x_1=2x_2$.  Taking $x_2=1$ yields
+${\bf y}_2= \begin{bmatrix}2\\1\end{bmatrix}e^{-5t}$.
+The general solution is
+${\bf y}=c_1 \begin{bmatrix}
+1\\3\end{bmatrix}e^{5t}+
+c_2 \begin{bmatrix}2\\1\end{bmatrix}e^{-5t}$.
+Now ${\bf y}(0)= \begin{bmatrix}2\\-4\end{bmatrix}\Rightarrow
+c_1 \begin{bmatrix}
+1\\3\end{bmatrix}+
+c_2 \begin{bmatrix}2\\1\end{bmatrix}= \begin{bmatrix}2\\-4\end{bmatrix}$,
+so $c_1=-2$ and $c_2=2$. Therefore,
+${\bf y}= -\begin{bmatrix}2\\6\end{bmatrix}e^{5t}+\begin{bmatrix}4\\2\end{bmatrix}e^{-5t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:10.4.17}
+Solve the initial value problem.
+
+$ {\bf y}'=\frac{1}{6}\begin{bmatrix}7 &2\\-2& 2\end{bmatrix}{\bf y},\quad{\bf
+y}(0)= \begin{bmatrix}0\\-3\end{bmatrix}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.18}
+Solve the initial value problem.
+
+$ {\bf y}'=\begin{bmatrix}21&-12\\24&-15\end{bmatrix}{\bf y},\quad{\bf
+y}(0)= \begin{bmatrix}5\\3\end{bmatrix}$
+
+\begin{solution}
+    $ \begin{vmatrix}21-\lambda&-12\\24&-15-\lambda\end{vmatrix}
+=(\lambda-9)(\lambda+3)$.
+Eigenvectors  associated with $\lambda_1=9$  satisfy
+$ \begin{bmatrix}12&-12\\24&-24
+\end{bmatrix}\begin{bmatrix}
+x_1\\x_2\end{bmatrix}=\begin{bmatrix} 0\\0\end{bmatrix}$,
+so $x_1=x_2$.  Taking $x_2=1$ yields
+${\bf y}_1= \begin{bmatrix}1\\1\end{bmatrix}e^{9t}$.
+Eigenvectors  associated with $\lambda_2=-3$
+$ \begin{bmatrix}24&-12\\24&-12
+\end{bmatrix}\begin{bmatrix}
+x_1\\x_2\end{bmatrix}=\begin{bmatrix} 0\\0\end{bmatrix}$,
+so $x_1=\frac{1 }{2}x_2$.  Taking $x_2=2$ yields
+${\bf y}_2= \begin{bmatrix}1\\2\end{bmatrix}e^{-3t}$.
+The general solution is
+${\bf y}=c_1 \begin{bmatrix}1\\1\end{bmatrix}e^{9t}+c_2 \begin{bmatrix}1\\2\end{bmatrix}e^{-3t}$.
+Now  ${\bf y}(0)= \begin{bmatrix}5\\3\end{bmatrix}\Rightarrow
+c_1 \begin{bmatrix}1\\1\end{bmatrix}+c_2 \begin{bmatrix}1\\2\end{bmatrix}= \begin{bmatrix}5\\3\end{bmatrix}$, so $c_1=7$
+and $c_2=-2$. Therefore,
+${\bf y}= \begin{bmatrix}7\\7\end{bmatrix}e^{9t}-\begin{bmatrix}2\\4\end{bmatrix}e^{-3t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:10.4.19}
+Solve the initial value problem.
+
+$ {\bf y}'=\begin{bmatrix}-7&4\\-6&7\end{bmatrix}{\bf y},\quad{\bf
+y}(0)= \begin{bmatrix}-1\\7\end{bmatrix}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.20}
+Solve the initial value problem.
+
+$ {\bf y}'=\frac{1}{6} \begin{bmatrix}1&2&0\\4&-1&0\\0&0&3\end{bmatrix}{\bf y},\quad{\bf
+y}(0)= \begin{bmatrix}4\\7\\1\end{bmatrix}$
+
+\begin{solution}
+    $ \left|\begin{array}{ccc}1/6-\lambda&1/3&0\\
+2/3&-1/6-\lambda&0\\
+0&0&1/2-\lambda\end{array}\right|=-(\lambda+1/2)(\lambda-1/2)^2$.
+The eigenvectors associated with
+ with $\lambda_1=-1/2$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}2/3&1/3&0&\vdots&0
+\\2/3&1/3&0&\vdots&0\\0&0&1&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&1/2&0&\vdots&0\\0&0&1&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence $x_1=-\frac{x_2 }{2}$ and $x_3=0$.  Taking $x_2=2$ yields
+${\bf y}_1=  \begin{bmatrix}-1\\2\\0
+ \end{bmatrix}e^{-t/2}$.
+The eigenvectors associated with
+ with $\lambda_2=\lambda_3=1/2$ satisfy the system with  augmented
+matrix
+$  \begin{bmatrix}-1/3&1/3&0&\vdots&0\\
+2/3&-2/3&0&\vdots&0\\0&0&0&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&-1&0&\vdots&0\\0&0&0&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence $x_1=x_2$ and $x_3$ is arbitrary.  Taking $x_2=1$ and $x_3=0$
+yields
+${\bf y}_2=  \begin{bmatrix}1\\1\\0
+ \end{bmatrix}e^{t/2}$.
+Taking $x_2=0$ and $x_3=1$ yields
+${\bf y}_3=  \begin{bmatrix}0\\0\\1
+ \end{bmatrix}e^{t/2}$.
+ The general solution is
+${\bf y}= c_1 \begin{bmatrix}-1\\2\\0\end{bmatrix}e^{-t/2}+
+c_2 \begin{bmatrix}1\\1\\0\end{bmatrix}e^{t/2}+c_3 \begin{bmatrix}0\\0\\1\end{bmatrix}e^{t/2}$.
+Now ${\bf y}(0)=  \begin{bmatrix}4\\7\\1\end{bmatrix}\Rightarrow
+ c_1 \begin{bmatrix}-1\\2\\0\end{bmatrix}+
+c_2 \begin{bmatrix}1\\1\\0\end{bmatrix}+c_3 \begin{bmatrix}0\\0\\1\end{bmatrix}e^{t/2}=  \begin{bmatrix}4\\7\\1\end{bmatrix}$,
+so $c_1=1$, $c_2=5$, and $c_3=1$. Hence
+${\bf y}=  \begin{bmatrix}-1\\2\\0\end{bmatrix}e^{-t/2}+
+ \begin{bmatrix}5\\5\\0\end{bmatrix}e^{t/2}+ \begin{bmatrix}0\\0\\1\end{bmatrix}e^{t/2}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:10.4.21}
+Solve the initial value problem.
+
+$ {\bf y}'=\frac{1}{3} \begin{bmatrix}2&-2&3\\-4&4&3\\2&1&0\end{bmatrix}{\bf
+y},\quad{\bf y}(0)= \begin{bmatrix}1\\1\\5\end{bmatrix}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.22}
+Solve the initial value problem.
+
+$ {\bf y}'= \begin{bmatrix}6&-3&-8\\2&1&-2\\3&-3&-5\end{bmatrix}{\bf
+y},\quad{\bf y}(0)= \begin{bmatrix}0\\-1\\-1\end{bmatrix}$
+
+\begin{solution}
+    $ \begin{vmatrix}6-\lambda&-3&-8\\2&1-\lambda&-2\\
+3&-3&-5-\lambda\end{vmatrix}=-(\lambda-1)(\lambda+2)(\lambda-3)$.
+The eigenvectors associated
+ with $\lambda_1=1$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}5&-3&-8&\vdots&0\\2&0
+&-2&\vdots&0\\3&-3&-6&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&0&-1&\vdots&0\\0&1&1&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence  $x_1=x_3$ and $x_2=-x_3$.  Taking $x_3=$ yields
+${\bf y}_1=  \begin{bmatrix}1\\-1\\1
+ \end{bmatrix}e^t$.
+The eigenvectors associated
+ with $\lambda_2=-2$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}8&-3&-8&\vdots&0\\2&3
+&-2&\vdots&0\\3&-3&-3&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&0&-1&\vdots&0\\0&1&0&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence $x_1=x_3$ and $x_2=0$.  Taking $x_3=1$ yields
+${\bf y}_2=  \begin{bmatrix}1\\0\\1
+ \end{bmatrix}e^{-2t}$.
+The eigenvectors associated
+ with $\lambda_3=3$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}3&-3&-8&\vdots&0\\2&-2
+&-2&\vdots&0\\3&-3&-8&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&-1&0&\vdots&0\\0&0&1&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence  $x_1=x_2$ and $x_3=0$.  Taking $x_2=1$ yields
+${\bf y}_3=  \begin{bmatrix}1\\1\\0
+ \end{bmatrix}e^{3t}$.
+The general solution is
+${\bf y}=c_1  \begin{bmatrix}1\\-1\\1
+ \end{bmatrix}e^t+
+c_2  \begin{bmatrix}1\\0\\1
+ \end{bmatrix}e^{-2t}
++c_3  \begin{bmatrix}1\\1\\0
+ \end{bmatrix}e^{3t}$.
+Now ${\bf y}(0)=  \begin{bmatrix}0\\-1\\-1\end{bmatrix}\Rightarrow
+c_1  \begin{bmatrix}1\\-1\\1
+ \end{bmatrix}+
+c_2  \begin{bmatrix}1\\0\\1
+ \end{bmatrix}
++c_3  \begin{bmatrix}1\\1\\0
+ \end{bmatrix}=  \begin{bmatrix}0\\-1\\-1\end{bmatrix}$, so
+$c_1=2$, $c_2=-3$, and $c_3=1$. Therefore,
+${\bf
+y}=  \begin{bmatrix}2\\-2\\2\end{bmatrix}e^t- \begin{bmatrix}3\\0\\3\end{bmatrix}e^{-2t}+ \begin{bmatrix}1\\1\\0\end{bmatrix}e^{3t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:10.4.23}
+Solve the initial value problem.
+
+$ {\bf y}'=\frac{1}{3} \begin{bmatrix}2&4&-7\\1&5&-5\\-4&4&-1\end{bmatrix}{\bf
+y},\quad{\bf y}(0)= \begin{bmatrix}4\\1\\3\end{bmatrix}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.24} 
+Solve the initial value problem.
+
+$ {\bf y}'= \begin{bmatrix}3&0&1\\11&-2&7\\1&0&3\end{bmatrix}{\bf y},\quad
+{\bf y}(0)= \begin{bmatrix}2\\7\\6\end{bmatrix}$
+
+\begin{solution}
+    $ \begin{vmatrix}3-\lambda&0&1\\11&-2-\lambda&7\\
+1&0&3-\lambda\end{vmatrix}=-(\lambda-2)(\lambda+2)(\lambda-4)$.
+The eigenvectors associated with
+ with $\lambda_1=2$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}1&0&1&\vdots&0\\11&-4
+&7&\vdots&0\\1&0&1&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&0&1&\vdots&0\\0&1&1&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence $x_1=-x_3$ and $x_2=-x_3$.  Taking $x_3=1$ yields
+${\bf y}_1=  \begin{bmatrix}-1\\-1\\1
+ \end{bmatrix}e^{2t}$.
+The eigenvectors associated with
+ with $\lambda_2=-2$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}5&0&1&\vdots&0\\11&0
+&7&\vdots&0\\1&0&5&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&0&0&\vdots&0\\0&0&1&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence $x_1=x_3=0$ and $x_2$ is arbitrary.  Taking $x_3=1$ yields
+${\bf y}_2=  \begin{bmatrix}0\\1\\0
+ \end{bmatrix}e^{-2t}$.
+The eigenvectors associated with
+ with $\lambda_3=4$ satisfy the system with  augmented matrix
+$  \begin{bmatrix}-1&0&1&\vdots&0\\11&-6
+&7&\vdots&0\\1&0&-1&\vdots&0
+ \end{bmatrix}$,
+which is row equivalent to
+$  \begin{bmatrix}1&0&-1&\vdots&0\\0&1&-3&
+\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence $x_1=x_3$ and $x_2=3x_3$.  Taking $x_3=1$ yields
+${\bf y}_3=  \begin{bmatrix}1\\3\\1
+ \end{bmatrix}e^{4t}$.
+ The general solution is
+${\bf y}=c_1  \begin{bmatrix}-1\\-1\\1
+ \end{bmatrix}e^{2t}
++c_2  \begin{bmatrix}0\\1\\0
+ \end{bmatrix}e^{-2t}
++c_3  \begin{bmatrix}1\\3\\1
+ \end{bmatrix}e^{4t}$.
+Now ${\bf y}(0)=  \begin{bmatrix}2\\7\\6\end{bmatrix}\Rightarrow
+c_1  \begin{bmatrix}-1\\-1\\1
+ \end{bmatrix}
++c_2  \begin{bmatrix}0\\1\\0
+ \end{bmatrix}
++c_3  \begin{bmatrix}1\\3\\1
+ \end{bmatrix}=  \begin{bmatrix}2\\7\\6\end{bmatrix}$, so $c_1=2$, $c_2=-3$, and
+$c_3=4$. Hence
+${\bf y}=  \begin{bmatrix}-2\\-2\\2\end{bmatrix}e^{2t}- \begin{bmatrix}0\\3\\0\end{bmatrix}e^{-2t}+
+ \begin{bmatrix}4\\12\\4\end{bmatrix}e^{4t}$
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:10.4.25} 
+Solve the initial value problem.
+
+$ {\bf y}'= \begin{bmatrix}-2&-5&-1\\-4&-1&1\\4&5&3\end{bmatrix}{\bf y},\quad
+{\bf y}(0)= \begin{bmatrix}8\\-10\\-4\end{bmatrix}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.26}  
+Solve the initial value problem.
+
+$ {\bf y}'= \begin{bmatrix}3&-1&0\\4&-2&0\\4&-4&2\end{bmatrix}{\bf y},\quad
+{\bf y}(0)= \begin{bmatrix}7\\10\\2\end{bmatrix}$
+
+\begin{solution}
+    $\left|\begin{array}{cccc}3-\lambda&-1&0\\4&-2-\lambda&0
+\\4&-4&2-\lambda\end{array}\right|
+=-(\lambda+1)(\lambda-2)^2$.
+The eigenvectors associated
+ with $\lambda_1=-1$ satisfy the system with  augmented matrix
+$ \begin{bmatrix}4&-1&0&\vdots&0\\4&-1&0&\vdots&0\\4&-4&3&\vdots&0 \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix}1&0&-1/4&\vdots&0\\0&1&-1&\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$
+Hence $x_1=x_2/4$ and $x_2=x_3$.  Taking $x_3=4$ yields
+${\bf y}_1=  \begin{bmatrix}1\\4\\4
+ \end{bmatrix}e^{-t}$.
+The eigenvectors associated with
+ with $\lambda_2=\lambda_3=2$ satisfy the system with  augmented
+matrix
+$ \begin{bmatrix}1&-1&0&\vdots&0\\4&-4&0&\vdots&0\\4&-4&0&\vdots&0 \end{bmatrix}$,
+which is row equivalent to
+$ \begin{bmatrix}1&-1&0&\vdots&0\\0&0&0&\vdots&0\\0&0&0&\vdots&0 \end{bmatrix}$.
+Hence $x_1=x_2$ and $x_3$ is arbitrary.  Taking $x_2=1$ and $x_3=0$
+yields
+${\bf y}_2=  \begin{bmatrix}1\\1\\0
+ \end{bmatrix}e^{2t}$.
+Taking $x_2=0$ and $x_3=1$ yields
+${\bf y}_3=  \begin{bmatrix}0\\0\\1
+ \end{bmatrix}e^{2t}$.
+ The general solution is
+${\bf y}=c_1  \begin{bmatrix}1\\4\\4
+ \end{bmatrix}e^{-t}+
+c_2  \begin{bmatrix}1\\1\\0
+ \end{bmatrix}e^{2t}+
+c_3  \begin{bmatrix}0\\0\\1
+ \end{bmatrix}e^{2t}$.
+Now ${\bf y}(0)=  \begin{bmatrix}7\\10\\2\end{bmatrix}\Rightarrow
+c_1  \begin{bmatrix}1\\4\\4
+ \end{bmatrix}+
+c_2  \begin{bmatrix}1\\1\\0
+ \end{bmatrix}+
+c_3  \begin{bmatrix}0\\0\\1
+ \end{bmatrix}=  \begin{bmatrix}7\\10\\2\end{bmatrix}$,
+ so $c_1=1$, $c_2=6$, and
+$c_3=-2$. Hence
+ ${\bf y}=
+ \begin{bmatrix}1\\4\\4\end{bmatrix}e^{-t}+ \begin{bmatrix}6\\6\\-2\end{bmatrix}e^{2t}$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:10.4.27}
+Solve the initial value problem.
+
+$ {\bf y}'=
+\begin{bmatrix}-2&2&6\\2&6&2\\-2&-2&
+2\end{bmatrix}{\bf y},\quad{\bf y}(0)= \begin{bmatrix}6\\-10\\7\end{bmatrix}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.28}
+Let $A$ be an $n\times n$ constant matrix. Then
+Theorem~\ref{thmtype:10.2.1} implies that the solutions
+of
+$$
+{\bf y}'=A{\bf y}\quad\quad
+\text{(A)}
+$$
+are all defined on $(-\infty,\infty)$.
+\begin{enumerate}
+\item % (a)
+Use Theorem~\ref{thmtype:10.2.1} to show that the only
+solution
+of (A) that can ever equal the zero vector is ${\bf y}\equiv{\bf0}$.
+
+\begin{solution}
+    If ${\bf y}(t_0)=0$, then ${\bf y}$ is the solution
+of the initial value problem ${\bf y}'=A{\bf y},\ {\bf y}(t_0)={\bf
+0}$. Since ${\bf y}\equiv0$ is a solution of this problem,
+Theorem~\ref{thmtype:10.2.1} implies the conclusion.
+\end{solution}
+
+\item % (b)
+Suppose ${\bf y}_1$ is a solution of (A) and ${\bf y}_2$ is
+defined by ${\bf y}_2(t)={\bf y}_1(t-\tau)$, where $\tau$ is an
+arbitrary real number. Show that ${\bf y}_2$ is also a solution of
+(A).
+
+\begin{solution}
+    It is given that ${\bf y}_1'(t)=A{\bf y}_1(t)$ for all $t$.
+Replacing $t$ by $t-\tau$ shows that ${\bf y}_1'(t-\tau)=A{\bf
+y}_1(t-\tau)=A{\bf y}_2(t)$ for all $t$. Since ${\bf y}_2'(t)={\bf
+y}_1'(t-\tau)$ by the chain rule, this implies that ${\bf
+y}_2'(t)=A{\bf y}_2(t)$ for all $t$.
+\end{solution}
+
+\item % (c)
+Suppose ${\bf y}_1$ and ${\bf y}_2$ are solutions of (A) and
+there are real numbers $t_1$ and $t_2$ such that ${\bf y}_1(t_1)={\bf
+y}_2(t_2)$. Show that ${\bf y}_2(t)={\bf y}_1(t-\tau)$ for all $t$,
+where $\tau=t_2-t_1$. 
+\begin{hint}Show that ${\bf y}_1(t-\tau)$ and ${\bf
+y}_2(t)$ are solutions of the same initial value problem for (A),
+and apply the uniqueness assertion of
+Theorem~\ref{thmtype:10.2.1}.
+\end{hint}
+
+\begin{solution}
+    If ${\bf z}(t)={\bf y}_1(t-\tau)$, then ${\bf z}(t_2)={\bf
+y}_1(t_1)={\bf y}_2(t_2)$; therefore ${\bf z}$ and ${\bf y}_2$ are
+both solutions of the initial value problem ${\bf y}'=A{\bf y},\ {\bf
+y}(t_2)={\bf k}$, where ${\bf k}={\bf y}_2(t_2)$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.29}  
+Describe and graph trajectories of the given system.
+
+${\bf y}'=\begin{bmatrix}1&1\\1&-1\end{bmatrix}{\bf y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.30}
+Describe and graph trajectories of the given system.
+
+${\bf y}'=\begin{bmatrix}-4&3\\-2&-11\end{bmatrix}{\bf
+y}$
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.31} 
+Describe and graph trajectories of the given system.
+
+${\bf y}'=\begin{bmatrix}9&-3\\-1&11\end{bmatrix}{\bf
+y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.32} 
+Describe and graph trajectories of the given system.
+
+${\bf
+y}'=\begin{bmatrix}-1&-10\\-5&4\end{bmatrix}{\bf y}$
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.33}
+Describe and graph trajectories of the given system.
+
+${\bf y}'= \begin{bmatrix}5&-4\\1&10\end{bmatrix}{\bf
+y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.34} 
+Describe and graph trajectories of the given system.
+
+${\bf
+y}'= \begin{bmatrix}-7&1\\3 &-5\end{bmatrix}{\bf y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.35}
+Suppose the eigenvalues of the $2\times 2$
+matrix $A$ are $\lambda=0$ and $\mu\ne0$, with
+corresponding  eigenvectors ${\bf x}_1$ and ${\bf x}_2$.
+Let $L_1$ be the line through the origin parallel to ${\bf x}_1$.
+\begin{enumerate}
+\item % (a)
+Show that every point on $L_1$ is the trajectory of a constant
+solution of ${\bf y}'=A{\bf y}$.
+\item % (b)
+Show that the trajectories of nonconstant solutions of ${\bf y}'=A{\bf
+y}$ are half-lines parallel to ${\bf x}_2$ and on either side of
+$L_1$, and that the direction of motion along these trajectories is
+away from $L_1$ if $\mu>0$, or toward $L_1$ if $\mu<0$.
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.36}
+The matrix of the systems in
+in this exercise is singular. Describe
+and graph the trajectories of nonconstant solutions  of the given
+systems.
+
+${\bf y}'= \begin{bmatrix}-1&1\\1&-1\end{bmatrix}{\bf y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.37}
+The matrix of the systems in
+in this exercise is singular. Describe
+and graph the trajectories of nonconstant solutions  of the given
+systems.
+
+${\bf y}'= \begin{bmatrix}-1 &-3\\2 &6\end{bmatrix}{\bf
+y}$
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.38}
+The matrix of the systems in
+in this exercise is singular. Describe
+and graph the trajectories of nonconstant solutions  of the given
+systems.
+
+${\bf y}'= \begin{bmatrix}1 &-3\\-1 &3\end{bmatrix}{\bf
+y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.39}
+The matrix of the systems in
+in this exercise is singular. Describe
+and graph the trajectories of nonconstant solutions  of the given
+systems.
+
+${\bf y}'= \begin{bmatrix}1 &-2\\-1 &2\end{bmatrix}{\bf y}$
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.40} 
+The matrix of the systems in
+in this exercise is singular. Describe
+and graph the trajectories of nonconstant solutions  of the given
+systems.
+
+${\bf y}'= \begin{bmatrix}-4 &-4\\1&1\end{bmatrix}{\bf
+y}$
+\end{problem}
+
+\begin{problem}\label{exer:10.4.41}
+The matrix of the systems in
+in this exercise is singular. Describe
+and graph the trajectories of nonconstant solutions  of the given
+systems.
+
+${\bf
+y}'= \begin{bmatrix}3& -1\\-3 &1\end{bmatrix}{\bf y}$
+\end{problem}
+
+
+\begin{problem}\label{exer:10.4.42} 
+Let $P=P(t)$ and $Q=Q(t)$ be the populations of two species at time
+$t$, and assume that each population would grow exponentially if the
+other didn't exist; that is, in the absence of competition,
+$$
+P'=aP \quad\text{ and }\quadQ'=bQ
+\quad\quad \text{(A)}
+$$
+where $a$ and $b$ are positive constants. One way to model the effect
+of competition is to assume that the growth rate per individual of
+each population is reduced by an amount proportional to the other
+population, so (A) is replaced by
+\begin{eqnarray*}
+P'&=&\phantom{-}aP-\alpha Q\\
+Q'&=&-\beta P+bQ,
+\end{eqnarray*}
+where $\alpha$ and $\beta$ are positive constants. (Since negative
+population doesn't make sense, this system holds only while $P$ and
+$Q$ are both positive.) Now suppose $P(0)=P_0>0$ and
+$Q(0)=Q_0>0$.
+
+\begin{enumerate}
+\item % (a)
+For several choices of $a$, $b$, $\alpha$, and $\beta$, verify
+experimentally
+(by graphing trajectories of (A) in the $P$-$Q$ plane) that there's a
+constant $\rho>0$ (depending upon $a$, $b$, $\alpha$, and $\beta$) with the
+following properties:
+\begin{enumerate}
+\item % (i)
+If $Q_0>\rho P_0$, then $P$ decreases monotonically to zero
+in finite time, during which $Q$ remains positive.
+\item % (ii)
+If $Q_0<\rho P_0$, then $Q$ decreases monotonically to zero in
+finite time, during which $P$ remains positive.
+\end{enumerate}
+\item % (b)
+Conclude from  part (a) that exactly one of the species
+becomes extinct in finite time if $Q_0\ne\rho P_0$. Determine
+experimentally what happens if $Q_0=\rho P_0$.
+\item % (c)
+Confirm your experimental results and determine $\gamma$ by expressing
+the eigenvalues and associated eigenvectors of
+$$
+A=\begin{bmatrix} a &-\alpha\\-\beta&b\end{bmatrix}
+$$
+in terms of $a$, $b$, $\alpha$, and $\beta$, and applying the geometric
+arguments developed at the end of this section.
+\end{enumerate}
+
+\begin{solution}
+    The characteristic polynomial of $A$ is
+$p(\lambda)=\lambda^2-(a+b)+ab-\alpha\beta$, so the eigenvalues of $A$
+are $\lambda_1=\frac{a+b-\gamma}{2}$ and
+$\lambda_1=\frac{a+b+\gamma}{2}$, where
+$\gamma=\sqrt{(a-b)^2+4\alpha\beta}$; ${\bf
+x}_1=\begin{bmatrix}b-a+\gamma\\2\beta\end{bmatrix}$ and ${\bf
+x}_2=\begin{bmatrix}b-a-\gamma\\2\beta\end{bmatrix}$ are associated eigenvectors. Since
+$\gamma>|b-a|$, if $L_1$ and $L_2$ are lines through the origin
+parallel to ${\bf x}_1$ and ${\bf x}_2$, then $L_1$ is in the first and
+third quadrants and $L_2$ is in the second and fourth quadrants. The
+slope of $L_1$ is $\rho=\frac{2\beta}{ b-a+\gamma}>0$. If $Q_0=\rho
+P_0$ there are three possibilities: (i) if $\alpha\beta=ab$, then
+$\lambda_1=0$ and $P(t)=P_0$, $Q(t)=Q_0$ for all $t>0$; (ii) if
+$\alpha\beta<ab$, then $\lambda_1>0$ and
+$\lim_{t\to\infty}P(t)=\lim_{t\to\infty}Q(t)=\infty$ (monotonically);
+(iii) if $\alpha\beta>ab$, then $\lambda_1<0$ and
+$\lim_{t\to\infty}P(t)=\lim_{t\to\infty}Q(t)=0$ (monotonically). Now
+suppose $Q_0\ne\rho P_0$, so that the trajectory cannot intersect
+$L_1$, and assume for the moment that (A) makes sense for all $t>0$;
+that is, even if one or the other of $P$ and $Q$ is negative. Since
+$\lambda_2>0$ it follows that either $\lim_{t\to\infty}P(t)=\infty$ or
+$\lim_{t\to\infty}Q(t)=\infty$ (or both), and the trajectory is
+asymptotically parallel to $L_2$. Therefore,the trajectory must cross
+into the third quadrant (so $P(T)=0$ and $Q(T)>0$ for some finite $T$)
+if $Q_0>\rho P_0$, or into the fourth quadrant (so $Q(T)=0$ and
+$P(T)>0$ for some finite $T$) if $Q_0<\rho P_0$.
+
+\end{solution}
+\end{problem}
+
+\end{document}

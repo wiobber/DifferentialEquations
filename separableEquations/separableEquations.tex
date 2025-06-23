@@ -143,9 +143,32 @@ above the
 $x$-axis and  those defined by \eqref{eq:2.2.9}  are semicircles below the
 $x$-axis (see figure below).
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig020201.jpg}
-\end{image} 
+%\begin{image}
+%  \includegraphics[height=1.5in]{fig020201.jpg}
+%\end{image} 
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          domain=-1:1,
+          xmin=-3, xmax=3,
+          ymin=-3, ymax=3,
+          width=3.5in,
+          height=3.5in,
+          xtick={-2,-1,0,1,2},
+            xticklabels={$-2$,$-1$,,$1$,$2$},
+           ytick={-2,-1,0,1,2},
+            yticklabels={,,,,},  
+            axis x line=center,
+            axis y line=center,
+            every axis x label/.style={at=(current axis.right of origin),anchor=west},
+          ]
+\draw[red] (1.4142,0) arc (0:180:1.4142) ;
+\draw[blue] (-2.2361,0) arc (180:360:2.2361) ;
+      
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
  
 \ref{item:2.2.2b}  The solution of  \eqref{eq:2.2.5}
 is positive when $x=1$; hence, it  is of the form \eqref{eq:2.2.8}.
@@ -260,10 +283,14 @@ one such function that satisfies the initial condition $y(1)=2$.
  
 The figure below shows a direction field and some integral curves
 for \eqref{eq:2.2.13}.
+
+\begin{center}
+\geogebra{dqwg3kba}{800}{600}
+\end{center}
  
-\begin{image}
-    \includegraphics[height=1.5in]{fig020202.jpg}
-\end{image}
+%\begin{image}
+%    \includegraphics[height=1.5in]{fig020202.jpg}
+%\end{image}
  
 \end{explanation}
 \end{example}

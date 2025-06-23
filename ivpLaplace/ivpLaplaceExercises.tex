@@ -1,0 +1,572 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+
+\begin{problem}\label{exer:8.3.1} Use the Laplace transform to solve the initial value problem. $y''+3y'+2y=e^t, \quad  y(0)=1,\quad y'(0)=-6$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.2} Use the Laplace transform to solve the initial value problem. $y''-y'-6y=2, \quad  y(0)=1,\quad y'(0)=0$
+
+\begin{solution}
+$$
+(s^2-s-6)Y(s)=\frac{2}{s}+s-1=\frac{2+s(s-1)}{s}.
+$$
+Since $(s^2-s-6)=(s-3)(s+2)$,
+$$
+Y(s)=\frac{2+s(s-1)}{s(s-3)(s+2)}
+=-\frac{1}{3s}+\frac{8}{15}\frac{1}{s-3}+\frac{4}{5}\frac{1}{s+2}
+$$
+and $y=-\frac{1}{3}+\frac{8}{15}e^{3t}+\frac{4}{5}e^{-2t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.3} Use the Laplace transform to solve the initial value problem. $y''+y'-2y=2e^{3t}, \quad  y(0)=-1,\quad y'(0)=4$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.4} Use the Laplace transform to solve the initial value problem. $y''-4y=2 e^{3t}, \quad  y(0)=1,\quad y'(0)=-1$
+
+\begin{solution}
+$$
+(s^2-4)Y(s)=\frac{2}{s-3}+(-1+s)=\frac{2+(s-1)(s-3)}{s-3}.
+$$
+Since $s^2-4=(s-2)(s+2)$,
+$$
+Y(s)=\frac{2+(s-1)(s-3)}{(s-2)(s+2)(s-3)}=
+-\frac{1}{4}\frac{1}{s-2}+\frac{17}{20}\frac{1}{s+2}+\frac{2}{5}\frac{1}{s-3}
+$$
+and   $y=-\frac{1}{4}e^{2t}+\frac{17}{20}e^{-2t}+\frac{2}{5}e^{3t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.5} Use the Laplace transform to solve the initial value problem. $y''+y'-2y=e^{3t}, \quad  y(0)=1,\quad y'(0)=-1$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.6} Use the Laplace transform to solve the initial value problem. $y''+3y'+2y=6e^t, \quad  y(0)=1,\quad y'(0)=-1$
+
+\begin{solution}
+$$
+(s^2+3s+2)Y(s)=\frac{6}{s-1}+(-1+s)+3=\frac{6+(s-1)(s+2)}{s-1}.
+$$
+Since $s^2+3s+2=(s+2)(s+1)$,
+$$
+Y(s)=\frac{6+(s-1)(s+2)}{(s-1)(s+2)(s+1)}=
+\frac{1}{s-1}+\frac{2}{s+2}-\frac{2}{s+1}
+$$
+and
+ $y=e^t+2e^{-2t}-2e^{-t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.7} Use the Laplace transform to solve the initial value problem. $y''+y=\sin2t, \quad  y(0)=0,\quad y'(0)=1$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.8} Use the Laplace transform to solve the initial value problem. $y''-3y'+2y=2e^{3t}, \quad  y(0)=1,\quad y'(0)=-1$
+
+\begin{solution}
+$$
+ (s^2-3s+2)Y(s)=\frac{2}{s-3}+(-1+s)-3=\frac{2+(s-3)(s-4)}{s-3}.
+$$
+Since $s^2-3s+2=(s-1)(s-2)$,
+$$
+Y(s)=\frac{2+(s-3)(s-4)}{(s-1)(s-2)(s-3)}=
+\frac{4}{s-1}-\frac{4}{s-2}+\frac{1}{s-3}
+$$
+and
+  $y=4e^t-4e^{2t}+e^{3t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.9} Use the Laplace transform to solve the initial value problem. $y''-3y'+2y=e^{4t}, \quad  y(0)=1,\quad y'(0)=-2$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.10} Use the Laplace transform to solve the initial value problem. $y''-3y'+2y=e^{3t}, \quad  y(0)=-1,\quad y'(0)=-4$
+
+\begin{solution}
+$$
+(s^2-3s+2)Y(s)=\frac{1}{s-3}+(-4-s)+3=\frac{1-(s-3)(s+1)}{s-3}.
+$$
+Since $s^2-3s+2=(s-1)(s-2)$,
+$$
+Y(s)=\frac{1-(s-3)(s+1)}{(s-1)(s-2)(s-3)}=
+\frac{5}{2}\frac{1}{s-1}-\frac{4}{s-2}+\frac{1}{2}\frac{1}{s-3}
+$$
+and
+  $y=\frac{5}{2}e^t-4e^{2t}+\frac{1}{2}e^{3t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.11} Use the Laplace transform to solve the initial value problem. $y''+3y'+2y=2e^t, \quad  y(0)=0,\quad y'(0)=-1$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.12} Use the Laplace transform to solve the initial value problem. $y''+y'-2y=-4, \quad  y(0)=2,\quad y'(0)=3$
+
+\begin{solution}
+$$
+(s^2+s-2)Y(s)=-\frac{4}{s}+(3+2s)+2=\frac{-4+s(5+2s)}{s}.
+$$
+Since $(s^2+s-2)=(s+2)(s-1)$,
+$$
+Y(s)=\frac{-4+s(5+2s)}{s(s+2)(s-1)}
+=\frac{2}{s}-\frac{1}{s+2}+\frac{1}{s-1},
+$$
+and  $y=2-e^{-2t}+e^t$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.13} Use the Laplace transform to solve the initial value problem. $y''+4y=4, \quad  y(0)=0,\quad y'(0)=1$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.14} Use the Laplace transform to solve the initial value problem. $y''-y'-6y=2, \quad  y(0)=1,\quad y'(0)=0$
+
+\begin{solution}
+$$
+ (s^2-s-6)Y(s)=\frac{2}{s}+s-1=\frac{2+s(s-1)}{s}.
+$$
+Since $s^2-s-6=(s-3)(s+2)$,
+$$
+Y(s)=\frac{2+s(s-1)}{s(s-3)(s+2)}=
+-\frac{1}{3s}+\frac{8}{15}\frac{1}{s-3}+\frac{4}{5}\frac{1}{s+2}
+$$
+and
+ $y=-\frac{1}{3}+\frac{8}{15}e^{3t}
++\frac{4}{5}e^{-2t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.15} Use the Laplace transform to solve the initial value problem. $y''+3y'+2y=e^t, \quad  y(0)=0,\quad y'(0)=1$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.16} Use the Laplace transform to solve the initial value problem. $y''-y=1, \quad  y(0)=1,\quad y'(0)=0$
+
+\begin{solution}
+$$
+(s^2-1)Y(s)=\frac{1}{s}+s=\frac{1+s^2}{s}.
+$$
+Since $s^2-1=(s-1)(s+1)$,
+$$
+Y(s)=\frac{1+s^2}{s(s-1)(s+1)}=
+-\frac{1}{s}+\frac{1}{s-1}+\frac{1}{s+1}
+$$
+and
+ $y=-1+e^t+e^{-t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.17} Use the Laplace transform to solve the initial value problem. $y''+4y=3\sin t, \quad  y(0)=1,\quad y'(0)=-1$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.18} Use the Laplace transform to solve the initial value problem. $y''+y'=2e^{3t}, \quad  y(0)=-1,\quad y'(0)=4$
+
+\begin{solution}
+$$
+(s^2+s)Y(s)=\frac{2}{s-3}+(4-s)-1=\frac{2-(s-3)^2}{s-3}.
+$$
+Since $s^2+s=s(s+1)$,
+$$
+Y(s)=\frac{2-(s-3)^2}{s(s+1)(s-3)}=\frac{7}{3s}-\frac{7}{2}\frac{1}{s+1}
++\frac{1}{6}\frac{1}{s-3}
+$$
+and $y=\frac{7}{3}-\frac{7}{2}e^{-t} +\frac{1}{6}e^{3t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.19} Use the Laplace transform to solve the initial value problem. $y''+y=1, \quad  y(0)=2,\quad y'(0)=0$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.20} Use the Laplace transform to solve the initial value problem. $y''+y=t, \quad  y(0)=0,\quad y'(0)=2$
+
+\begin{solution}
+$$
+(s^2+1)Y(s)=\frac{1}{s^2}+2,\quad \mbox{so}\quad
+Y(s)=\frac{1}{(s^2+1)s^2}+\frac{2}{s^2+1}.
+$$
+Substituting $x=s^2$ into
+$$
+\frac{1}{(x+1)x}=\frac{1}{x+1}-\frac{1}{x}
+\quad \mbox{yields}\quad
+\frac{1}{(s^2+1)s^2}=\frac{1}{s^2}-\frac{1}{s^2+1},
+$$
+so $Y(s)=\frac{1}{s^2}+\frac{1}{s^2+1}$ and $y=t+\sin t$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.21} Use the Laplace transform to solve the initial value problem. $y''+y=t-3\sin2t, \quad  y(0)=1,\quad y'(0)=-3$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.22} Use the Laplace transform to solve the initial value problem. $y''+5y'+6y=2e^{-t}, \quad  y(0)=1,\quad y'(0)=3$
+
+\begin{solution}
+$$
+ (s^2+5s+6)Y(s)=\frac{2}{s+1}+(3+s)+5=\frac{2+(s+1)(s+8)}{s+1}.
+$$
+Since $s^2+5s+6=(s+2)(s+3)$,
+$$
+Y(s)=\frac{2+(s+1)(s+8)}{(s+1)(s+2)(s+3)}=
+\frac{1}{s+1}+\frac{4}{s+2}-\frac{4}{s+3}
+$$
+and
+ $y=e^{-t}+4e^{-2t}-4e^{-3t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.23} Use the Laplace transform to solve the initial value problem. $y''+2y'+y=6\sin t-4\cos t, \quad  y(0)=-1,\;
+y'(0)=1$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.24} Use the Laplace transform to solve the initial value problem. $y''-2y'-3y=10\cos t, \quad  y(0)=2,\quad y'(0)=7$
+
+\begin{solution}
+$$
+(s^2-2s-3)Y(s)=\frac{10s}{s^2+1}+(7+2s)-4=
+\frac{10s}{s^2+1}+(2s+3).
+$$
+Since $s^2-2s-3=(s-3)(s+1)$,
+$$
+Y(s)=
+\frac{10s}{(s-3)(s+1)(s^2+1)}+\frac{2s+3}{(s-3)(s+1)}.
+\text{(A)}
+$$
+$$
+\frac{2s+3}{(s-3)(s+1)}=\frac{9}{4}\frac{1}{s-3}-\frac{1}{4}\frac{1}{s+1}
+\leftrightarrow\frac{9}{4}e^{3t}-\frac{1}{4}e^{-t}.
+\text{(B)}
+$$
+$$
+\frac{10s}{(s-3)(s+1)(s^2+1)}=\frac{A}{s-3}+\frac{B}{s+1}+\frac{Cs+D}{s^2+1}
+$$
+ where
+$$
+(A(s+1)+B(s-3))(s^2+1)+(Cs+D)(s-3)(s+1)=10s.
+$$
+$$
+\begin{array}{rcrl}
+40A&=&30&(\mbox{set }s=3);\\
+-8B&=&-10& (\mbox{set }s=-1);\\
+A-3B-3D&=&0& (\mbox{set }s=0);\\
+A+B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=3/4$, $B=5/4$,
+$C=-2$, $D=-1$. Therefore,
+\begin{eqnarray*}
+\frac{10s}{(s-3)(s+1)(s^2+1)}
+&=&\frac{3}{4}\frac{1}{s-3}+\frac{5}{4}\frac{1}{s+1}-\frac{2s+1}{s^2+1}
+\\&\leftrightarrow&
+\frac{3}{4}e^{3t}+\frac{5}{4}e^{-t}-2\cos t-\sin t.
+\end{eqnarray*}
+From this, (A), and (B),
+ $y=-\sin t-2\cos t+3e^{3t}+e^{-t}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.25} Use the Laplace transform to solve the initial value problem. $y''+y=4\sin t+6\cos t, \quad  y(0)=-6,\;
+y'(0)=2$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.26} Use the Laplace transform to solve the initial value problem.  $y''+4y=8\sin2t+9\cos t, \quad  y(0)=1,\quad y'(0)=0$
+
+\begin{solution}
+$$
+(s^2+4)Y(s)=\frac{16}{s^2+4}+\frac{9s}{s^2+1}+s,\quad \mbox{ so }
+$$
+$$
+Y(s)=\frac{16}{(s^2+4)^2}+\frac{9s}{(s^2+4)(s^2+1)}+\frac{s}{s^2+4}.
+$$
+From the table of Laplace transforms,
+\begin{eqnarray*}
+t\cos2t&\leftrightarrow&\frac{s^2-4}{(s^2+4)^2}=\frac{s^2+4}{(s^2+4)^2}
+-\frac{8}{(s^2+4)^2}\\
+&=&\frac{1}{s^2+4}-\frac{8}{(s^2+4)^2}.
+\end{eqnarray*}
+Therefore,
+$$
+\frac{8}{(s^2+4)^2}=\frac{1}{s^2+4}-{\cal L}(t\cos2t),
+\mbox{ so }
+\frac{16}{(s^2+4)^2}\leftrightarrow\sin2t-2t\cos2t.
+\text{(A)}
+$$
+Substituting $x=s^2$ into
+$$
+\frac{9}{(x+4)(x+1)}=\frac{3}{x+1}-\frac{3}{x+4}
+$$
+and multiplying  by $s$ yields
+$$
+\frac{9s}{(s^2+4)(s^2+1)}=\frac{3s}{s^2+1}-\frac{3s}{s^2+4}
+\leftrightarrow 3\cos t-3\cos2t.
+\text{(B)}
+$$
+Finally,
+$$
+\frac{s}{s^2+4}\leftrightarrow\cos2t.
+\text{(C)}
+$$
+Adding (A), (B), and (C) yields
+$y=-(2t+2)\cos2t+\sin2t+3\cos t$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.27} Use the Laplace transform to solve the initial value problem. $y''-5y'+6y=10e^t\cos t, \quad  y(0)=2,\quad y'(0)=1$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.28} Use the Laplace transform to solve the initial value problem. $y''+2y'+2y=2t, \quad  y(0)=2,\quad y'(0)=-7$
+
+\begin{solution}
+$$
+(s^2+2s+2)Y(s)=\frac{2}{s^2}+(-7+2s)+4.
+$$
+Since $(s^2+2s+2)=(s+1)^2+1$,
+$$
+Y(s)=\frac{2}{s^2((s+1)^2+1)}+\frac{2s-3}{(s+1)^2+1}.
+\text{(A)}
+$$
+$$
+\frac{2s-3}{(s+1)^2+1}=\frac{2(s+1)-5}{(s+1)^2+1}
+\leftrightarrow e^{-t}(2\cos t-5\sin t).
+\text{(B)}
+$$
+$$
+\frac{2}{s^2((s+1)^2+1)}=\frac{A}{s}+\frac{B}{s^2}+\frac{C(s+1)+D}{(s+1)^2+1},
+$$
+where
+$(As+B)\left((s+1)^2+1\right)+s^2\left(C(s+1)+D\right)=2$.
+$$
+\begin{array}{rcll}
+2B&=&2&(\mbox{set }s=0);\\
+-A+B+D&=&2&(\mbox{set }s=-1);\\
+A+C&=&0&(\mbox{equate coefficients of }s^3);\\
+2A+B+C+D&=&0&(\mbox{equate coefficients of }s^2).
+\end{array}
+$$
+Solving this system yields $A=-1$, $B=1$, $C=1$, $D=0$. Therefore,
+$$
+\frac{2}{s^2((s+1)^2+1)}=-\frac{1}{s}+\frac{1}{s^2}+\frac{(s+1)}{(s+1)^2+1}\leftrightarrow-1+t+e^{-t}\cos t.
+$$
+From this, (A), and (B),
+$y=-1+t+e^{-t}(\cos t-5\sin t)$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.29} Use the Laplace transform to solve the initial value problem. $y''-2y'+2y=5\sin t+10\cos t, \quad  y(0)=1,\;
+y'(0)=2$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.30} Use the Laplace transform to solve the initial value problem. $y''+4y'+13y=10e^{-t}-36e^t, \quad  y(0)=0,\;
+y'(0)=-16$
+
+\begin{solution}
+$(s^2+4s+5)Y(s)=\frac{(s+1)+3}{(s+1)^2+1}+4$.
+Since $(s^2+4s+5)=(s+2)^2+1$,
+$$
+Y(s)=\frac{s+4}{((s+1)^2+1)((s+2)^2+1)}+\frac{4}{(s+2)^2+1}.
+\text{(A)}
+$$
+$$
+\frac{4}{(s+2)^2+1}
+\leftrightarrow 4e^{-2t}\sin t.
+\text{(B)}
+$$
+$$
+\frac{s+4}{((s+1)^2+1)((s+2)^2+1)}=\frac{A(s+1)+B}{(s+1)^2+1}+\frac{C(s+2)+D}{(s+2)^2+1},
+$$
+where
+$\left(A(s+1)+B\right)\left((s+2)^2+1\right)+
+\left(C(s+2)+D\right)\left((s+1)^2+1\right)=4+s$.
+$$
+\begin{array}{rcll}
+5A+5B+4C+2D&=&4&(\mbox{set }s=0);\\
+2B+C+D&=&3&(\mbox{set }s=-1);\\
+-A+B+2D&=&2&(\mbox{set }s=-2);\\
+A+C&=&0&(\mbox{equate coefficients of }s^3).\\
+\end{array}
+$$
+Solving this system yields $A=-1$, $B=1$, $C=1$, $D=0$. Therefore,
+$$
+\frac{s+4}{((s+1)^2+1)((s+2)^2+1)}=\frac{-(s+1)+1}{(s+1)^2+1}+\frac{s+2}{(s+2)^2+1},
+\leftrightarrow e^{-t}(-\cos t+\sin t)+e^{-2t}\cos t.
+$$
+From this, (A), and (B),
+$y=e^t(-\cos t+\sin t)+e^{-2t}(\cos t+4\sin t)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.31} Use the Laplace transform to solve the initial value problem. $y''+4y'+5y=e^{-t}(\cos t+3\sin t), \quad
+y(0)=0,\quad y'(0)=4$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.32} Use the Laplace transform to solve the initial value problem. $2y''-3y'-2y=4e^t, \quad   y(0)=1,\;  y'(0)=-2$
+
+\begin{solution}
+$$
+(2s^2-3s-2)Y(s)=\frac{4}{s-1}+2(-2+s)-3=\frac{4+(2s-7)(s-1)}{s-1}
+$$
+
+Since $2s^2-3s-2=(s-2)(2s+1)$,
+$$
+Y(s)=\frac{4+(2s-7)(s-1)}{2(s-2)(s-1)(s+1/2)}=
+\frac{1}{5}\frac{1}{s-2}-\frac{4}{3}\frac{1}{s-1}+\frac{32}{15}\frac{1}{s+1/2}
+$$
+and
+ $y=\frac{1}{5}e^{2t}-\frac{4}{3}e^t
++\frac{32}{15}e^{-t/2}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.33} Use the Laplace transform to solve the initial value problem. $6y''-y'-y=3e^{2t}, \quad   y(0)=0,\;  y'(0)=0$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.34} Use the Laplace transform to solve the initial value problem. $2y''+2y'+y=2t, \quad   y(0)=1,\;  y'(0)=-1$
+
+\begin{solution}
+$$
+(2s^2+2s+1)Y(s)=\frac{2}{s^2}+2(-1+s)+2=\frac{2}{s^2}+2s.
+$$
+Since $2s^2+2s+1=2((s+1/2)^2+1/4)$,
+$$
+Y(s)=\frac{1}{s^2((s+1/2)^2+1/4)}+\frac{s}{((s+1/2)^2+1/4)}.
+\text{(A)}
+$$
+$$
+\frac{s}{((s+1/2)^2+1/4)}\leftrightarrow
+e^{-t/2}(\cos(t/2)-\sin(t/2)).
+\text{(B)}
+$$
+$$
+ \frac{1}{s^2((s+1/2)^2+1/4)}=\frac{A}{s}+\frac{B}{s^2}
++\frac{C(s+1/2)+D}{((s+1/2)^2+1/4)}
+$$
+where
+$$
+(As+B)((s+1/2)^2+1/4)+(C(s+1/2)+D)s^2=1.
+$$
+$$
+\begin{array}{rcrl}
+B&=&2&(\mbox{set }s=0);\\
+-A+2B+2D&=&8& (\mbox{set }s=-1/2);\\
+5A+10B+2C+2D&=&8& (\mbox{set }s=1/2);\\
+A+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=-4$, $B=2$,
+$C=4$, $D=0$. Therefore,
+\begin{eqnarray*}
+\frac{1}{s^2((s+1/2)^2+1/4)}
+&=&
+-\frac{4}{s}+\frac{2}{s^2}
++\frac{4(s+1/2)}{(s+1/2)^2+1/4}
+\\&\leftrightarrow&
+-4+2t+4e^{-t/2}\cos(t/2).
+\end{eqnarray*}
+This, (A), and (B) imply that
+$y=e^{-t/2}(5\cos(t/2)-\sin(t/2))+2t-4$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.35} Use the Laplace transform to solve the initial value problem. $4y''-4y'+5y=4\sin t-4\cos t, \quad   y(0)=0,\;  y'(0)=11/17$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.36} Use the Laplace transform to solve the initial value problem. $4y''+4y'+y=3\sin t+\cos t, \quad   y(0)=2,\;  y'(0)=-1$
+
+\begin{solution}
+$$
+(4s^2+4s+1)Y(s)=\frac{3+s}{s^2+1}+4(-1+2s)+8=
+\frac{3+s}{s^2+1}+4(-1+2s)+8s+4.
+$$
+Since $4s^2+4s+1=4(s+1/2)^2$,
+$$
+Y(s)=
+\frac{3+s}{4(s+1/2)^2(s^2+1)}+\frac{2}{s+1/2}.
+\text{(A)}
+$$
+$$
+\frac{3+s}{4(s+1/2)^2(s^2+1)}={A}\frac{s+1/2}+\frac{B}{(s+1/2)^2}
++\frac{Cs+D}{s^2+1}
+$$
+where
+$$
+(A(s+1/2)+B)(s^2+1)+(Cs+D)(s+1/2)^2=\frac{3+s}{4}.
+$$
+$$
+\begin{array}{rcrl}
+10B&=&5&(\mbox{set }s=-1/2);\\
+2A+4B+D&=&3& (\mbox{set }s=0);\\
+12A+8B+9C+9D&=&4& (\mbox{set }s=1);\\
+A+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=3/5$, $B=1/2$,
+$C=-3/5$, $D=-1/5$. Therefore,
+\begin{eqnarray*}
+\frac{3+s}{4(s+1/2)^2(s^2+1)}
+&=&
+\frac{3}{5}\frac{1}{s+1/2}+\frac{1}{2}\frac{1}{(s+1/2)^2}
+-\frac{1}{5}\frac{3s+1}{s^2+1}.
+\\&\leftrightarrow&
+\frac{3}{5}e^{-t/2}+\frac{1}{2}te^{-t/2}-\frac{1}{5}(3\cos t+\sin t).
+\end{eqnarray*}
+Since $\frac{2}{s+1/2}\leftrightarrow2e^{-t/2}$, this and (A)
+imply that
+ $y=\frac{e^{-t/2}}{10}(5t+26)-\frac{1}{5}(3\cos
+t+\sin t)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.3.37} Use the Laplace transform to solve the initial value problem. $9y''+6y'+y=3e^{3t}, \quad   y(0)=0,\;  y'(0)=-3$
+\end{problem}
+
+\begin{problem}\label{exer:8.3.38}
+Suppose $a,b$, and $c$ are constants and $a\ne0$.  Let
+$$
+y_1={\cal L}^{-1}\left(as+b\over as^2+bs+c\right)\mbox{\quad and \quad}
+y_2={\cal L}^{-1}\left(a\over as^2+bs+c\right).
+$$
+Show that
+$$
+y_1(0)=1,\quad y_1'(0)=0\mbox{\quad and \quad} y_2(0)=0,\quad y_2'(0)=1.
+$$
+\begin{hint}
+Use the Laplace transform to solve the initial value
+problems
+\begin{eqnarray*}
+ay''+by'+cy&=&0, \quad   y(0)=1,\quad y'(0)=0 \\
+ay''+by'+cy&=&0, \quad  y(0)=0,\quad y'(0)=1.
+\end{eqnarray*}
+\end{hint}
+
+\begin{solution}
+Transforming the initial value problem
+$$
+ay''+by'+cy=0,\  y(0)=1,\ y'(0)=0
+$$
+yields
+$(as^2+bs+c)Y(s)=as+b$,
+so $Y(s)=\frac{as+b}{as^2+bs+c}$. Therefore,
+$y_1={\cal L}^{-1}\left(as+b\over as^2+bs+c\right)$
+satisfies the initial conditions $y_1(0)=1$, $y_1'(0)=0$.
+
+Transforming the initial value problem
+$$
+ay''+by'+cy=0,\  y(0)=0,\ y'(0)=1
+$$
+yields
+$(as^2+bs+c)Y(s)=a$,
+so $Y(s)=\frac{a}{as^2+bs+c}$. Therefore,
+$y_2={\cal L}^{-1}\left(\frac{a}{as^2+bs+c}\right)$
+satisfies the initial conditions $y_1(0)=0$, $y_1'(0)=1$.
+\end{solution}
+\end{problem}
+
+\end{document}

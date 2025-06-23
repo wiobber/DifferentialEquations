@@ -1,0 +1,1074 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+
+
+\begin{problem}\label{exer:9.3.1}   Find a particular solution.  
+
+$y'''-6y''+11y'-6y=-e^{-x}(4+76x-24x^2)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.2}   Find a particular solution. 
+
+$y'''-2y''-5y'+6y=e^{-3x}(32-23x+6x^2)$
+
+\begin{solution}
+If $y=u^{-3x}$, then $y'''-2y''-5y'+6y=e^{-3x}[
+(u'''-11u''+34u'-24u)-2(u''-6u'+9u)-5(u'-3u)+6u]
+=e^{-3x}(u'''-11u''+34u'-24u)$. Let $u_p=A+Bx+Cx^2$, where
+$(-24A+34B-22C)+(-24B+68C)x-24Cx^2=32-23x+6x^2$. Then $C=-1/4$,
+$B=1/4$, $A=-3/4$ and $y_p=-\frac{e^{-3x}}{4}(3-x+x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.3}   Find a particular solution.  
+
+$4y'''+8y''-y'-2y=-e^x(4+45x+9x^2)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.4}   Find a particular solution. 
+
+$y'''+3y''-y'-3y=e^{-2x}(2-17x+3x^2)$
+
+\begin{solution}
+If $y=ue^{-2x}$, then $y'''+3y''-y'-3y=e^{-2x}[
+(u'''-6u''+12u'-8u)+ 3(u''-4u'+4u) -(u'-2u) -3u]
+=e^{-2x}(u'''-3u''-u'+3u)$. Let $u_p=A+Bx+Cx^2$, where $(3A-B-6C)+
+(3B-2C)x +3Cx^2=2-17x+3x^2$. Then $C=1$, $B=-5$, $A=1$, and
+$y_p=e^{-2x}(1-5x+x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.5}   Find a particular solution. 
+
+$y'''+3y''-y'-3y=e^x(-1+2x+24x^2+16x^3)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.6}   Find a particular solution.  
+
+$y'''+y''-2y=e^x(14+34x+15x^2)$
+
+\begin{solution}
+If $y=ue^x$, then $y'''+y''-2y=e^x[
+(u'''+3u''+3u'+u) +(u''+2u'+u) -2u]= e^x(u'''+4u''+5u')$. Let
+$u_p=x(A+Bx+Cx^2)$, where $(5A+8B+6C) +(10B+24C)x +15Cx^2
+=14+34x+15x^2$. Then $C=1$, $B=1$, $A=0$, and $y_p=x^2e^x(1+x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.7}   Find a particular solution.   
+
+$4y'''+8y''-y'-2y=-e^{-2x}(1-15x)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.8}   Find a particular solution.  
+
+$y'''-y''-y'+y=e^x(7+6x)$
+
+\begin{solution}
+If $y=ue^x$, then $y'''-y''-y'+y=e^x[
+(u'''+3u''+3u'+u) -(u''+2u'+u) -(u'+u) +u]= e^x(u'''+2u'')$. Let
+$u_p=x^2(A+Bx)$ where $(4A+6B)+12Bx= 7+6x$. Then $B=1/2$, $A=1$, and
+$y_p=\frac{x^2e^x}{2}(2+x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.9}   Find a particular solution. 
+
+$2y'''-7y''+4y'+4y=e^{2x}(17+30x)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.10}   Find a particular solution.
+
+$y'''-5y''+3y'+9y=2e^{3x}(11-24x^2)$
+
+\begin{solution}
+If $y=ue^{3x}$, then $y'''-5y''+3y'+9y=e^{3x}[
+(u'''+9u''+27u'+27u) -5(u''+6u'+9u) +3(u'+3u) +9u]=
+e^{3x}(u'''+4u'')$.
+Let $u_p=x^2(A+Bx+Cx^2)$, where $(8A+6B) +(24B+24C)x+ 48Cx^2=
+22-48x^2$. Then $C=-1$, $B=1$, $A=2$, and $y_p=x^2e^{3x}(2+x-x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.11}   Find a particular solution.
+
+$y'''-7y''+8y'+16y=2e^{4x}(13+15x)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.12}   Find a particular solution.
+
+$8y'''-12y''+6y'-y=e^{x/2}(1+4x)$
+
+\begin{solution}
+If $y=ue^{x/2}$, then
+$8y'''-12y''+6y'-y=e^{x/2}[ 8(u'''+3u''/2+3u'/4+u/8) -12(u''+u'+u/4)
++6(u'+u/2) -u] =8e^{x/2}u'''$, so $u'''=\frac{1+4x}{8}$. Integrating
+three times and taking the constants of integration to be zero yields
+$u_p=\frac{x^3}{48}(1+x)$. Therefore,
+$y_p=\frac{x^3e^{x/2}}{48}(1+x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.13}   Find a particular solution.   $y^{(4)}+3y'''-3y''-7y'+6y=-e^{-x}(12+8x-8x^2)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.14}   Find a particular solution.   $y^{(4)}+3y'''+y''-3y'-2y=-3e^{2x}(11+12x)$
+
+\begin{solution}
+If $y=ue^{2x}$, then
+$y^{(4)}+3y'''+y''-3y'-2y=e^{2x}[ (u^{(4)}+8u'''+24u''+32u'+16u)
++3(u'''+6u''+12u'+8u) +(u''+4u'+4u) -3(u'+2u) -2u]
+=e^{2x}(u^{(4)}+11u'''+43u''+69u'+36u)$. Let $u_p=A+Bx$ where
+$(36A+69B)+36Bx=-33-36x$. Then $B=-1$, $A=1$, and $y_p=e^{2x}(1-x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.15}
+$y^{(4)}+8y'''+24y''+32y'=-16e^{-2x}(1+x+x^2-x^3)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.16}   Find a particular solution.
+
+$4y^{(4)}-11y''-9y'-2y=-e^x(1-6x)$
+
+\begin{solution}
+If $y=ue^x$, then $4y^{(4)}-11y''-9y'-2y=e^x[
+4(u^{(4)}+4u'''+6u''+4u'+u) -11(u''+2u'+u) -9(u'+u) -2u]
+=e^x(4u^{(4)}+16u'''+13u''-15u'-18u)$. Let $u_p=A+Bx$ where
+$-(18A+15B)-18Bx=-1+6x$. Then $B=-1/3$, $A=1/3$, and
+$y_p=\frac{e^x}{3}(1-x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.17}   Find a particular solution.
+
+$y^{(4)}-2y'''+3y'-y=e^x(3+4x+x^2)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.18}   Find a particular solution.   $y^{(4)}-4y'''+6y''-4y'+2y=e^{2x}(24+x+x^4)$
+
+\begin{solution}
+If $y=ue^x$, then
+$y^{(4)}-4y'''+6y''-4y'+2y=e^x[ (u^{(4)}+4u'''+6u''+4u'+u)
+-4(u'''+3u''+3u'+u) +6(u''+2u'+u) -4(u'+u) +2u]= e^x(u^{(4)}+u)$. Let
+$u_p=A+Bx+Cx^2+Dx^3+Ex^4$ where $ (A+24E)+Bx+Cx^2+Dx^3+Ex^4=24+x+x^4$.
+Then $E=1$ $D=0$, $C=0$ $B=1$, $A=0$, and $y_p=xe^x(1+x^3)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.19}   Find a particular solution.   $2y^{(4)}+5y'''-5y'-2y=18e^x(5+2x)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.20}   Find a particular solution.
+
+$y^{(4)}+y'''-2y''-6y'-4y=-e^{2x}(4+28x+15x^2)$
+
+\begin{solution}
+If $y=ue^{2x}$, then
+$y^{(4)}+y'''-2y''-6y'-4y=e^{2x}[ (u^{(4)}+8u'''+24u''+32u'+16u)
++(u'''+6u''+12u'+8u) -2(u''+4u'+4u) -6(u'+2u) -4u]=
+e^{2x}(u^{(4)}+9u'''+28u''+30u')$. Let $u_p=x(A+Bx+Cx^2)$ where
+$(30A+56B+54C)+ (60B+168C)x +90Cx^2=-(4+28x+15x^2)$. Then $C=-1/6$,
+$B=0$, $A=1/6$, and $y_p=\frac{xe^{2x}}{6}(1-x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.21}   Find a particular solution.   
+$2y^{(4)}+y'''-2y'-y=3e^{-x/2}(1-6x)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.22}   Find a particular solution.   
+$y^{(4)}-5y''+4y=e^x(3+x-3x^2)$
+
+\begin{solution}
+If $y=ue^x$, then $y^{(4)}-5y''+4y=e^x[
+(u^{(4)}+4u'''+6u''+4u'+u) -5(u''+2u'+u) +4u]
+=e^x(u^{(4)}+4u'''+u''-6u')$. Let $u_p=x(A+Bx+Cx^2)$ where
+$(-6A+2B+24C)+(-12B+6C)x-18Cx^2=3+x-3x^2$, so $C=1/6$, $B=0$, $A=1/6$.
+Then $y_p=\frac{xe^x}{6}(1+x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.23}  
+Find a particular solution.
+
+$y^{(4)}-2y'''-3y''+4y'+4y=e^{2x}(13+33x+18x^2)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.24}  
+Find a particular solution.
+
+$y^{(4)}-3y'''+4y'=e^{2x}(15+26x+12x^2)$
+
+\begin{solution}
+If $y=ue^{2x}$, then
+$y^{(4)}-3y'''+4y'=e^{2x}[ (u^{(4)}+8u'''+24u''+32u'+16u)
+-3(u'''+6u''+12u'+8u) +4(u'+2u)] =e^{2x}(u^{(4)}+5u'''+6u'')$. Let
+$u_p=x^2(A+Bx+Cx^2)$ where $(12A+30B+24C)+
+(36B+120C)x+72Cx^3=15+26x+12x^2$. Then $C=1/6$, $B=1/6$, $A=1/2$, and
+$y_p=\frac{x^2e^{2x}}{6}(3+x+x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.25}   Find a particular solution. 
+
+$y^{(4)}-2y'''+2y'-y=e^x(1+x)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.26}   Find a particular solution.   
+$2y^{(4)}-5y'''+3y''+y'-y=e^x(11+12x)$
+
+\begin{solution}
+If $y=ue^x$, then
+$2y^{(4)}-5y'''+3y''+y'-y=e^x[
+2(u^{(4)}+4u'''+6u''+4u'+u) -5(u'''+3u''+3u'+u) +3(u''+2u'+u) +(u'+u)
+-u]=e^x(2u^{(4)}+3u''')$.
+Let $u_p=x^3(A+Bx)$, where
+$(18A+48B)+72Bx=11+12x$.
+Then  $B=1/6$, $A=1/6$, and
+  $y_p=\frac{x^3e^x}{6}(1+x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.27}   Find a particular solution.
+
+$y^{(4)}+3y'''+3y''+y'=e^{-x}(5-24x+10x^2)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.28}   Find a particular solution.   $y^{(4)}-7y'''+18y''-20y'+8y=e^{2x}(3-8x-5x^2)$
+
+\begin{solution}
+If $y=ue^{2x}$, then
+$y^{(4)}-7y'''+18y''-20y'+8y=e^{2x}[
+(u^{(4)}+8u'''+24u''+32u'+16u) -7(u'''+6u''+12u'+8u) +18(u''+4u'+4u)
+-20(u'+2u) +8u]
+=e^{2x}(u^{(4)}+u''')$.
+Let $u_p=x^3(A+Bx+Cx^2)$ where
+$(6A+24B) +(24B+120C)x+ 60Cx^2=3-8x-5x^2$. Then
+  so $C=-1/12$  $B=1/12$, $A=1/6$, and
+  $y_p=\frac{x^3e^{2x}}{12}(2+x-x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.29}   Find a particular solution.
+
+$y'''-y''-4y'+4y=e^{-x}\left[(16+10x)\cos
+x+(30-10x)\sin x\right]$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.30}   Find a particular solution.
+
+$y'''+y''-4y'-4y=e^{-x}\left[(1-22x)\cos
+2x-(1+6x)\sin2x\right]$
+
+\begin{solution}
+If $y=ue^{-x}$, then
+$y'''+y''-4y'-4y=e^{-x}[
+(u'''-3u''+3u'-u) +(u''-2u'+u) -4(u'-u) -4u]
+=e^{-x}(u'''-2u''-3u')$.
+Let $u_p=(A_0+A_1x)\cos2x+(B_0+B_1x)\sin2x$, where
+$$
+\begin{array}{rcr}
+8A_1-14B_1&=&-22\\
+14A_1+8B_1&=&-6\\
+8A_0-14B_0-15A_1-8B_1&=&1\\
+14A_0+8B_0+8A_1-15B_1&=&-1
+\end{array}.
+$$
+Then
+$A_1=-1$, $B_1=1$, $A_0=1$, $B_0=1$, and
+$y_p=e^{-x}\left[(1-x)\cos2x+(1+x)\sin2x\right]$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.31}   Find a particular solution.
+
+$y'''-y''+2y'-2y=e^{2x}[(27+5x-x^2)\cos
+x+(2+13x+9x^2)\sin x]$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.32}   Find a particular solution.
+
+$y'''-2y''+y'-2y=-e^x[(9-5x+4x^2)\cos
+2x-(6-5x-3x^2)\sin2x]$
+
+\begin{solution}
+If $y=ue^x$, then
+$y'''-2y''+y'-2y=e^x[
+(u'''+3u''+3u'+u) -2(u''+2u'+u) +(u'+u) -2u]
+=e^x(u'''+u''-2u)$.
+Let $u_p=(A_0+A_1x+A_2x^2)\cos2x+(B_0+B_1x+B_2x^2)\sin2x$ where
+$$
+\begin{array}{rcr}
+-6A_2-8B_2&=&-4\\
+8A_2-6B_2&=&-3\\
+-6A_1-8B_1-24A_2+8B_2&=&5\\
+8A_1-6B_1-8A_2-24B_2&=&-5\\
+-6A_0-8B_0-12A_1+4B_1+2A_2+12B_2&=&-9\\
+8A_0-6B_0-4A_1-12B_1-12A_2+2B_2&=&6
+\end{array}.
+$$
+Then $A_2=0$, $B_2=1/2$; $A_1=1/2$, $B_1=-1/2$; $A_0=1/1$, $B_0=1/2$;
+and $y_p=\frac{e^x}{2}[(1+x)\cos2x+(1-x+x^2)\sin2x]$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.33}   Find a particular solution.
+
+$y'''+3y''+4y'+12y=8\cos2x-16\sin2x$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.34}   Find a particular solution. 
+
+$y'''-y''+2y=e^x[(20+4x)\cos x-(12+12x)\sin
+ x]$
+
+ \begin{solution}
+ If $y=ue^x$, then
+$y'''-y''+2y=e^x[
+(u'''+3u''+3u'+u) -(u''+2u'+u) +2u]
+=e^x(u'''+2u''+u'+2u)$.
+Since $\cos x$ and $\sin x$ satisfy  $u'''+2u''+u'+2u=0$,
+let  $u_p=x[(A_0+A_1x)\cos x+(B_0+B_1x)\sin x]$ where
+$$
+\begin{array}{rcl}
+-4A_1+8B_1&=&4\\
+-8A_1-4B_1&=&-12\\
+-2A_0+4B_0+4A_1+6B_1&=&20\\
+-4A_0-2B_0-6A_1+4B_1&=&-12
+\end{array}.
+$$
+Then $A_1=1$, $B_1=1$; $A_0=1$, $B_0=3$; and
+ $y_p=xe^x[(1+x)\cos x+(3+x)\sin x]$.
+ \end{solution}
+\end{problem}
+ 
+\begin{problem}\label{exer:9.3.35}   Find a particular solution.
+
+$y'''-7y''+20y'-24y=-e^{2x}[(13-8x)\cos
+2x-(8-4x)\sin2x]$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.36}   Find a particular solution. 
+
+$y'''-6y''+18y'=-e^{3x}[(2-3x)\cos
+3x-(3+3x)\sin3x]$
+
+\begin{solution}
+If $y=ue^{3x}$, then
+$=e^{3x}[
+(u'''+9u''+27u'+27u) -6(u''+6u'+9u) +18(u'+3u)]
+=e^{3x}(u'''+3u''+9u'+27u)$.
+Since $\cos3x$ and $\sin3x$ satisfy  $u'''+3u''+9u'+27u=0$,
+let  $u_p=x[(A_0+A_1x)\cos3x+(B_0+B_1x)\sin3x]$ where
+$$
+\begin{array}{rcr}
+-36A_1+36B_1&=&3\\
+-36A_1-36B_1&=&3\\
+-18A_0+18B_0+6A_1+18B_1&=&-2\\
+-18A_0-18B_0-18A_1+6B_1&=&3
+\end{array}.
+$$
+Then  $A_1=-1/12$, $B_1=0$; $A_0=$, $B_0=-1/12$; and
+ $y_p=-\frac{xe^{3x}}{12}(x\cos3x+\sin3x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.37}   Find a particular solution.   $y^{(4)}+2y'''-2y''-8y'-8y=e^x(8\cos
+x+16\sin x)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.38}   Find a particular solution.   $y^{(4)}-3y'''+2y''+2y'-4y=e^x(2\cos2x-\sin2x)$
+
+\begin{solution}
+If $y=ue^x$, then
+$y^{(4)}-3y'''+2y''+2y'-4y=e^x[
+(u^{(4)}+4u'''+6u''+4u'+u) -3(u'''+3u''+3u'+u) +2(u''+2u'+u) +4(u'+u)
++u]=e^x(u^{(4)}+u'''-u''+u'-2u)$.
+Let $u_p=A\cos2x+B\sin2x$ where $18A-6B=2$ and $6A+18B=-1$.
+Then $A=1/12$, $B=-1/12$, and
+$y_p=\frac{e^x}{12}(\cos2x-\sin2x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.39}
+$y^{(4)}-8y'''+24y''-32y'+15y=e^{2x}(15x\cos2x+32\sin2x)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.40}
+$y^{(4)}+6y'''+13y''+12y'+4y=e^{-x}[(4-x)\cos x-(5+x)\sin x]$
+
+\begin{solution}
+If $y=ue^{-x}$, then
+$y^{(4)}+6y'''+13y''+12y'+4y=e^{-x}[
+(u^{(4)}-4u'''+6u''-4u'+u) +6(u'''-3u''+3u'-u) +13(u''-2u'+u) +12u'-u)
++4u]=e^{-x}(u^{(4)}+2u'''+u'')$.
+Let $u_p=(A_0+A_1x)\cos x+(B_0+B_1x)\sin x$ where
+$$
+\begin{array}{rcr}
+-2B_1&=&-1\\
+2A_1&=&-1\\
+-2B_0-6A_1-2B_1&=&4\\
+2A_0+2A_1-6B_1&=&-5
+\end{array}.
+$$
+Then $A_1=-1/2$, $B_1=1/2$, $A_0=-1/2$, $B_0=-1$, and
+ $y_p=-\frac{e^{-x}}{2}[(1+x)\cos x+(2-x)\sin x]$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.41}   Find a particular solution.   $y^{(4)}+3y'''+2y''-2y'-4y=-e^{-x}
+(\cos x-\sin x)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.42}   Find a particular solution.   $y^{(4)}-5y'''+13y''-19y'+10y=e^x
+(\cos2x+\sin2x)$
+
+\begin{solution}
+If $y=ue^x$, then
+$y^{(4)}-5y'''+13y''-19y'+10y=e^x[
+(u^{(4)}+4u'''+6u''+4u'+u) -5(u'''+3u''+3u'+u) +13(u''+2u'+u)
+-19(u'+u) +10u]=e^x(u^{(4)}-u'''+4u''-4u')$. Since $\cos2x$ and $\sin2x$
+satisfy $u^{(4)}-u'''+4u''-4u'=0$,
+let $u_p=x(A\cos2x+B\sin2x)$ where $8A-16B=1$ and $16A+8B=1$. Then
+$A=3/40$, $B_0=-1/40$, and
+ $y_p=\frac{xe^x}{40}(3\cos2x-\sin2x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.43}
+$y^{(4)}+8y'''+32y''+64y'+39y=e^{-2x}[(4-15x)\cos3x-(4+15x)\sin
+3x]$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.44}   Find a particular solution.   $y^{(4)}-5y'''+13y''-19y'+10y=e^x[(7+8x)\cos 2x+(8-4x)\sin 2x]$
+
+\begin{solution}
+If $y=ue^x$, then
+$y^{(4)}-5y'''+13y''-19y'+10y=e^x[
+(u^{(4)}+4u'''+6u''+4u'+u) -5(u'''+3u''+3u'+u) +13(u''+2u'+u)
+-19(u'+u) +10u]=e^x(u^{(4)}-u'''+4u''-4u')$.
+Since $\cos2x$ and $\sin2x$ satisfy $u^{(4)}-u'''+4u''-4u'=0$,
+let $u_p=x[(A_0+A_1x)\cos2x+(B_0+B_1x)\sin2x)]$ where
+$$
+\begin{array}{rcr}
+16A_1-32B_1&=&8\\
+32A_1+16B_1&=&-4\\
+8A_0-16B_0-40A_1-12B_1&=&7\\
+16A_0+8B_0+12A_1-40B_1&=&8
+\end{array}.
+$$
+Then $A_1=0$, $B_1=-1/4$; $A_0=0$, $B_0=-1/4$, and
+ $y_p=-\frac{xe^x}{4}(1+x)\sin2x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.45}   Find a particular solution.   $y^{(4)}+4y'''+8y''+8y'+4y=-2e^{-x}
+(\cos x-2\sin x)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.46}   Find a particular solution.   $y^{(4)}-8y'''+32y''-64y'+64y=e^{2x}
+(\cos2x-\sin2x)$
+
+\begin{solution}
+If $y=ue^{2x}$, then
+$y^{(4)}-8y'''+32y''-64y'+64y+4y=e^{2x}[
+(u^{(4)}+8u'''+24u''+32u'+16u) -8(u'''+6u''+12u'+8u) +32(u''+4u'+4u)
+-64(u'+2u) +64u]=e^{2x}(u^{(4)}+8u''+16u)$. Since $\cos2x$,  $\sin2x$, $x\cos2x$,
+and $x\sin2x$ satisfy $u^{(4)}+8u''+16u=0$,
+let $u_p=x^2(A\cos2x+B\sin2x)$ where $-32A=1$ and $-32B=-1$. Then
+$A=-1/32$, $B=1/32$, and
+ $y_p=-\frac{x^2e^{2x}}{32}(\cos2x-\sin2x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.47}   Find a particular solution.   $y^{(4)}-8y'''+26y''-40y'+25y=e^{2x}[3\cos
+x-(1+3x)\sin x]$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.48}   Find a particular solution.   $y'''-4y''+5y'-2y=e^{2x}-4e^x-2\cos x+4\sin x$
+
+\begin{hint}
+Find particular solutions of
+(A) $y'''-4y''+5y'-2y=-4e^x$,
+(B) $y'''-4y''+5y'-2y=e^{2x}$,
+and  (C) $y'''-4y''+5y'-2y=-2\cos x+4\sin x$.
+\end{hint}
+
+\begin{solution}
+(A) If $y=ue^x$, then
+$y'''-4y''+5y'-2y=e^x[(u'''+3u''+3u'+u) -4(u''+2u'+u) +5(u'+u)
+-2u]=e^x(u'''-u'')$. Let $u_{1p}=Ax^2$ where $-2A=-4$. Then $A=2$,
+and $y_{1p}=2x^2e^x$.
+
+(B) If $y=ue^{2x}$, then
+$y'''-4y''+5y'-2y=e^{2x}[(u'''+6u''+12u'+8u) -4(u''+4u'+4u) +5(u'+2u)
+-2u ]=e^{2x}(u'''+2u''+u')$. Let $u_{2p}=x$. Then $y_{2p}=xe^{2x}$.
+
+(C)  If $y_{3p}=A\cos x+B\sin x$, then
+$y_{3p}'''-4y_{3p}''+5y_{3p}'-2y_{3p}=(2A+4B)\cos x+(-4A+2B)\sin x=
+-2\cos x+4\sin x$
+if  $A=-1$ and $B=0$, so
+$y_{3p}=-\cos x$.
+
+From the principle of superposition,
+ $y_p=2x^2e^x+xe^{2x}-\cos x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.49}   Find a particular solution.   $y'''-y''+y'-y=5e^{2x}+2e^x-4\cos x+4\sin x$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.50}   Find a particular solution.   $y'''-y'=-2(1+x)+4e^x-6e^{-x}+96e^{3x}$
+
+\begin{hint}
+Find particular solutions of (A)
+$y'''-y'=-2(1+x)$, (B) $y'''-y'=4e^x$, (C)
+$y'''-y'=-6e^{-x}$, and (D) $y'''-y'=96e^{3x}$
+\end{hint}
+
+\begin{solution}
+(A) Let $y_{1p}=x(A+Bx)$. Then $y_{1p}'''-y_{1p}'=-A-2Bx=-2(1+x)$
+if $A=2$ and $B=1$; therefore $y_{1p}=2x+2x^2$.
+
+(B) If $y=ue^x$, then $y'''-y'=e^x [(u'''+3u''+3u'+u)
+-(u'+u)]=e^x(u'''+3u''+2u')$. Let $u_{2p}=4x$. Then $y_{2p}=4xe^x$.
+
+(C) If $y=ue^{-x}$, then $y'''-y'=e^{-x} [(u'''-3u''+3u'-u)
+-(u'-u)]=e^{-x}(u'''-3u''+2u')$. Let $u_{2p}=-3x$. Then
+$y_{2p}=-6xe^{-x}$.
+
+(D) Since $e^{3x}$ does not satisfy the complementary equation,
+let $y_{4p}=Ae^{3x}$. Then $y_{4p}'''-y_{4p}' =24Ae^{3x}$. Let $A=4$;
+then $y_{4p}=4e^{4x}$.
+
+From the principle of superposition,
+$y_p=2x+x^2+2xe^x-3xe^{-x}+4e^{3x}$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.51}   Find a particular solution.   $y'''-4y''+9y'-10y=10e^{2x}+20e^x\sin2x-10$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.52}   Find a particular solution.
+
+$y'''+3y''+3y'+y=12e^{-x}+9\cos2x-13\sin2x$
+
+\begin{hint}
+Find particular solutions of
+(A) $y'''+3y''+3y'+y=12e^{-x}$ and (B) $y'''+3y''+3y'+y=9\cos2x-13\sin2x$.
+\end{hint}
+
+\begin{solution}
+(A) If $y=ue^{-2x}$, then $y'''+3y''+3y'+y=e^{-2x}[
+(u'''-3u''+3u'-u) +3(u''-2u'+u) +3(u'-u) +u]
+=e^{-x}u'''$. Let $u_{1p}'''=12$. Integrating three times and
+taking the constants of integration to be zero yields
+$u_{1p}=2x^3$. Therefore,$y_{1p}=2x^3$.
+
+(B)  Let $y_{2p}=A\cos2x+B\sin2x$ where $-11A-2B=9$ and $2A-11B=-13$.
+Then $A=-1$, $B=1$, and
+ $y_{2p}=-\cos2x+\sin2x$.
+
+From the principle of superposition,
+ $y_p=2x^3e^{-2x}-\cos2x+\sin2x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.53}   Find a particular solution.
+
+$y'''+y''-y'-y=4e^{-x}(1-6x)-2x\cos x+2(1+x)\sin
+x $
+\end{problem}
+
+\begin{problem}\label{exer:9.3.54}   Find a particular solution.
+
+$y^{(4)}-5y''+4y=-12e^x+6e^{-x}+10\cos x$
+
+\begin{hint}
+Find particular solutions of
+(A) $y^{(4)}-5y''+4y=-12e^x$,
+(B) $y^{(4)}-5y''+4y=6e^{-x}$, and
+(C) $y^{(4)}-5y''+4y=10\cos x$.
+\end{hint}
+
+\begin{solution}
+(A) If $y=ue^x$, then $y^{(4)}-5y''+4y=e^x[
+(u^{(4)}+4u'''+6u''+4u'+u) -5(u''+2u'+u) +4u]
+=e^x(u^{(4)}+4u'''+u''-6u')$. Let $u_{1p}=2x$. Then $y_{1p}=2xe^x$.
+
+
+(B) If $y=ue^{-x}$, then $y^{(4)}-5y''+4y=e^{-x}[
+(u^{(4)}-4u'''+6u''-4u'+u) -5(u''-2u'+u) +4u]
+=e^{-x}(u^{(4)}-4u'''+u''+6u')$. Let $u_{2p}=x$. Then
+$y_{2p}=xe^{-x}$.
+
+(C) Let $y_{3p}=A\cos x+B\sin x$ where $10A=10$ and $10B=0$. Then
+$A=1$, $B=0$, and $y_{3p}=\cos x$.
+
+From the principle of superposition, $y_p=2xe^x+xe^{-x}+\cos x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.55}   Find a particular solution.
+
+$y^{(4)}-4y'''+11y''-14y'+10y=-e^x(\sin
+x+2\cos2x)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.56}   Find a particular solution.   $y^{(4)}+2y'''-3y''-4y'+4y=2e^x(1+x)+e^{-2x}$
+
+\begin{hint}
+Find particular solutions of
+(A) $y^{(4)}+2y'''-3y''-4y'+4y=2e^x(1+x)$  and
+(B) $y^{(4)}+2y'''-3y''-4y'+4y=e^{-2x}$.
+\end{hint}
+
+\begin{solution}
+(A)
+If $y=ue^x$, then $y^{(4)}+2y'''-3y''-4y'+4y=e^x[
+(u^{(4)}+4u'''+6u''+4u'+u) +2(u'''+3u''+3u'+u) -3(u''+2u'+u)
+-4(u'+u)+4u]=e^x(u^{(4)}+6u'''+9u'')$. Let $u_{1p}=x^2(A+Bx)$
+where $(18A+36B)+54Bx=2+2x$. Then $B=1/27$, $A=1/27$, and
+$y_{1p}=\frac{x^2}{27}(1+x)e^x$.
+
+
+(B)
+If $y=ue^{-2x}$, then $y^{(4)}+2y'''-3y''-4y'+4y=e^{-2x}[
+(u^{(4)}-8u'''+24u''-32u'+16u) +2(u'''-6u''+12u'-8u) -3(u''-4u'+4u)
+-4(u'-2u) +4u]=e^{-2x}(u^{(4)}-6u'''+9u'')$. Let $u_{2p}=Ax^2$
+where $18A=1$. Then $A=1/18$ and
+$y_p=\frac{x^2}{18}e^{-2x}$.
+
+
+From the principle of superposition,
+$y_p=\frac{x^2}{54}[(2+2x)e^x+3e^{-2x}]$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.57}   Find a particular solution.   $y^{(4)}+4y=\sinh x\cos x-\cosh x\sin x$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.58}
+$y^{(4)}+5y'''+9y''+7y'+2y=e^{-x}(30+24x)-e^{-2x}$
+
+\begin{hint}
+Find particular solutions of
+(A) $y^{(4)}+5y'''+9y''+7y'+2y=e^{-x}(30+24x)$ and
+(B) $y^{(4)}+5y'''+9y''+7y'+2y=-e^{-2x}$.
+\end{hint}
+
+\begin{solution}
+(A)
+If $y=ue^{-x}$, then $y^{(4)}+5y'''+9y''+7y'+2y=e^{-x}[
+(u^{(4)}-4u'''+6u''-4u'+u) +5(u'''-3u''+3u'-u) +9(u''-2u'+u) +7(u'-u)
++2u]=e^{-x}(u^{(4)}+u''')$. Let $u_{1p}=x^3(A+Bx)$ where
+$(6A+24B)+24Bx=30+24x$. The $B=1$, $A=1$, and
+ $y_{1p}=x^3(1+x)e^{-x}$.
+
+
+(B)
+If $y=ue^{-2x}$, then $y^{(4)}+5y'''+9y''+7y'+2y=e^{-2x}[
+(u^{(4)}-8u'''+24u''-32u'+16u) +5(u'''-6u''+12u'-8u) +9(u''-4u'+4u)
++7(u'-2u) +2u]=e^{-2x}(u^{(4)}-3u'''+3u''-u')$. Let $u_{2p}=x$. Then
+ $y_{2p}=xe^{-2x}$.
+
+
+
+From the principle of superposition,
+ $y_p=x^3(1+x)e^{-x}+xe^{-2x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.59}   Find a particular solution.   $y^{(4)}-4y'''+7y''-6y'+2y=e^x(12x-2\cos
+x+2\sin x)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.60}   Find the general solution.
+
+$y'''-y''-y'+y=e^{2x}(10+3x)$
+
+\begin{solution}
+If $y=ue^{2x}$, then $y'''-y''-y'+y=e^{2x}[
+(u'''+6u''+12u'+8u) -(u''+4u'+4u) -(u'+2u) +u]
+=e^{2x}(u'''+5u''+7u'+3u)$. Let $u_p=A+Bx$, where
+$(3A+7B)+3x=10+3x$. Then $B=1$,
+ $A=1$ and $y_p=e^{2x}(1+x)$. Since $p(r)=(r+1)(r-1)^2$,
+ $y=e^{2x}(1+x)+c_1e^{-x}+e^x(c_2+c_3x)$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.61}   Find the general solution. 
+
+$y'''+y''-2y=-e^{3x}(9+67x+17x^2)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.62}   Find the general solution.
+
+$y'''-6y''+11y'-6y=e^{2x}(5-4x-3x^2)$
+
+\begin{solution}
+If $y=ue^{2x}$, then $y'''-6y''+11y'-6y=e^{2x}[
+(u'''+6u''+12u'+8u) -6(u''+4u'+4u) +11(u'+2u) -6u]
+=e^{2x}(u'''-u')$. Let $u_p=x(A+Bx+Cx^2)$ where
+$(-A+6C)-2Bx-3Cx^2=5-4x-3x^2$. Then $C=1$, $B=2$,
+ $A=1$, and $y_p=xe^{2x}(1+x)^2$.
+ Since $p(r)=(r-1)(r-2)(r-3)$,
+ $y=xe^{2x}(1+x)^2+c_1e^x+c_2e^{2x}+c_3e^{3x}$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.63}   Find the general solution. 
+
+$y'''+2y''+y'=-2e^{-x}(7-18x+6x^2)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.64}   Find the general solution. 
+
+$y'''-3y''+3y'-y=e^x(1+x)$
+
+\begin{solution}
+If $y=ue^x$, then $y'''-3y''+3y'-y=e^x[
+(u'''+3u''+3u'+u) -3(u''+2u'+u) +3(u'+u) -u]
+=e^xu'''$. Let $u'''=1+x$. Integrating three times and taking
+the constants of integration to be zero yields
+$u=\frac{x^3}{24}(4+x)$. Therefore,
+ $y_p=\frac{x^3e^x}{24}(4+x)$.
+ Since $p(r)=(r-1)^3$,
+ $y=\frac{x^3e^x}{24}(4+x)
++e^x(c_1+c_2x+c_3x^2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.65}  Find the general solution.
+
+$y^{(4)}-2y''+y=-e^{-x}(4-9x+3x^2)$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.66}   Find the general solution. 
+
+$y'''+2y''-y'-2y=e^{-2x}\left[(23-2x)\cos
+x+(8-9x)\sin x\right]$
+
+\begin{solution}
+If $y=ue^{-2x}$, then
+$y'''+2y''-y'-2y=e^{-2x}[
+(u'''-6u''+12u'-8u) +2(u''-4u'+4u) -(u'-2u) -2u]=
+e^{-2x}(u'''-4u''+3u')$.
+Let $u_p=(A_0+A_1x)\cos x+(B_0+B_1x)\sin x$ where
+$$
+\begin{array}{rcr}
+4A_1+2B_1&=&-2\\
+-2A_1+4B_1&=&-9\\
+4A_0+2B_0-8B_1 &=&23\\
+-2A_0+4B_0+8A_1&=&8
+\end{array}.
+$$
+Then $A_1=1/2$, $B_1=-2$; $A_0=1$, $B_0=3/2$, and
+ $y_p=e^{-2x}\left[\left(1+\frac{x}{2}\right)\cos
+x+\left(\frac{3}{2}-2x\right)\sin x\right]$.
+Since $p(r)=(r-1)(r+1)(r+2)$,
+ $y=e^{-2x}{\left[\left(1+\frac{x}{2}\right)
+\cos x+\left(\frac{3}{2}-2x\right)\sin x\right]}
++c_1e^x+c_2e^{-x}+c_3e^{-2x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.67}   Find the general solution.
+
+$y^{(4)}-3y'''+4y''-2y'=e^x\left[(28+6x)\cos
+2x+(11-12x)\sin2x\right]$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.68}   Find the general solution. 
+
+$y^{(4)}-4y'''+14y''-20y'+25y=e^x\left[(2+6x)\cos
+2x+3\sin2x\right]$
+
+\begin{solution}
+If $y=ue^x$, then
+$y^{(4)}-4y'''+14y''-20y'+25y=e^x[
+(u^{(4)}+4u'''+6u''+4u'+u) -4(u'''+3u''+3u'+u) +14(u''+2u'+u)
+-20(u'+u) +25u
+]=e^x(u^{(4)}+8u''+16u)$.
+Since $\cos2x$, $\sin2x$, $x\cos2x$, and $x\sin2x$
+satisfy $u^{(4)}+8u''+16u=0$,
+let $u_p=x^2[(A_0+A_1x)\cos2x+(B_0+B_1x)\sin2x]$ where
+$$
+\begin{array}{rcr}
+-96A_1&=&6\\
+-96B_1&=&0\\
+-32A_0+48B_1&=&2\\
+-48A_1-32B_0&=&3
+\end{array}.
+$$
+Then $A_1=-1/16$, $B_1=0$; $A_0=-1/16$, $B_0=0$, and
+ $y_[=-\frac{x^2e^x}{16}(1+x)\cos2x$. Since
+$p(r)=[(r-1)^2+1]^2$,
+ $y=-\frac{x^2e^x}{16}(1+x)\cos2x
++e^x\left[(c_1+c_2x)\cos2x+(c_3+c_4x)\sin2x\right]$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.69} Solve the initial value problem and graph the solution.
+
+$y'''-2y''-5y'+6y=2e^x(1-6x),\quad
+y(0)=2,
+\quad y'(0)=7,\quad y''(0)=9$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.70} Solve the initial value problem and graph the solution.
+
+$y'''-y''-y'+y=-e^{-x}(4-8x),\quad
+y(0)=2,
+\quad y'(0)=0,\quad y''(0)=0$
+
+\begin{solution}
+If $y=ue^{-x}$, then $y'''-y''-y'+y=e^{-x}[
+(u'''-3u''+3u'-u) -(u''-2u'+u) -(u'-u) +u]
+=e^{-x}(u'''-4u''+4u')$. Let $u_p=x(A+Bx)$, where
+$(4A-8B)+8Bx=-4+8x$. Then $B=1$,
+ $A=1$, and $y_p=x(1+x)e^{-x}$. Since $p(r)=(r+1)(r-1)^2$
+the general solution is
+ $y=x(1+x)e^{-x}+c_1e^{-x}+c_2e^x+c_3xe^x$.
+ Therefore,
+$$
+\left[\begin{array}{l}y\\y'\\y''\end{array}\right]=
+\left[\begin{array}{c}
+x(1+x)e^{-x}\\
+-e^{-x}(x^2-x-1)\\
+e^{-x}(x^2-3x)\\
+\end{array}\right]+
+\left[\begin{array}{rcc}e^{-x}&e^x&xe^x\\
+-e^{-x}&e^x&e^x(x+1)\\e^{-x}&e^x&e^x(x+2)\end{array}\right]
+\left[\begin{array}{c}
+c_1\\
+c_2\\
+c_3
+\end{array}
+\right].
+$$
+Setting $x=0$ and imposing the initial conditions yields
+$$
+\left[\begin{array}{c}
+2\\
+0\\
+0
+\end{array},
+\right]=\left[\begin{array}{c}
+0\\
+1\\
+0
+\end{array},
+\right]+
+\left[\begin{array}{rcc}1&1&0\\-1&1&1\\1&1&2\end{array}\right]
+\left[\begin{array}{c}
+c_1\\
+c_2\\
+c_3
+\end{array},
+\right].
+$$
+so $c_1=1$, $c_2=1$, $c_3=-1$, and
+ $y=e^{-x}(1+x+x^2) +(1-x)e^x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.71} Solve the initial value problem and graph the solution. 
+
+$4y'''-3y'-y=e^{-x/2}(2-3x),\quad
+y(0)=-1,
+\quad y'(0)=15,\quad y''(0)=-17$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.72}  Solve the initial value problem and graph the solution.
+
+$y^{(4)}+2y'''+2y''+2y'+y=e^{-x}(20-12x),\,
+y(0)=3,\; y'(0)=-4,\; y''(0)=7,\; y'''(0)=-22$
+
+\begin{solution}
+If $y=ue^{-x}$, then $y'''-2y''-5y'+6y=e^{-x}[
+(u^{(4)}-4u'''+6u''-4u'+u) +2(u'''-3u''+3u'-u) +2(u''-2u'+u) +2(u'-u)
++u=e^{-x}(u^{(4)}-2u'''+2u'')$. Let $u_p=x^2(A+Bx)$, where
+$(4A-12B)+12Bx=20-12x$. Then $B=-1$,
+ $A=2$, and $y_p=x^2(2-x)e^{-x}$. Since $p(r)=(r+1)^2(r^2+1)$,
+the general solution is
+$y=x^2(2-x)e^{-x}+e^{-x}(c_1+c_2x)+c_3\cos x+c_4\sin x$.
+ Therefore,
+$$
+\left[\begin{array}{l}y\\y'\\y''\\y'''\end{array}\right]=
+\left[\begin{array}{c}
+x^2(2-x)e^{-x}\\
+x(x^2-5x+4)e^{-x}\\
+-(x^3-8x^2+14x-4)e^{-x}\\
+(x^3-11x^2+30x-18)e^{-x}
+\end{array}\right]+
+\left[\begin{array}{rcrr}e^{-x}&xe^{-x}&\cos x&\sin x\\
+-e^{-x}&(1-x)e^{-x}&-\sin x&\cos x\\
+e^{-x}&(x-2)e^{-x}&-\cos x&-\sin x\\
+-e^{-x}&(3-x)e^{-x}&\sin x&-\cos x\end{array}\right]
+\left[\begin{array}{c}
+c_1\\c_2\\c_3\\c_4
+\end{array}\right]
+$$
+Setting $x=0$ and imposing the initial conditions yields
+$$
+\left[\begin{array}{r}
+3\\-4\\7\\-22
+\end{array}\right]=
+\left[\begin{array}{r}
+0\\0\\4\\-18
+\end{array}\right]+
+\left[\begin{array}{rrrr}1&0&1&0\\-1&1&0&1\\
+1&-2&-1&0\\-1&3&0&-1\end{array}\right]
+\left[\begin{array}{c}
+c_1\\c_2\\c_3\\c_4
+\end{array}\right],
+$$
+so $c_1=2$, $c_2=-1$, $c_3=1$, $c_4=-1$, and
+$y=(2-x)(x^2+1)e^{-x}+\cos x-\sin x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.73}  Solve the initial value problem and graph the solution.
+
+$y'''+2y''+y'+2y=30\cos x-10\sin x,
+\quad y(0)=3,\quad y'(0)=-4,\quad y''(0)=16$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.74}  Solve the initial value problem and graph the solution.
+
+$y^{(4)}-3y'''+5y''-2y'=-2e^x(\cos x-\sin
+x),\; y(0)=2,\; y'(0)=0,\; y''(0)~=~-1, \; y'''(0)=-5$
+
+\begin{solution}
+If $y=ue^x$, then $y^{(4)}-3y'''+5y''-2y'=e^x[
+(u^{(4)}+4u'''+6u''+4u'+u) -3(u'''+3u''+3u'+u) +4(u''+2u'+u) -2(u'+u)
+]=e^x(u^{(4)}+u'''+u''+u')$. Since $\cos x$ and $\sin x$
+satisfy $u^{(4)}+u'''+u''+u'=0$, let $u_p=x(A\cos x+B\sin x)$
+where $-2A-2B=-2$ and $2A-2B=2$. Then $A=1$, $B=0$, and $y_p=e^x\cos
+x$. Since $p(r)=r(r-1)[(r-1)^2+1]$ the general solution is
+$y=e^x\cos x+c_1+e^x(c_2+c_3\cos x+c_4\sin x)$.
+ Therefore,
+$$
+\left[\begin{array}{l}y\\y'\\y''\\y'''\end{array}\right]=
+\left[\begin{array}{c}
+xe^x\cos x\\
+e^x((x+1)\cos x-x\sin x)\\
+e^x(2\cos x-2(x+1)\sin x)\\
+-e^x(2x\cos x+2(x+3)\sin x)
+\end{array}\right]+
+\left[\begin{array}{cccc}1&e^x&e^x\cos x&e^x\sin x\\
+0&e^x&e^x(\cos x-\sin x)&e^x(\cos x+\sin x)
+\\0&e^x&-2e^x\sin x&2e^x\cos x\\0&e^x&-e^x(2\cos x+2\sin x)
+&e^x(2\cos x-2\sin x)\end{array}\right]
+\left[\begin{array}{c}
+c_1\\c_2\\c_3\\c_4
+\end{array}\right]
+$$
+Setting $x=0$ and imposing the initial conditions yields
+$$
+\left[\begin{array}{r}
+2\\0\\-1\\-5
+\end{array}\right]=
+\left[\begin{array}{r}
+0\\1\\2\\0
+\end{array}\right]+
+\left[\begin{array}{cccc}1&1&1&0\\0&1&1&1\\
+0&1&0&2\\0&1&-2&2\end{array}\right]
+\left[\begin{array}{c}
+c_1\\c_2\\c_3\\c_4
+\end{array}\right],
+$$
+so $c_1=2$, $c_2=-1$, $c_3=1$, $c_4=-1$, and
+$2 +e^x\left[(1+x)\cos x-\sin x-1\right]$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:9.3.75}
+Prove:
+A function $y$ is a solution of the constant coefficient
+nonhomogeneous equation
+$$
+a_0y^{(n)}+a_1y^{(n-1)}+\cdots+a_ny=e^{\alpha x}G(x)
+\text{(A)}
+$$
+if and only if $y=ue^{\alpha x}$, where $u$ satisfies the differential
+equation
+$$
+a_0u^{(n)}+\frac{p^{(n-1)}(\alpha)}{(n-1)!}u^{(n-1)}+
+\frac{p^{(n-2)}(\alpha)}{(n-2)!}u^{(n-2)}+\cdots+p(\alpha)u=G(x)
+\text{(B)}
+$$
+and
+$$
+p(r)=a_0r^n+a_1r^{n-1} + \cdots + a_n
+$$
+is the characteristic polynomial of the complementary equation
+$$
+a_0y^{(n)}+a_1y^{(n-1)}+\cdots+a_ny=0.
+$$
+\end{problem}
+
+\begin{problem}\label{exer:9.3.76}
+Prove:
+\begin{enumerate}
+\item % (a)
+The equation
+$$
+\begin{array}{lcl}
+a_0u^{(n)}&+&\frac{p^{(n-1)}(\alpha)}{(n-1)!}u^{(n-1)}+
+\frac{p^{(n-2)}(\alpha)}{(n-2)!}u^{(n-2)}+\cdots+p(\alpha)u\\
+&=&\left(p_0+p_1x+\cdots+p_kx^k\right)\cos
+\omega x\\&&\,+ \left(q_0+q_1x+\cdots+q_kx^k\right)\sin\omega x
+\end{array}
+\text{(A)}
+$$
+has a particular solution of the form
+$$
+u_p=x^m\left(u_0+u_1x+\cdots+u_kx^k\right)\cos\omega x+
+\left(v_0+v_1x+\cdots+v_kx^k\right)\sin\omega x.
+$$
+\item % (b)
+If $\lambda+i\omega$ is a zero of $p$ with multiplicity $m\ge1$, then
+(A) can be written as
+$$
+a(u''+\omega^2 u)=
+\left(p_0+p_1x+\cdots+p_kx^k\right)\cos\omega x+
+\left(q_0+q_1x+\cdots+q_kx^k\right)\sin\omega x,
+$$
+which has a particular solution of the form
+$$
+u_p=U(x)\cos\omega x+V(x)\sin\omega x,
+$$
+where
+$$
+U(x)=u_0x+u_1x^2+\cdots+u_kx^{k+1},\,V(x)=v_0x+v_1x^2+\cdots+v_kx^{k+1}
+$$
+and
+$$
+\begin{array}{rcl}
+a(U''(x)+2\omega V'(x))&=&p_0+p_1x+\cdots+p_kx^k\\
+a(V''(x)-2\omega U'(x))&=&q_0+q_1x+\cdots+q_kx^k.
+\end{array}
+$$
+\end{enumerate}
+\end{problem}
+
+
+\end{document}

@@ -1,0 +1,773 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+\begin{problem}\label{exer:8.6.1}
+
+\begin{enumerate}
+
+\item Express the inverse transform as an integral.  
+
+$\frac{1}{s^2(s^2+4)}$
+
+\item Express the inverse transform as an integral.
+
+$\frac{s}{(s+2)(s^2+9)}$
+
+\item Express the inverse transform as an integral.
+
+$\frac{s}{(s^2+4)(s^2+9)}$
+
+\item Express the inverse transform as an integral.
+
+$\frac{s}{(s^2+1)^2}$
+
+\item Express the inverse transform as an integral.
+
+$\frac{1}{s(s-a)}$
+
+\item Express the inverse transform as an integral.
+
+$\frac{1}{(s+1)(s^2+2s+2)}$
+
+\item Express the inverse transform as an integral.
+
+$\frac{1}{(s+1)^2(s^2+4s+5)}$
+
+\item Express the inverse transform as an integral.
+
+$\frac{1}{(s-1)^3(s+2)^2}$
+
+\item Express the inverse transform as an integral.
+
+$\frac{s-1}{s^2(s^2-2s+2)}$
+
+\item Express the inverse transform as an integral.
+
+$\frac{s(s+3)}{(s^2+4)(s^2+6s+10)}$
+
+\item Express the inverse transform as an integral.
+
+$\frac{1}{(s-3)^5s^6}$
+
+\item Express the inverse transform as an integral.
+
+$\frac{1}{(s-1)^3(s^2+4)}$
+
+\item Express the inverse transform as an integral.
+
+$\frac{1}{s^2(s-2)^3}$
+
+\item Express the inverse transform as an integral.
+
+$\frac{1}{s^7(s-2)^6}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.6.2}
+
+\begin{enumerate}
+
+\item Find the Laplace transform.
+
+$\int_0^t\sin a\tau\cos b(t-\tau)\, d\tau$
+
+\begin{solution}
+$\sin at\leftrightarrow\frac{a}{s^2+a^2}$ and
+$\cos bt\leftrightarrow\frac{s}{s^2+b^2}$, so
+   $H(s)=\frac{a s}{(s^2+a^2)(s^2+b^2)}$.
+\end{solution}
+
+\item Find the Laplace transform.
+
+$\int_0^t e^\tau\sin a(t-\tau)\,d\tau$ 
+
+\begin{solution}
+$e^t\leftrightarrow\frac{1}{s-1}$ and
+$\sin at\leftrightarrow\frac{a}{s^2+a^2}$, so
+$H(s)=\frac{a}{(s-1)(s^2+a^2)}$.
+\end{solution}
+
+\item Find the Laplace transform. 
+
+$\int_0^t\sinh a\tau\cosh a(t-\tau)\,d\tau$
+
+\begin{solution}
+$\sinh at\leftrightarrow\frac{a}{s^2-a^2}$ and
+$\cosh at\leftrightarrow\frac{1}{s^2-a^2}$, so
+$H(s)=\frac{as}{(s^2-a^2)^2}$.
+\end{solution}
+
+\item Find the Laplace transform. 
+
+$\int_0^t\tau(t-\tau)\sin \omega\tau\cos\omega
+(t-\tau)\,d\tau$
+
+\begin{solution}
+$t\sin\omega t\leftrightarrow\frac{2\omega
+s}{(s^2+\omega^2)^2}$ and $t\cos\omega
+t\leftrightarrow\frac{s^2-\omega^2}{(s^2+\omega^2)^2}$, so
+$H(s)=\frac{2\omega s (s^2-\omega^2)}{(s^2+\omega^2)^4}$.
+\end{solution}
+
+\item Find the Laplace transform. 
+
+$e^t\int_0^t\sin\omega\tau
+\cos\omega (t-\tau)\,d\tau$
+
+\begin{solution}
+$e^t\int_0^t\sin\omega\tau\cos\omega
+(t-\tau)\,d\tau=\int_0^t
+\left(e^\tau\sin\omega\tau\right)\left(e^{(t-\tau)}\cos\omega
+(t-\tau)\right)\,d\tau$; $e^t\sin\omega
+t\leftrightarrow\frac{\omega}{(s-1)^2+\omega^2}$ and $e^t\cos\omega
+t\leftrightarrow\frac{s-1}{(s-1)^2+\omega^2}$, so
+$H(s)=\frac{(s-1)\omega}{\left((s-1)^2+\omega^2\right)^2}$.
+\end{solution}
+
+\item Find the Laplace transform. 
+
+$e^t\int_0^t\tau^2 (t-\tau)e^\tau\,d\tau$
+
+\begin{solution}
+$e^t\int_0^t\tau^2
+(t-\tau)e^\tau\,d\tau = \int_0^t\tau^2e^{2\tau}(t-\tau)e^{(t-\tau)}\,d\tau$;
+$t^2e^{2t}\leftrightarrow\frac{2}{(s-2)^3}$ and
+$te^t\leftrightarrow\frac{1}{(s-1)^2}$, so
+ $H(s)=\frac{2}{(s-2)^3 (s-1)^2}$.
+\end{solution}
+
+\item Find the Laplace transform. 
+
+$e^{-t}\int_0^t e^{-\tau}\tau\cos\omega (t-\tau)\,d\tau$
+
+\begin{solution}
+$e^{-t}\int_0^t e^{-\tau}\tau\cos\omega
+(t-\tau)\,d\tau=
+\int_0^t\tau e^{-2\tau}e^{-(t-\tau)}\cos\omega(t-\tau)\,d\tau$;
+$te^{-2t}\leftrightarrow\frac{1}{(s+2)^2}$ and
+$e^{-t}\cos\omega t\leftrightarrow\frac{s+1}{(s+1)^2+\omega^2}$, so
+$H(s)=\frac{s+1}{(s+2)^2\left[(s+1)^2+
+\omega^2\right]}$.
+\end{solution}
+
+\item Find the Laplace transform. 
+
+$e^t\int_0^t e^{2\tau}\sinh
+(t-\tau)\,d\tau$
+
+\begin{solution}
+$e^t\int_0^t e^{2\tau}\sinh (t-\tau)\,d\tau=
+\int_0^t e^{3\tau}\left(e^{(t-\tau)}\sinh
+(t-\tau)\right)\,d\tau$; $e^{3t}\leftrightarrow\frac{1}{s-3}$ and
+$e^t\sinh t\leftrightarrow\frac{1}{(s-1)^2-1}$, so
+$H(s)=\frac{1}{(s-3)\left((s-1)^2-1\right)}$.
+\end{solution}
+
+\item Find the Laplace transform. 
+
+$\int_0^t\tau e^{2\tau}\sin
+2(t-\tau)\,d\tau$
+
+\begin{solution}
+$te^{2t}\leftrightarrow\frac{1}{(s-2)^2}$ and
+$\sin2t\leftrightarrow\frac{2}{s^2+4}$, so
+ $H(s)=\frac{2}{(s-2)^2(s^2+4)}$.
+\end{solution}
+
+\item Find the Laplace transform. 
+
+$\int_0^t (t-\tau)^3 e^\tau\, d\tau$
+
+\begin{solution}
+$t^3\leftrightarrow\frac{6}{s^4}$  and
+$e^t\leftrightarrow\frac{1}{s-1}$, so
+$H(s)=\frac{6}{s^4(s-1)}$.
+\end{solution}
+
+\item Find the Laplace transform. 
+
+$\int_0^t\tau^6
+e^{-(t-\tau)}\sin 3(t-\tau)\,d\tau$
+
+\begin{solution}
+ $t^6\leftrightarrow \frac{6!}{s^7}$ and
+$e^{-t}\sin3t \leftrightarrow\frac{3}{(s+1)^2+9}$, so
+$H(s)=\frac{3\cdot 6!}{s^7\left[(s+1)^2+
+9\right]}$.
+\end{solution}
+
+\item Find the Laplace transform. 
+
+$\int_0^t\tau^2 (t-\tau)^3\,
+d\tau$
+
+\begin{solution}
+$t^2\leftrightarrow\frac{2}{s^3}$ and
+$t^3\leftrightarrow\frac{6}{s^4}$, so
+ $H(s)=\frac{12}{s^7}$.
+\end{solution}
+
+\item Find the Laplace transform. 
+
+$\int_0^t (t-\tau)^7 e^{-\tau}
+\sin 2\tau\,d\tau$
+
+\begin{solution}
+$t^7\leftrightarrow\frac{7!}{s^8}$ and
+$e^{-t}\sin2t \leftrightarrow\frac{2}{(s+1)^2+4}$, so
+  $H(s)=\frac{2\cdot 7!}{s^8\left[(s+1)^2+
+4\right]}$.
+\end{solution}
+
+\item Find the Laplace transform. 
+
+$\int_0^t (t-\tau)^4\sin
+2\tau\,d\tau$
+
+\begin{solution}
+$t^4\leftrightarrow\frac{24}{s^5}$ and
+$\sin2t\leftrightarrow\frac{2}{s^2+4}$, so
+ $H(s)=\frac{48}{s^5(s^2+4)}$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.6.3}
+
+\begin{enumerate}
+\item Find a formula for the solution of the initial value problem.
+
+$y''+3y'+y=f(t),\quad y(0)=0,\quad y'(0)=0$
+
+\item Find a formula for the solution of the initial value problem.
+
+$y''+4y=f(t),\quad y(0)=0,\quad y'(0)=0$
+
+\item Find a formula for the solution of the initial value problem.
+
+$y''+2y'+y=f(t),\quad y(0)=0,\quad y'(0)=0$
+
+\item Find a formula for the solution of the initial value problem.
+
+$y''+k^2y=f(t),\quad y(0)=1,\quad y'(0)=-1$
+
+\item Find a formula for the solution of the initial value problem.
+
+$y''+6y'+9y=f(t),\quad y(0)=0,\quad y'(0)=-2$
+
+\item Find a formula for the solution of the initial value problem.
+
+$y''-4y=f(t),\quad y(0)=0,\quad y'(0)=3$
+
+\item Find a formula for the solution of the initial value problem.
+
+$y''-5y'+6y=f(t),\quad y(0)=1,\quad y'(0)=3$
+
+\item Find a formula for the solution of the initial value problem.
+
+$y''+\omega^2y=f(t),\quad y(0)=k_0,\quad y'(0)=k_1$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.6.4}
+
+\begin{enumerate}
+\item Solve the integral equation.
+
+$y(t)=t-\int_0^t (t-\tau)
+y(\tau)\,d\tau$
+
+\begin{solution}
+$Y(s)=\frac{1}{s^2}-\frac{Y(s)}{s^2}$;
+$Y(s)\left(1+\frac{1}{s^2}\right)=\frac{1}{s^2}$; $Y(s)\frac{s^2+1}{s^2}=\frac{1}{s^2}$; $Y(s)=\frac{1}{s^2+1}$, so $y=\sin t$.
+\end{solution}
+
+\item Solve the integral equation.
+
+$y(t)=\sin t-2
+\int_0^t\cos (t-\tau) y (\tau)\,d\tau$
+
+\begin{solution}
+$Y(s)=\frac{1}{s^2+1}-\frac{2sY(s)}{s^2+1}$;
+$Y(s)\left(1+\frac{2s}{s^2+1}\right)=\frac{1}{s^2+1}$; $Y(s)\frac{(s+1)^2}{s^2+1}=\frac{1}{s^2+1}$; $Y(s)=\frac{1}{(s+1)^2}$, so
+$y=te^{-t}$.
+\end{solution}
+
+\item Solve the integral equation.
+
+$y(t)=1+2
+\int_0^ty(\tau)\cos(t-\tau)\,d\tau$
+
+\begin{solution}
+$Y(s)=\frac{1}{s}+\frac{2sY(s)}{s^2+1}$;
+$Y(s)\left(1-\frac{2s}{s^2+1}\right)=\frac{1}{s}$; $Y(s)\frac{(s-1)^2}{s^2+1}=\frac{1}{s}$;
+$Y(s)=\frac{(s^2+1)}{s(s-1)^2}=\frac{A}{s}+\frac{B}{s^2}
++\frac{C}{(s-1)^2}$, where $A(s-1)^2+Bs(s-1)+Cs=s^2+1$.
+Setting $s=0$ and $s=1$ shows that $A=1$ and $C=2$; equating
+coefficients of $s^2$ yields $A+B=1$, so $B=0$.  Therefore,
+$Y(s)=\frac{1}{s}
++\frac{1}{(s-1)^2}$, so $y=1+2te^t$.
+\end{solution}
+
+\item Solve the integral equation.
+
+$y(t)=t+\int_0^t
+y(\tau)e^{-(t-\tau)}\,d\tau$
+
+\begin{solution}
+$Y(s)=\frac{1}{s^2}+\frac{Y(s)}{s+1}$;
+$Y(s)\left(1-\frac{1}{s+1}\right)=\frac{1}{s^2}$;
+$Y(s)\left(\frac{s}{s+1}\right)=\frac{1}{s^2}$;
+$Y(s)=\frac{s+1}{s^3}
+=\frac{1}{s^2}+\frac{1}{s^3}$, so
+$y=t+\frac{t^2}{2}$.
+\end{solution}
+
+\item Solve the integral equation. 
+
+$y'(t)=t+\int_0^t y(\tau)\cos
+(t-\tau)\,d\tau,\, y(0)=4$
+
+\begin{solution}
+$sY(s)-4=\frac{1}{s^2}+\frac{sY(s)}{s^2+1}$;
+$Y(s)\left(s-\frac{s}{s^2+1}\right)=4+\frac{1}{s^2}$; $Y(s)\frac{s^3}{s^2+1}=\frac{4s^2+1}{s^2}$;
+$Y(s)=\frac{(4s^2+1)(s^2+1)}{s^5}=\frac{4s^4+5s^2+1}{s^5}
+=\frac{4}{s}+\frac{5}{s^3}+\frac{1}{s^5}$, so
+$y=4+\frac{5}{2}t^2+\frac{1}{24}t^4$.
+\end{solution}
+
+\item Solve the integral equation.
+
+$y(t)=\cos t-\sin t+
+\int_0^t y(\tau)\sin (t-\tau)\,d\tau$
+
+\begin{solution}
+$Y(s)=\frac{s-1}{s^2+1}+\frac{Y(s)}{s^2+1}$;
+$Y(s)\left(1-\frac{1}{s^2+1}\right)=\frac{s-1}{s^2+1}$; $Y(s)\frac{s^2}{s^2+1}=\frac{s-1}{s^2+1}$; $Y(s)=\frac{s-1}{s^2}
+=\frac{1}{s}-\frac{1}{s^2}$, so
+ $y=1-t$.
+\end{solution}
+
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.6.5}
+
+\begin{enumerate}
+
+\item Use the convolution theorem to evaluate the integral.
+
+$\int_0^t (t-\tau)^7\tau^8\,
+d\tau$
+
+\item Use the convolution theorem to evaluate the integral.
+
+$\int_0^t(t-\tau)^{13}\tau^7\,d\tau$
+
+\item Use the convolution theorem to evaluate the integral.
+
+$\int_0^t(t-\tau)^6\tau^7\,
+d\tau$
+
+\item Use the convolution theorem to evaluate the integral.
+
+$\int_0^te^{-\tau}\sin(t-\tau)\,d\tau$
+
+\item Use the convolution theorem to evaluate the integral.
+
+ $\int_0^t\sin\tau\cos2(t-\tau)\,d\tau$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.6.6}
+ Show that
+$$
+\int_0^tf(t-\tau)g(\tau)\,d\tau=\int_0^tf(\tau)g(t-\tau)\,d\tau
+$$
+by introducing the new variable of integration $x=t-\tau$ in the first
+integral.
+
+\begin{solution}
+Substituting $x=t-\tau$ yields
+$\int_0^tf(t-\tau)g(\tau)\,d\tau=-\int_t^0f(x)g(t-x)(-\,dx)=
+\int_0^tf(x)g(t-x)\,dx=\int_0^tf(\tau)g(t-\tau)\,d\tau$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.6.7} Use the convolution theorem to show that if
+$f(t)\leftrightarrow F(s)$ then
+$$
+\int_0^tf(\tau)\,d\tau\leftrightarrow \frac{F(s)}{s}.
+$$
+\end{problem}
+
+\begin{problem}\label{exer:8.6.8}
+ Show that if $p(s)=as^2+bs+c$ has
+distinct real zeros $r_1$ and $r_2$ then the solution of
+$$
+ay''+by'+cy=f(t),\quad y(0)=k_0,\quad y'(0)=k_1
+$$
+is
+\begin{eqnarray*}
+y(t)&=&\; k_0\frac{r_2e^{r_1t}-r_1e^{r_2t}}{r_2-r_1}+k_1\frac{e^{r_2t}-e^{r_1t}
+}{r_2-r_1}
+\\
+&&+\frac{1}{a(r_2-r_1)}\int_0^t(e^{r_2\tau}-e^{r_1\tau})f(t-\tau)\,d\tau.
+\end{eqnarray*}
+
+\begin{solution}
+$p(s)Y(s)=F(s)+a(k_1+k_0s)+bk_0$, so
+(A) $Y(s)=\frac{F(s)}{p(s)}+\frac{k_0(as+b)+k_1a}{p(s)}$.
+Since $p(s)=a(s-r_1)(s-r_2)$ and therefore $b=-a(r_1+r_2)$,
+(A) can be rewritten as
+$$
+Y(s)=\frac{F(s)}{a(s-r_1)(s-r_2)}+\frac{k_0(s-r_1-r_2)}{(s-r_1)(s-r_2)}
++\frac{k_1}{(s-r_1)(s-r_2)}.
+$$
+$$
+\frac{1}{(s-r_1)(s-r_2)}=\frac{1}{r_2-r_1}\left(\frac{1}{s-r_2}
+-\frac{1}{s-r_1}\right)\leftrightarrow\frac{e^{r_2t}-e^{r_1t}}{r_2-r_1},
+$$
+so the convolution theorem implies that
+$$
+\frac{F(s)}{a(s-r_1)(s-r_2)}\leftrightarrow
+\frac{1}{a}\int_0^t\frac{e^{r_2\tau}-e^{r_1\tau}}{r_2-r_1}f(t-\tau)\,d\tau.
+$$
+$$
+\frac{s-r_1-r_2}{(s-r_1)(s-r_2)}=\frac{r_2}{r_2-r_1}\frac{1}{s-r_1}
+-\frac{r_1}{r_2-r_1}\frac{1}{s-r_2}\leftrightarrow
+\frac{r_2e^{r_1t}-r_1e^{r_2}t}{r_2-r_1}.
+$$
+Therefore,
+$$
+y(t)=\ k_0\frac{r_2e^{r_1t}-r_1e^{r_2t}}{r_2-r_1}+k_1\frac{e^{r_2t}-e^{r_1t}}{r_2-r_1}
++\frac{1}{a}
+\int_0^t\frac{e^{r_2\tau}-e^{r_1\tau}}{r_2-r_1}f(t-\tau)\,d\tau.
+$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.6.9}
+Show that if $p(s)=as^2+bs+c$ has
+a repeated  real zero $r_1$ then
+ the solution of
+$$
+ay''+by'+cy=f(t),\quad y(0)=k_0,\quad y'(0)=k_1
+$$
+is
+$$
+y(t)=\; k_0(1-r_1t)e^{r_1t}+k_1te^{r_1t}
++\frac{1}{a}\int_0^t\tau
+e^{r_1\tau}f(t-\tau)\,d\tau.
+$$
+\end{problem}
+
+\begin{problem}\label{exer:8.6.10}
+ Show that if $p(s)=as^2+bs+c$ has
+ complex conjugate zeros $\lambda\pm i\omega$
+then the solution of
+$$
+ay''+by'+cy=f(t),\quad y(0)=k_0,\quad y'(0)=k_1
+$$
+is
+\begin{eqnarray*}
+y(t)&=&\;  e^{\lambda t}\left[k_0(\cos\omega t-\frac{\lambda}{\omega}\sin\omega
+t)+\frac{k_1}{\omega}\sin\omega t\right]
+\\
+&&+\frac{1}{a\omega}\int_0^te^{\lambda t}f(t-\tau)\sin\omega\tau\,
+d\tau.
+\end{eqnarray*}
+
+\begin{solution}
+$p(s)Y(s)=F(s)+a(k_1+k_0s)+bk_0$, so
+(A) $Y(s)=\frac{F(s)}{p(s)}+\frac{k_0(as+b)+k_1a}{p(s)}$.
+Since $p(s)=a(s-\lambda)^2+\omega^2$ and therefore $b=-2a\lambda$,
+(A) can be rewritten as
+$$
+Y(s)=\frac{F(s)}{a[(s-\lambda)^2+\omega^2}]+\frac{k_0(s-2\lambda)}{(s-\lambda)^2+\omega^2}
++\frac{k_1}{(s-\lambda)^2+\omega^2}.
+$$
+$\frac{1}{(s-\lambda)^2+\omega^2}\leftrightarrow
+\frac{1}{\omega}e^{\lambda t}\sin\omega t$, so the convolution theorem
+implies that
+$$
+\frac{F(s)}{a[(s-\lambda)^2+\omega^2]}\leftrightarrow
+\frac{1}{a\omega}\int_0^te^{\lambda t}f(t-\tau)\sin\omega\tau\,
+d\tau.
+$$
+$$
+\frac{s-2\lambda}{(s-\lambda)^2+\omega^2}=
+\frac{(s-\lambda)-\lambda}{(s-\lambda)^2+\omega^2}\leftrightarrow
+e^{\lambda t}\left(\cos\omega
+t-\frac{\lambda}{\omega}\sin\omega t\right).
+$$
+Therefore,
+$$
+y(t)=e^{\lambda t}\left[k_0\left(\cos\omega
+t-\frac{\lambda}{\omega}\sin\omega
+t\right)+\frac{k_1}{\omega}\sin\omega t\right]
++\frac{1}{a\omega}\int_0^te^{\lambda t}f(t-\tau)\sin\omega\tau\,
+d\tau.
+$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.6.11}
+Let
+$$
+w={\cal L}^{-1}\left(\frac{1}{as^2+bs+c}\right),
+$$
+where $a,b$, and $c$ are constants and $a\ne0$.
+\begin{enumerate}
+\item % (a)
+Show that $w$ is the solution of
+$$
+aw''+bw'+cw=0,\quad w(0)=0,\quad w'(0)=\frac{1}{a}.
+$$
+\item\label{exer:8.6.11b} % (b)
+Let $f$ be continuous on $[0,\infty)$  and define
+$$
+h(t)=\int_0^t w(t-\tau)f(\tau)\,d\tau.
+$$
+Use
+\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Leibniz.html}{Leibniz's rule} for differentiating an integral with
+respect to a parameter to show  that $h$ is the solution of
+$$
+ah''+bh'+ch=f,\quad h(0)=0,\quad h'(0)=0.
+$$
+\item % (c)
+ Show that the function $y$ in  Eqn.~\eqref{eq:8.6.14} is the solution of
+Eqn.~\eqref{eq:8.6.13} provided that $f$ is continuous on $[0,\infty)$;
+thus, it's not necessary to assume that $f$ has a Laplace transform.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.6.12}
+Consider the initial value problem
+$$
+ay''+by'+cy=f(t),\quad y(0)=0,\quad y'(0)=0,
+\text{ (A)}
+$$
+where $a,b$, and $c$ are constants, $a\ne0$, and
+$$
+f(t)=\left\{\begin{array}{cc}f_0(t),&0\le t<t_1,\\
+f_1(t),&t\ge t_1.\end{array}\right.
+$$
+Assume that $f_0$ is continuous and of exponential order on $[0,\infty)$
+and $f_1$ is continuous and of exponential order on $[t_1,\infty)$.
+Let
+$$
+p(s)=as^2+bs+c.
+$$
+\begin{enumerate}
+\item % (a)
+Show that the Laplace transform of the solution of  (A)
+is
+$$
+Y(s)=\frac{F_0(s)+e^{-st_1}G(s)}{p(s)}
+$$
+where  $g(t)=f_1(t+t_1)-f_0(t+t_1)$.
+
+\begin{solution}
+$$
+ay''+by'+cy=f_0(t)+u(t-t_1)(f_1(t)-f_0(t)),\,y(0)=0,\,y'(0)=0;
+$$
+$$
+p(s)Y(s)=F_0(s)+{\cal L}(u(t-t_1)(f_1(t)-f_0(t)))
+=F_0(s)+e^{-st_1}{\cal L}(g);
+$$
+$$
+Y(s)=\frac{F_0(s)+e^{-st_1}G(s)}{p(s)}.
+\text{ (B)}
+$$
+\end{solution}
+
+\item % (b)
+Let $w$ be as in Exercise~\ref{exer:8.6.11}.
+Use Theorem~\ref{thmtype:8.4.2} and the convolution theorem
+to show that the solution of (A) is
+$$
+y(t)=\int_0^t
+w(t-\tau)f_0(\tau)\,d\tau+u(t-t_1)\int_0^{t-t_1}
+w(t-t_1-\tau)g(\tau)\,d\tau
+$$
+for $t>0$.
+
+\begin{solution}
+Since $F_0(s)\leftrightarrow f_0(t)$, $G(s)\leftrightarrow
+g(t)$, and $\frac{1}{p(s)}\leftrightarrow w(t)$, the convolution
+theorem implies that
+$$
+\frac{F_0(s)}{p(s)}\leftrightarrow
+\int_0^tw(t-\tau)f_0(\tau)\,d\tau\mbox{\quad and \quad}
+ \frac{G(s)}{p(s)}\leftrightarrow
+\int_0^tw(t-\tau)g(\tau)\,d\tau.
+$$
+ Now Theorem~\ref{thmtype:8.4.2} implies that
+ $\frac{e^{-st_1}G(s)}{p(s)}\leftrightarrow
+u(t-t_1)\int_0^tw(t-t_1-\tau)g(\tau)\,d\tau$, and (B) implies
+that
+$$
+y(t)=\int_0^t
+w(t-\tau)f_0(\tau)\,d\tau+u(t-t_1)\int_0^{t-t_1}
+w(t-t_1-\tau)g(\tau)\,d\tau.
+$$
+\end{solution}
+
+\item % (c)
+Henceforth, assume only that $f_0$ is continuous on $[0,\infty)$ and $f_1$
+ is continuous on $[t_1,\infty)$.
+ Use  Exercise~\ref{exer:8.6.11} and what you did above to show that
+$$
+y'(t)=\int_0^t
+w'(t-\tau)f_0(\tau)\,d\tau+u(t-t_1)\int_0^{t-t_1}
+w'(t-t_1-\tau)g(\tau)\,d\tau
+$$
+for $t>0$, and
+$$
+y''(t)=\frac{f(t)}{a}+\int_0^t
+w''(t-\tau)f_0(\tau)\,d\tau+u(t-t_1)\int_0^{t-t_1}
+w''(t-t_1-\tau)g(\tau)\,d\tau
+$$
+for $0<t<t_1$ and $t>t_1$. Also, show
+ $y$ satisfies the differential equation in
+(A) on$(0,t_1)$ and $(t_1,\infty)$.
+
+\begin{solution}
+Let $z_0(t)=\int_0^tw(t-\tau)f_0(\tau)\,d\tau$
+and $z_1(t)=\int_0^tw(t-\tau)g(\tau)\,d\tau$.
+Then $y(t)=z_0(t)+u(t-t_1)z_1(t-t_1)$. Using Leibniz's rule as in the
+solution of Exercise~\ref{exer:8.6.11b} shows that
+$$
+z_0'(t)=\int_0^tw'(t-\tau)f_0(\tau)\,d\tau,\quad
+z_1'(t)=\dst\int_0^tw'(t-\tau)g(\tau)\,d\tau,\quad t>0,
+$$
+$$
+z_0''(t)=\frac{f_0(t)}{a}+\int_0^tw''(t-\tau)f_0(\tau)\,d\tau,
+z_1''(t)=\frac{g(t)}{a}+\int_0^tw''(t-\tau)g(\tau)\,d\tau,\quad
+t>0,
+$$
+ if $t>0$, and that
+$$
+az_0''+bz_0'+cz_0=f_0(t)\quad \mbox{and} \quad
+az_1''+bz_1'+cz_1=f_1(t+t_1)-f_0(t+t_1),\quad  t>0.
+$$
+This implies the stated conclusion for $y'$ and $y''$  on $(0,t)$ and
+$(t,\infty)$, and that $ay''+by'+cy=f(t)$ on these intervals.
+\end{solution}
+
+\item % (d)
+Show that $y$ and $y'$ are continuous on $[0,\infty)$.
+
+\begin{solution}
+Since  the functions $z_0(t)$ and  $h(t)=u(t-t_1)z_1(t-t_1)$
+are both continuous on $[0,\infty)$ and $h(t)=0$ if $0\le t\le t_1$,
+$y$ is continuous on $[0,\infty)$. From the previous part, $y'$ is continuous
+on $[0,t_1)$ and $(t_1,\infty)$, so we need only show that $y'$
+is continuous at $t_1$.
+For this it suffices to show  that $h'(t_1)=0$.
+ Since $h(t_1)=0$ if $t\le t_1$,
+(B) $\lim_{t\to t_1-}\frac{h(t)-h(t_1)}{t-t_1}=0$.
+If $t>t_1$, then $h(t)=\int_0^{t-t_1}w(t-t_1\tau)g(\tau)\,d\tau$.
+Since $h(t_1)=0$,
+$$
+\left|\frac{h(t)-h(t_1)}{t-t_1}\right|\le\int_0^{t-t_1}
+|w(t-t_1-\tau)g(\tau)|\,d\tau.
+\text{ (B)}
+$$
+ Since $g$ is continuous from the right at
+$0$, we can choose constants $T>0$  and $M>0$ so that
+$|g(\tau)|<M$ if $0\le \tau\le T$. Then (B) implies that
+$$
+\left|{h(t)-h(t_1)\over t-t_1}\right|\le M\int_0^{t-t_1}
+|w(t-t_1-\tau)|\,d\tau,\quad t_1<t<t_1+T.
+\text{ (C)}
+$$
+Now suppose $\epsilon>0$. Since $w(0)=0$, we can choose $T_1$
+such that $0<T_1<T$ and $|w(x)|<\epsilon/M$ if $0\le x<T_1$.
+If $t_1<t<t_1+T_1$ and $0\le\tau\le t-t_1$, then $0\le t-t_1-\tau<T_1$,
+so (C) implies that
+$$
+\left|\frac{h(t)-h(t_1)}{t-t_1}\right|< \epsilon,\quad
+t_1<t<t_1+T.
+$$
+Therefore,
+ $\lim_{t\to t_1+}\frac{h(t)-h(t_1)}{t-t_1}=0$. This and
+(B) imply that $h'(t_1)=0$.
+
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.6.13}
+Suppose
+$$
+f(t)=\left\{\begin{array}{cl}
+ f_0(t),&0\le t < t_1,\\[5pt]
+ f_1(t),&t_1\le t < t_2,\\
+&\vdots\\
+f_{k-1}(t),&t_{k-1}\le t < t_k,\\
+ f_k(t),&t\ge t_k,
+\end{array}\right.
+$$
+where  $f_m$ is continuous on $[t_m,\infty)$ for $m=0,\dots,k$
+(let $t_0=0$),  and define
+$$
+g_m(t)=f_m(t+t_m)-f_{m-1}(t+t_m) ,\, m=1,\dots,k.
+$$
+Extend the results of Exercise~\ref{exer:8.6.12} to show that
+the solution of
+$$
+ay''+by'+cy=f(t),\quad y(0)=0,\quad y'(0)=0
+$$
+is
+$$
+y(t)=\int_0^t w(t-\tau)f_0(\tau)\,d\tau+\sum_{m=1}^ku(t-t_m)
+\int_0^{t-t_m}w(t-t_m-\tau)g_m(\tau)\,d\tau.
+$$
+\end{problem}
+
+\begin{problem}\label{exer:8.6.14}
+Let $\{t_m\}_{m=0}^\infty$  be a sequence of points such that $t_0=0$,
+$t_{m+1}>t_m$,
+and $\lim_{m\to\infty}t_m=\infty$. For each nonegative integer $m$
+let $f_m$ be continuous on $[t_m,\infty)$, and let
+ $f$ be defined on $[0,\infty)$ by
+$$
+f(t)=f_m(t),\quad t_m\le t<t_{m+1}\quad  m=0,1,2\dots.
+$$
+Let
+$$
+g_m(t)=f_m(t+t_m)-f_{m-1}(t+t_m),\quad  m=1,\dots,k.
+$$
+Extend the results of Exercise~\ref{exer:8.6.13} to show that the solution
+of
+$$
+ay''+by'+cy=f(t),\quad y(0)=0,\quad y'(0)=0
+$$
+is
+$$
+y(t)=\int_0^t w(t-\tau)f_0(\tau)\,d\tau+\sum_{m=1}^\infty u(t-t_m)
+\int_0^{t-t_m}w(t-t_m-\tau)g_m(\tau)
+\,d\tau.
+$$
+\begin{hint}
+  See Exercise~\ref{exer:8.4.30}. 
+\end{hint}
+
+\end{problem}
+
+
+\end{document}

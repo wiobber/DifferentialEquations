@@ -1,0 +1,1190 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+\begin{problem}\label{exer:5.5.1} Find a particular solution. 
+
+$y''+3y'+2y=7\cos x-\sin x$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.2} Find a particular solution. 
+
+$y''+3y'+y=(2-6x)\cos x-9\sin x$
+
+\begin{solution}
+Let
+\begin{eqnarray*}
+y_p&=&(A_0+A_1x)\cos x+(B_0+B_1x)\sin x; \text{ then}\\
+y_p'&=&(A_1+B_0+B_1x)\cos x+(B_1-A_0-A_1x)\sin x\\
+y_p''&=&(2B_1-A_0-A_1x)\cos x-(2A_1+B_0+B_1x)\sin x, \text{ so}
+\end{eqnarray*}
+\begin{eqnarray*}
+y_p''+3y_p'+y_p&=&(3A_1+3B_0+2B_1+3B_1x)\cos x \\
+&&+(3B_1-3A_0-2A_1-3A_1x)\sin x \\
+&=&(2-6x)\cos x-9\sin x
+\end{eqnarray*}
+if $3B_1=-6$, $-3A_1=0$, $3B_0+3A_1+2B_1=2$, $-3A_0+3B_1+2A_1=-9$.
+Therefore,$A_1=0$,   $B_1=-2$, $A_0=1$, $B_0=2$, and
+ $y_p=\cos x+(2-2x)\sin x$.
+
+\end{solution}
+
+\end{problem}
+
+\begin{problem}\label{exer:5.5.3} Find a particular solution. 
+
+$y''+2y'+y=e^x(6\cos x+17\sin x)$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.4} Find a particular solution. 
+
+$y''+3y'-2y=-e^{2x}(5\cos2x+9\sin2x)$
+
+\begin{solution}
+Let $y=ue^{2x}$. Then
+\begin{eqnarray*}
+y''+3y'-2y&=&e^{2x}\left[(u''+4u'+4u)+3(u'+2u)-2u\right]\\
+&=&e^{2x}(u''+7u'+8u)=-e^{2x}(5\cos2x+9\sin2x)
+\end{eqnarray*}
+if $u''+7u'+8u=-5\cos2x-9\sin2x$. Now let $u_p=A\cos2x+B\sin2x$. Then
+\begin{eqnarray*}
+u_p''+7u_p'+8u_p&=&-4(A\cos2x+B\sin2x)+14(-A\sin2x+B\cos2x)\\&&
++8(A\cos2x+B\sin2x)\\ &=&
+(4A+14B)\cos2x-(14A-4B)\sin2x\\ &=&-5\cos2x-9\sin2x
+\end{eqnarray*}
+if $4A+14B=-5$, $-14A+4B=-9$. Therefore,$A=\frac{1}{2}$,
+$B=-\frac{1}{2}$,
+$$
+ u_p=\frac{1}{2}(\cos2x-\sin2x), \text{ and }
+y_p=\frac{{e^{2x}}{2}(\cos2x-\sin2x)}.
+$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.5} Find a particular solution. 
+
+$y''-y'+y=e^x(2+x)\sin x$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.6} Find a particular solution. 
+
+$y''+3y'-2y=e^{-2x}\left[(4+20x)\cos 3x+(26-32x)\sin
+3x\right]$
+
+\begin{solution}
+Let $y=ue^{-2x}$. Then
+\begin{eqnarray*}
+y''+3y'-2y&=&e^{-2x}\left[(u''-4u'+4u)+3(u'-2u)-2u\right]\\
+&=&e^{-2x}(u''-u'-4u)\\ &=&
+e^{-2x}\left[(4+20x)\cos 3x+(26-32x)\sin 3x\right]
+\end{eqnarray*}
+if $u''-u'-4u=(4+20x)\cos 3x+(26-32x)\sin 3x$.
+Let
+\begin{eqnarray*}
+u_p&=&(A_0+A_1x)\cos3x+(B_0+B_1x)\sin3x; \text{ then}\\
+u_p'&=&(A_1+3B_0+3B_1x)\cos3x+(B_1-3A_0-3A_1x)\sin3x\\
+u_p''&=&(6B_1-9A_0-9A_1x)\cos3x-(2A_1+9B_0+9B_1x)\sin3x,\text{ so}\\
+\end{eqnarray*}
+\begin{eqnarray*}
+u_p''-u_p'-4u_p&=&-\left[13A_0+A_1+3B_0-6B_1+(13A_1+3B_1)x\right]\cos3x
+\\ &&-\left[13B_0+B_1-3A_0+6A_1+(13B_1-3A_1)x\right]\sin3x\\
+&=&(4+20x)\cos 3x+(26-32x)\sin 3x \text{\ if}
+\end{eqnarray*}
+$$
+\begin{array}{rcr}
+-13A_1-13B_1&=&20\\ -13A_1-13B_1&=&-32
+\end{array}
+\text{ and }
+\begin{array}{rcr}
+-13A_0-13B_0-6A_1+6B_1&=&4.\\
+-13A_0-13B_0-6A_1-6B_1&=&26.
+\end{array}
+$$
+From the first two equations, $A_1=-2$, $B_1=2$. Substituting these in
+the last two equations yields $-13A_0-3B_0=-10$, $3A_0-13B_0=16$.
+Solving this pair yields $A_0=1$, $B_0=-1$. Therefore,
+$$
+ u_p=(1-2x)(\cos 3x-\sin 3x) \text{ and }
+y_p=e^{-2x}(1-2x)(\cos 3x-\sin 3x).
+$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.7} Find a particular solution. 
+
+$y''+4y=-12\cos2x-4\sin2x$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.8} Find a particular solution. 
+
+$y''+y=(-4+8x)\cos x+(8-4x)\sin x$
+
+\begin{solution}
+Let
+\begin{eqnarray*}
+y_p&=&(A_0x+A_1x^2)\cos x+(B_0x+B_1x^2)\sin x;\text{ then}\\
+y_p'&=&\left[A_0+(2A_1+B_0)x+B_1x^2\right]\cos x
++\left[B_0+(2B_1-A_0)x-B_1x^2\right]\sin x\\
+y_p''&=&
+\left[2A_1+2B_0-(A_0-4B_1)x-A_1x^2\right]\cos x\\ &&+
+\left[2B_1-2A_0-(B_0+4A_1)x-B_1x^2\right]\sin x, \text{ so}
+\end{eqnarray*}
+\begin{eqnarray*}
+y_p''+y_p&=&(2A_1+2B_0+4B_1x)\cos x+(2B_1-2A_0-4A_1x)\sin x\\ &=&
+(-4+8x)\cos x+(8-4x)\sin x
+\end{eqnarray*}
+if $4B_1=8$, $-4A_1=-4$, $2B_0+2A_1=-4$, $-2A_0+2B_1=8$. Therefore,
+$A_1=1$, $B_1=2$, $A_0=-2$, $B_0=-3$, and $y_p=-x\left[(2-x)\cos
+x+(3-2x)\sin x\right]$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.9} Find a particular solution. 
+
+$4y''+y=-4\cos x/2-8x\sin x/2$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.10} Find a particular solution. 
+
+$y''+2y'+2y=e^{-x}(8\cos x-6\sin x)$
+
+\begin{solution}
+Let $y=ue^{-x}$. Then
+\begin{eqnarray*}
+y''+2y'+2y&=&e^{-x}\left[(u''-2u'+u)+2(u'-u)+2u\right]\\
+&=&e^{-x}(u''+u)= e^{-x}(8\cos x-6\sin x)
+\end{eqnarray*}
+ if $u''+u=8\cos x-6\sin x$.
+Now let
+\begin{eqnarray*}
+u_p&=&Ax\cos x+Bx\sin x; \text{ then}\\
+u_p'&=&(A+Bx)\cos x+(B-Ax)\sin x\\
+u_p''&=&(2B-Ax)\cos x-(2A+Bx)\sin x, \text{ so}
+\end{eqnarray*}
+$$
+u_p''+u_p=2B\cos x-2A\sin x=8\cos x-6\sin x
+$$
+if $2B=8$, $-2A=-6$. Therefore,$A=3$, $B=4$, $u_p=x(3\cos x+4\sin x)$,
+and $y_p=xe^{-x}(3\cos x+4\sin x)$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.11} Find a particular solution. 
+
+$y''-2y'+5y=e^x\left[(6+8x)\cos
+2x+(6-8x)\sin2x\right]$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.12} Find a particular solution. 
+
+$y''+2y'+y=8x^2\cos x-4x\sin x$
+
+\begin{solution}
+Let
+\begin{eqnarray*}
+y_p&=&(A_0+A_1x+A_2x^2)\cos x +(B_0+B_1x+B_2x^2)\sin x;\text{ then}\\
+y_p'&=&\left[A_1+B_0+(2A_2+B_1)x+B_2x^2\right]\cos x\\ &&
++\left[B_1-A_0+(2B_2-A_1)x-A_2x^2\right]\sin x, \\
+y_p''&=&\left[-A_0+2A_2+2B_1-(A_1-4B_2)x-A_2x^2\right]\cos x\\ &&+
+\left[-B_0+2B_2-2A_1-(B_1+4A_2)x-B_2x^2\right]\sin x,\text{ so}
+\end{eqnarray*}
+\begin{eqnarray*}
+y_p''+2y_p'+y_p&=&2\left[A_1+A_2+B_0+B_1+(2A_2+B_1+2B_2)x+
+B_2x^2\right]\cos x\\ && +
+2\left[B_1+B_2-A_0-A_1+(2B_2-A_1-2A_2)x-A_2x^2\right]\sin x\\
+&=&8x^2\cos x-4x\sin x \text{ if}
+\end{eqnarray*}
+
+\begin{enumerate}
+    \item\label{solneqn:5.5.12A} \begin{eqnarray*}
+    2B_2 &=& 8\\-2A_2 &=&
+    0
+    \end{eqnarray*},
+
+    \item\label{solneqn:5.5.12B} \begin{eqnarray*}
+    2B_1+4A_2+4B_2 &=& 0 \\ -2A_1-4A_2+4B_2 &=& -4
+    \end{eqnarray*},
+
+    \item \label{solneqn:5.5.12C} \begin{eqnarray*}
+    2B_0+2A_1+2B_1+2A_2 &=& 0
+\\ -2A_0-2A_1+2B_1+2B_2 &=& 0
+    \end{eqnarray*},
+\end{enumerate}
+
+
+From \ref{solneqn:5.5.12A}, $A_2=0$, $B_2=4$. Substituting these into \ref{solneqn:5.5.12B} and solving
+for $A_1$ and $B_1$ yields $A_1=10$, $B_1=-8$. Substituting the known
+coefficients into \ref{solneqn:5.5.12C} and solving for $A_0$ and $B_0$ yields
+$A_0=-14$, $B_0=-2$. Therefore,$y_p=-(14-10x)\cos x-(2+8x-4x^2)\sin
+x$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.13}   Find a particular solution. $y''+3y'+2y=(12+20x+10x^2)\cos x+8x\sin x$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.14} Find a particular solution. $y''+3y'+2y=(1-x-4x^2)\cos2x-(1+7x+2x^2)\sin2x$
+
+\begin{solution}
+    Let
+\begin{eqnarray*}
+y_p&=&(A_0+A_1x+A_2x^2)\cos2x +(B_0+B_1x+B_2x^2)\sin2x;\mbox{ then}\\
+y_p'&=&\left[A_1+2B_0+(2A_2+2B_1)x+2B_2x^2\right]\cos2x\\ &&
++\left[B_1-2A_0+(2B_2-2A_1)x-2A_2x^2\right]\sin2x\\
+y_p''&=&\left[-4A_0+2A_2+4B_1 -(4A_1-8B_2)x-4A_2x^2\right]\cos2x\\
+&&+ \left[-4B_0-2B_2-4A_1
+-(4B_1+8A_2)x-4B_2x^2\right]\sin2x,\mbox{ so}\\
+\end{eqnarray*}
+\begin{eqnarray*}
+y_p''+3y_p'+2y_p&=&\left[-2A_0+3A_1+4A_2+6B_0+4B_1\right.\\ &&\left.
+-(2A_1-6A_2-6B_1-8B_2)x-
+(2A_2-6B_2)x^2\right]\cos2x\\ &&
++\left[-2B_0+3B_1+4B_2-6A_0-4A_1\right.\\ &&\left.
+-(2B_1-6B_2+6A_1+8A_2)x-(2B_2+6A_2)x^2\right]\sin2x\\
+&=&(1-x-4x^2)\cos2x-(1+7x+2x^2)\sin2x \mbox{ if}
+\end{eqnarray*}
+$$
+\mbox{(i) } \begin{array}{rcl}-2A_2+6B_2&=&-4
+\\-6A_2-2B_2&=&-2\end{array},
+\mbox{ (ii) } \begin{array}{rcr} -2A_1+6B_1+6A_2+8B_2&=&-1
+\\-6A_1-2B_1-8A_2+6B_2&=&-7\end{array},
+$$
+$$
+\mbox{ (iii) }
+\begin{array}{rcr}-2A_0+6B_0+3A_1+4B_1+2A_2&=&1
+\\-6A_0-2B_0-4A_0+3B_1+2B_2&=&-1\end{array}.
+$$
+From (i), $A_2=\frac{1}{2}$, $B_2=-\frac{1}{2}$. Substituting
+these into (ii) and solving for $A_1$ and $B_1$ yields $A_1=0$,
+$B_1=0$. Substituting the known coefficients into (iii) and solving
+for $A_0$ and $B_0$ yields $A_0=0$, $B_0=0$. Therefore,
+$y_p=\frac{x^2}{2}(\cos2x-\sin2x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.15}
+Find a particular solution. $y''-5y'+6y=-e^x\left[(4+6x-x^2)\cos x-(2-4x+3x^2)\sin x\right]$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.16}
+Find a particular solution. $y''-2y'+y=-e^x\left[(3+4x-x^2)\cos x+(3-4x-x^2)\sin x\right]$
+
+\begin{solution}
+    Let $y=ue^x$. Then
+\begin{eqnarray*}
+y''-2y'+y&=&e^x\left[(u''+2u'+u)-2(u'+u)+u\right]=e^xu''\\
+&=&-e^x\left[(3+4x-x^2)\cos x+(3-4x-x^2)\sin x\right]
+\end{eqnarray*}
+ if $u''=-(3+4x-x^2)\cos x-(3-4x-x^2)\sin x$.
+Now let
+\begin{eqnarray*}
+u_p&=&(A_0+A_1x+A_2x^2)\cos x +(B_0+B_1x+B_2x^2)\sin x;\mbox{ then}\\
+u_p'&=&\left[A_1+B_0+(2A_2+B_1)x+B_2x^2\right]\cos x\\ &&
++\left[B_1-A_0+(2B_2-A_1)x-A_2x^2\right]\sin x, \\
+u_p ''&=&\left[-A_0+2A_2+2B_1-(A_1-4B_2)x-A_2x^2\right]\cos x\\ &&+
+\left[-B_0+2B_2-2A_1-(B_1+4A_2)x-B_2x^2\right]\sin x\\
+&=&-(3+4x-x^2)\cos x-(3-4x-x^2)\sin x\mbox{ if }
+\end{eqnarray*}
+$$
+\mbox{(i) } \begin{array}{rcl}-A_2&=&1\\ -B_2&=&1 \end{array},
+\mbox{ (ii) } \begin{array}{rcr} -A_1+4B_2&=&-4
+\\ -B_1-4A_2&=&4\end{array},
+$$
+$$
+\mbox{ (iii) }
+\begin{array}{rcr}-A_0+2B_1+2A_2&=&-3
+\\ -B_0-2A_1+2B_2&=&-3\end{array}.
+$$
+From (i), $A_2=-1$, $B_2=-1$. Substituting these into (ii) and solving
+for $A_1$ and $B_1$ yields $A_1=0$, $B_1=0$. Substituting the known
+coefficients into (iii) and solving for $A_0$ and $B_0$ yields
+$A_0=1$, $B_0=1$. Therefore,$u_p=(1-x^2)(\cos x+\sin x)$ and
+$y_p=e^x(1-x^2)(\cos x+\sin x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.17}
+Find a particular solution. $y''-2y'+2y=e^x\left[(2-2x-6x^2)\cos x+(2-10x+6x^2)\sin x\right]$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.18} Find a particular solution and graph
+it. $y''+2y'+y=e^{-x}\left[(5-2x)\cos
+x-(3+3x)\sin x\right]$
+
+\begin{solution}
+    Let $y=ue^{-x}$. Then
+\begin{eqnarray*}
+y''+2y'+y&=&e^{-x}\left[(u''-2u'+u)+2(u'-u)+u\right]\\ &=&
+e^{-x}u''=e^{-x}\left[(5-2x)\cos x-(3+3x)\sin x\right]
+\end{eqnarray*}
+ if $u''=(5-2x)\cos x-(3+3x)\sin x$. Let
+\begin{eqnarray*}
+u_p&=&(A_0+A_1x)\cos x+(B_0+B_1x)\sin x; \mbox{ then}\\
+u_p'&=&(A_1+B_0+B_1x)\cos x+(B_1-A_0-A_1x)\sin x\\
+u_p''&=&(2B_1-A_0-A_1x)\cos x-(2A_1+B_0+B_1x)\sin x\\
+&=&(5-2x)\cos x-(3+3x)\sin x
+\end{eqnarray*}
+if $-A_1=-2$, $-B_1=-3$, $-A_0+2B_1=5$, $-B_0-2A_1$=-3. Therefore,
+$A_1=2$, $B_1=3$, $A_0=1$, $B_0=-1$, $u_p=e^{-x}\left[(1+2x)\cos
+x-(1-3x)\sin x\right]$, and $y_p=e^{-x}\left[(1+2x)\cos x-(1-3x)\sin
+x\right]$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.19} Find a particular solution and graph
+it.$y''+9y=-6\cos 3x-12\sin 3x$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.20} Find a particular solution and graph
+it. $y''+3y'+2y=(1-x-4x^2)\cos2x-(1+7x+2x^2)\sin2x$
+
+\begin{solution}
+    Let
+\begin{eqnarray*}
+y_p&=&(A_0x+A_1x^2+A_2x^3)\cos x +(B_0x+B_1x^2+B_2x^3)\sin x;\mbox{
+then}
+\\ y_p'&=&\left[A_0+(2A_1+B_0)x+(3A_2+B_1)x^2+B_2x^3\right]\cos x\\ &&
++\left[B_0+(2B_1-A_0)x+(3B_2-A_1)x^2-A_2x^3\right]\sin x\\
+y_p''&=&\left[2A_1+2B_0-(A_0-6A_2-4B_1)x-(A_1-6B_2)x^2-A_2x^3\right]\cos x\\ &&+
+\left[2B_1-2A_0-(B_0+6B_2+4A_1)x-(B_1+6A_2)x^2-B_2x^3\right]\sin x, \mbox{ so}
+\end{eqnarray*}
+\begin{eqnarray*}
+y_p''+y_p&=&\left[2A_1+2B_0+(6A_2+4B_1)x+6B_2x^2\right]\cos x\\ && +
+\left[2B_1-2A_0+(6B_2-4A_1)x-6A_2x^2\right]\sin x\\
+&=&(2+2x)\cos x+(4+6x^2)\sin x \mbox{ if}
+\end{eqnarray*}
+$$
+\mbox{(i) } \begin{array}{rcl} 6B_2&=&0\\-6A_2&=&6\end{array},
+\mbox{ (ii) } \begin{array}{rcr}\phantom{-}4B_1+6A_2&=&2
+\\-4A_1+6B_2&=&0\end{array},
+\mbox{ (iii) } \begin{array}{rcl}\phantom{-}2B_0+2A_1&=&2
+\\-2A_0+2B_1&=&4\end{array}.
+$$
+From (i), $A_2=-1$, $B_2=0$. Substituting these into (ii) and solving
+for $A_1$ and $B_1$ yields $A_1=0$, $B_1=2$. Substituting the known
+coefficients into (iii) and solving for $A_0$ and $B_0$ yields
+$A_0=0$, $B_0=2$. Therefore,$y_p=-x^3\cos x+(x+2x^2)\sin x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.21} Find a particular solution and graph
+it.
+
+$y''+4y'+3y=e^{-x}\left[(2+x+x^2)\cos x+(5+4x+2x^2)\sin x\right]$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.22}
+ Solve the
+initial value problem. $y''-7y'+6y=-e^x(17\cos x-7\sin x), \quad   y(0)=4,\;  y'(0)=2$
+
+\begin{solution}
+    Let $y=ue^x$. Then
+\begin{eqnarray*}
+y''-7y'+6y&=&e^x\left[(u''+2u'+u)-7(u'+u)+6u\right]\\ &=&e^x(u''-5u')=
+-e^x(17\cos x-7\sin x)
+\end{eqnarray*}
+ if $u''-5u'=-17\cos x+7\sin x$.
+Now let  $u_p=A\cos x+B\sin x$. Then
+\begin{eqnarray*}
+u_p''-5u_p'&=&-(A\cos x+B\sin x)-5(-A\sin x+B\cos x)\\
+&=& (-A-5B)\cos x-(B-5A)\sin x=-17\cos x+7\sin x
+\end{eqnarray*}
+if $-A-5B=-17$, $5A-B=7$. Therefore,$A=2$, $B=3$, $u_p=2\cos x+3\sin
+x$, and $y_p=e^x(2\cos x+3\sin x)$. The characteristic polynomial of
+the complementary equation is $p(r)=r^2-7r+6=(r-1)(r-6)$, so
+$\{e^x,e^{6x}\}$ is a fundamental set of solutions of the
+complementary equation. Therefore,
+(A) $y=e^x(2\cos x+3\sin x)+c_1e^x+c_2e^{6x}$
+is the general solution of the nonhomogeneous
+equation. Differentiating (A) yields
+$y'=e^x(2\cos x+3\sin x)+e^x(-2\sin x+3\cos x)+c_1e^x+6c_2e^{6x}$,
+so $y(0)=4,\ y'(0)=2\Rightarrow 4=2+c_1+c_2,\
+2=2+3+c_1+6c_2\Rightarrow c_1+c_2=2,\ c_1+6c_2=-3$, so $c_1=3$,
+$c_2=-1$, and
+ $y=e^x(2\cos x+3\sin x)+3e^x-e^{6x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.23}
+Solve the
+initial value problem. $y''-2y'+2y=-e^x(6\cos x+4\sin x), \quad   y(0)=1,\;  y'(0)=4$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.24} Solve the
+initial value problem. $y''+6y'+10y=-40e^x\sin x, \quad  y(0)=2,\quad y'(0)=-3$
+
+\begin{solution}
+    Let $y=ue^x$. Then
+\begin{eqnarray*}
+y''+6y'+10y&=&e^x\left[(u''+2u'+u)+6(u'+u)+10u\right]\\
+&=&e^x(u''+8u'+17u)=
+-40e^x\sin x
+\end{eqnarray*}
+ if  $u''+8u'+17u=-40\sin x$.
+Let $u_p=A\cos x+B\sin x$. Then
+\begin{eqnarray*}
+u_p''+6u_p'+17u_p&=&-(A\cos x+B\sin x)+8(-A\sin x+B\cos x)\\
+&&+17(A\cos x+B\sin x)\\ &=& (16A+8B)\cos x-(8A-16B)\sin
+x=-40\sin x
+\end{eqnarray*}
+if $16A+8B=0$, $-8A+16B=-40$. Therefore,$A=1$, $B=-2$, and
+$y_p=e^x(\cos x-2\sin x)$. The characteristic polynomial of the
+complementary equation is $p(r)=r^2+6r+10=(r+3)^2+1$, so
+$\{e^{-3x}\cos x,e^{-3x}\sin x\}$ is a fundamental set of solutions
+of the complementary equation, and (A) $y=e^x(\cos x-2\sin
+x)+e^{-3x}(c_1\cos x+c_2\sin x)$ is the general solution of the
+nonhomogeneous equation. Therefore,$y(0)=2\Rightarrow 2=1+c_1$, so
+$c_1=1$. Differentiating (A) yields $y'=e^x(\cos x-2\sin x)-e^x(\sin
+x+2\cos x) -3e^{-3x}(c_1\cos x+c_2\sin x) +e^{-3x}(-c_1\sin x+c_2\cos
+x)$. Therefore,$y'(0)=-3\Rightarrow -3=1-2-3c_1+c_2$, so $c_2=1$, and
+$y=e^x(\cos x-2\sin x)+e^{-3x}(\cos x+\sin x)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.25} Solve the
+initial value problem. $y''-6y'+10y=-e^{3x}(6\cos x+4\sin
+x), \quad  y(0)=2,\quad y'(0)=7$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.26}
+Solve the
+initial value problem. $y''-3y'+2y=e^{3x}\left[21\cos x-(11+10x)\sin x\right],
+\;  y(0)=0, \quad   y'(0)=6$
+
+\begin{solution}
+    Let $y=ue^{3x}$. Then
+\begin{eqnarray*}
+y''-3y'+2y&=&e^{3x}\left[(u''+6u'+9u)-3(u'+3u)+2u\right]\\
+&=&e^{3x}(u''+3u'+2u)=
+e^{3x}\left[21\cos x-(11+10x)\sin x\right]
+\end{eqnarray*}
+if $u''+3u'+2u=21\cos x-(11+10x)\sin x$.
+Now let
+\begin{eqnarray*}
+u_p&=&(A_0+A_1x)\cos x+(B_0+B_1x)\sin x; \mbox{ then}\\
+u_p'&=&(A_1+B_0+B_1x)\cos x+(B_1-A_0-A_1x)\sin x\\
+u_p''&=&(2B_1-A_0-A_1x)\cos x-(2A_1+B_0+B_1x)\sin x, \mbox{ so}
+\end{eqnarray*}
+\begin{eqnarray*}
+u''+3u'+2u&=&\left[A_0+3A_1+3B_0+2B_1+(A_1+3B_1)x\right]\cos x\\
+&&+\left[B_0+3 B_1-3A_0-2A_1+(B_1-3A_1)x\right]\sin x \\
+&=&21\cos x-(11+10x)\sin x \mbox{ if}
+\end{eqnarray*}
+$$
+\begin{array}{rcr}
+\phantom{-3}A_1+3B_1&=&0\\ -3A_1+\phantom{3}B_1&=&-10
+\end{array}
+\mbox{\  and \ }
+\begin{array}{rcr}
+\phantom{-3} A_0+3B_0+3A_1+2B_1&=&21\\
+-3A_0+\phantom{3}B_0-2A_1+3B_1&=&-11
+\end{array}.
+$$
+From the first two equations $A_1=3$, $B_1=-1$. Substituting these in
+last two equations yields and solving for $A_0$ and $B_0$ yields
+$A_0=2$, $B_0=4$. Therefore,
+$u_p=(2+3x)\cos x+(4-x)\sin x$ and
+$y_p=e^{3x}\left[(2+3x)\cos x+(4-x)\sin x\right]$.
+The characteristic polynomial of the complementary equation is
+$p(r)=r^2-3r+2=(r-1)(r-2)$, so $\{e^x,e^{2x}\}$ is a fundamental
+set of solutions of the complementary equation, and
+(A) $y=e^{3x}\left[(2+3x)\cos x+(4-x)\sin x\right]+c_1e^x+c_2e^{2x}$
+is the general solution of the nonhomogeneous
+equation. Differentiating (A) yields
+\begin{eqnarray*}
+y'&=&3e^{3x}\left[(2+3x)\cos x+(4-x)\sin x\right]\\ &&+
+e^{3x}\left[(7-x)\cos x-(3+3x)\sin x\right]+c_1e^x+2c_2e^{2x}.
+\end{eqnarray*}
+ Therefore,$y(0)=0,\ y'(0)=6\Rightarrow 0=2+c_1+c_2,\
+6=6+7+c_1+2c_2$, so $c_1+c_2=-2,\ c_1+2c_2=-7$.  Therefore,
+$c_1=3$, $c_2=-5$, and
+ $y=e^{3x}\left[(2+3x)\cos x+(4-x)\sin x\right]+3e^x-5e^{2x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.27} Use the
+principle
+of superposition to find a particular solution. $y''-2y'-3y=4e^{3x}+e^x(\cos x-2\sin x)$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.28} Use the
+principle
+of superposition to find a particular solution. $y''+y=4\cos x-2\sin x+xe^x+e^{-x}$
+
+\begin{solution}
+    We must find particular solutions $y_{p_1}$, $y_{p_2}$, and $y_{p_3}$
+of
+(A) $y''+y=4\cos x-2\sin x$ and
+(B) $y''+y=xe^x$, and
+(C) $y''+y=e^{-x}$, respectively.
+To find a particular solution of (A) we write
+\begin{eqnarray*}
+y_{p_1}&=&Ax\cos x+Bx\sin x; \mbox{ then}\\
+y_{p_1}'&=&(A+Bx)\cos x+(B-Ax)\sin x\\
+y_{p_1}''&=&(2B-Ax)\cos x-(2A+Bx)\sin x, \mbox{ so}
+\end{eqnarray*}
+$y_{p_1}''+y_{p_1}=2B\cos x-2A\sin x=4\cos x-2\sin x$ if $2B=4$,
+$-2A=-2$. Therefore, $A=1$, $B=2$, and $y_{p_1}=x(\cos x+2\sin x)$.
+To find a particular solution of (B) we write $y=ue^x$. Then
+\begin{eqnarray*}
+y''+y&=&e^x\left[(u''+2u'+u)+u\right]\\ &=&e^x(u''+2u'+2u)=xe^x
+\end{eqnarray*}
+if $u''+2u'+2u=x$. Now $u_p=A+Bx$, where $2B+2(A+Bx)=x$. Therefore,
+$2B=1$, $2A+2B=0$, so $B=\frac{1}{2}$, $A=-\frac{1}{2}$,
+$u_p=-\frac{1}{2}(1-x)$, and $y_{p_2}=-\frac{e^x}{2}(1-x)$. To
+find a particular solution of (C) we write $y_{p_3}=Ae^{-x}$. Then
+$y_{p_3}''+y_{p_3}=2Ae^{-x}=e^{-x}$ if $2A=1$, so $A=\frac{1}{2}$
+and $y_{p_3}=\frac{e^{-x}}{2}$ Now $y_p=y_{p_1}+y_{p_2}+y_{p_3}=
+x(\cos x+2\sin x)-\frac{e^x}{2}(1-x)+\frac{e^{-x}}{2}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.29} Use the
+principle
+of superposition to find a particular solution. $y''-3y'+2y=xe^x+2e^{2x}+\sin x$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.30} Use the
+principle
+of superposition to find a particular solution. $y''-2y'+2y=4xe^x\cos x+xe^{-x}+1+x^2$
+
+\begin{solution}
+    We must find particular solutions $y_{p_1}$, $y_{p_2}$ and $y_{p_3}$
+of
+(A) $y''-2y'+2y=4xe^x\cos x$,
+(B) $y''-2y'+2y=xe^{-x}$, and
+(C) $y''-2y'+2y=1+x^2$, respectively.
+To find a particular solution of (A) we write $y=ue^x$. Then
+$y''-2y'+2y=e^x\left[(u''+2u'+u)-2(u'+u)+2u\right]=e^x(u''+u)=
+4xe^x\cos x$ if $u''+u=4x\cos x$. Now let
+\begin{eqnarray*}
+u_p&=&(A_0x+A_1x^2)\cos x+(B_0x+B_1x^2)\sin x;\mbox{ then}\\
+u_p'&=&\left[A_0+(2A_1+B_0)x+B_1x^2\right]\cos x
++\left[B_0+(2B_1-A_0)x-B_1x^2\right]\sin x\\
+u_p''&=&
+\left[2A_1+2B_0-(A_0-4B_1)x-A_1x^2\right]\cos x\\ &&+
+\left[2B_1-2A_0-(B_0+4A_1)x-B_1x^2\right]\sin x, \mbox{ so}
+\end{eqnarray*}
+\begin{eqnarray*}
+u_p''+u_p&=&(2A_1+2B_0+4B_1x)\cos x+(2B_1-2A_0-4A_1x)\sin x\\ &=&
+4x\cos x
+\end{eqnarray*}
+if $4B_1=4$, $-4A_1=0$, $2B_0+2A_1=0$, $-2A_0+2B_1=0$. Therefore,
+$A_1=0$, $B_1=1$, $A_0=1$, $B_0=0$, $u_p=x(\cos x+x\sin x)$, and
+$y_{p_1}=xe^x(\cos x+x\sin x)$. To find a particular solution of (B)
+we write $y=ue^{-x}$. Then
+\begin{eqnarray*}
+y''-2y'+2y&=&e^{-x}\left[(u''-2u'+u)-2(u'-u)+2u\right]\\ &=&
+e^{-x}(u''-4u'+5u)=xe^{-x}
+\end{eqnarray*}
+if $u''-4u'+5u=x$. Now $u_p=A+Bx$ where $-4B+5(A+Bx)=x$. Therefore,
+$5B=1$, $5A-4B=0$, $B=\frac{1}{5}$, $A=\frac{4}{25}$,
+$u_p=\frac{1}{25}(4+5x)$, and $y_{p_2}=\frac{e^{-x}}{25}(4+5x)$.
+To find a particular solution of (C) we write $y_{p_3}=A+Bx+Cx^2$.
+Then
+\begin{eqnarray*}
+y_{p_3}''-2y_{p_3}'+2y_{p_3}&=&2C-2(B+2Cx)+2(A+Bx+Cx^2)\\ &=&
+(2A-2B+2C)+(2B-4C)x+2Cx^2=1+x^2
+\end{eqnarray*}
+if $2A-2B+2C=1$, $2B-4C=0$, $2C=1$. Therefore,$C=\frac{1}{2}$,
+$B=1$, $A=1$, and $y_{p_3}=1+x+\frac{x^2}{2}$. Now
+$y_p=y_{p_1}+y_{p_2}+y_{p_3}= xe^x(\cos x+x\sin
+x)+\frac{e^{-x}}{25}(4+5x)+1+x+\frac{x^2}{2}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.31} Use the
+principle
+of superposition to find a particular solution. $y''-4y'+4y=e^{2x}(1+x)+e^{2x}(\cos x-\sin
+x)+3e^{3x}+1+x$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.32}
+Use the
+principle
+of superposition to find a particular solution, and
+solve the initial value problem. $y''-4y'+4y=6e^{2x}+25\sin x , \quad   y(0)=5,\;  y'(0)=3$
+
+\begin{solution}
+    We must find particular solutions $y_{p_1}$ and $y_{p_2}$ of
+(A) $y''-4y'+4y=6e^{2x}$ and
+(B) $y''-4y'+4y=25\sin x$, respectively.
+To find a particular solution of (A), let
+ $y=ue^{2x}$. Then
+\begin{eqnarray*}
+y''-4y'+4y&=&e^{2x}\left[(u''+4u'+4u)-4(u'+2u)+4u\right]\\
+&=&e^{2x}u''=6e^{2x}
+\end{eqnarray*}
+if $u''=6$. Integrating twice and taking the constants of integration
+to be zero yields $u_p=3x^2$, so $y_{p_1}=3x^2e^{2x}$.
+To find a particular solution of (B), let
+ $y_{p_2}=A\cos x+B\sin x$. Then
+\begin{eqnarray*}
+y_{p_2}''-4y_{p_2}'+4y_{p_2}&=&-(A\cos x+B\sin x)-4(-A\sin x+B\cos x)\\
+&&+4(A\cos x+B\sin x)\\ &=& (3A-4B)\cos x+(4A+3B)\sin x=25\sin x
+\end{eqnarray*}
+if $3A-4B=0$, $4A+3B=25$. Therefore,$A=4$, $B=3$, and $y_{p_2}=4\cos
+x+3\sin x$. Now $y_p=y_{p_1}+y_{p_2}=3x^2e^{2x}+4\cos x+3\sin x$. The
+characteristic polynomial of the complementary equation is
+$p(r)=r^2-4r+4=(r-2)^2$, so $\{e^{2x},xe^{2x}\}$ is a fundamental set
+of solutions of the complementary equation. Therefore,(C)
+$y=3x^2e^{2x}+4\cos x+3\sin x+e^{2x}(c_1+c_2x)$ is the general
+solution of the nonhomogeneous equation. Now $y(0)=5\Rightarrow
+5=4+c_1$, so $c_1=1$. Differentiating (C) yields
+$y'=6e^{2x}(x+x^2)-4\sin x+3\cos x+2e^{2x}(c_1+c_2x)+c_2e^{2x}$, so
+$y'(0)=3\Rightarrow 3=3+2+c_2$. Therefore,$c_2=-2$, and
+$y=(1-2x+3x^2)e^{2x}+4\cos x+3\sin x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.33}
+Solve the initial value problem and graph the solution. $y''+4y=-e^{-2x}\left[(4-7x)\cos x+(2-4x)\sin x\right],
+\;  y(0)=3, \quad   y'(0)=1$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.34} 
+Solve the initial value problem and graph the solution. $y''+4y'+4y=2\cos2x+3\sin2x+e^{-x} , \quad   y(0)=-1,\;  y'(0)=2$
+
+\begin{solution}
+    We must find particular solutions $y_{p_1}$ and $y_{p_2}$ of
+(A) $y''+4y'+4y=2\cos2x+3\sin2x$ and
+(B) $y''+4y'+4y=e^{-x}$,  respectively.
+To find a particular solution of (A) we write
+ $y_{p_1}=A\cos2x+B\sin2x$. Then
+\begin{eqnarray*}
+y_{p_1}''+4y_{p_1}'+4y_{p_1}&=&
+-4(A\cos2x+B\sin2x)+8(-A\sin2x+B\cos2x)\\ &&+4(A\cos2x+B\sin2x)
+=-8A\sin2x+8B\cos2x\\ &=& 2\cos2x+3\sin2x
+\end{eqnarray*}
+if $8B=2$, $-8A=3$. Therefore,$A=-\frac{3}{8}$, $B=\frac{1}{4}$,
+and $y_{p_1}=-\frac{3}{8}\cos2x+\frac{1}{4}\sin2x$. To find a
+particular solution of (B) we write $y_{p_2}=Ae^{-x}$. Then
+$y_{p_2}''+4y_{p_2}'+4y_{p_2}=A(1-4+4)e^{-x}=Ae^{-x}=e^{-x}$ if $A=1$.
+Therefore,$y_{p_2}=e^{-x}$. Now $y_p=y_{p_1}+y_{p_2}=
+-\frac{3}{8}\cos2x+\frac{1}{4}\sin2x+e^{-x}$. The characteristic
+polynomial of the complementary equation is $p(r)=r^2+4r+4=(r-2)^2$,
+so $\{e^{2x},xe^{2x}\}$ is a fundamental set of solutions of the
+complementary equation. Therefore,(C)
+$y=-\frac{3}{8}\cos2x+\frac{1}{4}\sin2x+e^{-x}+e^{-2x}(c_1+c_2x)$
+is the general solution of the nonhomogeneous equation. Now
+$y(0)=-1\Rightarrow -1=-\frac{3}{8}+1+c_1$, so
+$c_1=-\frac{13}{8}$. Differentiating (C) yields
+$y'=\frac{3}{4}\sin2x+\frac{1}{2}\cos2x-e^{-x}-2e^{-2x}(c_1+c_2x)
++c_2e^{-2x}$, so $y'(0)=2\Rightarrow 2=\frac{1}{2}-1-2c_1+c_2$.
+Therefore,$c_2=-\frac{3}{4}$, and
+$y=-\frac{3}{8}\cos2x+{1}{4}\sin2x+e^{-x}-\frac{13}{8}e^{-2x}-
+\frac{3}{4}xe^{-2x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.35} 
+Solve the initial value problem and graph the solution. $y''+4y=e^x(11+15x)+8\cos2x-12\sin2x , \quad   y(0)=3,\;  y'(0)=5$
+\end{problem}
+
+\begin{problem}\label{exer:5.5.36}
+\begin{enumerate}
+\item\label{exer:5.5.36A} % (a)
+Verify that if
+$$
+y_p=A(x)\cos\omega x+B(x)\sin\omega x
+$$
+where $A$ and $B$ are twice differentiable, then
+\begin{eqnarray*}
+ y_p'&=&(A'+\omega B)\cos\omega x+(B'-\omega A)
+\sin\omega x \text{ and}\\
+ y_p''&=&(A''+2\omega B'-\omega^2A)\cos\omega x
++(B''-2\omega A'-\omega^2B)\sin\omega x.
+\end{eqnarray*}
+\item\label{exer:5.5.36B} % (b)
+Use the results of \ref{exer:5.5.36A} to verify that
+\begin{eqnarray*}
+ay_p''+by_p'+cy_p&=&\left[(c-a\omega^2)A+b\omega B+2a\omega
+B'+bA'+aA''\right] \cos\omega x+\\  &&
+\left[-b\omega A+(c-a\omega^2)B-2a\omega A'+bB'+aB''\right]\sin\omega
+x.
+\end{eqnarray*}
+\item\label{exer:5.5.36C} % (c)
+Use the results of \ref{exer:5.5.36A} to verify that
+$$
+y_p''+\omega^2 y_p=(A''+2\omega B')\cos\omega x+
+(B''-2\omega A')\sin\omega x.
+$$
+\item % (d)
+Prove Theorem~\ref{thmtype:5.5.2}.
+\end{enumerate}
+
+\begin{solution}
+    Parts (a), (b), and (c) require only routine
+manipulations.
+
+(d) The coefficients of $\sin\omega x$ in
+$y_p'$, $y_p''$, $ay_p''+by_p'+cy_p$,
+and $y_p''+\omega^2 y_p$  can be obtained by replacing $A$ by $B$
+and $B$ by $-A$ in the corresponding coefficients of $\cos\omega x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.37}
+Let $a$, $b$, $c$, and $\omega$ be constants, with $a\ne0$ and
+$\omega>0$, and let
+$$
+P(x)=p_0+p_1x+\cdots+p_kx^k \quad \text{ and }\quad
+Q(x)=q_0+q_1x+\cdots+q_kx^k,
+$$
+where at least one of the coefficients $p_k$, $q_k$ is nonzero, so
+ $k$  is the larger of the degrees of $P$ and~$Q$.
+\begin{enumerate}
+\item % (a)
+Show that if $\cos\omega x$ and $\sin\omega x$
+are not solutions of the complementary equation
+$$
+ay''+by'+cy=0,
+$$
+then  there are polynomials
+\begin{equation}\label{eq:eqA5.5.37}
+A(x)=A_0+A_1x+\cdots+A_kx^k \quad  \text{and}\quad
+B(x)=B_0+B_1x+\cdots+B_kx^k
+\end{equation}
+such that
+$$
+\begin{array}{lcl}
+\quad (c-a\omega^2)A+b\omega B+2a\omega
+B'+bA'+aA''&=&P\phantom{.}\\ 
+-b\omega A+(c-a\omega^2)B-2a\omega A'+bB'+aB''&=&Q,
+\end{array}
+$$
+where $(A_k,B_k)$, $(A_{k-1},B_{k-1})$, \dots,$(A_0,B_0)$ can be computed
+successively by solving the systems
+$$
+\begin{array}{lcl}
+\phantom{-}(c-a\omega^2)A_k+b\omega B_k&=&p_k\phantom{.}\\ 
+-b\omega A_k+(c-a\omega^2)B_k&=&q_k,
+\end{array}
+$$
+and, if $1\le r\le k$,
+$$
+\begin{array}{lcl}
+\phantom{-}(c-a\omega^2)A_{k-r}+b\omega
+B_{k-r}&=&p_{k-r}+\cdots\phantom{.}\\ 
+-b\omega A_{k-r}+(c-a\omega^2)B_{k-r}&=&q_{k-r}+\cdots,
+\end{array}
+$$
+where the terms indicated by ``$\cdots$'' depend upon the previously
+computed coefficients with subscripts greater than $k-r$.
+Conclude from this and Exercise~\ref{exer:5.5.36B} that
+\begin{equation}\label{eq:eqB5.5.37}
+y_p=A(x)\cos\omega x+B(x)\sin\omega x
+\end{equation}
+is a particular solution of
+$$
+ay''+by'+cy=P(x)\cos\omega x+Q(x)\sin\omega x.
+$$
+\item % (b)
+Conclude from Exercise~\ref{exer:5.5.36C}
+ that the equation
+\begin{equation}\label{eq:eqC5.5.37}
+a(y''+\omega^2 y)=P(x)\cos\omega x+Q(x)\sin\omega x
+\end{equation}
+does not have a solution of the form \ref{eq:eqB5.5.37} with  $A$
+and $B$ as in \ref{eq:eqA5.5.37}. Then show that there are
+polynomials
+$$
+A(x)=A_0x+A_1x^2+\cdots+A_kx^{k+1}\quad \text{ and } \quad
+B(x)=B_0x+B_1x^2+\cdots+B_kx^{k+1}
+$$
+such that
+$$
+\begin{array}{rcl}
+a(A''+2\omega B')&=&P\\ 
+a(B''-2\omega A')&=&Q,
+\end{array}
+$$
+where the pairs $(A_k,B_k)$, $(A_{k-1},B_{k-1})$, \dots, $(A_0,B_0)$ can be
+computed successively as follows:
+\begin{eqnarray*}
+A_k&=&-\frac{q_k}{2a\omega(k+1)}\\ 
+B_k&=&\phantom{-}\frac{p_k}{2a\omega(k+1)},
+\end{eqnarray*}
+and, if $k\ge 1$,
+\begin{eqnarray*}
+A_{k-j}&=&-\frac{1}{2\omega}
+\left[\frac{q_{k-j}}{a(k-j+1)}-(k-j+2)B_{k-j+1}\right]\\ 
+B_{k-j}&=&\phantom{-}\frac{1}{2\omega}
+\left[\frac{p_{k-j}}{a(k-j+1)}-(k-j+2)A_{k-j+1}\right]
+\end{eqnarray*}
+for $1\le j\le k$.
+Conclude that \ref{eq:eqB5.5.37} with this choice of the
+polynomials $A$ and $B$ is a particular solution of
+\ref{eq:eqC5.5.37}.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.38}
+Show that  Theorem~\ref{thmtype:5.5.1} implies the following theorem:
+
+Suppose  $\omega$ is a positive  number and $P$ and $Q$
+are polynomials. Let $k$ be the larger of the degrees of $P$ and $Q$.
+Then the equation
+$$
+ay''+by'+cy=e^{\lambda x}\left(P(x)\cos \omega x+Q(x)\sin \omega
+x\right)
+$$
+has a particular solution
+\begin{equation}\label{eq:eqA5.5.38}
+y_p=e^{\lambda x}\left(A(x)\cos\omega x+B(x)\sin\omega x\right),
+\end{equation}
+where
+$$
+A(x)=A_0+A_1x+\cdots+A_kx^k \quad \text{ and }\quad
+B(x)=B_0+B_1x+\cdots+B_kx^k,
+$$
+provided that $e^{\lambda x}\cos\omega x$ and $e^{\lambda x}\sin\omega
+x$ are not solutions of  the complementary equation. The equation
+$$
+a\left[y''-2\lambda
+y'+(\lambda^2+\omega^2)y\right]=
+e^{\lambda x}\left(P(x)\cos \omega x+Q(x)\sin \omega x\right)
+$$
+$($for which $e^{\lambda x}\cos\omega x$ and $e^{\lambda x}\sin\omega
+x$ are
+solutions of the complementary equation$)$ has a particular solution
+of the form \ref{eq:eqA5.5.38}, where
+$$
+A(x)=A_0x+A_1x^2+\cdots+A_kx^{k+1} \quad \text{ and }\quad
+B(x)=B_0x+B_1x^2+\cdots+B_kx^{k+1}.
+$$
+
+\begin{solution}
+    Let $y=ue^{\lambda x}$. Then
+\begin{eqnarray*}
+ay''+by'+cy&=&e^{\lambda x}\left[a(u''+2\lambda u'+\lambda^2u)
++b(u'+\lambda u)+cu\right]\\
+&=&e^{\lambda
+x}\left[au''+(2a\lambda+b)u'+(a\lambda^2+b\lambda+c)u\right]\\
+&=&e^{\lambda x}\left[au''+p'(\lambda)u'+p(\lambda)u\right]\\
+&=&e^{\lambda x}\left(P(x)\cos \omega x+Q(x)\sin \omega x\right)
+\mbox{ if}
+\end{eqnarray*}
+(A) $au''+p'(\lambda)u'+p(\lambda)u
+P(x)\cos \omega x+Q(x)\sin \omega x$,
+where $p(r)=ar^+br+c$ is that characteristic polynomial
+of the  complementary equation (B) $ay''+by'+cy=0$.
+If $e^{\lambda x}\cos\omega x$ and $e^{\lambda
+x}\sin\omega x$ are not solutions of (B), then
+$\cos\omega x$ and $\sin\omega x$ are not solutions of the
+complementary equation for (A).  Then  Theorem~5.5.1
+implies that  (A) has a particular solution
+$$
+u_p=(A_0+A_1x+\cdots+A_kx^k)\cos\omega x+
+(B_0+B_1x+\cdots+B_kx^k)\sin\omega x,
+$$
+ and $y_p=u_pe^{\lambda x}$
+is a particular solution of the stated form for the given equation.
+If $e^{\lambda x}\cos\omega x$ and $e^{\lambda
+x}\sin\omega x$ are  solutions of (B), then
+$\cos\omega x$ and $\sin\omega x$ are solutions of the
+complementary equation for (A).  Then  Theorem~\ref{thmtype:5.5.1}
+implies that  (A) has a particular solution
+$$
+u_p=(A_0x+A_1x^2+\cdots+A_kx^{k+1})\cos\omega x+
+(B_0x+B_1x^2+\cdots+B_kx^{k+1})\sin\omega x,
+$$
+and $y_p=u_pe^{\lambda x}$ is a particular solution of the stated form
+for the given equation.
+\end{solution}
+
+\end{problem}
+
+\begin{problem}\label{exer:5.5.39}
+This exercise presents a method for evaluating the integral
+$$
+y=\int e^{\lambda x}\left(P(x)\cos \omega x+Q(x)\sin \omega x\right)\,dx
+$$
+where $\omega\ne0$ and
+$$
+P(x)=p_0+p_1x+\cdots+p_kx^k,\quad Q(x)=q_0+q_1x+\cdots+q_kx^k.
+$$
+\begin{enumerate}
+\item % (a)
+Show that $y=e^{\lambda x}u$, where
+\begin{equation}\label{eq:eqA5.5.39}
+u'+\lambda u=P(x)\cos \omega x+Q(x)\sin \omega x.
+\end{equation}
+\item % (b)
+Show that \ref{eq:eqA5.5.39} has a particular solution of the form
+$$
+u_p=A(x)\cos \omega x+B(x)\sin \omega x,
+$$
+where
+$$
+A(x)=A_0+A_1x+\cdots+A_kx^k,\quad B(x)=B_0+B_1x+\cdots+B_kx^k,
+$$
+and  the pairs of coefficients
+$(A_k,B_k)$, $(A_{k-1},B_{k-1})$, \dots,$(A_0,B_0)$
+can be computed successively as the solutions of pairs of equations
+obtained  by equating the coefficients
+of $x^r\cos\omega x$ and $x^r\sin\omega x$ for $r=k$, $k-1$, \dots, $0$.
+\item % (c)
+Conclude that
+$$
+\int e^{\lambda x}\left(P(x)\cos \omega x+Q(x)\sin \omega x\right)\,dx
+= e^{\lambda x}\left(A(x)\cos \omega x+B(x)\sin \omega x\right) +c,
+$$
+where $c$ is a constant of integration.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:5.5.40}
+Use the method of Exercise~\ref{exer:5.5.39} to evaluate the integral.
+
+\begin{enumerate}
+    
+\item  $\int x^2\cos x\,dx$ 
+
+\begin{solution}
+    Let $y=\int x^2\cos x\,dx$; then
+$y'=x^2\cos x$ Now let
+\begin{eqnarray*}
+y_p&=&(A_0+A_1x+A_2x^2)\cos x +(B_0+B_1x+B_2x^2)\sin x;\mbox{ then}\\
+y_p'&=&\left[A_1+B_0+(2A_2+B_1)x+B_2x^2\right]\cos x\\  &&
++\left[B_1-A_0+(2B_2-A_1)x-A_2x^2\right]\sin x
+=x^2\cos x \mbox{ if}
+\end{eqnarray*}
+$$
+\mbox{(i)}
+\begin{array}{rcl} \phantom{-}B_2&=&1\\ -A_2&=&0 \end{array},
+\mbox{ (ii) }
+\begin{array}{rcl}
+\phantom{-}B_1+2A_2&=&0\\ -A_1+2B_2&=&0\end{array},
+\mbox{ (iii) }
+\begin{array}{rcl} \phantom{-}B_0+A_1&=&0\\ -A_0+B_1&=&0
+\end{array}.
+$$
+Solving these equations yields $A_2=0$, $B_2=1$, $A_1=2$, $B_1=0$,
+$A_0=0$, $B_0=-2$. Therefore,$y_p=2x\cos x-(2-x^2)\sin x$ and
+$y=2x\cos x-(2-x^2)\sin x+c$.
+\end{solution}
+
+\item  $\int x^2e^x\cos x\,dx$ 
+
+\begin{solution}
+    Let $y=\int x^2e^x\cos x\,dx=ue^x$; then
+$y'=(u'+u)e^x=x^2e^x\cos x$ if $u'+u=x^2\cos x$. Now let
+\begin{eqnarray*}
+u_p&=&(A_0+A_1x+A_2x^2)\cos x +(B_0+B_1x+B_2x^2)\sin x;\mbox{ then}\\
+u_p'&=&\left[A_1+B_0+(2A_2+B_1)x+B_2x^2\right]\cos x\\ &&
++\left[B_1-A_0+(2B_2-A_1)x-A_2x^2\right]\sin x, \mbox{ so}
+\end{eqnarray*}
+\begin{eqnarray*}
+u_p''+u_p&=&\left[A_0+A_1+B_0+(A_1+2A_2+B_1)x+(A_2+B_2)x^2\right]\cos
+x\\ && +\left[B_0+B_1-A_0+(B_1+2B_2-A_1)x+(B_2-A_2)x^2\right]\sin x\\
+&=&x^2\cos x \mbox{ if}
+\end{eqnarray*}
+$$
+\mbox{(i)}
+\begin{array}{rcl} \phantom{-}A_2+B_2&=&1\\ -A_2+B_2&=&0 \end{array},
+\mbox{ (ii) }
+\begin{array}{rcl}
+\phantom{-}A_1+B_1+2A_2&=&0\\ -A_1+B_1+2B_2&=&0\end{array},
+$$
+$$
+\mbox{ (iii) }
+\begin{array}{rcl} \phantom{-}A_0+B_0+A_1&=&0\\ -A_0+B_0+B_1&=&0
+\end{array}.
+$$
+From (i), $A_2=\frac{1}{2}$, $B_2=\frac{1}{2}$. Substituting these
+into (ii) and solving for $A_1$ and $B_1$ yields $A_1=0$, $B_1=-1$.
+Substituting these into (iii) and solving for $A_0$ and $B_0$ yields
+$A_0=-\frac{1}{2}$, $B_0=\frac{1}{2}$. Therefore,
+$u_p=-\frac{1}{2}\left[(1-x^2)\cos x-(1-x)^2\sin x\right]$ and
+$y=-\frac{e^x}{2}\left[(1-x^2)\cos x-(1-x)^2\sin x\right]$.
+\end{solution}
+
+\item  $\int xe^{-x}\sin2x\,dx$ 
+
+\begin{solution}
+    Let $y=\int xe^{-x}\sin2x\,dx=ue^{-x}$; then
+$y'=(u'-u)e^{-x}=xe^{-x}\sin2x$ if $u'-u=x\sin2x$. Now let
+\begin{eqnarray*} u_p&=&(A_0+A_1x)\cos2x +(B_0+B_1x)\sin2x;\mbox{
+then}\\ u_p'&=&\left[(A_1+2B_0)+2B_1x\right]\cos2x
++\left[(B_1-2A_0)-2A_1x\right]\sin2x,\mbox{ so} \end{eqnarray*}
+\begin{eqnarray*}
+u_p''-u_p&=&\left[-A_0+A_1+2B_0-(A_1-2B_1)x\right]\cos2x\\ &&
++\left[-B_0+B_1-2A_0-(B_1+2A_1)x\right]\sin2x=x\sin2x\mbox{ if}
+\end{eqnarray*} $$ \mbox{(i)} \begin{array}{rcl} -A_1+2B_1&=&0\\
+-2A_1-\phantom{2}B_1&=&1 \end{array}, \mbox{ (ii) } \begin{array}{rcl}
+-\phantom{2}A_0+2B_0+A_1&=&0\\ -2A_0-\phantom{2}B_0+B_1&=&0
+\end{array}. $$ From (i), $A_1=-\frac{2}{5}$, $B_1=-\frac{1}{5}$.
+Substituting these into (ii) and solving for $A_0$ and $B_0$ yields
+$A_0=-\frac{4}{25}$, $B_0=\frac{3}{25}$. Therefore,$$
+u_p=-\frac{1}{25}\left[(4+10x)\cos 2x-(3-5x)\sin2x\right]+c \mbox{
+and } $$ $$ y_p=-\frac{e^{-x}}{25}\left[(4+10x)\cos
+2x-(3-5x)\sin2x\right]+c. $$
+\end{solution}
+
+\item  $\int x^2e^{-x}\sin x\,dx$ 
+
+\begin{solution}
+    Let $y=\int x^2e^{-x}\sin x\,dx=ue^{-x}$; then
+$y'=(u'-u)e^{-x}=x^2e^{-x}\sin x$ if $u'-u=x^2\sin x$.
+Now let
+\begin{eqnarray*}
+u_p&=&(A_0+A_1x+A_2x^2)\cos x +(B_0+B_1x+B_2x^2)\sin x;\mbox{ then}\\
+u_p'&=&\left[A_1+B_0+(2A_2+B_1)x+B_2x^2\right]\cos x\\ &&
++\left[B_1-A_0+(2B_2-A_1)x-A_2x^2\right]\sin x, \mbox{ so}
+\end{eqnarray*}
+\begin{eqnarray*}
+u_p''-u_p&=&\left[-A_0+A_1+B_0-(A_1-2A_2-B_1)x-(A_2-B_2)x^2\right]\cos
+ x\\ && +\left[-B_0+B_1-A_0-(B_1-2B_2+A_1)x-(B_2+A_2)x^2\right]\sin
+x\\ &=&x^2\sin x \mbox{ if}
+\end{eqnarray*}
+$$
+\mbox{(i)}
+\begin{array}{rcl} -A_2+B_2&=&0\\ -A_2-B_2&=&1 \end{array},
+\mbox{ (ii) }
+\begin{array}{rcl}
+-A_1+B_1+2A_2&=&0\\ -A_1-B_1+2B_2&=&0\end{array},
+$$
+$$
+\mbox{ (iii) }
+\begin{array}{rcl} -A_0+B_0+A_1&=&0\\ -A_0-B_0+B_1&=&0
+\end{array}.
+$$
+From (i), $A_2=-\frac{1}{2}$, $B_2=-\frac{1}{2}$. Substituting
+these into (ii) and solving for $A_1$ and $B_1$ yields $A_1=-1$,
+$B_1=0$. Substituting these into (iii) and solving for $A_0$ and $B_0$
+yields $A_0=-\frac{1}{2}$, $B_0=\frac{1}{2}$. Therefore,
+$$
+ u_p=-{e^{-x}}{2}\left[(1+x)^2\cos x-(1-x^2)\sin
+x \right] \mbox{ and }
+$$
+$$
+y=-\frac{e^{-x}}{2}\left[(1+x)^2\cos x-(1-x^2)\sin
+x \right]+c.
+$$
+\end{solution}
+
+\item  $\int x^3e^x\sin x\,dx$ 
+
+\begin{solution}
+    Let $y=\int x^3e^x\sin x\,dx=ue^x$; then
+$y'=(u'+u)e^x=x^3e^x\sin x$ if $u'+u=x^3\sin x$. Now let
+\begin{eqnarray*}
+u_p&=&(A_0+A_1x+A_2x^2+A_3x^3)\cos x +(B_0+B_1x+B_2x^2+B_3x^3)\sin
+x;\mbox{ then}\\
+u_p'&=&\left[A_1+B_0+(2A_2+B_1)x+(3A_3+B_2)x^2+B_3x^3\right]\cos x\\
+&&+\left[B_1-A_0+(2B_2-A_1)x+(3B_3-A_2)x^2-A_3x^3\right]\sin x,
+\mbox{ so}
+\end{eqnarray*}
+\begin{eqnarray*}
+u_p''+u_p&=&\left[A_0+A_1+B_0+(A_1+2A_2+B_1)x\right.\\
+&&\left.+(A_2+3A_3+B_2)x^2
++(A_3+B_3)x^3\right]\cos x
+\\ && +\left[B_0+B_1-A_0+(B_1+2B_2-A_1)x\right.\\
+&&\left.+(B_2+3B_3-A_2)x^2
++(B_3-A_3)x^3\right]\sin x
+=x^3\sin x \mbox{ if}
+\end{eqnarray*}
+$$
+\mbox{(i) }
+\begin{array}{rcl} \phantom{-}A_3+B_3&=&0\\ -A_3+B_3&=&1 \end{array},
+\mbox{ (ii) }
+\begin{array}{rcl} \phantom{-}A_2+B_2+3A_3&=&0\\ -A_2+B_2+3B_3&=&0
+\end{array},
+$$
+$$
+\mbox{(iii) }
+\begin{array}{rcl}
+\phantom{-}A_1+B_1+2A_2&=&0\\ -A_1+B_1+2B_2&=&0\end{array},
+\mbox{ (iv) }
+\begin{array}{rcl} \phantom{-}A_0+B_0+A_1&=&0\\ -A_0+B_0+B_1&=&0
+\end{array}.
+$$
+From (i), $A_3=-\frac{1}{2}$, $B_3=\frac{1}{2}$. Substituting
+these into (ii) and solving for $A_2$ and $B_2$ yields
+$A_2=\frac{3}{2}$, $B_2=0$. Substituting these into (iii) and
+solving for $A_1$ and $B_1$ yields $A_1=-\frac{3}{2}$,
+$B_1=-\frac{3}{2}$. Substituting these into (iv) and solving for
+$A_0$ and $B_0$ yields $A_0=0$, $B_0=\frac{3}{2}$. Therefore,
+$$
+u_p=-\frac{1}{2}\left[x(3-3x+x^2)\cos
+x-(3-3x+x^3)\sin x\right] \mbox{ and}
+$$
+$$
+y=-\frac{e^x}{2}\left[x(3-3x+x^2)\cos x-(3-3x+x^3)\sin x\right]+c.
+$$
+\end{solution}
+
+\item  $\int e^x\left[x\cos x-(1+3x)\sin x\right]\,dx$ 
+
+\begin{solution}
+    Let $y=\int e^x\left[x\cos x-(1+3x)\sin x\right]\,dx=ue^x$;
+then $y'=(u'+u)e^x=e^x\left[x\cos x-(1+3x)\sin x\right]$ if
+$u'+u=x\cos x-(1+3x)\sin x$. Now let
+\begin{eqnarray*}
+u_p&=&(A_0+A_1x)\cos x +(B_0+B_1x)\sin x;\mbox{ then}\\
+u_p'&=&\left[A_1+B_0+B_1x\right]\cos x
++\left[B_1-A_0-A_1x\right]\sin x,\mbox{ so}
+\end{eqnarray*}
+\begin{eqnarray*}
+u_p''+u_p&=&\left[A_0+A_1+B_0+(A_1+B_1)x\right]\cos x\\ &&
++\left[B_0+B_1-A_0+(B_1-A_1)x\right]\sin x\\ &=&x\cos x-(1+3x)\sin x
+\mbox{ if}
+\end{eqnarray*}
+$$
+\mbox{(i)}
+\begin{array}{rcr}\phantom{-}A_1+B_1&=&1\\ -A_1+B_1&=&-3
+\end{array},
+\mbox{ (ii) }
+\begin{array}{rcr} \phantom{-}A_0+B_0+A_1&=&0\\ -A_0+B_0+B_1&=&-1
+\end{array}.
+$$
+From (i), $A_1=2$, $B_1=-1$. Substituting
+these into (ii) and solving for $A_0$ and $B_0$ yields $A_0=-1$,
+$B_0=-1$. Therefore,
+ $u_p=-\left[(1-2x)\cos x+(1+x)\sin x\right]$ and
+$y=-e^x\left[(1-2x)\cos x+(1+x)\sin x\right]+c$.
+\end{solution}
+
+\item  $\int e^{-x}\left[(1+x^2)\cos x+(1-x^2)\sin x\right]\,dx$
+
+\begin{solution}
+    Let $y=\int e^{-x}\left[(1+x^2)\cos x+(1-x^2)\sin
+x\right]\,dx =ue^{-x}$; then $$
+y'=(u'-u)e^{-x}=e^{-x}\left[(1+x^2)\cos x+(1-x^2)\sin x\right] $$ if
+$u'-u=(1+x^2)\cos x+(1-x^2)\sin x$. Now let \begin{eqnarray*}
+u_p&=&(A_0+A_1x+A_2x^2)\cos x +(B_0+B_1x+B_2x^2)\sin x;\mbox{ then}\\
+u_p'&=&\left[A_1+B_0+(2A_2+B_1)x+B_2x^2\right]\cos x\\ &&
++\left[B_1-A_0+(2B_2-A_1)x-A_2x^2\right]\sin x, \mbox{ so}
+\end{eqnarray*} \begin{eqnarray*}
+u_p''-u_p&=&\left[-A_0+A_1+B_0-(A_1-2A_2-B_1)x-(A_2-B_2)x^2\right]\cos
+x\\ && +\left[-B_0+B_1-A_0-(B_1-2B_2+A_1)x-(B_2+A_2)x^2\right]\sin x\\
+&=& (1+x^2)\cos x+(1-x^2)\sin x \mbox{ if} \end{eqnarray*} $$
+\mbox{(i)} \begin{array}{rcr} -A_2+B_2&=&1\\ -A_2-B_2&=&-1
+\end{array}, \mbox{ (ii) } \begin{array}{rcr} -A_1+B_1+2A_2&=&0\\
+-A_1-B_1+2B_2&=&0\end{array}, $$ $$ \mbox{ (iii) } \begin{array}{rcl}
+-A_0+B_0+A_1&=&1\\ -A_0-B_0+B_1&=&1 \end{array}. $$ From (i), $A_2=0$,
+$B_2=1$. Substituting these into (ii) and solving for $A_1$ and $B_1$
+yields $A_1=1$, $B_1=1$. Substituting these into (iii) and solving for
+$A_0$ and $B_0$ yields $A_0=0$, $B_0=0$. Therefore,$u_p=x\cos
+x+x(1+x)\sin x$ and $y=e^{-x}\left[x\cos x+x(1+x)\sin x\right]+c$.
+
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\end{document}

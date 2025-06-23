@@ -1,0 +1,466 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+\begin{problem}\label{exer:2.3.1} 
+Find all $(x_0,y_0)$ for
+which Theorem~\ref{thmtype:2.3.1}
+implies that the initial value problem $y'=f(x,y),\,  y(x_0)=y_0$ has
+(a) a solution, (b) a  unique solution on some open interval that contains $x_0$.
+
+$$y'=\frac{x^2+y^2}{\sin x}$$
+\end{problem}
+
+\begin{problem}\label{exer:2.3.2} Find all $(x_0,y_0)$ for
+which Theorem~\ref{thmtype:2.3.1}
+implies that the initial value problem $y'=f(x,y),\,  y(x_0)=y_0$ has
+(a) a solution, (b) a  unique solution on some open interval that contains $x_0$.
+
+$$y'=\frac{e^x+y}{x^2+y^2}$$ 
+
+
+
+\begin{solution}
+    $f(x,y)=\frac{e^x+y}{ x^2+y^2}$ and $f_y(x,y)=\frac{1}{
+x^2+y^2}-\frac{2y(e^x+y)}{(x^2+y^2)^2}$ are both continuous at all
+$(x,y)\ne(0,0)$. Hence,  Theorem~2.3.1 implies that if
+$(x_0,y_0)\ne(0,0)$, then  the initial
+value problem has a a unique solution on some open interval containing
+$x_0$.  Theorem~\ref{thmtype:2.3.1} does not apply
+if $(x_0,y_0)=(0,0)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.3.3} Find all $(x_0,y_0)$ for
+which Theorem~\ref{thmtype:2.3.1}
+implies that the initial value problem $y'=f(x,y),\,  y(x_0)=y_0$ has
+(a) a solution, (b) a  unique solution on some open interval that contains $x_0$.
+
+$$y'= \tan xy$$
+\end{problem}
+
+\begin{problem}\label{exer:2.3.4} Find all $(x_0,y_0)$ for
+which Theorem~\ref{thmtype:2.3.1}
+implies that the initial value problem $y'=f(x,y),\,  y(x_0)=y_0$ has
+(a) a solution, (b) a  unique solution on some open interval that contains $x_0$.
+
+$$y'=\frac{x^2+y^2}{\ln xy}$$ 
+
+
+
+\begin{solution}
+    $f(x,y)=\frac{x^2+y^2}{\ln xy}$ and $f_y(x,y)=\frac{2y}{\ln
+xy}-\frac{x^2+y^2}{ x(\ln xy)^2}$ are both continuous at all $(x,y)$
+such that $xy>0$ and $xy\ne1$. Hence,  Theorem~2.3.1 implies
+that if
+$x_0y_0>0$ and $x_0y_0\ne1$, then the
+initial value problem has unique solution on an open interval
+containing $x_0$.   Theorem~\ref{thmtype:2.3.1} does not apply
+if $x_0y_0\le0$ or $x_0y_0=1$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.3.5} Find all $(x_0,y_0)$ for
+which Theorem~\ref{thmtype:2.3.1}
+implies that the initial value problem $y'=f(x,y),\,  y(x_0)=y_0$ has
+(a) a solution, (b) a  unique solution on some open interval that contains $x_0$.
+
+$$y'=(x^2+y^2)y^{1/3}$$ 
+\end{problem}
+
+\begin{problem}\label{exer:2.3.6} Find all $(x_0,y_0)$ for
+which Theorem~\ref{thmtype:2.3.1}
+implies that the initial value problem $y'=f(x,y),\,  y(x_0)=y_0$ has
+(a) a solution, (b) a  unique solution on some open interval that contains $x_0$.
+
+$$y'=2xy$$ 
+
+
+
+\begin{solution}
+    $f(x,y)=2xy$ and $f_y(x,y)=2x$ are both continuous at all $(x,y)$.
+Hence,  Theorem~\ref{thmtype:2.3.1} implies that if $(x_0,y_0)$
+is arbitrary, then the initial value problem
+has a  unique solution on some open interval containing  $x_0$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.3.7} Find all $(x_0,y_0)$ for
+which Theorem~\ref{thmtype:2.3.1}
+implies that the initial value problem $y'=f(x,y),\,  y(x_0)=y_0$ has
+(a) a solution, (b) a  unique solution on some open interval that contains $x_0$.
+
+$$y'=\ln(1+x^2+y^2)$$
+\end{problem}
+
+\begin{problem}\label{exer:2.3.8} Find all $(x_0,y_0)$ for
+which Theorem~\ref{thmtype:2.3.1}
+implies that the initial value problem $y'=f(x,y),\,  y(x_0)=y_0$ has
+(a) a solution, (b) a  unique solution on some open interval that contains $x_0$.
+
+$$y'=\frac{2x+3y}{x-4y}$$ 
+
+
+
+\begin{solution}
+    $f(x,y)=\frac{2x+3y}{ x-4y}$ and $f_y(x,y)=\frac{3}{
+x-4y}+4\frac{2x+3y}{(x-4y)^2}$ are both continuous at all $(x,y)$
+such that $x\ne4y$. Hence,  Theorem~\ref{thmtype:2.3.1} implies that if
+$x_0\neq 4y_0$, then the
+initial value problem has a  unique solution on some open interval
+containing  $x_0$.
+  Theorem~\ref{thmtype:2.3.1} does not apply if $x_0=4y_0$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.3.9} Find all $(x_0,y_0)$ for
+which Theorem~\ref{thmtype:2.3.1}
+implies that the initial value problem $y'=f(x,y),\,  y(x_0)=y_0$ has
+(a) a solution, (b) a  unique solution on some open interval that contains $x_0$.
+
+$$y'=(x^2+y^2)^{1/2}$$ 
+\end{problem}
+
+\begin{problem}\label{exer:2.3.10} Find all $(x_0,y_0)$ for
+which Theorem~\ref{thmtype:2.3.1}
+implies that the initial value problem $y'=f(x,y),\,  y(x_0)=y_0$ has
+(a) a solution, (b) a  unique solution on some open interval that contains $x_0$.  
+
+$$y'=x(y^2-1)^{2/3}$$ 
+
+
+
+\begin{solution}
+    $f(x,y)=x(y^2-1)^{2/3}$ is continuous at all $(x,y)$, but
+$f_y(x,y)=\frac{4}{3}xy(y^2-1)^{1/3}$ is continuous at $(x,y)$ if
+and only if $y\neq\pm1$. Hence,  Theorem~\ref{thmtype:2.3.1} implies that
+if $y_0\neq\pm1$, then the
+initial value problem has a  unique solution on some open interval
+containing  $x_0$, while  if $y_0=\pm1$, then the initial value problem
+ has at least one solution (possibly not unique on any
+open interval containing  $x_0$).
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.3.11} Find all $(x_0,y_0)$ for
+which Theorem~\ref{thmtype:2.3.1}
+implies that the initial value problem $y'=f(x,y),\,  y(x_0)=y_0$ has
+(a) a solution, (b) a  unique solution on some open interval that contains $x_0$.
+
+$$y'=(x^2+y^2)^2$$
+\end{problem}
+
+\begin{problem}\label{exer:2.3.12} Find all $(x_0,y_0)$ for
+which Theorem~\ref{thmtype:2.3.1}
+implies that the initial value problem $y'=f(x,y),\,  y(x_0)=y_0$ has
+(a) a solution, (b) a  unique solution on some open interval that contains $x_0$.
+
+$$y'=(x+y)^{1/2}$$
+
+
+
+\begin{solution}
+    $f(x,y)=(x+y)^{1/2}$ and $f_y(x,y)=\frac{1}{2(x+y)^{1/2}}$ are both
+continuous at all $(x,y)$ such that $x+y>0$ Hence,
+ Theorem~\ref{thmtype:2.3.1} implies that if $x_0+y_0>0$, then the initial
+value problem has a
+ unique solution on some open interval containing  $x_0$.
+ Theorem~\ref{thmtype:2.3.1} does not apply if $x_0+y_0\leq 0$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:2.3.13}Find all $(x_0,y_0)$ for
+which Theorem~\ref{thmtype:2.3.1}
+implies that the initial value problem $y'=f(x,y),\,  y(x_0)=y_0$ has
+(a) a solution, (b) a  unique solution on some open interval that contains $x_0$.
+
+$$y'=\frac{\tan y}{x-1}$$
+\end{problem}
+
+\begin{problem}\label{exer:2.3.14}
+Apply Theorem~\ref{thmtype:2.3.1} to the initial value problem
+$$
+y'+p(x)y = q(x), \quad y(x_0)=y_0
+$$
+for a linear equation, and compare the conclusions that can be drawn
+from it to those that follow from Theorem~\ref{thmtype:2.1.2}.
+
+
+
+\begin{solution}
+    To apply  Theorem~\ref{thmtype:2.3.1}, rewrite the given initial value problem
+as (A) $y'=f(x,y),\, y(x_0)=y_0$, where $f(x,y)=-p(x)y+q(x)$ and
+$f_y(x,y)=-p(x)$. If $p$ and $f$ are continuous on some open interval
+$(a,b)$ containing $x_0$, then $f$ and $f_y$ are continuous on some
+open
+rectangle containing $(x_0,y_0)$, so  Theorem~2.3.1 implies
+that (A) has a unique solution  on some open
+interval
+containing $x_0$. The conclusion of Theorem~\ref{thmtype:2.1.2} is more
+specific:
+the solution of (A) exists and is unique on $(a,b)$. For example, in
+the extreme case where $(a,b)=(-\infty,\infty)$,  Theorem~\ref{thmtype:2.3.1}
+still implies only existence and uniqueness on some open
+interval containing $x_0$, while  Theorem~\ref{thmtype:2.1.2} implies that the
+solution exists and is unique on $(-\infty,\infty)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.3.15}
+\begin{enumerate}
+\item\label{partA:2.3.15} %(a)
+Verify that the function
+$$
+y = \left\{ \begin{array}{cl}
+(x^2-1)^{5/3}, & -1 < x < 1, \\
+0, & |x| \geq 1, \end{array} \right.
+$$
+is a solution of the initial value problem
+$$
+y'=\frac{10}{3}xy^{2/5}, \quad y(0)=-1
+$$
+on $(-\infty,\infty)$. 
+\begin{hint}
+You'll need the definition $$
+y'(\overline{x}) = \lim_{x \to \overline{x}} \frac{y(x)-y(\overline{x})}{x-\overline{x}} $$ to verify that $y$ satisfies the differential
+equation at $\overline{x} = \pm 1$.
+\end{hint}
+
+\item %(b)
+Verify that if $\epsilon_i=0$ or $1$ for $i=1$, $2$ and $a$, $b>1$, then
+the function
+$$
+y = \left\{ \begin{array}{cl}
+\epsilon_1(x^2-a^2)^{5/3}, & - \infty < x < -a, \\
+0, & -a \leq x \leq -1, \\
+(x^2-1)^{5/3}, &  -1 < x < 1, \\
+0, & 1 \leq x \leq b, \\
+\epsilon_2(x^2-b^2)^{5/3}, & b < x < \infty 
+\end{array} \right.
+$$
+is a solution of the initial value problem in part \ref{partA:2.3.15} on
+$(-\infty,\infty)$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:2.3.16}
+Use the ideas developed in Exercise~\ref{exer:2.3.15} to find
+infinitely many solutions of the initial value problem
+$$
+y'=y^{2/5}, \quad y(0)=1
+$$
+on $(-\infty,\infty)$.
+
+
+
+\begin{solution}
+    First find solutions of (A) $y'=y^{2/5}$. Obviously $y\equiv0$ is a
+solution. If $y\not\equiv0$, then we can separate variables on any
+open interval where $y$ has no zeros: $y^{-2/5}y'=1$;\;
+$\frac{5}{3}y^{3/5}=x+c$;\;
+$y=\left(\frac{3}{5}(x+c)^{5/3}\right)$. (Note that this solution
+is also defined  at $x=-c$, even though  $y(-c)=0$. To satisfy the
+initial condition, let $c=1$. Thus,
+$y=\left(\frac{3}{5}(x+1)^{5/3}\right)$ is a solution of the
+initial value problem on $(-\infty,\infty)$; moreover,
+since $f(x,y)=y^{2/5}$ and $f_y(x,y)=\frac{2}{5}y^{-3/5}$
+are both continuous  at all $(x,y)$ such that $y\neq 0$,
+this is the only
+solution on $(-5/3,\infty)$, by an argument similar to that given in
+Example~2.3.7, the function
+$$
+y =
+\left\{
+\begin{array}{cl}
+0, &  -\infty< x \le -\frac{5}{ 3} \\
+\left(\frac{3}{ 5}x + 1\right)^{5/3}, & -\frac{5}{3} < x < \infty
+\end{array}\right.
+$$
+(To see that $y$ satisfies $y'=y^{2/5}$  at $x=-\frac{5}{3}$
+use an argument similar to that of
+Discussion~2.3.15-2)
+For every $a \geq \frac{5}{ 3}$, the following function is also a
+solution:
+$$
+y =
+\left\{
+\begin{array}{cl}
+\left( \frac{3}{ 5} (x+a) \right)^{5/3}, & - \infty < x < -a, \\
+0, &  -a \le x \le -\frac{5}{ 3} \\
+\left(\frac{3}{ 5}x + 1\right)^{5/3}, & -\frac{5}{3} < x < \infty.
+\end{array}\right.
+$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.3.17}
+ Consider the initial value problem
+\begin{equation}\label{eqA:2.3.17}
+ y' = 3x(y-1)^{1/3}, \quad y(x_0) = y_0.
+\end{equation}
+
+\begin{enumerate}
+\item %(a)
+For what points $(x_0,y_0)$ does Theorem~\ref{thmtype:2.3.1} imply that
+(\ref{eqA:2.3.17}) has a solution?
+\item %(b)
+ For what points $(x_0,y_0)$ does Theorem~\ref{thmtype:2.3.1} imply that
+(\ref{eqA:2.3.17}) has a  unique solution on some open interval
+that contains  $x_0$?
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:2.3.18}
+Find nine solutions of the initial value problem
+$$
+y'=3x(y-1)^{1/3}, \quad y(0)=1
+$$
+that are all defined on $(-\infty,\infty)$ and differ from each other
+for values of  $x$ in every open interval that contains $x_0=0$.
+
+
+
+\begin{solution}
+    Obviously, $y_1\equiv1$ is a solution.
+From Discussion~2.3.18 (taking $c=0$
+in the two families of solutions) yields
+$y_2=1+|x|^3$ and $y_3=1-|x|^3$. Other solutions are
+$y_4=1+x^3$, $y_5=1-x^3$,
+$$
+y_6=\left\{\begin{array}{ccl}1+x^3,&x\geq 0,\\
+1,&x<0\end{array}\right.;\quad
+y_7=\left\{\begin{array}{ccl}1-x^3,&x\geq 0,\\
+1,&x<0\end{array}\right.;
+$$
+$$
+y_8=\left\{\begin{array}{ccl}1,&x\geq 0,\\
+1+x^3,&x<0\end{array}\right.;\quad
+y_9=\left\{\begin{array}{ccl}1,&x\geq 0,\\
+1-x^3,&x<0\end{array}\right.
+$$
+
+
+It is straightforward to verify that all these functions satisfy
+$y'=3x(y-1)^{1/3}$  for all $x\ne0$. Moreover,
+ $y_i'(0)=\lim_{x\to0}\frac{y_i(x)-1}{x}=0$ for
+$1\leq i\leq 9$, which implies that they also satisfy the equation at
+$x=0$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.3.19}  From Theorem~\ref{thmtype:2.3.1}, the initial value problem
+ $$
+y'=3x(y-1)^{1/3}, \quad y(0)=9
+$$
+has a unique solution on an open interval that contains  $x_0=0$. Find the
+solution and determine the largest open interval on which it's unique.
+\end{problem}
+
+\begin{problem}\label{exer:2.3.20}
+\begin{enumerate}
+\item %(a)
+ From Theorem~\ref{thmtype:2.3.1},
+the initial value problem
+\begin{equation}\label{eqA:2.3.20}
+ y'=3x(y-1)^{1/3}, \quad y(3)=-7
+\end{equation}
+ has a unique solution on some open interval that contains $x_0=3$.
+Determine
+the largest such open interval, and find the solution on this interval.
+\item %(b)
+ Find infinitely many solutions of (\ref{eqA:2.3.20}), all defined
+on
+$(-\infty,\infty)$.
+\end{enumerate}
+
+
+
+\begin{solution}
+    Let $y$ be any solution of (A) $y'=3x(y-1)^{1/3},\ y(3)=-7$.
+By continuity, there is some open interval $I$ containing  $x_0=3$
+on which $y(x)<1$. From
+Discussion~2.3.18,
+ $y=1+(x^2+c)^{3/2}$ on $I$;\ $y(3)=-7\Rightarrow c=-5$;\;
+(B) $y=1-(x^2-5)^{3/2}$.  It now follows that every solution of (A)
+satisfies $y(x)<1$
+and is given by (B) on $(\sqrt5,\infty)$; that is,
+(B) is the unique solution of (A) on
+$(\sqrt5,\infty)$.
+ This solution can be extended uniquely to
+$(0,\infty)$ as
+$$
+y=
+\left\{
+\begin{array}{cl}
+1, & 0< x\le\sqrt5,\\
+1-(x^2-5)^{3/2}, & \sqrt5<x<\infty
+\end{array}\right.
+$$
+It can be extended to $(-\infty,\infty)$ in infinitely many ways.
+Thus,
+$$
+y= \left\{
+\begin{array}{cl}
+ 1, &-\infty< x\le\sqrt5,\\
+1-(x^2-5)^{3/2},& \sqrt5<x<\infty
+\end{array} \right.$$
+is a solution of the initial value problem on $(-\infty,\infty)$.
+Moroever, if
+$\alpha\geq 0$, then
+$$
+y= \left\{
+\begin{array}{cl}
+ 1+(x^2-\alpha^2)^{3/2},& -\infty<x<-\alpha, \\
+1, & -\alpha\leq x\le\sqrt5,\\
+1-(x^2-5)^{3/2},& \sqrt5<x<\infty,
+\end{array}\right. $$
+and
+$$
+y= \left\{
+\begin{array}{cl}
+ 1-(x^2-\alpha^2)^{3/2},& -\infty<x<-\alpha, \\
+1, & -\alpha\leq x\leq\sqrt5,\\
+1-(x^2-5)^{3/2},& \sqrt5<x<\infty,
+\end{array} \right.
+$$
+are also solutions of the initial value problem  on
+$(-\infty,\infty)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.3.21}
+Prove:
+\begin{enumerate}
+\item % ()
+If
+\begin{equation}\label{eqA:2.3.21}
+f(x,y_0) = 0,\quad a<x<b,
+\end{equation}
+and  $x_0$ is in  $(a,b)$,
+then $y\equiv y_0$ is a solution of
+$$
+y'=f(x,y), \quad y(x_0)=y_0
+$$
+on $(a,b)$.
+\item % (b)
+If $f$ and $f_y$ are continuous on an open rectangle
+that contains $(x_0,y_0)$ and (\ref{eqA:2.3.21}) holds, no
+solution of $y'=f(x,y)$ other than $y\equiv y_0$ can equal $y_0$ at
+any point in $(a,b)$.
+\end{enumerate}
+\end{problem}
+
+
+\end{document}

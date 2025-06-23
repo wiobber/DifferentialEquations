@@ -1,0 +1,821 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+\begin{problem}\label{exer:8.2.1}
+ Use the table of Laplace transforms  to find the inverse Laplace
+transform.
+
+\begin{enumerate}
+    \item $\frac{3}{(s-7)^4}$
+    \item $\frac{2s-4}{s^2-4s+13}$
+    \item $\frac{1}{s^2+4s+20}$
+    \item $\frac{2}{s^2+9}$
+    \item $\frac{s^2-1}{(s^2+1)^2}$
+    \item $\frac{1}{(s-2)^2-4}$
+    \item $\frac{12s-24}{(s^2-4s+85)^2}$
+    \item $\frac{2}{(s-3)^2-9}$
+    \item $\frac{s^2-4s+3}{(s^2-4s+5)^2}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.2.2}
+ Use Theorem~\ref{thmtype:8.2.1} and the table of Laplace transforms
+  to find the inverse Laplace transform.
+
+\begin{enumerate}
+    \item $\frac{2s+3}{(s-7)^4}$
+
+\begin{solution}
+$\frac{2s+3}{(s-7)^4}=\frac{2(s-7)+17}{(s-7)^4}=
+\frac{2}{(s-7)^3}+\frac{17}{(s-7)^4}
+=\frac{2!}{(s-7)^3}+\frac{17}{6}\frac{3!}{(s-7)^4}
+\leftrightarrow e^{7t}\left(t^2+\frac{17}{6}t^3\right)$.
+\end{solution}
+
+    \item $\frac{s^2-1}{(s-2)^6}$
+
+\begin{solution}
+$\frac{s^2-1}{(s-2)^6}=\frac{[(s-2)+2]^2-1}{(s-2)^6}
+=\frac{(s-2)^2+4(s-2)+3}{(s-2)^6}
+=\frac{1}{(s-2)^4}+\frac{4}{(s-2)^5}+\frac{3}{(s-2)^6}
+=\frac{1}{6}\frac{3!}{(s-2)^4}+\frac{1}{6}\frac{4!}{(s-2)^5}
++\frac{1}{40} \frac{5!}{(s-2)^6}\leftrightarrow\left(\frac{1}{6}t^3+\frac{1}{6}t^4+\frac{1}{40}t^5\right)e^{2t}$.
+\end{solution}
+    
+    \item $\frac{s+5}{s^2+6s+18}$
+
+\begin{solution}
+$\frac{s+5}{s^2+6s+18}=\frac{(s+3)}{(s+3)^2+9}
++\frac{2}{3}\frac{3}{(s+3)^2+9}
+\leftrightarrow e^{-3t}\left(\cos 3t+\frac{2}{3}\sin 3t\right)$.
+\end{solution}
+    
+    \item $\frac{2s+1}{s^2+9}$
+
+\begin{solution}
+$\frac{2s+1}{s^2+9}=2\frac{s}{s^2+9}+\frac{1}{3}\frac{3}{s^2+9}\leftrightarrow
+2\cos 3t+\frac{1}{3}\sin 3t$.
+\end{solution}
+
+    \item $\frac{s}{s^2+2s+1}$
+\begin{solution}
+$\frac{s}{s^2+2s+1}=\frac{(s+1)-1}{(s+1)^2}=
+\frac{1}{s+1}-\frac{1}{(s+1)^2}\leftrightarrow
+(1-t)e{^{-t}}$. 
+\end{solution}
+
+    \item $\frac{s+1}{s^2-9}$
+
+\begin{solution}
+$\frac{s+1}{s^2-9}=\frac{s}{s^2-9}+\frac{1}{3}\frac{3}{s^2-9}\leftrightarrow {\cosh 3t+\frac{1}{3}\sinh 3t}$.   
+\end{solution}
+
+
+    \item $\frac{s^3+2s^2-s-3}{(s+1)^4}$
+
+\begin{solution}
+Expand the numerator in powers of $s+1$:
+$s^3+2s^2-s-3=[(s+1)-1]^3+2[(s+1)-1]^2-[(s+1)-1]-3=
+(s+1)^3-(s+1)^2-2(s+1)-1$; therefore
+$\frac{s^3+2s^2-s-3}{(s+1)^4}=\frac{1}{s+1}-\frac{1}{(s+1)^2}
+-\frac{2}{(s+1)^3}-\frac{1}{6}\frac{6}{(s+1)^4}\leftrightarrow
+{\left(1-t-t^2-\frac{1}{6}t^3\right)e^{-t}}$.
+\end{solution}
+
+    \item $\frac{2s+3}{(s-1)^2+4}$
+
+\begin{solution}
+$\frac{2s+3}{(s-1)^2+4}=2\frac{(s-1)}{(s-1)^2+4}
++\frac{5}{2}\frac{2}{(s-1)^2+4}\leftrightarrow
+{e^t\left(2\cos 2t+\frac{5}{2}\sin 2t\right)}$.  
+\end{solution}
+
+    \item $\frac{1}{s}-\frac{s}{s^2+1}$
+
+\begin{solution}
+$\frac{1}{s}-\frac{s}{s^2+1}\leftrightarrow 1-\cos t$. 
+\end{solution}
+
+    \item $\frac{3s+4}{s^2-1}$
+
+\begin{solution}
+$\frac{3s+4}{s^2-1}=\frac{3s}{s^2-1}+\frac{4}{s^2-1}
+\leftrightarrow3\cosh t+4\sinh t$.
+Alternatively,
+$\frac{3s+4}{s^2-1}=\frac{3s+4}{(s-1)(s+1)}=\frac{1}{2}\left[\frac{7}{s-1}-\frac{1}{s+1}\right]
+\leftrightarrow\frac{7e^t-e^{-t}}{2}$. 
+\end{solution}
+
+    \item $\frac{3}{s-1}+\frac{4s+1}{s^2+9}$
+
+\begin{solution}
+$\frac{3}{s-1}+\frac{4s+1}{s^2+9}=3\frac{1}{s-1}
++4\frac{s}{s^2+9}+\frac{1}{3}\frac{3}{s^2+9}\leftrightarrow
+3e^t+4\cos 3t+\frac{1}{3}\sin 3t$. 
+\end{solution}
+
+    \item $\frac{3}{(s+2)^2}-\frac{2s+6}{s^2+4}$
+
+\begin{solution}
+$\frac{3}{(s+2)^2}-\frac{2s+6}{s^2+4}=
+3\frac{1}{(s+2)^2}-2\frac{s}{s^2+4}-3\frac{2}{s^2+4}\leftrightarrow
+3te^{-2t}-2\cos 2t-3\sin 2t$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.2.3}
+ Use Heaviside's method to find the inverse Laplace transform.
+
+\begin{enumerate}
+    \item $\frac{3-(s+1)(s-2)}{(s+1)(s+2)(s-2)}$
+    \item $\frac{7+(s+4)(18-3s)}{(s-3)(s-1)(s+4)}$
+    \item $\frac{2+(s-2)(3-2s)}{(s-2)(s+2)(s-3)}$
+    \item $\frac{3-(s-1)(s+1)}{(s+4)(s-2)(s-1)}$
+    \item $\frac{3+(s-2)(10-2s-s^2)}{(s-2)(s+2)(s-1)(s+3)}$
+    \item $\frac{3+(s-3)(2s^2+s-21)}{(s-3)(s-1)(s+4)(s-2)}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.2.4}
+ Find the inverse Laplace transform.
+
+\begin{enumerate}
+    \item $\frac{2+3s}{(s^2+1)(s+2)(s+1)}$
+
+\begin{solution}
+$$
+\frac{2+3s}{(s^2+1)(s+2)(s+1)}=
+\frac{A}{s+2}+\frac{B}{s+1}+\frac{Cs+D}{s^2+1},
+$$
+where
+$$
+A(s^2+1)(s+1)+
+B(s^2+1)(s+2)+(Cs+D)(s+2)(s+1)=2+3s.
+$$
+$$
+\begin{array}{rcrl}
+-5A&=&-4&(\mbox{set }s=-2);\\
+2B&=&-1& (\mbox{set }s=-1);\\
+A+2B+2D&=&2&(\mbox{set }s=0);\\
+A+B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=\frac{4}{5}$, $B=-\frac{1}{2}$,
+$C=-\frac{3}{10}$, $D=\frac{11}{10}$. Therefore,
+\begin{eqnarray*}
+\frac{2+3s}{(s^2+1)(s+2)(s+1)}&=&
+\frac{4}{5}\frac{1}{s+2}-\frac{1}{2}\frac{1}{s+1}-\frac{1}{10}\frac{3s-11}{s^2+1}\\
+&\leftrightarrow&
+\frac{4}{5}e^{-2t}-\frac{1}{2}e^{-t}-\frac{3}{10}\cos t
++\frac{11}{10}\sin t.
+\end{eqnarray*}
+\end{solution}
+
+    \item $\frac{3s^2+2s+1}{(s^2+1)(s^2+2s+2)}$
+\begin{solution}
+$$
+\frac{3s^2+2s+1}{(s^2+1)(s^2+2s+2)}=
+\frac{As+B}{s^2+1}+\frac{C(s+1)+D}{(s+1)^2+1},
+$$
+where
+$$
+(As+B)((s+1)^2+1)+(C(s+1)+D)(s^2+1)=3s^2+2s+1.
+$$
+$$
+\begin{array}{rcrl}
+2B+C+D&=&1&(\mbox{set }s=0);\\
+-A+B+2D&=&2& (\mbox{set }s=-1);\\
+2B+C+D&=&1&(\mbox{set }s=0);\\
+A+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields
+$A=6/5$, $B=2/5$, $C=-6/5$, $D=7/5$.
+Therefore,
+\begin{eqnarray*}
+\frac{3s^2+2s+1}{(s^2+1)(s^2+2s+2)}&=&
+\frac{1}{5}\left[\frac{6s+2}{s^2+1}-\frac{6(s+1)-7}{(s+1)^2+1}\right]\\
+&\leftrightarrow&
+ \frac{6}{5}\cos t+\frac{2}{5}\sin t
+-\frac{6}{5}e^{-t}\cos t+\frac{7}{5}e^{-t}\sin t.
+\end{eqnarray*}
+\end{solution}
+
+    \item $\frac{3s+2}{(s-2)(s^2+2s+5)}$
+
+\begin{solution}
+$s^2+2s+5=(s+1)^2+4$;
+$$
+\frac{3s+2}{(s-2)((s+1)^2+4)}=\frac{A}{s-2}+
+\frac{B(s+1)+C}{(s+1)^2+4},
+$$
+where
+$$
+A\left((s+1)^2)+4\right)+
+\left(B(s+1)+C\right)(s-2)=3s+2.
+$$
+$$
+\begin{array}{rcrl}
+13A&=&8&(\mbox{set }s=2);\\
+4A-3C&=&-1&(\mbox{set }s=-1);\\
+A+B&=&0&(\mbox{equate coefficients of }s^2).
+\end{array}
+$$
+Solving this system yields $A=\frac{8}{13}$, $B=-\frac{8}{13}$,
+$C=\frac{15}{13}$. Therefore,
+\begin{eqnarray*}
+\frac{3s+2}{(s-2)((s+1)^2+4)}&=&\frac{1}{13}\left[\frac{8}{s-2}-
+\frac{8(s-1)-15}{(s+1)^2+4}\right]\\
+&\leftrightarrow&
+\frac{8}{13}e^{2t}-\frac{8}{13}e^{-t}\cos 2t+\frac{15}{26}
+e^{-t}\sin 2t.
+\end{eqnarray*}
+\end{solution}
+
+    \item $\frac{3s^2+2s+1}{(s-1)^2(s+2)(s+3)}$
+
+\begin{solution}
+$$
+\frac{3s^2+2s+1}{(s-1)^2(s+2)(s+3)}=
+\frac{A}{s-1}+\frac{B}{(s-1)^2}+\frac{C}{s+2}+\frac{D}{s+3},
+$$
+where
+$$
+(A(s-1)+B)(s+2)(s+3)+(C(s+3)+D(s+2))(s-1)^2=3s^2+2s+1.
+$$
+$$
+\begin{array}{rcrl}
+12B&=&6&(\mbox{set }s=1);\\
+9C&=&9& (\mbox{set }s=-2);\\
+-16D&=&22&(\mbox{set }s=-3);\\
+A+C+D&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields
+$A=3/8$, $B=1/2$, $C=1$, $D=-11/8$.
+Therefore,
+\begin{eqnarray*}
+\frac{3s^2+2s+1}{(s-1)^2(s+2)(s+3)}&=&
+\frac{3}{8}\frac{1}{s-1}+\frac{1}{2}\frac{1}{(s-1)^2}+\frac{1}{s+2}-\frac{11}{8}\frac{1}{s+3}\\
+&\leftrightarrow&
+\frac{3}{8}e^t+\frac{1}{2}te^t+e^{-2t}-\frac{11}{8}e^{-3t}.
+\end{eqnarray*}
+\end{solution}
+    
+    \item $\frac{2s^2+s+3}{(s-1)^2(s+2)^2}$
+
+\begin{solution}
+$$
+\frac{2s^2+s+3}{(s-1)^2(s+2)^2}=
+\frac{A}{s-1}+\frac{B}{(s-1)^2}+\frac{C}{s+2}+\frac{D}{(s+2)^2},
+$$
+where
+$$
+(A(s-1)+B)(s+2)^2+(C(s+2)+D)(s-1)^2=2s^2+s+3.
+$$
+$$
+\begin{array}{rcrl}
+9B&=&6&(\mbox{set }s=1);\\
+9D&=&9& (\mbox{set }s=-2);\\
+-4A+4B+2C+D&=&3&(\mbox{set }s=0);\\
+A+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields
+$A=1/9$, $B=2/3$, $C=-1/9$, $D=1$.
+Therefore,
+\begin{eqnarray*}
+\frac{2s^2+s+3}{(s-1)^2(s+2)^2}&=&
+\frac{1}{9}\frac{1}{s-1}+\frac{2}{3}\frac{1}{(s-1)^2}-\frac{1}{9}\frac{1}{s+2}+\frac{1}{(s+2)^2}\\
+&\leftrightarrow&
+\frac{1}{9}e^t+\frac{2}{3}te^t-\frac{1}{9}e^{-2t}+te^{-2t}.
+\end{eqnarray*}
+\end{solution}
+    
+    \item $\frac{3s+2}{(s^2+1)(s-1)^2}$
+
+\begin{solution}
+$$
+\frac{3s+2}{(s^2+1)(s-1)^2}=\frac{A}{s-1}+\frac{B}{(s-1)^2}+
+\frac{Cs+D}{s^2+1},
+$$
+where
+$$
+A(s-1)(s^2+1)+B(s^2+1)+(Cs+D)(s-1)^2=3s+2.
+\text{(A)}
+$$
+Setting $s=1$ yields $2B=5$, so $B=\frac{5}{2}$.
+Substituting this into (A) shows that
+\begin{eqnarray*}
+A(s-1)(s^2+1)+(Cs+D)(s-1)^2&=&3s+2-\frac{5}{2}(s^2+1)\\
+&=&-\frac{5s^2-6s+1}{2}=-\frac{(s-1)(5s-1)}{2}.
+\end{eqnarray*}
+Therefore,
+$$
+A(s^2+1)+(Cs+D)(s-1)=\frac{1-5s}{2}.
+$$
+$$
+\begin{array}{rcrl}
+2A&=&-2&(\mbox{set }s=1);\\
+A-D&=&1/2&(\mbox{set }s=0);\\
+A+C&=&0&(\mbox{equate coefficients of }s^2).
+\end{array}
+$$
+Solving this system yields $A=-1$, $C=1$,
+$D=-\frac{3}{2}$. Therefore,
+\begin{eqnarray*}
+\frac{3s+2}{(s^2+1)(s-1)^2}&=&-\frac{1}{s-1}+\frac{5}{2}\frac{1}{(s-1)^2}
++\frac{s-3/2}{s^2+1}\\
+&\leftrightarrow&
+-e^t+\frac{5}{2}te^t+\cos t-\frac{3}{2}\sin t.
+\end{eqnarray*}
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.2.5}
+ Use the method of Example~\ref{example:8.2.9}  to find the
+inverse Laplace transform.
+
+\begin{enumerate}
+    \item $\frac{3s+2}{(s^2+4)(s^2+9)}$
+    \item $\frac{-4s+1}{(s^2+1)(s^2+16)}$
+    \item $\frac{5s+3}{(s^2+1)(s^2+4)}$
+    \item $\frac{-s+1}{(4s^2+1)(s^2+1)}$
+    \item $\frac{17s-34}{(s^2+16)(16s^2+1)}$
+    \item $\frac{2s-1}{(4s^2+1)(9s^2+1)}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.2.6}
+ Find the inverse Laplace transform.
+
+\begin{enumerate}
+    \item $\frac{17 s-15}{(s^2-2s+5)(s^2+2s+10)}$
+
+\begin{solution}
+$$
+\frac{17s-15}{(s^2-2s+5)(s^2+2s+10)}
+=\frac{A(s-1)+B}{(s-1)^2+4}+\frac{C(s+1)+D}{(s+1)^2+9}
+$$
+where
+$$
+(A(s-1)+B)((s+1)^2+9)+(C(s+1)+D)((s-1)^2+4)=17 s-15.
+$$
+$$
+\begin{array}{rcrl}
+13B+8C+4D&=&2&(\mbox{set }s=1);\\
+-18A+9B+8D&=&-32& (\mbox{set }s=-1);\\
+-10A+10B+5C+5D&=&-15&(\mbox{set }s=0);\\
+A+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=1$, $B=2$,
+$C=-1$, $D=-4$. Therefore,
+\begin{eqnarray*}
+\frac{17s-15}{(s^2-2s+5)(s^2+2s+10)}
+&=&
+\frac{(s-1)+2}{(s-1)^2+4}-\frac{(s+1)+4}{(s+1)^2+9}
+\\&\leftrightarrow&
+ e^t(\cos 2t+\sin 2t)-e^{-t}\left(\cos
+3t+\frac{4}{3}\sin 3t\right).
+\end{eqnarray*}
+\end{solution}
+
+    \item $\frac{8s+56}{(s^2-6s+13)(s^2+2s+5)}$
+
+\begin{solution}
+$$\frac{8s+56}{(s^2-6s+13)(s^2+2s+5)}
+=\frac{A(s-3)+B}{(s-3)^2+4}+\frac{C(s+1)+D}{(s+1)^2+4}
+$$
+where
+$$
+(A(s-3)+B)((s+1)^2+4)+(C(s+1)+D)((s-3)^2+4)=8s+56.
+$$
+$$
+\begin{array}{rcrl}
+20B+16C+4D&=&80&(\mbox{set }s=3);\\
+-16A+4B+20D&=&48& (\mbox{set }s=-1);\\
+-15A+5B+13C+13D&=&56&(\mbox{set }s=0);\\
+A+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=-1$, $B=3$,
+$C=1$, $D=1$. Therefore,
+\begin{eqnarray*}
+\frac{8s+56}{(s^2-6s+13)(s^2+2s+5)}
+&=&\frac{-(s-3)+3}{(s-3)^2+4}+\frac{(s+1)+1}{(s+1)^2+4}
+\\&\leftrightarrow&
+{e^{3t}\left(-\cos 2t+\frac{3}{2}\sin
+2t\right)+e^{-t}\left(\cos 2t+\frac{1}{2}\sin 2t\right)}.
+\end{eqnarray*}
+\end{solution}
+
+    \item $\frac{s+9}{(s^2+4s+5)(s^2-4s+13)}$
+
+\begin{solution}
+$$\frac{s+9}{(s^2+4s+5)(s^2-4s+13)}
+=\frac{A(s+2)+B}{(s+2)^2+1}+\frac{C(s-2)+D}{(s-2)^2+9}
+$$
+where
+$$
+(A(s+2)+B)((s-2)^2+9)+(C(s-2)+D)((s+2)^2+1)=s+9.
+$$
+$$
+\begin{array}{rcrl}
+25B-4C+D&=&7&(\mbox{set }s=-2);\\
+36A+9B+17D&=&11& (\mbox{set }s=2);\\
+26A+13B-10C+5D&=&9&(\mbox{set }s=0);\\
+A+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=1/8$, $B=1/4$,
+$C=-1/8$, $D=1/4$. Therefore,
+\begin{eqnarray*}
+\frac{s+9}{(s^2+4s+5)(s^2-4s+13)}
+&=&
+=\left[\frac{1}{8}\frac{(s+2)+2}{(s+2)^2+1}-\frac{(s-2)-2}{(s-2)^2+3}\right]
+\\&\leftrightarrow&
+{e^{-2t}\left(\frac{1}{8}\cos t+\frac{1}{4}\sin t\right)-e^{2t}\left(\frac{1}{8}\cos 3t-\frac{1}{12}\sin
+3t\right)}.
+\end{eqnarray*}
+\end{solution}
+    
+    \item $\frac{3s-2}{(s^2-4s+5)(s^2-6s+13)}$
+
+\begin{solution}
+$$\frac{3s-2}{(s^2-4s+5)(s^2-6s+13)}
+=\frac{A(s-2)+B}{(s-2)^2+1}+\frac{C(s-3)+D}{(s-3)^2+4}
+$$
+where
+$$
+(A(s-2)+B)((s-3)^2+4)+(C(s-3)+D)((s-2)^2+1)=3s-2.
+$$
+$$
+\begin{array}{rcrl}
+5B-C+D&=&4&(\mbox{set }s=2);\\
+4A+4B+2D&=&7& (\mbox{set }s=3);\\
+-26A+13B-15C+5D&=&-2&(\mbox{set }s=0);\\
+A+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=1$, $B=1/2$,
+$C=-1$, $D=1/2$. Therefore,
+\begin{eqnarray*}
+\frac{3s-2}{(s^2-4s+5)(s^2-6s+13)}
+&=&
+=\frac{1}{2}\left[\frac{2(s-2)+1}{(s-2)^2+1}-\frac{2(s-3)-1}{(s-3)^2+4}\right]
+\\&\leftrightarrow&
+e^{2t}\left(\cos t+\frac{1}{2}\sin
+t\right)-e^{3t}\left(\cos 2t-\frac{1}{4}\sin 2t\right).
+\end{eqnarray*}
+\end{solution}
+    
+    \item $\frac{3s-1}{(s^2-2s+2)(s^2+2s+5)}$
+
+\begin{solution}
+$$
+\frac{3s-1}{(s^2-2s+2)(s^2+2s+5)}
+=\frac{A(s-1)+B}{(s-1)^2+1}+\frac{C(s+1)+D}{(s+1)^2+4}
+$$
+where
+$$
+(A(s-1)+B)((s+1)^2+4)+(C(s+1)+D)((s-1)^2+1)=3s-1.
+$$
+$$
+\begin{array}{rcrl}
+8B+2C+D&=&2&(\mbox{set }s=1);\\
+-8A+4B+5D&=&-4& (\mbox{set }s=-1);\\
+-5A+5B+2C+2D&=&-1&(\mbox{set }s=0);\\
+A+5B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=1/5$, $B=2/5$,
+$C=-1/5$, $D=-4/5$. Therefore,
+\begin{eqnarray*}
+\frac{3s-1}{(s^2-2s+2)(s^2+2s+5)}
+&=&
+\frac{1}{5}\left[\frac{(s-1)+2}{(s-1)^2+1}-\frac{(s+1)+4}{(s+1)^2+4}\right].
+\\&\leftrightarrow&
+e^t\left(\frac{1}{5}\cos t+\frac{2}{5} \sin t\right)
+-e^{-t}\left(\frac{1}{5}\cos 2t+\frac{2}{5}\sin 2t\right).
+\end{eqnarray*}
+\end{solution}
+    
+    \item $\frac{20s+40}{(4s^2-4s+5)(4s^2+4s+5)}$
+
+\begin{solution}
+$$
+\frac{20s+40}{(4s^2-4s+5)(4s^2+4s+5)}
+=[\frac{A(s-1/2)+B}{(s-1/2)^2+1}+
+\frac{C(s+1/2)+D}{(s+1/2)^2+1}
+$$
+where
+$$
+(A(s-1/2)+B)((s+1/2)^2+1)+(C(s+1/2)+D)((s-1/2)^2+1)=\frac{5s+10}{4}.
+$$
+$$
+\begin{array}{rcrl}
+2B+C+D&=&25/8&(\mbox{set }s=1/2);\\
+-A+B+2D&=&15/8& (\mbox{set }s=-1/2);\\
+-5A+10B+5C+10D&=&20&(\mbox{set }s=0);\\
+A+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=-1$, $B=9/8$,
+$C=1$, $D=-1/8$. Therefore,
+\begin{eqnarray*}
+\frac{20s+40}{(4s^2-4s+5)(4s^2+4s+5)}
+&=&
+\frac{1}{8}\left[\frac{-8(s-1/2)+9}{(s-1/2)^2+1}+\frac{8(s+1/2)
+}{(s+1/2)^2+1}\right] %check this term
+\\&\leftrightarrow&
+e^{t/2}\left(-\cos t+\frac{9}{8}\sin
+t\right)+e^{-t/2}\left(\cos t-\frac{1}{8}\sin t\right).
+\end{eqnarray*}
+\end{solution}    
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.2.7}
+Find the inverse Laplace transform.
+
+\begin{enumerate}
+    \item $\frac{1}{s(s^2+1)}$
+    \item $\frac{1}{(s-1)(s^2-2s+17)}$
+    \item $\frac{3s+2}{(s-2)(s^2+2s+10)}$
+    \item $\frac{34-17s}{(2s-1)(s^2-2s+5)}$
+    \item $\frac{s+2}{(s-3)(s^2+2s+5)}$
+    \item $\frac{2s-2}{(s-2)(s^2+2s+10)}$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.2.8}
+ Find the inverse Laplace transform.
+\begin{enumerate}
+\item $\frac{2s+1}{(s^2+1)(s-1)(s-3)}$
+
+\begin{solution}
+$$
+\frac{2s+1}{(s^2+1)(s-1)(s-3)}
+=\frac{A}{s-1}+\frac{B}{s-3}+\frac{Cs+D}{s^2+1}
+$$
+where
+$$
+(A(s-3)+B(s-1))(s^2+1)+(Cs+D)(s-1)(s-3)=2s+1.
+$$
+$$
+\begin{array}{rcrl}
+-4A&=&3&(\mbox{set }s=1);\\
+20B&=&7& (\mbox{set }s=3);\\
+-3A-B+3D&=&1& (\mbox{set }s=0);\\
+A+B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=-3/4$, $B=7/20$,
+$C=2/5$, $D=-3/10$. Therefore,
+\begin{eqnarray*}
+\frac{2s+1}{(s^2+1)(s-1)(s-3)}
+&=&
+-\frac{3}{4}\frac{1}{s-1}+\frac{7}{20}\frac{1}{s-3}+\frac{2}{5}\frac{s}{s^2+1}-\frac{3}{10}\frac{1}{s^2+1}
+\\&\leftrightarrow&
+-\frac{3}{4}e^t+\frac{7}{20}e^{3t}+\frac{2}{5}\cos t-\frac{3}{10}\sin t.
+\end{eqnarray*}
+\end{solution}
+
+\item $\frac{s+2}{(s^2+2s+2)(s^2-1)}$
+
+
+
+\begin{solution}
+$$
+\frac{s+2}{(s^2+2s+2)(s^2-1)}
+=\frac{A}{s-1}+\frac{B}{s+1}+\frac{C(s+1)+D}{(s+1)^2+1}
+$$
+where
+$$
+(A(s+1)+B(s-1))((s+1)^2+1)+(C(s+1)+D)(s^2-1)=s+2.
+$$
+$$
+\begin{array}{rcrl}
+10A&=&3&(\mbox{set }s=1);\\
+-2B&=&1& (\mbox{set }s=-1);\\
+2A-2B-C-D&=&2& (\mbox{set }s=0);\\
+A+B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=3/10$, $B=-1/2$,
+$C=1/5$, $D=-3/5$. Therefore,
+\begin{eqnarray*}
+\frac{s+2}{(s^2+2s+2)(s^2-1)}
+&=&
+\frac{3}{10}\frac{1}{s-1}-\frac{1}{2}\frac{1}{s+1}+\frac{1}{5}\frac{s+1}{(s+1)^2+1}
+-\frac{3}{5}\frac{1}{(s+1)^2+1}
+\\&\leftrightarrow&
+\frac{3}{10}e^{t}-\frac{1}{2}e^{-t}
++\frac{1}{5}e^{-t}\cos t-\frac{3}{5}e^{-t}\sin t.
+\end{eqnarray*}
+\end{solution}
+
+\item $\frac{2s-1}{(s^2-2s+2)(s+1)(s-2)}$
+
+\begin{solution}
+$$
+\frac{2s-1}{(s^2-2s+2)(s+1)(s-2)}
+=\frac{A}{s-2}+\frac{B}{s+1}+\frac{C(s-1)+D}{(s-1)^2+1}
+$$
+where
+$$
+(A(s+1)+B(s-2))((s-1)^2+1)+(C(s-1)+D)(s-2)(s+1)=2s-1.
+$$
+$$
+\begin{array}{rcrl}
+6A&=&3&(\mbox{set }s=2);\\
+-15B&=&-3& (\mbox{set }s=-1);\\
+2A-4B+2C-2D&=&-1& (\mbox{set }s=0);\\
+A+B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=1/2$, $B=1/5$,
+$C=-7/10$, $D=-1/10$. Therefore,
+\begin{eqnarray*}
+\frac{2s-1}{(s^2-2s+2)(s+1)(s-2)}
+&=&
+=\frac{1}{2}\frac{1}{s-2}+\frac{1}{5}\frac{1}{s+1}-\frac{7}{10}\frac{s-1}{(s-1)^2+1}
+-\frac{1}{10}\frac{1}{(s-1)^2+1}
+\\&\leftrightarrow&
+\frac{1}{2}e^{2t}+\frac{1}{5} e^{-t}
+-\frac{7}{10}e^t\cos t-\frac{1}{10}e^t\sin t.
+\end{eqnarray*}
+\end{solution}
+
+\item $\frac{s-6}{(s^2-1)(s^2+4)}$
+
+\begin{solution}
+$$
+\frac{s-6}{(s^2-1)(s^2+4)}
+=\frac{A}{s-1}+\frac{B}{s+1}+\frac{Cs+D}{s^2+4}
+$$
+where
+$$
+(A(s+1)+B(s-1))(s^2+4)+(Cs+D)(s^2-1)=s-6.
+$$
+$$
+\begin{array}{rcrl}
+10A&=&-5&(\mbox{set }s=1);\\
+-10B&=&-7& (\mbox{set }s=-1);\\
+4A-4B-D&=&-6& (\mbox{set }s=0);\\
+A+B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=-1/2$, $B=7/10$,
+$C=-1/5$, $D=6/5$. Therefore,
+\begin{eqnarray*}
+\frac{s-6}{(s^2-1)(s^2+4)}
+&=&
+=-\frac{1}{2}\frac{1}{s-1}+\frac{7}{10}\frac{1}{s+1}-\frac{1}{5}\frac{s}{s^2+4}
++\frac{3}{5}+\frac{1}{s^2+4}
+\\&\leftrightarrow&
+-\frac{1}{2}e^t+\frac{7}{10}e^{-t}-\frac{1}{5}\cos 2t+\frac{3}{5}\sin 2t.
+\end{eqnarray*}
+\end{solution}
+
+\item $\frac{2s-3}{s(s-2)(s^2-2s+5)}$
+
+\begin{solution}
+$$
+\frac{2s-3}{s(s-2)(s^2-2s+5)}
+=\frac{A}{s}+\frac{B}{s-2}+\frac{C(s-1)+D}{(s-1)^2+4}
+$$
+where
+$$
+(A(s-2)+Bs)((s-1)^2+4)+(C(s-1)+D)s(s-2)=2s-3.
+$$
+$$
+\begin{array}{rcrl}
+-10A&=&-3&(\mbox{set }s=0);\\
+10B&=&1& (\mbox{set }s=2);\\
+-4A+4B-D&=&-1& (\mbox{set }s=1);\\
+A+B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=3/10$, $B=1/10$,
+$C=-2/5$, $D=1/5$. Therefore,
+\begin{eqnarray*}
+\frac{2s-3}{s(s-2)(s^2-2s+5)}
+&=&
+=\frac{3}{10s}+\frac{1}{10}\frac{1}{s-2}-\frac{2}{5}\frac{s-1}{(s-1)^2+4}
++\frac{1}{5}\frac{1}{(s-1)^2+4}
+\\&\leftrightarrow&
+\frac{3}{10}+\frac{1}{10}e^{2t}-\frac{2}{5}e^t\cos 2t
++\frac{1}{10}e^t\sin2t.
+\end{eqnarray*}
+\end{solution}
+
+\item $\frac{5s-15}{(s^2-4s+13)(s-2)(s-1)}$
+
+\begin{solution}
+$$
+\frac{5s-15}{(s^2-4s+13)(s-2)(s-1)}
+=\frac{A}{s-1}+\frac{B}{s-2}+\frac{C(s-2)+D}{(s-2)^2+9}
+$$
+where
+$$
+(A(s-2)+B(s-1))((s-2)^2+9)+(C(s-2)+D)(s-1)(s-2)=5s-15.
+$$
+$$
+\begin{array}{rcrl}
+-10A&=&-10&(\mbox{set }s=1);\\
+9B&=&-5& (\mbox{set }s=2);\\
+-26A-13B-4C+2D&=&-15& (\mbox{set }s=0);\\
+A+B+C&=&0&(\mbox{equate coefficients of }s^3).
+\end{array}
+$$
+Solving this system yields $A=1$, $B=-5/9$,
+$C=-4/9$, $D=1$. Therefore,
+\begin{eqnarray*}
+\frac{5s-15}{(s^2-4s+13)(s-2)(s-1)}
+&=&
+=\frac{1}{s-1}-\frac{5}{9}\frac{1}{s-2}-\frac{4}{9}\frac{s-2}{(s-2)^2+9}
++\frac{1}{(s-2)^2+9}
+\\&\leftrightarrow&
+e^t-\frac{5}{9}e^{2t}-\frac{4}{9}e^{2t}\cos 3t+\frac{1}{3}e^{2t}\sin 3t.
+\end{eqnarray*}
+\end{solution}
+
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:8.2.9}
+ Given that $f(t)\leftrightarrow F(s)$, find the inverse
+Laplace transform of $F(as-b)$, where $a>0$.
+\end{problem}
+
+\begin{problem}\label{exer:8.2.10}
+\begin{enumerate}
+\item  % (a)
+If $s_1$, $s_2$, \dots, $s_n$ are distinct and $P$ is a polynomial of
+degree less than $n$, then
+$$
+\frac{P(s)}{(s-s_1)(s-s_2)\cdots(s-s_n)}=
+\frac{A_1}{s-s_1}+\frac{A_2}{s-s_2}+\cdots+\frac{A_n}{s-s_n}.
+$$
+Multiply through by $s-s_i$ to show that
+ $A_i$ can be obtained by ignoring the factor $s-s_i$ on the
+left and setting $s=s_i$ elsewhere.
+
+\begin{solution}
+Let $i=1$. (The proof for $i=2,\dots,n$) is similar.
+Multiplying the given equation through by $s-s_1$ yields
+$$
+\frac{P(s)}{(s-s_2)\cdots(s-s_n)}=
+A_1+(s-s_1)\left[\frac{A_2}{s-s_2}+\cdots+\frac{A_n}{s-s_n}\right],
+$$
+and setting $s=s_1$ yields
+$A_1=\frac{P(s_1)}{(s_1-s_2)\cdots(s_2-s_n)}$.
+\end{solution}
+
+\item % (b)
+Suppose $P$ and $Q_1$ are polynomials such that
+$\text{degree}(P)\le\text{degree}(Q_1)$ and $Q_1(s_1)\ne0$.
+Show that the coefficient of $1/(s-s_1)$ in the partial fraction expansion of
+$$
+F(s)=\frac{P(s)}{(s-s_1)Q_1(s)}
+$$
+is $P(s_1)/Q_1(s_1)$.
+
+\begin{solution}
+From calculus we know that $F$  has a partial
+fraction expansion of the form
+$\frac{P(s)}{(s-s_1)Q_1(s)}=\frac{A}{s-s_1}+G(s)$ where $G$ is
+continuous at $s_1$. Multiplying through by $s-s_1$ shows that
+$\frac{P(s)}{Q_1(s)}=A+(s-s_1)G(s)$. Now set $s=s_1$ to obtain
+$A=\frac{P(s_1)}{Q(s_1)}$.
+\end{solution}
+
+\item % (c)
+Explain how the two results above are related.
+
+\begin{solution}
+The second result is generalization of the first, since it shows that if $s_1$ is a simple zero
+of the denominator of the rational function, then Heaviside's
+method can be used to determine the coefficient of $1/(s-s_1)$
+in the partial fraction expansion even if some of the other zeros
+of the denominator are repeated or complex.
+\end{solution}
+\end{enumerate}
+\end{problem}
+\end{document}

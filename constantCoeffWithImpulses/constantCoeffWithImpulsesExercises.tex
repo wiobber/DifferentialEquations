@@ -1,0 +1,473 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+\begin{problem}\label{exer:8.7.1}
+Solve the initial value
+problem.
+ $y''+3y'+2y=6e^{2t}+2\delta(t-1), \quad  y(0)=2,\quad y'(0)=-6$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.2} 
+Solve the initial value
+problem.  Graph the solution.
+ $y''+y'-2y=-10e^{-t}+5\delta(t-1), \quad  y(0)=7,\quad y'(0)=-9$
+
+\begin{solution}
+$(s^2+s-2)\hat Y(s)=-\frac{10}{s+1}+(-9+7s)+7$;
+$\hat Y(s)=\frac{-10+(s+1)(7s-2)}{(s-1)(s+2)(s+1)}=\frac{2}{s+2}+\frac{5}{s+1}$;
+$\hat y=2e^{-2t}+5e^{-t}$;
+$\frac{1}{p(s)}=\frac{1}{(s+2)(s-1)}=\frac{1}{3}\left(\frac{1}{s-1}-\frac{1}{s+2}\right)$;
+$w={\cal L}^{-1}\left(\frac{1}{p(s)}\right)=\frac{e^t-e^{-2t}}{3}$;
+$y=2e^{-2t}+5e^{-t}+\frac{5}{3}u(t-1)\left(e^{(t-1)}-e^{-2(t-1)}\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.7.3}
+Solve the initial value
+problem.
+ $y''-4y=2e^{-t}+5\delta(t-1), \quad  y(0)=-1,\quad y'(0)=2$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.4}  Solve the initial value problem.  Graph the solution.
+ $y''+y=\sin3t+2\delta(t-\pi/2), \quad  y(0)=1,\quad y'(0)=-1$
+
+\begin{solution}
+$(s^2+1)\hat Y(s)=\frac{3}{s^2+9}-1+s$;
+
+$\hat Y(s)=\frac{3}{(s^2+1)(s^2+9)}+\frac{s-1}{s^2+1}=
+\frac{3}{8}\left(\frac{1}{s^2+1}-\frac{1}{s^2+9}\right)+\frac{s-1}{s^2+1}
+=\frac{1}{8}\left(\frac{8s-5}{s^2+1}-\frac{3}{s^2+9}\right)$;
+
+
+$\hat y=\frac{1}{8}(8\cos t-5\sin t-\sin3t)$;
+$\frac{1}{p(s)}=\frac{1}{s^2+1}$;
+$w={\cal L}^{-1}\left(\frac{1}{p(s)}\right)=\sin t$;
+$y=\frac{1}{8}(8\cos t-5\sin t-\sin3t)-2u(t-\pi/2)\cos t$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.7.5} 
+Solve the initial value
+problem.
+ $y''+4y=4+\delta(t-3\pi), \quad  y(0)=0,\quad y'(0)=1$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.6}
+Solve the initial value
+problem.
+ $y''-y=8+2\delta(t-2), \quad  y(0)=-1,\quad y'(0)=1$
+
+\begin{solution}
+$(s^2-1)\hat Y(s)=\frac{8}{s}+1-s$;
+$\hat Y(s)=\frac{8+s(1-s)}{s(s-1)(s+1)}=
+\frac{4}{s-1}+\frac{3}{s+1}-\frac{8}{s}$;
+$\hat y=4e^t+3e^{-t}-8$;
+$\frac{1}{p(s)}=\frac{1}{(s-1)(s+1)}=\frac{1}{2}\frac{1}{s-1}
+-\frac{1}{s+1}$;
+$w={\cal L}^{-1}\left(\frac{1}{p(s)}\right)=\frac{e^t+e^{-t}}{2}=
+\sinh t$;
+$y=4e^t+3e^{-t}-8+2u(t-2)\sinh(t-2)$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.7.7}
+Solve the initial value
+problem.
+ $y''+y'=e^t+3\delta(t-6), \quad  y(0)=-1,\quad y'(0)=4$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.8}
+Solve the initial value
+problem.
+ $y''+4y=8e^{2t}+\delta(t-\pi/2), \quad  y(0)=8,\quad y'(0)=0$
+
+\begin{solution}
+$(s^2+4)\hat Y(s)=\frac{8}{s-2}+8s$;
+(A) $\hat Y(s)=\frac{8}{(s-2)(s^2+4)}+\frac{8s}{s^2+4}$;
+$\frac{8}{(s-2)(s^2+4)}=\frac{A}{s-2}+\frac{Bs+C}{s^2+4}$
+where $A(s^2+4)+(Bs+C)(s-2)=8$. Setting $s=2$ yields $A=1$;
+setting $s=0$ yields $4A-2C=8$, so $C=-2$; $A+B=0$
+(coefficient of $x^2$), so $B=-A=-1$; therefore
+$\frac{8}{(s-2)(s^2+4)}=\frac{1}{s-2}-\frac{s+2}{s^2+4}$, so
+(A) implies that
+$\hat y=e^{2t}+7\cos2t-\sin2t$;
+$\frac{1}{p(s)}=\frac{1}{s^2+4}$;
+$w={\cal L}^{-1}\left(\frac{1}{p(s)}\right)=\frac{1}{2}\sin2t$.
+Since $\sin(2t-\pi)=-\sin2t$,
+$y=e^{2t}+7\cos2t-\sin2t-\frac{1}{2}u(t-\pi/2)\sin2t$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.7.9} Solve the initial value problem.  Graph the solution.
+ $y''+3y'+2y=1+\delta(t-1), \quad  y(0)=1,\quad y'(0)=-1$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.10}
+Solve the initial value
+problem.
+ $y''+2y'+y=e^t+2\delta(t-2), \quad  y(0)=-1,\quad y'(0)=2$
+
+\begin{solution}
+$(s^2+2s+1)\hat Y(s)=\frac{1}{s-1}+(2-s)-2$;
+$\hat Y(s)=\frac{1-s(s-1)}{(s-1)(s+1)^2}=
+\frac{A}{s-1}+\frac{B}{s+1}+\frac{C}{(s+1)^2}$ where
+$A(s+1)^2+(B(s+1)+C)(s-1)=1-s(s-1)$. Setting $s=1$
+yields $A=1/4$; setting $s=-1$ yields $C=1/2$; since $A+B=-1$
+(coefficient of $s^2$), $B=-1-A=-5/4$. Therefore,
+$\hat Y(s)=\frac{1}{4}\frac{1}{s-1}-\frac{5}{4}\frac{1}{s+1}+\frac{1}{2}
+\frac{1}{(s+1)^2}$;
+ $\hat y=\frac{1}{4}e^t+\frac{1}{4}e^{-t}(2t-5)$;
+$\frac{1}{p(s)}=\frac{1}{(s+1)^2}$;
+$w={\cal L}^{-1}\left(\frac{1}{p(s)}\right)=te^{-t}$;
+ $y=\frac{1}{4}e^t+\frac{1}{4}e^{-t}(2t-5)+2u(t-2)(t-2)e^{-(t-2)}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.7.11} Solve the initial value problem.  Graph the solution.
+ $y''+4y=\sin t+\delta(t-\pi/2), \quad  y(0)=0,\quad y'(0)=2$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.12}
+Solve the initial value
+problem.
+ $y''+2y'+2y=\delta(t-\pi)-3\delta(t-2\pi), \quad  y(0)=-1,\quad y'(0)=2$
+
+\begin{solution}
+$(s^2+2s+2)\hat Y(s)=(2-s)-2$;
+$Y(s)=\frac{-(s+1)+1}{(s+1)^2+1}$;
+$\hat y=e^{-t}(\sin t-\cos t)$;
+$\frac{1}{p(s)}=\frac{1}{(s+1)^2+1}$;
+$w={\cal L}^{-1}\left(\frac{1}{p(s)}\right)=e^{-t}\sin t$.
+Since $\sin(t-\pi)=-\sin t$ and $\sin(t-2\pi)=\sin t$,
+$y=e^{-t}(\sin t-\cos t)-e^{-(t-\pi)}u(t-\pi)\sin
+t-3u(t-2\pi)e^{-(t-2\pi)}\sin t$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.7.13}
+Solve the initial value
+problem.
+$y''+4y'+13y=\delta(t-\pi/6)+2\delta(t-\pi/3), \quad  y(0)=1,\quad y'(0)=2$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.14}
+Solve the initial value
+problem.
+$2y''-3y'-2y=1+\delta(t-2), \quad  y(0)=-1,\quad y'(0)=2$
+
+\begin{solution}
+$(2s^2-3s-2)\hat Y(s)=\frac{1}{s}+2(2-s)+3$;
+$\hat Y(s)=\frac{1+s(7-2s)}{2s(s+1/2)(s-2)}=\frac{7}{10}\frac{1}{s-2}-\frac{6}{5}\frac{1}{s+1/2}-\frac{1}{2s}$;
+$\hat y=\frac{7}{10}e^{2t}-\frac{6}{5}e^{-t/2}-\frac{1}{2}$;
+$\frac{1}{p(s)}=\frac{1}{2(s+1/2)(s-2)}=\frac{1}{5}\left(\frac{1}{s-2}-\frac{1}{s+1/2}\right)$;
+$w={\cal L}^{-1}\left(\frac{1}{p(s)}\right)=\frac{1}{5}(e^{2t}-e^{-t/2})$;
+$y=\frac{7}{10}e^{2t}-\frac{6}{5}e^{-t/2}-\frac{1}{2}+\frac{1}{5}u(t-2)
+\left(e^{2(t-2)}-e^{-(t-2)/2}\right)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.7.15}
+Solve the initial value
+problem.
+$4y''-4y'+5y=4\sin t-4\cos
+t+\delta(t-\pi/2)-\delta(t-\pi), \quad  y(0)=1,\quad y'(0)=1$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.16}
+Solve the initial value
+problem.
+$y''+y=\cos2t+2\delta(t-\pi/2)-3\delta(t-\pi), \quad  y(0)=0,\quad y'(0)=-1$
+
+\begin{solution}
+$(s^2+1)\hat Y(s)=\frac{s}{s^2+4}-1$;
+$\hat Y(s)=\frac{s}{(s^2+1)(s^2+4)}-\frac{1}{s^2+1}
+=\frac{1}{3}\left(\frac{s}{s^2+1}-\frac{s}{s^2+4}\right)-\frac{1}{s^2+1}$;
+$\hat y=\frac{1}{3}(\cos t-\cos2t-3\sin t)$;
+$\frac{1}{p(s)}=\frac{1}{s^2+1}$;
+$w={\cal L}^{-1}\left(\frac{1}{p(s)}\right)=\sin t$.
+Since $\sin(t-\pi/2)=-\cos t$ and $\sin(t-\pi)=-\sin t$,
+$$
+y=\frac{1}{3}(\cos t-\cos2t-3\sin t)-2u(t-\pi/2)\cos t+3u(t-\pi)\sin t.
+$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.7.17} Solve the initial value problem.  Graph the solution.
+$y''-y=4e^{-t}-5\delta(t-1)+3\delta(t-2), \quad  y(0)=0,\quad y'(0)=0$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.18}
+Solve the initial value
+problem.
+$y''+2y'+y=e^t-\delta(t-1)+2\delta(t-2), \quad  y(0)=0,\quad y'(0)=-1$
+
+\begin{solution}
+$(s^2+2s+1)\hat Y(s)=\frac{1}{s-1}-1$;
+(A) $\hat Y(s)=\frac{1}{(s-1)(s+1)^2}-\frac{1}{(s+1)^2}$;
+$$
+\frac{1}{(s-1)(s+1)^2}=\frac{A}{s-1}+\frac{B}{s+1}+\frac{C}{(s+1)^2}
+$$
+where
+$A(s+1)^2+(B(s+1)+C)(s-1)=1$. Setting $s=1$ yields $A=1/4$;
+setting $s=-1$ yields $C=-1/2$; since $A+B=0$ (coefficient of $s^2$),
+$B=-A=-1/4$. Therefore,
+$$
+\frac{1}{(s-1)(s+1)^2}=\frac{1}{4}\frac{1}{s-1}-\frac{1}{4}\frac{1}{s+1}-\frac{1}{2}\frac{1}{(s+1)^2}.
+$$
+This and (A) imply that
+$$
+\hat Y(s)=\frac{1}{4}\frac{1}{s-1}-\frac{1}{4}\frac{1}{s+1}-\frac{3}{2}\frac{1}{(s+1)^2};
+$$
+$\hat y=\frac{1}{4}\left(e^t-e^{-t}(1+6t)\right)$;
+$\frac{1}{p(s)}=\frac{1}{(s+1)^2}$;
+$w={\cal L}^{-1}\left(\frac{1}{p(s)}\right)=te^{-t}$;
+
+$y=\frac{1}{4}\left(e^t-e^{-t}(1+6t)\right)-
+u(t-1)(t-1)e^{-(t-1)}+2u(t-2)(t-2)e^{-(t-2)}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.7.19}
+Solve the initial value
+problem.
+$y''+y=f(t)+\delta(t-2\pi), \quad  y(0)=0,\quad y'(0)=1$, \text{and}
+
+$f(t)=\left\{\begin{array}{cl}
+\sin2t,&0\le t<\pi,\\0,&t\ge \pi.\end{array}\right.$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.20}
+Solve the initial value
+problem.
+$y''+4y=f(t)+\delta(t-\pi)-3\delta(t-3\pi/2), \quad  y(0)=1,\quad
+y'(0)=-1$, \text {and}
+
+$f(t)=\left\{\begin{array}{cl}1,&0\le t<\pi/2,\\2,&t\ge
+\pi/2\end{array}\right.$
+
+\begin{solution}
+$y''+4y=1-2u(t-\pi/2)+\delta(t-\pi)-3\delta(t-3\pi/2),\ y(0)=1,\
+y'(0)=-1$.
+$(s^2+4)\hat Y(s)=\frac{1-2e^{-\pi s/2}}{s}+s-1$;
+$\hat Y(s)=\frac{1-2e^{-\pi s/2}}{s(s^2+4)}+\frac{s-1}{s^2+4}$.
+Since
+$\frac{1}{s(s^2+4)}=
+\frac{1}{4}\left(\frac{1}{s}-\frac{s}{s^2+4}\right)$,
+$\hat Y(s)=
+\frac{1}{4s}+\frac{3}{4}\frac{s}{s^2+4}-\frac{1}{s^2+4}
+-2e^{-\pi s/2}\left(\frac{1}{s}-\frac{s}{s^2+4}\right)$.
+$\hat
+y=\frac{3}{4}\cos2t-\frac{1}{2}\sin2t+\frac{1}{4}+\frac{1}{4}u(t-\pi/2)
+(1+\cos2t)$.
+$w={\cal L}^{-1}\left(\frac{1}{p(s)}\right)=\frac{1}{2}\sin2t$.
+Since $\sin2(t-\pi)=\sin2t$ and $\sin2(t-3\pi/2)=-\sin2t$,
+
+$y=\frac{3}{4}\cos2t-\frac{1}{2}\sin2t+\frac{1}{4}+\frac{1}{4}u(t-\pi/2)
+(1+\cos2t)+\frac{1}{2}u(t-\pi)\sin2t+\frac{3}{2}u(t-3\pi/2)\sin2t$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.7.21}
+Solve the initial value
+problem.
+$y''+y=\delta(t), \quad  y(0)=1,\quad y_-'(0)=-2$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.22}
+Solve the initial value
+problem.
+$y''-4y=3\delta(t), \quad  y(0)=-1,\quad y_-'(0)=7$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.23}
+Solve the initial value
+problem.
+$y''+3y'+2y=-5\delta(t), \quad  y(0)=0,\quad y_-'(0)=0$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.24}
+Solve the initial value
+problem.
+$y''+4y'+4y=-\delta(t), \quad  y(0)=1,\quad y_-'(0)=5$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.25}
+Solve the initial value
+problem.
+$4y''+4y'+y=3\delta(t), \quad  y(0)=1,\quad y_-'(0)=-6$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.26} Solve the initial value problem
+$$
+ay_h''+by_h'+cy_h=
+\left\{\begin{array}{cl} 0,&0\le t<t_0,\\
+1/h,&t_0\le t< t_0+h,\\
+0,&t\ge t_0+h,\end{array}\right.
+\quad y_h(0)=0,\quad y_h'(0)=0,
+$$
+where $t_0>0$ and $h>0$. Then find
+$$
+w={\cal L}^{-1}\left(\frac{1}{as^2+bs+c}\right)
+$$
+and verify Theorem~\ref{thmtype:8.7.1} by graphing $w$ and $y_h$
+on the same axes, for small positive values of $h$.
+$y''+2y'+2y=f_h(t), \quad  y(0)=0,\quad y'(0)=0$
+
+\begin{solution}
+$w(t)=e^{-t}\sin t$;
+$f_h(t)=\frac{u(t-t_0)-u(t-t_0-h)}{h}$;
+$(s^2+2s+2)Y_h(s)=\frac{1}{h}\frac{e^{-st_0}-e^{-s(t_0+h)}}{s}$;
+$Y_h(s)=\frac{1}{h}\frac{e^{-st_0}-e^{-s(t_0+h)}}{s(s^2+2s+2)}$;
+$\frac{1}{s(s^2+2s+2)}=-\frac{(s+1)+1}{2\left((s+1)^2+1\right)}
++\frac{1}{2s}\leftrightarrow
+\frac{1}{2}\left(1-e^{-t}(\cos t+\sin t)\right)$;
+$$
+y_h(t)=
+\left\{\begin{array}{cl} 0,&0\le t<t_0,\\ 
+\frac{1}{2h}\left[1-e^{-(t-t_0)}(\cos(t-t_0)+\sin(t-t_0))\right],
+&t_0\le t< t_0+h,\\ 
+\frac{e^{-(t-t_0)}}{2h}\left[e^h\left(\cos(t-t_0-h)+\sin(t-t_0-h)\right)
+-\cos(t-t_0)-\sin(t-t_0)\right] ,&t\ge t_0+h.\end{array}\right.
+$$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.7.27} Solve the initial value problem
+$$
+ay_h''+by_h'+cy_h=
+\left\{\begin{array}{cl} 0,&0\le t<t_0,\\
+1/h,&t_0\le t< t_0+h,\\
+0,&t\ge t_0+h,\end{array}\right.
+\quad y_h(0)=0,\quad y_h'(0)=0,
+$$
+where $t_0>0$ and $h>0$. Then find
+$$
+w={\cal L}^{-1}\left(\frac{1}{as^2+bs+c}\right)
+$$
+and verify Theorem~\ref{thmtype:8.7.1} by graphing $w$ and $y_h$
+on the same axes, for small positive values of $h$.
+$y''+2y'+y=f_h(t), \quad  y(0)=0,\quad y'(0)=0$
+\end{problem}
+
+\begin{problem}\label{exer:8.7.28} Solve the initial value problem
+$$
+ay_h''+by_h'+cy_h=
+\left\{\begin{array}{cl} 0,&0\le t<t_0,\\
+1/h,&t_0\le t< t_0+h,\\
+0,&t\ge t_0+h,\end{array}\right.
+\quad y_h(0)=0,\quad y_h'(0)=0,
+$$
+where $t_0>0$ and $h>0$. Then find
+$$
+w={\cal L}^{-1}\left(\frac{1}{as^2+bs+c}\right)
+$$
+and verify Theorem~\ref{thmtype:8.7.1} by graphing $w$ and $y_h$
+on the same axes, for small positive values of $h$.
+$y''+3y'+2y=f_h(t), \quad  y(0)=0,\quad y'(0)=0$
+
+\begin{solution}
+$w(t)=e^{-t}-e^{-2t}$;
+$f_h(t)=\frac{u(t-t_0)-u(t-t_0-h)}{h}$;
+$(s^2+3s+2)Y_h(s)=\frac{1}{h}\frac{e^{-st_0}-e^{-s(t_0+h)}}{s}$;
+$Y_h(s)=\frac{1}{h}\frac{e^{-st_0}-e^{-s(t_0+h)}}{s(s+1)(s+2)}$;
+$\frac{1}{s(s+1)(s+2)}=\frac{1}{2(s+2)}-\frac{1}{s+1}+\frac{1}{2s}\leftrightarrow
+\frac{e^{-2t}}{2}-e^{-t}+\frac{1}{2}=\frac{(e^{-t}-1)^2}{2}$;
+$$
+y_h(t)=
+\left\{\begin{array}{cl} 0,&0\le t<t_0,\\ 
+\frac{(e^{-(t-t_0)}-1)^2}{2h}, &t_0\le t< t_0+h,\\ 
+\frac{(e^{-(t-t_0)}-1)^2-(e^{-(t-t_0-h)}-1)^2}{2h}, &t\ge t_0+h.\end{array}\right. $$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:8.7.29}
+
+Recall from Section~6.2 that the displacement of
+an
+object of mass $m$ in a spring--mass system in free damped oscillation is
+$$
+my''+cy'+ky=0, \quad  y(0)=y_0,\quad y'(0)=v_0,
+$$
+and that $y$ can be written as
+$$
+y=Re^{-ct/2m}\cos(\omega_1t-\phi)
+$$
+if the motion is underdamped. Suppose $y(\tau)=0$.
+Find the impulse that would have to be applied to the object at $t=\tau$
+ to put it in equilibrium.
+\end{problem}
+
+\begin{problem}\label{exer:8.7.30}
+\begin{enumerate}
+
+\item Solve the initial value problem. Find a formula that
+does not involve step functions and represents $y$  on each subinterval of $[0,\infty)$ on which the forcing function is zero.
+$y''-y=\sum_{k=1}^\infty\delta(t-k), \quad  y(0)=0,\quad y'(0)=1$
+
+\begin{solution}
+$(s^2-1)\hat Y(s)=1$, so $\hat y=w={\cal L}^{-1}\left(\frac{1}{
+s^2-1}\right)=\frac{1}{2}\left(e^t-e^{-t}\right)$;
+$y=\hat y+\sum_{k=0}^\infty u(t-k)w(t-k)=
+\frac{1}{2}\sum_{k=0}^\infty u(t-k)\left(e^{t-k}-e^{-t-k}\right)$.
+If $m\le t< m+1$, then
+$y=\frac{1}{2}\sum_{k=0}^m
+\left(e^{t-k}-e^{-t-k}\right)=\frac{1}{2}(e^{t-m}-e^{-t})
+\sum_{k=0}^m e^k
+\frac{e^{m+1}-1}{2(e-1)}(e^{t-m}-e^{-t})$.
+\end{solution}
+
+\item Solve the initial value problem. Find a formula that
+does not involve step functions and represents $y$  on each subinterval of $[0,\infty)$ on which the forcing function is zero.
+$y''+y=\sum_{k=1}^\infty\delta(t-2k\pi), \quad  y(0)=0,\quad y'(0)=1$
+
+\begin{solution}
+$(s^2+1)\hat Y(s)=1$, so $\hat y=w={\cal L}^{-1}\left(\frac{1}{s^2+1}\right)=\sin t$;
+$y=\hat y+\sum_{k=0}^\infty u(t-2k\pi)w(t-2k\pi)=
+\sin t\sum_{k=0}^\infty u(t-2k\pi)$.
+If $2m\pi\le t< 2(m+1)\pi$, then
+$y=(m+1)\sin t$.
+\end{solution}
+
+\item Solve the initial value problem. Find a formula that
+does not involve step functions and represents $y$  on each subinterval of $[0,\infty)$ on which the forcing function is zero.
+$y''-3y'+2y=\sum_{k=1}^\infty\delta(t-k), \quad  y(0)=0,\quad y'(0)=1$
+
+\begin{solution}
+$(s^2-3s+2)\hat Y(s)=1$, so $\hat y=w={\cal L}^{-1}\left(\frac{1}{(s-1)(s-2)}\right)=(e^{2t}-e^t)$;
+$y=\hat y+\sum_{k=0}^\infty u(t-k)w(t-k)=
+\sum_{k=0}^\infty u(t-k)\left(e^{2(t-k)}-e^{t-k}\right)$.
+If $m\le t< m+1$, then
+$y=\sum_{k=0}^m
+\left(e^{2(t-k)}-e^{t-k}\right)=
+e^{2(t-m)}\sum_{k=0}^me^{2k}-e^{t-m}\sum_{k=0}^me^k=
+e^{2(t-m)}\frac{e^{2m+2}-1}{e^2-1}-e^{(t-m)}\frac{e^{m+1}-1}{e-1}$.
+\end{solution}
+
+\item Solve the initial value problem. Find a formula that
+does not involve step functions and represents $y$  on each subinterval of $[0,\infty)$ on which the forcing function is zero.
+$y''+y=\sum_{k=1}^\infty\delta(t-k\pi), \quad  y(0)=0,\quad y'(0)=0$
+
+\begin{solution}
+$w={\cal L}^{-1}\left(\frac{1}{ s^2+1}\right)=\sin t$;
+$y=\sum_{k=1}^\infty u(t-k\pi)w(t-k\pi)=
+\sin t\sum_{k=1}^\infty(-1)^k u(t-k\pi)$, so
+  $y={\left\{\begin{array}{cl}0,&2m\pi\le t<(2m+1)\pi,\\
+-\sin t,&(2m+1)\pi\le t<(2m+2)\pi,\end{array}\right.\quad
+(m=0,1,\dots)}$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\end{document}

@@ -1,0 +1,912 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+\begin{problem}\label{exer:7.2.1}
+Find the power series in $x$ for the general solution.
+
+$(1+x^2)y''+6xy'+6y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.2}
+Find the power series in $x$ for the general solution.
+
+$(1+x^2)y''+2xy'-2y=0$
+
+\begin{solution}
+    $p(n)=n(n-1)+2n-2=(n+2)(n-1)$;
+$a_{n+2}=-\frac{n-1}{ n+1}a_n$;
+$a_{2m+2}=-\frac{2m-1}{2m+1}a_{2m}$, so
+$a_{2m}=\frac{(-1)^m}{2m-1}a_0$;
+$a_{2m+3}=-\frac{m}{ m+2}a_{2m+1}=0$
+if  $m\geq 0$;
+$y=a_0\sum_{m=0}^\infty(-1)^{m+1}\frac{x^{2m}}{2m-1}+a_1x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.3}
+Find the power series in $x$ for the general solution.
+
+$(1+x^2)y''-8xy'+20y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.4} 
+Find the power series in $x$ for the general solution.
+
+$(1-x^2)y''-8xy'-12y=0$
+
+\begin{solution}
+    $p(n)=-n(n-1)-8n-12=-(n+3)(n+4)$;
+$a_{n+2}=-\frac{(n+3)(n+4)}{(n+2)(n+1)}a_n$;
+$a_{2m+2}=-\frac{(m+2)(2m+3)}{(m+1)(2m+1)}a_{2m}$, so
+$a_{2m}=(m+1)(2m+1)a_0$;
+$a_{2m+3}=\frac{(m+2)(2m+5)}{(m+1)(2m+3)}a_{2m+1}$
+ so $a_{2m+1}=\frac{(m+1)(2m+3)}{3}a_1$;
+$y=a_0\sum_{m=0}^\infty(m+1)(2m+1)x^{2m}+\frac{a_1}{3}\sum_{m=0}^\infty
+(m+1)(2m+3)x^{2m+1}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.5} 
+Find the power series in $x$ for the general solution.
+
+$(1+2x^2)y''+7xy'+2y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.6} Find the power series in $x$ for the general solution.
+
+$(1+x^2)y''+2xy'+\frac{1}{4}y=0$
+
+\begin{solution}
+    $p(n)=n(n-1)+2n+\frac{1}{4}=\frac{(2n+1)^2}{4}$;
+$a_{n+2}=-\frac{(2n+1)^2}{4(n+2)(n+1)}a_n$;
+$a_{2m+2}=-\frac{(4m+1)^2}{8(m+1)(2m+1)}a_{2m}$, so
+$a_{2m}=
+(-1)^m\left[\prod_{j=0}^{m-1}\frac{(4j+1)^2}{2j+1}\right]\frac{1}{8^mm!}a_0$;
+$a_{2m+3}=-\frac{(4m+3)^2}{8(2m+3)(m+1)}a_{2m+1}$
+ so $a_{2m+1}=
+(-1)^m\left[\prod_{j=0}^{m-1}\frac{(4j+3)^2}{2j+3}\right]
+\frac{1}{8^mm!}a_1$;
+$y=a_0\sum_{m=0}^\infty
+(-1)^m\left[\prod_{j=0}^{m-1}\frac{(4j+1)^2}{2j+1}\right]\frac{x^{2m}}{8^mm!}
++a_1\sum_{m=0}^\infty
+(-1)^m\left[\prod_{j=0}^{m-1}\frac{(4j+3)^2}{2j+3}\right]
+\frac{x^{2m+1}}{8^mm!}$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.7}
+Find the power series in $x$ for the general solution.
+
+$(1-x^2)y''-5xy'-4y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.8} 
+Find the power series in $x$ for the general solution.
+
+$(1+x^2)y''-10xy'+28y=0$
+
+\begin{solution}
+    $p(n)=n(n-1)-10n+28=(n-7)(n-4)$;
+$a_{n+2}=-\frac{(n-7)(n-4)}{(n+2)
+(n+1)}a_n$;
+$a_{2m+2}=-\frac{2(2m-7)(m-2)}{2(m+1)(2m+1)}a_{2m}$, so
+$a_2=-14a_0$, $a_4=-\frac{5}{6}a_2=\frac{35}{3}a_0$,
+$a_{2m}=0$ if $m\geq 3$;
+$a_{2m+3}=-\frac{(m-3)(2m-3)}{(2m+3)(m+1)}a_{2m+1}$,
+so $a_3=-3a_1$, $a_5=-\frac{1}{5}a_3=\frac{3}{5}a_1$,
+$a_7=\frac{1}{21}a_5=\frac{1}{35}a_1$;\\
+$y=a_0\left(1-14x^2+\frac{35}{3}x^4\right)+a_1\left(x-3x^3+\frac{3}{5}x^5
++\frac{1}{35}x^7\right)$.
+\end{solution}
+\end{problem}
+
+
+\begin{problem}\label{exer:7.2.9}   
+\begin{enumerate}
+\item % (a)
+Find the power series in $x$ for the general solution of
+$y''+xy'+2y=0$.
+\item % (b)
+For several choices of $a_0$ and $a_1$,
+use  differential equations software to solve the initial
+value problem
+$$
+y''+xy'+2y=0,\quad y(0)=a_0,\quad y'(0)=a_1,
+\text{(A)}
+$$
+numerically on $(-5,5)$.
+\item % ()
+For fixed $r$ in $\{1,2,3,4,5\}$ graph
+$$
+T_N(x)=\sum_{n=0}^N a_nx^n
+$$
+and the particular solution on $(-r,r)$.
+Continue increasing $N$ until there is no perceptible
+difference between the two graphs.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.10}
+\begin{enumerate}
+\item % (a)
+Find the power series in $x$ for the general solution of
+$y''+2xy'+3y=0$.
+\item % (b)
+For several choices of $a_0$ and $a_1$,
+use  differential equations software to solve the initial
+value problem
+$$
+y''+2xy'+3y=0,\quad y(0)=a_0,\quad y'(0)=a_1,
+\text{(A)}
+$$
+numerically on $(-5,5)$.
+\item % ()
+For fixed $r$ in $\{1,2,3,4,5\}$ graph
+$$
+T_N(x)=\sum_{n=0}^N a_nx^n
+$$
+and the particular solution on $(-r,r)$.
+Continue increasing $N$ until there is no perceptible
+difference between the two graphs.
+\end{enumerate}
+
+\begin{solution}
+    $p(n)=2n+3$;
+$a_{n+2}=-\frac{2n+3}{(n+2)(n+1)}a_n$;
+$a_{2m+2}=-\frac{4m+3}{2(m+1)(2m+1)}a_{2m}$, so
+$a_{2m}=\left[\prod_{j=0}^{m-1}\frac{4j+3}{2j+1}\right]
+\frac{(-1)^m}{2^mm!}a_0$;
+$a_{2m+3}=-\frac{4m+5}{2(2m+3)(m+1)}a_{2m+1}$
+ so $a_{2m+1}=
+\left[\prod_{j=0}^{m-1}\frac{4j+5}{2j+3}\right]\frac{(-1)^m}{
+2^mm!}a_1$;
+$y=a_0\sum_{m=0}^\infty
+(-1)^m\left[\prod_{j=0}^{m-1}\frac{4j+3}{2j+1}\right]\frac{x^{2m}}{2^mm!}
++a_1\sum_{m=0}^\infty
+(-1)^m\left[\prod_{j=0}^{m-1}\frac{4j+5}{2j+3}\right]\frac{x^{2m+1}}{
+2^mm!}$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.11} Find $a_0$, \dots, $a_N$ for $N$ at least $7$ in the power series solution $y=\sum_{n=0}^\infty a_nx^n$
+of the initial value problem. $(1+x^2)y''+xy'+y=0,\quad y(0)=2,\quad
+y'(0)=-1$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.12} Find $a_0$, \dots, $a_N$ for $N$ at least $7$ in the power series solution $y=\sum_{n=0}^\infty a_nx^n$
+of the initial value problem.  $(1+2x^2)y''-9xy'-6y=0,\quad y(0)=1,\quad
+y'(0)=-1$
+
+\begin{solution}
+    $p(n)=2n(n-1)-9n-6=(n-6)(2n+1)$;
+$a_{n+2}=-\frac{(n-6)(2n+1)}{(n+2)(n+1)}a_n$;
+$a_0=y(0)=1$; $a_1=y'(0)=-1$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.13}  Find $a_0$, \dots, $a_N$ for $N$ at least $7$ in the power series solution $y=\sum_{n=0}^\infty a_nx^n$
+of the initial value problem.
+$(1+8x^2)y''+2y=0,\quad y(0)=2,\quad
+y'(0)=-1$
+
+\begin{solution}
+    $p(n)=8n(n-1)+2=2(2n-1)^2$;
+$a_{n+2}=-\frac{2(2n-1)^2}{(n+2)(n+1)}a_n$;
+$a_0=y(0)=2$; $a_1=y'(0)=-1$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.14}   
+Do the next experiment for various choices of real numbers  $a_0$, $a_1$, and $r$, with $0<r<1/\sqrt2$.
+\begin{enumerate}
+\item % (a)
+Use differential equations software  to solve the initial
+value problem
+$$
+(1-2x^2)y''-xy'+3y=0,\quad y(0)=a_0,\quad y'(0)=a_1,
+\text{(A)}
+$$
+numerically on $(-r,r)$.
+\item % (b)
+For $N=2$, $3$, $4$, \dots, compute $a_2$, \dots, $a_N$ in the power series
+solution
+$y=\sum_{n=0}^\infty a_nx^n$ of (A), and graph
+$$
+T_N(x)=\sum_{n=0}^N a_nx^n
+$$
+and the particular solution on $(-r,r)$.
+Continue increasing $N$ until there is no perceptible
+difference between the two graphs.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.15}    
+\begin{enumerate}
+\item % (a)
+Use differential equations software  to solve the initial value problem
+$$
+(1+x^2)y''+10xy'+14y=0,\quad y(0)=5,\quad y'(0)=1,
+\text{(A)}
+$$
+numerically on $(-r,r)$ for several values of $r$ in $(0,1)$.
+\item % (b)
+For $N=2$, $3$, $4$, \dots, compute $a_2$, \dots, $a_N$ in the power series
+solution
+$y=\sum_{n=0}^\infty a_nx^n$ of (A), and
+graph
+$$
+T_N(x)=\sum_{n=0}^N a_nx^n
+$$
+and the particular solution you obtained above on $(-r,r)$ for several values of $r$ in $(0,1)$.
+Continue increasing $N$ until there is no perceptible
+difference between the two graphs. What happens to the required $N$
+as $r\to1$?
+\item % (c)
+Try each of the previous experiments with $r=1.2$. Explain your results.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.16}
+Find the power series in $x-x_0$
+for the general solution.
+
+$y''-y=0;\quad   x_0=3$
+
+\begin{solution}
+    $p(n)=-1$;
+$a_{n+2}=\frac{1}{(n+2)(n+1)}a_n$;
+$a_{2m+2}=\frac{1}{(2m+2)(2m+1)}a_{2m}$, so
+$a_{2m}=\frac{1}{(2m)!}a_0$;
+$a_{2m+3}=\frac{1}{(2m+3)(2m+1)}a_{2m+1}$,
+so $a_{2m+1}=\frac{1}{(2m+1)!}a_1$;
+$y=a_0\sum_{m=0}^\infty\frac{(x-3)^{2m}}{(2m)!}+a_1\sum_{m=0}^\infty
+\frac{(x-3)^{2m+1}}{(2m+1)!}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.17}
+Find the power series in $x-x_0$
+for the general solution.
+
+$y''-(x-3)y'-y=0;\quad   x_0=3$
+
+\end{problem}
+
+\begin{problem}\label{exer:7.2.18} Find the power series in $x-x_0$
+for the general solution.
+
+$(1-4x+2x^2)y''+10(x-1)y'+6y=0;\quad  x_0=1$
+
+\begin{solution}
+    Let $t=x-1$;  then $(1-2t^2)y''-10ty'-6y=0$;
+$p(n)=-2n(n-1)-10n-6=-2(n+1)(n+3)$;
+$a_{n+2}=\frac{2(n+3)}{ n+2}a_n$;
+$a_{2m+2}=\frac{2m+3}{ m+1}a_{2m}$, so
+$a_{2m}=\frac{1}{ m!}\left[\prod_{j=0}^{m-1}(2j+3)\right]a_0$;
+$a_{2m+3}=\frac{4(m+2)}{ 2m+3}a_{2m+1}$,
+so $a_{2m+1}=\frac{4^m(m+1)!}{\prod_{j=0}^{m-1}(2j+3)}a_1$;
+$y=a_0\sum_{m=0}^\infty \left[\prod_{j=0}^{m-1}(2j+3)\right]\frac{
+(x-1)^{2m}}{ m!}\\+a_1\sum_{m=0}^\infty
+\frac{4^m(m+1)!}{\prod_{j=0}^{m-1}(2j+3)}(x-1)^{2m+1}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.19}
+Find the power series in $x-x_0$
+for the general solution.
+
+$(11-8x+2x^2)y''-16(x-2)y'+36y=0;\quad  x_0=2$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.20} 
+Find the power series in $x-x_0$
+for the general solution.
+
+$(5+6x+3x^2)y''+9(x+1)y'+3y=0;\quad  x_0=-1$
+
+\begin{solution}
+    Let $t=x+1$;  then
+$\left(1+\frac{3t^2}{3}\right)y''-\frac{9t}{2}y'+\frac{3}{2}y=0$;
+$p(n)=\frac{3}{2}n(n-1)+\frac{9}{2}n+\frac{3}{2}=\frac{3}{2}(n+1)^2$;
+$a_{n+2}=-\frac{3(n+1)}{2(n+2)}a_n$;
+$a_{2m+2}=-\frac{3(2m+1)}{4(m+1)}a_{2m}$, so
+$a_{2m}=(-1)^m\left[\prod_{j=0}^{m-1}(2j+1)\right]\frac{3^m}{4^mm!}a_0$;
+$a_{2m+3}=-\frac{3(m+1)}{2m+3}a_{2m+1}$,
+so $a_{2m+1}=(-1)^m\frac{3^mm!}{\prod_{j=0}^{m-1}(2j+3)}a_1$;\\
+$y=a_0\sum_{m=0}^\infty(-1)^m\left[\prod_{j=0}^{m-1}(2j+1)\right]
+\frac{3^m}{4^mm!}(x+1)^{2m}+a_1\sum_{m=0}^\infty(-1)^m\frac{3^mm!}{
+\prod_{j=0}^{m-1}(2j+3)}(x+1)^{2m+1}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.21}  Find $a_0$, \dots, $a_N$ for $N$ at least $7$ in the power series
+$y=\sum_{n=0}^\infty a_n(x-x_0)^n$
+ for the  solution of the initial value problem.  Take $x_0$ to be the
+point where the initial conditions are imposed.
+
+$(x^2-4)y''-xy'-3y=0,\quad y(0)=-1,\quad
+y'(0)=2$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.22}  Find $a_0$, \dots, $a_N$ for $N$ at least $7$ in the power series
+$y=\sum_{n=0}^\infty a_n(x-x_0)^n$
+ for the  solution of the initial value problem.  Take $x_0$ to be the
+point where the initial conditions are imposed.
+
+$y''+(x-3)y'+3y=0,\quad y(3)=-2,\quad
+y'(3)=3$
+
+\begin{solution}
+    $p(n)=n+3$;
+$a_{n+2}=-\frac{n+3}{(n+2)(n+1)}a_n$;
+$a_0=y(3)=-2$; $a_1=y'(3)=3$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.23}  Find $a_0$, \dots, $a_N$ for $N$ at least $7$ in the power series
+$y=\sum_{n=0}^\infty a_n(x-x_0)^n$
+ for the  solution of the initial value problem.  Take $x_0$ to be the
+point where the initial conditions are imposed.
+
+$(5-6x+3x^2)y''+(x-1)y'+12y=0,\quad
+y(1)=-1,\quad y'(1)=1$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.24}  Find $a_0$, \dots, $a_N$ for $N$ at least $7$ in the power series
+$y=\sum_{n=0}^\infty a_n(x-x_0)^n$
+ for the  solution of the initial value problem.  Take $x_0$ to be the
+point where the initial conditions are imposed.
+
+$(4x^2-24x+37)y''+y=0,\quad y(3)=4,\quad
+y'(3)=-6$
+
+\begin{solution}
+    Let $t=x-3$; $(1+4t^2)y''+y=0$;
+$p(n)=(4n(n-1)+1=2n-1)^2$;
+$a_{n+2}=-\frac{(2n-1)^2}{(n+2)(n+1)}a_n$;
+$a_0=y(3)=4$; $a_1=y'(3)=-6$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.25}  Find $a_0$, \dots, $a_N$ for $N$ at least $7$ in the power series
+$y=\sum_{n=0}^\infty a_n(x-x_0)^n$
+ for the  solution of the initial value problem.  Take $x_0$ to be the
+point where the initial conditions are imposed.
+
+$(x^2-8x+14)y''-8(x-4)y'+20y=0,\quad
+y(4)=3,\quad y'(4)=-4$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.26}  Find $a_0$, \dots, $a_N$ for $N$ at least $7$ in the power series
+$y=\sum_{n=0}^\infty a_n(x-x_0)^n$
+ for the  solution of the initial value problem.  Take $x_0$ to be the
+point where the initial conditions are imposed.
+$(2x^2+4x+5)y''-20(x+1)y'+60y=0,\quad y(-1)=3,\quad y'(-1)=-3$
+
+\begin{solution}
+    Let $t=x+1$;
+$\left(1+\frac{2t^2}{3}\right)y''-\frac{20}{3}ty'+20y=0$;
+$p(n)=\frac{2}{3}n(n-1)-\frac{20}{3}n+20=\frac{2(n-6)(n-5)}{3}$;
+$a_{n+2}=-\frac{2(n-6)(n-5)}{3(n+2)(n+1)}a_n$;
+$a_0=y(-1)=3$; $a_1=y'(-1)=-3$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.27}
+\begin{enumerate}
+\item % (a)
+Find a power series in $x$ for the general solution of
+$$
+(1+x^2)y''+4xy'+2y=0.
+\text{(A)}
+$$
+\item % (b)
+Use the formula
+$$
+\frac{1}{1-r}=1+r+r^2+\cdots+r^n+\cdots \quad(-1<r<1)
+$$
+for the sum of a geometric series to find a closed form expression for
+the general solution of (A) on $(-1,1)$.
+\item % (c)
+Show that the closed form expression is actually the general
+solution of of (A) on $(-\infty,\infty)$.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.28}
+Use Theorem~\ref{thmtype:7.2.2} to show that the power series in
+$x$ for the general solution of
+$$
+(1+\alpha x^2)y''+\beta xy'+\gamma y=0
+$$
+is
+$$
+y=a_0\sum^\infty_{m=0}(-1)^m \left[\prod^{m-1}_{j=0}
+p(2j)\right] \frac{x^{2m}}{(2m)!} +
+a_1\sum^\infty_{m=0}(-1)^m
+\left[\prod^{m-1}_{j=0}p(2j+1)\right]
+\frac{x^{2m+1}}{(2m+1)!}.
+$$
+
+\begin{solution}
+    From Theorem~\ref{thmtype:7.2.2},
+$a_{n+2}=-\frac{p(n) }{(n+2)(n+1)}a_n$;
+$a_{2m+2}=-\frac{p(2m)}{(2m+2)(2m+1)}a_{2m}$, so $a_{2m}=
+\left[\prod^{m-1}_{j=0}p(2j)\right] \frac{(-1)^m}{(2m)!}a_0$;
+$a_{2m+3}=-\frac{p(2m+1)}{(2m+3)(2m+2)}a_{2m}$, so $a_{2m+1}=
+\left[\prod^{m-1}_{j=0}p(2j+1)\right]\frac{(-1)^m}{(2m+1)!}a_1$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.29}
+Use Exercise~\ref{exer:7.2.28}  to
+ show that  all  solutions of
+$$
+(1+\alpha x^2)y''+\beta xy'+\gamma y=0
+$$
+ are polynomials if and only if
+$$
+\alpha n(n-1)+\beta n+\gamma=\alpha(n-2r)(n-2s-1),
+$$
+where $r$ and $s$ are nonnegative integers.
+\end{problem}
+
+\begin{problem}\label{exer:7.2.30}
+\begin{enumerate}
+\item % (a)
+Use Exercise~\ref{exer:7.2.28}  to show that the power series in $x$
+for the general solution of
+$$
+(1-x^2)y''-2bxy'+\alpha(\alpha+2b-1)y=0
+$$
+is $y=a_0y_1+a_1y_2$, where
+\begin{eqnarray*}
+y_1&=&\sum_{m=0}^\infty \left[\prod_{j=0}^{m-1}(2j-\alpha)(2j+\alpha+2b-1)
+\right]\frac{x^{2m}}{(2m)!}\\
+\mbox{and}\\
+y_2&=&\sum_{m=0}^\infty \left[\prod_{j=0}^{m-1}(2j+1-\alpha)(2j+\alpha+2b)
+\right]\frac{x^{2m+1}}{(2m+1)!}.
+\end{eqnarray*}
+
+\begin{solution}
+    Here
+$p(n)=-[n(n-1)+2bn-\alpha(\alpha+2b-1)]=-(n-\alpha)(n+\alpha+2b-1)$,
+so Exercise~\ref{exer:7.2.28} implies that $y_1$ and $y_2$ have the stated
+forms. If $\alpha=2k$, then
+$$
+y_1=\sum_{m=0}^\infty \left[\prod_{j=0}^{m-1}(2j-2k)(2j+2k+2b-1)
+\right]\frac{x^{2m}}{(2m)!}\quad
+\text{(C)}
+$$
+If $\alpha=2k+1$, then
+$$
+y_2=\sum_{m=0}^\infty \left[\prod_{j=0}^{m-1}(2j-2k)(2j+2k+2b)
+\right]\frac{x^{2m+1}}{(2m+1)!}\quad
+\text{(D)}
+$$
+Since $2b$ is not a negative integer and $\prod_{j=0}^{m-1}(2j-2k)=0$
+if $m>k$, $y_1$ in (C) and $y_2$ in (D) have the stated properties.
+This implies the conclusions regarding $P_n$.
+\end{solution}
+
+\item % (b)
+Suppose $2b$ is not a negative odd integer and $k$ is a
+nonnegative integer. Show that $y_1$ is a polynomial of degree $2k$
+such that $y_1(-x)=y_1(x)$ if $\alpha=2k$, while $y_2$ is a polynomial
+of degree $2k+1$ such that $y_2(-x)=-y_2(-x)$ if $\alpha=2k+1$.
+Conclude that if $n$ is a nonnegative integer, then there is a
+polynomial $P_n$ of degree $n$ such that $P_n(-x)=(-1)^nP_n(x)$ and
+$$
+(1-x^2)P_n''-2bxP_n'+n(n+2b-1)P_n=0\quad
+\text{(A)}
+$$
+
+\begin{solution}
+    Multiplying (A) through by $(1-x^2)^{b-1}$ yields
+$$
+[(1-x^2)^b P_n']'=-n(n+2b-1)(1-x^2)^{b-1}P_n \quad
+\text{(E)}
+$$
+\end{solution}
+
+\item % (c)
+Show that the first part above implies that
+$$
+[(1-x^2)^b P_n']'=-n(n+2b-1)(1-x^2)^{b-1}P_n,
+$$
+and use this to show that if $m$ and $n$ are nonnegative integers, then
+$$
+\begin{array}{ll}
+[(1-x^2)^bP_n']'P_m-[(1-x^2)^bP_m']'P_n=&\\
+\left[m(m+2b-1)-n(n+2b-1)\right](1-x^2)^{b-1}P_mP_n.&
+\end{array}
+\text{(B)}
+$$
+
+\begin{solution}
+   $$
+[(1-x^2)^b P_m']'=-m(m+2b-1)(1-x^2)^{b-1}P_m \quad
+\text{(F)}
+$$
+Subtract  $P_n$ times (F) from $P_m$ times (E) to obtain (B).
+\end{solution}
+
+\item % (d)
+Now suppose $b>0$.
+Use (B) and integration by parts to show that
+if $m\ne n$, then
+$$
+\int_{-1}^1 (1-x^2)^{b-1}P_m(x)P_n(x)\,dx=0.
+$$
+(We say  that $P_m$ and $P_n$ are \emph{orthogonal on}
+$(-1,1)$ \emph{with respect to the weighting
+function} $(1-x^2)^{b-1}$.)
+
+\begin{solution}
+    Integrating the left side of (B) by parts over $[-1,1]$
+yields zero, which implies the conclusion.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.31}
+\begin{enumerate}
+\item % (a)
+Use Exercise~\ref{exer:7.2.28}  to show that the power series in $x$
+for the general solution
+ of Hermite's equation
+$$
+y''-2xy'+2\alpha y=0
+$$
+is $y=a_0y_1+a_1y_1$, where
+\begin{eqnarray*}
+y_1&=&\sum_{m=0}^\infty \left[\prod_{j=0}^{m-1}(2j-\alpha)
+\right]\frac{2^mx^{2m}}{(2m)!}\\
+\mbox{and}\\
+y_2&=&\sum_{m=0}^\infty \left[\prod_{j=0}^{m-1}(2j+1-\alpha)
+\right]\frac{2^mx^{2m+1}}{(2m+1)!}.
+\end{eqnarray*}
+\item % (b)
+Suppose $k$ is a nonnegative integer. Show that $y_1$ is a
+polynomial of degree $2k$ such that $y_1(-x)=y_1(x)$ if $\alpha=2k$,
+while $y_2$ is a polynomial of degree $2k+1$ such that
+$y_2(-x)=-y_2(-x)$ if $\alpha=2k+1$. Conclude that if $n$ is a
+nonnegative integer then there is a polynomial $P_n$ of degree $n$
+such that $P_n(-x)=(-1)^nP_n(x)$ and
+$$
+P_n''-2xP_n'+2nP_n=0.
+\text{(A)}
+$$
+\item % (c)
+Show that (A) implies that
+$$
+[e^{-x^2}P_n']'=-2ne^{-x^2}P_n,
+$$
+and use this to show that if $m$ and $n$ are nonnegative integers, then
+$$
+[e^{-x^2}P_n']'P_m-[e^{-x^2}P_m']'P_n=
+2(m-n)e^{-x^2}P_mP_n.
+\text{(B)}
+$$
+\item % (d)
+Use (B) and integration by parts to show that
+if $m\ne n$, then
+$$
+\int_{-\infty}^\infty e^{-x^2}P_m(x)P_n(x)\,dx=0.
+$$
+(We say  that $P_m$ and $P_n$ are \emph{orthogonal on}
+$(-\infty,\infty)$ \emph{ with respect to the weighting function}
+$e^{-x^2}$.)
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.32}
+Consider the equation
+$$
+\left(1+\alpha x^3\right)y''+\beta x^2y'+\gamma xy=0,
+\text{(A)}
+$$
+and let
+$p(n)=\alpha n(n-1)+\beta n+\gamma$.
+(The special case $y''-xy=0$ of (A) is
+ Airy's equation.)
+
+\begin{enumerate}
+\item % (a)
+ Modify the argument used to prove Theorem~\ref{thmtype:7.2.2}
+to show that
+$$
+y=\sum_{n=0}^\infty a_nx^n
+$$
+  is a solution of
+(A) if and only if  $a_2=0$  and
+$$
+a_{n+3}=-\frac{p(n)}{(n+3)(n+2)}a_n,\quad n\geq 0.
+$$
+
+\begin{solution}
+    Let $Ly=(1+\alpha x^3)y''+\beta x^2y'+\gamma xy$. If
+$y=\sum_{n=0}^\infty a_nx^n$, then
+$Ly=\sum_{n=2}^\infty n(n-1)a_nx^{n-2}+\sum_{n=0}^\infty
+p(n)a_nx^{n+1}=
+2a_2+\sum_{n=0}^\infty [(n+3)(n+2)a_{n+3}+p(n)a_n]x^{n+1}
+= 0$ if and only if $a_2=0$ and $a_{n+3}=-\frac{p(n)}{(n+3)(n+2)}a_n$ for $n\geq 0$.
+\end{solution}
+
+\item % (b)
+Show from (a)  that $a_n=0$  unless $n=3m$  or $n=3m+1$
+for some nonnegative integer $m$, and that
+\begin{eqnarray*}
+a_{3m+3}&=&-\frac{p(3m)}{(3m+3)(3m+2)}a_{3m},\quad m\geq 
+0,\\
+\mbox{and}\\
+a_{3m+4}&=&-\frac{p(3m+1)}{(3m+4)(3m+3)}
+a_{3m+1},\quad m\geq 0,
+\end{eqnarray*}
+where $a_0$ and $a_1$ may be specified arbitrarily.
+\item % (c)
+Conclude that the  power series in $x$ for the general
+solution
+of (A)  is
+$$
+\begin{array}{l}
+y=a_0\sum^\infty_{m=0}(-1)^m \left[\prod^{m-1}_{j=0}
+\frac{p(3j)}{3j+2}\right] \frac{x^{3m}}{3^m m!}\\
+\qquad+a_1\sum^\infty_{m=0}(-1)^m
+\left[\prod^{m-1}_{j=0}\frac{p(3j+1)}{3j+4}\right]
+\frac{x^{3m+1}}{3^mm!}.
+\end{array}
+$$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.33}
+Use the method of
+Exercise~\ref{exer:7.2.32}  to find the power series in
+$x$ for the general solution.
+
+$y''-xy=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.34}
+Use the method of
+Exercise~\ref{exer:7.2.32}  to find the power series in
+$x$ for the general solution.
+
+$(1-2x^3)y''-10x^2y'-8xy=0$
+
+\begin{solution}
+    $p(r)=-2r(r-1)-10r-8=-2(r+2)^2$;
+(A) $\prod_{j=0}^{m-1}\frac{p(3j)}{3j+2}=
+\prod_{j=0}^{m-1}\frac{(-2)(3j+2)^2}{3j+2}
+=(-1)^m2^m\prod_{j=0}^{m-1}(3j+2)$;
+(B) $\prod_{j=0}^{m-1}\frac{p(3j+1)}{3j+4}=
+\prod_{j=0}^{m-1}\frac{(-2)(3j+3)^2}{3j+4}
+=\frac{(-1)^m2^m(m!)^2}{\prod_{j=0}^{m-1}(3j+4)}$.
+Substituting (A) and (B) into the
+result of Exercise~\ref{exer:7.2.32} (c) yields
+
+$y=a_0\sum_{m=0}^\infty
+\left(\frac{2}{3}\right)^m\left[\prod_{j=0}^{m-1}(3j+2)\right]\frac{x^{3m}}{ m!}
++a_1\sum_{m=0}^\infty\frac{6^mm!}{\prod_{j=0}^{m-1}(3j+4)}x^{3m+1}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.35}
+Use the method of
+Exercise~\ref{exer:7.2.32}  to find the power series in
+$x$ for the general solution.
+
+$(1+x^3)y''+7x^2y'+9xy=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.36}
+Use the method of
+Exercise~\ref{exer:7.2.32}  to find the power series in
+$x$ for the general solution.
+
+$(1-2x^3)y''+6x^2y'+24xy=0$
+
+\begin{solution}
+    $p(r)=-2r(r-1)+6r+24=-2(r-6)(r+2)$;
+(A) $\prod_{j=0}^{m-1}\frac{p(3j)}{3j+2}=\prod_{j=0}^{m-1}
+(-6)(j-2)$.
+
+
+(B) $\prod_{j=0}^{m-1}\frac{p(3j+1)}{3j+4}=
+\prod_{j=0}^{m-1}\frac{(-6)(j+1)(3j-5)}{3j+4}=
+(-1)^m6^mm\prod_{j=0}^{m-1}\frac{3j-5}{3j+4}$.
+Substituting (A) and (B) into the
+result of Exercise~\ref{exer:7.2.32} (c) yields
+
+$y=a_0(1-4x^3+4x^6)+a_1\sum_{m=0}^\infty
+2^m\left[\prod_{j=0}^{m-1}\frac{3j-5}{3j+4}\right]x^{3m+1}$.
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:7.2.37}
+ Use the method of
+Exercise~\ref{exer:7.2.32}  to find the power series in
+$x$ for the general solution.
+
+$(1-x^3)y''+15x^2y'-63xy=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.38}
+Consider the equation
+$$
+\left(1+\alpha x^{k+2}\right)y''+\beta x^{k+1}y'+\gamma x^ky=0,
+\text{(A)}
+$$
+where $k$ is a positive integer,
+and let
+$p(n)=\alpha n(n-1)+\beta n+\gamma$.
+\begin{enumerate}
+\item % (a)
+Modify the argument used to prove Theorem~\ref{thmtype:7.2.2} to show that
+$$
+y=\sum_{n=0}^\infty a_nx^n
+$$
+  is a solution of
+(A)  if and only if  $a_n=0$ for $2\leq n\leq k+1$ and
+$$
+a_{n+k+2}=-\frac{p(n)}{(n+k+2)(n+k+1)}a_n,\quad n\geq 0.
+$$
+
+\begin{solution}
+    Let $Ly=(1+\alpha x^{k+2})y''+\beta x^{k+1}y'+\gamma x^ky$. If
+$y=\sum_{n=0}^\infty a_nx^n$, then
+$Ly=\sum_{n=2}^\infty n(n-1)a_nx^{n-2}+\sum_{n=0}^\infty
+p(n)a_nx^{n+k}=
+\sum_{n=-k}^{-1}(n+k+2)(n+k-1)a_{n+k+2}x^{n+k}+\sum_{n=0}^\infty
+[(n+k+2)(n+k+1)a_{n+k+2}+p(n)a_n]x^{n+k}
+= 0$ if and only if $a_k=0$ for $2\leq n\leq k+1$ and (A) $a_{n+k+1}=-\frac{p(n)}{(n+k+2)(n+k+1)}a_n$ for $n\geq 0$.
+\end{solution}
+
+\item % (b)
+Show that it follows that $a_n=0$  unless $n=(k+2)m$  or $n=(k+2)m+1$
+for some nonnegative integer $m$, and that
+\begin{eqnarray*}
+a_{(k+2)(m+1)}&=&-\frac{p\left((k+2)m\right)}{(k+2)(m+1)[(k+2)(m+1)-1]}a_{(k+2)m},\quad m\geq
+0, \\
+\mbox{and}\\
+a_{(k+2)(m+1)+1}&=&-\frac{p\left((k+2)m+1\right)}{[(k+2)(m+1)+1](k+2)(m+1)}
+a_{(k+2)m+1},\quad m\geq 0,
+\end{eqnarray*}
+where $a_0$ and $a_1$ may be specified arbitrarily.
+
+\begin{solution}
+    If $a_n=0$ the $a_{n+(k+2)m}=0$ for all $m\geq 0$, from
+(A).
+
+\end{solution}
+
+\item % (c)
+Conclude that the  power series in $x$ for the general solution
+of (A) is
+$$
+\begin{array}{l}
+y=a_0\sum^\infty_{m=0}(-1)^m \left[\prod^{m-1}_{j=0}
+\frac{p\left((k+2)j\right)}{(k+2)(j+1)-1}\right] \frac{x^{(k+2)m}}{(k+2)^m
+m!}\\ 
+\qquad+a_1\sum^\infty_{m=0}(-1)^m
+\left[\prod^{m-1}_{j=0}\frac{p\left((k+2)j+1\right)}{(k+2)(j+1)+1}\right]
+\frac{x^{(k+2)m+1}}{(k+2)^mm!}.
+\end{array}
+$$
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.39}
+Use the method of
+Exercise~\ref{exer:7.2.38}  to find the power series in $x$
+ for the general solution.
+ 
+$(1+2x^5)y''+14x^4y'+10x^3y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.40} Use the method of
+Exercise~\ref{exer:7.2.38}  to find the power series in $x$
+ for the general solution.
+ 
+ $y''+x^2y=0$
+
+ \begin{solution}
+     $k=2$ and
+$p(r)=1$;
+(A) $\prod_{j=0}^{m-1}\frac{p(4j)}{4j+3}=
+\frac{1}{\prod_{j=0}^{m-1}(4j+3)}$;
+(B) $\prod_{j=0}^{m-1}\frac{p(4j+1)}{(4j+5)}=
+\frac{1}{\prod_{j=0}^{m-1}4j+5}$.
+Substituting (A) and (B) into the
+result of Exercise~\ref{exer:7.2.38} (c) yields
+
+$y=a_0\sum_{m=0}^\infty
+(-1)^m\frac{x^{4m}}{4^mm!\prod_{j=0}^{m-1}(4j+3)}+a_1\sum_{m=0}^\infty
+(-1)^m\frac{x^{4m+1}}{4^mm!\prod_{j=0}^{m-1}(4j+5)}$.
+ \end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.41}  
+Use the method of
+Exercise~\ref{exer:7.2.38}  to find the power series in $x$
+ for the general solution.
+ 
+$y''+x^6y'+7x^5y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.42}
+Use the method of
+Exercise~\ref{exer:7.2.38}  to find the power series in $x$
+ for the general solution.
+ 
+ $(1+x^8)y''-16x^7y'+72x^6y=0$
+
+ \begin{solution}
+     $k=6$ and
+$p(r)=r(r-1)-16r+72=(r-9)(r-8) $;
+(A) $\prod_{j=0}^{m-1}\frac{p(8j)}{8j+7}=
+\prod_{j=0}^{m-1}\frac{8(j-1)(8j-9)}{8j+7}$;
+
+
+(B) $\prod_{j=0}^{m-1}\frac{p(8j+1)}{(8j+9)}=
+\prod_{j=0}^{m-1}\frac{8(j-1)(8j-7)}{8j+9}$;
+
+Substituting (A) and (B) into the
+result of Exercise~\ref{exer:7.2.38} (c) yields
+
+
+$y=a_0\left(1-\frac{9}{7}x^8\right)+a_1\left(x-\frac{7}{9}x^9\right)$.
+
+ \end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:7.2.43} 
+Use the method of
+Exercise~\ref{exer:7.2.38}  to find the power series in $x$
+ for the general solution.
+ 
+$(1-x^6)y''-12x^5y'-30x^4y=0$
+\end{problem}
+
+\begin{problem}\label{exer:7.2.44} 
+Use the method of
+Exercise~\ref{exer:7.2.38}  to find the power series in $x$
+ for the general solution.
+ 
+ $y''+x^5y'+6x^4y=0$
+
+ \begin{solution}
+     $p(r)=r+6$;
+(A) $\prod_{j=0}^{m-1}\frac{p(6j)}{6j+5}=
+\prod_{j=0}^{m-1}\frac{6(j+1)}{6j+5}=\frac{6^mm!}{\prod_{j=0}^{m-1}
+(6j+5)}$;
+
+
+(B) $\prod_{j=0}^{m-1}\frac{p(6j+1)}{(6j+7)}=1$;
+
+Substituting (A) and (B) into the
+result of Exercise~\ref{exer:7.2.38} (c) yields
+
+
+$y=a_0\sum_{m=0}^\infty(-1)^m\frac{x^{6m}}{\prod_{j=0}^{m-1}(6j+5)}+
+a_1\sum_{m=0}^\infty(-1)^m\frac{x^{6m+1}}{6^mm!}$.
+ \end{solution}
+\end{problem}
+
+
+\end{document}

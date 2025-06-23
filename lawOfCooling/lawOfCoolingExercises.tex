@@ -1,0 +1,226 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+\begin{problem}\label{exer:4.2.1}
+A thermometer is moved from a room where the temperature is
+$70^\circ$F to a freezer where the temperature is $12^\circ
+F$.  After 30 seconds the thermometer reads
+$40^\circ$F.  What does it read after 2 minutes?
+\end{problem}
+
+\begin{problem}\label{exer:4.2.2}
+A fluid initially at $100^\circ$C is placed outside on a
+day when the temperature is $-10^\circ$C, and the
+temperature of the fluid drops $20^\circ$C in one minute.
+Find the temperature $T(t)$ of the fluid for $t > 0$.
+
+\begin{solution}
+Since $T_0=100$ and $T_M=-10$, $T=-10+110e^{-kt}$. Now
+$T(1)=80\Rightarrow 80=-10+110e^{-k}$, so $e^{-k}=\frac{9}{11}$
+and $k=\ln\frac{11}{9}$. Therefore, $T=-10+110e^{-t\ln\frac{11}{9}}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.2.3}
+At 12:00 {\sc pm} a thermometer reading $10^\circ$F is placed in
+a room where the temperature is $70^\circ$F.  It reads
+$56^\circ$ when it's placed outside, where the temperature
+is $5^\circ$F, at 12:03.  What does it read at 12:05 {\sc pm}?
+\end{problem}
+
+\begin{problem}\label{exer:4.2.4}
+A thermometer initially reading $212^\circ$F is placed in a
+room where the temperature is $70^\circ$F.  After 2
+minutes the thermometer reads $125^\circ$F.
+
+\begin{enumerate}
+\item %(a)
+What does the thermometer read after 4 minutes?
+
+\begin{solution}
+Let $T$ be the thermometer reading.
+Since $T_0=212$ and $T_M=70$, $T=70+142e^{-kt}$. Now
+$T(2)=125\Rightarrow 125=70+142e^{-2k}$, so
+$e^{-2k}=\frac{55}{142}$
+and $k=\frac{1}{2}\ln\frac{142}{55}$. Therefore,
+(A) $T=70+142e^{-\frac{t}{2}\ln\frac{142}{55}}$.
+
+$T(2)=70+142e^{-2\ln\frac{142}{55}}=70+142\left(\frac{55}{142}\right)^2
+\approx91.30^\circ$F.
+\end{solution}
+
+\item %(b)
+When will the thermometer read $72^\circ$F?
+
+\begin{solution}
+Let $\tau$ be the time when
+ $T(\tau)=72$, so $72=70+142e^{-\frac{\tau}{2}\ln\frac{142}{55}}$, or
+$e^{-\frac{\tau}{2}\ln\frac{142}{55}}=\frac{1}{71}$. Therefore,
+$\tau=2\frac{\ln71}{\ln\frac{142}{55}}\approx8.99$ min.
+\end{solution}
+
+\item %(c)
+When will the thermometer read $69^\circ$F?
+
+\begin{solution}
+Since (A) implies that $T>70$ for all $t>0$, the
+thermometer will never read $69^\circ$F.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.2.5}
+An object with initial temperature $150^\circ$C is placed
+outside, where the temperature is $35^\circ$C.  Its
+temperatures at 12:15 and 12:20 are $120^\circ$C and
+$90^\circ$C, respectively.
+
+\begin{enumerate}
+\item %(a)
+At what time was the object placed outside?
+
+\item %(b)
+When will its temperature be $40^\circ$C?
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.2.6}
+An object is placed in a room where the temperature is
+$20^\circ$C.  The temperature of the object drops by
+$5^\circ$C in 4 minutes and by $7^\circ$C in 8 minutes.
+What was the temperature of the object when it was initially
+placed in the room?
+
+\begin{solution}
+Since $T_M=20$, $T=20+(T_0-20)e^{-kt}$. Now
+$T_0-5=20+(T_0-20)e^{-4k}$  and $T_0-7=20+(T_0-20)e^{-8k}$. Therefore,
+$\frac{T_0-25}{T_0-20}=e^{-4k}$ and $\left(\frac{T_0-27}{T_0-20}\right)=e^{-8k}$, so  $\frac{T_0-27}{T_0-20}=\left(\frac{T_0-25}{T_0-20}\right)^2$,
+which implies that $(T_0-20)(T_0-27)=(T_0-25)^2$, or
+$T_0^2-47T_0+540=T_0^2-50T_0+625$; hence $3T_0=85$
+and  $T_0={(85/3)^\circ C}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:4.2.7}
+A cup of boiling water is placed outside at 1:00 {\sc pm}.  One
+minute later the temperature of the water is $152^\circ$F.
+After another minute its temperature is $112^\circ$F.  What
+is the outside temperature?
+\end{problem}
+
+
+
+\begin{problem}\label{exer:4.2.16}
+Suppose an object  with initial temperature $T_0$
+is placed in a sealed container, which is in turn placed in a medium with
+temperature $T_m$. Let the initial
+temperature of the container be $S_0$. Assume that the temperature of the
+object does not affect the temperature of the container, which in turn does
+not affect the temperature of the medium. (These assumptions  are
+reasonable, for example, if the object is a cup of coffee, the container is
+a house, and the medium is the atmosphere.)
+
+\begin{enumerate}
+\item % (a)
+Assuming that the container and the medium have distinct temperature
+decay constants $k$ and $k_m$ respectively, use Newton's law of
+cooling to find the temperatures $S(t)$ and $T(t)$ of the container
+and object at time $t$.
+
+\begin{solution}
+$S'=-k_m(S-T_m),\ S(0)=0$, so (A)
+$S=T_m+(S_0-T_m)e^{-k_mt}$.
+$T'=-k(T-S)=-k\left(T-T_m-(S_0-T_m)e^{-k_mt}\right)$,
+from
+(A). Therefore,$T'+kT=kT_m+k(S_0-T_m)e^{-k_mt}$; $T=ue^{-kt}$;
+(B) $u'=kT_me^{kt}+k(S_0-T_m)e^{(k-k_m)t}$;
+ $u=T_me^{kt}+\frac{k}{k-k_m}(S_0-T_m)e^{(k-k_m)t}+c$;
+ $T(0)=T_0\Rightarrow
+ c=T_0-T_m-\frac{k}{k-k_m}(S_0-T_m)$;
+ $u=T_me^{kt}+\frac{k}{k-k_m}(S_0-T_m)e^{(k-k_m)t}+T_0-T_m-\frac{k}{k-k_m}(S_0-T_m)$;
+$T=T_m+(T_0-T_m)e^{-kt}+\frac{k(S_0-T_m)}{(k-k_m)}\left(e^{-k_mt}-e^{-kt}\right)$.
+\end{solution}
+
+\item % (b)
+Assuming that the container and the medium have the same temperature
+decay constant $k$, use Newton's law of cooling to find the
+temperatures $S(t)$ and $T(t)$ of the container and object at time
+$t$.
+
+\begin{solution}
+If $k=k_m$ (B) becomes
+(B) $u'=kT_me^{kt}+k(S_0-T_m)$; $u=T_me^{kt}+k(S_0-T_m)t+c$;
+$T(0)=T_0\Rightarrow c=T_0-T_m$;
+$u=T_me^{kt}+k(S_0-T_m)t+(T_0-T_m)$;
+$T=T_m+k(S_0-T_m)te^{-kt}+(T_0-T_m)e^{-kt}$.
+\end{solution}
+
+\item % (c)
+Find $\lim._{t\to\infty}S(t)$  and $\lim_{t\to\infty}T(t)$ .
+
+\begin{solution}
+$\lim_{t\to\infty}T(t)=\lim_{t\to\infty}S(t)=T_m$
+in either case.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:4.2.17}  %\exercisemolten
+In  our previous examples and exercises concerning Newton's law of cooling
+we assumed that
+the temperature of the medium remains constant.  This model is adequate
+if the heat lost or gained by the object is
+insignificant compared to the heat required to cause an appreciable change
+in the temperature of the medium. If this isn't  so,  we
+must use a model that accounts for the heat exchanged between the object
+and the medium. Let $T=T(t)$ and $T_m=T_m(t)$  be the temperatures of the
+object and the medium, respectively, and let $T_0$  and $T_{m0}$ be
+their
+initial values.  Again, we assume that $T$  and $T_m$ are related by
+Newton's law of cooling,
+$$
+T'=-k(T-T_m).
+\text{(A)}
+$$
+We also assume that the change in heat of the object as its
+temperature changes from $T_0$ to $T$  is $a(T-T_0)$
+and that the change in heat of the medium  as its
+temperature changes from $T_{m0}$ to $T_m$  is $a_m(T_m-T_{m0})$,
+where $a$
+and $a_m$ are positive constants  depending  upon the masses and
+thermal properties of the
+object and medium, respectively.  If we assume that the total heat of
+the system consisting of the object and the medium remains constant
+(that is, energy is conserved), then
+$$
+a(T-T_0)+a_m(T_m-T_{m0})=0.
+\text{(B)}
+$$
+
+\begin{enumerate}
+\item % (a)
+Equation (A) involves  two unknown functions $T$ and $T_m$.
+ Use (A) and (B) to derive a
+differential equation involving only $T$.
+\item % (b)
+Find $T(t)$ and $T_m(t)$ for $t>0$.
+\item % (c)
+Find $\lim_{t\to\infty}T(t)$ and
+ $\lim_{t\to\infty}T_m(t)$.
+\end{enumerate}
+\end{problem}
+
+\end{document}

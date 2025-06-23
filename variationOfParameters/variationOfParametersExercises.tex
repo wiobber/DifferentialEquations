@@ -1,0 +1,713 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+\begin{problem}\label{exer:5.7.1} Use variation of parameters to find a particular solution. $y''+9y=\tan 3x$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.2} Use variation of parameters to find a particular solution. $y''+4y=\sin 2x\sec^2 2x$
+
+\begin{solution}
+    (A) $y_p=u_1\cos2x+u_2\sin2x$;
+\setcounter{equation}{1}
+\begin{eqnarray*}
+\phantom{-2}u_1'\cos
+2x+\phantom{2}u_2'\sin2x&=&0\qquad\text{(B)}\\ %(B)
+-2u_1'\sin2x+2u_2'\cos 2x&=&\sin2x\sec^2x.\qquad \text{(C)} %(C)
+\end{eqnarray*}
+Multiplying (B) by $2\sin2x$ and (C)
+by $\cos2x$ and adding the resulting equations yields $2u_2'=\tan2x$,
+so $u_2'=\frac{\tan2x}{2}$. Then (B) implies that
+$u_1'=-u_2'\tan(2x)=-\frac{\tan^22x}{2}=\frac{1-\sec^22x}{2}$.
+Therefore,$u_1=\frac{x}{2}-\frac{\tan2x}{4}$ and
+$u_2=-\frac{\ln|\cos2x|}{4}$. Now (A) yields $y_p=-\frac{\sin
+2x\ln|\cos 2x|}{4} +\frac{x\cos 2x}{2}-\frac{\sin2x}{4}$. Since
+$\sin2x$ satisfies the complementary equation we redefine
+$y_p=-\frac{\sin 2x\ln|\cos 2x|}{4} +\frac{x\cos 2x}{2}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.3}  Use variation of parameters to find a particular solution. $y''-3y'+2y=\frac{4}{1+e^{-x}}$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.4} Use variation of parameters to find a particular solution. $y''-2y'+2y=3e^x \sec x$
+
+\begin{solution}
+(A) $y_p=u_1e^x\cos x+u_2e^x\sin x$;
+
+\begin{eqnarray*}
+u_1'e^x\cos x+u_2'e^x\sin
+x&=&0\qquad\text{(B)} \\ %(B)
+u_1'(e^x\cos x-e^x\sin x)+u_2'(e^x\sin x+e^x\cos x)&=&3e^x\sec x. \qquad\text{(C)}
+ %(C)
+\end{eqnarray*}
+Subtracting (B)  from (C) and
+cancelling  $e^x$ from the resulting equations yields
+\begin{eqnarray*}
+-u_1'\cos x+u_2'\sin x&=&0\qquad\text{(D)}\\ %(D)
+-u_1'\sin x+u_2'\cos x&=&3\sec x.\qquad\text{(E)} %(E)
+ \end{eqnarray*}
+ Multiplying (D) by $\sin x$ and
+ (E) by $\cos x$
+and adding the results yields $u_2'=3$. From (D),
+$u_1'=-u_2'\tan x=-3\tan x$. Therefore $u_1=3\ln|\cos x|$, $u_2=3x$.
+Now (A) yields $y_p=3e^x(\cos x \ln |\cos x|+x\sin x)$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.5} Use variation of parameters to find a particular solution. $y''-2y'+y=14x^{3/2}e^x$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.6} Use variation of parameters to find a particular solution. $y''-y=\frac{4e^{-x}}{1-e^{-2x}}$
+
+\begin{solution}
+    $y_p=u_1e^x+u_2e^{-x}$;
+\setcounter{equation}{1}
+\begin{eqnarray*}
+u_1'e^x+u_2'e^{-x}&=&0\qquad\text{(B)}\\ %(B)
+u_1'e^x-u_2'e^{-x}&=&\frac{4e^{-x}}{ 1+e^{-2x}}.\qquad\text{(C)} %(C)
+\end{eqnarray*}
+Adding (B) to (C) yields
+$2u_1'e^x=\frac{4e^{-x}}{ 1+e^{-2x}}$, so $u_1'=\frac{2e^{-2x}}{
+1-e^{-2x}}$. From (B),
+$u_2'=-e^{2x}u_1'=-\frac{2}{1-e^{-2x}}=\frac{2e^{2x}}{1-e^{2x}}$.
+Using the substitution $v=e^{-2x}$ we integrate $u_1'$ to obtain
+$u_1=\ln(1-e^{-2x})$. Using the substitution $v=e^{2x}$ we integrate
+$u_2'$ to obtain $u_1=\ln(1-e^{2x})$. Now (A) yields
+$y_p=e^x\ln(1-e^{-2x})-e^{-x}\ln(e^{2x}-1)$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.7}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $x^2y''+xy'- y=2x^2+2;   \quad y_1=x,
+\quad y_2=\frac{1}{x}$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.8}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $xy''+(2-2x)y'+(x-2)y=e^{2x};   \quad y_1=e^x,
+\quad y_2=\frac{e^x}{x}$
+
+\begin{solution}
+(A) $y_p=u_1e^x+u_2\frac{e^x}{x}$;
+
+\begin{eqnarray*}
+u_1'e^x+u_2'\frac{e^x}{x}&=&0\qquad\text{(B)}\\ %(B)
+u_1'e^x+u_2'\left(\frac{e^x}{x}-\frac{e^x}{x^2}\right)&=&\frac{e^{2x}}{x}.\qquad\text{(C)} %(C)
+\end{eqnarray*}
+Subtracting (B) from (C) yields
+$-\frac{u_2'e^x}{x^2}=\frac{e^{2x}}{x}$, so $u_2'=-xe^x$. From
+(B), $u_1'=\frac{u_2'}{x}=e^x$. Therefore
+$u_1=e^x$, $u_2=-xe^x+e^x$. Now (A) yields $y_p=\frac{e^{2x}}{x}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.9}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $4x^2y''+(4x-8x^2)y'+(4x^2-4x-1)y=4x^{1/2}e^x, \quad   x > 0$;
+\newline $y_1=x^{1/2} e^x,\;  y_2=x^{-1/2}e^x$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.10}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $y''+4xy'+(4x^2+2)y=4e^{-x(x+2)};\quad   y_1=e^{-x^2},
+\quad y_2=xe^{-x^2}$
+
+\begin{solution}
+    (A) $y_p=u_1e^{-x^2}+u_2xe^{-x^2}$;
+\setcounter{equation}{1}
+\begin{eqnarray*}
+u_1'e^{-x^2} +u_2'xe^{-x^2}&=&0\qquad\text{(B)}\\ %(B)
+-2xu_1'e^{-x^2}+u_2'(e^{-x^2}-2x^2e^{-x^2})&=
+&4e^{-x(x+2)}.\qquad\text{(C)} %(C)
+\end{eqnarray*}
+Multiplying (B) by $2x$ and adding the result to
+(C) yields $u_2'e^{-x^2}=4e^{-x(x+2)}$, so
+$u_2'=4e^{-2x}$. From (B), $u_1'=-u_2'x=-4xe^{-2x}$.
+Therefore $u_1=(2x+1)e^{-2x}$, $u_2=-2e^{-2x}$. Now (A) yields
+$y_p=e^{-x(x+2)}$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.11}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $x^2y''-4xy'+6y=x^{5/2},\, x > 0;\quad  y_1=x^2,\;  y_2=x^3$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.12}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $x^2y''-3xy'+3y=2x^4\sin x; \quad  y_1=x,\;  y_2=x^3$
+
+\begin{solution}
+(A) $y_p=u_1x+u_2x^3$;
+
+\begin{eqnarray*}
+u_1'x+3u_2'x^3&=&0\qquad\text{(B)}\\ %(B)
+u_1'\phantom{x}+3u_2'x^2&=&\frac{2x^4\sin x}{x^2}=2x^2\sin x \qquad\text{(C)}. %(C)
+\end{eqnarray*}
+Multiplying (B) by $\frac{1}{x}$ and subtracting
+the result from (C) yields $2x^2u_2'=2x^2\sin x$, so
+$u_2'=\sin x$. From (B), $u_1'=-u_2'x^2=-x^2\sin x$.
+Therefore $u_1=(x^2-2)\cos x-2x\sin x$, $u_2=-\cos x$. Now (A) yields
+$y_p=-2x^2\sin x-2x\cos x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.13}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $(2x+1)y''-2y'-(2x+3)y=(2x+1)^2e^{-x}; \quad  y_1=e^{-x},
+\quad y_2=xe^x$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.14}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $4xy''+2y'+y=\sin\sqrt x; \quad  y_1=\cos\sqrt x,
+\quad y_2=\sin\sqrt x$
+
+\begin{solution}
+    (A) $y_p=u_1\cos\sqrt x+u_2\sin\sqrt x$;
+\setcounter{equation}{1}
+\begin{eqnarray*}
+u_1'\cos\sqrt x+u_2'\sin\sqrt x&=&0\qquad\text{(B)}\\ %(B)
+-u_1'{\sin\sqrt x}{2\sqrt
+x}+u_2'\frac{\cos\sqrt x}{2\sqrt x}&=&\frac{\sin\sqrt x}{4x}\qquad\text{(C)}.
+ %(C)
+\end{eqnarray*}
+Multiplying (B) by $\frac{\sin\sqrt x}{2\sqrt x}$
+and (C) by $\cos\sqrt x$ and adding the resulting
+equations yields $\frac{u_2'}{2\sqrt x}=\frac{\sin\sqrt x\cos\sqrt
+x}{4x}$, so $u_2'=\frac{\sin\sqrt x\cos\sqrt x}{2\sqrt x}$. From
+(B), $u_1'=-u_2'\tan\sqrt x=-\frac{\sin^2\sqrt
+x}{2\sqrt x}$. Therefore, $u_1=\frac{\sin\sqrt x\cos\sqrt
+x}{2}-\frac{\sqrt x}{2}$, $u_2=\frac{\sin^2\sqrt x}{2}$. Now
+(A) yields $y_p=\frac{\sin\sqrt x}{2}-\frac{\sqrt x\cos\sqrt
+x}{2}$. Since $\sin\sqrt x$ satisfies the complementary equation we
+redefine $y_p=-\frac{\sqrt x\cos\sqrt x}{2}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.15}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $xy''-(2x+2)y'+(x+2)y=6x^3e^x;\quad  y_1=e^x,\quad  y_2=x^3e^x$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.16}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $x^2y''-(2a-1)xy'+a^2y=x^{a+1}; \quad  y_1=x^a,
+\quad y_2=x^a \ln x$
+
+\begin{solution}
+(A) $y_p=u_1x^a+u_2x^a\ln x$;
+
+\begin{eqnarray*}
+u_1'x^a+u_2'x^a\ln x&=&0\qquad\text{(B)}\\ %(B)
+au_1'x^{a-1}+u_2'(ax^{a-1}\ln x+x^{a-1})&=&\frac{x^{a+1}}{x^2}=x^{a-1}\qquad\text{(C)}. %(C)
+\end{eqnarray*}
+Multiplying (B) by $\frac{a}{x}$ and subtracting
+the result from (C) yields $u_2'x^{a-1}=x^{a-1}$, so
+$u_2'=1$. From (B), $u_1'=-u_2'\ln x=-\ln x$.
+Therefore, $u_1=x-\ln x$, $u_2=x$. Now (A) yields $y_p=x^{a+1}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.17}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $x^2y''-2xy'+(x^2+2)y=x^3\cos x; \quad  y_1=x\cos x,
+\quad y_2=x\sin x$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.18}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $xy''-y'-4x^3y=8x^5;\quad  y_1=e^{x^2},\;  y_2=e^{-x^2}$
+
+\begin{solution}
+    $y_p=u_1e^{x^2}+u_2e^{-x^2}$;
+\setcounter{equation}{1}
+\begin{eqnarray*}
+u_1'e^{x^2} +u_2'e^{-x^2}&=&0\qquad\text{(B)}\\ %(B)
+2u_1'xe^{x^2}-2u_2'xe^{-x^2}&=&\frac{8x^5}{
+x}=8x^4. \qquad\text{(B)}%(C)
+\end{eqnarray*}
+Multiplying (B) by $2x$ and adding the result to
+(C) yields $4u_1'xe^{x^2}=8x^4$, so
+$u_1'=2x^3e^{-x^2}$. From (B),
+$u_2'=-u_1'e^{2x^2}=-2x^3e^{x^2}$. Therefore $u_1=-e^{-x^2}(x^2+1)$,
+$u_2=-e^{x^2}(x^2-1)$. Now (A) yields $y_p=-2x^2$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.19}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $(\sin x)y''+(2\sin x-\cos x)y'+(\sin x-\cos x)y=e^{-x}; \quad
+y_1=e^{-x},\quad y_2=e^{-x}\cos x$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.20}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $4x^2y''-4xy'+(3-16x^2)y=8x^{5/2}; \quad  y_1=\sqrt xe^{2x},\;  y_2=\sqrt
+xe^{-2x}$
+
+\begin{solution}
+(A) $y_p=u_1\sqrt xe^{2x}+u_2\sqrt xe^{-2x}$;
+
+\begin{eqnarray*}
+u_1'\sqrt xe^{2x}+u_2'\sqrt xe^{-2x}&=&0\qquad\text{(B)}\\ %(B)
+u_1'e^{2x}\left(2\sqrt x+\frac{1}{2\sqrt x}\right)-u_2'e^{-2x}
+\left(2\sqrt x-\frac{1}{2\sqrt x}\right)&=&\frac{8x^{5/2}}{4x^2}
+=2\sqrt x\qquad\text{(C)}. %(C)
+\end{eqnarray*}
+Multiplying (B) by $\frac{1}{2x}$, subtracting the
+result from (C), and cancelling common factors from
+the resulting equations yields
+\begin{eqnarray*}
+u_1'e^{2x}+u_2'e^{-2x}&=&0\qquad\text{(D)}\\ %(D)
+u_1'e^{2x}-u_2'e^{-2x}&=&1.\qquad\text{(E)} %(E)
+\end{eqnarray*}
+Adding (D) to (E) yields
+$2u_1'e^{2x}=1$, so $u_1'=\frac{e^{-2x}}{2}$. From
+(D), $u_2'=-u_1'e^{4x}=-\frac{e^{2x}}{2}$.
+Therefore, $u_1=-\frac{e^{-2x}}{4}$, $u_2=-\frac{e^{2x}}{4}$. Now
+(A) yields $y_p=-\frac{\sqrt x}{2}$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.21}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $4x^2y''-4xy'+(4x^2+3)y=x^{7/2}; \quad  y_1=\sqrt x\sin x,\;
+y_2=\sqrt x\cos x$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.22}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $x^2y''-2xy'-(x^2-2)y=3x^4;\quad  y_1=xe^x,\;  y_2=xe^{-x}$
+
+\begin{solution}
+    (A)$y_p=u_1xe^x+u_2xe^{-x}$;
+\begin{eqnarray*}
+u_1'xe^x+u_2'xe^{-x}&=&0\qquad\text{(B)}\\ %(B)
+u_1'(x+1)e^x-u_2'(x-1)e^{-x}&=&\frac{3x^4}{ x^2}=3x^2\qquad\text{(C)}.
+ %(C)
+\end{eqnarray*}
+Multiplying (B) by $\frac{1}{ x}$, subtracting the
+resulting equation from (C), and cancelling common
+factors yields
+\begin{eqnarray*}
+u_1'e^x+u_2'e^{-x}&=&0\qquad\text{(D)}\\ %(D)
+u_1'e^x-u_2'e^{-x}&=&3x.\qquad\text{(E)} %(E)
+\end{eqnarray*}
+Adding (D) to (E) yields
+$2u_1'e^x=3x$, so $u_1'=\frac{3xe^{-x}}{2}$. From
+(D), $u_2'=-u_1'e^{2x}=-\frac{3xe^x}{2}$.
+Therefore $u_1=-\frac{3e^x(x+1)}{2}$, $u_2=-\frac{3e^x(x-1)}{2}$.
+Now (A) yields $y_p=-3x^2$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.23}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $x^2y''-2x(x+1)y' +(x^2+2x+2)y=x^3e^x;   \quad y_1=xe^x, \quad y_2=x^2e^x$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.24}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $x^2y''-xy'-3y=x^{3/2};  \quad y_1=1/x, \quad y_2=x^3$
+
+\begin{solution}
+(A) $y_p=\frac{u_1}{x}+u_2x^3$;\;
+\begin{eqnarray*}
+-\frac{u_1'}{x}+3u_2'x^3&=&0\qquad\text{(B)}\\ %(B)
+-\frac{u_1'}{x^2}+3u_2'x^2&=&\frac{x^{3/2}}{x^2}=x^{-1/2}. \qquad\text{(C)}%(C)
+\end{eqnarray*}
+Multiplying (B) by $\frac{1}{x}$ and
+adding the result to (C) yields
+$4u_2'x^2=x^{-1/2}$, so $u_2'=\frac{x^{-5/2}}{4}$. From
+(B), $u_1'=-u_2'x^4=-\frac{x^{3/2}}{4}$.
+Therefore $u_1=-\frac{x^{5/2}}{10}$, $u_2=-\frac{x^{-3/2}}{6}$.
+Now (A) yields $y_p=-\frac{4x^{3/2}}{15}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.25}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $x^2y''-x(x+4)y'+2(x+3)y=x^4e^x;  \quad y_1=x^2, \quad y_2=x^2e^x$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.26}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $x^2y''-2x(x+2)y'+(x^2+4x+6)y=2xe^x;  \quad y_1=x^2e^x, \quad y_2=x^3e^x$
+
+\begin{solution}
+    (A) $y_p=u_1x^2e^x+u_2x^3e^x$;\;
+\begin{eqnarray*}
+u_1'x^2e^x+u_2'x^3e^x&=&0\qquad\text{(B)}\\ %(B)
+u_1'(x^2e^x+2xe^x)+u_2'(x^3e^x+3x^2e^x)&=&\frac{2xe^x}{
+x^2}=\frac{2e^x}{ x}.\qquad\text{(C)} %(C)
+\end{eqnarray*}
+Subtracting (B) from (C)
+and cancelling common factors in the resulting equations
+yields
+\begin{eqnarray*}
+\phantom{2x}u_1'+\phantom{3}u_2'x&=&0\qquad\text{(D)}\\ %(D)
+2u_1'x+3u_2'x^2&=&\frac{2}{ x}.\qquad\text{(E)} %(E)
+\end{eqnarray*}
+Multiplying (D) by $2x$ and subtracting the result
+from (E) yields $x^2u_2'=\frac{2}{ x}$, so
+$u_2'=\frac{2}{ x^3}$. From (D),
+$u_1'=-u_2'x=-\frac{2}{ x^2}$. Therefore $u_1=\frac{2}{ x}$,
+$u_2=-\frac{1}{ x^2}$. Now (A) yields $y_p=xe^x$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.27}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $x^2y''-4xy'+(x^2+6)y=x^4;  \quad y_1=x^2\cos x, \quad y_2=x^2\sin x$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.28}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $(x-1)y''-xy'+y=2(x-1)^2e^x;  \quad y_1=x, \quad y_2=e^x$
+
+\begin{solution}
+    (A) $y_p=u_1x+u_2e^x$;\;
+\begin{eqnarray*}
+u_1'x+u_2'e^x&=&0\qquad\text{(B)}\\ %(B)
+u_1'+u_2'e^x&=&\frac{2(x-1)^2e^x}{
+x-1}=2(x-1)e^x.\qquad\text{(C)} %(C)
+\end{eqnarray*}
+Subtracting (B) from (C)
+yields $u_1'(1-x)=2(x-1)e^x$, so $u_1'=-2e^x$. From
+(B), $u_2'=-u_1'xe^{-x}=2x$. Therefore,
+$u_1=-2e^x$, $u_2=x^2$. Now (A) yields $y_p=xe^x(x-2)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.29}
+Use variation
+of parameters to find a particular solution, given the solutions
+$y_1$, $y_2$ of the complementary equation. $4x^2y''-4x(x+1)y'+(2x+3)y=x^{5/2}e^x;   \quad
+y_1=\sqrt x, \quad y_2=\sqrt xe^x$
+\end{problem}
+
+
+\begin{problem}\label{exer:5.7.30}
+Use variation
+of parameters to solve the initial value problem, given
+$y_1,y_2$ are solutions of the complementary equation. $(3x-1)y''-(3x+2)y'-(6x-8)y=(3x-1)^2e^{2x}, \quad   y(0)=1,\;
+y'(0)=2$;
+
+$y_1=e^{2x},\;  y_2=xe^{-x}$
+
+\begin{solution}
+    (A) $y_p=u_1e^{2x}+u_2xe^{-x}$;
+\setcounter{equation}{1}
+\begin{eqnarray*}
+u_1'e^{2x}+u_2'xe^{-x}&=&0\qquad\text{(B)}\\ %(B)
+2u_1'e^{2x}+u_2'(e^{-x}-xe^{-x})&=&\frac{(3x-1)^2e^{2x}}{
+3x-1}=(3x-1)e^{2x}.\qquad\text{(C)} %(C)
+\end{eqnarray*}
+Multiplying (B) by $2$ and subtracting the result
+from (C) yields $u_2'(1-3x)e^{-x}=(3x-1)e^{2x}$, so
+$u_2'=-e^{3x}$. From (B), $u_1'=-u_2'xe^{-3x}=x$.
+Therefore $u_1=\frac{x^2}{2}$, $u_2=-\frac{e^{3x}}{3}$. Now (A)
+yields $y_p=\frac{xe^{2x}(3x-2)}{3}$. The general solution of the
+given equation is $y=\frac{xe^{2x}(3x-2)}{3}+c_1e^{2x}+c_2xe^{-x}$.
+Differentiating this yields
+$y'=\frac{e^{2x}(3x^2+x-1)}{3}+2c_1e^{2x}+c_2(1-x)e^{-x}$. Now
+$y(0)=1,\ y'(0)=2\Rightarrow c_1=1,\ 2=-\frac{1}{3} +2c_1+c_2$, so
+$c_2=\frac{1}{3}$, and
+$y=\frac{e^{2x}(3x^2-2x+6)}{6}+\frac{xe^{-x}}{3}$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.31}
+Use variation
+of parameters to solve the initial value problem, given
+$y_1,y_2$ are solutions of the complementary equation. $(x-1)^2y''-2(x-1)y'+2y=(x-1)^2, \quad   y(0)=3,\quad   y'(0)=-6$;
+
+$y_1=x-1$,\;
+$y_2=x^2-1$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.32}
+Use variation
+of parameters to solve the initial value problem, given
+$y_1,y_2$ are solutions of the complementary equation. $(x-1)^2y''-(x^2-1)y'+(x+1)y=(x-1)^3e^x, \quad  y(0)=4,\quad y'(0)=-6$;
+
+$y_1=(x-1)e^x,\quad y_2=x-1$
+
+\begin{solution}
+    (A) $y_p=u_1(x-1)e^x+u_2(x-1)$;
+\setcounter{equation}{1}
+\begin{eqnarray*}
+u_1'(x-1)e^x+u_2'(x-1)&=&0 \qquad\text{(B)}
+\\ %(B)
+u_1'xe^x+u_2'&=&\frac{(x-1)^3e^x}{(x-1)^2}=(x-1)e^x. \qquad\text{(C)}
+ %(C)
+\end{eqnarray*}
+From (B), $u_1'=-u_2'e^{-x}$. Substituting this into
+(C) yields $-u_2'(x-1)=(x-1)e^x$, so $u_2'=-e^x$,
+$u_1'=1$. Therefore $u_1=x$, $u_2=e^x$. Now (A) yields
+$y_p=e^x(x-1)^2$. The general solution of the given equation is
+$y=(x-1)^2e^x+c_1(x-1)e^x+c_2(x-1)$. Differentiating this yields
+$y'=(x^2-1)e^x+c_1xe^x+c_2$. Now $y(0)=4,\ y'(0)=-6\Rightarrow
+4=1-c_1-c_2,\ -6=-1+c_2$, so $c_1=2, c_2=-5$ and
+$y=(x^2-1)e^x-5(x-1)$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.33} Use variation
+of parameters to solve the initial value problem and graph the
+solution, given that $y_1,y_2$ are solutions of the complementary
+equation.
+$(x^2-1)y''+4xy'+2y=2x, \quad   y(0)=0,\;  y'(0)
+=-2; \quad   y_1=\frac{1}{x-1},\;  y_2=\frac{1}{x+1}$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.34} Use variation
+of parameters to solve the initial value problem and graph the
+solution, given that $y_1,y_2$ are solutions of the complementary
+equation.
+$x^2y''+2xy'-2y=-2x^2, \quad   y(1)=1,\;  y'(1)=
+-1; \quad  y_1=x,\;  y_2=\frac{1}{x^2}$
+
+\begin{solution}
+    (A) $y_p=u_1x+\frac{u_2}{ x^2}$;
+\setcounter{equation}{1}
+\begin{eqnarray*}
+u_1'x+\phantom{2}\frac{u_2'}{ x^2}&=&0\qquad\text{(B)}\\ %(B)
+u_1'\phantom{x}-\frac{2u_2'}{ x^3}&=&-\frac{2x^2}{
+x^2}=-2.\qquad\text{(C)} %(C)
+\end{eqnarray*}
+Multiplying (B) by $\frac{2}{ x}$ and adding the
+result to (C) yields $3u_1'=-2$, so
+$u_1'=-\frac{2}{3}$. From (B),
+$u_2'=-u_1'x^3=\frac{2x^3}{3}$. Therefore $u_1=-\frac{2x}{3}$,
+$u_2=\frac{x^4}{6}$. Now (A) yields $y_p=-\frac{x^2}{2}$. The
+general solution of the given equation is
+$y=-\frac{x^2}{2}+c_1x+\frac{c_2}{ x^2}$. Differentiating this
+yields $y'=-x+c_1-\frac{2c_2}{ x^3}$. Now $y(1)=1,\
+y'(1)=-1\Rightarrow 1=-\frac{1}{2}+c_1+c_2,\ -1=-1+c_1-2c_2$, so
+$c_1=1, c_2=\frac{1}{2}$, and
+$y=-\frac{x^2}{2}+x+\frac{1}{2x^2}$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.35} Use variation
+of parameters to solve the initial value problem and graph the
+solution, given that $y_1,y_2$ are solutions of the complementary
+equation.
+$(x+1)(2x+3)y''+2(x+2)y'-2y=(2x+3)^2, \quad  y(0)=0,\quad y'(0)=0$;
+\newline $y_1=x+2,\quad y_2=\frac{1}{x+1}$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.36}
+Suppose
+$$
+y_p=\overline y+a_1y_1+a_2y_2
+$$
+is a particular solution of \begin{equation}\label{eq:eqA5.7.36}
+P_0(x)y''+P_1(x)y'+P_2(x)y=F(x),
+\end{equation}
+where  $y_1$  and $y_2$ are  solutions of the complementary equation
+$$
+P_0(x)y''+P_1(x)y'+P_2(x)y=0.
+$$
+Show that $\overline y$  is also a solution of \ref{eq:eqA5.7.36}.
+
+\begin{solution}
+    Since $\overline y=y_p-a_1y_1-a_2y_2$,
+\begin{eqnarray*}
+P_0(x)\overline y''+P_1(x)\overline y'+P_2(x)\overline y&=&
+P_0(x)(y_p-a_1y_1-a_2y_2)''\\ &&+P_1(x)(y_p-a_1y_1-a_2y_2)'\\ &&+
+P_2(x)(y_p-a_1y_1-a_2y_2)\\ &=&
+(P_0(x)y_p''+P_1(x)y_p'+P_2(x)y_p)\\ &&
+-a_1\left[P_0(x)y_1''+P_1(x)y_1'+P_2(x)y_1\right]\\ &&
+-a_2\left[P_0(x)y_2''+P_1(x)y_2'+P_2(x)y_2\right]\\
+&=&F(x)-a_1\cdot0-a_2\cdot0=F(x);
+\end{eqnarray*}
+ hence $\overline y$
+is a particular solution of (A).
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.37}
+Suppose $p$,  $q$, and $f$ are continuous
+on $(a,b)$ and let $x_0$ be in $(a,b)$. Let
+$y_1$ and $y_2$ be the  solutions of
+$$
+y''+p(x)y'+q(x)y=0
+$$
+such that
+$$
+y_1(x_0)=1, \quad y_1'(x_0)=0, \quad y_2(x_0)=0, \quad
+y_2'(x_0)=1.
+$$
+Use variation of parameters to show that the solution of the initial
+value problem
+$$
+y''+p(x)y'+q(x)y=f(x), \quad   y(x_0)=k_0,\;  y'(x_0)=k_1,
+$$
+is
+$$
+\begin{array}{rcl}
+y(x) &=& k_0y_1(x)+k_1y_2(x) \\
+& & \qquad+\int^x_{x_0}\left(y_1(t)y_2(x)-
+y_1(x)y_2(t)\right)
+f(t)\exp\left(\int^t_{x_0}p(s)\,ds\right)\,dt.
+\end{array}
+$$
+\begin{hint}
+Use Abel's formula for the Wronskian of $\{y_1,y_2\}$, and
+integrate $u_1'$ and $u_2'$ from $x_0$ to $x$.
+\end{hint}
+Show also that
+$$
+\begin{array}{rcl}
+y'(x) &=& k_0y_1'(x)+k_1y_2'(x) \\
+& & \qquad+\int^x_{x_0}\left(y_1(t)y_2'(x)-y_1'(x)y_2(t)
+\right)f(t)\exp\left(\int^t_{x_0}p(s)\,ds\right)\,dt.
+\end{array}
+$$
+\end{problem}
+
+\begin{problem}\label{exer:5.7.38}
+Suppose $f$ is continuous on an open interval
+that contains $x_0=0$.
+Use variation of parameters to
+find a formula for the solution of the initial value problem
+$$
+y''-y=f(x), \quad  y(0)=k_0,\quad y'(0)=k_1.
+$$
+
+\begin{solution}
+    $y_p=u_1e^x+u_2e^{-x}$ is a solution of (A) on
+$(a,\infty)$ if $u_1'e^x+u_2'e^{-x}=0$ and $u_1'e^x-u_2'e^{-x}
+=f(x)$. Solving these two equations yields
+$u_1'=\frac{e^{-x}f}{2}$,
+$u_2'=-\frac{e^xf}{2}$. The functions
+$u_1(x)=\frac{1}{2}\int_0^{e^{-t}}f(t)\,dt$
+and $u_2(x)=-\frac{1}{2}\int_0^xe^tf(t)\,dt$ satisfy
+these conditions. Therefore,
+\begin{eqnarray*}
+y_p(x)&=&\frac{e^x}{2}\int_0^xe^{-t}f(t)\,dt
+-\frac{e^{-x}}{2}\int_0^xe^tf(t)\,dt \\
+&=&\frac{1}{2}\int_0^xf(t)\left(e^{(x-t)-e^{-(x-t)}}\right)\,dt
+=\int_0^x f(t)\sinh(x-t)\,dt.
+\end{eqnarray*}
+is a particular solution of $y''-y=f(x)$. Differentiating
+$y_p$ yields
+\begin{eqnarray*}
+y_p'(x)&=&\frac{e^x}{2}\int_0^xe^{-t}f(t)\,dt+\frac{e^{x}}{2}e^{-x}
++\frac{e^{-x}}{2}\int_0^xe^tf(t)\,dt-\frac{e^{-x}}{2}e^x\\
+&=&\frac{e^x}{2}\int_0^xe^{-t}f(t)\,dt
++\frac{e^{-x}}{2}\int_0^xe^tf(t)\,dt\\
+&=&\frac{1}{2}\int_0^xf(t)\left(e^{(x-t)}+e^{-(x-t)}\right)\,dt
+=\int_0^x f(t)\cosh(x-t)\,dt.
+\end{eqnarray*}
+Since $y_p(x_0)=y_p'(x_0)=0$, the solution of the initial value
+problem is
+\begin{eqnarray*}
+y&=&y_p+k_0\cosh x+k_1\sinh x\\
+&=&k_0\cosh x+k_1\sinh x+\int_0^x\sinh (x-t)f(t)\,dt.
+\end{eqnarray*}
+The derivative of the solution is
+\begin{eqnarray*}
+y'&=&y_p'+k_0\sinh x+k_1\cosh x\\
+&=&k_0\sinh x+k_1\cosh x+\int_0^x\cosh (x-t) f(t)\,dt.
+\end{eqnarray*}
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:5.7.39}
+Suppose $f$ is continuous on
+$(a,\infty)$, where $a<0$, so $x_0=0$ is in $(a,\infty)$.  Suppose also that the improper
+integral
+$\int_{0}^\infty f(t)\,dt$ is absolutely convergent.
+
+\begin{enumerate}
+\item % (a)
+Use variation of parameters to
+find a formula for the solution of the initial value problem
+$$
+y''+y=f(x), \quad  y(0)=k_0,\quad y'(0)=k_1.
+$$
+\begin{hint}
+    You will need the addition formulas for the sine and cosine:
+\begin{eqnarray*}
+\sin(A+B)&=&\sin A\cos B+\cos A\sin B\\
+\cos(A+B)&=&\cos A\cos B-\sin A\sin B.
+\end{eqnarray*}
+\end{hint}
+
+\item % (b)
+Show that if $y$ is a solution of
+\begin{equation}\label{eq:eqA5.7.39}
+y''+y=f(x)
+\end{equation}
+ on $(a,\infty)$, then
+\begin{equation}\label{eq:eqB5.7.39}
+\lim_{x \to \infty}\left(y(x)-A_0\cos x-A_1\sin x\right)=0
+\end{equation}
+and
+\begin{equation}\label{eq:eqC5.7.39}
+\lim_{x\to\infty}\left(y'(x)+A_0\sin x-A_1\cos x\right)=0,
+\end{equation}
+where
+$$
+A_0=k_0-\int_0^\infty f(t)\sin t\,dt\mbox{\quad and \quad}
+A_1=k_1+\int_0^\infty f(t)\cos t\,dt.
+$$
+\begin{hint}
+   Recall from calculus that if $\int_0^\infty f(t)\,dt$
+converges absolutely, then $\lim_{x\to\infty}\int_x^\infty
+|f(t)|\,dt~=~0$. 
+\end{hint}
+
+\item % (c)
+Show that if $A_0$ and $A_1$ are arbitrary constants, then there is a
+unique solution of $y''+y=f(x)$ on $(a,\infty)$ that satisfies
+\ref{eq:eqB5.7.39}  and \ref{eq:eqC5.7.39}.
+\end{enumerate}
+\end{problem}
+
+\end{document}

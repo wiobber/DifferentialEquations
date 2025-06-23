@@ -1,0 +1,656 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+
+You may want to save the results of these
+exercises, since we'll revisit in the next two sections.
+
+
+\begin{problem}\label{exer:3.1.1} Use Euler's method to find approximate values of the solution of the given initial value problem
+at the points $x_i=x_0+ih$, where $x_0$ is the point where the
+initial condition is imposed and $i=1$, $2$, $3$. The purpose of this exercise is to familiarize you with the computational procedure of Euler's method.
+$$y'=2x^2+3y^2-2,\quad y(2)=1;\quad h=0.05$$
+\end{problem}
+
+\begin{problem}\label{exer:3.1.2} Use Euler's method to find approximate values of the solution of the given initial value problem
+at the points $x_i=x_0+ih$, where $x_0$ is the point where the
+initial condition is imposed and $i=1$, $2$, $3$. The purpose of this exercise is to familiarize you with the computational procedure of Euler's method.
+$$y'=y+\sqrt{x^2+y^2},\quad y(0)=1;\quad h=0.1$$
+
+
+
+\begin{solution}
+    $y_1=1.200000000,\ y_2=1.440415946,\ y_3=1.729880994$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.1.3} Use Euler's method to find approximate values of the solution of the given initial value problem
+at the points $x_i=x_0+ih$, where $x_0$ is the point where the
+initial condition is imposed and $i=1$, $2$, $3$. The purpose of this exercise is to familiarize you with the computational procedure of Euler's method.
+$$y'+3y=x^2-3xy+y^2,\quad y(0)=2;\quad h=0.05$$
+\end{problem}
+
+\begin{problem}\label{exer:3.1.4} Use Euler's method to find approximate values of the solution of the given initial value problem
+at the points $x_i=x_0+ih$, where $x_0$ is the point where the
+initial condition is imposed and $i=1$, $2$, $3$. The purpose of this exercise is to familiarize you with the computational procedure of Euler's method.
+$$y'=\frac{1+x}{1-y^2},\quad y(2)=3;\quad h=0.1$$
+
+
+
+\begin{solution}
+    $y_1=2.962500000,\ y_2=2.922635828,\ y_3=2.880205639$
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.1.5} Use Euler's method to find approximate values of the solution of the given initial value problem
+at the points $x_i=x_0+ih$, where $x_0$ is the point where the
+initial condition is imposed and $i=1$, $2$, $3$. The purpose of this exercise is to familiarize you with the computational procedure of Euler's method.
+$$y'+x^2y=\sin xy,\quad y(1)=\pi;\quad h=0.2$$
+\end{problem}
+
+\begin{problem}\label{exer:3.1.6} 
+Use Euler's method with step sizes $h=0.1$, $h=0.05$, and $h=0.025$ to
+find approximate values of the solution of the initial value problem
+$$
+y'+3y=7e^{4x},\quad y(0)=2
+$$
+at $x=0$, $0.1$, $0.2$, $0.3$, \dots, $1.0$. Compare these approximate values with the values of the exact solution $y=e^{4x}+e^{-3x}$, which can be obtained by the method of Section~2.1. Present your results in a table like Table~\ref{table:3.1.1}.
+
+
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|}\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{Exact}\\ \hline
+0.0 &  2.000000000 &   2.000000000 &  2.000000000 &   2.000000000 \\
+0.1 &  2.100000000 &   2.169990965 &  2.202114518 &   2.232642918 \\
+0.2 &  2.514277288 &   2.649377900 &  2.713011720 &   2.774352565 \\
+0.3 &  3.317872752 &   3.527672599 &  3.628465025 &   3.726686582 \\
+0.4 &  4.646592772 &   4.955798226 &  5.106379369 &   5.254226636 \\
+0.5 &  6.719737638 &   7.171467977 &  7.393322991 &   7.612186259 \\
+0.6 &  9.876155616 &  10.538384528 & 10.865186799 &  11.188475269 \\
+0.7 & 14.629532397 &  15.605686107 & 16.088630652 &  16.567103199 \\
+0.8 & 21.751925418 &  23.197328550 & 23.913328531 &  24.623248150 \\
+0.9 & 32.399118931 &  34.545932627 & 35.610005377 &  36.665439956 \\
+1.0 & 48.298147362 &  51.492825643 & 53.076673685 &  54.647937102 \\
+\hline
+\end{tabular}}
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.1.7} 
+Use Euler's method with step sizes $h=0.1$, $h=0.05$, and $h=0.025$ to
+find approximate values of the solution of the initial value problem
+$$
+y'+\frac{2}{x}y=\frac{3}{x^3}+1,\quad y(1)=1
+$$
+at $x=1.0$, $1.1$, $1.2$, $1.3$, \dots, $2.0$. Compare these approximate values with the values of the exact solution
+$$
+y=\frac{1}{3x^2}(9\ln x+x^3+2)
+$$
+which can be obtained by the method of Section~2.1. Present
+your results in a table like Table~\ref{table:3.1.1}.
+\end{problem}
+
+\begin{problem}\label{exer:3.1.8} 
+Use Euler's method with step sizes $h=0.05$, $h=0.025$, and $h=0.0125$ to
+find approximate values of the solution of the initial value problem
+$$
+y'=\frac{y^2+xy-x^2}{x^2},\quad y(1)=2
+$$
+at $x=1.0$, $1.05$, $1.10$, $1.15$, \dots, $1.5$. Compare these approximate values with the values of the exact solution
+$$
+y=\frac{x(1+x^2/3)}{1-x^2/3}
+$$
+obtained in Example~\ref{example:2.4.3}. Present your results in a table like Table~\ref{table:3.1.1}.
+
+
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|}\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{$h=0.0125$}&
+\multicolumn{1}{|c|}{Exact}\\ \hline
+1.00 &  2.000000000 & 2.000000000 & 2.000000000 &  2.000000000 \\
+1.05 &  2.250000000 & 2.259280190 & 2.264490570 &  2.270158103 \\
+1.10 &  2.536734694 & 2.559724746 & 2.572794280 &  2.587150838 \\
+1.15 &  2.867950854 & 2.910936426 & 2.935723355 &  2.963263785 \\
+1.20 &  3.253613825 & 3.325627715 & 3.367843117 &  3.415384615 \\
+1.25 &  3.706750613 & 3.820981064 & 3.889251900 &  3.967391304 \\
+1.30 &  4.244700641 & 4.420781829 & 4.528471927 &  4.654198473 \\
+1.35 &  4.891020001 & 5.158883503 & 5.327348558 &  5.528980892 \\
+1.40 &  5.678467290 & 6.085075790 & 6.349785943 &  6.676923077 \\
+1.45 &  6.653845988 & 7.275522641 & 7.698316221 &  8.243593315 \\
+1.50 &  7.886170437 & 8.852463793 & 9.548039907 & 10.500000000 \\
+\hline
+\end{tabular}}
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.1.9} 
+In Example~\ref{example:2.2.3} it was shown that
+$$
+y^5+y=x^2+x-4
+$$
+is an implicit solution of  the initial value problem
+\begin{equation}\label{eqA:3.1.9}
+y'=\frac{2x+1}{5y^4+1},\quad y(2)=1.
+\end{equation}
+Use Euler's method with step sizes $h=0.1$, $h=0.05$, and $h=0.025$ to
+find approximate values of the solution of (\ref{eqA:3.1.9}) at
+$x=2.0$, $2.1$, $2.2$, $2.3$, \dots, $3.0$. Present your results in tabular form.
+To check the error in these approximate values, construct another table of values of the residual
+$$
+  R(x,y)=y^5+y-x^2-x+4
+$$
+for each value of $(x,y)$ appearing in the first table.
+\end{problem}
+
+\begin{problem}\label{exer:3.1.10} 
+You can see from Example~\ref{example:2.5.1} that
+$$
+x^4y^3+x^2y^5+2xy=4
+$$
+is an implicit solution of the initial value problem
+\begin{equation}\label{eqA:3.1.10}
+y'=-\frac{4x^3y^3+2xy^5+2y}{3x^4y^2+5x^2y^4+2x},\quad y(1)=1.
+\end{equation}
+Use Euler's method with step sizes $h=0.1$, $h=0.05$, and $h=0.025$ to
+find approximate values of the solution of (\ref{eqA:3.1.10}) at
+$x=1.0$, $1.1$, $1.2$, $1.3$, \dots, $2.0$. Present your results in tabular form.
+To check the error in these approximate values, construct another
+table of values of the residual
+$$
+R(x,y)=x^4y^3+x^2y^5+2xy-4
+$$
+for each value of $(x,y)$ appearing in the first table.
+
+
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|r|r|}\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}\\ \hline
+1.0 & 1.000000000 & 1.000000000 & 1.000000000 & 0.0000 & 0.0000  &  0.0000  \\
+1.1 & 0.920000000 & 0.921898275 & 0.922822717 &-0.0384 & -0.0189 & -0.0094  \\
+1.2 & 0.847469326 & 0.851018464 & 0.852746371 &-0.0745 & -0.0368 & -0.0183  \\
+1.3 & 0.781779403 & 0.786770087 & 0.789197876 &-0.1092 & -0.0540 & -0.0268  \\
+1.4 & 0.722453556 & 0.728682209 & 0.731709712 &-0.1428 & -0.0707 & -0.0351  \\
+1.5 & 0.669037867 & 0.676299618 & 0.679827306 &-0.1752 & -0.0868 & -0.0432  \\
+1.6 & 0.621054176 & 0.629148585 & 0.633080163 &-0.2062 & -0.1023 & -0.0509  \\
+1.7 & 0.578000416 & 0.586740390 & 0.590986601 &-0.2356 & -0.1170 & -0.0583  \\
+1.8 & 0.539370187 & 0.548588902 & 0.553070392 &-0.2631 & -0.1310 & -0.0653  \\
+1.9 & 0.504674296 & 0.514228603 & 0.518877246 &-0.2889 & -0.1441 & -0.0719  \\
+2.0 & 0.473456737 & 0.483227470 & 0.487986391 &-0.3129 & -0.1563 & -0.0781 \\
+\hline
+&\multicolumn{3}{c|}{Approximate Solutions}&
+\multicolumn{3}{c|}{Residuals}\\\hline
+\end{tabular}}
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.1.11} 
+Use Euler's method with step sizes $h=0.1$, $h=0.05$, and $h=0.025$ to
+find approximate values of the solution of the initial value problem
+$$
+(3y^2+4y)y'+2x+\cos x=0, \quad y(0)=1
+$$
+at $x=0$, $0.1$, $0.2$, $0.3$, \dots, $1.0$. (See Problem \ref{exer:2.2.13}.)
+\end{problem}
+
+\begin{problem}\label{exer:3.1.12} 
+Use Euler's method with step sizes $h=0.1$, $h=0.05$, and $h=0.025$ to
+find approximate values of the solution of the initial value problem
+$$
+y'+\frac{(y+1)(y-1)(y-2)}{x+1}=0, \quad y(1)=0
+$$
+at $x=1.0$, $1.1$, $1.2$, $1.3$, \dots, $2.0$. (See Problem \ref{exer:2.2.14}.)
+
+
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|r|}
+\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+1.0 &  0.000000000 &  0.000000000 &  0.000000000 &  0.000000000 \\
+1.1 & -0.100000000 & -0.099875000 & -0.099780455 & -0.099664000 \\
+1.2 & -0.199000000 & -0.198243434 & -0.197800853 & -0.197315517 \\
+1.3 & -0.294996246 & -0.293129862 & -0.292110713 & -0.291036003 \\
+1.4 & -0.386095345 & -0.382748403 & -0.380986158 & -0.379168221 \\
+1.5 & -0.470695388 & -0.465664569 & -0.463078857 & -0.460450590 \\
+1.6 & -0.547627491 & -0.540901018 & -0.537503081 & -0.534085626 \\
+1.7 & -0.616227665 & -0.607969574 & -0.603849795 & -0.599737720 \\
+1.8 & -0.676329533 & -0.666833345 & -0.662136956 & -0.657473792 \\
+1.9 & -0.728190908 & -0.717819639 & -0.712718751 & -0.707670533 \\
+2.0 & -0.772381768 & -0.761510960 & -0.756179726 & -0.750912371 \\
+\hline
+\end{tabular}}
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.1.13} 
+Use Euler's method and the Euler semilinear method with step sizes
+$h=0.1$, $h=0.05$, and $h=0.025$ to find approximate values of the
+solution of the initial value problem
+$$
+y'+3y=7e^{-3x},\quad y(0)=6
+$$
+at $x=0$, $0.1$, $0.2$, $0.3$, \dots, $1.0$. Compare these approximate values with
+the values of the exact solution $y=e^{-3x}(7x+6)$, which can be
+obtained by the method of Section~2.1. Do you notice anything
+special about the results? Explain.
+\end{problem}
+
+\begin{problem}\label{exer:3.1.14} The following linear initial value problem can't be solved exactly in terms of known elementary functions. In each exercise, use
+Euler's method and the Euler semilinear methods
+with the indicated step sizes to find approximate values of the
+solution of the given initial value problem at 11 equally spaced
+points (including the endpoints) in the interval.
+$$y'-2y=\frac{1}{1+x^2},\quad y(2)=2$$
+$h=0.1,0.05,0.025$ on $[2,3]$.
+
+
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Euler's method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+2.0 &  2.000000000 &  2.000000000 &  2.000000000 &  2.000000000 \\
+2.1 &  2.420000000 &  2.440610764 &  2.451962006 &  2.464119569 \\
+2.2 &  2.922484288 &  2.972198224 &  2.999753046 &  3.029403212 \\
+2.3 &  3.524104434 &  3.614025082 &  3.664184099 &  3.718409925 \\
+2.4 &  4.244823572 &  4.389380160 &  4.470531822 &  4.558673929 \\
+2.5 &  5.108581185 &  5.326426396 &  5.449503467 &  5.583808754 \\
+2.6 &  6.144090526 &  6.459226591 &  6.638409411 &  6.834855438 \\
+2.7 &  7.385795229 & 7.828984275  & 8.082588076  & 8.361928926 \\
+2.8 &  8.875017001 & 9.485544888  & 9.837137672  & 10.226228709 \\
+2.9 & 10.661332618 & 11.489211987 & 11.969020902 & 12.502494409 \\
+3.0 &12.804226135 & 13.912944662 & 14.559623055 & 15.282004826 \\
+\hline
+\end{tabular}}
+
+{\small
+\begin{tabular}{|c|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Euler semilinear method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+2.0 &  2.000000000 &  2.000000000 &  2.000000000 &  2.000000000 \\
+2.1 &  2.467233571 &  2.465641081 &  2.464871435 &  2.464119569 \\
+2.2 &  3.036062650 &  3.032657307 &  3.031011316 &  3.029403212 \\
+2.3 &  3.729169725 &  3.723668026 &  3.721008466 &  3.718409925 \\
+2.4 &  4.574236356 &  4.566279470 &  4.562432696 &  4.558673929 \\
+2.5 &  5.605052990 &  5.594191643 &  5.588940276 &  5.583808754 \\
+2.6 &  6.862874116 &  6.848549921 &  6.841623814 &  6.834855438 \\
+2.7 &  8.398073101 &  8.379595572 &  8.370660695 &  8.361928926 \\
+2.8 & 10.272163096 & 10.248681420 & 10.237326199 & 10.226228709 \\
+2.9 & 12.560265110 & 12.530733531 & 12.516452106 & 12.502494409 \\
+3.0 & 15.354122287 & 15.317257705 & 15.299429421 & 15.282004826 \\
+\hline
+\end{tabular}}
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.1.15} The following linear initial value problem can't be solved exactly in terms of known elementary functions. In each exercise, use
+Euler's method and the Euler semilinear methods
+with the indicated step sizes to find approximate values of the
+solution of the given initial value problem at 11 equally spaced
+points (including the endpoints) in the interval.
+$$y'+2xy=x^2,\quad y(0)=3$$
+$h=0.2,0.1,0.05$ on $[0,2]$. (See Problem~\ref{exer:2.1.38}.)
+\end{problem}
+
+\begin{problem}\label{exer:3.1.16} The following linear initial value problem can't be solved exactly in terms of known elementary functions. In each exercise, use
+Euler's method and the Euler semilinear methods
+with the indicated step sizes to find approximate values of the
+solution of the given initial value problem at 11 equally spaced
+points (including the endpoints) in the interval.
+$$y'+\frac{1}{x}y=\frac{\sin x}{x^2},\quad y(1)=2$$
+$h=0.2,0.1,0.05$ on $[1,3]$. (See Problem \ref{exer:2.1.39}.)
+
+
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Euler's method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.2$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+1.0 & 2.000000000 & 2.000000000 & 2.000000000 & 2.000000000 \\
+1.2 & 1.768294197 & 1.786514499 & 1.794412375 & 1.801636774 \\
+1.4 & 1.603028371 & 1.628427487 & 1.639678822 & 1.650102616 \\
+1.6 & 1.474580412 & 1.502563111 & 1.515157063 & 1.526935885 \\
+1.8 & 1.368349549 & 1.396853671 & 1.409839229 & 1.422074283 \\
+2.0 & 1.276424761 & 1.304504818 & 1.317421794 & 1.329664953 \\
+2.2 & 1.194247156 & 1.221490111 & 1.234122458 & 1.246155344 \\
+2.4 & 1.119088175 & 1.145348276 & 1.157607418 & 1.169334346 \\
+2.6 & 1.049284410 & 1.074553688 & 1.086419453 & 1.097812069 \\
+2.8 & 0.983821745 & 1.008162993 & 1.019652023 & 1.030719114 \\
+3.0 & 0.922094379 & 0.945604800 & 0.956752868 & 0.967523153 \\
+\hline
+\end{tabular}}
+
+{\small
+\begin{tabular}{|c|r|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Euler semilinear method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.2$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+1.0 & 2.000000000 & 2.000000000 & 2.000000000 & 2.000000000 \\
+1.2 & 1.806911831 & 1.804304958 & 1.802978526 & 1.801636774 \\
+1.4 & 1.659738603 & 1.654968381 & 1.652547436 & 1.650102616 \\
+1.6 & 1.540257861 & 1.533652916 & 1.530308405 & 1.526935885 \\
+1.8 & 1.438532932 & 1.430361800 & 1.426232584 & 1.422074283 \\
+2.0 & 1.348782285 & 1.339279577 & 1.334486249 & 1.329664953 \\
+2.2 & 1.267497415 & 1.256876924 & 1.251528766 & 1.246155344 \\
+2.4 & 1.192497494 & 1.180958765 & 1.175157264 & 1.169334346 \\
+2.6 & 1.122416379 & 1.110147777 & 1.103988310 & 1.097812069 \\
+2.8 & 1.056405906 & 1.043585743 & 1.037158237 & 1.030719114 \\
+3.0 & 0.993954754 & 0.980751307 & 0.974140320 & 0.967523153 \\
+\hline
+\end{tabular}}
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.1.17} The following linear initial value problem can't be solved exactly in terms of known elementary functions. In each exercise, use
+Euler's method and the Euler semilinear methods
+with the indicated step sizes to find approximate values of the
+solution of the given initial value problem at 11 equally spaced
+points (including the endpoints) in the interval.
+$$y'+y=\frac{e^{-x}\tan x}{x},\quad y(1)=0$$
+$h=0.05,0.025,0.0125$ on $[1,1.5]$. (See Problem \ref{exer:2.1.40}.)
+\end{problem}
+
+\begin{problem}\label{exer:3.1.18} The following linear initial value problem can't be solved exactly in terms of known elementary functions. In each exercise, use
+Euler's method and the Euler semilinear methods
+with the indicated step sizes to find approximate values of the
+solution of the given initial value problem at 11 equally spaced
+points (including the endpoints) in the interval.
+$$y'+\frac{2x}{1+x^2}y=\frac{e^x}{(1+x^2)^2}, \quad y(0)=1$$
+$h=0.2,0.1,0.05$ on $[0,2]$. (See Problem \ref{exer:2.1.41}.)
+
+
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Euler's method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.2$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+0.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+0.2 & 1.200000000 & 1.186557290 & 1.179206574 & 1.171515153 \\
+0.4 & 1.333543409 & 1.298441890 & 1.280865289 & 1.263370891 \\
+0.6 & 1.371340142 & 1.319698328 & 1.295082088 & 1.271251278 \\
+0.8 & 1.326367357 & 1.270160237 & 1.243958980 & 1.218901287 \\
+1.0 & 1.233056306 & 1.181845667 & 1.158064902 & 1.135362070 \\
+1.2 & 1.122359136 & 1.080477477 & 1.060871608 & 1.042062625 \\
+1.4 & 1.013100262 & 0.981124989 & 0.965917496 & 0.951192532 \\
+1.6 & 0.914000211 & 0.890759107 & 0.879460404 & 0.868381328 \\
+1.8 & 0.827848558 & 0.811673612 & 0.803582000 & 0.795518627 \\
+2.0 & 0.754572560 & 0.743869878 & 0.738303914 & 0.732638628 \\
+\hline
+\end{tabular}}
+
+{\small
+\begin{tabular}{|c|r|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Euler semilinear method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.2$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+0.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+0.2 & 1.153846154 & 1.162906599 & 1.167266650 & 1.171515153 \\
+0.4 & 1.236969953 & 1.250608357 & 1.257097924 & 1.263370891 \\
+0.6 & 1.244188456 & 1.258241892 & 1.264875987 & 1.271251278 \\
+0.8 & 1.195155456 & 1.207524076 & 1.213335781 & 1.218901287 \\
+1.0 & 1.115731189 & 1.125966437 & 1.130768614 & 1.135362070 \\
+1.2 & 1.025938754 & 1.034336918 & 1.038283392 & 1.042062625 \\
+1.4 & 0.937645707 & 0.944681597 & 0.948002346 & 0.951192532 \\
+1.6 & 0.856581823 & 0.862684171 & 0.865583126 & 0.868381328 \\
+1.8 & 0.784832910 & 0.790331183 & 0.792963532 & 0.795518627 \\
+2.0 & 0.722610454 & 0.727742966 & 0.730220211 & 0.732638628 \\
+\hline
+\end{tabular}}
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.1.19} The following linear initial value problem can't be solved exactly in terms of known elementary functions. In each exercise, use
+Euler's method and the Euler semilinear methods
+with the indicated step sizes to find approximate values of the
+solution of the given initial value problem at 11 equally spaced
+points (including the endpoints) in the interval.
+$$xy'+(x+1)y=e^{x^2},\quad y(1)=2$$
+$h=0.05,0.025,0.0125$ on $[1,1.5]$. (See Problem \ref{exer:2.1.42}.)
+\end{problem}
+
+\begin{problem}\label{exer:3.1.20} Use Euler's method and the Euler semilinear method
+with the indicated  step sizes to find approximate values
+of the solution of the given initial value problem at 11 equally
+spaced points (including the endpoints) in the interval.
+$$y'+3y=xy^2(y+1),\quad y(0)=1$$
+$h=0.1,0.05,0.025$ on $[0,1]$.
+
+
+
+\begin{solution}
+    {\small
+\begin{tabular}{|c|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Euler's method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+0.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+0.1 & 0.700000000 & 0.725841563 & 0.736671690 & 0.746418339 \\
+0.2 & 0.498330000 & 0.532982493 & 0.547988831 & 0.561742917 \\
+0.3 & 0.356272689 & 0.392592562 & 0.408724303 & 0.423724207 \\
+0.4 & 0.254555443 & 0.289040639 & 0.304708942 & 0.319467408 \\
+0.5 & 0.181440541 & 0.212387189 & 0.226758594 & 0.240464879 \\
+0.6 & 0.128953069 & 0.155687255 & 0.168375130 & 0.180626161 \\
+0.7 & 0.091393543 & 0.113851516 & 0.124744976 & 0.135394692 \\
+0.8 & 0.064613612 & 0.083076641 & 0.092230966 & 0.101293057 \\
+0.9 & 0.045585102 & 0.060505907 & 0.068068776 & 0.075650324 \\
+1.0 & 0.032105117 & 0.043997045 & 0.050159310 & 0.056415515 \\
+\hline
+\end{tabular}}
+\medskip
+
+{\small
+\begin{tabular}{|c|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Euler semilinear method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+0.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+0.1 & 0.740818221 & 0.743784320 & 0.745143557 & 0.746418339 \\
+0.2 & 0.555889275 & 0.558989106 & 0.560410719 & 0.561742917 \\
+0.3 & 0.418936461 & 0.421482025 & 0.422642541 & 0.423724207 \\
+0.4 & 0.315890439 & 0.317804400 & 0.318668549 & 0.319467408 \\
+0.5 & 0.237908421 & 0.239287095 & 0.239902094 & 0.240464879 \\
+0.6 & 0.178842206 & 0.179812811 & 0.180239888 & 0.180626161 \\
+0.7 & 0.134165506 & 0.134840668 & 0.135133367 & 0.135394692 \\
+0.8 & 0.100450939 & 0.100918118 & 0.101117514 & 0.101293057 \\
+0.9 & 0.075073968 & 0.075396974 & 0.075532643 & 0.075650324 \\
+1.0 & 0.056020154 & 0.056243980 & 0.056336491 & 0.056415515 \\
+\hline
+\end{tabular}}
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:3.1.21} Use Euler's method and the Euler semilinear method
+with the indicated  step sizes to find approximate values
+of the solution of the given initial value problem at 11 equally
+spaced points (including the endpoints) in the interval.
+$$y'-4y=\frac{x}{y^2(y+1)},\quad y(0)=1$$
+ $h=0.1,0.05,0.025$ on $[0,1]$.
+ \end{problem}
+
+\begin{problem}\label{exer:3.1.22} Use Euler's method and the Euler semilinear method
+with the indicated  step sizes to find approximate values
+of the solution of the given initial value problem at 11 equally
+spaced points (including the endpoints) in the interval.
+$$y'+2y=\frac{x^2}{1+y^2},\quad y(2)=1$$
+ $h=0.1,0.05,0.025$ on $[2,3]$.
+
+ 
+
+ \begin{solution}
+     {\small
+\begin{tabular}{|c|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Euler's method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+2.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+2.1 & 1.000000000 & 1.005062500 & 1.007100815 & 1.008899988 \\
+2.2 & 1.020500000 & 1.026752091 & 1.029367367 & 1.031723469 \\
+2.3 & 1.053489840 & 1.059067423 & 1.061510137 & 1.063764243 \\
+2.4 & 1.093521685 & 1.097780573 & 1.099748225 & 1.101614730 \\
+2.5 & 1.137137554 & 1.140059654 & 1.141496651 & 1.142903776 \\
+2.6 & 1.182269005 & 1.184090031 & 1.185056276 & 1.186038851 \\
+2.7 & 1.227745005 & 1.228755801 & 1.229350441 & 1.229985178 \\
+2.8 & 1.272940309 & 1.273399187 & 1.273721920 & 1.274092525 \\
+2.9 & 1.317545833 & 1.317651554 & 1.317786528 & 1.317967533 \\
+3.0 & 1.361427907 & 1.361320824 & 1.361332589 & 1.361383810 \\
+\hline
+\end{tabular}}
+
+{\small
+\begin{tabular}{|c|r|r|r|r|}
+\hline
+\multicolumn{5}{|c|}{Euler semilinear method}\\\hline
+\multicolumn{1}{|c|}{$x$}&
+\multicolumn{1}{|c|}{$h=0.1$}&
+\multicolumn{1}{|c|}{$h=0.05$}&
+\multicolumn{1}{|c|}{$h=0.025$}&
+\multicolumn{1}{|c|}{``Exact"}\\ \hline
+2.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+2.1 & 0.982476904 & 0.996114142 & 1.002608435 & 1.008899988 \\
+2.2 & 0.988105346 & 1.010577663 & 1.021306044 & 1.031723469 \\
+2.3 & 1.009495813 & 1.037358814 & 1.050731634 & 1.063764243 \\
+2.4 & 1.041012955 & 1.071994816 & 1.086964414 & 1.101614730 \\
+2.5 & 1.078631301 & 1.111346365 & 1.127262285 & 1.142903776 \\
+2.6 & 1.119632590 & 1.153300133 & 1.169781376 & 1.186038851 \\
+2.7 & 1.162270287 & 1.196488725 & 1.213325613 & 1.229985178 \\
+2.8 & 1.205472927 & 1.240060456 & 1.257146091 & 1.274092525 \\
+2.9 & 1.248613584 & 1.283506001 & 1.300791772 & 1.317967533 \\
+3.0 & 1.291345518 & 1.326535737 & 1.344004102 & 1.361383810 \\
+\hline
+\end{tabular}}
+
+ \end{solution}
+ \end{problem}
+
+\begin{problem}\label{exer:3.1.23}
+\emph{Numerical Quadrature}.
+The fundamental theorem of  calculus says that if $f$
+is continuous on a closed interval $[a,b]$ then it has an
+antiderivative $F$ such that $F'(x)=f(x)$ on $[a,b]$  and
+\begin{equation}\label{eqA:3.1.23}
+\int_a^bf(x)\,dx=F(b)-F(a).
+\end{equation}
+This solves the problem of evaluating a definite integral if
+the integrand $f$ has an antiderivative that can be found and
+evaluated easily. However, if $f$
+doesn't have this property,  (\ref{eqA:3.1.23}) doesn't  provide a useful
+way to evaluate the definite integral. In this case we must resort to
+approximate methods. There's a class of such methods called
+\emph{numerical quadrature}, where the approximation takes the
+form
+\begin{equation}\label{eqB:3.1.23}
+\int_a^bf(x)\,dx\approx \sum_{i=0}^n c_if(x_i),
+\end{equation}
+where $a=x_0<x_1<\cdots<x_n=b$ are suitably chosen points and
+$c_0$, $c_1$, \dots, $c_n$
+are suitably chosen constants. We call (\ref{eqB:3.1.23})  a \emph{quadrature formula}.
+\begin{enumerate}
+\item % (a)
+Derive the quadrature formula
+\begin{equation}\label{eqC:3.1.23}
+\int_a^bf(x)\,dx\approx
+h\sum_{i=0}^{n-1}f(a+ih)\mbox{\,(where}\, h=(b-a)/n)
+\end{equation}
+by applying Euler's method to the initial value problem
+$$
+y'=f(x),\quad y(a)=0.
+$$
+\item % (b)
+The quadrature formula (\ref{eqC:3.1.23}) is sometimes called \emph{the left rectangle rule}. Draw a figure that justifies this terminology.
+\item % (c)
+For several choices of $a$, $b$, and $A$,
+ apply (\ref{eqC:3.1.23}) to $f(x)=A$ with $n = 10,20,40,80,160,320$.
+Compare your results with the exact answers
+and explain what you find.
+\item % (d)
+For several choices of $a$, $b$,  $A$, and $B$,
+ apply (\ref{eqC:3.1.23}) to $f(x)=A+Bx$ with $n=10$, $20$, $40$, $80$, $160$, $320$.
+ Compare your results with the exact answers
+and explain what you find.
+\end{enumerate}
+\end{problem}
+
+\end{document}

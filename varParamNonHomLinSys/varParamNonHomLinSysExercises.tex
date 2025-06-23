@@ -1,0 +1,464 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+ \begin{problem}\label{exer:10.7.1}
+ Find a particular solution.
+ 
+ $ {\bf y}'=\begin{bmatrix}-1&-4\\-1&-1\end{bmatrix}{\bf
+y}+\begin{bmatrix}21e^{4t}\\8e^{-3t}\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.2}
+ Find a particular solution.
+ 
+ $ {\bf
+y}'=\frac{1}{5}\begin{bmatrix}-4&3\\-2&-11\end{bmatrix}{\bf
+y}+\begin{bmatrix}50e^{3t}\\10e^{-3t}\end{bmatrix}$
+
+\begin{solution}
+    $Y=\begin{bmatrix}
+-3e^{-t}&-e^{-2t}\\e^{-t}&2e^{-2t}\end{bmatrix}$;
+${\bf u}'=Y^{-1}{\bf f}=
+\frac{1}{5}\begin{bmatrix}-2e^t&-e^t
+\\e^{2t}&3e^{2t}\end{bmatrix}
+\begin{bmatrix}
+50e^{37}\\10e^{-3t}
+\end{bmatrix}=
+\begin{bmatrix}-20e^{4t}-2e^{-2t}\\
+10e^{5t}+6e^{-t}\end{bmatrix}$;
+${\bf u}=
+\begin{bmatrix}e^{-2t}-5e^{4t}\\
+2e^{5t}-6e^{-t}\end{bmatrix}$;
+${\bf y}_p=Y{\bf u}=
+\begin{bmatrix}13e^{3t}+3e^{-3t}\\
+-e^{3t}-11e^{-3t}\end{bmatrix}$.
+
+\end{solution}
+\end{problem} 
+
+
+ \begin{problem}\label{exer:10.7.3}
+ Find a particular solution.
+ 
+ $ {\bf y}'=\begin{bmatrix}1&2\\2&1\end{bmatrix}{\bf
+y}+\begin{bmatrix}1\\t\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.4}
+ Find a particular solution.
+ 
+ $ {\bf y}'=\begin{bmatrix}-4&-3\\6&5\end{bmatrix}{\bf
+y}+\begin{bmatrix}2\\-2e^t\end{bmatrix}$
+
+\begin{solution}
+    $Y=\begin{bmatrix}
+-e^{2t}&-e^{-t}\\2e^{2t}&e^{-t}\end{bmatrix}$;
+${\bf u}'=Y^{-1}{\bf f}=
+\begin{bmatrix}e^{-2t}&e^{-2t}\\
+-2e^t&-e^t\end{bmatrix}
+\begin{bmatrix}2\\-2e^t\end{bmatrix}=
+\begin{bmatrix}2e^{-2t}-2e^{-t}\\2e^{2t}-4e^t\end{bmatrix}$;
+${\bf u}=
+\begin{bmatrix}2e^{-t}-e^{-2t}\\
+e^{2t}-4e^t\end{bmatrix}$;
+${\bf y}_p=Y{\bf u}=
+\begin{bmatrix}5-3e^t\\5e^t-6\end{bmatrix}$.
+\end{solution}
+ \end{problem}
+
+
+ \begin{problem}\label{exer:10.7.5}
+ Find a particular solution.
+ 
+ $ {\bf y}'=\begin{bmatrix}-6&-3\\1&-2\end{bmatrix}{\bf
+y}+\begin{bmatrix}4e^{-3t}\\4e^{-5t}\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.6}
+ Find a particular solution.
+ 
+ $ {\bf y}'=\begin{bmatrix}0&1\\-1&0\end{bmatrix}{\bf
+y}+\begin{bmatrix}1\\t\end{bmatrix}$
+
+\begin{solution}
+    $Y=\begin{bmatrix}\sin t&-\cos t\\
+\cos t&\sin t\end{bmatrix}$;
+${\bf u}'=Y^{-1}{\bf f}=
+\begin{bmatrix}\sin t&\cos t\\-\cos t&\sin t\end{bmatrix}
+\begin{bmatrix}1\\t\end{bmatrix}=
+\begin{bmatrix}t\cos t+\sin t\\t\sin t-\cos
+t\end{bmatrix}$;
+${\bf u}=
+\begin{bmatrix}t\sin t\\-t\cos t\end{bmatrix}$;
+${\bf y}_p=Y{\bf u}=
+\begin{bmatrix}t\\0\end{bmatrix}$.
+\end{solution}
+ \end{problem}
+
+
+ \begin{problem}\label{exer:10.7.7}
+ Find a particular solution.
+ 
+ $ {\bf y}'=\begin{bmatrix}3&1&-1\\3&5&1\\-6&2&4\end{bmatrix}{\bf
+y}+\begin{bmatrix}3\\6\\3\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.8}
+ Find a particular solution.
+ 
+ $ {\bf
+y}'=\begin{bmatrix}3&-1&-1\\-2&3&2\\4&-1&-2\end{bmatrix}{\bf
+y}+\begin{bmatrix}1\\e^t\\e^t\end{bmatrix}$
+
+\begin{solution}
+    $Y=\begin{bmatrix}
+e^{3t}&e^{2t}&e^{-t}\\-e^{3t}&0&-3e^{-t}\\e^{3t}&e^{2t}&7
+e^{-t}\end{bmatrix}$;
+${\bf u}'=Y^{-1}{\bf f}=
+\frac{1}{6}\begin{bmatrix}
+3e^{-3t}&-6e^{-3t}&-3e^{-3t}\\4e^{-2t}&6e^{-2t}&2e^{-2t}\\
+-e^t&0&e^t\end{bmatrix}
+\begin{bmatrix}1\\e^t\\e^t\end{bmatrix}=
+\frac{1}{6}\begin{bmatrix}
+3e^{-3t}-9e^{-2t}\\8e^{-t}+4e^{-2t}\\e^{2t}-e^t\end{bmatrix}$;
+${\bf u}=
+\frac{1}{12}\begin{bmatrix}9e^{-2t}-2e^{-3t}\\
+-16e^{-t}-4e^{-2t}\\e^{2t}-2e^t\end{bmatrix}$;
+${\bf y}_p=Y{\bf u}=
+-\frac{1}{6}\begin{bmatrix}3e^t+4\\6e^t-4\\10
+\end{bmatrix}$.
+\end{solution}
+\end{problem}
+ 
+
+ \begin{problem}\label{exer:10.7.9}
+ Find a particular solution.
+
+$ {\bf y}'=\begin{bmatrix}-3&2&2\\2&-3&2\\2&2&-3\end{bmatrix}{\bf
+y}+\begin{bmatrix}e^t\\e^{-5t}\\e^t\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.10}
+ Find a particular solution.
+ 
+ $ {\bf
+y}'=\frac{1}{3}\begin{bmatrix}1&1&-3\\-4&-4&3\\-2&1&0\end{bmatrix}{\bf
+y}+\begin{bmatrix}e^t\\e^t\\e^t\end{bmatrix}$
+
+\begin{solution}
+    $Y=\begin{bmatrix}
+-e^t&e^{-t}&te^{-t}\\e^t&-e^{-t}&3e^{-t}-te^{-t}\\
+e^t&e^{-t}&te^{-t}\end{bmatrix}$;
+${\bf u}'=Y^{-1}{\bf f}=
+\frac{1}{18}\begin{bmatrix}
+-9e^{-t}&0&9e^{-t}\\3e^t(3-2t)&-6te^t&9e^t\\
+6e^t&6e^t&0\end{bmatrix}
+\begin{bmatrix}e^t\\e^t\\e^t\end{bmatrix}=
+\frac{1}{3}\begin{bmatrix}0\\
+e^{2t}(3-2t)\\2e^{2t}\end{bmatrix}$;
+${\bf u}=
+\frac{1}{3}\begin{bmatrix}0\\
+e^{2t}(2-t)\\e^{2t}\end{bmatrix}$;
+${\bf y}_p=Y{\bf u}=
+\frac{1}{3}\begin{bmatrix}
+2e^t\\e^t\\2e^t\end{bmatrix}$.
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.11}
+ Find a particular solution, given that $Y$ is a fundamental matrix for the complementary system.
+
+$ {\bf y}'=\frac{1}{t}\begin{bmatrix}1&t\\-t&1\end{bmatrix}{\bf y}
++t\begin{bmatrix}
+\cos t\\\sin t\end{bmatrix};  \quad Y=t\begin{bmatrix}\cos
+t&\sin t\\-\sin t&\cos t
+\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.12}
+ Find a particular solution, given that $Y$ is a fundamental matrix for the complementary system.
+ 
+$ {\bf y}'=\frac{1}{t}\begin{bmatrix}1&t\\t&1\end{bmatrix}{\bf y}
++\begin{bmatrix}
+t\\t^2\end{bmatrix};  \quad Y=t\begin{bmatrix}
+e^t&e^{-t}\\e^t&-e^{-t}
+\end{bmatrix}$
+
+\begin{solution}
+    ${\bf u}'=Y^{-1}{\bf f}=
+\frac{1}{2t}\begin{bmatrix}
+e^{-t}&e^{-t}\\e^t&-e^t\end{bmatrix}
+\begin{bmatrix}t\\t^2\end{bmatrix}=
+\frac{1}{2}\begin{bmatrix}
+e^{-t}(t+1)\\e^t(1-t)\end{bmatrix}$;
+${\bf u}=
+\frac{1}{2}\begin{bmatrix}
+-e^{-t}(t+2)\\e^t(2-t)\end{bmatrix}$;
+${\bf y}_p=Y{\bf u}=
+\frac{t}{2}\begin{bmatrix}
+e^t&e^{-t}\\e^t&-e^{-t}\end{bmatrix}
+\begin{bmatrix}-e^{-t}(t+2)\\
+e^t(2-t)\end{bmatrix}=
+-\begin{bmatrix}t^2\\2t\end{bmatrix}$.
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.13}
+ Find a particular solution, given that $Y$ is a fundamental matrix for the complementary system.
+ 
+$ {\bf y}'=\frac{1}{t^2-1}\begin{bmatrix}t&-1\\-1&t\end{bmatrix}{\bf y}+
+t\begin{bmatrix}
+1\\-1\end{bmatrix};  \quad Y=\begin{bmatrix}
+t&1\\1&t
+\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.14}
+ Find a particular solution, given that $Y$ is a fundamental matrix for the complementary system.
+ 
+$ {\bf y}'=\frac{1}{3}\begin{bmatrix}1&-2e^{-t}\\2e^t&-1\end{bmatrix}{\bf y}+
+\begin{bmatrix}e^{2t}
+\\e^{-2t}\end{bmatrix};  \quad Y=\begin{bmatrix}
+2&e^{-t}\\e^t&2
+\end{bmatrix}$
+
+\begin{solution}
+    ${\bf u}'=Y^{-1}{\bf f}=
+\frac{1}{3}\begin{bmatrix}2&-e^{-t}\\-e^t&2\end{bmatrix}
+\begin{bmatrix}e^{2t}\\e^{-2t}\end{bmatrix}=
+\frac{1}{3}\begin{bmatrix}
+2e^{2t}-e^{-3t}\\2e^{-2t}-e^{3t}\end{bmatrix}$;
+${\bf u}=
+\frac{1}{9}\begin{bmatrix}
+3e^{2t}+e^{-3t}\\-e^{3t}-3e^{-2t}\end{bmatrix}$;
+${\bf y}_p=Y{\bf u}=
+\frac{1}{9}\begin{bmatrix}
+2&e^{-t}\\e^t&2\end{bmatrix}
+\begin{bmatrix}
+3e^{2t}+e^{-3t}\\-e^{3t}-3e^{-2t}\end{bmatrix}=
+{1}{9}\begin{bmatrix}
+5e^{2t}-e^{-3t}\\e^{3t}-5e^{-2t}\end{bmatrix}$.
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.15}
+ Find a particular solution, given that $Y$ is a fundamental matrix for the complementary system.
+ 
+$ {\bf y}'=\frac{1}{2t^4}\begin{bmatrix}3t^3&t^6\\1&-3t^3\end{bmatrix}{\bf y}+
+\frac{1}{t}\begin{bmatrix}
+t^2\\1\end{bmatrix};  \quad Y=\frac{1}{t^2}\begin{bmatrix}
+t^3&t^4\\-1&t
+\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.16}
+ Find a particular solution, given that $Y$ is a fundamental matrix for the complementary system.
+ 
+$ {\bf y}'=
+\begin{bmatrix} \frac{1}{t-1}
+&- \frac{e^{-t}}{t-1}\\ \frac{e^t}{t+1}&\frac{1}{t+1}\end{bmatrix}{\bf y}+\begin{bmatrix}
+t^2-1\\t^2-1\end{bmatrix};  \quad Y=\begin{bmatrix}
+t&e^{-t}\\e^t&t
+\end{bmatrix}$
+
+\begin{solution}
+    ${\bf u}'=Y^{-1}{\bf f}=
+\frac{1}{ t^2-1}\begin{bmatrix}
+t&-e^{-t}\\-e^t&t\end{bmatrix}
+\begin{bmatrix}t^2-1\\t^2-1\end{bmatrix}=
+\begin{bmatrix}t-e^{-t}\\t-e^t\end{bmatrix}$;
+${\bf u}=
+\frac{1}{2}\begin{bmatrix}
+2e^{-t}+t^2\\t^2-2e^t\end{bmatrix}$;
+${\bf y}_p=Y{\bf u}
+=\frac{1}{2}\begin{bmatrix}t&e^{-t}\\e^t&t\end{bmatrix}
+\begin{bmatrix}
+2e^{-t}+t^2\\t^2-2e^t\end{bmatrix}=
+\frac{1}{2}\begin{bmatrix}
+te^{-t}(t+2)+t^3-2\\te^t(t-2)+t^3+2\end{bmatrix}$.
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.17}
+ Find a particular solution, given that $Y$ is a fundamental matrix for the complementary system.
+ 
+$ {\bf y}'=\frac{1}{t}\begin{bmatrix}1&1&0\\0&2&1\\-2&2&2\end{bmatrix}{\bf y}
++\begin{bmatrix}1\\2\\1\end{bmatrix}
+\quad Y=\begin{bmatrix}
+t^2&t^3&1\\t^2&2t^3&-1\\0&2t^3&2
+\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.18}
+ Find a particular solution, given that $Y$ is a fundamental matrix for the complementary system.
+ 
+$ {\bf y}'=
+\begin{bmatrix}3&e^t&e^{2t}\\e^{-t}&2&e^t\\e^{-2t}&e^{-t}&1\end{bmatrix}{\bf
+y}
++\begin{bmatrix}
+e^{3t}\\0 \\ 0\end{bmatrix};  \quad Y=\begin{bmatrix}
+e^{5t}&e^{2t}&0\\e^{4t}&0&e^t\\e^{3t}&-1&-1
+\end{bmatrix}$
+
+\begin{solution}
+    ${\bf u}'=Y^{-1}{\bf f}=
+\frac{1}{3}\begin{bmatrix}e^{-5t}&e^{-4t}&e^{-3t}\\
+2e^{-2t}&-e^{-t}&-1\\-e^{-2t}&2e^{-t}&-1\end{bmatrix}
+\begin{bmatrix}e^t\\0\\0\end{bmatrix}=
+\frac{1}{3}\begin{bmatrix}
+e^{-4t}\\2e^{-t}\\-e^{-t}\end{bmatrix}$;
+${\bf u}=
+\frac{1}{12}\begin{bmatrix}
+-e^{-4t}\\-8e^{-t}\\4e^{-t}\end{bmatrix}$;
+${\bf y}_p=Y{\bf u}=
+\frac{1}{12}\begin{bmatrix}e^{5t}&e^{2t}&0\\
+e^{4t}&0&e^t\\e^{3t}&-1&-1\end{bmatrix}
+\begin{bmatrix}
+-e^{-4t}\\-8e^{-t}\\4e^{-t}\end{bmatrix}=
+\frac{1}{4}\begin{bmatrix}-3e^t\\
+1\\e^{-t}\end{bmatrix}$.
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.19}
+ Find a particular solution, given that $Y$ is a fundamental matrix for the complementary system.
+ 
+$ {\bf y}'=\frac{1}{t}\begin{bmatrix}1&t&0\\0&1&t\\0&-t&1\end{bmatrix}{\bf y}
++\begin{bmatrix}
+t\\t \\t \end{bmatrix};  \quad Y=t\begin{bmatrix}
+1&\cos t&\sin t \\0&-\sin t&\cos t\\0&-\cos t&-\sin t
+\end{bmatrix}$
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.20}
+ Find a particular solution, given that $Y$ is a fundamental matrix for the complementary system.
+ 
+$ {\bf y}'=-\frac{1}{t}\begin{bmatrix}e^{-t}&-t&1-e^{-t}\\e^{-t}&1&-t-e^{-t}\\e^{-t}&-t
+&1-e^{-t}\end{bmatrix}{\bf
+y}
++\frac{1}{t}\begin{bmatrix}
+e^t\\0 \\e^t \end{bmatrix};  \quad Y=\frac{1}{t}\begin{bmatrix} e^t&e^{-t}&t\\e^t&-e^{-t}&e^{-t}\\e^t&e^{-t}&0
+\end{bmatrix}$
+
+\begin{solution}
+    ${\bf u}'=Y^{-1}{\bf f}=
+\frac{1}{2t}\begin{bmatrix}
+-e^{-2t}&te^{-t}&te^{-t}+e^{-2t}\\1&-te^t&te^t-1\\
+2&0&-2\end{bmatrix}
+\begin{bmatrix}e^t\\0\\e^t\end{bmatrix}=
+\begin{bmatrix}1\\e^{2t}\\0\end{bmatrix}$;
+${\bf u}=
+\frac{1}{4}\begin{bmatrix}
+2t\\e^{2t}\\0\end{bmatrix}$;
+${\bf y}_p=Y{\bf u}=
+Y=\frac{1}{4t}\begin{bmatrix}e^t&e^{-t}&t\\
+e^t&-e^{-t}&e^{-t}\\e^t&e^{-t}&0\end{bmatrix}
+\begin{bmatrix}2t\\e^{2t}\\0\end{bmatrix}=
+{e^{t}}{4t}\begin{bmatrix}
+2t+1\\2t-1\\2t+1\end{bmatrix}$.
+\end{solution}
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.21}  Prove Theorem~\ref{thmtype:10.7.1}.
+ \end{problem}
+
+ \begin{problem}\label{exer:10.7.22}
+\begin{enumerate}
+\item % (a)
+Convert the scalar equation
+$$
+P_0(t)y^{(n)}+P_1(t)y^{(n-1)}+\cdots+P_n(t)y=F(t)
+\quad\quad\text{(A)}
+$$
+into an equivalent $n\times n$ system
+$$
+{\bf y}'=A(t){\bf y}+{\bf f}(t).
+\quad\quad\text{(B)}
+$$
+\item % (b)
+Suppose  (A) is normal on an interval $(a,b)$ and
+$\{y_1,y_2,\dots,y_n\}$ is a fundamental set of solutions of
+$$
+P_0(t)y^{(n)}+P_1(t)y^{(n-1)}+\cdots+P_n(t)y=0
+\quad\quad\text{(C)}
+$$
+on $(a,b)$. Find a corresponding fundamental matrix $Y$ for
+$$
+{\bf y}'=A(t){\bf y}
+\quad\quad\text{(D)}
+$$
+on $(a,b)$ such that
+$$
+y=c_1y_1+c_2y_2+\cdots+c_ny_n
+$$
+is a solution of  (C) if and only if
+${\bf y}=Y{\bf c}$ with
+$$
+{\bf c}=\begin{bmatrix}c_1\\c_2\\\vdots\\c_n\end{bmatrix}
+$$
+is a solution of  (D).
+\item % (c)
+Let $y_p=u_1y_1+u_1y_2+\cdots+u_ny_n$ be a particular solution of
+ (A), obtained by the method of variation of parameters for scalar
+equations as given in Section~9.4, and define
+$$
+{\bf u}=\begin{bmatrix}u_1\\u_2\\\vdots\\u_n\end{bmatrix}.
+$$
+Show that ${\bf y}_p=Y{\bf u}$ is a  solution of  (B).
+
+\begin{solution}
+    If ${\bf y}_p=Y{\bf u}$, then ${\bf y}_p'=Y'{\bf u}+Y{\bf u}'=AY{\bf
+u}+Y{\bf u}'$, so (E) ${\bf y}_p'=A{\bf y_p}+Y{\bf u}'$. However, from
+the derivation of the method of variation of parameters in
+Section~9.4, $Y{\bf u}'={\bf f}$ as defined in the solution
+of part (a). This and (E) imply the conclusion.
+\end{solution}
+
+\item % (d)
+Let  ${\bf y}_p=Y{\bf u}$ be  a particular solution of  (B),
+obtained by the method of variation of parameters for systems as given in
+this section. Show that
+ $y_p=u_1y_1+u_1y_2+\cdots+u_ny_n$ is a solution of
+ (A).
+
+ \begin{solution}
+     Since $Y{\bf u}'={\bf f}$ with ${\bf f}$ as defined in the
+solution of part(a), $u_1,u_2,\dots,u_n$ satisfy
+the conditions required in the derivation of the method of
+variation of parameters in Section~9.4; hence,
+$y_p=c_1y_1+c_2y_2+\cdots+c_ny_n$ is a particular solution of (A).
+ \end{solution}
+\end{enumerate}
+\end{problem}
+
+ \begin{problem}\label{exer:10.7.23}
+Suppose the $n\times n$ matrix function $A$ and the $n$--vector
+function ${\bf f}$ are continuous on $(a,b)$. Let $t_0$ be in $(a,b)$,
+let ${\bf k}$ be an arbitrary constant vector, and let $Y$ be a
+fundamental matrix for the homogeneous system ${\bf y}'=A(t){\bf y}$.
+Use variation of parameters to show that the solution of the initial
+value problem
+$$
+{\bf y}'=A(t){\bf y}+{\bf f}(t),\quad {\bf y}(t_0)={\bf k}
+$$
+is
+$$
+{\bf y}(t)=Y(t)\left( Y^{-1}(t_0){\bf k}+\int_{t_0}^t
+Y^{-1}(s){\bf f}(s)\, ds\right).
+$$
+\end{problem}
+
+\end{document}

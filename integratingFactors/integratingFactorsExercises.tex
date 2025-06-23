@@ -1,0 +1,694 @@
+\documentclass{ximera}
+\input{../preamble.tex}
+
+\title{Exercises} \license{CC BY-NC-SA 4.0}
+
+\begin{document}
+
+\begin{abstract}
+\end{abstract}
+\maketitle
+
+\begin{onlineOnly}
+\section*{Exercises}
+\end{onlineOnly}
+
+
+
+\begin{problem}\label{exer:2.6.1}
+\begin{enumerate}
+\item % (a)
+Verify that $\mu(x,y)=y$ is an integrating factor for
+\begin{equation}\label{eqA:2.6.1}
+y\,dx+\left(2x+\frac{1}{y}\right)\,dy=0
+\end{equation}
+on any open rectangle that does not intersect  the $x$ axis
+or, equivalently,  that
+\begin{equation}\label{eqB:2.6.1}
+y^2\,dx+(2xy+1)\,dy=0
+\end{equation}
+is exact on any such rectangle.
+\item % (b)
+Verify that $y\equiv0$  is a solution of  (\ref{eqB:2.6.1}),
+but not of  (\ref{eqA:2.6.1}).
+\item % (b)
+Show that
+\begin{equation}\label{eqC:2.6.1}
+y(xy+1)=c
+\end{equation}
+is an implicit solution of (\ref{eqB:2.6.1}), and explain why
+every differentiable function $y=y(x)$ other than $y\equiv0$
+that satisfies  (\ref{eqC:2.6.1})
+ is also a solution of~(\ref{eqA:2.6.1}).
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.2}
+\begin{enumerate}
+\item % (a)
+Verify that $\mu(x,y)=1/(x-y)^2$ is an integrating factor for
+\begin{equation}\label{eqA:2.6.2}
+-y^2\,dx+x^2\,dy=0
+\end{equation}
+on any open rectangle  that does not intersect the line $y=x$
+or, equivalently, that
+\begin{equation}\label{eqB:2.6.2}
+-\frac{y^2}{(x-y)^2}\,dx+\frac{x^2}{(x-y)^2}\,dy=0
+\end{equation}
+is exact on any such rectangle.
+\item % (b)
+Use Theorem~\ref{thmtype:2.2.1} to show that
+\begin{equation}\label{eqC:2.6.2}
+\frac{xy}{(x-y)}=c
+\end{equation}
+is an implicit solution of (\ref{eqB:2.6.2}), and explain why
+it's also an implicit solution of (\ref{eqA:2.6.2})
+
+
+
+\begin{solution}
+    To show that $\mu(x,y)=\frac{1}{(x-y)^2}$
+is an integrating
+factor for (\ref{eqA:2.6.2}) and that (\ref{eqB:2.6.2}) is exact, it suffices to observe that
+$\frac{\partial }{\partial x}\left(\frac{xy}{ x-y}\right)=-
+\frac{y^2}{(x-y)^2}$ and
+$\frac{\partial }{\partial y}\left(\frac{xy}{ x-y}\right)=
+\frac{x^2}{(x-y)^2}$. By Theorem~\ref{thmtype:2.5.1} this also shows that
+(\ref{eqC:2.6.2}) is an implicit solution of (\ref{eqB:2.6.2}). Since
+$\mu(x,y)$ is never zero, any solution of (\ref{eqB:2.6.2})  is a solution of~(\ref{eqA:2.6.2}).
+\end{solution}
+
+\item % (c)
+Verify that $y=x$  is a solution of  (\ref{eqA:2.6.2}),
+even though it can't be obtained from  (\ref{eqC:2.6.2}).
+
+
+
+\begin{solution}
+    If we interpret (\ref{eqA:2.6.2}) as $-y^2+x^2y'=0$, then substituting
+$y=x$ yields $-x^2+x^2\cdot1=0$.
+\end{solution}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.3} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$y\,dx-x\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.6.4} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$3x^2y\,dx+2x^3\,dy=0$$
+
+
+
+\begin{solution}
+    $M(x,y)=3x^2y$;\;
+$N(x,y)=2x^3$;\;
+$M_y(x,y)-N_x(x,y)=3x^2-6x^2=-3x^2$;\;
+$p(x)=\frac{M_y(x,y)-N_x(x,y)}{
+N(x,y)}=-\frac{3x^2}{2x^3}=-\frac{3}{2x}$;\;
+$\int p(x)\,dx=-\frac{3}{2}\ln|x|$;\;
+$\mu(x)=P(x)=x^{-3/2}$;
+therefore
+$3x^{1/2}y\,dx+2x^{3/2}\,dy=0$
+is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=3x^{1/2}y$ and
+(B) $F_y(x,y)=2x^{3/2}$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,y)=2x^{3/2}y+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $F_y(x,y)=2x^{3/2}+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=0$, so we take
+$\phi(y)=0$.
+Substituting this into (C) yields
+$F(x,y)=2x^{3/2}y$,
+so $x^{3/2}y=c$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.5} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$2y^3\,dx+3y^2\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.6.6} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$(5xy+2y+5)\,dx+2x\,dy=0$$
+
+
+
+\begin{solution}
+    $M(x,y)=5xy+2y+5$;\;
+$N(x,y)=2x$;\;
+$M_y(x,y)-N_x(x,y)=(5x+2)-2=5x$;\;
+$p(x)=\frac{M_y(x,y)-N_x(x,y)}{
+N(x,y)}=\frac{5x}{2x}=\frac{5}{2}$;\;
+$\int p(x)\,dx=\frac{5x}{2}$;\;
+$\mu(x)=P(x)=e^{5x/2}$;
+therefore
+$e^{5x/2}(5xy+2y+5)\,dx+2xe^{5x/2}\,dy=0$
+is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=e^{5x/2}(5xy+2y+5)$ and
+(B) $F_y(x,y)=2xe^{5x/2}$.
+Integrating (B) with respect to $y$ yields
+(C) $F(x,y)=2xye^{5x/2}+\psi(x)$.
+Differentiating (C) with respect to $x$  yields
+(D) $F_x(x,y)=5xye^{5x/2}+2ye^{5x/2}+\psi'(x)$.
+Comparing (D) with (A)  shows that
+$\psi'(x)=5e^{5x/2}$, so we take
+$\psi(x)=2e^{5x/2}$.
+Substituting this into (C) yields
+$F(x,y)=2e^{5x/2}(xy+1)$,
+so $e^{5x/2}(xy+1)=c$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.7} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$(xy+x+2y+1)\,dx+(x+1)\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.6.8} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$(27xy^2+8y^3)\,dx+(18x^2y+12xy^2)\,dy=0$$
+
+
+
+\begin{solution}
+    $M(x,y)=27xy^2+8y^3$;\;
+$N(x,y)=18x^2y+12xy^2$;\;
+$M_y(x,y)-N_x(x,y)=(54xy+24y^2)-(36xy+12y^2)=18xy+12y^2$;\;
+$p(x)=\frac{M_y(x,y)-N_x(x,y)}{ N(x,y)}=\frac{18xy+12y^2}{
+18x^2y+12y^2x}=\frac{1}{ x}$;\;
+$\int p(x)\,dx=\ln|x|$;\;
+$\mu(x)=P(x)=x$;
+therefore
+$(27x^2y^2+8xy^3)\,dx+(18x^3y+12x^2y^2)\,dy=0$
+is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=27x^2y^2+8xy^3$ and
+(B) $F_y(x,y)=18x^3y+12x^2y^2$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,y)=9x^3y^2+4x^2y^3+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $F_y(x,y)=18x^3y+12x^2y^2+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=0$, so we take
+$\phi(y)=0$.
+Substituting this into (C) yields
+$F(x,y)=9x^3y^2+4x^2y^3$,
+so $x^2y^2(9x+4y)=c$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.9} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$(6xy^2+2y)\,dx+(12x^2y+6x+3)\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.6.10} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$y^2\,dx+\left(xy^2+3xy+\frac{1}{y}\right)\,dy=0$$
+
+
+
+\begin{solution}
+    $M(x,y)=y^2$;\;
+$N(x,y)= \left(xy^2+3xy+\frac{1}{ y}\right)$;\;
+$M_y(x,y)-N_x(x,y)=2y-(y^2+3y)=-y(y+1)$;\;
+$q(y)=\frac{N_x(x,y)-M_y(x,y)}{ M(x,y)}=\frac{y(y+1)}{ y^2}=
+1+\frac{1}{ y}$;\;
+$\int q(y)\,dy=y\ln|y|$;\;
+$\mu(y)=Q(y)=ye^y$;
+therefore
+$y^3e^y\,dx+e^y(xy^3+3xy^2+1)\,dy=0$
+is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=y^3e^y$ and
+(B) $F_y(x,y)=e^y(xy^3+3xy^2+1)$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,y)=xy^3e^y+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $F_y(x,y)=xy^3e^y+3xy^2e^y+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=e^y$, so we take
+$\phi(y)=e^y$.
+Substituting this into (C) yields
+$F(x,y)=xy^3e^y+e^y$,
+so $e^y(xy^3+1)=c$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.11} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$(12x^3y+24x^2y^2)\,dx+(9x^4+32x^3y+4y)\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.6.12} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$(x^2y+4xy+2y)\,dx+(x^2+x)\,dy=0$$
+
+
+
+\begin{solution}
+    $M(x,y)=x^2y+4xy+2y$;\;
+$N(x,y)=x^2+x$;\;
+$M_y(x,y)-N_x(x,y)=(x^2+4x+2)-(2x+1)=x^2+2x+1=(x+1)^2$;\;
+$p(x)=\frac{M_y(x,y)-N_x(x,y)}{ N(x,y)}=\frac{(x+1)^2}{
+x(x+1)}=1+\frac{1}{ x}$;\;
+$\int p(x)\,dx=x+\ln|x|$;\;
+$\mu(x)=P(x)=xe^x$;
+therefore
+$e^x(x^3y+4x^2y+2xy)\,dx+e^x(x^3+x^2)\,dy=0$
+is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=e^x(x^3y+4x^2y+2xy)$ and
+(B) $F_y(x,y)=e^x(x^3+x^2)$.
+Integrating (B) with respect to $y$ yields
+(C) $F(x,y)=y(x^3+x^2)e^x+\psi(x)$.
+Differentiating (C) with respect to $x$  yields
+(D) $F_x(x,y)=e^x(x^3y+4x^2y+2xy)+\psi'(x)$.
+Comparing (D) with (A)  shows that
+$\psi'(x)=0$, so we take
+$\psi(x)=0$.
+Substituting this into (C) yields
+$F(x,y)=y(x^3+x^2)e^x=x^2y(x+1)e^x$,
+so $x^2y(x+1)e^x=c$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.13} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$-y\,dx+(x^4-x)\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.6.14} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$\cos x\cos y\,dx+(\sin x\cos y-\sin x\sin y+y)\,dy=0$$
+
+
+
+\begin{solution}
+    $M(x,y)=\cos x\cos y$;\;
+$N(x,y)=\sin x\cos y-\sin x\sin y+y$;\;
+$M_y(x,y)-N_x(x,y)=-\cos x\sin y-(\cos x\cos y-\cos x\sin y)
+=-\cos x\cos y$;\;
+$q(y)=\frac{N_x(x,y)-M_y(x,y)}{ M(x,y)}=\frac{\cos x\cos y
+}{\cos x\cos y}=1$;\;
+$\int q(y)\,dy=1$;\;
+$\mu(y)=Q(y)=e^y$;
+therefore
+$e^y\cos x\cos y\,dx+e^y(\sin x\cos y-\sin x\sin y+y)\,dy=0$
+is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=e^y\cos x\cos y$ and
+(B) $F_y(x,y)=e^y(\sin x\cos y-\sin x\sin y+y)$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,y)=e^y\sin x\cos y+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $F_y(x,y)=e^y(\sin x\cos y-\sin x\sin y)+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=ye^y$, so we take
+$\phi(y)=e^y(y-1)$.
+Substituting this into (C) yields
+$F(x,y)=e^y(\sin x\cos y+y-1)$,
+so $e^y(\sin x\cos y+y-1)=c$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.15} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$(2xy+y^2)\,dx+(2xy+x^2-2x^2y^2-2xy^3)\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.6.16} Find an integrating factor; that is a function of only one variable, and solve the given equation.
+$$y\sin y\,dx+x(\sin y-y\cos y)\,dy=0$$
+
+
+
+\begin{solution}
+    $M(x,y)=y\sin y$;\;
+$N(x,y)=x(\sin y-y\cos y)$;\;
+ $M_y(x,y)-N_x(x,y)=(y\cos y+\sin y)-(\sin y-y\cos y)=2y\cos y$;
+$q(y)=\frac{N_x(x,y)-M_y(x,y)}{ N(x,y)}=-\frac{2\cos y}{\sin y}$;\;
+$\int q(y)\,dy=-2\ln|\sin y|$;\;
+$\mu(y)=Q(y)=\frac{1}{\sin^2y}$;
+therefore
+$\left({y}{\sin y}\right)\,dx+
+x\left(\frac{1}{\sin y}-\frac{y\cos y}{\sin^2y}\right)\,dy=0$
+is exact. We must find $F$ such that
+(A) $F_x(x,y)=\frac{y}{\sin y}$ and
+(B) $F_y(x,y)=x\left(\frac{1}{\sin y}-\frac{y\cos y}{\sin^2y}\right)$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,y)=\frac{xy}{\sin y}+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $F_y(x,y)=x\left(\frac{1}{\sin y}-\frac{y\cos y}{\sin^2y}\right)
++\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=0$, so we take
+$\phi(y)=0$.
+Substituting this into (C) yields
+$F(x,y)=\frac{xy}{\sin y}$,
+so $\frac{xy}{\sin y}=c$. In addition, the given equation has the
+constant solutions $y=k\pi$, where $k$ is an integer.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.17} Find an integrating factor of the form $\mu(x,y)=P(x)Q(y)$ and solve the given equation.
+$$y(1+5\ln|x|)\,dx+4x\ln|x|\,dy=0$$
+\end{problem}
+
+ \begin{problem}\label{exer:2.6.18} Find an integrating factor of the form $\mu(x,y)=P(x)Q(y)$ and solve the given equation.
+ $$(\alpha y+ \gamma xy)\,dx+(\beta x+ \delta xy)\,dy=0$$
+
+ 
+
+ \begin{solution}
+     $M(x,y)=\alpha y+\gamma xy$;\;
+$N(x,y)=\beta x+ \delta xy$;\;
+ $M_y(x,y)-N_x(x,y)=(\alpha+\gamma x)-(\beta+\delta y)$;
+and  $p(x)N(x,y)-q(y)M(x,y)=p(x)x(\beta + \delta y)-
+q(y)y(\alpha +\gamma x)$.
+so exactness requires that
+ $(\alpha+\gamma x)-(\beta+\delta y)=
+p(x)x(\beta+\delta y)-
+q(y)y(\alpha+\gamma x)$,
+which holds if
+  $p(x)x=-1$ and $q(y)y=-1$. Thus
+ $p(x)=-\frac{1}{ x}$;\;
+ $q(y)=-\frac{1}{ y}$;\;
+$\int p(x)\,dx=-\ln|x|$;\;
+$\int q(y)\,dy=-\ln|y|$;\;
+$P(x)=\frac{1}{ x}$;
+$Q(y)=\frac{1}{ y}$;
+$\mu(x,y)=\frac{1}{ xy}$.
+Therefore,
+$\left(\frac{\alpha}{ x}+\gamma\right)\,dx+
+\left(\frac{\beta}{ y}+\delta\right)\,dy=0$
+is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=\frac{\alpha}{ x}+\gamma$ and
+(B) $F_y(x,y)=\frac{\beta}{ y}+\delta$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,y)=\alpha\ln|x|+\gamma x+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $F_y(x,y)=\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=\frac{\beta}{ y}+\delta$, so we take
+$\phi(y)=\beta\ln|y|+\delta y$.
+Substituting this into (C) yields
+$F(x,y)=\alpha\ln|x|+\gamma x+\beta\ln|y|+\delta y$,
+so $|x|^\alpha|y|^\beta e^{\gamma x}e^{\delta y}=c$.
+The given equation also has the solutions $x\equiv0$
+and $y\equiv0$.
+
+ \end{solution}
+
+ \end{problem}
+
+\begin{problem}\label{exer:2.6.19}Find an integrating factor of the form $\mu(x,y)=P(x)Q(y)$ and solve the given equation.
+$$(3x^2y^3-y^2+y)\,dx+(-xy+2x)\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.6.20} Find an integrating factor of the form $\mu(x,y)=P(x)Q(y)$ and solve the given equation.
+$$2y\,dx+ 3(x^2+x^2y^3)\,dy=0$$
+
+
+
+\begin{solution}
+    $M(x,y)=2y$;\;
+$N(x,y)=3(x^2+x^2y^3)$;\;
+ $M_y(x,y)-N_x(x,y)=2-(6x+6xy^3)$;
+and  $p(x)N(x,y)-q(y)M(x,y)=3p(x)(x^2+x^2y^3)-2q(y)y$.
+so exactness requires that
+(A) $2-6x-6xy^3=3p(x)x(x+xy^3)-2q(y)y$.
+To obtain  similar terms on the two sides of (A)
+we let  $p(x)x=a$ and $q(y)y=b$  where $a$ and $b$ are constants
+such that $2-6x-6xy^3=3a(x+xy^3)-2b$, which  holds if
+$a=-2$ and $b=-1$. Thus,
+ $p(x)=-\frac{2}{ x}$;\;
+ $q(y)=-\frac{1}{ y}$;\;
+$\int p(x)\,dx=-2\ln|x|$;\;
+$\int q(y)\,dy=-\ln|y|$;\;
+$P(x)=\frac{1}{ x^2}$;
+$Q(y)=\frac{1}{ y}$;
+$\mu(x,y)=\frac{1}{ x^2y}$.
+Therefore,
+$\frac{2}{ x^2}\,dx+3\left(\frac{1}{ y}+y^2\right)\,dy=0$
+is exact.
+We must find $F$ such that
+(B) $F_x(x,y)=\frac{2}{ x^2}$ and
+(C) $F_y(x,y)=3\left(\frac{1}{ y}+y^2\right)$.
+Integrating (B) with respect to $x$ yields
+(D) $F(x,y)=-\frac{2}{ x}+\phi(y)$.
+Differentiating (D) with respect to $y$  yields
+(E) $F_y(x,y)=\phi'(y)$.
+Comparing (E) with (C)  shows that
+$\phi'(y)=3\left(\frac{1}{ y}+y^2\right)$, so we take
+$\phi(y)=y^3+3\ln|y|$.
+Substituting this into (D) yields
+$F(x,y)=-\frac{2}{ x}+y^3+3\ln|y|$,
+so $-\frac{2}{ x}+y^3+3\ln|y|=c$.
+The given equation also has the solutions $x\equiv0$
+and $y\equiv0$.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.21}Find an integrating factor of the form $\mu(x,y)=P(x)Q(y)$ and solve the given equation.
+$$(a\cos xy-y\sin xy)\,dx+(b\cos xy-x\sin xy)\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.6.22}Find an integrating factor of the form $\mu(x,y)=P(x)Q(y)$ and solve the given equation.
+$$x^4y^4\,dx+x^5y^3\,dy=0$$
+
+
+
+\begin{solution}
+    $M(x,y)=x^4y^4$;\;
+$N(x,y)=x^5y^3$;\;
+ $M_y(x,y)-N_x(x,y)=4x^4y^3-5x^4y^3=-x^4y^3$;
+and  $p(x)N(x,y)-q(y)M(x,y)=p(x)x^5y^3-q(y)x^4y^4$.
+so exactness requires that
+ $-x^4y^3=p(x)x^5y^3-q(y)x^4y^4$, which is equivalent to
+ $p(x)x-q(y)y=-1$. This holds if
+ $p(x)x=a$ and $q(y)y=a+1$  where $a$ is an arbitrary real number.
+Thus,
+ $p(x)=\frac{a}{x}$;\;
+ $q(y)=\frac{a+1}{y}$;\;
+$\int p(x)\,dx=a\ln|x|$;\;
+$\int q(y)\,dy=(a+1)\ln|y|$;\;
+$P(x)=|x|^a$;
+$Q(y)=|y|^{a+1}$;
+$\mu(x,y)=|x^a||y|^{a+1}$.
+Therefore,
+$|x|^a|y|^{a+1}\left(x^4y^4\,dx+x^5y^3\,dy\right)=0$
+is exact for any choice of $a$. For simplicity we let $a=-4$,
+so (A)  is equivalent to $y\,dx+x\,dy=0$.
+We must find $F$ such that
+(B) $F_x(x,y)=y$ and
+(C) $F_y(x,y)=x$.
+Integrating (B) with respect to $x$ yields
+(D) $F(x,y)=xy+\phi(y)$.
+Differentiating (D) with respect to $y$  yields
+(E) $F_y(x,y)=x+\phi'(y)$.
+Comparing (E) with (C)  shows that
+$\phi'(y)=0$, so we take
+$\phi(y)=0$.
+Substituting this into (D) yields
+$F(x,y)=xy$,
+so $xy=c$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.23} Find an integrating factor of the form $\mu(x,y)=P(x)Q(y)$ and solve the given equation.
+$$y(x\cos x+2\sin x)\,dx+x(y+1)\sin x\,dy=0$$
+\end{problem}
+
+\begin{problem}\label{exer:2.6.24} Find an integrating factor and solve the  equation. Plot a direction field and some integral curves for the equation in the indicated rectangular region.
+ $$(x^4y^3+y)\,dx+(x^5y^2-x)\,dy=0;   \quad \{-1\leq x\leq 1,-1\leq  y\leq 1\}$$
+
+ 
+
+ \begin{solution}
+     $M(x,y)=x^4y^3+y$;\;
+$N(x,y)=x^5y^2-x$;\;
+$M_y(x,y)-N_x(x,y)=(3x^4y^2+1)-(5x^4y^2-1)=-2x^4y^2+2$;\;
+$p(x)=\frac{M_y(x,y)-N_x(x,y)}{ N(x,y)}=-\frac{2x^4y^2-2
+}{ x^5y^2-x}=-\frac{2}{ x}$;\;
+$\int p(x)\,dx=-2\ln|x|$;\;
+$\mu(x)=P(x)=\frac{1}{ x^2}$;
+therefore
+$\left(x^2y^3+\frac{y}{ x^2}\right)\,dx+
+\left(x^3y^2-\frac{1}{ x}\right)\,dy=0$
+is exact.
+We must find $F$ such that
+(A) $F_x(x,y)=\left(x^2y^3+\frac{y}{ x^2}\right)$ and
+(B) $F_y(x,y)=\left(x^3y^2-\frac{1}{ x}\right)$.
+Integrating (A) with respect to $x$ yields
+(C) $F(x,y)=\frac{x^3y^3}{3}-\frac{y}{ x}+\phi(y)$.
+Differentiating (C) with respect to $y$  yields
+(D) $F_y(x,y)=x^3y^2-\frac{1}{ x}+\phi'(y)$.
+Comparing (D) with (B)  shows that
+$\phi'(y)=0$, so we take
+$\phi(y)=0$.
+Substituting this into (C) yields
+$F(x,y)=\frac{x^3y^3}{3}-\frac{y}{ x}$,
+so $\frac{x^3y^3}{3}-\frac{y}{ x}=c$.
+
+ \end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.25}Find an integrating factor and solve the  equation. Plot a direction field and some integral curves for the equation in the indicated rectangular region.
+$$(3xy+2y^2+y)\,dx+(x^2+2xy+x+2y)\,dy=0;   \quad \{-2\leq x\leq 2,-2\leq y\leq 2\}$$
+\end{problem}
+
+\begin{problem}\label{exer:2.6.26} Find an integrating factor and solve the  equation. Plot a direction field and some integral curves for the equation in the indicated rectangular region.
+$$(12 xy+6y^3)\,dx+(9x^2+10xy^2)\,dy=0;   \quad \{-2\leq x\leq 2,-2\leq y\leq 2\}$$
+
+
+
+\begin{solution}
+    $M(x,y)=12xy+6y^3$;\;
+$N(x,y)=9x^2+10xy^2$;\;
+ $M_y(x,y)-N_x(x,y)=(12x+18y^2)-(18x+10y^2)=-6x+8y^2$;
+and  $p(x)N(x,y)-q(y)M(x,y)=p(x)x(9x+10y^2)-q(y)y(12x+6y^2)$,
+so exactness requires that
+(A) $-6x+8y^2=p(x)x(9x+10y^2)-q(y)y(12x+6y^2)$.
+To obtain  similar terms on the two sides of (A)
+we let  $p(x)x=a$ and $q(y)y=b$  where $a$ and $b$ are constants
+such that $-6x+8y^2=a(9x+10y^2)-b(12x+6y^2)$, which holds if
+  $9a-12b=-6$, $10a-6b=8$; that is, $a=b=2$. Thus
+ $p(x)=\frac{2}{ x}$;\;
+ $q(y)=\frac{2}{ y}$;\;
+$\int p(x)\,dx=2\ln|x|$;\;
+$\int q(y)\,dy=2\ln|y|$;\;
+$P(x)=x^2$;
+$Q(y)=y^2$;
+$\mu(x,y)=x^2y^2$.
+Therefore,
+$(12x^3y^3+6x^2y^5)\,dx+(9x^4y^2+10x^3y^4)\,dy=0$
+is exact.
+We must find $F$ such that
+(B) $F_x(x,y)=12x^3y^3+6x^2y^5$ and
+(C) $F_y(x,y)=9x^4y^2+10x^3y^4$.
+Integrating (B) with respect to $x$ yields
+(D) $F(x,y)=3x^4y^3+2x^3y^5+\phi(y)$.
+Differentiating (D) with respect to $y$  yields
+(E) $F_y(x,y)=9x^4y^2+10x^3y^4+\phi'(y)$.
+Comparing (E) with (C)  shows that
+$\phi'(y)=0$, so we take
+$\phi(y)=0$.
+Substituting this into (D) yields
+$F(x,y)=3x^4y^3+2x^3y^5$,
+so $x^3y^3(3x+2y^2)=c$.
+
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.27} Find an integrating factor and solve the  equation. Plot a direction field and some integral curves for the equation in the indicated rectangular region.
+$$(3x^2y^2+2y)\,dx+ 2x\,dy=0;   \quad \{-4\leq x\leq 4,-4\leq y\leq 4\}$$
+\end{problem}
+
+\begin{problem}\label{exer:2.6.28}
+Suppose $a$, $b$, $c$, and $d$ are constants such that
+$ad-bc\ne0$, and let $m$ and $n$ be arbitrary real numbers.
+Show that
+$$
+(ax^my+by^{n+1})\,dx+(cx^{m+1}+dxy^n)\,dy=0
+$$
+has an integrating factor $\mu(x,y)=x^\alpha y^\beta$.
+
+Click below to see answer.
+
+\begin{solution}
+    $M(x,y)=ax^my+by^{n+1}$;\ $N(x,y)=cx^{m+1}+dxy^n$;\;
+$M_y(x,y)-N_x(x,y)=\left[ax^{m+1}+(n+1)by^n\right]-\left[(m+1)cx^m
++dy^n\right]$;\;
+$p(x)N(x,y)-q(y)M(x,y)=xp(x)(cx^m+dy^n)-yp(y)(ax^m+by^n)$.
+Let (A)  $xp(x)=\alpha$ and (B) $yp(y)=\beta$, where $\alpha$
+and $\beta$ are to be chosen so that
+$\left[ax^{m+1}+(n+1)by^n\right]-\left[(m+1)cx^m
++dy^n\right]=\alpha(cx^m+dy^n)-\beta(ax^m+by^n)$, which will hold if
+$$
+\begin{array}{rclcl}
+c\alpha-a\beta&=&\phantom{-}a-(m+1)c&=_{\mbox{df}}&A\\
+d\alpha-b\beta&=&-d+\,(n+1)b&=_{\mbox{df}}&B.
+\end{array}
+\eqno{\rm (C)}
+$$
+Since $ad-bc\neq 0$ it can be verified that
+$\alpha=\frac{aB-bA}{ ad-bc}$ and $\beta=\frac{cB-dA}{ ad-bc}$
+satisfy (C). From (A) and (B),
+$p(x)=\frac{\alpha}{ x}$ and $q(y)=\frac{\beta}{ y}$, so
+$\mu(x,y)=x^\alpha y^\beta$  is an integrating factor for the given
+equation.
+\end{solution}
+\end{problem}
+
+\begin{problem}\label{exer:2.6.29}
+Suppose $M$, $N$, $M_x$, and $N_y$  are continuous for all
+$(x,y)$, and $\mu=\mu(x,y)$  is an integrating factor for
+\begin{equation}\label{eqA:2.6.29}
+M(x,y)\,dx+N(x,y)\,dy=0.
+\end{equation}
+
+Assume that $\mu_x$ and $\mu_y$ are continuous for all $(x,y)$, and
+suppose   $y=y(x)$ is a differentiable function such that
+$\mu(x,y(x))=0$ and $\mu_x(x,y(x))\ne0$ for all $x$ in some interval $I$. Show that $y$ is a solution of (\ref{eqA:2.6.29}) on $I$.
+\end{problem}
+
+\begin{problem}\label{exer:2.6.30}
+According to Theorem~\ref{thmtype:2.1.2}, the general solution of the linear nonhomogeneous equation
+\begin{equation}\label{eqA:2.6.30}
+y'+p(x)y=f(x)
+\end{equation}
+is
+\begin{equation}\label{eqB:2.6.30}
+y=y_1(x)\left(c+\int f(x)/y_1(x)\,dx\right),
+\end{equation}
+
+where $y_1$ is any nontrivial solution of the
+complementary equation $y'+p(x)y=0$. In this exercise we obtain this conclusion in a different way.
+You may find it instructive to apply the method suggested here
+to solve some of the exercises in Section~2.1.
+\begin{enumerate}
+\item % (a)
+Rewrite (\ref{eqA:2.6.30}) as
+\begin{equation}\label{eqC:2.6.30}
+[p(x)y-f(x)]\,dx+\,dy=0,
+\end{equation}
+
+and show that $\mu=\pm e^{\int p(x)\,dx}$ is an integrating factor
+for (\ref{eqC:2.6.30}).
+
+
+
+\begin{solution}
+    Since $M(x,y)=p(x)y-f(x)$  and $N(x,y)=1$,
+$\frac{M_y(x,y)-N_x(x,y)}{N(x,y)}=p(x)$ and Theorem~\ref{thmtype:2.6.1}
+implies that $\mu(x)\pm e^{\int p(x)\,dx}$  is an integrating factor
+for (\ref{eqC:2.6.30}).
+\end{solution}
+
+\item % (b)
+Multiply (\ref{eqA:2.6.30}) through by $\mu=\pm e^{\int p(x)\,dx}$  and verify that the resulting equation can be rewritten as
+$$
+(\mu(x)y)'=\mu(x)f(x).
+$$
+Then integrate both sides of this equation and solve for $y$
+to show that the general solution of (\ref{eqA:2.6.30}) is
+$$
+y=\frac{1}{\mu(x)}\left(c+\int f(x)\mu(x)\,dx\right).
+$$
+Why is this form of the general solution
+ equivalent to (\ref{eqB:2.6.30})?
+
+ 
+
+ \begin{solution}
+     Multiplying (\ref{eqA:2.6.30}) through $\mu=\pm e^{\int p(x)\,dx}$
+yields  (D) $\mu(x)y'+\mu'(x)y=\mu(x)f(x)$, which is equivalent to
+$(\mu(x)y)'=\mu(x)f(x)$. Integrating this yields
+$\mu(x)y=c+\int\mu(x)f(x)\,dx$, so
+$y=\frac{1}{\mu(x)}\left(c+\int
+\mu(x)f(x)\,dx\right)$, which  is equivalent to (\ref{eqB:2.6.30}) since
+$y_1=\frac{1}{\mu}$ is a nontrivial solution of $y'+p(x)y=0$.
+ \end{solution}
+\end{enumerate}
+\end{problem}
+
+\end{document}
+
+
