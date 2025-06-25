@@ -24,21 +24,34 @@ existence and uniqueness of solutions of initial value problems for
 nonlinear equations. In this section we state  such a condition and
 illustrate it with examples.
 
-\begin{image}
- \includegraphics[height=1.5in]{fig020301.jpg}
-\end{image}
+%\begin{image}
+% \includegraphics[height=1.5in]{fig020301.jpg}
+%\end{image}
 
 
-% \vspace*{-15pt}
-% \begin{figure}[H]
-%   \centering
-% \scalebox{.9}{
-%   \includegraphics[bb=-78 148 689 643,width=5.67in,height=3.66in,keepaspectratio]{fig020301}}
-% \color{blue}
-% \vspace*{-35pt}
-%   \caption{An open rectangle}
-%   \label{figure:2.3.1}
-% \end{figure}
+\begin{tikzpicture}[scale=1.5]
+
+  % Draw axes
+  \draw[-stealth, thick, black] (0,0) -- (4.5,0);
+  \draw[-stealth, thick, black] (0,0) -- (0,3.5);
+
+  % Dotted region (grid of dots)
+  \foreach \x in {1.1,1.2,...,3.9} {
+    \foreach \y in {1.1,1.2,...,2.9} {
+      \fill[blue] (\x,\y) circle (0.2pt);
+    }
+  }
+
+  % Rectangle boundary (dashed)
+  \draw[blue, dashed, thick] (1,1) rectangle (4,3);
+
+  % Labels a, b, c, d
+  \draw[dotted, thick, black] (1,0) node[below] {$a$} -- (1,1) ;
+  \draw[dotted, thick, black] (4,0) node[below] {$b$} -- (4,1) ;
+  \draw[dotted, thick, black] (0,1) node[left] {$c$} -- (1,1) ;
+  \draw[dotted, thick, black] (0,3) node[left] {$d$} -- (1,3) ;
+
+\end{tikzpicture}
 
 
 Some terminology:
@@ -309,6 +322,10 @@ In fact, there are \textit{four} distinct solutions of
 from each other on every open interval that contains $x_0=0$.
   Can you identify the other two?
 
+\begin{center}
+\geogebra{tqdxe8zj}{800}{600}
+\end{center}
+
 %\begin{image}
  %\includegraphics[height=1.5in]{fig020302r.JPG}
 %\end{image}
@@ -363,9 +380,14 @@ y = \left\{ \begin{array}{cl}
 (x^2-1)^{5/3}, & -1 \le x \le 1, \\[6pt]
 0,             & |x|>1. \end{array} \right.
 $$
-\begin{image}
- \includegraphics[height=1.5in]{fig020303.jpg}
-\end{image}
+
+\begin{center}
+\geogebra{mztdpqef}{800}{600}
+\end{center}
+
+%\begin{image}
+% \includegraphics[height=1.5in]{fig020303.jpg}
+%\end{image}
 
 
 % \begin{figure}[htbp]
@@ -416,10 +438,14 @@ that is, \eqref{eq:2.3.15} is the unique solution of \eqref{eq:2.3.14} on
 $(-\infty,\infty)$.
 The figure below shows the graph of this solution.
 
-\begin{image}
- \includegraphics[height=1.5in]{fig020304.jpg}
+\begin{center}
+\geogebra{twndvvaz}{800}{600}
+\end{center}
+
+%\begin{image}
+% \includegraphics[height=1.5in]{fig020304.jpg}
  %\caption{The unique solution of \eqref{eq:2.3.14}}
-\end{image}
+%\end{image}
 \end{explanation}
 \end{example}
 
