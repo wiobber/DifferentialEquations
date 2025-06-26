@@ -389,8 +389,12 @@ of (\ref{eq:4.3.9}) such that $v_0\leq 0$ then
 $$
 \lim_{t\to\infty}v(t)=-\sqrt{\frac{mg}{k}}
 $$
-%(See figure below).
+(See figure below).
 
+
+\begin{center}
+\geogebra{zeckxyta}{800}{600}
+\end{center}
 
  
 %\begin{image}
@@ -470,8 +474,9 @@ $$
 regardless of the initial velocity.  The figure below
 shows graphs of $v$ over $[0,T]$ for various values of $v_0$.
 
+
 \begin{center}
-\geogebra{zeckxyta}{800}{600}
+\geogebra{puxwuhee}{800}{600}
 \end{center}
 
 %\begin{image}
@@ -498,8 +503,28 @@ F=-\frac{K}{(y+R)^2},
 \end{equation}
 where $R$ is  Earth's radius (see figure below).
 
+
 \begin{center}
-\geogebra{puxwuhee}{800}{600}
+\begin{tikzpicture}[scale=1]
+  % Parameters
+  \def\R{2}  % Radius
+  \def\h{2.5}  % Height above center
+
+  % y-axis
+  \draw[-stealth, thick, black] (0,0) -- (0,\h+0.5) node[above] {$y$};
+
+  % Circle
+  \draw[blue] (0,0) circle(\R);
+
+  % Lower half green
+  \draw[green!70!black] (-\R,0) arc[start angle=180,end angle=360,radius=\R];
+
+  % Dashed lines
+  \draw[dashed, blue] (-\R,\h) -- (\R,\h) node[right, black] {$y = h$};
+  \draw[dashed, blue] (-\R,\R) -- (\R,\R) node[right, black] {$y = 0$};
+  \draw[dashed, blue] (-\R,0) -- (\R,0) node[right, black] {$y = -R$};
+
+\end{tikzpicture}
 \end{center}
  
 %\begin{image}
@@ -599,28 +624,7 @@ The velocity will be zero at the maximum  altitude, and the object will
 then fall to Earth under the influence of gravity.
 
 
-\begin{center}
-\begin{tikzpicture}[scale=1]
-  % Parameters
-  \def\R{2}  % Radius
-  \def\h{2.5}  % Height above center
 
-  % y-axis
-  \draw[-stealth, thick, black] (0,0) -- (0,\h+0.5) node[above] {$y$};
-
-  % Circle
-  \draw[blue] (0,0) circle(\R);
-
-  % Lower half green
-  \draw[green!70!black] (-\R,0) arc[start angle=180,end angle=360,radius=\R];
-
-  % Dashed lines
-  \draw[dashed, blue] (-\R,\h) -- (\R,\h) node[right, black] {$y = h$};
-  \draw[dashed, blue] (-\R,\R) -- (\R,\R) node[right, black] {$y = 0$};
-  \draw[dashed, blue] (-\R,0) -- (\R,0) node[right, black] {$y = -R$};
-
-\end{tikzpicture}
-\end{center}
 
  
  
