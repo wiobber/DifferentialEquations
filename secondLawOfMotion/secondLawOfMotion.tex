@@ -128,10 +128,20 @@ resisting force of the medium, which has magnitude $k|v|$, where $k$ is a
 positive constant. If the
 object is moving downward ($v\leq 0$),  the resisting force is
 upward, as shown in the figure.
- 
-\begin{image}
-  \includegraphics[height=1in]{fig040301a.jpg}
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}
+  % Stealth arrow pointing down
+  \draw[-Stealth, thick, blue] (0,2) -- (0,0) node[below, black] {$v$};
+
+  % Stealth arrow pointing up
+  \draw[-Stealth, thick, blue] (2,0) -- (2,2) node[above, black] {$F_1 = -kv$};
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1in]{fig040301a.jpg}
+%\end{image}
  
 So
 $$
@@ -139,10 +149,21 @@ F_1=k|v|=k(-v)=-kv.
 $$
 On the other hand, if the object is moving upward ($v\geq 0$),
 the resisting force is downward, as shown.
- 
-\begin{image}
-  \includegraphics[height=1in]{fig040301b.jpg}
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}
+  % Stealth arrow pointing down
+  \draw[-Stealth, thick, blue] (0,0) -- (0,2) node[above, black] {$v$};
+
+  % Stealth arrow pointing up
+  \draw[-Stealth, thick, blue] (2,2) -- (2,0) node[below, black] {$F_1 = -kv$};
+\end{tikzpicture}
+\end{center}
+
+
+%\begin{image}
+ % \includegraphics[height=1in]{fig040301b.jpg}
+%\end{image}
  
 So
 $$
@@ -196,10 +217,14 @@ $$
 $$
 which  is independent of the
 initial velocity $v_0$ (See figure below).
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig040302.jpg}
-\end{image}
+
+\begin{center}
+\geogebra{dkep7jtu}{800}{600}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040302.jpg}
+%\end{image}
  
 \end{explanation}
 \end{example}
@@ -364,11 +389,13 @@ of (\ref{eq:4.3.9}) such that $v_0\leq 0$ then
 $$
 \lim_{t\to\infty}v(t)=-\sqrt{\frac{mg}{k}}
 $$
-(See figure below).
+%(See figure below).
+
+
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig040303.jpg}
-\end{image}
+%\begin{image}
+% \includegraphics[height=1.5in]{fig040303.jpg}
+%\end{image}
 \end{explanation}
 \end{example}
  
@@ -442,10 +469,14 @@ $$
 $$
 regardless of the initial velocity.  The figure below
 shows graphs of $v$ over $[0,T]$ for various values of $v_0$.
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig040304.jpg}
-\end{image}
+
+\begin{center}
+\geogebra{zeckxyta}{800}{600}
+\end{center}
+
+%\begin{image}
+%  \includegraphics[height=1.5in]{fig040304.jpg}
+%\end{image}
 \end{explanation}
 \end{example}
  
@@ -466,10 +497,14 @@ gravitational force on the vehicle at an altitude $y$ above Earth is
 F=-\frac{K}{(y+R)^2},
 \end{equation}
 where $R$ is  Earth's radius (see figure below).
+
+\begin{center}
+\geogebra{puxwuhee}{800}{600}
+\end{center}
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig040305.jpg}
-\end{image}
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040305.jpg}
+%\end{image}
  
  Since $F=-mg$ when $y=0$, setting $y=0$ in
 (\ref{eq:4.3.18}) yields
@@ -562,6 +597,31 @@ $$
 $$
 The velocity will be zero at the maximum  altitude, and the object will
 then fall to Earth under the influence of gravity.
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+  % Parameters
+  \def\R{2}  % Radius
+  \def\h{2.5}  % Height above center
+
+  % y-axis
+  \draw[-stealth, thick, black] (0,0) -- (0,\h+0.5) node[above] {$y$};
+
+  % Circle
+  \draw[blue] (0,0) circle(\R);
+
+  % Lower half green
+  \draw[green!70!black] (-\R,0) arc[start angle=180,end angle=360,radius=\R];
+
+  % Dashed lines
+  \draw[dashed, blue] (-\R,\h) -- (\R,\h) node[right, black] {$y = h$};
+  \draw[dashed, blue] (-\R,\R) -- (\R,\R) node[right, black] {$y = 0$};
+  \draw[dashed, blue] (-\R,0) -- (\R,0) node[right, black] {$y = -R$};
+
+\end{tikzpicture}
+\end{center}
+
  
  
 \section*{Text Source}
