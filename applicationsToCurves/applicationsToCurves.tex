@@ -29,10 +29,36 @@ y-cx^2=0
 defines a curve in the $xy$-plane. If $c \neq 0$, the curve is a
 parabola through the origin, opening upward if $c>0$ or downward if
 $c<0$.   If $c=0$, the curve is the $x$ axis, as shown in the figure below.
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig040501.jpg}
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          domain=-5:5,
+          xmin=-5, xmax=5,
+          ymin=-17, ymax=17,
+          width=3in,
+          height=5in,
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            xtick=\empty,
+    ytick=\empty
+                      ]
+\addplot[smooth, thick, blue] {x^2};
+\addplot[smooth, thick, blue] {-x^2};
+\addplot[smooth, thick, blue] {0.5*x^2};
+\addplot[smooth, thick, blue] {-0.5*x^2};
+\addplot[smooth, thick, blue] {2*x^2};
+\addplot[smooth, thick, blue] {-2*x^2};
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040501.jpg}
+%\end{image}
  
 \end{example}
  
@@ -44,10 +70,39 @@ For each value of the parameter $c$ the equation
 y=x+c
 \end{equation}
  defines a line with slope $1$, as shown in the figure below.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          domain=-5:5,
+          xmin=-5, xmax=5,
+          ymin=-5, ymax=5,
+          width=3in,
+          height=3in,
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            xtick=\empty,
+    ytick=\empty
+                      ]
+\addplot[smooth, thick, blue] {x};
+\addplot[smooth, thick, blue] {x+1};
+\addplot[smooth, thick, blue] {x-1};
+\addplot[smooth, thick, blue] {x+2};
+\addplot[smooth, thick, blue] {x-2};
+\addplot[smooth, thick, blue] {x+3};
+\addplot[smooth, thick, blue] {x-3};
+\addplot[smooth, thick, blue] {x+4};
+\addplot[smooth, thick, blue] {x-4};
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
   
- \begin{image}
-  \includegraphics[height=1.5in]{fig040502.jpg}
-\end{image}
+ %\begin{image}
+  %\includegraphics[height=1.5in]{fig040502.jpg}
+%\end{image}
 \end{example}
  
  
@@ -81,10 +136,37 @@ graph is the single point $(0,0)$. (We don't regard a single point as
 a curve.) If $c<0$, the equation has no graph. Hence, \eqref{eq:4.5.4}
 defines a one--parameter family of curves for positive values of $c$.
 This family consists of all circles centered at $(0,0)$, as shown in the figure.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          domain=-16:16,
+          xmin=-10, xmax=10,
+          ymin=-10, ymax=10,
+          width=3in,
+          height=3in,
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            xtick=\empty,
+    ytick=\empty
+                      ]
+\draw[blue] (0,0) circle(1);
+\draw[blue] (0,0) circle(2);
+\draw[blue] (0,0) circle(3);
+\draw[blue] (0,0) circle(4);
+\draw[blue] (0,0) circle(5);
+\draw[blue] (0,0) circle(6);
+\draw[blue] (0,0) circle(7);
+\draw[blue] (0,0) circle(8);
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig040503.jpg}
-\end{image}
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040503.jpg}
+%\end{image}
  
 \end{example}
  
@@ -227,19 +309,27 @@ lines} joined at the point of tangency,   \eqref{eq:4.5.12} is a
 differential equation for the family of tangent half lines on which
 $x$ is less than the abscissa of the point of tangency
 (See figure below).
+
+\begin{center}
+\geogebra{n2tm43mx}{800}{600}
+\end{center}
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig040504a.jpg}
-\end{image}
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040504a.jpg}
+%\end{image}
  
 Equation \eqref{eq:4.5.13} is a
 differential
 equation for the family of tangent half lines on which $x$ is greater
 than this abscissa (See figure below).
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig040504b.jpg}
-\end{image}
+
+\begin{center}
+\geogebra{gquuuekf}{800}{600}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040504b.jpg}
+%\end{image}
  
 The
 parabola $y=x^2$ is also an integral curve of both \eqref{eq:4.5.12} and
@@ -260,10 +350,43 @@ $$
 y=-9+6x,
 $$
 which is tangent to the parabola at $(x_0,x_0^2)=(3,9)$, as shown below.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          domain=0:3.6,
+          xmin=-1, xmax=4,
+          ymin=-1, ymax=11,
+          width=4in,
+          height=3in,
+          xtick={1,2,3},
+            xticklabels={$1$,$2$,$3$},
+           ytick={1,2,3, 4, 5, 6, 7, 8, 9},
+            yticklabels={$1$,$2$,$3$, $4$, $5$, $6$, $7$, $8$, $9$},  
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+\addplot[smooth, thick, blue] {x^2};
+\draw[-,dashed,blue] (0,1)--(1,1);
+\draw[-,dashed,blue] (1,1)--(2,3);
+\draw[-,dashed,blue] (0,3)--(2,3);
+\draw[-,dashed,blue] (2,3)--(3,9);
+\draw[-,dashed,blue] (3,0)--(3,9);
+\draw[-,dashed,blue] (0,9)--(3,9);
+\draw[-,dashed,blue] (2,0)--(2,3);
+\draw[-,dashed,blue] (1,0)--(1,1);
+
+\node[anchor=west] at (3.2,9.5) {$y=x^2$};
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig040505.jpg}
-\end{image}
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040505.jpg}
+%\end{image}
  
  
 Letting $x_0=1$ in \eqref{eq:4.5.10} shows that $(2,3)$ is on the line
@@ -299,10 +422,37 @@ and $y_I$ (see figure below), then
 \begin{equation} \label{eq:4.5.15}
 y_I=y(x_0)-y'(x_0)x_0.
 \end{equation}
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig040506.jpg}
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          domain=0:4.5,
+          xmin=0, xmax=4.6,
+          ymin=0, ymax=4,
+          width=4in,
+          height=3in,
+          xtick={1,2},
+            xticklabels={$0.5x_I$,$x_I$},
+           ytick={1,2},
+            yticklabels={$0.5y_I$,$y_I$},  
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+\addplot[smooth, thick, blue] {1/x};
+\draw[-,blue] (2,0)--(0,2);
+\draw[-,dashed,blue] (1,1)--(0,1);
+\draw[-,dashed,blue] (1,0)--(1,1);
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040506.jpg}
+%\end{image}
  
 Referring to the figure, we can see that, $P$ is the midpoint of the line segment
 connecting $(x_I,0)$ and $(0,y_I)$ if and only if $x_I=2x_0$ and
@@ -327,10 +477,14 @@ $$
 If $c=0$ this curve is the line $y=0$, which does not satisfy the
 geometric requirements imposed by the problem;   thus, $c\neq 0$, and the
 solutions define a family of hyperbolas, as shown below.
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig040507.jpg}
-\end{image}
+
+\begin{center}
+\geogebra{mrvcr4t3}{800}{600}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040507.jpg}
+%\end{image}
  
 \end{explanation}
 \end{example}
@@ -350,11 +504,12 @@ Find curves $y=y(x)$ such that the tangent line to the curve at any
 point $(x_0,y(x_0))$ intersects the $x$-axis at $(x^2_0,0)$.
 The figure below illustrates the situation in the case where
 the curve is in the first quadrant and $0<x<1$.
+
+\desmos{n7ejq1mnph}{800}{600}
  
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig040508.jpg}
-\end{image}
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040508.jpg}
+%\end{image}
  
 \begin{explanation}
 The equation of the line tangent to the curve at $(x_0,y(x_0))$ is
@@ -386,10 +541,34 @@ $$
 If $c=0$, the graph of this function is the $x$-axis.   If $c\neq 0$, it's
 a hyperbola with vertical asymptote $x=1$ and horizontal asymptote
 $y=c$. The following figure shows the graphs for $c\neq 0$.
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig040509.jpg}
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          domain=1:3,
+          xmin=0, xmax=4,
+          ymin=0, ymax=8,
+          width=4in,
+          height=3in,
+          xtick={1,2},
+            xticklabels={$x_0^2$,$x_0$},
+            ytick=\empty,
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+\addplot[smooth, thick, blue] {x^2};
+\draw[-,dashed,blue] (2,0)--(2,4);
+\addplot[smooth, thick, blue] {4*x-4};
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040509.jpg}
+%\end{image}
 \end{explanation}
 \end{example}
  
@@ -399,10 +578,34 @@ $y=c$. The following figure shows the graphs for $c\neq 0$.
 Two curves $C_1$ and $C_2$ are said to be \textit{orthogonal} at a
 point of intersection $(x_0,y_0)$ if they have perpendicular tangents
 at $(x_0,y_0)$. (See figure below).
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          xmin=0, xmax=3,
+          ymin=0, ymax=3,
+          width=4in,
+          height=4in,
+            xtick=\empty,
+            ytick=\empty,
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+    \addplot[domain=0.5:2, blue, thick] {x^2-4*x+4+0.5};
+    \addplot[domain=0.2:2, red, thick] {-0.5*x^2+1.5*x+0.5};
+     \addplot[domain=0.5:1.5, blue, dashed] {-2*x+3.5};
+    \addplot[domain=0.2:2, red,dashed] {0.5*x+1};
+\draw[-,black] (0.9,1.7)--(1.1,1.8)--(1.2, 1.6);
+    \end{axis}
+        \end{tikzpicture}
+\end{center}
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig040510.jpg}
-\end{image}
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040510.jpg}
+%\end{image}
  
  
 A curve is said to be an
@@ -412,10 +615,42 @@ through the origin is an orthogonal trajectory of the family of
 circles centered at the origin.  Conversely,
 any such circle is an orthogonal trajectory of the family of lines
 through the origin.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+        %  domain=-16:16,
+          xmin=-10, xmax=10,
+          ymin=-10, ymax=10,
+          width=3in,
+          height=3in,
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            xtick=\empty,
+    ytick=\empty
+                      ]
+\draw[blue] (0,0) circle(1);
+\draw[blue] (0,0) circle(2);
+\draw[blue] (0,0) circle(3);
+\draw[blue] (0,0) circle(4);
+\draw[blue] (0,0) circle(5);
+\draw[blue] (0,0) circle(6);
+\draw[blue] (0,0) circle(7);
+\draw[blue] (0,0) circle(8);
+
+\addplot[domain=-8:8, blue, thick] {0.58*x};
+\addplot[domain=-8:8, blue, thick] {-0.58*x};
+\addplot[domain=-4.7:4.7, blue, thick] {1.73*x};
+\addplot[domain=-4.7:4.7, blue, thick] {-1.73*x};
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig040511.jpg}
-\end{image}
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040511.jpg}
+%\end{image}
  
 Orthogonal trajectories occur in many physical applications.
 For example, if $u=u(x,y)$ is the temperature at a point $(x,y)$,  the
@@ -502,9 +737,41 @@ nonvertical line through $(0,0)$. The $y$ axis is also an orthogonal
 trajectory of the given family. Therefore every line through the
 origin is an orthogonal trajectory of the given family \eqref{eq:4.5.17}, as shown below.
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig040511.jpg}
-\end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+        %  domain=-16:16,
+          xmin=-10, xmax=10,
+          ymin=-10, ymax=10,
+          width=3in,
+          height=3in,
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            xtick=\empty,
+    ytick=\empty
+                      ]
+\draw[blue] (0,0) circle(1);
+\draw[blue] (0,0) circle(2);
+\draw[blue] (0,0) circle(3);
+\draw[blue] (0,0) circle(4);
+\draw[blue] (0,0) circle(5);
+\draw[blue] (0,0) circle(6);
+\draw[blue] (0,0) circle(7);
+\draw[blue] (0,0) circle(8);
+
+\addplot[domain=-8:8, blue, thick] {0.58*x};
+\addplot[domain=-8:8, blue, thick] {-0.58*x};
+\addplot[domain=-4.7:4.7, blue, thick] {1.73*x};
+\addplot[domain=-4.7:4.7, blue, thick] {-1.73*x};
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+ 
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040511.jpg}
+%\end{image}
  
 This is consistent with the theorem of plane
 geometry which states that a diameter of a circle and a tangent line
@@ -517,10 +784,69 @@ Find the orthogonal trajectories of the family of hyperbolas
 \begin{equation}  \label{eq:4.5.18}
 xy=c \quad (c\ne0)
 \end{equation}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          xmin=-2, xmax=2,
+          ymin=-2, ymax=2,
+          width=4in,
+          height=4in,
+            xtick=\empty,
+            ytick=\empty,
+            axis x line=center,
+            axis y line=center,
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+
+\foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+      \addplot[domain=0.05:2,blue, thick] {\c/x};
+      \addplot[domain=0.05:2,blue, thick] {-\c/x};
+    }
+
+\foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+      \addplot[domain=-2:-0.05,blue, thick] {\c/x};
+      \addplot[domain=-2:-0.05,blue, thick] {-\c/x};
+    }
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          xmin=-2, xmax=2,
+          ymin=-2, ymax=2,
+          width=4in,
+          height=4in,
+            xtick=\empty,
+            ytick=\empty,
+            axis x line=center,
+            axis y line=center,
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+
+    \foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+      \addplot[domain=0.05:2,blue, thick] {\c/x};
+      \addplot[domain=0.05:2,blue, thick] {-\c/x};
+    }
+
+\foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+      \addplot[domain=-2:-0.05,blue, thick] {\c/x};
+      \addplot[domain=-2:-0.05,blue, thick] {-\c/x};
+    }
+
+ \addplot[domain=-2:2,red, thick] {(x^2 + 0.5)^0.5};
+      \addplot[domain=-2:2,red, thick] {-(x^2 + 0.5)^0.5};
+       \addplot[domain=-2:2,red, thick] {x};
+      \addplot[domain=-2:2,red, thick] {-x};
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig040507.jpg}
-\end{image}
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040507.jpg}
+%\end{image}
  
 \begin{explanation}
 Differentiating \eqref{eq:4.5.18} implicitly with respect to $x$ yields
@@ -546,10 +872,69 @@ y^2-x^2=k,
 $$
 which is the equation of a hyperbola if $k \neq 0$, or of the lines
 $y=x$ and $y=-x$ if $k=0$.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          xmin=-2, xmax=2,
+          ymin=-2, ymax=2,
+          width=4in,
+          height=4in,
+            xtick=\empty,
+            ytick=\empty,
+            axis x line=center,
+            axis y line=center,
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+
+\foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+      \addplot[domain=0.05:2,blue, thick] {\c/x};
+      \addplot[domain=0.05:2,blue, thick] {-\c/x};
+    }
+
+\foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+      \addplot[domain=-2:-0.05,blue, thick] {\c/x};
+      \addplot[domain=-2:-0.05,blue, thick] {-\c/x};
+    }
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          xmin=-2, xmax=2,
+          ymin=-2, ymax=2,
+          width=4in,
+          height=4in,
+            xtick=\empty,
+            ytick=\empty,
+            axis x line=center,
+            axis y line=center,
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+
+    \foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+      \addplot[domain=0.05:2,blue, thick] {\c/x};
+      \addplot[domain=0.05:2,blue, thick] {-\c/x};
+    }
+
+\foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+      \addplot[domain=-2:-0.05,blue, thick] {\c/x};
+      \addplot[domain=-2:-0.05,blue, thick] {-\c/x};
+    }
+
+ \addplot[domain=-2:2,red, thick] {(x^2 + 0.5)^0.5};
+      \addplot[domain=-2:2,red, thick] {-(x^2 + 0.5)^0.5};
+       \addplot[domain=-2:2,red, thick] {x};
+      \addplot[domain=-2:2,red, thick] {-x};
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig040512.jpg}
-\end{image}
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040512.jpg}
+%\end{image}
  
 %Use the interactive below to change values of $k$ and $c$.  Use your geometric observations to explain why $\eqref{eq:4.5.18}$ requires that $c\neq 0$.
 
@@ -558,7 +943,7 @@ $y=x$ and $y=-x$ if $k=0$.
 Use the interactive below to visualize the interaction between the family of hyperbolas and the orthogonal trajectories.  
 
 \begin{center} 
-\desmos{m2wquetghf}{800}{600}
+\desmos{kt8j5enaeo}{800}{600}
 \end{center}
 
 When $c=2$, there are some “nice” solutions with integral coordinates for certain values of $k$.  Use the interactive to find them.
@@ -575,10 +960,46 @@ Find the orthogonal trajectories of the family of circles defined by
 \end{equation}
  These circles are centered on the $x$-axis and tangent to the
 $y$-axis.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+   % y-axis
+  \draw[-stealth, thick, black] (0,-2.3) -- (0,2.3);
+  % x-axis
+  \draw[-stealth, thick, black] (-2.3,0) -- (2.3,0);
+
+  \foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+     \draw[blue] (\c,0) circle(\c);
+    }
+
+    \foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+     \draw[blue] (-\c,0) circle(\c);
+    }
+
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+   % y-axis
+  \draw[-stealth, thick, black] (0,-2.3) -- (0,2.3);
+  % x-axis
+  \draw[-stealth, thick, black] (-2.3,0) -- (2.3,0);
+
+  \foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+     \draw[red] (0,\c) circle(\c);
+    }
+
+    \foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+     \draw[red] (0,-\c) circle(\c);
+    }
+
+\end{tikzpicture}
+\end{center}
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig040513a.jpg}
-\end{image}
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040513a.jpg}
+%\end{image}
  
 \begin{explanation}
 Multiplying out the left side of \eqref{eq:4.5.19} yields
@@ -661,10 +1082,46 @@ Thus, the orthogonal trajectories are circles centered on the $y$ axis
 and tangent to the $x$ axis. The circles
 for which $h>0$ are above the $x$-axis, while those for which $h<0$
 are below.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+   % y-axis
+  \draw[-stealth, thick, black] (0,-2.3) -- (0,2.3);
+  % x-axis
+  \draw[-stealth, thick, black] (-2.3,0) -- (2.3,0);
+
+  \foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+     \draw[blue] (\c,0) circle(\c);
+    }
+
+    \foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+     \draw[blue] (-\c,0) circle(\c);
+    }
+
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+   % y-axis
+  \draw[-stealth, thick, black] (0,-2.3) -- (0,2.3);
+  % x-axis
+  \draw[-stealth, thick, black] (-2.3,0) -- (2.3,0);
+
+  \foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+     \draw[red] (0,\c) circle(\c);
+    }
+
+    \foreach \c in {1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1} {
+     \draw[red] (0,-\c) circle(\c);
+    }
+
+\end{tikzpicture}
+\end{center}
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig040513b.jpg}
-\end{image}
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig040513b.jpg}
+%\end{image}
 
 The following dynamic interactive will help you visualize the curves.
 
