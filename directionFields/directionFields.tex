@@ -120,10 +120,10 @@ this:
       xmin=-3, xmax=3,ymin=-3,ymax=3,domain=-3:3,view={0}{90},
       axis lines =center, xlabel=$x$, ylabel=$y$,
       every axis y label/.style={at=(current axis.above origin),anchor=south},
-      every axis x label/.style={at=(current axis.right of origin),anchor=west},
-      axis on top,
-    ]
-    \addplot3 [blue, quiver={u={1/\length}, v={(x+y)/(\length)},scale arrows=.2},samples=20] {0};
+     every axis x label/.style={at=(current axis.right of origin),anchor=west},
+ axis on top,
+ ]
+ \addplot3 [blue, quiver={u={1/\length}, v={(x+y)/(\length)},scale arrows=.2},samples=20] {0};
 \end{axis}
 \end{tikzpicture}
 \end{image}
@@ -142,34 +142,37 @@ Let's be explicit:
 \end{itemize}
 \end{definition}
   
-Here is the slope field for the differential equation $y'=x+y$, with a
-few solutions of the differential equation also graphed.
+%Here is the slope field for the differential equation $y'=x+y$, with a few solutions of the differential equation also graphed.
   
-\begin{image}
-{\def\length{sqrt(1+(x+y)^2)}
-\begin{tikzpicture}
-  \begin{axis}[
-      xmin=-3, xmax=3,ymin=-3,ymax=3,domain=-3:3,view={0}{90},
-      axis lines =center, xlabel=$x$, ylabel=$y$,
-      every axis y label/.style={at=(current axis.above origin),anchor=south},
-      every axis x label/.style={at=(current axis.right of origin),anchor=west},
-      axis on top,
-    ]
-    \addplot3 [blue, quiver={u={1/\length}, v={(x+y)/(\length)},scale arrows=.2},samples=20] {0};
-    \addplot[blue,very thick]{e^x-x-1};
-    \addplot[blue,very thick]{.2*e^x-x-1};
-    \addplot[blue,very thick]{-e^x-x-1};
-    \addplot[blue,very thick]{-.2*e^x-x-1};
-    \addplot[blue,very thick]{-3*e^x-x-1};
-    \addplot[blue,very thick]{2*e^x-x-1};
-    \addplot[blue,very thick]{-x-1};
- \end{axis}
-\end{tikzpicture}}
-\end{image}
+%\begin{image}
+%{\def\length{sqrt(1+(x+y)^2)}
+%\begin{tikzpicture}
+ % \begin{axis}[
+  %    xmin=-3, xmax=3,ymin=-3,ymax=3,domain=-3:3,view={0}{90},
+   %   axis lines =center, xlabel=$x$, ylabel=$y$,
+    %  every axis y label/.style={at=(current axis.above origin),anchor=south},
+     % every axis x label/.style={at=(current axis.right of origin),anchor=west},
+      %axis on top,
+    %]
+    %\addplot3 [blue, quiver={u={1/\length}, v={(x+y)/(\length)},scale arrows=.2},samples=20] {0};
+    %\addplot[blue,very thick]{e^x-x-1};
+    %\addplot[blue,very thick]{.2*e^x-x-1};
+    %\addplot[blue,very thick]{-e^x-x-1};
+    %\addplot[blue,very thick]{-.2*e^x-x-1};
+    %\addplot[blue,very thick]{-3*e^x-x-1};
+    %\addplot[blue,very thick]{2*e^x-x-1};
+    %\addplot[blue,very thick]{-x-1};
+ %\end{axis}
+%\end{tikzpicture}}
+%\end{image}
  
 Each of the many solutions to the differential equation $y'=x+y$ is determined by initial conditions. 
 The following interactive allows you to input the initial condition $(a, b)$ in the dialog box.  The output displays the slope field together with point $(a, b)$ and the solution that satisfies the initial condition.
- 
+
+\begin{center}  
+\geogebra{dstqjrbv}{800}{600}  
+\end{center}
+
 %\begin{sageCell}
 %@interact
 %def _(a=input_box(1, width=5),b=input_box(1, width=5)):
@@ -267,9 +270,9 @@ Which of the five slope fields corresponds to the equation $y'=y^2$
 %\end{sageCell}
  
 %Anna's text transitions into Trench.
-Given a differential equation such as $y'=x+y$, it is easy to find an explicit solution to the equation.  (You may want to verify that functions of the form $y=ce^x-x-1$ are solutions.)  However, it's impossible to find explicit formulas for solutions of some
-differential equations. Even if there are such  formulas, they may be
-so complicated that they're useless. In this case we may resort to
+Given a differential equation such as $y'=x+y$, it is easy to find an explicit solution to the equation.  (You may want to verify that functions of the form $y=ce^x-x-1$ are solutions.)  However, it is impossible to find explicit formulas for solutions of some
+differential equations. Even if there are such formulas, they may be
+so complicated that they are useless. In this case we may resort to
 graphical or numerical methods to get some idea of how the solutions
 of the given equation behave. Slope fields offer us one such method.
  
@@ -334,41 +337,53 @@ of the given equation behave. Slope fields offer us one such method.
 %Unfortunately, approximating a direction field and graphing integral
 %curves in this way is too tedious to be done effectively by hand.
 %However, there is software  for doing this.
-As we will  see, the combination of  direction fields and
- integral curves gives  useful insights into the behavior of
-the solutions of the differential equation even if
-we can't obtain exact solutions.
+As we will see, the combination of  direction fields and integral curves gives useful insights into the behavior of the solutions of the differential equation even if
+we cannot obtain exact solutions.
  
-We'll study numerical methods for solving a single first order
+We will study numerical methods for solving a single first order
 equation \eqref{eq:1.3.1} in \href{https://ximera.osu.edu/ode/main/eulersMethod/eulersMethod}{Trench 3.1} - \href{https://ximera.osu.edu/ode/main/rungeKutta/rungeKutta}{Trench 3.3}. These methods can be
-used
-to plot solution curves of \eqref{eq:1.3.1} in a rectangular region $R$ if $f$ is continuous on $R$. The figures in the three examples below show direction fields and solution
+used to plot solution curves of \eqref{eq:1.3.1} in a rectangular region $R$ if $f$ is continuous on $R$. The figures in the three examples below show direction fields and solution
 curves for several differential equations of the form \eqref{eq:1.3.1} with $f$
  continuous for all $(x,y)$.
  \begin{example}\label{ex:fig010302}
 $$
  y'=\frac{x^2-y^2}{1+x^2+y^2}
  $$
-\begin{image}
-  \includegraphics[height=1.5in]{fig010302.jpg}
-\end{image}
+
+ \begin{center}  
+\geogebra{msra5f4e}{800}{600}  
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig010302.jpg}
+%\end{image}
 \end{example}
  
 \begin{example}\label{ex:fig010303}
 $$
 y'=1+xy^2
 $$
-\begin{image}
-  \includegraphics[height=1.5in]{fig010303.jpg}
-\end{image}
+
+\begin{center}  
+\geogebra{dstqjrbv}{800}{600}  
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig010303.jpg}
+%\end{image}
 \end{example}
 \begin{example}\label{ex:fig010304}
 $$
 y'=\frac{x-y}{1+x^2}
 $$
-\begin{image}
-   \includegraphics[height=1.5in]{fig010304.jpg}
-\end{image}
+
+\begin{center}  
+\geogebra{yhtvmqmd}{800}{600}  
+\end{center}
+
+%\begin{image}
+ %  \includegraphics[height=1.5in]{fig010304.jpg}
+%\end{image}
 \end{example}
 The methods of \href{https://ximera.osu.edu/ode/main/eulersMethod/eulersMethod}{Trench 3.1} - \href{https://ximera.osu.edu/ode/main/rungeKutta/rungeKutta}{Trench 3.3} won't work for the equation
 \begin{equation} \label{eq:1.3.2}
@@ -414,16 +429,26 @@ The figure below shows a direction field and some integral curves
 for $y'=-\frac{x}{y}$. As we saw in
 Example~\ref{example:1.2.1}, the integral curves of \eqref{eq:1.3.2}
 are circles centered at the origin.
- 
-\begin{image}
-\includegraphics[height=1.5in]{fig010305.jpg}
-\end{image}
+
+\begin{center}  
+\geogebra{s4vpd9um}{800}{600}  
+\end{center}
+
+%\begin{image}
+%\includegraphics[height=1.5in]{fig010305.jpg}
+%\end{image}
  
 The figure below shows a direction field and some integral curves
 for $y'=\frac{x^2}{1-x^2-y^2}$.
-\begin{image}
-\includegraphics[height=1.5in]{fig010306.jpg}
-\end{image}
+
+\begin{center}  
+\geogebra{zsvucmap}{800}{600}  
+\end{center}
+
+%\begin{image}
+%\includegraphics[height=1.5in]{fig010306.jpg}
+%\end{image}
+
 The integral curves near the top and bottom are
 solution curves. However, the integral curves near the middle are more
 complicated. For example, the figure below shows the integral
