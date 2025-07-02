@@ -26,10 +26,32 @@ acting on it sum to zero. The position of the object in this case is
 the \textit{equilibrium position}. We define $y$ to be the displacement
 of the object from its equilibrium position %(Figure~\ref{figure:6.1.1}),
 measured positive upward.
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig060101.jpg}
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+   % y-axis
+  \draw[-stealth, thick] (0,-3) -- (0,4) node[above] {$y$};
+
+\draw[line width=1pt,gray, dashed](2,0.3)--(0,0.3);  
+\draw[line width=1pt,gray, dashed](4,-0.7)--(0,-0.7) node[left]{0};
+\draw[line width=1pt,gray, dashed](6,-1.7)--(0,-1.7);
+
+% Springs
+\draw[decoration={aspect=0.3, segment length=1.5mm, amplitude=3mm,coil},decorate] (2,3)node[above]{(a)} -- (2,0.3);
+
+\draw[decoration={aspect=0.3, segment length=2mm, amplitude=3mm,coil},decorate] (4,3) node[above]{(b)} -- (4,-0.7);
+\draw[decoration={aspect=0.3, segment length=2.5mm, amplitude=3mm,coil},decorate] (6,3) node[above]{(c)} -- (6,-1.8);
+
+% Circles
+  \draw[black, fill=gray] (2,0) circle(0.3);
+  \draw[black, fill=gray] (4,-1) circle(0.3);
+  \draw[black, fill=gray] (6,-2) circle(0.3);  
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig060101.jpg}
+%\end{image}
  
 Our model accounts for the following kinds of forces acting on the
 object:
@@ -56,10 +78,34 @@ visualize a damping force is to assume that the object is rigidly
 attached to a piston with negligible mass immersed in a cylinder
 (called a \textit{dashpot}) filled with a viscous liquid
 %(Figure~\ref{figure:6.1.2}).
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig060102.jpg}
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+  
+% Spring
+
+\draw[decoration={aspect=0.3, segment length=2.5mm, amplitude=3mm,coil},decorate] (0,3) -- (0,-1.8);
+
+\draw[-, black] (0,-2.3) -- (0,-4);
+\fill[gray] (-0.8,-4) rectangle (0.8,-4.2);
+% Circles
+   \draw[black, fill=gray] (0,-2) circle(0.3);  
+
+   % Tank
+  \draw[black] (-1,-2) -- (-1,-6) -- (1,-6) -- (1,-2);
+  \draw[gray, dashed] (-1,-2.8) -- (1,-2.8); % Fill line
+
+     \foreach \x in {-1, -0.9,...,1} {
+    \foreach \y in {-6,-5.9,...,-2.8} {
+      \fill[gray] (\x,\y) circle (0.4pt);
+    }
+  }
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig060102.jpg}
+%\end{image}
  
 As the piston moves, the liquid exerts a
 damping force. We say that the motion is \textit{undamped} if $c=0$, or
@@ -83,10 +129,31 @@ We must now relate $F_s$ to $y$. In the absence of external forces the
 object stretches the spring by an amount $\Delta l$ to assume its
 equilibrium position, as shown in the figure below.
 %(Figure~\ref{figure:6.1.3}).
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig060103.jpg}
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}
+
+\node[] (b) at (2,2) {};
+\draw[line width=1pt,gray, dashed](-2.1,0)node[left]{0}--(3.5,0) node[right]{Equilibrium Position};
+\draw[line width=1pt,gray, dashed](2,2)--(3.5,2) node[right]{Unstretched Position};
+\draw[line width=1pt,gray, -stealth](2.5,1)node[right]{$\Delta L$}--(2.5,0);
+\draw[line width=1pt,gray, -stealth](2.7,3.5)--(2.7,2);
+\draw[line width=1pt,gray, -stealth](2.7,3.5)node[right]{$L$}--(2.7,5);
+\draw[line width=1pt,gray, -stealth](2.5,1)--(2.5,2);
+
+\draw[decoration={aspect=0.3, segment length=3mm, amplitude=3mm,coil},decorate] (0,5) -- (0,0);
+
+\draw[decoration={aspect=0.3, segment length=1.5mm, amplitude=3mm,coil},decorate] (2,5) -- (2,2);
+
+\draw[black, fill=gray] (0,-0.3) circle(0.3); 
+
+ \draw[-stealth, thick] (-2,-2) -- (-2,5.5) node[above] {$y$};
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig060103.jpg}
+%\end{image}
  
 Since the sum of the forces acting on the object
 is then zero, Hooke's Law implies that $mg=k\Delta l$. If the object
@@ -178,10 +245,32 @@ $$
 y=\frac{3}{2}\cos8t-\frac{3}{8}\sin8t,
 $$
 where $y$ is in feet.
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig060104.jpg}
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          domain=0:3.3,
+          xmin=-0.4, xmax=3.5,
+          ymin=-2, ymax=2,
+          width=4in,
+          height=3in,
+          xtick={0.5,1,1.5,2,2.5,3},
+            xticklabels={$0.5$,$1.0$,$1.5$,$2.0$, $2.5$,$3.0$},
+        ytick={-2,-1.5,...,1.5},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$t$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+\addplot[smooth, thick, blue] {1.5*cos(8*x*180/pi)-(3/8)*sin(8*x*180/pi)};
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig060104.jpg}
+%\end{image}
 \end{explanation}
 \end{example}
  
@@ -219,10 +308,24 @@ y=R\cos(\omega_0t-\phi).
 From \eqref{eq:6.1.8} and \eqref{eq:6.1.9} we see that the $R$ and $\phi$
 can be interpreted as polar coordinates of the point with rectangular
 coordinates $(c_1,c_2)$.
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig060105.jpg}
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}[scale=2]
+ \draw[-stealth, thick] (0,-0.5) -- (0,1.5) node[above] {$y$};
+ \draw[-stealth, thick] (-1,0) -- (2,0) node[right] {$x$};
+\draw[-,black, dashed](1.5,0)node[below]{$c_1$}--(1.5,1);
+\draw[-,black, dashed](0,1)node[left]{$c_2$}--(1.5,1);
+\draw[-,blue](0,0)--(1.5,1);
+\node at (0.7, 0.6) {$R$};
+\node at (0.3, 0.1) {$\theta$};
+\draw[dashed, blue] (0.5,0) arc[start angle=0,end angle=35,radius=0.5];
+
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig060105.jpg}
+%\end{image}
  
 Given $c_1$ and
 $c_2$, we can compute $R$ from \eqref{eq:6.1.8}. From \eqref{eq:6.1.8} and
@@ -477,11 +580,13 @@ the displacement $y$ appears as an oscillation bounded by them. The
 oscillation of $y$ for $t$ on an interval between successive zeros of
 $R(t)$ is called a \textit{beat}.
  
+\begin{center}
+\geogebra{ybhuwjqu}{800}{600}
+\end{center}
  
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig060106.jpg}
-\end{image}
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig060106.jpg}
+%\end{image}
  
  
  
@@ -553,9 +658,14 @@ $$
 with increasing amplitude that approaches $\infty$ as $t\rightarrow\infty$. Of
 course, this means that the spring must eventually fail to obey Hooke's law
 or break.
-\begin{image}
-  \includegraphics[height=1.5in]{fig060107.jpg}
-\end{image}
+
+\begin{center}
+\geogebra{pxn4scrz}{800}{600}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig060107.jpg}
+%\end{image}
 \end{explanation}
 \end{example}
  
