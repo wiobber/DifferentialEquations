@@ -77,10 +77,38 @@ $$
 The factor $Re^{-ct/2m}$ in \eqref{eq:6.2.3} is called the \textit{time--varying amplitude} of the motion, the quantity $\omega_1$ is
 called the \textit{frequency}, and $T=2\pi/\omega_1$ (which is the
 period of the cosine function in \eqref{eq:6.2.3} is called the \textit{quasi--period}. A typical graph of \eqref{eq:6.2.3} is shown below.
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig060201.jpg}
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          domain=0:5,
+          samples=300,
+          trig format=rad,
+          xmin=-0.4, xmax=5.2,
+          ymin=-1.6, ymax=1.6,
+          width=4in,
+          height=3in,
+          xtick=\empty,
+          ytick=\empty,
+            axis x line=center,
+            axis y line=center,
+            xlabel={$t$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+\addplot[smooth, thick, red] {(cos(15*x)+sin(15*x))*exp(-x)};
+\addplot[smooth, dashed, blue] {(2^(0.5))*exp(-x)};
+\addplot[smooth, dashed, blue] {-(2^(0.5))*exp(-x)};
+
+\node[blue] at (2.2,0.5) {$y=Re^{-ct/2m}$};
+\node[blue] at (2.3, -0.4) {$y=-Re^{-ct/2m}$};
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig060201.jpg}
+%\end{image}
  
 As illustrated in that figure, the graph of $y$
 oscillates between the dashed exponential curves $y=\pm Re^{-ct/2m}$.
@@ -183,10 +211,36 @@ Therefore the object moves downward through equilibrium just once,
 and then approaches equilibrium from below as $t\rightarrow\infty$. Again,
 there's no oscillation. The solutions of these two initial value
 problems are graphed in the figure below.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          domain=0:1,
+          xmin=-0.1, xmax=1.02,
+          ymin=-0.6, ymax=2.3,
+          width=4in,
+          height=3in,
+          xtick={0.2,0.4,...,1},
+            xticklabels={$0.2$,$0.4$,$0.6$,$0.8$,$1.0$},
+        ytick={-0.5,0.5,1, 1.5,2},
+        yticklabels={$-0.5$,$0.5$,$1.0$,$1.5$,$2.0$},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$t$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+\addplot[smooth, thick, blue] {(1+28*x)*exp(-8*x)};
+\addplot[smooth, thick, blue] {(1-12*x)*exp(-8*x)};
+\node[blue] at (0.6,0.6) {$y=e^{-8t}(1+28t)$};
+\node[blue] at (0.3, -0.45) {$y=e^{-8t}(1-12t)$};
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
  
-\begin{image}
-  \includegraphics[height=1.5in]{fig060202.jpg}
-\end{image}
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig060202.jpg}
+%\end{image}
  
 \end{explanation}
 \end{example}
@@ -282,10 +336,33 @@ $$
 y=\frac{17}{12}e^{-4t}-\frac{5}{12}e^{-16t}
 $$
 as the solution of the given initial value problem.
- 
-\begin{image}
-  \includegraphics[height=1.5in]{fig060203.jpg}
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          domain=0:1.25,
+          xmin=-0.1, xmax=1.3,
+          ymin=-0.1, ymax=1.1,
+          width=4in,
+          height=3in,
+          xtick={0.2,0.4,...,1.2},
+            xticklabels={$0.2$,$0.4$,$0.6$,$0.8$,$1.0$,$1.2$},
+        ytick={0.2,0.4,...,1},
+        yticklabels={$0.2$,$0.4$,$0.6$,$0.8$,$1.0$},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$t$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+\addplot[smooth, thick, blue] {(17/12)*exp(-4*x)-(5/12)*exp(-16*x)};
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig060203.jpg}
+%\end{image}
  
  
 \end{explanation}
