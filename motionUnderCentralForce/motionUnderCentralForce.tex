@@ -24,9 +24,13 @@ connecting $P$ and the origin, as indicated in
 the figure below for the case where the direction of the force
 at every point is toward the origin.
 
-\begin{image}
- \includegraphics[height=1.5in]{fig060401.jpg}
- \end{image}
+\begin{center}
+\geogebra{q9axz26x}{800}{600}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig060401.jpg}
+% \end{image}
 
  Gravitational forces are central
 forces;   for example, as mentioned in \href{https://ximera.osu.edu/ode/main/secondLawOfMotion/secondLawOfMotion}{Trench 4.3}, if we
@@ -89,9 +93,18 @@ Note that   $\vec{e}_1$ points in the
 direction of increasing $r$ and $\vec{e}_2$ points in the
 direction of increasing $\theta$.  (See the figure below)
 
-\begin{image}
- \includegraphics[height=1.5in]{fig060402.jpg}
- \end{image}
+\begin{center}
+\begin{tikzpicture}[scale=2]
+ \draw[-stealth, thick] (0,-0.5) -- (0,1.5) node[above] {$y$};
+ \draw[-stealth, thick] (-1.5,0) -- (1.5,0) node[right] {$x$};
+\draw[-stealth,blue](0,0)--(1,1)node[right]{$e_1$};
+\draw[-stealth,blue](0,0)--(-1,1)node[left]{$e_2$};
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig060402.jpg}
+% \end{image}
 
 Moreover,
 \begin{equation} \label{eq:6.4.3}
@@ -217,9 +230,23 @@ $$
 where $h=r^2\theta',$ which we have shown to be constant.
 \end{theorem}
 
-\begin{image}
- \includegraphics[height=1.5in]{fig060403.jpg}
- \end{image}
+\begin{center}
+\begin{tikzpicture}[scale=2]
+ \draw[-stealth, thick] (0,-0.5) -- (0,1.5) node[above] {$y$};
+ \draw[-stealth, thick] (-0.5,0) -- (1.5,0) node[right] {$x$};
+ \fill[fill=blue!20] (0,0)
+  -- (1.2,0.39)
+  arc[start angle=19, end angle=52.5, radius=1.2]
+  -- cycle;
+\draw[-,blue](0,0)--(1.5,0.5)node[right]{$\theta=\theta(t_1)$};
+\draw[-,blue](0,0)--(1,1.2)node[right]{$\theta=\theta(t_2)$};
+\draw[dashed,blue] (1.2,0.39) arc[start angle=19,end angle=52,radius=1.2];
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig060403.jpg}
+% \end{image}
 
 \begin{proof}  Recall from calculus that the area of the shaded sector
 in the figure is
@@ -281,24 +308,37 @@ an ellipse if
 $e<1$
 ellipse (a circle if $e=0$), a parabola if $e=1$, or a hyperbola if $e>1$.
 
-\begin{image}
- \includegraphics[height=1.5in]{fig060404.jpg}
- \end{image}
+
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig060404.jpg}
+% \end{image}
 
 If  the orbit is an ellipse, then the minimum and maximum
 values of $r$  are
 \begin{eqnarray*}
-r_{\min}&=&\frac{\rho}{1+e}\quad\mbox{(the \textit{perihelion
-distance}, attained when
+r_{\min}&=&\frac{\rho}{1+e}\quad\text{(the }\textit{perihelion
+distance}\text{, attained when
 $\theta=\phi$)}  \\
- r_{\max}&=&\frac{\rho}{1-e}\quad\mbox{(the
-\textit{aphelion distance}, attained when
+ r_{\max}&=&\frac{\rho}{1-e}\quad\text{(the }
+\textit{aphelion distance}\text{, attained when
 $\theta=\phi+\pi$)}.
 \end{eqnarray*}
 The figure
-\begin{image}
- \includegraphics[height=1.5in]{fig060404.jpg}
- \end{image}
+
+\begin{center}
+\begin{tikzpicture}[scale=2]
+ \draw[-stealth, thick] (0,-0.5) -- (0,1.5) node[above] {$y$};
+ \draw[-stealth, thick] (-0.5,0) -- (1.5,0) node[right] {$x$};
+\draw[blue,rotate=45] (0.5,0) ellipse (1 and 0.5);
+ \fill[blue] (-0.35,-0.35)node[below left]{$P$} circle (0.04);
+\fill[blue] (1.06,1.06)node[above right]{$A$} circle (0.04);
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig060404.jpg}
+% \end{image}
 
  shows a typical elliptic orbit.
 The point $P$ on the orbit where $r=r_{\min}$ is the  \textit{perigee} and  the point $A$ where $r=r_{\max}$ is the \textit{apogee}.

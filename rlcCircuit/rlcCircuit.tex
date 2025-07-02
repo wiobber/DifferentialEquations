@@ -21,9 +21,64 @@ We study electric circuits as an application of second order linear differential
 In this section we consider the \textit{RLC circuit}, shown
 schematically in the figure below. 
 
-\begin{image}
-  \includegraphics[height=1.5in]{fig060301.jpg} 
-\end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+
+% Box
+\draw[black] (-2,0.5) -- (-2,2) -- (-0.5,2);
+\draw[black] (0.5,2) -- (2,2) -- (2,0.2);
+\draw[black] (2,-0.1) -- (2,-2) -- (0.5,-2);
+\draw[black] (0.5,-2) -- (-2,-2) -- (-2,-0.5);
+
+% Inductor (coil) on top
+\draw[black,decorate,decoration={coil,aspect=0.3,segment length=2mm,amplitude=2mm}] 
+      (-0.5,2) -- (0.5,2);
+
+% Resistor (zigzag) on left
+\draw[black,decorate,decoration={zigzag,segment length=3mm,amplitude=1mm}] 
+      (-2,0.5) -- (-2,-0.5);
+
+% Capacitor on right
+\draw[black] (1.6,0.2) -- (2.4,0.2);
+\draw[black](2.35,-0.2) arc[start angle=60, end angle=120, radius=0.7];
+% Switch (bottom)
+\draw[black, fill=white] (0,-2) circle(0.3); 
+\draw[black,thick] (1,-2) -- (1.2,-1.8);
+
+% Arrows (current direction)
+\foreach \angle in {60,150,240,330} {
+  \draw[-stealth,blue] (0,0) ++(\angle:0.7) arc[start angle=\angle, end angle=\angle-60, radius=0.7];
+}
+
+% Labels
+\draw[black] (1.1,-2) node[below]{Switch};
+\draw[black] (0,-2.5) node[below]{Battery or Generator};
+\draw[black] (0,-2.9) node[below]{(Impressed Voltage $E=E(t)$)};
+\draw[black] (-3.3,0.4) node[below]{Resistor};
+\draw[black] (-3.3,0) node[below]{(Resistance $R$)};
+\draw[black] (3.7,0.4) node[below]{Capacitor};
+\draw[black] (3.7,0) node[below]{(Capacitance $C$)};
+\draw[black] (0,2.4) node[above]{(Inductance $L$)};
+\draw[black] (0,2.8) node[above]{Induction Coil};
+
+\draw[black] (0.6,2) node[below]{$\boldsymbol{-}$};
+\draw[black] (-0.6,2) node[below]{$\boldsymbol{+}$};
+
+\draw[black] (-2,0.6) node[right]{$\boldsymbol{-}$};
+\draw[black] (-2,-0.6) node[right]{$\boldsymbol{+}$};
+
+\draw[black] (-0.6,-2) node[above]{$\boldsymbol{+}$};
+\draw[black] (0.6,-2) node[above]{$\boldsymbol{-}$};
+
+\draw[black] (2,0.4) node[left]{$\boldsymbol{+}$};
+\draw[black] (2,-0.3) node[left]{$\boldsymbol{-}$};
+
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig060301.jpg} 
+%\end{image}
 
 As we'll see, the $RLC$
 circuit is an electrical analog of a spring-mass system with
@@ -316,9 +371,64 @@ Find the amplitude-phase form of the steady state current in the $RLC$
 circuit in the figure if the impressed voltage, provided by
 an alternating current generator, is $E(t)=E_0\cos\omega t$.
 
-\begin{image}
-  \includegraphics[height=1.5in]{fig060301.jpg} 
-\end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+
+% Box
+\draw[black] (-2,0.5) -- (-2,2) -- (-0.5,2);
+\draw[black] (0.5,2) -- (2,2) -- (2,0.2);
+\draw[black] (2,-0.1) -- (2,-2) -- (0.5,-2);
+\draw[black] (0.5,-2) -- (-2,-2) -- (-2,-0.5);
+
+% Inductor (coil) on top
+\draw[black,decorate,decoration={coil,aspect=0.3,segment length=2mm,amplitude=2mm}] 
+      (-0.5,2) -- (0.5,2);
+
+% Resistor (zigzag) on left
+\draw[black,decorate,decoration={zigzag,segment length=3mm,amplitude=1mm}] 
+      (-2,0.5) -- (-2,-0.5);
+
+% Capacitor on right
+\draw[black] (1.6,0.2) -- (2.4,0.2);
+\draw[black](2.35,-0.2) arc[start angle=60, end angle=120, radius=0.7];
+% Switch (bottom)
+\draw[black, fill=white] (0,-2) circle(0.3); 
+\draw[black,thick] (1,-2) -- (1.2,-1.8);
+
+% Arrows (current direction)
+\foreach \angle in {60,150,240,330} {
+  \draw[-stealth,blue] (0,0) ++(\angle:0.7) arc[start angle=\angle, end angle=\angle-60, radius=0.7];
+}
+
+% Labels
+\draw[black] (1.1,-2) node[below]{Switch};
+\draw[black] (0,-2.5) node[below]{Battery or Generator};
+\draw[black] (0,-2.9) node[below]{(Impressed Voltage $E=E(t)$)};
+\draw[black] (-3.3,0.4) node[below]{Resistor};
+\draw[black] (-3.3,0) node[below]{(Resistance $R$)};
+\draw[black] (3.7,0.4) node[below]{Capacitor};
+\draw[black] (3.7,0) node[below]{(Capacitance $C$)};
+\draw[black] (0,2.4) node[above]{(Inductance $L$)};
+\draw[black] (0,2.8) node[above]{Induction Coil};
+
+\draw[black] (0.6,2) node[below]{$\boldsymbol{-}$};
+\draw[black] (-0.6,2) node[below]{$\boldsymbol{+}$};
+
+\draw[black] (-2,0.6) node[right]{$\boldsymbol{-}$};
+\draw[black] (-2,-0.6) node[right]{$\boldsymbol{+}$};
+
+\draw[black] (-0.6,-2) node[above]{$\boldsymbol{+}$};
+\draw[black] (0.6,-2) node[above]{$\boldsymbol{-}$};
+
+\draw[black] (2,0.4) node[left]{$\boldsymbol{+}$};
+\draw[black] (2,-0.3) node[left]{$\boldsymbol{-}$};
+
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ % \includegraphics[height=1.5in]{fig060301.jpg} 
+%\end{image}
 
 \begin{explanation}
 We'll first find the steady state charge on the capacitor as
