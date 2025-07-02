@@ -293,9 +293,29 @@ y={\cal L}^{-1}(Y(s))=\frac{4}{3}e^{-t/2}-8e^{-t}+\frac{8}{3}e^{-2t}.
 $$
 %(Figure~\ref{figure:8.3.1}).
 
-\begin{image}
- \includegraphics[height=1.5in]{fig080301.jpg}
- \end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+         xmin=0, xmax=7.5,
+          ymin=-4.5, ymax=1,
+          width=4in,
+          height=3in,
+          xtick={1,2,3,4,5,6,7},
+        ytick={-4,-3,-2,-1},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$t$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+\addplot[domain=0:7,smooth, thick, blue] {(4/3)*exp(-0.5*x)-8*exp(-x)+(8/3)*exp(-2*x)};
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig080301.jpg}
+% \end{image}
 \end{explanation}
 \end{example}
 
@@ -349,9 +369,31 @@ $$
 %(Figure~\ref{figure:8.3.2}),
 which is therefore  the solution of  \eqref{eq:8.3.15}.
 
-\begin{image}
- \includegraphics[height=1.5in]{fig080302.jpg}
-\end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+        trig format=rad,
+         xmin=0, xmax=7.5,
+          ymin=-3.5, ymax=1.5,
+          width=4in,
+          height=3in,
+          xtick={1,2,3,4,5,6,7},
+        ytick={-3,-2,-1,0.5,1},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$t$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+\addplot[domain=0:7,smooth, thick, blue] {0.5-3.5*cos(x)*exp(-x)-2.5*sin(x)*exp(-x)};
+\draw[-, dashed, blue] (0,0.5) -- (7,0.5);
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig080302.jpg}
+%\end{image}
 
 \end{explanation}
 \end{example}

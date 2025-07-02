@@ -419,9 +419,33 @@ f(t_0+)-f(t_0-)
 $$
 is called the \textit{jump} in $f$ at $t_0$ the figure below.
 
-\begin{image}
- \includegraphics[height=1.5in]{fig080101.jpg}
-\end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+         xmin=-2, xmax=4,
+          ymin=-0.8, ymax=5.5,
+          width=4in,
+          height=3in,
+          xtick=\empty,
+          ytick=\empty,
+            axis x line=center,
+            axis y line=center,
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+\addplot[domain=-0.4:2,smooth, thick, blue] {0.5*x^2+1};
+\addplot[domain=2:4,smooth, thick, blue] {-(0.1)*(2^(x))+5};
+
+\draw[-, black,dashed] (2,3) -- (0,3) node[left] {$f(t_0-)$};
+\draw[-, dashed, black] (2,4.6) -- (0,4.6) node[left] {$f(t_0+)$};
+\draw[-, dashed, black] (2,4.6) -- (2,0) node[below] {$t_0$};
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig080101.jpg}
+%\end{image}
 
 % \
 % \begin{figure}[tbp]
@@ -445,9 +469,34 @@ $$
 f(t_0)=f(t_0+)=f(t_0-).
 $$
 
-\begin{image}
- \includegraphics[height=1.5in]{fig080102.jpg}
- \end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+         xmin=-2, xmax=4,
+          ymin=-0.8, ymax=5.5,
+          width=4in,
+          height=3in,
+          xtick=\empty,
+          ytick=\empty,
+            axis x line=center,
+            axis y line=center,
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+\addplot[domain=-0.4:4,smooth, thick, blue] {0.5*x^2+1};
+\fill[white] (2,3) circle (0.1);
+
+
+\draw[-, black,dashed] (2,3) -- (0,3) node[left] {$f(t_0-)=f(t_0+)$};
+\draw[-, dashed, black] (2,4.6) -- (0,4.6) node[left] {$f(t_0)$};
+\draw[-, dashed, black] (2,4.6) -- (2,0) node[below] {$t_0$};
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig080102.jpg}
+% \end{image}
 
 % \begin{figure}[htbp]
 % \color{blue}
@@ -500,9 +549,39 @@ $[0,T]$ for every $T>0$.
 The figure below shows the graph of a typical piecewise
 continuous function.
 
-\begin{image}
- \includegraphics[height=1.5in]{fig080103.jpg}
- \end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+         xmin=-1, xmax=6.5,
+          ymin=-0.8, ymax=5.5,
+          width=4in,
+          height=3in,
+          xtick=\empty,
+          ytick=\empty,
+            axis x line=center,
+            axis y line=center,
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+\addplot[domain=0.4:2,smooth, thick, blue] {-0.5*x+2};
+\addplot[domain=5:6,smooth, thick, blue] {x-4};
+\addplot[domain=2:3,smooth, thick, blue] {-0.5*x^3+10*x-14};
+\addplot[domain=3:5,smooth, thick, blue] {0.5*(x-3)^2+1};
+
+
+\draw[-, dashed, black] (0.4,0)node[below] {$a$} -- (0.4,1.8);
+\draw[-, dashed, blue] (6,0)node[below] {$b$} -- (6,2);
+
+\draw[-, dashed, black] (2,0)-- (2,2);
+\draw[-, dashed, black] (3,0)-- (3,2.5);
+\draw[-, dashed, black] (5,0)-- (5,3);
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig080103.jpg}
+% \end{image}
 
 
 It is shown in calculus that if a function is piecewise continuous on
