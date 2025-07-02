@@ -103,9 +103,7 @@ by \eqref{eq:3.1.3}.
 %\includegraphics[height=1.5in]{fig030101.jpg} 
 %\end{image}
 
-\begin{center}
-\geogebra{uy7gmzvh}{800}{600}
-\end{center}
+
 
 
 
@@ -141,9 +139,7 @@ $$
 %\includegraphics[height=1.5in]{fig030102.jpg} 
 %\end{image}
 
-\begin{center}
-\geogebra{euenzduj}{800}{600}
-\end{center}
+
 
 % Commented out by Felipe
 %\begin{image}
@@ -169,8 +165,12 @@ $$
 Plotting our approximation with the actual solution we find:
 
 \begin{center}
-\geogebra{n5rcyfcw}{800}{600}
+\geogebra{uy7gmzvh}{800}{600}
 \end{center}
+
+
+
+
 
 %\begin{image}
 %\includegraphics[height=1.5in]{fig030103.jpg} 
@@ -203,9 +203,9 @@ Plotting our approximation with the actual solution we find:
 This approximation could be improved by using more subintervals.  
 
 \begin{center}
-\geogebra{jckhafsx}{800}{600}
+\geogebra{euenzduj}{800}{600}
 \end{center}
- 
+
 
 %\begin{sageCell}
 %@interact
@@ -252,12 +252,14 @@ subintervals.  Use exact values.
 \]
 Thus $y(1) \approx \answer{81/128}$.
 
-\end{explanation}
-\end{example}
-
 \begin{center}
 \geogebra{n5rcyfcw}{800}{600}
 \end{center}
+
+\end{explanation}
+\end{example}
+
+
 
 %The Sage Cell below illustrates Example \ref{ex:eulerIntro2} graphically.  You can adjust the number of subintervals to see how the approximation is affected.  You can also change the the interval, just for fun.
  
@@ -325,8 +327,7 @@ Errors due to the computer's inability to do exact arithmetic are
 called \dfn{roundoff errors}.
 \end{itemize}
  
-Since a careful analysis of roundoff error is beyond the scope of this
-book, we'll consider only truncation errors.
+Since a careful analysis of roundoff error is beyond the scope of this book, we will consider only truncation errors.
  
 \begin{example}\label{example:3.1.2}
 Use Euler's method with step sizes $h=0.1$, $h=0.05$, and $h=0.025$ to
@@ -411,12 +412,14 @@ x & h=0.1 & h=0.05 & h=0.025\\ \hline
 \end{array}
 $$
 
-\end{explanation}
-\end{example}
-
 \begin{center}
 \geogebra{jckhafsx}{800}{600}
 \end{center}
+
+\end{explanation}
+\end{example}
+
+
  
 %Use the Sage Cell below to explore the error in Example \ref{example:3.1.2} visually by changing the size ($h$) of the subintervals.
  
@@ -507,14 +510,14 @@ $$
 \end{example}
 
 
-Since we think it's important in evaluating the accuracy of the
-numerical methods that we'll be studying in this chapter, we
+Since we think it is important in evaluating the accuracy of the
+numerical methods that we will be studying in this chapter, we
 often include a column listing values of the exact solution of the
 initial value problem, even if the directions in the example or
-exercise don't specifically call for it. If  quotation marks are
+exercise do not specifically call for it. If quotation marks are
 included in the heading, the values were obtained by applying the
 Runge-Kutta method in a way that's explained in Section~3.3.
-If  quotation marks are not included,  the values were
+If quotation marks are not included,  the values were
 obtained from a known formula for the solution.
 In either case, the values are exact to eight places to the
 right of the decimal point.
