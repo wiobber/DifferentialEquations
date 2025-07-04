@@ -139,9 +139,20 @@ This iterated integral equals a double integral over the region shown
 in %Figure~\ref{figure:8.6.1}. 
 the figure below.
 
-\begin{image}
- \includegraphics[height=1.5in]{fig080601.jpg} 
-\end{image}
+\begin{center}
+\begin{tikzpicture}[scale=2]
+ \draw[-stealth, thick] (0,0) -- (0,2) node[above] {$\tau$};
+ \draw[-stealth, thick] (0,0) -- (2.3,0) node[right] {$t$};
+ \fill[fill=blue!20] (0,0)
+  -- (2,2)node[above right, black] {$t=\tau$} --(2,0) -- cycle;
+\draw[-, blue] (0,0)-- (2,2);
+\draw[-, blue] (0,0)-- (2,0);
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig080601.jpg} 
+%\end{image}
 
 Reversing the order of integration yields
 \begin{equation}\label{eq:8.6.6}

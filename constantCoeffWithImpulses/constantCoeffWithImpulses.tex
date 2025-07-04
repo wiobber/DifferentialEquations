@@ -73,10 +73,22 @@ f_h(t)=\left\{\begin{array}{cl} 0,&0\leq t<t_0,\\
 0,&t\geq t_0+h,\end{array}\right.
 \end{equation}
  so  $f_h$ has unit total impulse
-equal to the area of the shaded rectangle in the figure below.  %Figure~$\ref{figure:8.7.1}$.
-\begin{image}
- \includegraphics[height=1.5in]{fig080701.jpg}
- \end{image}
+equal to the area of the shaded rectangle in the figure below. 
+
+\begin{center}
+\begin{tikzpicture}[scale=2]
+  \fill[fill=blue!20] (2,0)node[below] {$t_0$} --(2.5,0)node[below] {$t_0+h$}--(2.5,2)--(2,2)-- cycle;
+\draw[-, dashed] (2,2)-- (0,2) node[left] {$\frac{1}{h}$};
+\draw[-, blue] (2,2)-- (2.5,2);
+\draw[-stealth, thick] (0,0) -- (0,2.5) node[above] {$y$};
+ \draw[-stealth, thick] (0,0) -- (3,0) node[right] {$t$};
+\end{tikzpicture}
+\end{center}
+
+%Figure~$\ref{figure:8.7.1}$.
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig080701.jpg}
+% \end{image}
 
 
 Then
@@ -243,6 +255,29 @@ solid curve in the figure is the graph of $w$. The dashed curves are
 solutions of \eqref{eq:8.7.1} for various values of $h$. As $h$ decreases
 the graph of $y_h$ moves to the left toward the graph of $w$.
 
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+         xmin=0, xmax=8.5,
+          ymin=0, ymax=0.5,
+          width=5in,
+          height=3in,
+          xtick={0.5,2,3,4,5,6,7},
+          xticklabels={$t_0$,$t_0+1$,$t_0+2$,$t_0+4$,$t_0+5$,$t_0+6$,$t_0+7$},
+        ytick={0.1,0.2,0.3,0.4},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$t$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+
+\addplot[domain=0.5:8,smooth, thick, blue] {(x-0.5)*exp(-(x-0.5))};
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
 \begin{image}
  \includegraphics[height=1.5in]{fig080702.jpg}
 \end{image}
@@ -283,12 +318,37 @@ $$
 
 The graph of $y=u(t-t_0)(t-t_0)e^{-(t-t_0)}$ is shown in
 the figure below.  %Figure~\ref{figure:8.7.3}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+         xmin=0, xmax=8.5,
+          ymin=0, ymax=0.5,
+          width=5in,
+          height=3in,
+          xtick={0.5,2,3,4,5,6,7},
+          xticklabels={$t_0$,$t_0+1$,$t_0+2$,$t_0+4$,$t_0+5$,$t_0+6$,$t_0+7$},
+        ytick={0.1,0.2,0.3,0.4},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$t$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+
+\addplot[domain=0.5:8,smooth, thick, blue] {(x-0.5)*exp(-(x-0.5))};
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
 \end{explanation}
 \end{example}
 
-\begin{image}
- \includegraphics[height=1.5in]{fig080703.jpg}
-\end{image}
+
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig080703.jpg}
+%\end{image}
 
 % \begin{figure}[tbp]
 %   \centering\color{blue}
@@ -351,10 +411,37 @@ y=-e^{-2t}+\frac{1}{2}e^{-5t}-\frac{5}{2}e^{-t}
 +u(t-1)\frac{e^{-(t-1)}-e^{-5(t-1)}}{2}
 \end{equation}
 Here is a graph of the solution.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+         xmin=0, xmax=4.2,
+          ymin=-3.25, ymax=0.5,
+          width=4in,
+          height=3in,
+          xtick={1,2,3,4},
+          ytick={-3,-2,-1},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$t$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+
+\addplot[domain=0:1,smooth, thick, blue] {-exp(-2*x)+0.5*exp(-5*x)-2.5*exp(-x)};
+
+\addplot[domain=1:4,smooth, thick, blue] {-exp(-2*x)+0.5*exp(-5*x)-2.5*exp(-x)+(exp(-(x-1))-exp(-5*(x-1)))/2};
+
+\draw[-,dashed](1,-0.2)--(1,-1.5)node[right]{$t=1$};
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
 %(Figure~\ref{figure:8.7.4})
-\begin{image}
- \includegraphics[height=1.5in]{fig080704.jpg}
-\end{image}
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig080704.jpg}
+%\end{image}
 \end{explanation}
 \end{example}
 
@@ -409,9 +496,40 @@ y=\left\{\begin{array}{cl} 1-2\cos t+2\sin t,&0\leq t<\pi,\\
 1-2\cos t-3\sin t,&t\geq 2\pi\end{array}\right.
 \end{equation}
 Here is a graph of the solution.
-\begin{image}
- \includegraphics[height=1.5in]{fig080705.jpg}
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+         trig format=rad,
+         xmin=0, xmax=13.7,
+          ymin=-3.25, ymax=5.7,
+          width=5in,
+          height=3in,
+          xtick={1,2,...,13},
+          ytick={-3,-2,...,5},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$t$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+
+\addplot[domain=0:pi,smooth, thick, blue] {1-2*cos(x)+2*sin(x)};
+
+\addplot[domain=pi:2*pi,smooth, thick, blue] {1-2*cos(x)};
+
+\addplot[domain=2*pi:13,smooth, thick, blue] {1-2*cos(x)-3*sin(x)};
+
+\draw[-,dashed](pi,-2)--(pi,4)node[above]{$t=\pi$};
+\draw[-,dashed](2*pi,-2)--(2*pi,4)node[above]{$t=2\pi$};
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig080705.jpg}
+%\end{image}
 \end{explanation}
 \end{example}
 
