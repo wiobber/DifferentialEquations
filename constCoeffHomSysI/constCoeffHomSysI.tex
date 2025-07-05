@@ -542,18 +542,26 @@ trajectories of nontrivial solutions of \eqref{eq:10.4.18} are half-lines
 through (but not including) the origin. The direction of motion is
 away from the origin if $\lambda_1>0$, as shown in the figure.
 
-\begin{image}
- \includegraphics[height=1.5in]{fig100401.jpg} 
-\end{image}
+\begin{center}
+\geogebra{trgeazab}{800}{600}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig100401.jpg} 
+%\end{image}
 
 
 The direction of motion is toward the origin if $\lambda_1<0$, as shown in the figure. 
 %(In these
 %and the next figures an arrow through a point indicates the direction of motion along the trajectory through the point.)
 
-\begin{image}
- \includegraphics[height=1.5in]{fig100402.jpg} 
-\end{image}
+\begin{center}
+\geogebra{chdsazyy}{800}{600}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig100402.jpg} 
+%\end{image}
 
 Now suppose   $\lambda_2>\lambda_1$, and let $L_1$ and $L_2$ denote
 lines through the origin parallel to ${\bf x}_1$ and ${\bf x}_2$,
@@ -583,9 +591,22 @@ is on the trajectory, we can determine which sector contains the
 trajectory from the signs of $c_1$ and $c_2$,
 as shown in the figure.
 
-\begin{image}
- \includegraphics[height=1.5in]{fig100403.jpg} 
-\end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\draw[-stealth, blue, thick](0,0)--(3,2)node[below right]{$\bf{x_1}$};
+\draw[-stealth, blue, thick](0,0)--(3,-1)node[above right]{$\bf{x_2}$};
+\draw[-,dashed](6,-2)node[right]{$L_2$}--(-6,2);
+\draw[-,dashed](-6,-4)--(6,4)node[right]{$L_1$};
+\node[above] at (0,2){$c_1>0,\,c_2<0$};
+\node[right] at (2,0.3){$c_1>0,\,c_2>0$};
+\node[below] at (0,-2){$c_1<0,\,c_2>0$};
+\node[left] at (-2,-0.3){$c_1<0,\,c_2<0$};
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig100403.jpg} 
+%\end{image}
 
 The direction of ${\bf y}(t)$ in \eqref{eq:10.4.19} is the
 same as that of
@@ -619,10 +640,14 @@ ${\bf u}$.
 
 The figure below  shows some
  typical trajectories.
- 
- \begin{image}
- \includegraphics[height=1.5in]{fig100404.jpg} 
-\end{image}
+
+\begin{center}
+\geogebra{y89acvpe}{800}{600}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig100404.jpg} 
+%\end{image}
  
 In this case, $\lim_{t\rightarrow -\infty}\norm{{\bf y}(t)}=0$, so the trajectory
 is not only asymptotically parallel to $L_1$ as $t\rightarrow -\infty$, but is
@@ -641,9 +666,13 @@ The direction of motion along each trajectory is away from the origin.
 The figure below shows
 some typical trajectories.
 
-\begin{image}
- \includegraphics[height=1.5in]{fig100405.jpg} 
-\end{image}
+\begin{center}
+\geogebra{vxqdp7vc}{800}{600}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig100405.jpg} 
+%\end{image}
 
 In this case, $\lim_{t\rightarrow\infty}\norm{{\bf y}(t)}=0$, so the trajectory is
 asymptotically tangent to $L_2$ at the origin as $t\rightarrow\infty$. On the
@@ -661,9 +690,13 @@ The direction of motion along each trajectory is toward the origin.
 The figure below shows
 some typical trajectories.
 
-\begin{image}
- \includegraphics[height=1.5in]{fig100406.jpg} 
-\end{image}
+\begin{center}
+\geogebra{hsanj8mz}{800}{600}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig100406.jpg} 
+%\end{image}
 
 In this case,
 $$

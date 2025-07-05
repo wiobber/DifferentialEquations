@@ -27,9 +27,64 @@ solutions, respectively. Salt solutions are simultaneously added to
 both tanks from external sources, pumped from each tank to the other,
 and drained from both tanks (see the figure below). 
 
-\begin{image}
- \includegraphics[height=1.5in]{fig100101.jpg} 
-\end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1, thick, >=Stealth]
+
+  % Tank1
+  \draw[black] (-2,4) -- (-2,0) -- (2,0) -- (2,4);
+  \draw[gray, dashed] (-2,1.2) -- (2,1.2); % Fill line
+
+  % Inflow arrow
+  \draw[black, ->] (0,5) -- (0,4) node[below]{$T_1$};
+  \node at (0,5.4) {5 gal/min; 1 lb/gal};
+
+  % Tank label
+  \node at (0,0.5) {100 gal};
+
+  % Outflow arrow
+  \draw[black, ->] (0,0) -- (0,-1);
+  \node at (0,-1.4) {6 gal/min};
+
+   \foreach \x in {-2, -1.9,...,2} {
+    \foreach \y in {0,0.1,...,1.2} {
+      \fill[gray] (\x,\y) circle (0.4pt);
+    }
+  }
+
+\def\a{8}
+
+  % Tank2
+  \draw[black] (-2+\a,4) -- (-2+\a,0) -- (2+\a,0) -- (2+\a,4);
+  \draw[gray, dashed] (-2+\a,3.2) -- (2+\a,3.2); % Fill line
+
+  % Inflow arrow
+  \draw[black, ->] (0+\a,5) -- (0+\a,4)node[below]{$T_2$};
+  \node at (0+\a,5.4) {4 gal/min; 2 lb/gal};
+
+  % Tank label
+  \node at (0+\a,2) {300 gal};
+
+  % Outflow arrow
+  \draw[black, ->] (0+\a,0) -- (0+\a,-1);
+  \node at (0+\a,-1.4) {3 gal/min};
+
+   \foreach \x in {6, 6.1,...,10} {
+    \foreach \y in {0,0.1,...,3.2} {
+      \fill[gray] (\x,\y) circle (0.4pt);
+    }
+  }
+
+  \draw[black,->](2.5,3)--(5.5,3);
+  \draw[black,->](5.5,1)--(2.5,1);
+  \node[above] at (4,3) {2 gal/min};
+\node[above] at (4,1) {3 gal/min};
+
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig100101.jpg} 
+%\end{image}
 
 A solution with
 $1$ pound of salt per gallon is pumped into $T_1$ from an external source
@@ -117,9 +172,38 @@ A mass $m_1$ is suspended from a rigid support on a spring $S_1$ and a
 second mass $m_2$ is suspended from the first on a spring $S_2$
 (see the figure below). 
 
-\begin{image}
- \includegraphics[height=1.5in]{fig100102.jpg} 
-\end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+  
+% Spring1
+
+\draw[decoration={aspect=0.3, segment length=2.5mm, amplitude=3mm,coil},decorate] (0,3) -- (0,-1.8);
+
+% Circles
+   \draw[black, fill=gray] (0,-2) circle(0.3);  
+
+   % Spring2
+
+\draw[decoration={aspect=0.3, segment length=1.5mm, amplitude=3mm,coil},decorate] (0,-2.3) -- (0,-6);
+
+% Circles
+   \draw[black, fill=gray] (0,-6.3) circle(0.3); 
+% Labels   
+\node[left] at (-0.4,0.8){Spring $S_1$};
+\node[left] at (-0.4,-2){Mass $m_1$};
+\node[left] at (-0.4,-4){Spring $S_2$};
+\node[left] at (-0.4,-6.3){Mass $m_2$};
+
+\draw[-stealth](1,-2.3)--(1,-1.7)node[above]{$y_1$};
+\draw[-stealth](1,-6.6)--(1,-6)node[above]{$y_2$};
+\draw[dashed](0,-2.3)--(1.2,-2.3);
+\draw[dashed](0,-6.6)--(1.2,-6.6);
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig100102.jpg} 
+%\end{image}
 
 The springs obey Hooke's law, with spring
 constants $k_1$ and $k_2$. Internal friction causes the springs to
@@ -206,9 +290,18 @@ the position vector at time $t$ of an object with mass $m$, relative
 to a rectangular coordinate system with origin at Earth's center
 (see the figure below). 
 
-\begin{image}
- \includegraphics[height=1.5in]{fig100103.jpg} 
-\end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\draw[-stealth](0,0)--(2,0)node[right]{$x$};
+\draw[-stealth](0,0)--(0,2)node[above]{$y$};
+\draw[-stealth](0,0)--(-1.5,-1)node[below left]{$z$};
+\draw[-stealth,blue,thick](0,0)--(1.2,1.2)node[above right]{$\bf{X}(t)$};
+\end{tikzpicture}
+\end{center}
+
+%\begin{image}
+ %\includegraphics[height=1.5in]{fig100103.jpg} 
+%\end{image}
 
 According to Newton's law of gravitation,
 Earth's gravitational force $\vec{F}=\vec{F}(x,y,z)$ on the object is
