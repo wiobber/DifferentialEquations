@@ -142,9 +142,32 @@ solution of \eqref{eq:9.2.4} is
  $$
 y=4e^x-e^{2x}+e^{3x}
 $$
-\begin{image}
- \includegraphics[height=1.5in]{fig090201.jpg} 
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+         xmin=0, xmax=2.3,
+          ymin=0, ymax=750,
+          width=5in,
+          height=3in,
+          xtick={0.5,1,1.5,2},
+          ytick={100,200,300,400,500,600,700},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+
+\addplot[domain=0:2.2,smooth, thick, blue] {4*exp(x)-exp(2*x)+exp(3*x)};
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+%\includegraphics[height=1.5in]{fig090201.jpg} 
+%\end{image}
 
 
 \end{explanation}

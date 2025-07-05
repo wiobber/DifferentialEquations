@@ -122,10 +122,31 @@ y_p=e^xu_p=e^x(1+2x-x^2+x^3)
 $$
 is a particular solution of  \eqref{eq:9.3.2}.
 
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+         xmin=0, xmax=2.2,
+          ymin=0, ymax=55,
+          width=5in,
+          height=3in,
+          xtick={1,2},
+          ytick={10,20,30,40,50},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
 
-\begin{image}
- \includegraphics[height=1.5in]{fig090301.jpg} 
-\end{image}
+\addplot[domain=0:2.1,smooth, thick, blue] {(1+2*x-x^2+x^3)*exp(x)};
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+%\includegraphics[height=1.5in]{fig090301.jpg} 
+%\end{image}
 
 \end{explanation}
 \end{example}
@@ -192,10 +213,32 @@ y_p=e^{2x}u_p=\frac{x^2e^{2x}}{24}(-4+4x+x^2)
 $$
 is a particular solution of  \eqref{eq:9.3.4}.
 
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+         xmin=0, xmax=1.05,
+          ymin=-0.07, ymax=0.35,
+          width=5in,
+          height=3in,
+          xtick={0.1, 0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1},
+          ytick={0.05,0.1,0.15,0.2,0.25,0.3},
+          yticklabels={$0.05$,$0.10$,$0.15$,$0.20$,$0.25$,$0.30$},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
 
-\begin{image}
- \includegraphics[height=1.5in]{fig090302.jpg} 
-\end{image}
+\addplot[domain=0:1,smooth, thick, blue] {(1/24)*(x^2)*(-4+4*x+x^2)*exp(2*x)};
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+%\includegraphics[height=1.5in]{fig090302.jpg} 
+%\end{image}
 
 \end{explanation}
 \end{example}
@@ -286,9 +329,33 @@ y_p=e^xu_p=-\frac{e^x}{2}\left[(2-x)\cos x+(1+x)\sin x\right]
 $$
 is a particular  solution of \eqref{eq:9.3.7}.
 
-\begin{image}
- \includegraphics[height=1.5in]{fig090303.jpg} 
-\end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+        trig format=rad,
+        samples=200,
+         xmin=0, xmax=4.3,
+          ymin=-21, ymax=110,
+          width=5in,
+          height=3in,
+          xtick={1,2,3,4},
+          ytick={-20,20,40,60,80,100},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+
+\addplot[domain=0:4.2,smooth, thick, blue] {-(1/2)*((2-x)*cos(x)+(1+x)*sin(x))*exp(x)};
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+%\includegraphics[height=1.5in]{fig090303.jpg} 
+%\end{image}
 
      
 \end{explanation}
@@ -379,9 +446,34 @@ $$
 x+(1+x)\sin x\right]
 $$
 The figure below shows a particular  solution of \eqref{eq:9.3.10}.
-\begin{image}
- \includegraphics[height=1.5in]{fig090304.jpg} 
-\end{image}
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+        trig format=rad,
+        samples=200,
+         xmin=0, xmax=9.3,
+          ymin=-0.55, ymax=0.3,
+          width=5in,
+          height=3in,
+          xtick={1,2,...,9},
+          ytick={-0.5,-0.4,...,0.2},
+            axis x line=center,
+            axis y line=center,
+            xlabel={$x$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+
+\addplot[domain=0:9.2,smooth, thick, blue] {-(1/2)*x*((3-2*x)*cos(x)+(1+x)*sin(x))*exp(-x)};
+
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
+
+%\begin{image}
+%\includegraphics[height=1.5in]{fig090304.jpg} 
+%\end{image}
 
 \end{explanation}
 \end{example}
