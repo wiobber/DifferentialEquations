@@ -51,8 +51,8 @@ y^{(n)}=f(x)
 \end{equation}
 by repeated integration. Again, this is a calculus problem.
  
-Except for illustrative purposes in this section, there's no need to
-consider differential equations like \eqref{eq:1.2.1}.  We'll
+Except for illustrative purposes in this section, there is no need to
+consider differential equations like $\eqref{eq:1.2.1}$.  We will
 usually consider differential equations that can be written as
 \begin{equation} \label{eq:1.2.2}
 y^{(n)}=f(x,y,y', \dots,y^{(n-1)}),
@@ -61,17 +61,18 @@ where at least one of the functions $y$, $y'$, \dots, $y^{(n-1)}$ actually
 appears on the right. Here are some examples:
 $$
 \begin{array}{rcll}
-\frac{dy}{dx}-x^2&=&0&\mbox{ (first order)}  \\
-\frac{dy}{dx}+2xy^2&=&-2&\mbox{ (first order)}   \\
-\frac{d^2y}{dx^2}+2\frac{dy}{dx}+y&=&2x&\mbox{ (second order)}
+\frac{dy}{dx}-x^2&=&0&\text{ (first order)}  \\
+\frac{dy}{dx}+2xy^2&=&-2&\text{ (first order)}   \\
+\frac{d^2y}{dx^2}+2\frac{dy}{dx}+y&=&2x&\text{ (second order)}
 \\
-xy'''+y^2&=&\sin x  &\mbox{ (third order)}
+xy'''+y^2&=&\sin x  &\text{ (third order)}
 \\
-y^{(n)}+xy'+3y&=&x&\mbox{ ($n$-th order)}
+y^{(n)}+xy'+3y&=&x&\text{ (}n\text{-th order)}
 \end{array}
 $$
+
 Although none of these equations is  written as in
-\eqref{eq:1.2.2}, all of them can be written in this form:
+$\eqref{eq:1.2.2}$, all of them can be written in this form:
 $$
 \begin{array}{rcl}
 y'&=&x^2  \\
@@ -86,7 +87,7 @@ $$
  
 A \dfn{solution} of a differential equation is a function that
 satisfies the differential equation on some open interval;   thus, $y$
-is a solution of \eqref{eq:1.2.2} if $y$ is $n$ times differentiable and
+is a solution of $\eqref{eq:1.2.2}$ if $y$ is $n$ times differentiable and
 $$
 y^{(n)}(x)=f(x,y(x),y'(x), \dots,y^{(n-1)}(x))
 $$
@@ -120,14 +121,14 @@ is an integral curve of
 y'=-\frac{x}{y}.
 \end{equation}
 To see this, note that the only functions whose graphs are segments of
-\eqref{eq:1.2.3} are
+$\eqref{eq:1.2.3}$ are
 $$
 y_1=\sqrt{a^2-x^2}\quad\text{and}\quad y_2=-\sqrt{a^2-x^2}.
 $$
-We leave it to you to verify that these functions both satisfy
-\eqref{eq:1.2.4} on the open interval $(-a,a)$. However, the graph of \eqref{eq:1.2.3} is
+We leave it to you to verify that each of these functions satisfies
+$\eqref{eq:1.2.4}$ on the open interval $(-a,a)$. However, the graph of $\eqref{eq:1.2.3}$ is
 not a solution
-curve of \eqref{eq:1.2.4}, since it's not the graph of a function.
+curve of $\eqref{eq:1.2.4}$, since it's not the graph of a function.
 \end{example}
  
 \begin{example}\label{example:1.2.2}
@@ -142,28 +143,27 @@ xy'+y=x^2
  on $(0,\infty)$ and on $(-\infty,0)$.
   
 \begin{explanation}
-Substituting \eqref{eq:1.2.5} and
+Substituting $\eqref{eq:1.2.5}$ and
 $$
 y'=\frac{2x}{3} - \frac{1}{x^2}
 $$
-into \eqref{eq:1.2.6}  yields
+into $\eqref{eq:1.2.6}$  yields
 $$
 xy'(x)+y(x)=x \left(\frac{2x}{3} - \frac{1}{x^2}\right)+
 \left(\frac{x^2}{3}+\frac{1}{x}\right)=x^2
 $$
-for all $x\neq 0$. Therefore $y$ is a solution of \eqref{eq:1.2.6}
+for all $x\neq 0$. Therefore $y$ is a solution of $\eqref{eq:1.2.6}$
 on $(-\infty,0)$ and $(0,\infty)$.
  However, $y$ isn't  a solution of the differential
 equation on any open interval that contains $x=0$, since  $y$ is
 not defined at  $x=0$.
  
-The graph of \eqref{eq:1.2.5} appears below
+The graph of $\eqref{eq:1.2.5}$ appears below.
  
 \desmos{zbsiqyq1os}{800}{600}
  
-The part
-of the graph of \eqref{eq:1.2.5} on $(0,\infty)$ is a solution curve of
-\eqref{eq:1.2.6}, as is the part of the graph on $(-\infty,0)$.
+The part of the graph of $\eqref{eq:1.2.5}$ on $(0,\infty)$ is a solution curve of
+$\eqref{eq:1.2.6}$, as is the part of the graph on $(-\infty,0)$.
 \end{explanation}
 \end{example}
  
@@ -179,7 +179,7 @@ y''+2y'+y=2x
  on $(-\infty,\infty)$.
  
 \begin{explanation}
-Differentiating \eqref{eq:1.2.7} twice yields
+Differentiating $\eqref{eq:1.2.7}$ twice yields
 $$
 y'=-(c_1+c_2x)e^{-x}+c_2e^{-x}+2
 $$
@@ -195,7 +195,7 @@ y''+2y'+y&=&(c_1+c_2x)e^{-x}-2c_2e^{-x}\\
 &=&(1-2+1)(c_1+c_2x)e^{-x}+(-2+2)c_2e^{-x}\\ &&+4+2x-4=2x
 \end{eqnarray*}
 for all values of $x$.
-Therefore $y$ is a solution of \eqref{eq:1.2.8} on $(-\infty,\infty)$.
+Therefore $y$ is a solution of $\eqref{eq:1.2.8}$ on $(-\infty,\infty)$.
 \end{explanation}
 \end{example}
  
@@ -205,7 +205,7 @@ Find all solutions of
 y^{(n)}=e^{2x}.
 \end{equation}
  
-\begin{explanation} Integrating \eqref{eq:1.2.9} yields
+\begin{explanation} Integrating $\eqref{eq:1.2.9}$ yields
 $$
 y^{(n-1)}=\frac{e^{2x}}{2}+k_1,
 $$
@@ -219,27 +219,27 @@ If $n\geq 3$, repeatedly integrating yields
 y=\frac{e^{2x}}{2^n}+k_1\frac{x^{n-1}}{(n-1)!}+k_2\frac{x^{n-2}}{(n-2)!}+\cdots+k_n,
 \end{equation}
  where $k_1, k_2, \dots, k_n$ are constants.
-This shows that every solution of \eqref{eq:1.2.9} has the form
-\eqref{eq:1.2.10}
+This shows that every solution of $\eqref{eq:1.2.9}$ has the form
+$\eqref{eq:1.2.10}$
 for some choice of the constants $k_1, k_2, \dots, k_n$.
-On the other hand, differentiating \eqref{eq:1.2.10}  $n$ times shows
+On the other hand, differentiating $\eqref{eq:1.2.10}$  $n$ times shows
 that if
 $k_1, k_2, \dots, k_n$ are arbitrary constants, then the function $y$
 in
-\eqref{eq:1.2.10} satisfies \eqref{eq:1.2.9}.
+$\eqref{eq:1.2.10}$ satisfies $\eqref{eq:1.2.9}$.
 \end{explanation}
 \end{example}
  
-Since the constants $k_1, k_2, \dots, k_n$  in \eqref{eq:1.2.10}
+Since the constants $k_1, k_2, \dots, k_n$  in $\eqref{eq:1.2.10}$
 are arbitrary, so are the constants
 $$\frac{k_1}{(n-1)!},\, \frac{k_2}{(n-2)!},\, \cdots, \, k_n.$$
  Therefore Example~\ref{example:1.2.4} actually shows that all
-solutions of \eqref{eq:1.2.9}  can be written as
+solutions of $\eqref{eq:1.2.9}$  can be written as
 $$
 y=\frac{e^{2x}}{2^n}+c_1+c_2x+\cdots+c_nx^{n-1},
 $$
  where we  renamed the arbitrary constants in
-\eqref{eq:1.2.10} to obtain a simpler formula. As a
+$\eqref{eq:1.2.10}$ to obtain a simpler formula. As a
 general rule, arbitrary constants appearing in solutions  of differential
 equations should be simplified if possible. You'll see examples
 of this throughout the text.
@@ -306,21 +306,21 @@ These requirements are the \dfn{initial conditions}.
  
 We'll denote an initial value problem for a differential equation by
 writing the initial conditions after the equation, as in
-\eqref{eq:1.2.11}. For example, we would write an initial value problem
-for \eqref{eq:1.2.2} as
+$\eqref{eq:1.2.11}$. For example, we would write an initial value problem
+for $\eqref{eq:1.2.2}$ as
 \begin{equation} \label{eq:1.2.12}
 y^{(n)}=f(x,y,y', \dots,y^{(n-1)}),\, y(x_0)=k_0,\,
 y'(x_0)=k_1,\, \dots,\, y^{(n-1)}=k_{n-1}.
 \end{equation}
 Consistent with our earlier definition of a solution of the
-differential equation in \eqref{eq:1.2.12}, we say that $y$ is a \dfn{solution
-of the initial value problem} \eqref{eq:1.2.12}  if $y$ is $n$ times
+differential equation in $\eqref{eq:1.2.12}$, we say that $y$ is a \dfn{solution
+of the initial value problem} $\eqref{eq:1.2.12}$  if $y$ is $n$ times
 differentiable and
 $$
 y^{(n)}(x)=f(x,y(x),y'(x), \dots,y^{(n-1)}(x))
 $$
 for all $x$ in some open interval $(a,b)$  that contains $x_0$,
-and  $y$ satisfies the initial conditions in \eqref{eq:1.2.12}. The
+and  $y$ satisfies the initial conditions in $\eqref{eq:1.2.12}$. The
 largest open interval that contains $x_0$ on which $y$ is defined and
 satisfies the differential equation is  the \dfn{interval of
 validity} of $y$.
@@ -334,7 +334,7 @@ is a solution of the initial value problem
 $$
 y'=x^3,\quad y(1)=2.
 $$
-Since the function in \eqref{eq:1.2.13} is defined for all $x$, the
+Since the function in $\eqref{eq:1.2.13}$ is defined for all $x$, the
 interval of validity of this solution is $(-\infty,\infty)$.
 \end{example}
  
@@ -347,8 +347,8 @@ is a solution of
 $$
 xy'+y=x^2
 $$
-on $(0,\infty)$ and on $(-\infty,0)$. By evaluating \eqref{eq:1.2.14} at
-$x=\pm 1$, you can see that \eqref{eq:1.2.14} is a solution of the initial
+on $(0,\infty)$ and on $(-\infty,0)$. By evaluating $\eqref{eq:1.2.14}$ at
+$x=\pm 1$, you can see that $\eqref{eq:1.2.14}$ is a solution of the initial
 value problems
 \begin{equation} \label{eq:1.2.15}
 xy'+y=x^2,\quad y(1)=\frac{4}{3}
@@ -357,16 +357,16 @@ and
 \begin{equation} \label{eq:1.2.16}
 xy'+y=x^2,\quad y(-1)=-\frac{2}{3}.
 \end{equation}
-The interval of validity of \eqref{eq:1.2.14} as a solution of
-\eqref{eq:1.2.15} is $(0,\infty)$, since this is the largest interval
-that contains $x_0=1$ on which \eqref{eq:1.2.14} is defined.
+The interval of validity of $\eqref{eq:1.2.14}$ as a solution of
+$\eqref{eq:1.2.15}$ is $(0,\infty)$, since this is the largest interval
+that contains $x_0=1$ on which $\eqref{eq:1.2.14}$ is defined.
  
 \desmos{xzhmpxofig}{800}{600}
  
 Similarly, the
-interval of validity of \eqref{eq:1.2.14} as a solution of \eqref{eq:1.2.16}
+interval of validity of $\eqref{eq:1.2.14}$ as a solution of $\eqref{eq:1.2.16}$
 is $(-\infty,0)$, since this is the largest interval that contains
-$x_0=-1$ on which \eqref{eq:1.2.14} is defined.
+$x_0=-1$ on which $\eqref{eq:1.2.14}$ is defined.
  
 \desmos{citkz0ppdp}{800}{600}
  
@@ -412,14 +412,14 @@ y''=-g,\quad  y(0)=y_0,\quad y'(0)=v_0.
 \end{equation}
  
 Part \ref{part:ex1.2.8partB}.
-Integrating \eqref{eq:1.2.17} twice yields
+Integrating $\eqref{eq:1.2.17}$ twice yields
 \begin{eqnarray*}
 y'&=&-gt+c_1, \\
 y&=&-\frac{gt^2}{2}+c_1t+c_2.
 \end{eqnarray*}
 Imposing the initial conditions $y(0)=y_0$ and $y'(0)=v_0$ in these
 two equations shows that $c_1=v_0$ and $c_2=y_0$. Therefore the
-solution of the initial value problem \eqref{eq:1.2.17} is
+solution of the initial value problem $\eqref{eq:1.2.17}$ is
 $$
 y=- \frac{gt^2}{2}+v_0t+y_0.
 $$
