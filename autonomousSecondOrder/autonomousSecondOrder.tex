@@ -845,9 +845,28 @@ this figure cross the $y$-axis infinitely many times.
 The corresponding solutions %,shown below, 
 are said to be \dfn{oscillatory}
  
-%\begin{image}
- %\includegraphics[height=1.5in]{fig040413.jpg}
-%\end{image}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+        \begin{axis}[
+          domain=0:5,
+          samples=300,
+          trig format=rad,
+          xmin=-0.4, xmax=5.2,
+          ymin=-1.6, ymax=1.6,
+          width=4in,
+          height=3in,
+          xtick=\empty,
+          ytick=\empty,
+            axis x line=center,
+            axis y line=center,
+            xlabel={$t$},
+            ylabel={$y$},
+            every axis x label/.style={at=(current axis.right of origin),anchor=west}
+          ]
+\addplot[smooth, thick, blue] {(cos(10*x)+sin(10*x))*exp(-x)};
+      \end{axis}
+        \end{tikzpicture}
+\end{center}
  
  
 It is shown in \href{https://ximera.osu.edu/ode/main/springProblemsII/springProblemsII}{Trench 6.2} that there's a number $c_1$ such that if $0\leq
