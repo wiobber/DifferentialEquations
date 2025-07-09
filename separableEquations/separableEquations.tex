@@ -29,9 +29,9 @@ variables}.
 %to solve homogeneous linear equations. In this section we'll apply
 %this method to nonlinear equations.
  
-To see how to solve \eqref{eq:2.2.1}, let's first assume that $y$
+To see how to solve $\eqref{eq:2.2.1}$, let us first assume that $y$
 is a solution.
-Let  $G(x)$ and $H(y)$ be antiderivatives of $g(x)$
+Let $G(x)$ and $H(y)$ be antiderivatives of $g(x)$
 and $h(y)$; that is,
 \begin{equation} \label{eq:2.2.2}
 H'(y)=h(y)\quad\text{and}\quad G'(x)=g(x).
@@ -40,7 +40,7 @@ Then, from the chain rule,
 $$
 \frac{d}{dx}H(y(x))=H'(y(x))y'(x)=h(y)y'(x).
 $$
-Therefore \eqref{eq:2.2.1} is equivalent to
+Therefore $\eqref{eq:2.2.1}$ is equivalent to
 $$
 \frac{d}{dx}H(y(x))=\frac{d}{dx}G(x).
 $$
@@ -49,11 +49,11 @@ integration yields
 \begin{equation} \label{eq:2.2.3}
 H(y(x))=G(x)+c.
 \end{equation}
-Although we derived this equation on the assumption that $y$
-is a solution of \eqref{eq:2.2.1}, we can now view it differently:
-Any differentiable function $y$ that satisfies \eqref{eq:2.2.3}
-for some constant $c$ is a solution of \eqref{eq:2.2.1}. To see this, we
-differentiate both sides of \eqref{eq:2.2.3}, using the chain rule on the
+Although we derived this equation using the assumption that $y$
+is a solution of $\eqref{eq:2.2.1}$, we can now view it differently:
+Any differentiable function $y$ that satisfies $\eqref{eq:2.2.3}$
+for some constant $c$ is a solution of $\eqref{eq:2.2.1}$. To see this, we
+differentiate both sides of $\eqref{eq:2.2.3}$, using the chain rule on the
 left, to obtain
 $$
 H'(y(x))y'(x)=G'(x),
@@ -62,12 +62,12 @@ which is equivalent to
 $$
 h(y(x))y'(x)=g(x)
 $$
-because of \eqref{eq:2.2.2}.
+because of $\eqref{eq:2.2.2}$.
  
-In conclusion, to solve \eqref{eq:2.2.1} it suffices to find
-functions $G=G(x)$ and $H=H(y)$ that satisfy \eqref{eq:2.2.2}.
+In conclusion, to solve $\eqref{eq:2.2.1}$ it suffices to find
+functions $G=G(x)$ and $H=H(y)$ that satisfy $\eqref{eq:2.2.2}$.
 Then any differentiable function  $y=y(x)$  that satisfies
-\eqref{eq:2.2.3} is a solution of \eqref{eq:2.2.1}.
+$\eqref{eq:2.2.3}$ is a solution of $\eqref{eq:2.2.1}$.
  
 \begin{example}\label{example:2.2.1}
 Solve the equation
@@ -114,7 +114,7 @@ y'=-\frac{x}{y}, \quad y(1)=-2.
  
 \begin{explanation}
 \ref{item:2.2.2a} Separating variables
-in \eqref{eq:2.2.4}  yields
+in $\eqref{eq:2.2.4}$  yields
 $$
 yy'=-x.
 $$
@@ -124,7 +124,7 @@ $$
 x^2+y^2=2c.
 $$
 The last equation shows that $c$ must be positive if $y$ is to be a
-solution of \eqref{eq:2.2.4} on an open interval. Therefore we let
+solution of $\eqref{eq:2.2.4}$ on an open interval. Therefore we let
 $2c=a^2$ (with $a > 0$) and rewrite the last equation as
 \begin{equation} \label{eq:2.2.7}
 x^2+y^2=a^2.
@@ -138,9 +138,9 @@ y=\sqrt{a^2-x^2}, \quad -a < x < a,
 \begin{equation} \label{eq:2.2.9}
 y= - \sqrt{a^2-x^2}, \quad -a < x < a.
 \end{equation}
-The solution curves defined by \eqref{eq:2.2.8}  are semicircles
+The solution curves defined by $\eqref{eq:2.2.8}$  are semicircles
 above the
-$x$-axis and  those defined by \eqref{eq:2.2.9}  are semicircles below the
+$x$-axis and  those defined by $\eqref{eq:2.2.9}$  are semicircles below the
 $x$-axis (see figure below).
  
 %\begin{image}
@@ -170,28 +170,25 @@ $x$-axis (see figure below).
         \end{tikzpicture}
 \end{center}
  
-\ref{item:2.2.2b}  The solution of  \eqref{eq:2.2.5}
-is positive when $x=1$; hence, it  is of the form \eqref{eq:2.2.8}.
- Substituting $x=1$ and $y=1$ into \eqref{eq:2.2.7} to satisfy the
+\ref{item:2.2.2b}  The solution of  $\eqref{eq:2.2.5}$
+is positive when $x=1$; hence, it  is of the form $\eqref{eq:2.2.8}$.
+ Substituting $x=1$ and $y=1$ into $\eqref{eq:2.2.7}$ to satisfy the
 initial condition yields $a^2=2$; hence, the solution of
-\eqref{eq:2.2.5}
+$\eqref{eq:2.2.5}$
 is
 $$
 y=\sqrt{2-x^2}, \quad - \sqrt{2}< x < \sqrt{2}.
 $$
  
-\ref{item:2.2.2c}  The solution of  \eqref{eq:2.2.6}
-is negative when $x=1$ and   is therefore of the form \eqref{eq:2.2.9}.
- Substituting $x=1$ and $y=-2$ into \eqref{eq:2.2.7} to satisfy the
-initial condition yields $a^2=\answer{5}$. Hence, the solution of \eqref{eq:2.2.6}
+\ref{item:2.2.2c}  The solution of $\eqref{eq:2.2.6}$
+is negative when $x=1$ and is therefore of the form $\eqref{eq:2.2.9}$.
+ Substituting $x=1$ and $y=-2$ into $\eqref{eq:2.2.7}$ to satisfy the
+initial condition yields $a^2=\answer{5}$. Hence, the solution of $\eqref{eq:2.2.6}$
 is
 $$
 y=-\sqrt{\answer{5}-x^2}, \quad -\sqrt{\answer{5}} < x < \sqrt{\answer{5}}.
 $$
- 
- 
 
- 
 \end{explanation}
 \end{example}
  
@@ -201,8 +198,8 @@ $$
  
 In Examples~\ref{example:2.2.1} and \ref{example:2.2.2} we were able to
 solve the equation $H(y)=G(x)+c$ to obtain explicit formulas for
-solutions of the given separable differential equations. As we'll
-see in the next example, this isn't  always possible.
+solutions of the given separable differential equations. As we will
+see in the next example, this is not always possible.
 In this situation we must broaden our definition of a solution of a
 separable equation. The next theorem provides the basis for this
 modification.  We omit the proof, which requires a result from
@@ -232,16 +229,15 @@ h(y)y'=g(x),\quad y(x_0)=x_0.
 \end{theorem}
  
  
-It's convenient to say that \eqref{eq:2.2.11} with $c$ arbitrary is an
+It is convenient to say that $\eqref{eq:2.2.11}$ with $c$ arbitrary is an
 \dfn{implicit solution} of $h(y)y'=g(x)$. Curves defined by
-\eqref{eq:2.2.11} are integral curves of $h(y)y'=g(x)$. If $c$ satisfies
-\eqref{eq:2.2.10}, we'll say that \eqref{eq:2.2.11} is an \dfn{
-implicit solution of the initial value problem} \eqref{eq:2.2.12}. However, keep
-these  points in mind:
+$\eqref{eq:2.2.11}$ are integral curves of $h(y)y'=g(x)$. If $c$ satisfies
+$\eqref{eq:2.2.10}$, we say that $\eqref{eq:2.2.11}$ is an \dfn{
+implicit solution of the initial value problem} $\eqref{eq:2.2.12}$. However, keep these points in mind:
 \begin{itemize}
 \item  For some choices of $c$ there may not be any differentiable
-functions $y$ that satisfy \eqref{eq:2.2.11}.
-\item  The function $y$ in \eqref{eq:2.2.11} (not \eqref{eq:2.2.11} itself)
+functions $y$ that satisfy $\eqref{eq:2.2.11}$.
+\item  The function $y$ in $\eqref{eq:2.2.11}$ (not $\eqref{eq:2.2.11}$ itself)
 is a solution of $h(y)y'=g(x)$.
 \end{itemize}
  
@@ -269,20 +265,21 @@ Integrating yields the implicit solution
 \begin{equation} \label{eq:2.2.15}
 y^5+y=x^2+x+ c.
 \end{equation}
-of \eqref{eq:2.2.13}.
+of $\eqref{eq:2.2.13}$.
  
 \ref{item:2.2.3b} Imposing the initial condition $y(2)=1$ in
-\eqref{eq:2.2.15} yields $1+1=4+2+c$, so $c=-4$. Therefore
+$\eqref{eq:2.2.15}$ yields $1+1=4+2+c$, so $c=-4$. Therefore
 $$
 y^5+y=x^2+x-4
 $$
-is an implicit solution of the initial value problem \eqref{eq:2.2.14}.
-Although more than one differentiable function $y=y(x)$ satisfies
-\ref{eq:2.2.13}) near $x=1$, it can be shown that there's only
-one such function that satisfies the initial condition $y(1)=2$.
+is an implicit solution of the initial value problem $\eqref{eq:2.2.14}$.
+% this doesn't add much... Although more than one differentiable function $y=y(x)$ satisfies
+%$\ref{eq:2.2.13}$) near $x=1$, i
+It can be shown there is only one such function that satisfies the initial condition $y(2)=1.$
+% I presumed this was a typo:  $y(1)=2$.
  
 The figure below shows a slope field and some integral curves
-for \eqref{eq:2.2.13}.
+for $\eqref{eq:2.2.13}$.
 
 \begin{center}
 \geogebra{dqwg3kba}{800}{600}
@@ -317,10 +314,10 @@ y'=2xy^2.
  
 \begin{explanation}
 Here we must divide by $p(y)=y^2$ to separate variables.
-This isn't  legitimate if $y$ is a solution of \eqref{eq:2.2.16} that
+We are not allowed to do this if $y$ is a solution of $\eqref{eq:2.2.16}$ that
 equals zero for some value of $x$. One such solution can be found by
-inspection:  $y \equiv 0$. Now suppose   $y$ is a solution
-of \eqref{eq:2.2.16} that isn't  identically zero. Since $y$ is continuous there must be an interval on which $y$ is never zero. Since division
+inspection:  $y \equiv 0$. Now suppose $y$ is a solution
+of $\eqref{eq:2.2.16}$ that is not identically zero. Since $y$ is continuous there must be an interval on which $y$ is never zero. Since division
 by $y^2$ is legitimate for $x$ in this interval, we can separate
 variables in \eqref{eq:2.2.16} to obtain
 $$
