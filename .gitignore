@@ -329,3 +329,8 @@ gpgkey
 
 # File used to update DevEnv config-files  (xmlatex updateDevEnv)
 xmDevEnvFiles.tgz
+
+# Bart told me to do this
+ximera.cls
+xourse.cls
+

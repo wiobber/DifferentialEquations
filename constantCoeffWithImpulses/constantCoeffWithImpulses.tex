@@ -255,32 +255,14 @@ solid curve in the figure is the graph of $w$. The dashed curves are
 solutions of \eqref{eq:8.7.1} for various values of $h$. As $h$ decreases
 the graph of $y_h$ moves to the left toward the graph of $w$.
 
-\begin{center}
-\begin{tikzpicture}[scale=1]
-        \begin{axis}[
-         xmin=0, xmax=8.5,
-          ymin=0, ymax=0.5,
-          width=5in,
-          height=3in,
-          xtick={0.5,2,3,4,5,6,7},
-          xticklabels={$t_0$,$t_0+1$,$t_0+2$,$t_0+4$,$t_0+5$,$t_0+6$,$t_0+7$},
-        ytick={0.1,0.2,0.3,0.4},
-            axis x line=center,
-            axis y line=center,
-            xlabel={$t$},
-            ylabel={$y$},
-            every axis x label/.style={at=(current axis.right of origin),anchor=west}
-          ]
-
-\addplot[domain=0.5:8,smooth, thick, blue] {(x-0.5)*exp(-(x-0.5))};
-
-      \end{axis}
-        \end{tikzpicture}
+\begin{center}  
+\geogebra{d8zjpjxe}{800}{600}  
 \end{center}
 
-\begin{image}
- \includegraphics[height=1.5in]{fig080702.jpg}
-\end{image}
+
+% \begin{image}
+%  \includegraphics[height=1.5in]{fig080702.jpg}
+% \end{image}
 
 % \begin{figure}[tbp]
 %   \centering\color{blue}
