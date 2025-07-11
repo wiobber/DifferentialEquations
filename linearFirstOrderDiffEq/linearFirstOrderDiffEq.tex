@@ -268,18 +268,22 @@ Using this constant, we can now write the particular solution to the IVP:
 y(t)=-te^{-t}+(1.5+e^{-2})t, \quad t>0
 \]
  
-We conclude this example by providing an interactive Sage cell which will display the particular solution to the IVP where $y(a)=b$.  If you change the values of $a$ or $b$, you will get a different solution curve, but notice that these curves are valid only for $t>0$ or $t<0$.
+We conclude this example by providing an interactive which will display the particular solution to the original IVP where $y(2)=3$.  You can look at other solution curves by dragging the ''Initial Condition" point in the plane, but notice that these curves are valid only for $t>0$ or $t<0$.
+
+\begin{center}
+\geogebra{h5zqeru8}{800}{600}
+\end{center}
  
-\begin{sageCell}
-@interact
-def _(a=input_box(1, width=5),b=input_box(1, width=5)):
-    x,y=var('x,y')
-    v=plot_slope_field((x*e^(-x)+(y/x)),(x,-1,5),(y,-5,5),headaxislength=3, headlength=3)
-    c=(b/a)+e^(-a)
-    d=plot(-x*e^(-x)+c*x,(x,-1,3))
-    p=point((a,b),rgbcolor=hue(1))
-    show(v+d+p)
-\end{sageCell}
+% \begin{sageCell}
+% @interact
+% def _(a=input_box(1, width=5),b=input_box(1, width=5)):
+%     x,y=var('x,y')
+%     v=plot_slope_field((x*e^(-x)+(y/x)),(x,-1,5),(y,-5,5),headaxislength=3, headlength=3)
+%     c=(b/a)+e^(-a)
+%     d=plot(-x*e^(-x)+c*x,(x,-1,3))
+%     p=point((a,b),rgbcolor=hue(1))
+%     show(v+d+p)
+% \end{sageCell}
  
 % \begin{image}
 % {\def\length{sqrt(1+(x+y)^2)}
