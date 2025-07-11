@@ -30,15 +30,15 @@ variable, or as
 M(x,y)\,\frac{dx}{dy}+N(x,y)=0,
 \end{equation}
 where $y$ is the independent variable and $x$ is the dependent
-variable. Since the solutions of \eqref{eq:2.5.2} and \eqref{eq:2.5.3} will
+variable. Since the solutions of $\eqref{eq:2.5.2}$ and $\eqref{eq:2.5.3}$ will
 often have to be left in
 implicit form, we'll say that $F(x,y)=c$ is an implicit solution of
-\eqref{eq:2.5.1} if every differentiable function $y=y(x)$ that satisfies
-$F(x,y)=c$ is a solution of \eqref{eq:2.5.2} and every
+$\eqref{eq:2.5.1}$ if every differentiable function $y=y(x)$ that satisfies
+$F(x,y)=c$ is a solution of $\eqref{eq:2.5.2}$ and every
 differentiable function $x=x(y)$ that satisfies $F(x,y)=c$ is a
-solution of \eqref{eq:2.5.3}.
+solution of $\eqref{eq:2.5.3}$.
  
-Here are  some examples:
+Here are some examples:
  
 
 $$ 
@@ -59,18 +59,18 @@ $$
 $$
  
 Note that a separable equation can be written as
-\eqref{eq:2.5.1} as
+$\eqref{eq:2.5.1}$ as
 $$
 M(x)\,dx+N(y)\,dy=0.
 $$
  
  
-We'll  develop a method for solving \eqref{eq:2.5.1} under appropriate
+We will develop a method for solving $\eqref{eq:2.5.1}$ under appropriate
 assumptions on $M$ and $N$. This method is an extension
 of the method of separation of variables.
 %(Exercise~\ref{exer:2.5.41}). 
-Before stating it we
-consider an  example.
+First,we
+consider an example.
  
 \begin{example}\label{example:2.5.1}
 Show that
@@ -84,18 +84,18 @@ is an implicit solution of
  
 \begin{explanation}
 Regarding $y$ as a function of $x$ and
-differentiating \eqref{eq:2.5.4} implicitly with respect to
+differentiating $\eqref{eq:2.5.4}$ implicitly with respect to
 $x$ yields
 $$
 (4x^3y^3+2xy^5+2y)+(3x^4y^2+5x^2y^4+2x)\,\frac{dy}{dx}=0.
 $$
 Similarly, regarding $x$ as a function of $y$ and
-differentiating \eqref{eq:2.5.4} implicitly with respect to
+differentiating $\eqref{eq:2.5.4}$ implicitly with respect to
 $y$ yields
 $$
 (4x^3y^3+2xy^5+2y)\frac{dx}{dy}+(3x^4y^2+5x^2y^4+2x)=0.
 $$
-Therefore \eqref{eq:2.5.4} is an implicit solution of \eqref{eq:2.5.5}
+Therefore, $\eqref{eq:2.5.4}$ is an implicit solution of $\eqref{eq:2.5.5}$
 in either of its two possible interpretations.
 \end{explanation}
 \end{example}
@@ -119,18 +119,18 @@ F_x(x,y)\,dx+F_y(x,y)\,dy=0.
 \end{theorem}
  
 \begin{proof} Regarding $y$ as a function of $x$ and  differentiating
-\eqref{eq:2.5.6}  implicitly with respect to $x$ yields
+$\eqref{eq:2.5.6}$ implicitly with respect to $x$ yields
 $$
 F_x(x,y)+F_y(x,y)\,\frac{dy}{dx}=0.
 $$
 On the other hand,
  regarding $x$ as a function of $y$ and  differentiating
-\eqref{eq:2.5.6}  implicitly with respect to $y$ yields
+$\eqref{eq:2.5.6}$ implicitly with respect to $y$ yields
 $$
 F_x(x,y)\,\frac{dx}{dy}+F_y(x,y)=0.
 $$
-Thus, \eqref{eq:2.5.6} is an
-implicit solution of  \eqref{eq:2.5.7} in either of its two possible
+Thus, $\eqref{eq:2.5.6}$ is an
+implicit solution of  $\eqref{eq:2.5.7}$ in either of its two possible
 interpretations.
 \end{proof}
  
@@ -151,22 +151,22 @@ where the expression
 $$
 F_x(x,y)\,dx+F_y(x,y)\,dy
 $$
-(obtained by substituting \eqref{eq:2.5.9} into the left side of
-\eqref{eq:2.5.8}) is the  \dfn{exact differential of} $F$.
+(obtained by substituting $\eqref{eq:2.5.9}$ into the left side of
+$\eqref{eq:2.5.8}$) is the  \dfn{exact differential of} $F$.
  
-Example~\ref{example:2.5.1} shows that it's easy to solve
-\eqref{eq:2.5.8}
-if it's exact \textit{and}  we know a function $F$ that satisfies
-\eqref{eq:2.5.9}. The important questions are:
+Example~\ref{example:2.5.1} shows that it is easy to solve
+$\eqref{eq:2.5.8}$
+if it is exact \textit{and}  we know a function $F$ that satisfies
+$\eqref{eq:2.5.9}$. The important questions are:
  
  \subsubsection*{Question 1:}  Given an equation
-\eqref{eq:2.5.8}, how can we determine whether it's  exact?
+$\eqref{eq:2.5.8}$, how can we determine whether it's  exact?
  
- \subsubsection*{Question 2:} If \eqref{eq:2.5.8} is exact, how do we find
-a function $F$ satisfying \eqref{eq:2.5.9}?
+ \subsubsection*{Question 2:} If $\eqref{eq:2.5.8}$ is exact, how do we find
+a function $F$ satisfying $\eqref{eq:2.5.9}$?
  
 To discover the answer to Question~1,
- assume that  there's a function $F$  that satisfies \eqref{eq:2.5.9} on
+ assume that  there's a function $F$  that satisfies $\eqref{eq:2.5.9}$ on
 some open rectangle $R$, and in addition that $F$ has continuous mixed
 partial derivatives $F_{xy}$ and $F_{yx}$.  Then a theorem from calculus
 implies that
@@ -179,7 +179,7 @@ $y$ and the second with respect to $x$ yields
 \begin{equation} \label{eq:2.5.11}
 F_{xy}=M_y\quad\mbox{and}\quad  F_{yx}=N_x.
 \end{equation}
-From  \eqref{eq:2.5.10}  and \eqref{eq:2.5.11}, we conclude that
+From  $\eqref{eq:2.5.10}$  and $\eqref{eq:2.5.11}$, we conclude that
  a necessary condition for exactness is that $M_y=N_x$.
 This motivates the next theorem, which we state without proof.
  
@@ -198,9 +198,9 @@ M_y(x,y)=N_x(x,y)
 for all $(x,y)$ in  $R.$.
 \end{theorem}
  
-To help you  remember the exactness condition, observe
+To help you remember the exactness condition, observe
 that the coefficients of $dx$ and $dy$ are differentiated in
-\eqref{eq:2.5.12} with respect to the ``opposite'' variables; that is,
+$\eqref{eq:2.5.12}$ with respect to the ``opposite'' variables; that is,
 the coefficient of $dx$ is differentiated with respect to $y$, while the
 coefficient of $dy$ is differentiated with respect to $x$.
  
@@ -257,7 +257,7 @@ F_x(x,y)=M(x,y)=4x^3y^3+3x^2
 \begin{equation} \label{eq:2.5.15}
 F_y(x,y)=N(x,y)=3x^4y^2+6y^2
 \end{equation}
- for all $(x,y)$.  To find $F$, we integrate \eqref{eq:2.5.14} with
+ for all $(x,y)$.  To find $F$, we integrate $\eqref{eq:2.5.14}$ with
 respect to $x$ to obtain
 \begin{equation} \label{eq:2.5.16}
 F(x,y)=x^4y^3+x^3+\phi(y),
@@ -265,26 +265,26 @@ F(x,y)=x^4y^3+x^3+\phi(y),
  where $\phi (y)$ is the ``constant'' of integration.  (Here
 $\phi$ is ``constant'' in  that it's independent of $x$, the
 variable of integration.)  If $\phi$ is any differentiable function of
-$y$ then $F$  satisfies \eqref{eq:2.5.14}.  To
+$y$ then $F$  satisfies $\eqref{eq:2.5.14}$.  To
 determine $\phi$ so that
-$F$ also satisfies \eqref{eq:2.5.15}, assume that $\phi$ is
+$F$ also satisfies $\eqref{eq:2.5.15}$, assume that $\phi$ is
 differentiable and differentiate $F$ with respect to $y$.
 This yields
 $$
 F_y(x,y)=3x^4y^2+\phi'(y).
 $$
- Comparing this with \eqref{eq:2.5.15} shows that
+ Comparing this with $\eqref{eq:2.5.15}$ shows that
 $$
 \phi'(y)=6y^2.
 $$
  We integrate this with respect to $y$ and take the
 constant of integration to be zero because we're interested only in
-finding \textit{some} $F$ that satisfies \eqref{eq:2.5.14} and
-\eqref{eq:2.5.15}. This  yields
+finding \textit{some} $F$ that satisfies $\eqref{eq:2.5.14}$ and
+$\eqref{eq:2.5.15}$. This  yields
 $$
 \phi (y)=2y^3.
 $$
-Substituting this into \eqref{eq:2.5.16} yields
+Substituting this into $\eqref{eq:2.5.16}$ yields
 \begin{equation} \label{eq:2.5.17}
 F(x,y)=x^4y^3+x^3+2y^3.
 \end{equation}
@@ -292,15 +292,15 @@ Now Theorem~\ref{thmtype:2.5.1} implies that
 $$
 x^4y^3+x^3+2y^3=c
 $$
-is an implicit solution of \eqref{eq:2.5.13}. Solving this for $y$
+is an implicit solution of $\eqref{eq:2.5.13}$. Solving this for $y$
 yields the explicit solution
 $$
 y=\left(\frac{c-x^{\answer{3}}}{\answer{2}+x^{\answer{4}}}\right)^{1/3}.
 $$
  
 \textit{Method 2:} Instead of first integrating
-\eqref{eq:2.5.14}
-with respect to $x$, we could begin by integrating \eqref{eq:2.5.15} with
+$\eqref{eq:2.5.14}$
+with respect to $x$, we could begin by integrating $\eqref{eq:2.5.15}$ with
 respect to $y$ to obtain
 \begin{equation} \label{eq:2.5.18}
 F(x,y)=x^4y^3+2y^3+\psi (x),
@@ -312,7 +312,7 @@ which yields
 $$
 F_x(x,y)=4x^3y^3+\psi'(x).
 $$
- Comparing this with \eqref{eq:2.5.14} shows that
+ Comparing this with $\eqref{eq:2.5.14}$ shows that
 $$
 \psi'(x)=3x^2.
 $$
@@ -321,10 +321,10 @@ integration to be zero yields
 $$
 \psi(x)=x^3.
 $$
- Substituting this into \eqref{eq:2.5.18} yields \eqref{eq:2.5.17}.
+ Substituting this into $\eqref{eq:2.5.18}$ yields $\eqref{eq:2.5.17}$.
  
 The interactive below shows a slope field and  some
-integral curves of \eqref{eq:2.5.13},
+integral curves of $\eqref{eq:2.5.13}$,
 
 \begin{center}
 \geogebra{wqn2qzta}{800}{600}
@@ -371,7 +371,7 @@ F(x,y)=G(x,y)+\phi(y),
 where $G$ is an antiderivative of $M$ with respect to $x$, and $\phi$
 is an unknown function of $y$.
  
-\textit{Step 3.} Differentiate \eqref{eq:2.5.20} with respect to
+\textit{Step 3.} Differentiate $\eqref{eq:2.5.20}$ with respect to
 $y$  to obtain
 $$
 \frac{\partial F(x,y)}{\partial y}=\frac{\partial G(x,y)}{\partial
@@ -387,10 +387,10 @@ $$
  
 \textit{Step 5.} Integrate $\phi'$ with respect to $y$, taking the
 constant of integration to be zero, and substitute the result in
-\eqref{eq:2.5.20} to obtain $F(x,y)$.
+$\eqref{eq:2.5.20}$ to obtain $F(x,y)$.
  
 \textit{Step 6.} Set $F(x,y)=c$ to obtain an implicit solution of
-\eqref{eq:2.5.19}. If possible, solve for $y$ explicitly as a
+$\eqref{eq:2.5.19}$. If possible, solve for $y$ explicitly as a
 function of $x$.
  
 \end{procedure}
@@ -399,7 +399,7 @@ function of $x$.
  
 It's a common mistake to omit Step 6. However, it's important to
 include this step, since $F$ isn't  itself a solution of
-\eqref{eq:2.5.19}.
+$\eqref{eq:2.5.19}$.
  
 Many equations can be conveniently solved by either of the two methods
 used in Example~\ref{example:2.5.3}. However, sometimes the integration
@@ -423,8 +423,8 @@ F_x(x,y)=ye^{xy} \tan x+e^{xy} \sec^2 x
 \begin{equation}  \label{eq:2.5.23}
 F_y(x,y)=xe^{xy} \tan x.
 \end{equation}
- It's difficult to integrate \eqref{eq:2.5.22} with respect to $x$, but
-easy to integrate \eqref{eq:2.5.23} with respect to $y$.  This yields
+ It's difficult to integrate $\eqref{eq:2.5.22}$ with respect to $x$, but
+easy to integrate $\eqref{eq:2.5.23}$ with respect to $y$.  This yields
 \begin{equation} \label{eq:2.5.24}
 F(x,y)=e^{xy} \tan x+\psi (x).
 \end{equation}
@@ -432,13 +432,13 @@ Differentiating this with respect to $x$ yields
 $$
 F_x(x,y)=ye^{xy}\tan x+e^{xy}\sec^2x+\psi'(x).
 $$
- Comparing this with \eqref{eq:2.5.22} shows that  $\psi'(x)=0$.
+ Comparing this with $\eqref{eq:2.5.22}$ shows that  $\psi'(x)=0$.
 Hence, $\psi$ is  a constant, which we can take to be zero in
-\eqref{eq:2.5.24}, and
+$\eqref{eq:2.5.24}$, and
 $$
 e^{xy} \tan x=c
 $$
-is an implicit solution of \eqref{eq:2.5.21}.
+is an implicit solution of $\eqref{eq:2.5.21}$.
 \end{explanation}
 \end{example}
  
@@ -459,15 +459,14 @@ illustrates this.
 3x^2y^2\,dx+6x^3y\,dy=0
 \end{equation}
 is not exact, and show  that the procedure for solving exact equations
-  fails when applied to \eqref{eq:2.5.25}.
+  fails when applied to $\eqref{eq:2.5.25}$.
  
  
 \begin{explanation}   Here
 $$
 M_y(x,y)=6x^2y\quad \text{and}\quad N_x(x,y)=18x^2y,
 $$
-so \eqref{eq:2.5.25} isn't  exact. Nevertheless,  let's try to find
-a function $F$ such that
+so $\eqref{eq:2.5.25}$ is not  exact. Nevertheless, let's try to find a function $F$ such that
 \begin{equation} \label{eq:2.5.26}
 F_x(x,y)=3x^2y^2
 \end{equation}
@@ -475,7 +474,7 @@ and
 \begin{equation} \label{eq:2.5.27}
 F_y(x,y)=6x^3y.
 \end{equation}
-Integrating \eqref{eq:2.5.26} with respect to $x$ yields
+Integrating $\eqref{eq:2.5.26}$ with respect to $x$ yields
 $$
 F(x,y)=x^{\answer{3}}y^{\answer{2}}+\phi(y),
 $$
@@ -483,7 +482,7 @@ and differentiating this with respect to $y$ yields
 $$
 F_y(x,y)=\answer{2}x^{\answer{3}}y+\phi'(y).
 $$
-For this equation to be consistent with \eqref{eq:2.5.27},
+For this equation to be consistent with $\eqref{eq:2.5.27}$,
 $$
 6x^3y=2x^3y+\phi'(y),
 $$
