@@ -26,47 +26,46 @@ is exact on $R$. Sometimes an equation that is not exact can be made exact by mu
 (3x+2y^2)\,dx+2xy\,dy=0
 \end{equation}
 is  not exact, since
-$M_y(x,y)=4y\neq  N_x(x,y)=2y$ in \eqref{eq:2.6.2}.
- However, multiplying \eqref{eq:2.6.2}  by $x$ yields
+$M_y(x,y)=4y\neq  N_x(x,y)=2y$ in $\eqref{eq:2.6.2}$.
+ However, multiplying $\eqref{eq:2.6.2}$  by $x$ yields
 \begin{equation}\label{eq:2.6.3}
 (3x^2+2xy^2)\,dx+2x^2y\,dy=0,
 \end{equation}
 which is exact, since
-$M_y(x,y)=N_x(x,y)=4xy$ in \eqref{eq:2.6.3}.
-Solving \eqref{eq:2.6.3} by Procedure \ref{proc:solvingExactEq} of \href{https://ximera.osu.edu/ode/main/exactEquations/exactEquations}{Trench 2.5},
+$M_y(x,y)=N_x(x,y)=4xy$ in $\eqref{eq:2.6.3}$.
+Solving $\eqref{eq:2.6.3}$ by Procedure \ref{proc:solvingExactEq} of \href{https://ximera.osu.edu/ode/main/exactEquations/exactEquations}{Trench 2.5},
  yields the implicit solution
 $$
 x^3+x^2y^2=c.
 $$
 
 A function $\mu=\mu(x,y)$ is  an \dfn{integrating factor} for
-\eqref{eq:2.6.1}  if
+$\eqref{eq:2.6.1}$  if
 \begin{equation}\label{eq:2.6.4}
  \mu(x,y)M (x,y)\,dx+\mu(x,y)N (x,y)\,dy=0
  \end{equation}
  is exact. If we know an integrating
-factor $\mu$ for \eqref{eq:2.6.1}, we can solve the exact equation
-\eqref{eq:2.6.4} by Procedure \ref{proc:solvingExactEq} \href{https://ximera.osu.edu/ode/main/exactEquations/exactEquations}{Trench 2.5}. It would be
-nice
-if we could say that \eqref{eq:2.6.1} and \eqref{eq:2.6.4} always have the
+factor $\mu$ for $\eqref{eq:2.6.1}$, we can solve the exact equation
+$\eqref{eq:2.6.4}$ by Procedure \ref{proc:solvingExactEq} \href{https://ximera.osu.edu/ode/main/exactEquations/exactEquations}{Trench 2.5}. It would be
+nice if we could say that $\eqref{eq:2.6.1}$ and $\eqref{eq:2.6.4}$ always have the
 same solutions, but this isn't so. For example, a solution
-$y=y(x)$ of \eqref{eq:2.6.4} such that $\mu(x,y(x))=0$ on some interval
-$a<x<b$ could fail to be a solution of \eqref{eq:2.6.1}
+$y=y(x)$ of $\eqref{eq:2.6.4}$ such that $\mu(x,y(x))=0$ on some interval
+$a<x<b$ could fail to be a solution of $\eqref{eq:2.6.1}$
 %(Exercise~\ref{exer:2.6.1})
 , while
-\eqref{eq:2.6.1} may have a solution $y=y(x)$ such that $\mu(x,y(x)) $
-isn't even defined 
+$\eqref{eq:2.6.1}$ may have a solution $y=y(x)$ such that $\mu(x,y(x))$
+is not even defined 
 %(Exercise~\ref{exer:2.6.2})
 . Similar comments
 apply if $y$ is the independent variable and $x$ is the dependent
-variable  in \eqref{eq:2.6.1} and \eqref{eq:2.6.4}.  However, if $\mu(x,y)$
-is defined and nonzero for all $(x,y)$,  \eqref{eq:2.6.1}  and
-\eqref{eq:2.6.4} are equivalent; that is, they have the same solutions.
+variable in $\eqref{eq:2.6.1}$ and $\eqref{eq:2.6.4}$.  However, if $\mu(x,y)$
+is defined and nonzero for all $(x,y)$, $\eqref{eq:2.6.1}$ and
+$\eqref{eq:2.6.4}$ are equivalent; that is, they have the same solutions.
 
 \subsection*{Finding Integrating Factors}
 
 By applying Theorem~\ref{thmtype:2.5.2} (with $M$ and $N$ replaced by $\mu M$
-and $\mu N$), we see that \eqref{eq:2.6.4} is exact on an open rectangle
+and $\mu N$), we see that $\eqref{eq:2.6.4}$ is exact on an open rectangle
 $R$ if $\mu M$, $\mu N$, $(\mu M)_y$, and $(\mu N)_x$ are continuous
 and
 $$
@@ -79,27 +78,26 @@ on $R$. It's better to rewrite the last equation as
 \mu(M_y-N_x)=\mu_xN-\mu_yM,
 \end{equation}
 which  reduces to  the known result for exact equations;
-that is, if $M_y=N_x$ then \eqref{eq:2.6.5} holds with $\mu=1$, so
-\eqref{eq:2.6.1} is exact.
+that is, if $M_y=N_x$ then $\eqref{eq:2.6.5}$ holds with $\mu=1$, so
+$\eqref{eq:2.6.1}$ is exact.
 
-You may think  \eqref{eq:2.6.5} is of little value, since it involves
+You may think $\eqref{eq:2.6.5}$ is of little value, since it involves
 \textit{partial} derivatives of the unknown integrating factor $\mu$,
-and we haven't studied methods for solving such equations. However,
-we'll now show that \eqref{eq:2.6.5} is useful if we restrict our search
+and we have not studied methods for solving such equations. However,
+we now show that $\eqref{eq:2.6.5}$ is useful if we restrict our search
 to integrating factors that are products of a function of
 $x$ and a function of $y$; that is,
 $\mu(x,y)=P(x)Q(y)$.
-We're not saying that \textit{every} equation
+We are not saying that \textit{every} equation
  $M\,dx+N\,dy=0$ has an integrating factor of this
-form;   rather, we're saying that \textit{some} equations have
+form; rather, we are saying that \textit{some} equations have
 such integrating
 factors.  We'll now develop a way to determine whether a given
 equation has such an integrating factor, and a method for finding the
 integrating factor in this case.
 
-
 If $\mu(x,y)=P(x)Q(y)$, then $\mu_x(x,y)=P'(x)Q(y)$ and
-$\mu_y(x,y)=P(x)Q'(y)$, so \eqref{eq:2.6.5} becomes
+$\mu_y(x,y)=P(x)Q'(y)$, so $\eqref{eq:2.6.5}$ becomes
 \begin{equation} \label{eq:2.6.6}
 P(x)Q(y)(M_y-N_x)=P'(x)Q(y)N-P(x)Q'(y)M,
 \end{equation}
@@ -111,31 +109,29 @@ Now let
 $$
 p(x)=\frac{P'(x)}{P(x)}\quad \text{and}\quad q(y)=\frac{Q'(y)}{Q(y)},
 $$
-so \eqref{eq:2.6.7} becomes
+so $\eqref{eq:2.6.7}$ becomes
 \begin{equation} \label{eq:2.6.8}
 M_y-N_x=p(x)N-q(y)M.
 \end{equation}
 
-We obtained \eqref{eq:2.6.8} by \textit{assuming} that $M\,dx+N\,dy=0$ has
+We obtained $\eqref{eq:2.6.8}$ by \textit{assuming} that $M\,dx+N\,dy=0$ has
 an integrating factor $\mu(x,y)=P(x)Q(y)$. However, we can
-now view \eqref{eq:2.6.7} differently: If there are functions $p=p(x)$
-and $q=q(y)$  that satisfy \eqref{eq:2.6.8} and we define
+now view $\eqref{eq:2.6.7}$ differently: If there are functions $p=p(x)$
+and $q=q(y)$  that satisfy $\eqref{eq:2.6.8}$ and we define
 \begin{equation} \label{eq:2.6.9}
 P(x)=\pm e^{\int p(x)\,dx}\quad\text{and}\quad
 Q(y)=\pm e^{\int q(y)\,dy},
 \end{equation}
-then reversing the steps that led from \eqref{eq:2.6.6} to
-\eqref{eq:2.6.8} shows that $\mu(x,y)=P(x)Q(y)$ is an integrating factor
+then reversing the steps that led from $\eqref{eq:2.6.6}$ to
+$\eqref{eq:2.6.8}$ shows that $\mu(x,y)=P(x)Q(y)$ is an integrating factor
 for $M\,dx+N\,dy=0$. In using this result, we take the constants of
-integration in \eqref{eq:2.6.9} to be zero and choose the signs
+integration in $\eqref{eq:2.6.9}$ to be zero and choose the signs
 conveniently so the integrating factor has the simplest form.
 
-There's no simple general method for ascertaining
-whether functions $p=p(x)$ and $q=q(y)$ satisfying \eqref{eq:2.6.8}
-exist. However, the next theorem gives simple sufficient
+There is no simple general method for ascertaining
+whether there exist functions $p=p(x)$ and $q=q(y)$ satisfying $\eqref{eq:2.6.8}$. However, the next theorem gives simple sufficient
 conditions for the given equation to have an integrating factor that
-depends on only one of the independent variables $x$ and $y$, and for
-finding an integrating factor in this case.
+depends on only one of the independent variables $x$ and $y$, and for finding an integrating factor in this case.
 
 \begin{theorem}\label{thmtype:2.6.1}
 Let $M,$ $N,$ $M_y,$ and $N_x$ be continuous on an open rectangle $R.$
@@ -166,24 +162,24 @@ then
 \begin{equation}\label{eq:2.6.12}
 \mu(y)=\pm e^{\int q(y)\,dy}
 \end{equation}
- is an integrating factor for \eqref{eq:2.6.11} on $R.$
+ is an integrating factor for $\eqref{eq:2.6.11}$ on $R.$
 \end{enumerate}
 \end{theorem}
 
 
 
 \begin{proof} \ref{item:2.6.1a}
-If $(M_y-N_x)/N$ is independent of $y$, then \eqref{eq:2.6.8}
+If $(M_y-N_x)/N$ is independent of $y$, then $\eqref{eq:2.6.8}$
  holds with $p=(M_y-N_x)/N$ and $q\equiv0$. Therefore
  $$
 P(x)=\pm e^{\int p(x)\,dx}\quad\text{and}\quad Q(y)=\pm e^{\int
 q(y)\,dy}=\pm e^0=\pm1,
  $$
-so \eqref{eq:2.6.10} is an integrating factor for \eqref{eq:2.6.11} on $R$.
+so $\eqref{eq:2.6.10}$ is an integrating factor for $\eqref{eq:2.6.11}$ on $R$.
 
-\ref{item:2.6.1b} If $(N_x-M_y)/M$ is independent of $x$ then eqref{eq:2.6.8} holds
+\ref{item:2.6.1b} If $(N_x-M_y)/M$ is independent of $x$ then $\eqref{eq:2.6.8}$ holds
 with $p\equiv0$ and $q=(N_x-M_y)/M$, and a similar argument shows that
-\eqref{eq:2.6.12} is an integrating factor for \eqref{eq:2.6.11} on $R$.
+$\eqref{eq:2.6.12}$ is an integrating factor for $\eqref{eq:2.6.11}$ on $R$.
 \end{proof}
 
 The next two examples show how to apply
@@ -196,7 +192,7 @@ Find an integrating factor for the equation
 \end{equation}
 and solve the equation.
 \begin{explanation}
-In \eqref{eq:2.6.13}
+In $\eqref{eq:2.6.13}$
 $$
 M=2xy^3-2x^3y^3-4xy^2+2x,\ N=3x^2y^2+4y,
 $$
@@ -204,18 +200,17 @@ and
 $$
 M_y-N_x=(6xy^2-6x^3y^2-8xy)-6xy^2=-6x^3y^2-8xy,
 $$
-so \eqref{eq:2.6.13}  isn't  exact. However,
+so $\eqref{eq:2.6.13}$ is not  exact. However,
 $$
 \frac{M_y-N_x}{N}=-\frac{6x^3y^2+8xy}{3x^2y^2+4y}=-2x
 $$
 is independent of $y$, so Theorem~\ref{thmtype:2.6.1}\ref{item:2.6.1b} applies
-with
-$p(x)=-2x$. Since
+with $p(x)=-2x$. Since
 $$
 \int p (x)\,dx=-\int 2x\,dx=-x^2,
 $$
  $\mu(x)=e^{-x^2}$ is an
-integrating factor.  Multiplying \eqref{eq:2.6.13} by $\mu$ yields the
+integrating factor.  Multiplying $\eqref{eq:2.6.13}$ by $\mu$ yields the
 exact equation
 \begin{equation}\label{eq:2.6.14}
 e^{-x^2}(2xy^3-2x^3y^3-4xy^2+2x)\,dx+
@@ -231,7 +226,7 @@ F_x(x,y)=e^{-x^2}(2xy^3-2x^3y^3-4xy^2+2x)
 \begin{equation}\label{eq:2.6.16}
 F_y(x,y)=e^{-x^2}(3x^2y^2+4y).
 \end{equation}
- Integrating \eqref{eq:2.6.16} with respect to $y$ yields
+ Integrating $\eqref{eq:2.6.16}$ with respect to $y$ yields
 \begin{equation}\label{eq:2.6.17}
 F(x,y)=e^{-x^2}(x^2y^3+2y^2)+\psi(x).
 \end{equation}
@@ -239,17 +234,17 @@ F(x,y)=e^{-x^2}(x^2y^3+2y^2)+\psi(x).
 $$
 F_x(x,y)=e^{-x^2}(2xy^3-2x^3y^3-4xy^2)+\psi'(x).
 $$
-Comparing this with \eqref{eq:2.6.15} shows that $\psi'(x)=
+Comparing this with $\eqref{eq:2.6.15}$ shows that $\psi'(x)=
 2xe^{-x^2}$;  therefore, we can let $\psi(x)=-e^{-x^2}$ in
-\eqref{eq:2.6.17} and conclude that
+$\eqref{eq:2.6.17}$ and conclude that
 $$
 e^{-x^2}\left(y^2(x^2y+2)-1\right)=c
 $$
-is an implicit solution of \eqref{eq:2.6.14}. It is also an implicit solution
-of \eqref{eq:2.6.13}.
+is an implicit solution of $\eqref{eq:2.6.14}$. It is also an implicit solution
+of $\eqref{eq:2.6.13}$.
 
 The figure below  shows a  slope field and some integral curves
-for \eqref{eq:2.6.13}
+for $\eqref{eq:2.6.13}$
 
 \begin{center}
 \geogebra{ueshjsww}{800}{600}
@@ -270,7 +265,7 @@ Find an integrating factor for
 \end{equation}
 and solve the equation.
 
-\begin{explanation} In \eqref{eq:2.6.18},
+\begin{explanation} In $\eqref{eq:2.6.18}$,
 $$
 M=2xy^3,\quad N=3x^2y^2+x^2y^3+1,
 $$
@@ -278,7 +273,7 @@ and
 $$
 M_y-N_x=6xy^2-(6xy^2+2xy^3)=-2xy^3,
 $$
-so \eqref{eq:2.6.18} isn't  exact.  Moreover,
+so $\eqref{eq:2.6.18}$ is not  exact.  Moreover,
 $$
 \frac{M_y-N_x}{N}=-\frac{2xy^3}{3x^2y^2+x^2y^2+1}
 $$
@@ -293,8 +288,7 @@ $$
 \int q(y)\,dy=\int\,dy=y,
 $$
   $\mu(y)=e^y$ is
-an integrating factor. Multiplying \eqref{eq:2.6.18} by $\mu$ yields the
-exact equation
+an integrating factor. Multiplying $\eqref{eq:2.6.18}$ by $\mu$ yields the exact equation
 \begin{equation}\label{eq:2.6.19}
 2xy^3e^y\,dx+(3x^2y^2+x^2y^3+1)e^y\,dy=0.
 \end{equation}
@@ -307,7 +301,7 @@ F_x(x,y)=2xy^3e^y
 \begin{equation}\label{eq:2.6.21}
 F_y(x,y)=(3x^2y^2+x^2y^3+1)e^y.
 \end{equation}
- Integrating \eqref{eq:2.6.20} with respect to $x$ yields
+ Integrating $\eqref{eq:2.6.20}$ with respect to $x$ yields
 \begin{equation}\label{eq:2.6.22}
 F(x,y)=x^2y^3e^y+\phi(y).
 \end{equation}
@@ -315,16 +309,16 @@ Differentiating this with respect to $y$ yields
 $$
 F_y=(3x^2y^2+x^2y^3)e^y+\phi'(y),
 $$
-and comparing this with \eqref{eq:2.6.21} shows that $\phi'(y)=e^y$.
- Therefore we set $\phi(y)=e^y$ in \eqref{eq:2.6.22} and conclude
+and comparing this with $\eqref{eq:2.6.21}$ shows that $\phi'(y)=e^y$.
+Therefore we set $\phi(y)=e^y$ in $\eqref{eq:2.6.22}$ and conclude
 that
 $$
 (x^2y^3+\answer{1})e^y=c
 $$
-is an implicit solution of \eqref{eq:2.6.19}.
+is an implicit solution of $\eqref{eq:2.6.19}$.
 It is also an implicit solution
- of \eqref{eq:2.6.18}. The figure below shows a slope
-field and some integral curves for \eqref{eq:2.6.18}.
+ of $\eqref{eq:2.6.18}$. The figure below shows a slope
+field and some integral curves for $\eqref{eq:2.6.18}$.
 
 \begin{center}
 \geogebra{g7krzjwa}{800}{600}
@@ -347,7 +341,7 @@ Find an integrating factor for
 (3xy+6y^2)\,dx+(2x^2+9xy)\,dy=0
 \end{equation} and solve the equation.
  \begin{explanation} 
-In \eqref{eq:2.6.23}
+In $\eqref{eq:2.6.23}$
  $$
  M=3xy+6y^2,\ N=2x^2+9xy,
  $$
@@ -390,7 +384,7 @@ on both sides shows that the last equation holds for all $(x,y)$ if
 \begin{eqnarray*} 2A-3B &=&-1 \\ 9A-6B &=&\phantom{-}3,
 \end{eqnarray*}
  which has the solution $A=\answer{1}$, $B=\answer{1}$. Therefore
-\eqref{eq:2.6.24} implies that
+$\eqref{eq:2.6.24}$ implies that
  $$ p(x)=\frac{1}{x}\quad\text{and}\quad
 q(y)=\frac{1}{y}.
 $$
@@ -399,7 +393,7 @@ Since
 $$
  we can let $P(x)=x$ and $Q(y)=y$;
 hence, $\mu(x,y)=xy$ is an integrating factor. Multiplying
-\eqref{eq:2.6.23} by $\mu$ yields the exact equation
+$\eqref{eq:2.6.23}$ by $\mu$ yields the exact equation
 $$
 (3x^2y^2+6xy^3)\,dx+(2x^3y+9x^2y^2)\,dy=0.
  $$
@@ -409,13 +403,12 @@ implicit solution
 \begin{equation}
  \label{eq:2.6.25} x^3y^2+3x^2y^3=c.
 \end{equation}
-This is also an implicit solution of \eqref{eq:2.6.23}.
-Since $x\equiv 0$ and $y\equiv 0$ satisfy \eqref{eq:2.6.25}, you should
-check to see that $x\equiv 0$ and $y\equiv 0$ are also solutions of
-\eqref{eq:2.6.23}. (Why is it necessary to check this?)
+This is also an implicit solution of $\eqref{eq:2.6.23}$.
+Since $x\equiv 0$ and $y\equiv 0$ satisfy $\eqref{eq:2.6.25}$, you should check to see that $x\equiv 0$ and $y\equiv 0$ are also solutions of
+$\eqref{eq:2.6.23}$. (Why is it necessary to check this?)
 
 The figure below shows a slope field and integral curves for
-\eqref{eq:2.6.23}.
+$\eqref{eq:2.6.23}$.
 
 %See Exercise~\ref{exer:2.6.28} for a general discussion of equations like \eqref{eq:2.6.23}.
 
@@ -445,16 +438,16 @@ by the  integrating factor
 $$
 \mu(x,y)=\frac{1}{y(x+x^6)}.
 $$
-However, to solve \eqref{eq:2.6.27} by the method of \href{https://ximera.osu.edu/ode/main/exactEquations/exactEquations}{Trench 2.5}
+However, to solve $\eqref{eq:2.6.27}$ by the method of \href{https://ximera.osu.edu/ode/main/exactEquations/exactEquations}{Trench 2.5}
 we would have to evaluate the nasty integral
 $$
 \int \frac{dx}{x+x^6}.
 $$
-Instead, we solve \eqref{eq:2.6.26} explicitly for $y$ by finding  an
+Instead, we solve $\eqref{eq:2.6.26}$ explicitly for $y$ by finding  an
 integrating factor of the form
 $\mu(x,y)=x^ay^b$.
 
-In \eqref{eq:2.6.26}
+In $\eqref{eq:2.6.26}$
 $$
 M=-y, N=x+x^6,
 $$
@@ -472,7 +465,7 @@ that is,
 -2-6x^5=p(x)(x+x^6)+q(y)y.
 \end{equation}
 The right side will contain the term $-6x^5$ if $p(x)=-6/x$.   Then
-\eqref{eq:2.6.28} becomes
+$\eqref{eq:2.6.28}$ becomes
 $$
 -2-6x^5=-6-6x^5+q(y)y,
 $$
@@ -487,7 +480,7 @@ $$
 $$
 we can take $P(x)=x^{-6}$ and $Q(y)=y^4$,
 which yields the integrating factor $\mu(x,y)=x^{-6}y^4$.
-Multiplying \eqref{eq:2.6.26} by  $\mu$ yields the exact equation
+Multiplying $\eqref{eq:2.6.26}$ by  $\mu$ yields the exact equation
 $$
 -\frac{y^5}{x^6}\,dx+\left(\frac{y^4}{x^5}+y^4\right)
 \,dy=0.
@@ -506,10 +499,10 @@ $$
 y=cx(1+x^5)^{-1/5}
 $$
 by renaming the arbitrary constant.
- This is also a solution of \eqref{eq:2.6.26}.
+This is also a solution of $\eqref{eq:2.6.26}$.
 
 The figure below shows a slope field and some integral curves
- for \eqref{eq:2.6.26}.
+ for $\eqref{eq:2.6.26}$.
 
 \begin{center}
 \geogebra{uqp3xjzp}{800}{600}
