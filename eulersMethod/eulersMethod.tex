@@ -8,7 +8,7 @@
 \begin{document}%\label{Module 5-1}
  
 \begin{abstract}
-Need Abstract
+We study a numerical method of approximating solutions to differential equations.
 \end{abstract}
  
 \maketitle
@@ -33,38 +33,37 @@ can't be solved analytically,
  it's necessary to resort to
 numerical methods to obtain useful  approximations to a solution.
  
-The simplest numerical method for solving \eqref{eq:3.1.1} is
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Euler.html}
+The simplest numerical method for solving $\eqref{eq:3.1.1}$ is
+\href{https://en.wikipedia.org/wiki/Euler_method}
 {\dfn{Euler's method}}.
 This method is so crude that it
 is seldom used in practice;     however, its simplicity makes it useful
 for illustrative purposes.
  
 Euler's method is based on the assumption that the tangent line to the
-integral curve of \eqref{eq:3.1.1} at $(x_i,y(x_i))$ approximates the
+integral curve of $\eqref{eq:3.1.1}$ at $(x_i,y(x_i))$ approximates the
 integral curve over the interval $[x_i,x_{i+1}]$.
- Since the slope of the integral curve of
-\eqref{eq:3.1.1} at $(x_i,y(x_i))$ is $y'(x_i)=f(x_i,y(x_i))$, the
+ Since the slope of the integral curve of $\eqref{eq:3.1.1}$ at $(x_i,y(x_i))$ is $y'(x_i)=f(x_i,y(x_i))$, the
 equation of the tangent line to the integral curve at $(x_i,y(x_i))$
 is
 \begin{equation} \label{eq:3.1.2}
 y=y(x_i)+f(x_i,y(x_i))(x-x_i).
 \end{equation}
  
-Setting $x=x_{i+1}=x_i+h$ in \eqref{eq:3.1.2} yields
+Setting $x=x_{i+1}=x_i+h$ in $\eqref{eq:3.1.2}$ yields
 \begin{equation} \label{eq:3.1.3}
 y_{i+1}=y(x_i)+hf(x_i,y(x_i))
 \end{equation}
 as an approximation to $y(x_{i+1})$. Since $y(x_0)=y_0$ is known, we
-can use \eqref{eq:3.1.3} with $i=0$ to compute
+can use $\eqref{eq:3.1.3}$ with $i=0$ to compute
 $$
 y_1=y_0+hf(x_0,y_0).
 $$
-However, setting $i=1$ in \eqref{eq:3.1.3} yields
+However, setting $i=1$ in $\eqref{eq:3.1.3}$ yields
 $$
 y_2=y(x_1)+hf(x_1,y(x_1)),
 $$
-which isn't  useful, since we don't know $y(x_1)$. Therefore
+which is not  useful, since we do not know $y(x_1)$. Therefore
 we replace $y(x_1)$ by its approximate value $y_1$ and redefine
 $$
 y_2=y_1+hf(x_1,y_1).
@@ -97,7 +96,7 @@ Since $y'(0) = 1$, we know that
 $$
 y\left(\frac{1}{2}\right)\approx y(0)+\frac{1}{2}\cdot y'(0)= 1+ \frac{1}{2}\cdot 1 = \frac{3}{2}
 $$
-by \eqref{eq:3.1.3}.
+by $\eqref{eq:3.1.3}$.
 
 %\begin{image}
 %\includegraphics[height=1.5in]{fig030101.jpg} 
@@ -290,7 +289,7 @@ Thus $y(1) \approx \answer{81/128}$.
 \subsection*{Sources of Error}
  
 When using numerical methods we're interested in
-computing approximate values of the solution of \eqref{eq:3.1.1} at
+computing approximate values of the solution of $\eqref{eq:3.1.1}$ at
 equally spaced points $x_0, x_1, \ldots, x_n=b$ in an interval
 $[x_0,b]$.
  Thus,
@@ -345,8 +344,7 @@ which can be obtained by the method of Module 1-B. (Verify.)
  
 \begin{explanation}
 The table below shows the values of the exact solution
-\eqref{eq:3.1.6} at the specified points, and the approximate values of
-the solution at these points obtained by Euler's method with step
+$\eqref{eq:3.1.6}$ at the specified points, and the approximate values of the solution at these points obtained by Euler's method with step
 sizes $h=0.1$, $h=0.05$, and $h=0.025$. In examining this table, keep
 in mind that the approximate values in the column corresponding to
 $h=.05$ are actually the results of 20 steps with Euler's method. We
@@ -455,13 +453,11 @@ for the nonlinear initial value problem
 \begin{equation} \label{eq:3.1.7}
 y'=-2y^2+xy+x^2, y(0)=1,
 \end{equation}
-except in this case we can't solve \eqref{eq:3.1.7} exactly.
+except in this case we can't solve $\eqref{eq:3.1.7}$ exactly.
 The results in the ``Exact'' column were obtained by using a
 more accurate numerical method known as the
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Runge.html}{Runge}-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Kutta.html}{Kutta}
-method
- with a small step size. They are
-exact to eight decimal places.
+\href{https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods}{Runge-Kutta}
+method with a small step size. They are exact to eight decimal places.
 The following table shows numerical solutions obtained by Euler's method.
 $$
 \begin{array}{|c|c|c|c|c|}
@@ -544,14 +540,14 @@ method:
 \begin{enumerate}
 \item\label{item:3.1.1a} % (1)
 The error committed in approximating the integral curve by the tangent
-line \eqref{eq:3.1.2} over the interval $[x_i,x_{i+1}]$.
+line $\eqref{eq:3.1.2}$ over the interval $[x_i,x_{i+1}]$.
 \item\label{item:3.1.1b} % (2)
 The error committed in replacing $y(x_i)$ by $y_i$ in
-\eqref{eq:3.1.2} and using \eqref{eq:3.1.4} rather than \eqref{eq:3.1.2} to
+$\eqref{eq:3.1.2}$ and using $\eqref{eq:3.1.4}$ rather than $\eqref{eq:3.1.2}$ to
 compute $y_{i+1}$.
  \end{enumerate}
 
-Euler's method assumes that $y_{i+1}$ defined in \eqref{eq:3.1.2}  is
+Euler's method assumes that $y_{i+1}$ defined in $\eqref{eq:3.1.2}$ is
 an approximation to $y(x_{i+1})$. We call the error in this
 approximation the \dfn{local truncation error at the $i$th step},
 and denote it by $T_i$;   thus,
@@ -559,7 +555,7 @@ and denote it by $T_i$;   thus,
 T_i=y(x_{i+1})-y(x_i)-hf(x_i,y(x_i)).
 \end{equation}
 We'll now use
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Taylor.html}{Taylor's theorem}
+\href{https://en.wikipedia.org/wiki/Taylor%27s_theorem}{Taylor's theorem}
  to estimate $T_i$, assuming for
 simplicity that $f$, $f_x$, and $f_y$ are continuous and bounded for
 all $(x,y)$. Then $y''$ exists and is bounded on $[x_0,b]$. To see
@@ -594,17 +590,16 @@ or, equivalently,
 $$
 y(x_{i+1})-y(x_i)-hf(x_i,y(x_i))=\frac{h^2}{2}y''(\tilde x_i).
 $$
-Comparing this with \eqref{eq:3.1.8} shows that
+Comparing this with $\eqref{eq:3.1.8}$ shows that
 $$
 T_i=\frac{h^2}{2}y''(\tilde x_i).
 $$
-Recalling \eqref{eq:3.1.9}, we can establish the bound
+Recalling $\eqref{eq:3.1.9}$, we can establish the bound
 \begin{equation} \label{eq:3.1.10}
 |T_i|\leq \frac{Mh^2}{2},\quad 1\leq i\leq n.
 \end{equation}
 Although it may be difficult to determine the constant $M$, what is
-important is that there's an $M$ such that \eqref{eq:3.1.10} holds.
- We say that the
+important is that there is an $M$ such that $\eqref{eq:3.1.10}$ holds.  We say that the
 local truncation error of Euler's method is \dfn{of order} $h^2$,
 which we write as $O(h^2)$.
 
@@ -632,7 +627,8 @@ and
 \begin{equation} \label{eq:3.1.12}
 y_{i+1}=y_i+hf(x_i,y_i).
 \end{equation}
-Subtracting \eqref{eq:3.1.12} from \eqref{eq:3.1.11} yields
+Subtracting $\eqref{eq:3.1.12}$
+from $\eqref{eq:3.1.11}$ yields
 \begin{equation} \label{eq:3.1.13}
 e_{i+1}=e_i+h\left[f(x_i,y(x_i))-f(x_i,y_i)\right]+T_i.
 \end{equation}
@@ -652,12 +648,12 @@ where $y_i^*$ is between $y_i$ and $y(x_i)$. Therefore
 $$
 |f(x_i,y(x_i))-f(x_i,y_i)|\le R|e_i|
 $$
-for some constant $R$. From this and \eqref{eq:3.1.14},
+for some constant $R$. From this and $\eqref{eq:3.1.14}$,
 \begin{equation} \label{eq:3.1.15}
 |e_{i+1}|\leq (1+Rh)|e_i|+\frac{Mh^2}{2},\quad 0\leq i\leq n-1.
 \end{equation}
 For convenience, let $C=1+Rh$. Since $e_0=y(x_0)-y_0=0$, applying
-\eqref{eq:3.1.15} repeatedly yields
+$\eqref{eq:3.1.15}$ repeatedly yields
 \begin{eqnarray}
 |e_1| & \leq & \frac{Mh^2}{2}\nonumber\\
 |e_2| & \leq & C|e_1|+\frac{Mh^2}{2}\leq (1+C)\frac{Mh^2}{2}\nonumber\\
@@ -670,7 +666,7 @@ Recalling the formula for the sum of a geometric series, we see that
 $$
 1+C+\cdots+C^{n-1}=\frac{1-C^n}{1-C}=\frac{(1+Rh)^n-1}{Rh}
 $$
-(since $C=1+Rh$). From this and \eqref{eq:3.1.16},
+(since $C=1+Rh$). From this and $\eqref{eq:3.1.16}$,
 \begin{equation} \label{eq:3.1.17}
 |y(b)-y_n|=|e_n|\leq \frac{(1+Rh)^n-1}{R}\frac{Mh}{2}.
 \end{equation}
@@ -682,7 +678,7 @@ $$
 $$
 (1+Rh)^n<e^{nRh}=e^{R(b-x_0)}\quad (\mbox{since }nh=b-x_0).
 $$
-This and \eqref{eq:3.1.17} imply that
+This and $\eqref{eq:3.1.17}$ imply that
 \begin{equation} \label{eq:3.1.18}
 |y(b)-y_n|\leq Kh,
 \end{equation}
@@ -690,9 +686,8 @@ with
 $$
 K=M\frac{e^{R(b-x_0)}-1}{2R}.
 $$
-Because of \eqref{eq:3.1.18} we say that the
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Euler.html}{global truncation
-error of Euler's method is of order} $h$, which we write as $O(h)$.
+Because of $\eqref{eq:3.1.18}$ we say that the \dfn{global truncation
+error} of Euler's method is of order $h$, which we write as $O(h)$.
 
 \subsection*{Semilinear Equations and Variation of Parameters}
 
@@ -701,12 +696,12 @@ An equation that can be written in the form
 y'+p(x)y=h(x,y)
 \end{equation}
 with $p\not\equiv0$ is said to be \dfn{semilinear}. (Of course,
-\eqref{eq:3.1.19} is linear if $h$ is independent of $y$.) One way to
+$\eqref{eq:3.1.19}$ is linear if $h$ is independent of $y$.) One way to
 apply Euler's method to an initial value problem
 \begin{equation} \label{eq:3.1.20}
 y'+p(x)y=h(x,y),\quad y(x_0)=y_0
 \end{equation}
-for \eqref{eq:3.1.19} is to think of it  as
+for $\eqref{eq:3.1.19}$ is to think of it  as
 $$
 y'=f(x,y),\quad y(x_0)=y_0,
 $$
@@ -715,10 +710,10 @@ $$
 f(x,y)=-p(x)y+h(x,y).
 $$
 However, we can also start by applying variation of parameters to
-\eqref{eq:3.1.20}, as in Sections~2.1\ and 2.4;   thus, we
-write the solution of \eqref{eq:3.1.20} as $y=uy_1$, where $y_1$ is a
+$\eqref{eq:3.1.20}$, as in Sections~2.1\ and 2.4;   thus, we
+write the solution of $\eqref{eq:3.1.20}$ as $y=uy_1$, where $y_1$ is a
 nontrivial solution of the complementary equation $y'+p(x)y=0$. Then
-$y=uy_1$ is a solution of \eqref{eq:3.1.20} if and only if $u$ is a
+$y=uy_1$ is a solution of $\eqref{eq:3.1.20}$ if and only if $u$ is a
 solution of the initial value problem
 \begin{equation} \label{eq:3.1.21}
 u'=h(x,uy_1(x))/y_1(x),\quad u(x_0)=y(x_0)/y_1(x_0).
@@ -728,17 +723,15 @@ $u_0, u_1, \dots, u_n$ of this initial value problem, and then take
 $$
 y_i=u_iy_1(x_i)
 $$
-as approximate values of the solution of \eqref{eq:3.1.20}.
+as approximate values of the solution of $\eqref{eq:3.1.20}$.
 We'll call this procedure the
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Euler.html}{Euler semilinear method}.
+\dfn{Euler semilinear method}.
 
 The next two examples show that the Euler and Euler semilinear
 methods may yield drastically different results.
 
 \begin{example}\label{example:3.1.4}
-In Example~\ref{example:2.1.7} we had to leave the solution of the initial
-value
-problem
+In Example~\ref{example:2.1.7} we had to leave the solution of the initial value problem
 \begin{equation} \label{eq:3.1.22}
 y'-2xy=1,\quad y(0)=3
 \end{equation}
@@ -750,18 +743,16 @@ because it was impossible to evaluate this integral exactly in terms
 of elementary functions.
 Use step sizes $h=0.2$, $h=0.1$, and $h=0.05$ to find approximate
 values
-of the solution of \eqref{eq:3.1.22} at $x=0, 0.2, 0.4, 0.6,
+of the solution of $\eqref{eq:3.1.22}$ at $x=0, 0.2, 0.4, 0.6,
 \dots, 2.0$ by
 \begin{enumerate}
 \item\label{item:3.1.4a} Euler's method;   
 \item\label{item:3.1.4b} the Euler semilinear method.
 \end{enumerate}
 
-
-
 \begin{explanation}
 \ref{item:3.1.4a}
-Rewriting \eqref{eq:3.1.22} as
+Rewriting $\eqref{eq:3.1.22}$ as
 \begin{equation} \label{eq:3.1.24}
 y'=1+2xy,\quad y(0)=3
 \end{equation}
@@ -797,18 +788,18 @@ $$
 
 It's easy to see why Euler's method yields such poor results.
 Recall that the constant $M$ in
-\eqref{eq:3.1.10} -- which plays an important role in determining the
+$\eqref{eq:3.1.10}$ -- which plays an important role in determining the
 local truncation error in Euler's method -- must be an upper bound for
 the values of the second derivative $y''$ of the solution of the
 initial
-value problem \eqref{eq:3.1.22} on $(0,2)$. The problem is that $y''$
+value problem $\eqref{eq:3.1.22}$ on $(0,2)$. The problem is that $y''$
 assumes very large values on this interval. To see this, we
-differentiate \eqref{eq:3.1.24} to obtain
+differentiate $\eqref{eq:3.1.24}$ to obtain
 $$
 y''(x)=2y(x)+2xy'(x)=2y(x)+2x(1+2xy(x))=2(1+2x^2)y(x)+2x,
 $$
-where the second equality follows again from \eqref{eq:3.1.24}.
-Since \eqref{eq:3.1.23} implies that $y(x)>3e^{x^2}$ if $x>0$,
+where the second equality follows again from $\eqref{eq:3.1.24}$.
+Since $\eqref{eq:3.1.23}$ implies that $y(x)>3e^{x^2}$ if $x>0$,
 $$
 y''(x)>6(1+2x^2)e^{x^2}+2x,\quad x>0.
 $$
@@ -817,7 +808,7 @@ For example, letting $x=2$ shows that $y''(2)>2952$.
 \ref{item:3.1.4b}
 Since $y_1=e^{x^2}$ is a solution of the complementary equation
 $y'-2xy=0$, we can  apply the Euler semilinear method to
-\eqref{eq:3.1.22}, with
+$\eqref{eq:3.1.22}$, with
 $$
 y=ue^{x^2}\quad\mbox{and}\quad
 u'=e^{-x^2},\quad u(0)=3.
@@ -850,10 +841,10 @@ $$
 \end{explanation}
 \end{example}
 
-We can't give a general procedure for determining in advance
+We cannot give a general procedure for determining in advance
 whether Euler's method or the semilinear Euler method will produce
 better results for a given semilinear initial value problem
-\eqref{eq:3.1.19}.
+$\eqref{eq:3.1.19}$.
  As a rule of thumb, the Euler semilinear method will
 yield better results than Euler's method if $|u''|$ is small on
 $[x_0,b]$, while Euler's method  yields better results if $|u''|$
@@ -932,7 +923,7 @@ $$
  
 Since the latter are clearly less dependent on step size
 than the former, we conclude that the Euler semilinear method
-is better than Euler's method for \eqref{eq:3.1.25}. This conclusion
+is better than Euler's method for $\eqref{eq:3.1.25}$. This conclusion
 is supported by comparing the approximate results obtained by the
 two methods with the ``exact'' values of the solution.
 \end{example}
@@ -1006,28 +997,25 @@ $$
 
 
 Noting the close
-agreement among the  three columns of the first table (at
+agreement among the three columns of the first table (at
 least for larger values of $x$) and the lack of any such agreement
 among the columns of the second table, we conclude that
 Euler's method is better than the Euler semilinear method for
-\eqref{eq:3.1.26}. Comparing the results with the exact values
+$\eqref{eq:3.1.26}$. Comparing the results with the exact values
 supports this conclusion.
 \end{example}
 
-In the next two modules we'll study other numerical methods for
-solving initial value problems,  called the
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Euler.html}{improved Euler method}, the \dfn{midpoint method},
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Heun.html}{Heun's method}
+In the next two sections we will study other numerical methods for
+solving initial value problems,  including
+\href{https://en.wikipedia.org/wiki/Heun%27s_method}{Heun's method}
 and the
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Runge.html}{Runge}-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Kutta.html}{Kutta method}.
- If the initial value problem is semilinear as
-in \eqref{eq:3.1.19},  we also have the option of using variation of
-parameters and then applying the given numerical method to the initial
-value problem \eqref{eq:3.1.21} for $u$. By analogy with the terminology
-used here, we'll call the resulting procedure
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Euler.html}{the improved Euler semilinear method}, the \dfn{midpoint semilinear method},
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Heun.html}{Heun's semilinear method} or
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Runge.html}{the Runge}-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Kutta.html}{Kutta semilinear method}, as
+\href{https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods}{Runge-Kutta} method.
+If the initial value problem is semilinear as
+in $\eqref{eq:3.1.19}$,  we also have the option of using variation of parameters and then applying the given numerical method to the initial value problem $\eqref{eq:3.1.21}$ for $u$. By analogy with the terminology
+used here, we will call the resulting procedure
+\dfn{the improved Euler semilinear method}, the \dfn{midpoint semilinear method},
+\dfn{Heun's semilinear method} or the
+\dfn{Runge-Kutta semilinear method}, as
 the case may be.
 
  
