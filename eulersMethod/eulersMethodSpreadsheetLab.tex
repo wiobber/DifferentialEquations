@@ -1,0 +1,174 @@
+\documentclass{ximera}
+ 
+\input{../preamble.tex}
+ 
+\title{Euler's Method Spreadsheet Lab}
+ 
+ 
+\begin{document}%\label{Module 5-1}
+ 
+\begin{abstract}
+\end{abstract}
+ 
+\maketitle
+ 
+\section*{Euler's Method Spreadsheet Lab}
+ 
+Spreadsheets are a great way to analyze iterative processes such as the numerical methods presented here in Chapter 3.  In this lab you will implement Euler's method using a spreadsheet.
+ 
+
+ 
+\begin{example}\label{example:3.1.2}
+Use Euler's method with step sizes $h=0.1$, $h=0.05$, and $h=0.025$ to
+find approximate values of the solution of the initial value problem
+$$
+y'+2y=x^3e^{-2x},\quad y(0)=1
+$$
+at $x=0, 0.1, 0.2, 0.3, \ldots, 1.0$. Compare these approximate
+values
+with the values of the exact solution
+\begin{equation} \label{eq:3.1.6}
+y=\frac{e^{-2x}}{4}(x^4+4),
+\end{equation}
+which can be obtained by the method of Module 1-B. (Verify.)
+ 
+\begin{explanation}
+The table below shows the values of the exact solution
+$\eqref{eq:3.1.6}$ at the specified points, and the approximate values of the solution at these points obtained by Euler's method with step
+sizes $h=0.1$, $h=0.05$, and $h=0.025$. In examining this table, keep
+in mind that the approximate values in the column corresponding to
+$h=.05$ are actually the results of 20 steps with Euler's method. We
+haven't listed the estimates of the solution obtained for
+$x=0.05, 0.15, \dots $, since there's nothing to compare them with in
+the column corresponding to $h=0.1$. Similarly, the approximate values
+in the column corresponding to $h=0.025$ are actually the results of
+$40$ steps with Euler's method.
+ 
+ 
+$$
+\begin{array}{|c|c|c|c|c|}
+\hline
+x & h=0.1 & h=0.05 & h=0.025 & \text{Exact}\\ \hline
+0.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+0.1 & 0.800000000 & 0.810005655 & 0.814518349 & 0.818751221 \\
+0.2 & 0.640081873 & 0.656266437 & 0.663635953 & 0.670588174 \\
+0.3 & 0.512601754 & 0.532290981 & 0.541339495 & 0.549922980 \\
+0.4 & 0.411563195 & 0.432887056 & 0.442774766 & 0.452204669 \\
+0.5 & 0.332126261 & 0.353785015 & 0.363915597 & 0.373627557 \\
+0.6 & 0.270299502 & 0.291404256 & 0.301359885 & 0.310952904 \\
+0.7 & 0.222745397 & 0.242707257 & 0.252202935 & 0.261398947 \\
+0.8 & 0.186654593 & 0.205105754 & 0.213956311 & 0.222570721 \\
+0.9 & 0.159660776 & 0.176396883 & 0.184492463 & 0.192412038 \\
+1.0 & 0.139778910 & 0.154715925 & 0.162003293 & 0.169169104\\
+\hline
+\end{array}
+$$
+ 
+You can see that decreasing the step size
+improves the accuracy of Euler's method. For example,
+$$
+y_{\text{exact}}(1)-y_{\text{approx}}(1)\approx
+\left\{\begin{array}{l}
+.0293\text{ with }h=0.1,\\
+.0144\text{ with }h=0.05,\\
+.0071\text{ with }h=0.025.
+\end{array}\right.
+$$
+Based on this scanty evidence, you might guess that the error in
+approximating the exact solution at a \textit{fixed value of} $x$ by
+Euler's method is roughly halved when the step size is halved. You can
+find more evidence to support this conjecture by examining
+the table below which lists the approximate values of
+$y_{\text{exact}}-y_{\text{approx}}$ at
+$x=0.1, 0.2, \dots, 1.0$.
+ 
+$$
+\begin{array}{|c|c|c|c|}
+\hline
+x & h=0.1 & h=0.05 & h=0.025\\ \hline
+0.1 & 0.0187 & 0.0087 & 0.0042\\
+0.2 & 0.0305 & 0.0143 & 0.0069\\
+0.3 & 0.0373 & 0.0176 & 0.0085\\
+0.4 & 0.0406 & 0.0193 & 0.0094\\
+0.5 & 0.0415 & 0.0198 & 0.0097\\
+0.6 & 0.0406 & 0.0195 & 0.0095\\
+0.7 & 0.0386 & 0.0186 & 0.0091\\
+0.8 & 0.0359 & 0.0174 & 0.0086\\
+0.9 & 0.0327 & 0.0160 & 0.0079\\
+1.0 & 0.0293 & 0.0144 & 0.0071\\
+\hline
+\end{array}
+$$
+
+\begin{center}
+\geogebra{jckhafsx}{800}{600}
+\end{center}
+
+\end{explanation}
+\end{example}
+
+
+ 
+ 
+ \begin{example}\label{example:3.1.3}
+The tables below show analogous results
+for the nonlinear initial value problem
+\begin{equation} \label{eq:3.1.7}
+y'=-2y^2+xy+x^2, y(0)=1,
+\end{equation}
+except in this case we can't solve $\eqref{eq:3.1.7}$ exactly.
+The results in the ``Exact'' column were obtained by using a
+more accurate numerical method known as the
+\href{https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods}{Runge-Kutta}
+method with a small step size. They are exact to eight decimal places.
+The following table shows numerical solutions obtained by Euler's method.
+$$
+\begin{array}{|c|c|c|c|c|}
+\hline
+x&
+h=0.1&
+h=0.05&
+h=0.025&
+\text{``Exact''}\\ \hline
+0.0 & 1.000000000 & 1.000000000 & 1.000000000 & 1.000000000 \\
+0.1 & 0.800000000 & 0.821375000 & 0.829977007 & 0.837584494 \\
+0.2 & 0.681000000 & 0.707795377 & 0.719226253 & 0.729641890 \\
+0.3 & 0.605867800 & 0.633776590 & 0.646115227 & 0.657580377 \\
+0.4 & 0.559628676 & 0.587454526 & 0.600045701 & 0.611901791 \\
+0.5 & 0.535376972 & 0.562906169 & 0.575556391 & 0.587575491 \\
+0.6 & 0.529820120 & 0.557143535 & 0.569824171 & 0.581942225 \\
+0.7 & 0.541467455 & 0.568716935 & 0.581435423 & 0.593629526 \\
+0.8 & 0.569732776 & 0.596951988 & 0.609684903 & 0.621907458 \\
+0.9 & 0.614392311 & 0.641457729 & 0.654110862 & 0.666250842 \\
+1.0 & 0.675192037 & 0.701764495 & 0.714151626 & 0.726015790\\
+\hline
+\end{array}
+$$
+The following table shows the error in approximate solutions obtained by Euler's method.
+$$
+\begin{array}{|c|c|c|c|}
+\hline
+x&
+h=0.1&
+h=0.05&
+h=0.025\\ \hline
+0.1 & 0.0376 & 0.0162 &0.0076 \\
+0.2 & 0.0486 & 0.0218 &0.0104 \\
+0.3 & 0.0517 & 0.0238 &0.0115 \\
+0.4 & 0.0523 & 0.0244 &0.0119 \\
+0.5 & 0.0522 & 0.0247 &0.0121 \\
+0.6 & 0.0521 & 0.0248 &0.0121 \\
+0.7 & 0.0522 & 0.0249 &0.0122 \\
+0.8 & 0.0522 & 0.0250 &0.0122 \\
+0.9 & 0.0519 & 0.0248 &0.0121 \\
+1.0 & 0.0508 & 0.0243 &0.0119 \\
+\hline
+\end{array}
+$$
+
+\end{example}
+
+
+
+ 
+\end{document}
