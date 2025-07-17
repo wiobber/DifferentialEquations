@@ -68,9 +68,9 @@ the number of evaluations of $f$ required to obtain the approximation, and
 the last column contains the value of $e$ rounded to ten significant
 figures.
 
-In this module we'll study the
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Euler.html}{improved Euler method}, which
-requires two evaluations of $f$ at each step. We've used this method
+In this section we study the
+\dfn{improved Euler method}, which
+requires two evaluations of $f$ at each step. We have used this method
 with $h=1/6$, $1/12$, and $1/24$. The required number of evaluations
 of $f$ were 12, 24, and $48$, as in the three applications of Euler's
 method;     however, you can see from the third column of
@@ -95,11 +95,11 @@ n&
 $$
 \end{center}
 
-In \href{https://ximera.osu.edu/ode/main/eulersMethod/eulersMethod}{Trench 3.1} we'll study the
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Runge.html}{Runge}-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Kutta.html}{Kutta method},
-which requires four evaluations of $f$ at each step. We've used this
+In \href{https://ximera.osu.edu/ode/main/eulersMethod/eulersMethod}{Trench 3.1} we will study the
+\href{https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods}{Runge-Kutta method},
+which requires four evaluations of $f$ at each step. We have used this
 method with $h=1/3$, $1/6$, and $1/12$. The required number of
-evaluations of $f$ were again 12, 24, and $48$, as in the three
+evaluations of $f$ were again $12$, $24$, and $48$, as in the three
 applications of Euler's method and the improved Euler method;     however,
 you can see from the fourth column of the table below that the
 approximation to $e$ obtained by the Runge-Kutta method with only 12
@@ -127,9 +127,9 @@ $$
 \subsection*{The Improved Euler Method}
 
 The
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Euler.html}{improved Euler method} for solving the initial value
-problem (\ref{eq:3.2.1}) is based on approximating the integral curve of
-(\ref{eq:3.2.1}) at $(x_i,y(x_i))$ by the line through $(x_i,y(x_i))$ with
+\dfn{improved Euler method} for solving the initial value
+problem $\eqref{eq:3.2.1}$ is based on approximating the integral curve of
+$\eqref{eq:3.2.1}$ at $(x_i,y(x_i))$ by the line through $(x_i,y(x_i))$ with
 slope
 $$
 m_i=\frac{f(x_i,y(x_i))+f(x_{i+1},y(x_{i+1}))}{2};
@@ -140,13 +140,13 @@ the approximating line is therefore
 \begin{equation} \label{eq:3.2.2}
 y=y(x_i)+\frac{f(x_i,y(x_i))+f(x_{i+1},y(x_{i+1}))}{2}(x-x_i).
 \end{equation}
-Setting $x=x_{i+1}=x_i+h$ in (\ref{eq:3.2.2}) yields
+Setting $x=x_{i+1}=x_i+h$ in $\eqref{eq:3.2.2}$ yields
 \begin{equation} \label{eq:3.2.3}
 y_{i+1}=y(x_i)+\frac{h}{2}\left(f(x_i,y(x_i))+f(x_{i+1},y(x_{i+1}))\right)
 \end{equation}
 as an approximation to $y(x_{i+1})$. As in our derivation of Euler's
 method, we replace $y(x_i)$ (unknown if $i>0$) by its
-approximate value $y_i$; then (\ref{eq:3.2.3}) becomes
+approximate value $y_i$; then $\eqref{eq:3.2.3}$ becomes
 $$
 y_{i+1}=y_i+\frac{h}{2}\left(f(x_i,y_i)+f(x_{i+1},y(x_{i+1})\right).
 $$
@@ -194,11 +194,11 @@ y'+2y=x^3e^{-2x},\quad y(0)=1
 at $x=0.1,0.2,0.3$.
 
 \begin{explanation}
-As in Example~\ref{example:3.1.1}, we rewrite (\ref{eq:3.2.5})  as
+As in Example~\ref{example:3.1.1}, we rewrite $\eqref{eq:3.2.5}$  as
 $$
 y'=-2y+x^3e^{-2x},\quad y(0)=1,
 $$
-which is of the form (\ref{eq:3.2.1}), with
+which is of the form $\eqref{eq:3.2.1}$, with
 $$
 f(x,y)=-2y+x^3e^{-2x},\quad x_0=0,\quad\mbox{and}\quad y_0=1.
 $$
@@ -268,7 +268,11 @@ x&h=0.1&h=0.05&h=0.1&h=0.05&
 \hline
 \end{array}
 $$
+The following interactive illustrates the difference graphically.
 
+\begin{center}
+    \geogebra{mjqkq58n}{800}{600}
+\end{center}
 \end{example}
 
 \begin{example}\label{example:3.2.3}
@@ -323,7 +327,7 @@ method on this problem in~\ref{example:3.1.4}.)
 
 \begin{explanation}
 \ref{item:3.2.4a}
-Rewriting (\ref{eq:3.2.6}) as
+Rewriting $\eqref{eq:3.2.6}$ as
 $$
 y'=1+2xy,\quad y(0)=3
 $$
@@ -356,7 +360,7 @@ $$
 \ref{item:3.2.4b}
 Since $y_1=e^{x^2}$ is a solution of the complementary equation
 $y'-2xy=0$, we can  apply the improved Euler semilinear method to
-(\ref{eq:3.2.6}), with
+$\eqref{eq:3.2.6}$, with
 $$
 y=ue^{x^2}\quad\mbox{and}\quad
 u'=e^{-x^2},\quad u(0)=3.
@@ -394,13 +398,13 @@ $$
 \subsection*{A Family of Methods with $O(h^3)$ Local Truncation Error}
 
 We'll now derive a class of methods with $O(h^3)$ local truncation
-error for solving (\ref{eq:3.2.1}). For simplicity, we
+error for solving $\eqref{eq:3.2.1}$. For simplicity, we
 assume that $f$, $f_x$, $f_y$, $f_{xx}$, $f_{yy}$, and $f_{xy}$ are
 continuous and bounded for all $(x,y)$. This implies that if $y$ is
-the solution of (\ref{eq:3.2.1} then $y''$ and $y'''$ are bounded.
+the solution of $\eqref{eq:3.2.1}$ then $y''$ and $y'''$ are bounded.
 %(Exercise~\ref{exer:3.2.31}).
 
-We begin by approximating the integral curve of (\ref{eq:3.2.1}) at
+We begin by approximating the integral curve of $\eqref{eq:3.2.1}$ at
 $(x_i,y(x_i))$ by the line through $(x_i,y(x_i))$ with slope
 $$
 m_i=\sigma y'(x_i)+\rho y'(x_i+\theta h),
@@ -418,7 +422,7 @@ y&=&y(x_i)+m_i(x-x_i)\\
 &=&y(x_i)+\left[\sigma y'(x_i)+\rho y'(x_i+\theta h)\right](x-x_i).
 \end{array}
 \end{equation}
-Setting $x=x_{i+1}=x_i+h$ in (\ref{eq:3.2.7}) yields
+Setting $x=x_{i+1}=x_i+h$ in $\eqref{eq:3.2.7}$ yields
 $$
 \hat y_{i+1}=y(x_i)+h\left[\sigma y'(x_i)+\rho y'(x_i+\theta h)\right]
 $$
@@ -443,7 +447,7 @@ implies that
 $$
  y(x_{i+1})-y(x_i)-hy'(x_i)-\frac{h^2}{2}y''(x_i)=O(h^3).
 $$
-Comparing this with (\ref{eq:3.2.8}) shows that $E_i=O(h^3)$ if
+Comparing this with $\eqref{eq:3.2.8}$ shows that $E_i=O(h^3)$ if
 \begin{equation} \label{eq:3.2.9}
 \sigma y'(x_i)+\rho y'(x_i+\theta h)=y'(x_i)+\frac{h}{2}y''(x_i)
 +O(h^2).
@@ -458,7 +462,7 @@ bounded, this implies that
 $$
 y'(x_i+\theta h)=y'(x_i)+\theta h y''(x_i)+O(h^2).
 $$
-Substituting this into (\ref{eq:3.2.9}) and noting that the sum of
+Substituting this into $\eqref{eq:3.2.9}$ and noting that the sum of
 two $O(h^2)$ terms is again $O(h^2)$ shows that
 $E_i=O(h^3)$ if
 $$
@@ -470,12 +474,12 @@ which is true if
 \sigma+\rho=1 \quad\mbox{and}\quad \rho\theta=\frac{1}{2}.
 \end{equation}
 
-Since $y'=f(x,y)$, we can now conclude from (\ref{eq:3.2.8}) that
+Since $y'=f(x,y)$, we can now conclude from $\eqref{eq:3.2.8}$ that
 \begin{equation} \label{eq:3.2.11}
 y(x_{i+1})=y(x_i)+h\left[\sigma f(x_i,y_i)+\rho f(x_i+\theta
 h,y(x_i+\theta h))\right]+O(h^3)
 \end{equation}
-if $\sigma$, $\rho$, and $\theta$ satisfy (\ref{eq:3.2.10}). However,
+if $\sigma$, $\rho$, and $\theta$ satisfy $\eqref{eq:3.2.10}$. However,
 this formula would not be useful even if we knew $y(x_i)$ exactly (as
 we would for $i=0$), since we still wouldn't know $y(x_i+\theta h)$
 exactly. To overcome this difficulty, we again use Taylor's theorem to
@@ -498,12 +502,12 @@ $$
 u=y(x_i+\theta h)\quad\mbox{and}\quad
 v=y(x_i)+\theta h f(x_i,y(x_i))
 $$
-and recalling (\ref{eq:3.2.12}) shows that
+and recalling $\eqref{eq:3.2.12}$ shows that
 $$
 f(x_i+\theta h,y(x_i+\theta h))=f(x_i+\theta h,y(x_i)+\theta h
 f(x_i,y(x_i)))+O(h^2).
 $$
-Substituting this into (\ref{eq:3.2.11})   yields
+Substituting this into $\eqref{eq:3.2.11}$   yields
 \begin{eqnarray*}
 y(x_{i+1})&=&y(x_i)+h\left[\sigma f(x_i,y(x_i))+\right.\\&&\left.\rho
 f(x_i+\theta h,y(x_i)+\theta hf(x_i,y(x_i)))\right]+O(h^3).
@@ -514,7 +518,7 @@ y_{i+1}=y_i+h\left[\sigma f(x_i,y_i)+\rho f(x_i+\theta
 h,y_i+\theta hf(x_i,y_i))\right]
 $$
 has $O(h^3)$ local truncation error if $\sigma$, $\rho$, and $\theta$
-satisfy (\ref{eq:3.2.10}). Substituting $\sigma=1-\rho$ and
+satisfy $\eqref{eq:3.2.10}$. Substituting $\sigma=1-\rho$ and
 $\theta=1/2\rho$ here yields
 \begin{equation} \label{eq:3.2.13}
 y_{i+1}=y_i+h\left[(1-\rho)f(x_i,y_i)+\rho
@@ -532,9 +536,9 @@ y_{i+1}&=&y_i+h[(1-\rho)k_{1i}+\rho k_{2i}].
 \end{eqnarray*}
 
 Consistent with our requirement that $0<\theta<1$, we require that
-$\rho\geq 1/2$. Letting $\rho=1/2$ in (\ref{eq:3.2.13}) yields the improved
-Euler method (\ref{eq:3.2.4}). Letting $\rho=3/4$ yields
-\href{http://www-history.mcs.st-and.ac.uk/Mathematicians/Heun.html}{Heun's method},
+$\rho\geq 1/2$. Letting $\rho=1/2$ in $\eqref{eq:3.2.13}$ yields the improved
+Euler method $\eqref{eq:3.2.4}$. Letting $\rho=3/4$ yields
+\href{https://en.wikipedia.org/wiki/Heun%27s_method}{Heun's method},
 $$
 y_{i+1}=y_i+h\left[\frac{1}{4}f(x_i,y_i)+\frac{3}{4}f\left(
 x_i+\frac{2}{3}h,y_i+\frac{2}{3}hf(x_i,y_i)\right)\right],
