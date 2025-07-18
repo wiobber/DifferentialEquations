@@ -107,45 +107,45 @@ The Runge-Kutta method is sufficiently accurate for most
 applications.
 
 %%%Anna's addition to Trench
-The following interactive Sage Cell offers a visual comparison between Runge-Kutta and Euler's methods for the initial value problem.
-$$
-y'+2y=x^3e^{-2x},\quad y(0)=1
-$$
+% The following interactive Sage Cell offers a visual comparison between Runge-Kutta and Euler's methods for the initial value problem.
+% $$
+% y'+2y=x^3e^{-2x},\quad y(0)=1
+% $$
 
-You can experiment with different values of $h$.
-\begin{sageCell}
-@interact
-def _(h=input_box(0.1, width=5)):
-    a=var('a')
-    b=function('b')(a)
-    de = diff(b,a) ==  (a^3)*e^(-2*a)-2*b
-    soln = desolve(de, [b, a], ics=[0,1])
-    P3=plot(soln(a), (a, 0, 1), color='red')
+% You can experiment with different values of $h$.
+% \begin{sageCell}
+% @interact
+% def _(h=input_box(0.1, width=5)):
+%     a=var('a')
+%     b=function('b')(a)
+%     de = diff(b,a) ==  (a^3)*e^(-2*a)-2*b
+%     soln = desolve(de, [b, a], ics=[0,1])
+%     P3=plot(soln(a), (a, 0, 1), color='red')
 
-    from sage.calculus.desolvers import desolve_rk4
-    x,y = var('x,y')
-    ptsRK=desolve_rk4((x^3)*e^(-2*x)-2*y,y,ics=[0,1],end_points=1,step=h)
+%     from sage.calculus.desolvers import desolve_rk4
+%     x,y = var('x,y')
+%     ptsRK=desolve_rk4((x^3)*e^(-2*x)-2*y,y,ics=[0,1],end_points=1,step=h)
 
-    P1 = list_plot(ptsRK)
-    P2 = line(ptsRK)
+%     P1 = list_plot(ptsRK)
+%     P2 = line(ptsRK)
 
-    (P1+P2+P3).show()
+%     (P1+P2+P3).show()
     
    
-    from sage.calculus.desolvers import eulers_method
-    ptsE=eulers_method((x^3)*e^(-2*x)-2*y,0,1,h,1-h,algorithm="none")
+%     from sage.calculus.desolvers import eulers_method
+%     ptsE=eulers_method((x^3)*e^(-2*x)-2*y,0,1,h,1-h,algorithm="none")
 
-    P1 = list_plot(ptsRK)
-    P2 = line(ptsRK)
+%     P1 = list_plot(ptsRK)
+%     P2 = line(ptsRK)
 
-    P5 = list_plot(ptsE)
-    P4 = line(ptsE)
+%     P5 = list_plot(ptsE)
+%     P4 = line(ptsE)
 
-    (P1+P2+P3+P4+P5).show()
+%     (P1+P2+P3+P4+P5).show()
     
-\end{sageCell}
+% \end{sageCell}
 
-The following example offers a numeric comparison of Runge-Kutta to the improved Euler's method.
+The following example offers a comparison of Runge-Kutta to the improved Euler's method.
 
 %%%%%end Anna's addition
 
@@ -192,6 +192,11 @@ h=0.05&
 \end{array}
 $$
 
+The following interactive provides a visual comparison.
+
+\begin{center}
+\geogebra{r6bagsmy}{800}{600}
+\end{center}
 
 The results obtained by the Runge-Kutta method are clearly better
 than those obtained by the improved Euler method   in fact; the results
