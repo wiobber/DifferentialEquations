@@ -7,8 +7,8 @@
 #
 # For publishing you'll need a GPG Key
 # To generate a key-pair, fill in your name and email, and run 'xmlatex genKey'
-YOUR_NAME="Paul Zachlin"
-YOUR_EMAIL="pzachlin01142025@lakelandcc.edu"
+YOUR_NAME="Wim Obbels"
+YOUR_EMAIL="diff@wiobber"
 # !! Do NEVER commit real keys to the repo !!
 # !! DO NEVER SAVE THE KEYS THEMSELVE IN THIS FILE   !!
 #
@@ -47,3 +47,6 @@ YOUR_EMAIL="pzachlin01142025@lakelandcc.edu"
 # export XM_SETTINGSFILE=config.lua          # yet another way to set some options/Settings
 # export XM_ONLY_CHECK=1                     # do not actually compile/clean anything  (NOT IMPLEMENTED for frost/serve!)
 # export XM_FORCE=1                          # force build (even if uptodate) and serve (use push -f)
+
+export GIT_TRACE=2
+export GIT_CURL_VERBOSE=1
