@@ -13,10 +13,10 @@ YOUR_EMAIL="diff@wiobber"
 # !! DO NEVER SAVE THE KEYS THEMSELVE IN THIS FILE   !!
 #
 
-## : "${XIMERA_NAME:=myreponame}"
+: "${XIMERA_NAME:=myreponame}"
 ## : "${XIMERA_URL:=http://localhost:2000/}"
 ## : "${XIMERA_URL:=https://ximera.osu.edu/}"
-## : "${XIMERA_URL:=https://set-p-dsb-zomercursus-latest.cloud-ext.icts.kuleuven.be/}"
+: "${XIMERA_URL:=https://set-p-dsb-zomercursus-latest.cloud-ext.icts.kuleuven.be/}"
 ## : "${XIMERA_URL:=https://set.kuleuven.be/voorkennis/}"
 
 #
@@ -48,5 +48,5 @@ YOUR_EMAIL="diff@wiobber"
 # export XM_ONLY_CHECK=1                     # do not actually compile/clean anything  (NOT IMPLEMENTED for frost/serve!)
 # export XM_FORCE=1                          # force build (even if uptodate) and serve (use push -f)
 
-export GIT_TRACE=2
+export GIT_TRACE=/tmp/gittrace.txt
 export GIT_CURL_VERBOSE=1
