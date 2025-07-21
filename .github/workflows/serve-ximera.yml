@@ -43,14 +43,16 @@ jobs:
           GPG_KEY: ${{ secrets.GPG_KEY }}
           GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
           # XIMERA_URL: ${{ vars.XIMERA_URL }}
-          XIMERA_URL: "https://test.xronos.clas.ufl.edu/"
-          XIMERA_NAME: ${{ vars.XIMERA_NAME }}*${{ github.ref_name }}
+          # XIMERA_URL: "https://test.xronos.clas.ufl.edu/"
+          XIMERA_URL: "https://set-p-dsb-zomercursus-latest.cloud-ext.icts.kuleuven.be/"
+          XIMERA_NAME: 'diffwiobber"
+          # XIMERA_NAME: ${{ vars.XIMERA_NAME }}*${{ github.ref_name }}
         run: |
           ls -alrt
           chmod +x xmScripts/xmlatex
           git config --global http.postBuffer 524288000
           # git config --global core.compression 9
-          ./xmScripts/xmlatex ghaction
+          ./xmScripts/xmlatex ghaction || echo NOK
           echo "✅ Published to $XIMERA_URL$XIMERA_NAME " >> $GITHUB_STEP_SUMMARY
 
       - name: Setup ximera serve cache (only .git)
