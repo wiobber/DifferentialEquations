@@ -2,7 +2,7 @@
 # version of Ximera xake container to use (with xmlatex)
 #
 # : "${XAKE_BASE:=ximeralatex}"
-: "${XAKE_VERSION:=v2.7.1}"
+: "${XAKE_VERSION:=latest}"
 # : "${XAKE_VERSION:=v2.7.2-full}"    # with texlive_full
 #
 # For publishing you'll need a GPG Key
@@ -13,7 +13,8 @@ YOUR_EMAIL="diff@wiobber"
 # !! DO NEVER SAVE THE KEYS THEMSELVE IN THIS FILE   !!
 #
 
-: "${XIMERA_NAME:=myreponame}"
+# : "${XIMERA_NAME:=myrepo271a}"
+# : "${XIMERA_NAME:=myrepo23a}"
 ## : "${XIMERA_URL:=http://localhost:2000/}"
 ## : "${XIMERA_URL:=https://ximera.osu.edu/}"
 : "${XIMERA_URL:=https://set-p-dsb-zomercursus-latest.cloud-ext.icts.kuleuven.be/}"
