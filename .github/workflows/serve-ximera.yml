@@ -60,7 +60,7 @@ jobs:
 
           ./xmScripts/xmlatex ghaction -j 6 || echo NOK
           cat /tmp/gittrace.txt || echo "No git trace file found"
-          cat /home/runner/work/DifferentialEquations/DifferentialEquations || echo "No git trace file found"
+          cat /home/runner/work/DifferentialEquations/DifferentialEquations/gittrace.txt || echo "No git trace file found"
           echo "✅ Published to $XIMERA_URL$XIMERA_NAME " >> $GITHUB_STEP_SUMMARY
 
       - name: Setup ximera serve cache (only .git)
