@@ -50,5 +50,5 @@ YOUR_EMAIL="diff@wiobber"
 # export XM_FORCE=1                          # force build (even if uptodate) and serve (use push -f)
 
 # export GIT_TRACE=/tmp/gittrace.txt
-export GIT_TRACE2_PERF=/code/gittrace.txt
+# export GIT_TRACE2_PERF=/code/gittrace.txt
 export GIT_CURL_VERBOSE=1
