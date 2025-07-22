@@ -50,10 +50,11 @@ jobs:
         run: |
           ls -alrt
           chmod +x xmScripts/xmlatex
-          git config --global http.postBuffer 5242880
+          # git config --global http.postBuffer 5242880
           # git config --global core.compression 9
 
           ./xmScripts/xmlatex ghaction -j 6 
+          env
           cat /tmp/gittrace.txt || echo "No git trace file found"
           echo "✅ Published to $XIMERA_URL$XIMERA_NAME " >> $GITHUB_STEP_SUMMARY
 
