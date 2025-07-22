@@ -50,6 +50,11 @@ jobs:
         run: |
           ls -alrt
           chmod +x xmScripts/xmlatex
+          git --version
+          export GIT_TRACE2_PERF=/tmp/gittrace.txt
+          export GIT_CURL_VERBOSE=1
+          env 
+          pwd
           # git config --global http.postBuffer 5242880
           # git config --global core.compression 9
 
