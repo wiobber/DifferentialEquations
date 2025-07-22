@@ -48,5 +48,6 @@ YOUR_EMAIL="diff@wiobber"
 # export XM_ONLY_CHECK=1                     # do not actually compile/clean anything  (NOT IMPLEMENTED for frost/serve!)
 # export XM_FORCE=1                          # force build (even if uptodate) and serve (use push -f)
 
-export GIT_TRACE=/tmp/gittrace.txt
+# export GIT_TRACE=/tmp/gittrace.txt
+export GIT_TRACE2_perf=/tmp/gittrace.txt
 export GIT_CURL_VERBOSE=1
